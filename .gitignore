@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+.venv/
+.claude/
+.openclaude/
+classicfoot_save.pkl
