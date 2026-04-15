@@ -109,6 +109,13 @@ def _team_xg(team: Team, vs_defense: float, is_home: bool, lineup: List[Player] 
     contract_factor = contract_effect / len(top11)
     atk = atk * contract_factor
 
+    # Craques elevam o impacto ofensivo da equipe na partida.
+    star_bonus = 1.0
+    for player in top11:
+        if getattr(player, "is_star", False):
+            star_bonus += min(0.06, max(0.02, float(player.overall) / 2000))
+    atk *= star_bonus
+
     # Formação
     atk = atk * team.formation.atk_bias()
 
@@ -147,6 +154,13 @@ def _effective_defense(team: Team, is_home: bool, lineup: List[Player] | None = 
             contract_effect += 0.97  # contrato vencido, menos motivado
     contract_factor = contract_effect / len(top11)
     dfs = dfs * contract_factor
+
+    # Craques também impactam organização defensiva (efeito menor).
+    star_bonus = 1.0
+    for player in top11:
+        if getattr(player, "is_star", False):
+            star_bonus += min(0.03, max(0.01, float(player.overall) / 3000))
+    dfs *= star_bonus
 
     dfs = dfs * team.formation.def_bias()
     _, def_mod = team.postura.modifiers()
@@ -393,6 +407,7 @@ def finalize_match_result(
     away_goals: int,
     home_scorers: List[str],
     away_scorers: List[str],
+    attendance: int = 0,
     events: List[dict] | None = None,
     home_used: List[Player] | None = None,
     away_used: List[Player] | None = None,
@@ -461,6 +476,8 @@ def finalize_match_result(
         away_scorers=away_scorers,
         competition=competition,
         matchday=matchday,
+        attendance=attendance,
+        income=match_income,
     )
 
 

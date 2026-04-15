@@ -119,6 +119,7 @@ class Player:
     amarelos_total: int = 0
     vermelhos_total: int = 0
     season_base_ovr: float | None = None
+    is_star: bool = False
 
     def pos_label(self) -> str:
         return self.position.value
@@ -174,6 +175,8 @@ class Team:
     loan_balance: int = 0
     loan_monthly_payment: int = 0
     loan_months_left: int = 0
+    training_targets: List[int] = field(default_factory=list)
+    training_round_applied: int = -1
 
     # Estatísticas da divisão (temporada)
     div_wins: int = 0
@@ -266,6 +269,8 @@ class MatchResult:
     away_scorers: List[str] = field(default_factory=list)
     competition: str = "Liga"
     matchday: int = 0
+    attendance: int = 0
+    income: int = 0
 
     def winner(self) -> Optional['Team']:
         if self.home_goals > self.away_goals:
@@ -370,3 +375,4 @@ class CareerState:
     games_in_charge: int = 0
     back_to_main_menu: bool = False
     season_history: List[dict] = field(default_factory=list)
+    world_history: dict = field(default_factory=dict)

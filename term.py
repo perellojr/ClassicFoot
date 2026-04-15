@@ -9,40 +9,58 @@ import shutil
 from colorama import Fore, Back, Style, init
 
 init(autoreset=True)
+THEME = os.getenv("CLASSICFOOT_THEME", "").strip().lower()
+MSDOS_MODE = THEME in {"msdos", "dos", "retro"}
 
 # ── Tamanho do terminal ────────────────────────────────────────
 def term_width() -> int:
     return shutil.get_terminal_size((100, 30)).columns
 
 # ── Constantes de cor ──────────────────────────────────────────
-G  = Fore.GREEN
-GG = Fore.GREEN  + Style.BRIGHT
-YY = Fore.YELLOW + Style.BRIGHT
-Y  = Fore.YELLOW
-C  = Fore.CYAN   + Style.BRIGHT
-BB = Fore.BLUE   + Style.BRIGHT
-RR = Fore.RED    + Style.BRIGHT
-R  = Fore.RED
-WW = Fore.WHITE  + Style.BRIGHT
-W  = Fore.WHITE
-M  = Fore.MAGENTA + Style.BRIGHT
-DIM= Style.DIM
+if MSDOS_MODE:
+    # Visual clássico: monocromático verde em fundo preto.
+    G = GG = YY = Y = C = BB = RR = R = WW = W = M = Fore.GREEN + Style.BRIGHT
+    DIM = Fore.GREEN + Style.DIM
+else:
+    G  = Fore.GREEN
+    GG = Fore.GREEN  + Style.BRIGHT
+    YY = Fore.YELLOW + Style.BRIGHT
+    Y  = Fore.YELLOW
+    C  = Fore.CYAN   + Style.BRIGHT
+    BB = Fore.BLUE   + Style.BRIGHT
+    RR = Fore.RED    + Style.BRIGHT
+    R  = Fore.RED
+    WW = Fore.WHITE  + Style.BRIGHT
+    W  = Fore.WHITE
+    M  = Fore.MAGENTA + Style.BRIGHT
+    DIM= Style.DIM
 RST= Style.RESET_ALL
 
 # ── Box drawing ────────────────────────────────────────────────
-TL="╔"; TR="╗"; BL="╚"; BR="╝"
-H="═"; V="║"
-ML="╠"; MR="╣"; TM="╦"; BM="╩"; X="╬"
-
-tl="┌"; tr="┐"; bl="└"; br="┘"
-h="─"; v="│"
-ml="├"; mr="┤"; tm="┬"; bm="┴"; x="┼"
+if MSDOS_MODE:
+    TL = "+"; TR = "+"; BL = "+"; BR = "+"
+    H = "-"; V = "|"
+    ML = "+"; MR = "+"; TM = "+"; BM = "+"; X = "+"
+    tl = "+"; tr = "+"; bl = "+"; br = "+"
+    h = "-"; v = "|"
+    ml = "+"; mr = "+"; tm = "+"; bm = "+"; x = "+"
+else:
+    TL="╔"; TR="╗"; BL="╚"; BR="╝"
+    H="═"; V="║"
+    ML="╠"; MR="╣"; TM="╦"; BM="╩"; X="╬"
+    tl="┌"; tr="┐"; bl="└"; br="┘"
+    h="─"; v="│"
+    ml="├"; mr="┤"; tm="┬"; bm="┴"; x="┼"
 
 def clear():
     os.system("cls" if os.name == "nt" else "clear")
 
 def pause(msg: str = "Pressione ENTER para continuar..."):
     input(f"\n  {DIM}{msg}{RST}")
+
+
+def is_msdos_mode() -> bool:
+    return MSDOS_MODE
 
 def pad(s: str, w: int, align: str = "l") -> str:
     """Pad string to width w. align: l/r/c. Strips ANSI for length calc."""

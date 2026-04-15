@@ -11,6 +11,7 @@ from term import (
     ovr_color, form_color, cond_color, colored_score,
     GG, YY, Y, C, BB, RR, R, WW, W, M, DIM, RST, G,
     term_width, pad, _visible_len, hline,
+    is_msdos_mode,
     TL, TR, BL, BR, H, V, ML, MR, TM, BM, X,
     tl, tr, bl, br, h, v, ml, mr,
 )
@@ -27,21 +28,30 @@ def _ovr_text(value: float) -> str:
 # ═══════════════════════════════════════════════════════════════
 def banner():
     clear()
-    logo_lines = [
-        "  ██████╗██╗      █████╗ ███████╗███████╗██╗ ██████╗    ███████╗ ██████╗  ██████╗ ████████╗",
-        " ██╔════╝██║     ██╔══██╗██╔════╝██╔════╝██║██╔════╝    ██╔════╝██╔═══██╗██╔═══██╗╚══██╔══╝",
-        " ██║     ██║     ███████║███████╗███████╗██║██║         █████╗  ██║   ██║██║   ██║   ██║   ",
-        " ██║     ██║     ██╔══██║╚════██║╚════██║██║██║         ██╔══╝  ██║   ██║██║   ██║   ██║   ",
-        " ╚██████╗███████╗██║  ██║███████║███████║██║╚██████╗    ██║     ╚██████╔╝╚██████╔╝   ██║   ",
-        "  ╚═════╝╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝ ╚═════╝    ╚═╝      ╚═════╝  ╚═════╝    ╚═╝  ",
-    ]
+    if is_msdos_mode():
+        logo_lines = [
+            "  #####   #        #    ####   ####  #  ####   ####  #####  ###   ###  ##### ",
+            " #       # #      # #  #      #      # #      #      #     #   # #   #   #   ",
+            " #      #####    #####  ###    ###   # #      ####   ###   #   # #   #   #   ",
+            " #      #   #    #   #     #      #  # #      #      #     #   # #   #   #   ",
+            "  ##### #   #    #   # ####   ####   #  ####   ####  #      ###   ###    #   ",
+        ]
+    else:
+        logo_lines = [
+            "  ██████╗██╗      █████╗ ███████╗███████╗██╗ ██████╗    ███████╗ ██████╗  ██████╗ ████████╗",
+            " ██╔════╝██║     ██╔══██╗██╔════╝██╔════╝██║██╔════╝    ██╔════╝██╔═══██╗██╔═══██╗╚══██╔══╝",
+            " ██║     ██║     ███████║███████╗███████╗██║██║         █████╗  ██║   ██║██║   ██║   ██║   ",
+            " ██║     ██║     ██╔══██║╚════██║╚════██║██║██║         ██╔══╝  ██║   ██║██║   ██║   ██║   ",
+            " ╚██████╗███████╗██║  ██║███████║███████╗██║╚██████╗    ██║     ╚██████╔╝╚██████╔╝   ██║   ",
+            "  ╚═════╝╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝ ╚═════╝    ╚═╝      ╚═════╝  ╚═════╝    ╚═╝  ",
+        ]
     w = term_width()
     print(GG + TL + H * (w - 2) + TR + RST)
     for line in logo_lines:
         vis = _visible_len(line)
         pad_l = (w - 2 - vis) // 2
         print(GG + V + RST + " " * pad_l + GG + line + RST + " " * max(0, w - 2 - vis - pad_l) + GG + V + RST)
-    sub = "Brasileirão Edition  •  v1.0"
+    sub = "Brasileirao Edition  -  v1.0" if is_msdos_mode() else "Brasileirão Edition  •  v1.0"
     vis = _visible_len(sub)
     pad_l = (w - 2 - vis) // 2
     print(GG + V + RST + " " * pad_l + DIM + sub + RST + " " * max(0, w - 2 - vis - pad_l) + GG + V + RST)
@@ -174,6 +184,7 @@ def season_dashboard(season: Season, player_team: Team | None):
         YY + "[C]" + RST + " Calendário",
         YY + "[R]" + RST + " Renovar Contrato",
         YY + "[T]" + RST + " Transferências",
+        YY + "[E]" + RST + " Treino (5 jogadores)",
         YY + "[A]" + RST + " Artilheiros",
         YY + "[V]" + RST + " Vender Jogador",
         YY + "[H]" + RST + " Histórico",
@@ -298,6 +309,57 @@ def prompt_contract_renewal(team: Team):
         return None, None
 
     return player, int(offer)
+
+
+def show_training(team: Team):
+    """Seleciona até 5 jogadores para treino da rodada."""
+    clear()
+    print(rule(f"TREINO DA RODADA — {team.name}"))
+    print()
+
+    players = sorted(team.players, key=lambda p: (-p.overall, p.name))
+    selected_ids = set(team.training_targets or [])
+
+    tbl = Table(title="ELENCO (ATÉ 5 JOGADORES)", border_color=C, header_color=YY, title_color=C)
+    tbl.add_column("N", width=4, align="r", color=DIM)
+    tbl.add_column("Nome", width=24, align="l", color=WW)
+    tbl.add_column("Pos", width=5, align="c", color=C)
+    tbl.add_column("OVR", width=5, align="c", color=YY)
+    tbl.add_column("Craque", width=8, align="c", color=G)
+    tbl.add_column("Treino", width=8, align="c", color=M)
+
+    for idx, player in enumerate(players, start=1):
+        tbl.add_row(
+            str(idx),
+            player.name[:24],
+            player.pos_label(),
+            _ovr_text(player.overall),
+            "SIM" if getattr(player, "is_star", False) else "-",
+            "ATIVO" if player.id in selected_ids else "",
+        )
+    tbl.print()
+
+    print()
+    print(DIM + "  Informe números separados por vírgula. ENTER mantém a lista atual." + RST)
+    raw = input("  Seleção (máx 5): ").strip()
+    if not raw:
+        return team
+
+    tokens = [token.strip() for token in raw.replace(";", ",").split(",") if token.strip()]
+    picks = []
+    for token in tokens:
+        if not token.isdigit():
+            continue
+        index = int(token)
+        if 1 <= index <= len(players):
+            player_id = players[index - 1].id
+            if player_id not in picks:
+                picks.append(player_id)
+        if len(picks) >= 5:
+            break
+
+    team.training_targets = picks
+    return team
 
 
 def prompt_sell_player(team: Team):
@@ -905,19 +967,23 @@ def _print_knockout(season: Season, player_team: Team | None):
     if season.copa_final:
         print(C + "\n  Final:" + RST)
         tie = season.copa_final
-        if tie.leg1:
+        if tie.leg1 and tie.leg2:
             winner = season.copa_champion or tie.winner()
             winner_name = _paint_team_box(winner, _fit_bracket_team_name(winner.name, 20)) if winner else YY + "Pênaltis" + RST
-            fixture = _format_bracket_fixture(tie.team_a, tie.team_b, f"{tie.leg1.home_goals}x{tie.leg1.away_goals}")
+            a, b = tie.aggregate()
+            fixture = _format_bracket_fixture(tie.team_a, tie.team_b, f"{a}x{b}")
             pens = f"  [pên. {tie.penalty_score[0]}x{tie.penalty_score[1]}]" if tie.penalty_score else ""
             print(
-                f"  {WW}{fixture}{RST}{pens}  → {winner_name}"
+                f"  {DIM}Jogo 31/32:{RST} {WW}{fixture}{RST}  [ida {tie.leg1.home_goals}x{tie.leg1.away_goals} / volta {tie.leg2.home_goals}x{tie.leg2.away_goals}]{pens}  → {winner_name}"
             )
+        elif tie.leg1:
+            fixture = _format_bracket_fixture(tie.team_a, tie.team_b, f"{tie.leg1.home_goals}x{tie.leg1.away_goals}")
+            print(f"  {DIM}Jogo 31:{RST} {WW}{fixture}{RST}  [ida]")
         else:
-            print(f"  {DIM}{_format_bracket_fixture(tie.team_a, tie.team_b)}  (jogo único){RST}")
+            print(f"  {DIM}Jogo 31:{RST} {DIM}{_format_bracket_fixture(tie.team_a, tie.team_b)}  (ida e volta){RST}")
     else:
         print(C + "\n  Final:" + RST)
-        print(f"  {DIM}Jogo 31: Pendente{RST}")
+        print(f"  {DIM}Jogo 31/32: Pendente{RST}")
 
     if season.copa_champion:
         champ = season.copa_champion
@@ -1423,6 +1489,49 @@ def show_history(career):
         tbl.add_row(year, team, div, pos, copa_phase, scorer_str)
 
     tbl.print()
+
+    world = getattr(career, "world_history", {}) or {}
+    if world:
+        print()
+        print(C + "  RECORDES HISTÓRICOS" + RST)
+        print()
+
+        team_goals = world.get("team_goals_record", {})
+        player_goals = world.get("player_goals_record", {})
+        max_att = world.get("max_attendance", {})
+        max_income = world.get("max_income", {})
+
+        lines = [
+            f"  Melhor ataque histórico: {WW}{team_goals.get('team', '-')} ({team_goals.get('goals', 0)} gols, {team_goals.get('year', '-')}){RST}",
+            f"  Artilheiro histórico: {WW}{player_goals.get('player', '-')} - {player_goals.get('team', '-')} ({player_goals.get('goals', 0)} gols, {player_goals.get('year', '-')}){RST}",
+            f"  Maior público: {WW}{max_att.get('attendance', 0):,}{RST} em {max_att.get('home', '-')} x {max_att.get('away', '-')} ({max_att.get('year', '-')})",
+            f"  Maior renda: {WW}R${int(max_income.get('income', 0)):,}k{RST} em {max_income.get('home', '-')} x {max_income.get('away', '-')} ({max_income.get('year', '-')})",
+        ]
+        print(box(lines, title="RECORDES", border_color=GG, title_color=GG, width=110))
+
+        champions = world.get("division_champions", [])
+        if champions:
+            print()
+            champ_tbl = Table(title="CAMPEÕES DAS DIVISÕES", border_color=C, header_color=YY, title_color=C)
+            champ_tbl.add_column("Ano", width=5, align="c", color=DIM)
+            champ_tbl.add_column("Div", width=4, align="c", color=C)
+            champ_tbl.add_column("Clube", width=24, align="l", color=WW)
+            champ_tbl.add_column("Técnico", width=24, align="l", color=G)
+            for item in champions[-24:]:
+                champ_tbl.add_row(
+                    str(item.get("year", "-")),
+                    str(item.get("division", "-")),
+                    str(item.get("team", "-"))[:24],
+                    str(item.get("coach", "-"))[:24],
+                )
+            champ_tbl.print()
+
+        coaches = world.get("coach_titles", {})
+        if coaches:
+            print()
+            top_coaches = sorted(coaches.items(), key=lambda entry: (-entry[1], entry[0]))[:10]
+            coach_lines = [f"  {WW}{name:<28}{RST} {YY}{titles} título(s){RST}" for name, titles in top_coaches]
+            print(box(coach_lines, title="TÉCNICOS CAMPEÕES", border_color=YY, title_color=YY, width=50))
     pause()
 
 

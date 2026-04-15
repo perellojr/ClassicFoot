@@ -1005,6 +1005,7 @@ def create_teams():
     teams = create_all_teams()
     apply_finances(teams)
     _ensure_minimum_rosters(teams, 25)
+    _assign_team_stars(teams, stars_per_team=3)
     return teams
 
 
@@ -1044,3 +1045,13 @@ def _ensure_minimum_rosters(teams, minimum_players: int):
 
 def get_teams_by_division(teams, division: int):
     return [t for t in teams if t.division == division]
+
+
+def _assign_team_stars(teams, stars_per_team: int = 3):
+    """Marca os melhores jogadores do elenco como CRAQUE."""
+    for team in teams:
+        for player in team.players:
+            player.is_star = False
+        top_players = sorted(team.players, key=lambda p: p.overall, reverse=True)[:stars_per_team]
+        for player in top_players:
+            player.is_star = True

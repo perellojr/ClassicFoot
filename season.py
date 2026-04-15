@@ -129,6 +129,12 @@ class Season:
 
     # Artilheiro/premiações calculados no fim
     top_scorers: List[Tuple[str, str, int]] = field(default_factory=list)
+    division_champions: Dict[int, str] = field(default_factory=dict)
+    division_champion_coaches: Dict[int, str] = field(default_factory=dict)
+    best_team_goals: Dict[str, int | str] = field(default_factory=dict)
+    best_player_goals: Dict[str, int | str] = field(default_factory=dict)
+    max_attendance: Dict[str, int | str] = field(default_factory=dict)
+    max_income: Dict[str, int | str] = field(default_factory=dict)
 
 
 def create_season(year: int, all_teams: List[Team], player_team_id: int) -> Season:
@@ -142,6 +148,7 @@ def create_season(year: int, all_teams: List[Team], player_team_id: int) -> Seas
     # Reset stats
     for t in all_teams:
         t.reset_season_stats()
+        t.training_round_applied = -1
         for p in t.players:
             p.season_base_ovr = float(p.overall)
     for t in all_teams:
@@ -172,7 +179,7 @@ def create_season(year: int, all_teams: List[Team], player_team_id: int) -> Seas
             md += 1
     season.league_fixtures = league_fixtures
 
-    # Sorteio da Copa: 32 clubes em mata-mata, ida e volta até a semifinal
+    # Sorteio da Copa: 32 clubes em mata-mata, ida e volta até a final
     season.copa_primeira_fase = _draw_knockout_round(all_teams, "primeira_fase", single_leg=False)
     for team in all_teams:
         team.copa_phase = "primeira_fase"
@@ -192,20 +199,23 @@ def create_season(year: int, all_teams: List[Team], player_team_id: int) -> Seas
         10: ("copa_semi", "Semifinal", 1),
         11: ("copa_semi", "Semifinal", 2),
         14: ("copa_final", "Final", 1),
+        15: ("copa_final", "Final", 2),
     }
 
-    for round_num in range(1, max(liga_by_round.keys()) + 1):
-        calendar.append({
-            "label": f"Rodada {round_num} — Liga",
-            "type": "liga",
-            "round_num": round_num,
-            "fixtures": liga_by_round[round_num],
-            "ties": [],
-        })
+    max_round = max(max(liga_by_round.keys()), max(cup_slots.keys()))
+    for round_num in range(1, max_round + 1):
+        if round_num in liga_by_round:
+            calendar.append({
+                "label": f"Rodada {round_num} — Liga",
+                "type": "liga",
+                "round_num": round_num,
+                "fixtures": liga_by_round[round_num],
+                "ties": [],
+            })
         if round_num in cup_slots:
             cup_type, cup_label, leg = cup_slots[round_num]
             calendar.append({
-                "label": f"{cup_label} da Copa — {'Ida' if leg == 1 and cup_type != 'copa_final' else 'Volta' if cup_type != 'copa_final' else 'Jogo Único'}",
+                "label": f"{cup_label} da Copa — {'Ida' if leg == 1 else 'Volta'}",
                 "type": cup_type,
                 "round_num": round_num,
                 "fixtures": [],
@@ -382,28 +392,38 @@ def play_matchday(
                 season.results_history.append(result)
 
     elif mtype == "copa_final":
+        leg = matchday_info.get("cup_leg", 1)
         for tie in ties:
-            if tie.leg1 is None:
+            should_play = tie.leg1 is None if leg == 1 else tie.leg1 is not None and tie.leg2 is None
+            if should_play:
                 is_player = (
                     tie.team_a.id == player_team.id or
                     tie.team_b.id == player_team.id
                 )
-                tie.team_a.postura = player_postura if is_player else tie.team_a.postura
-                tie.leg1 = simulate_match(
-                    tie.team_a, tie.team_b,
+                home_team = tie.team_a if leg == 1 else tie.team_b
+                away_team = tie.team_b if leg == 1 else tie.team_a
+                home_team.postura = player_postura if is_player and home_team.id == player_team.id else home_team.postura
+                away_team.postura = player_postura if is_player and away_team.id == player_team.id else away_team.postura
+                result = simulate_match(
+                    home_team, away_team,
                     competition="Copa",
                     matchday=season.current_matchday,
                 )
-                winner = tie.leg1.winner()
-                if winner is None:
-                    winner = simulate_penalty_shootout(tie.team_a, tie.team_b)
-                season.copa_champion = winner
-                winner.copa_phase = "campeão"
-                if is_player:
-                    player_result = tie.leg1
+                if leg == 1:
+                    tie.leg1 = result
                 else:
-                    other_results.append(tie.leg1)
-                season.results_history.append(tie.leg1)
+                    tie.leg2 = result
+                    winner = tie.winner()
+                    if winner is None:
+                        winner = simulate_penalty_shootout(tie.team_a, tie.team_b)
+                        tie.set_penalty_winner(winner)
+                    season.copa_champion = winner
+                    winner.copa_phase = "campeão"
+                if is_player:
+                    player_result = result
+                else:
+                    other_results.append(result)
+                season.results_history.append(result)
 
     advance_season_after_matchday(season)
 
@@ -502,12 +522,12 @@ def _check_advance_copa_knockout(season: Season):
             if len(finalists) >= 2:
                 for f in finalists:
                     f.copa_phase = "final"
-                final = CupTie(finalists[0], finalists[1], "final", single_leg=True)
+                final = CupTie(finalists[0], finalists[1], "final", single_leg=False)
                 season.copa_final = final
                 for md in season.calendar:
                     if md["type"] == "copa_final":
                         md["ties"] = [final]
-    if season.copa_final and season.copa_final.leg1 is not None:
+    if season.copa_final and season.copa_final.leg1 is not None and season.copa_final.leg2 is not None:
         winner = season.copa_final.winner()
         if winner is None:
             winner = simulate_penalty_shootout(season.copa_final.team_a, season.copa_final.team_b)
@@ -529,6 +549,9 @@ def _end_of_season(season: Season):
     # Prêmios por posição e vitórias na liga
     for div, teams in divs.items():
         ranked = sort_standings(teams)
+        if ranked:
+            season.division_champions[div] = ranked[0].name
+            season.division_champion_coaches[div] = ranked[0].coach.name
         for pos, t in enumerate(ranked, start=1):
             prize = PRIZE_LIGA.get(div, {}).get(pos, 0)
             t.caixa += int(round(prize * prize_multiplier))
@@ -549,14 +572,36 @@ def _end_of_season(season: Season):
         player, team = top_scorer
         team.caixa += int(round(500 * prize_multiplier))  # bônus acompanha inflação da premiação
         player.overall = min(99, player.overall + 1)  # +1 OVR para o artilheiro
+        season.best_player_goals = {"player": player.name, "team": team.name, "goals": player.gols_temp}
 
     # Melhor ataque da temporada (mais gols pró na liga).
     best_attack_team = max(season.all_teams, key=lambda club: (club.div_gf, club.div_gd, -club.div_ga))
     best_attack_team.caixa += int(round(PRIZE_BEST_ATTACK * prize_multiplier))
+    season.best_team_goals = {"team": best_attack_team.name, "goals": best_attack_team.div_gf}
 
     # Melhor defesa da temporada (menos gols sofridos na liga).
     best_defense_team = min(season.all_teams, key=lambda club: (club.div_ga, -club.div_gd, -club.div_gf))
     best_defense_team.caixa += int(round(PRIZE_BEST_DEFENSE * prize_multiplier))
+
+    if season.results_history:
+        max_att = max(season.results_history, key=lambda result: int(getattr(result, "attendance", 0)))
+        season.max_attendance = {
+            "attendance": int(getattr(max_att, "attendance", 0)),
+            "home": max_att.home_team.name,
+            "away": max_att.away_team.name,
+            "score": f"{max_att.home_goals}x{max_att.away_goals}",
+            "competition": max_att.competition,
+            "year": season.year,
+        }
+        max_inc = max(season.results_history, key=lambda result: int(getattr(result, "income", 0)))
+        season.max_income = {
+            "income": int(getattr(max_inc, "income", 0)),
+            "home": max_inc.home_team.name,
+            "away": max_inc.away_team.name,
+            "score": f"{max_inc.home_goals}x{max_inc.away_goals}",
+            "competition": max_inc.competition,
+            "year": season.year,
+        }
 
     # Promoção / Rebaixamento (2 sobem, 2 descem por divisão)
     _apply_promotions(divs)

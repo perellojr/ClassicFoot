@@ -29,13 +29,29 @@ from ui import (
     show_torcida, show_stadium, show_next_round, choose_postura, show_calendar,
     show_transfer_market, show_top_scorers, show_match_result, prompt_contract_renewal,
     show_season_end, show_credits, confirm_play, show_notifications, prompt_job_offer,
-    prompt_sell_player, show_history,
+    prompt_sell_player, show_history, show_training,
 )
 from save import save_game, load_game, save_exists
 from term import BB, C, G, GG, RR, R, RST, W, WW, Y, YY, DIM, Table, pause, clear, rule, pad
 
 YEAR_START = 2025
 HALF_DURATION_SECONDS = float(os.getenv("CLASSICFOOT_HALF_DURATION_SECONDS", "21.9"))
+
+# Confrontos clássicos (por id dos clubes).
+CLASSIC_PAIRS = {
+    frozenset((1, 5)),   # Fla-Flu
+    frozenset((1, 15)),  # Fla-Vasco
+    frozenset((1, 6)),   # Fla-Botafogo
+    frozenset((4, 2)),   # Corinthians-Palmeiras
+    frozenset((4, 9)),   # Corinthians-São Paulo
+    frozenset((2, 9)),   # Palmeiras-São Paulo
+    frozenset((8, 7)),   # Grêmio-Inter
+    frozenset((3, 10)),  # Atlético-MG-Cruzeiro
+    frozenset((14, 19)), # Bahia-Vitória
+    frozenset((11, 23)), # Fortaleza-Ceará
+    frozenset((13, 25)), # Athletico-Coritiba
+    frozenset((26, 18)), # Goiás-Atlético-GO
+}
 
 
 def _prompt_nonempty(label: str) -> str:
@@ -76,6 +92,124 @@ def _append_notifications(career: CareerState, messages):
         if message and message not in career.seen_notifications:
             career.notifications.append(message)
             career.seen_notifications.add(message)
+
+
+def _apply_training_if_due(season: Season, team):
+    """Aplica treino de até 5 jogadores uma vez por rodada do calendário."""
+    if team is None:
+        return []
+    if team.training_round_applied == season.current_matchday:
+        return []
+
+    selected_ids = list(dict.fromkeys(team.training_targets or []))[:5]
+    if not selected_ids:
+        team.training_round_applied = season.current_matchday
+        return []
+
+    improved = []
+    for player in team.players:
+        if player.id not in selected_ids:
+            continue
+        gain_factor = 1.0 + random.uniform(0.0, 0.10)
+        old_ovr = float(player.overall)
+        player.overall = round(min(99.0, old_ovr * gain_factor), 1)
+        improved.append((player.name, old_ovr, player.overall))
+
+    team.training_round_applied = season.current_matchday
+    if not improved:
+        return []
+
+    lines = [f"{team.name} concluiu o treino técnico da rodada:"]
+    for name, old_ovr, new_ovr in improved:
+        lines.append(f"• {name}: OVR {int(round(old_ovr))} → {int(round(new_ovr))}")
+    return lines
+
+
+def _ensure_world_history(career: CareerState):
+    if not isinstance(getattr(career, "world_history", None), dict):
+        career.world_history = {}
+    history = career.world_history
+    history.setdefault("division_champions", [])
+    history.setdefault("team_goals_record", {"goals": 0, "team": "-", "year": 0})
+    history.setdefault("player_goals_record", {"goals": 0, "player": "-", "team": "-", "year": 0})
+    history.setdefault("max_attendance", {"attendance": 0, "home": "-", "away": "-", "year": 0})
+    history.setdefault("max_income", {"income": 0, "home": "-", "away": "-", "year": 0})
+    history.setdefault("coach_titles", {})
+    return history
+
+
+def _ensure_stars_in_all_teams(all_teams):
+    for team in all_teams:
+        stars = [player for player in team.players if getattr(player, "is_star", False)]
+        if len(stars) >= 3:
+            continue
+        for player in team.players:
+            player.is_star = False
+        for player in sorted(team.players, key=lambda p: p.overall, reverse=True)[:3]:
+            player.is_star = True
+
+
+def _record_season_history(season: Season, player_team, career: CareerState):
+    if player_team is not None:
+        div_teams = [t for t in season.all_teams if t.division == player_team.division]
+        ranked = sorted(div_teams, key=lambda t: -t.div_points)
+        position = next((i + 1 for i, t in enumerate(ranked) if t.id == player_team.id), 0)
+
+        top_scorer = None
+        if season.top_scorers:
+            top_scorer = season.top_scorers[0]
+
+        history_entry = {
+            "year": season.year,
+            "team": player_team.name,
+            "division": player_team.division,
+            "position": position,
+            "copa_phase": player_team.copa_phase,
+            "top_scorer": top_scorer,
+            "copa_champion": season.copa_champion.name if season.copa_champion else None,
+        }
+        career.season_history.append(history_entry)
+
+    world_history = _ensure_world_history(career)
+    for div in sorted(season.division_champions.keys()):
+        world_history["division_champions"].append({
+            "year": season.year,
+            "division": div,
+            "team": season.division_champions.get(div, "-"),
+            "coach": season.division_champion_coaches.get(div, "-"),
+        })
+        coach_name = season.division_champion_coaches.get(div)
+        if coach_name:
+            world_history["coach_titles"][coach_name] = world_history["coach_titles"].get(coach_name, 0) + 1
+
+    if season.copa_champion is not None:
+        coach_name = season.copa_champion.coach.name
+        world_history["coach_titles"][coach_name] = world_history["coach_titles"].get(coach_name, 0) + 1
+
+    best_team_goals = season.best_team_goals or {}
+    if int(best_team_goals.get("goals", 0)) > int(world_history["team_goals_record"].get("goals", 0)):
+        world_history["team_goals_record"] = {
+            "goals": int(best_team_goals.get("goals", 0)),
+            "team": best_team_goals.get("team", "-"),
+            "year": season.year,
+        }
+
+    best_player_goals = season.best_player_goals or {}
+    if int(best_player_goals.get("goals", 0)) > int(world_history["player_goals_record"].get("goals", 0)):
+        world_history["player_goals_record"] = {
+            "goals": int(best_player_goals.get("goals", 0)),
+            "player": best_player_goals.get("player", "-"),
+            "team": best_player_goals.get("team", "-"),
+            "year": season.year,
+        }
+
+    max_attendance = season.max_attendance or {}
+    if int(max_attendance.get("attendance", 0)) > int(world_history["max_attendance"].get("attendance", 0)):
+        world_history["max_attendance"] = dict(max_attendance)
+
+    max_income = season.max_income or {}
+    if int(max_income.get("income", 0)) > int(world_history["max_income"].get("income", 0)):
+        world_history["max_income"] = dict(max_income)
 
 
 def _post_round_updates(season: Season, player_team, career: CareerState, transfer_messages):
@@ -168,7 +302,12 @@ def _prepare_live_games(season: Season, player_team):
             "away_goals": 0,
             "home_scorers": [],
             "away_scorers": [],
-            "attendance": _estimate_attendance(home, game["competition"]),
+            "attendance": _estimate_attendance(
+                home,
+                away,
+                game["competition"],
+                phase=game["ref"].phase if game["kind"] == "tie" else None,
+            ),
             "events_first": simulate_half(home, away, home_lineup, away_lineup, 0, 45, game["competition"]),
             "events_second": None,
         }
@@ -182,12 +321,32 @@ def _prepare_live_games(season: Season, player_team):
     return matchday, live_games
 
 
-def _estimate_attendance(home_team, competition: str = "Liga") -> int:
+def _is_classic(home_team, away_team) -> bool:
+    return frozenset((home_team.id, away_team.id)) in CLASSIC_PAIRS
+
+
+def _estimate_attendance(home_team, away_team, competition: str = "Liga", phase: str | None = None) -> int:
     capacity_estimate = home_team.stadium_capacity
     occupation = min(0.96, max(0.28, 0.42 + (home_team.prestige / 200)))
+    if _is_classic(home_team, away_team):
+        return capacity_estimate
+
     if competition == "Liga":
         occupation *= 1.25
-    return min(capacity_estimate, int(capacity_estimate * occupation))
+    else:
+        cup_weights = {
+            "primeira_fase": 1.10,
+            "oitavas": 1.20,
+            "quartas": 1.30,
+            "semi": 1.45,
+            "final": 1.65,
+        }
+        phase_key = (phase or "").strip().lower()
+        occupation *= cup_weights.get(phase_key, 1.08)
+        if phase_key == "final":
+            return capacity_estimate
+
+    return min(capacity_estimate, int(capacity_estimate * min(0.99, occupation)))
 
 
 def _team_color(team) -> str:
@@ -660,6 +819,7 @@ def _finalize_live_games(season: Season, live_games):
             away_goals=away_goals,
             home_scorers=home_scorers,
             away_scorers=away_scorers,
+            attendance=game.get("attendance", 0),
             events=first["events"] + second["events"],
             home_used=game["home_used"],
             away_used=game["away_used"],
@@ -758,6 +918,7 @@ def _play_live_matchday(season: Season, player_team):
 
 def run_game(season: Season, player_team, market: TransferMarket, career: CareerState):
     """Loop principal de uma temporada."""
+    _ensure_stars_in_all_teams(season.all_teams)
     if not hasattr(career, "back_to_main_menu"):
         career.back_to_main_menu = False
     while not season.season_over:
@@ -872,6 +1033,14 @@ def run_game(season: Season, player_team, market: TransferMarket, career: Career
             else:
                 show_transfer_market(market, player_team)
 
+        elif choice == "E":
+            # Treino
+            if unemployed:
+                print(YY + "\n  Sem clube no momento." + RST)
+                pause()
+            else:
+                player_team = show_training(player_team)
+
         elif choice == "A":
             # Artilheiros
             show_top_scorers(season)
@@ -918,6 +1087,11 @@ def _play_next_match(season: Season, player_team, market: TransferMarket):
         return {"messages": [], "player_played": False}
 
     has_player_game = _matchday_has_player_game(season, player_team)
+
+    # Aplica treino da rodada (uma vez por rodada do calendário).
+    training_messages = _apply_training_if_due(season, player_team) if player_team is not None else []
+    if training_messages:
+        show_notifications(training_messages, title="CENTRO DE TREINAMENTO")
 
     # Confirmação de postura
     if player_team is not None and has_player_game and not confirm_play(player_team.formation, player_team.postura):
@@ -980,7 +1154,7 @@ def _play_next_match(season: Season, player_team, market: TransferMarket):
         print(RR + "\n  💸 Salários mensais pagos!" + RST)
         pause()
 
-    return {"messages": transfer_messages, "player_played": info.get("player_result") is not None}
+    return {"messages": transfer_messages + training_messages, "player_played": info.get("player_result") is not None}
 
 
 def new_game():
@@ -1012,26 +1186,7 @@ def new_game():
             career.back_to_main_menu = False
             return
 
-        # Registra o histórico da temporada (se o jogador tinha um time)
-        if player_team is not None:
-            div_teams = [t for t in season.all_teams if t.division == player_team.division]
-            ranked = sorted(div_teams, key=lambda t: -t.div_points)
-            position = next((i + 1 for i, t in enumerate(ranked) if t.id == player_team.id), 0)
-
-            top_scorer = None
-            if season.top_scorers:
-                top_scorer = season.top_scorers[0]  # (name, team, goals)
-
-            history_entry = {
-                "year": season.year,
-                "team": player_team.name,
-                "division": player_team.division,
-                "position": position,
-                "copa_phase": player_team.copa_phase,
-                "top_scorer": top_scorer,
-                "copa_champion": season.copa_champion.name if season.copa_champion else None,
-            }
-            career.season_history.append(history_entry)
+        _record_season_history(season, player_team, career)
 
         end_firing = check_last_division_relegation_firing(season, career)
         if end_firing:
@@ -1078,26 +1233,7 @@ def main():
                             career.back_to_main_menu = False
                             break
 
-                        # Registra histórico da temporada (quando o jogador tiver clube)
-                        if pt is not None:
-                            div_teams = [t for t in season.all_teams if t.division == pt.division]
-                            ranked = sorted(div_teams, key=lambda t: -t.div_points)
-                            position = next((i + 1 for i, t in enumerate(ranked) if t.id == pt.id), 0)
-
-                            top_scorer = None
-                            if season.top_scorers:
-                                top_scorer = season.top_scorers[0]
-
-                            history_entry = {
-                                "year": season.year,
-                                "team": pt.name,
-                                "division": pt.division,
-                                "position": position,
-                                "copa_phase": pt.copa_phase,
-                                "top_scorer": top_scorer,
-                                "copa_champion": season.copa_champion.name if season.copa_champion else None,
-                            }
-                            career.season_history.append(history_entry)
+                        _record_season_history(season, pt, career)
 
                         end_firing = check_last_division_relegation_firing(season, career)
                         if end_firing:
