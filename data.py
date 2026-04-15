@@ -17,6 +17,14 @@ def _p(name, pos, age, nat, ovr, pac, tec, fin, pas, fis, def_, hea, gol):
 
 GK, DEF, MID, ATK = P.GK, P.DEF, P.MID, P.ATK
 BR = "Brasileiro"
+GENERIC_FIRST_NAMES = [
+    "Pedro", "Paulinho", "Roberto", "Carlos", "João", "Lucas", "Mateus",
+    "Rafael", "Bruno", "André", "Felipe", "Diego", "Renan", "Marcos",
+]
+GENERIC_LAST_NAMES = [
+    "Augusto", "Silva", "Souza", "Santos", "Oliveira", "Rocha", "Lima",
+    "Moura", "Pereira", "Costa", "Fernandes", "Ribeiro", "Teixeira", "Alves",
+]
 
 
 def _generic_team(
@@ -259,7 +267,7 @@ def create_all_teams():
         city="Rio de Janeiro", state="RJ",
         stadium="Maracanã", division=1, prestige=84,
         coach=Coach("Mano Menezes", BR, tactical=78, motivation=76, experience=88),
-        primary_color="dark_red", secondary_color="white"
+        primary_color="green", secondary_color="white"
     )
     fluminense.players = [
         _p("Fábio",             GK,  43, BR,           83, 48, 68, 25, 60, 70, 80, 58, 84),
@@ -996,7 +1004,42 @@ def apply_finances(teams):
 def create_teams():
     teams = create_all_teams()
     apply_finances(teams)
+    _ensure_minimum_rosters(teams, 25)
     return teams
+
+
+def _ensure_minimum_rosters(teams, minimum_players: int):
+    for team in teams:
+        while len(team.players) < minimum_players:
+            idx = len(team.players) + 1
+            if idx % 6 == 0:
+                position = GK
+            elif idx % 3 == 0:
+                position = DEF
+            elif idx % 3 == 1:
+                position = MID
+            else:
+                position = ATK
+            first = GENERIC_FIRST_NAMES[(idx + team.id) % len(GENERIC_FIRST_NAMES)]
+            last = GENERIC_LAST_NAMES[(idx * 2 + team.id) % len(GENERIC_LAST_NAMES)]
+            base = max(18, min(92, int(team.players[-1].overall if team.players else 50) - 2))
+            team.players.append(
+                _p(
+                    f"{first} {last}",
+                    position,
+                    23 + (idx % 9),
+                    BR,
+                    base,
+                    62 if position != GK else 48,
+                    64 if position != GK else 58,
+                    58 if position == ATK else 28,
+                    62 if position != GK else 48,
+                    66,
+                    64 if position != ATK else 48,
+                    60,
+                    base + 3 if position == GK else 10,
+                )
+            )
 
 
 def get_teams_by_division(teams, division: int):

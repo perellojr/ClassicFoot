@@ -22,16 +22,30 @@ def _poisson(lam: float) -> int:
 
 def select_starting_lineup(team: Team) -> List[Player]:
     """Escolhe os 11 titulares com base na formação atual."""
-    available = [p for p in team.players if p.suspenso <= 0 and p.condicao_fisica >= 40]
-    if len(available) < 11:
-        available = [p for p in team.players if p.suspenso <= 0] or list(team.players)
+    available = [p for p in team.players if p.suspenso <= 0]
+    if not available:
+        available = list(team.players)
 
     slots = team.formation.slots()
     lineup: List[Player] = []
     used_ids = set()
 
     def score(player: Player) -> float:
-        return player.overall + player.forma * 0.15 + player.moral * 0.10 + player.condicao_fisica * 0.08
+        # Contrato impacta motivação: 0 rodadas = muito motivado (+5%), 1-15 = normal, >15 = menos motivado (-3%)
+        contrato_bonus = 1.05 if player.contrato_rodadas == 0 else (1.00 if 1 <= player.contrato_rodadas <= 15 else 0.97)
+        return player.overall * contrato_bonus
+
+    if team.formation == Formation.BEST11:
+        gks = [p for p in available if p.position == Position.GK]
+        gks.sort(key=score, reverse=True)
+        if gks:
+            lineup.append(gks[0])
+            used_ids.add(gks[0].id)
+        leftovers = [p for p in available if p.id not in used_ids and p.position != Position.GK]
+        leftovers.sort(key=score, reverse=True)
+        lineup.extend(leftovers[: 11 - len(lineup)])
+        pos_order = {Position.GK: 0, Position.DEF: 1, Position.MID: 2, Position.ATK: 3}
+        return sorted(lineup[:11], key=lambda p: (pos_order.get(p.position, 9), -score(p), p.name))
 
     for position in [Position.GK, Position.DEF, Position.MID, Position.ATK]:
         needed = slots.get(position, 0)
@@ -44,7 +58,13 @@ def select_starting_lineup(team: Team) -> List[Player]:
     if len(lineup) < 11:
         leftovers = [p for p in available if p.id not in used_ids]
         leftovers.sort(key=score, reverse=True)
-        lineup.extend(leftovers[: 11 - len(lineup)])
+        for player in leftovers:
+            # Em qualquer tática, manter no máximo 1 goleiro entre os 11.
+            if player.position == Position.GK and any(p.position == Position.GK for p in lineup):
+                continue
+            lineup.append(player)
+            if len(lineup) >= 11:
+                break
 
     pos_order = {Position.GK: 0, Position.DEF: 1, Position.MID: 2, Position.ATK: 3}
     return sorted(lineup[:11], key=lambda p: (pos_order.get(p.position, 9), -score(p), p.name))
@@ -53,7 +73,7 @@ def select_starting_lineup(team: Team) -> List[Player]:
 def select_bench(team: Team, starters: List[Player], limit: int = 12) -> List[Player]:
     starter_ids = {p.id for p in starters}
     available = [p for p in team.players if p.id not in starter_ids and p.suspenso <= 0]
-    available.sort(key=lambda p: (-(p.overall + p.forma * 0.1 + p.condicao_fisica * 0.1), p.name))
+    available.sort(key=lambda p: (-p.overall, p.name))
     return available[:limit]
 
 
@@ -64,11 +84,11 @@ def _team_xg(team: Team, vs_defense: float, is_home: bool, lineup: List[Player] 
     - Força do elenco
     - Formação tática (viés ofensivo)
     - Postura (defensivo/equilibrado/ofensivo)
-    - Forma + moral dos jogadores
+    - Efeito do contrato (motivação)
     - Mando de campo
     """
     top11 = lineup[:] if lineup else sorted(
-        [p for p in team.players if p.suspenso == 0 and p.condicao_fisica >= 40],
+        [p for p in team.players if p.suspenso == 0],
         key=lambda p: p.overall, reverse=True
     )[:11]
     if not top11:
@@ -77,10 +97,17 @@ def _team_xg(team: Team, vs_defense: float, is_home: bool, lineup: List[Player] 
     atk = sum(p.attack_rating() for p in top11) / len(top11) if top11 else team.attack_strength()
     atk *= team.coach.bonus()
 
-    avg_forma  = sum(p.forma  for p in top11) / len(top11) if top11 else 70
-    avg_moral  = sum(p.moral  for p in top11) / len(top11) if top11 else 70
-    form_factor = ((avg_forma + avg_moral) / 2 - 60) / 200  # -0.3 a +0.2
-    atk = atk * (1 + form_factor)
+    # Efeito do contrato na performance
+    contract_effect = 0.0
+    for p in top11:
+        if p.contrato_rodadas == 0:
+            contract_effect += 1.05  # quer mostrar serviço
+        elif 1 <= p.contrato_rodadas <= 15:
+            contract_effect += 1.00  # normal
+        else:
+            contract_effect += 0.97  # contrato vencido, menos motivado
+    contract_factor = contract_effect / len(top11)
+    atk = atk * contract_factor
 
     # Formação
     atk = atk * team.formation.atk_bias()
@@ -100,7 +127,7 @@ def _team_xg(team: Team, vs_defense: float, is_home: bool, lineup: List[Player] 
 
 def _effective_defense(team: Team, is_home: bool, lineup: List[Player] | None = None) -> float:
     top11 = lineup[:] if lineup else sorted(
-        [p for p in team.players if p.suspenso == 0 and p.condicao_fisica >= 40],
+        [p for p in team.players if p.suspenso == 0],
         key=lambda p: p.overall, reverse=True
     )[:11]
     if not top11:
@@ -109,10 +136,17 @@ def _effective_defense(team: Team, is_home: bool, lineup: List[Player] | None = 
     dfs = sum(p.defense_rating() for p in top11) / len(top11) if top11 else team.defense_strength()
     dfs *= team.coach.bonus()
 
-    avg_forma = sum(p.forma  for p in top11) / len(top11) if top11 else 70
-    avg_moral = sum(p.moral  for p in top11) / len(top11) if top11 else 70
-    form_factor = ((avg_forma + avg_moral) / 2 - 60) / 200
-    dfs = dfs * (1 + form_factor)
+    # Efeito do contrato na performance
+    contract_effect = 0.0
+    for p in top11:
+        if p.contrato_rodadas == 0:
+            contract_effect += 1.05  # quer mostrar serviço
+        elif 1 <= p.contrato_rodadas <= 15:
+            contract_effect += 1.00  # normal
+        else:
+            contract_effect += 0.97  # contrato vencido, menos motivado
+    contract_factor = contract_effect / len(top11)
+    dfs = dfs * contract_factor
 
     dfs = dfs * team.formation.def_bias()
     _, def_mod = team.postura.modifiers()
@@ -131,14 +165,15 @@ def _weighted_scorers(players: List[Player], num_goals: int) -> List[Player]:
 
     weights = []
     for p in players:
+        base = max(1.0, float(p.overall))
         if p.position == Position.ATK:
-            w = p.shooting * 1.5 + p.heading * 0.5
+            w = base * 1.25
         elif p.position == Position.MID:
-            w = p.shooting * 0.7 + p.technique * 0.4
+            w = base * 1.00
         elif p.position == Position.DEF:
-            w = p.heading * 0.4 + p.technique * 0.15
+            w = base * 0.75
         else:
-            w = 0.5  # GK raramente marca
+            w = base * 0.15  # GK raramente marca
         weights.append(max(0.5, w))
 
     total = sum(weights)
@@ -170,18 +205,31 @@ def _generate_cards(players: List[Player], is_aggressor: bool = False):
                 p.suspenso = max(p.suspenso, 1)
 
 
-# ── Atualiza forma/moral ───────────────────────────────────────
-def _update_form_and_morale(players: List[Player], won: bool, drew: bool):
-    delta_forma  = 4 if won else (0 if drew else -3)
-    delta_moral  = 5 if won else (1 if drew else -4)
-    delta_cond   = -3  # desgaste físico
+# ── Atualiza OVR após partida (desgaste/recuperação) ────────────
+def _update_ovr_after_match(players: List[Player], players_used: List[Player], won: bool, drew: bool):
+    """
+    Titulares que jogaram: OVR desgastado (~-0.1 a -0.4, clamped a 97%)
+    Reservas que não jogaram: OVR melhora levemente com treinamento (+0.05 a +0.15, clamped a 101%)
+    """
+    used_ids = {p.id for p in players_used}
 
     for p in players:
-        p.forma         = max(10, min(99, p.forma  + delta_forma  + random.randint(-2, 2)))
-        p.moral         = max(10, min(99, p.moral  + delta_moral  + random.randint(-1, 2)))
-        p.condicao_fisica = max(30, min(100, p.condicao_fisica + delta_cond + random.randint(-2, 1)))
-        if p.suspenso > 0:
-            p.suspenso -= 1  # descontando jogo suspenso
+        if p.id in used_ids:
+            # Titular que jogou: desgaste
+            p.overall = max(p.overall - random.uniform(0.1, 0.4), p.overall * 0.97)
+        else:
+            # Reserve que não jogou: melhora com treinamento
+            p.overall = min(p.overall + random.uniform(0.05, 0.15), p.overall * 1.01)
+
+        # Clamp técnico somente para limites globais.
+        p.overall = round(max(10, min(99, p.overall)), 1)
+
+
+def _serve_suspensions(players: List[Player], players_used: List[Player]):
+    used_ids = {p.id for p in players_used}
+    for p in players:
+        if p.suspenso > 0 and p.id not in used_ids:
+            p.suspenso -= 1
 
 
 def _update_team_stats(home, away, hg, ag, competition):
@@ -301,17 +349,6 @@ def simulate_half(
                 "team_name": team.name,
                 "short_name": team.short_name,
             })
-        if lineup and random.random() < 0.08:
-            injured = random.choice(lineup)
-            events.append({
-                "minute": random.randint(minute_start, minute_end),
-                "side": side,
-                "type": "injury",
-                "player_name": injured.name,
-                "team_name": team.name,
-                "short_name": team.short_name,
-            })
-
     if home_red_player is not None:
         events.append({
             "minute": home_red_minute,
@@ -356,6 +393,7 @@ def finalize_match_result(
     away_goals: int,
     home_scorers: List[str],
     away_scorers: List[str],
+    events: List[dict] | None = None,
     home_used: List[Player] | None = None,
     away_used: List[Player] | None = None,
 ) -> MatchResult:
@@ -376,6 +414,17 @@ def finalize_match_result(
             player.gols_temp += 1
             player.gols_total += 1
 
+    red_events = [event for event in (events or []) if event.get("type") == "red"]
+    for event in red_events:
+        if event.get("side") == "home":
+            player = by_name_home.get(event.get("player_name"))
+        else:
+            player = by_name_away.get(event.get("player_name"))
+        if player:
+            player.vermelhos_temp += 1
+            player.vermelhos_total += 1
+            player.suspenso = max(player.suspenso, 1)
+
     _generate_cards(home_used)
     _generate_cards(away_used)
 
@@ -389,9 +438,16 @@ def finalize_match_result(
     won_home = home_goals > away_goals
     won_away = away_goals > home_goals
     drew = home_goals == away_goals
-    _update_form_and_morale(home_used, won=won_home, drew=drew)
-    _update_form_and_morale(away_used, won=won_away, drew=drew)
-    _apply_match_income(home)
+    _update_ovr_after_match(home.players, home_used, won=won_home, drew=drew)
+    _update_ovr_after_match(away.players, away_used, won=won_away, drew=drew)
+    _serve_suspensions(home.players, home_used)
+    _serve_suspensions(away.players, away_used)
+    match_income = _apply_match_income(home)
+    if competition == "Liga":
+        if home_goals > away_goals:
+            home.caixa += int(match_income * 0.50)
+        elif away_goals > home_goals:
+            away.caixa += int(match_income * 1.00)
     _update_team_stats(home, away, home_goals, away_goals, competition)
     _push_recent_result(home, home_goals, away_goals)
     _push_recent_result(away, away_goals, home_goals)
@@ -421,10 +477,13 @@ def simulate_match(
     """
     home_lineup = select_starting_lineup(home)
     away_lineup = select_starting_lineup(away)
+    home_used = list(home_lineup)
+    away_used = list(away_lineup)
     first_half = simulate_half(home, away, home_lineup, away_lineup, 0, 45, competition)
     home_lineup = _remove_sent_off_players(home_lineup, first_half["events"], "home")
     away_lineup = _remove_sent_off_players(away_lineup, first_half["events"], "away")
     second_half = simulate_half(home, away, home_lineup, away_lineup, 46, 90, competition)
+    all_events = first_half["events"] + second_half["events"]
 
     return finalize_match_result(
         home=home,
@@ -435,8 +494,9 @@ def simulate_match(
         away_goals=first_half["away_goals"] + second_half["away_goals"],
         home_scorers=first_half["home_scorers"] + second_half["home_scorers"],
         away_scorers=first_half["away_scorers"] + second_half["away_scorers"],
-        home_used=home_lineup,
-        away_used=away_lineup,
+        events=all_events,
+        home_used=home_used,
+        away_used=away_used,
     )
 
 
@@ -447,13 +507,52 @@ def _apply_match_income(home: Team):
     home.caixa += income
     # Paga salários no dia de jogo (simplificado: 1/4 do mensal)
     home.caixa -= max(0, home.salario_mensal // 4)
+    return income
+
+
+def simulate_penalty_series(team_a: Team, team_b: Team) -> Tuple[Team, Tuple[int, int], List[dict]]:
+    a_skill = team_a.squad_overall()
+    b_skill = team_b.squad_overall()
+    prob_a  = a_skill / max(a_skill + b_skill, 1)
+
+    a_score = 0
+    b_score = 0
+    log: List[dict] = []
+    round_num = 1
+
+    def kick(team: Team, side: str, sudden: bool = False) -> bool:
+        skill = a_skill if side == "a" else b_skill
+        chance = max(0.55, min(0.92, 0.72 + ((skill - 60) / 220)))
+        scored = random.random() < chance
+        log.append({
+            "round": round_num,
+            "team": team.name,
+            "side": side,
+            "scored": scored,
+            "sudden": sudden,
+        })
+        return scored
+
+    for round_num in range(1, 6):
+        if kick(team_a, "a"):
+            a_score += 1
+        if kick(team_b, "b"):
+            b_score += 1
+
+    while a_score == b_score:
+        round_num += 1
+        if kick(team_a, "a", sudden=True):
+            a_score += 1
+        if kick(team_b, "b", sudden=True):
+            b_score += 1
+
+    winner = team_a if a_score > b_score else team_b
+    return winner, (a_score, b_score), log
 
 
 def simulate_penalty_shootout(team_a: Team, team_b: Team) -> Team:
-    a_skill = team_a.squad_overall()
-    b_skill = team_b.squad_overall()
-    prob_a  = a_skill / (a_skill + b_skill)
-    return team_a if random.random() < prob_a else team_b
+    winner, _, _ = simulate_penalty_series(team_a, team_b)
+    return winner
 
 
 def simulate_all_fixtures_in_round(fixtures) -> List[MatchResult]:

@@ -133,6 +133,8 @@ def check_player_firing(all_teams: List[Team], career: CareerState) -> str | Non
     team = current_player_team(career, all_teams)
     if team is None:
         return None
+    if getattr(career, "games_in_charge", 0) < 5:
+        return None
 
     position = _team_position(team, all_teams)
     division_teams = [club for club in all_teams if club.division == team.division]
@@ -175,9 +177,26 @@ def generate_player_offers(all_teams: List[Team], career: CareerState) -> List[T
     player_team = current_player_team(career, all_teams)
 
     if career.unemployed:
+        rep = career.player_coach.reputation
+        if rep >= 85:
+            best_allowed_division = 1
+        elif rep >= 75:
+            best_allowed_division = 2
+        elif rep >= 65:
+            best_allowed_division = 3
+        else:
+            best_allowed_division = 4
+
+        # Se acabou de ser demitido, não pode "subir degraus" de divisão imediatamente.
+        fired_team = next((team for team in all_teams if team.id == career.last_fired_team_id), None)
+        if career.fired and fired_team is not None:
+            best_allowed_division = max(best_allowed_division, fired_team.division)
+
         candidates = sorted(all_teams, key=lambda team: (team.division, -team.prestige))
         for team in candidates:
             if career.last_fired_team_id == team.id:
+                continue
+            if team.division < best_allowed_division:
                 continue
             if team.coach.name.startswith("Interino") or _team_pressure(team, all_teams) >= 5:
                 offers.append(team)
@@ -227,6 +246,7 @@ def accept_player_offer(target_team: Team, all_teams: List[Team], career: Career
     career.unemployed = False
     career.fired = False
     career.last_fired_team_id = None
+    career.games_in_charge = 0
 
     notifications.append(f"{career.player_coach.name} aceitou proposta do {target_team.name}.")
     notifications.append(f"{old_target_coach.name} deixou o comando do {target_team.name}.")

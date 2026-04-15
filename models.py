@@ -2,7 +2,7 @@
 ClassicFoot - Modelos de dados do jogo
 """
 from dataclasses import dataclass, field
-from typing import List, Optional
+from typing import List, Optional, Tuple, Set
 from enum import Enum
 import math
 import random
@@ -23,6 +23,7 @@ class Formation(Enum):
     F451 = "4-5-1"
     F4231 = "4-2-3-1"
     F343 = "3-4-3"
+    BEST11 = "BEST XI"
 
     def slots(self) -> dict:
         """Retorna quantos jogadores em cada posição."""
@@ -34,6 +35,7 @@ class Formation(Enum):
             Formation.F451:  {Position.GK:1, Position.DEF:4, Position.MID:5, Position.ATK:1},
             Formation.F4231: {Position.GK:1, Position.DEF:4, Position.MID:5, Position.ATK:1},
             Formation.F343:  {Position.GK:1, Position.DEF:3, Position.MID:4, Position.ATK:3},
+            Formation.BEST11: {Position.GK:1, Position.DEF:0, Position.MID:0, Position.ATK:0},
         }
         return mapping[self]
 
@@ -47,6 +49,7 @@ class Formation(Enum):
             Formation.F451:  0.92,
             Formation.F4231: 1.05,
             Formation.F343:  1.14,
+            Formation.BEST11: 1.04,
         }[self]
 
     def def_bias(self) -> float:
@@ -59,6 +62,7 @@ class Formation(Enum):
             Formation.F451:  1.10,
             Formation.F4231: 0.98,
             Formation.F343:  0.88,
+            Formation.BEST11: 0.96,
         }[self]
 
 
@@ -94,10 +98,6 @@ class Player:
     heading: int     # CAB
     goalkeeping: int # GOL (só para goleiros)
 
-    # Atributos dinâmicos (0-100)
-    forma: int = 70           # forma atual (sobe/desce com resultados)
-    moral: int = 70           # moral/humor (afeta desempenho)
-    condicao_fisica: int = 95 # condição física (cai após partidas)
 
     # Finanças
     salario: int = 100        # salário mensal em R$ mil
@@ -109,49 +109,27 @@ class Player:
 
     # Estatísticas da TEMPORADA
     gols_temp: int = 0
-    assist_temp: int = 0
     partidas_temp: int = 0
     amarelos_temp: int = 0
     vermelhos_temp: int = 0
 
     # Estatísticas TOTAIS (carreira)
     gols_total: int = 0
-    assist_total: int = 0
     partidas_total: int = 0
     amarelos_total: int = 0
     vermelhos_total: int = 0
+    season_base_ovr: float | None = None
 
     def pos_label(self) -> str:
         return self.position.value
 
     def attack_rating(self) -> float:
-        """Contribuição para o ataque"""
-        pos = self.position
-        if pos == Position.ATK:
-            return (self.shooting * 0.38 + self.technique * 0.28
-                    + self.pace * 0.20 + self.heading * 0.14)
-        elif pos == Position.MID:
-            return (self.shooting * 0.22 + self.technique * 0.30
-                    + self.passing * 0.28 + self.pace * 0.20)
-        elif pos == Position.DEF:
-            return (self.technique * 0.25 + self.passing * 0.50
-                    + self.heading * 0.25)
-        else:  # GK
-            return 0.0
+        """Contribuição ofensiva baseada somente em OVR."""
+        return float(self.overall)
 
     def defense_rating(self) -> float:
-        """Contribuição para a defesa"""
-        pos = self.position
-        if pos == Position.GK:
-            return float(self.goalkeeping)
-        elif pos == Position.DEF:
-            return (self.defending * 0.50 + self.physical * 0.25
-                    + self.heading * 0.25)
-        elif pos == Position.MID:
-            return (self.defending * 0.45 + self.physical * 0.28
-                    + self.technique * 0.27)
-        else:  # ATK
-            return self.defending * 0.60 + self.physical * 0.40
+        """Contribuição defensiva baseada somente em OVR."""
+        return float(self.overall)
 
 
 @dataclass
@@ -192,6 +170,10 @@ class Team:
     torcida: int = 1_000_000      # número de torcedores
     caixa: int = 50_000           # caixa em R$ mil
     salario_mensal: int = 5_000   # folha salarial mensal em R$ mil
+    stadium_level: int = 1        # nível de upgrade do estádio (1-5)
+    loan_balance: int = 0
+    loan_monthly_payment: int = 0
+    loan_months_left: int = 0
 
     # Estatísticas da divisão (temporada)
     div_wins: int = 0
@@ -270,8 +252,8 @@ class Team:
         self.copa_gf = self.copa_ga = 0
         self.copa_phase = "grupos"
         for p in self.players:
-            p.goals = p.assists = p.matches = 0
-            p.yellow_cards = p.red_cards = 0
+            p.gols_temp = p.partidas_temp = 0
+            p.amarelos_temp = p.vermelhos_temp = 0
 
 
 @dataclass
@@ -329,6 +311,8 @@ class CupTie:
     leg1: Optional[MatchResult] = None
     leg2: Optional[MatchResult] = None
     single_leg: bool = True  # fase final: jogo único
+    penalty_winner_id: Optional[int] = None
+    penalty_score: Optional[Tuple[int, int]] = None
 
     def aggregate(self):
         """Retorna (gols_a, gols_b) no agregado"""
@@ -348,7 +332,13 @@ class CupTie:
         if self.single_leg:
             if self.leg1 is None:
                 return None
-            return self.leg1.winner()
+            if self.leg1.winner() is not None:
+                return self.leg1.winner()
+            if self.penalty_winner_id == self.team_a.id:
+                return self.team_a
+            if self.penalty_winner_id == self.team_b.id:
+                return self.team_b
+            return None
         if self.leg1 is None or self.leg2 is None:
             return None
         a, b = self.aggregate()
@@ -356,15 +346,15 @@ class CupTie:
             return self.team_a
         elif b > a:
             return self.team_b
-        # Empate no agregado → gols fora ou pênaltis
-        away_a = self.leg2.away_goals  # gols de team_a na casa de team_b
-        away_b = self.leg1.away_goals  # gols de team_b na casa de team_a
-        if away_a > away_b:
+        if self.penalty_winner_id == self.team_a.id:
             return self.team_a
-        elif away_b > away_a:
+        elif self.penalty_winner_id == self.team_b.id:
             return self.team_b
-        # Penaltis simulados
-        return random.choice([self.team_a, self.team_b])
+        return None
+
+    def set_penalty_winner(self, winner: 'Team', score: Tuple[int, int] | None = None):
+        self.penalty_winner_id = winner.id
+        self.penalty_score = score
 
 
 @dataclass
@@ -376,3 +366,7 @@ class CareerState:
     last_fired_team_id: int | None = None
     free_coaches: List[Coach] = field(default_factory=list)
     notifications: List[str] = field(default_factory=list)
+    seen_notifications: Set[str] = field(default_factory=set)
+    games_in_charge: int = 0
+    back_to_main_menu: bool = False
+    season_history: List[dict] = field(default_factory=list)

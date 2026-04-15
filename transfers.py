@@ -37,13 +37,21 @@ class AuctionItem:
         Retorna (mensagem, valor_final).
         """
         self.resolved = True
+        if len(self.origin_team.players) <= 16:
+            self.player.salario = int(self.player.salario * 1.30)
+            self.player.contrato_rodadas = 20
+            return (
+                f"{self.origin_team.name} manteve {self.player.name} para preservar elenco mínimo (16). "
+                f"Renovação automática por 20 rodadas com salário de R${self.player.salario:,} mil/mês.",
+                0,
+            )
         if self.current_bidder is None:
             # Ninguém fez oferta → renova com origem
             self.player.salario = int(self.player.salario * 1.20)
             self.player.contrato_rodadas = 12
             return (
                 f"Nenhuma proposta. {self.player.name} renova com "
-                f"{self.origin_team.short_name} por +20% (R${self.player.salario:,} mil/mês).",
+                f"{self.origin_team.name} por +20% (R${self.player.salario:,} mil/mês).",
                 0,
             )
         else:
@@ -56,7 +64,7 @@ class AuctionItem:
             self.player.contrato_rodadas = 16
             self.origin_team.caixa += self.current_bid
             return (
-                f"{buyer.short_name} contratou {self.player.name} por "
+                f"{buyer.name} contratou {self.player.name} por "
                 f"R${self.current_bid:,} mil (salário: R${self.player.salario:,} mil/mês).",
                 self.current_bid,
             )
@@ -70,7 +78,8 @@ class TransferMarket:
     def generate_auctions(self, all_teams: List[Team]) -> List[AuctionItem]:
         """
         Gera leilões para jogadores com contrato expirando (0 rodadas).
-        1 a 3 jogadores por rodada.
+        Goleiro é protegido: se for o único, renova automaticamente.
+        1 a 3 leilões simultâneos para não sobrecarregar.
         """
         expired = []
         for team in all_teams:
@@ -79,10 +88,33 @@ class TransferMarket:
                 if p.contrato_rodadas == 0:
                     expired.append((team, p))
 
-        # Máximo de 3 leilões simultâneos para não sobrecarregar
+        # Proteção do goleiro: garante que cada time tenha ao menos 1 GK
+        # Se todos os GKs de um time expiraram, o melhor deles é renovado automaticamente
+        from collections import defaultdict
+        expiring_gks_by_team: dict = defaultdict(list)
+        for team, p in expired:
+            if p.position == Position.GK:
+                expiring_gks_by_team[team.id].append((team, p))
+
+        protected = set()
+        for team_id, gk_list in expiring_gks_by_team.items():
+            team = gk_list[0][0]
+            active_gks = [p for p in team.players
+                          if p.position == Position.GK and p.contrato_rodadas > 0]
+            if not active_gks:
+                # Nenhum GK com contrato ativo → protege o de maior OVR
+                best_gk = max(gk_list, key=lambda x: x[1].overall)[1]
+                best_gk.salario = int(best_gk.salario * 1.15)
+                best_gk.contrato_rodadas = 20
+                protected.add(id(best_gk))
+
+        expired = [(t, p) for (t, p) in expired if id(p) not in protected]
+
+        # Quantidade aleatória de leilões simultâneos para variar a rodada
         random.shuffle(expired)
         new_auctions = []
-        for team, p in expired[:3]:
+        lot_count = random.randint(1, min(5, len(expired))) if expired else 0
+        for team, p in expired[:lot_count]:
             base = int(p.valor_mercado * 0.50)
             auction = AuctionItem(
                 player=p,
@@ -106,13 +138,13 @@ class TransferMarket:
                 t for t in all_teams
                 if t.id != auction.origin_team.id
                 and t.caixa > auction.current_bid * 1.2
-                and len(t.players) < 30
+                and len(t.players) < 45
             ]
             random.shuffle(candidates)
-            for club in candidates[:4]:    # máx 4 clubes tentam
+            for club in candidates[:8]:    # mais clubes tentam para aquecer o mercado
                 need = _club_needs_position(club, player.position)
                 budget_factor = club.caixa / max(auction.current_bid, 1)
-                if need and budget_factor > 1.3:
+                if (need and budget_factor > 1.15) or (budget_factor > 2.2 and random.random() < 0.45):
                     # Faz proposta com 10-25% de incremento
                     increment = random.uniform(0.10, 0.25)
                     bid = int(auction.current_bid * (1 + increment))
@@ -185,28 +217,42 @@ def negotiate_contract(player: Player, offered_salary: int) -> Tuple[bool, str]:
 
 def run_immediate_contract_auction(player: Player, origin_team: Team, all_teams: List[Team]) -> List[str]:
     """
-    Coloca o jogador imediatamente em leilão após recusa de renovação.
-    Se ninguém comprar, ele renova automaticamente com 20% menos por 15 rodadas.
+    Após recusa de renovação, aplica renovação automática forçada.
     """
-    auction = AuctionItem(
-        player=player,
-        origin_team=origin_team,
-        base_bid=int(player.valor_mercado * 0.50),
-        current_bid=int(player.valor_mercado * 0.50),
-    )
+    player.salario = max(30, int(player.salario * 1.30))
+    player.contrato_rodadas = 20
+    return [
+        f"{player.name} recusou a proposta. Renovação automática com o {origin_team.name}: "
+        f"20 rodadas e salário ajustado para R${player.salario:,} mil/mês."
+    ]
 
-    market = TransferMarket(auctions=[auction])
-    market.ai_bidding(all_teams)
 
-    if auction.current_bidder is None:
-        player.salario = max(30, int(player.salario * 0.80))
-        player.contrato_rodadas = 15
-        msg = (
-            f"Nenhum clube levou {player.name} no leilão imediato. "
-            f"Ele renovou automaticamente com o {origin_team.short_name} por 15 rodadas "
-            f"com salário reduzido para R${player.salario:,} mil/mês."
+def sell_player_to_club(player: Player, origin_team: Team, all_teams: List[Team]) -> Tuple[bool, str, Optional[Team]]:
+    if len(origin_team.players) <= 16:
+        return False, f"Não é possível vender {player.name}: elenco mínimo de 16 jogadores.", None
+    candidates = [
+        team for team in all_teams
+        if team.id != origin_team.id
+        and team.caixa >= player.valor_mercado
+        and len(team.players) < 45
+    ]
+    random.shuffle(candidates)
+    candidates.sort(
+        key=lambda team: (
+            not _club_needs_position(team, player.position),
+            team.division,
+            -team.caixa,
         )
-        return [msg]
+    )
+    buyer = candidates[0] if candidates else None
+    if buyer is None:
+        return False, f"Nenhum clube apresentou proposta por {player.name}.", None
 
-    msg, _ = auction.resolve()
-    return [msg]
+    origin_team.players.remove(player)
+    buyer.players.append(player)
+    buyer.caixa -= player.valor_mercado
+    origin_team.caixa += player.valor_mercado
+    player.contrato_rodadas = 16
+    player.salario = int(player.salario * 1.10)
+    message = f"{player.name} foi vendido para o {buyer.name} por R${player.valor_mercado:,} mil."
+    return True, message, buyer

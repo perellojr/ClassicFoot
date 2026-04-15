@@ -19,22 +19,23 @@ from manager_market import (
     process_coach_market,
 )
 from models import CareerState, Coach, Postura
-from engine import finalize_match_result, select_bench, select_starting_lineup, simulate_half
+from engine import finalize_match_result, select_bench, select_starting_lineup, simulate_half, simulate_penalty_series
 from season import Season, advance_season_after_matchday, create_season, play_matchday, pay_monthly_salaries
 from transfers import TransferMarket
-from transfers import negotiate_contract, run_immediate_contract_auction
+from transfers import negotiate_contract, run_immediate_contract_auction, sell_player_to_club
 from ui import (
     banner, main_menu, season_dashboard, game_menu,
     show_standings, show_copa, show_tactics, show_finances,
-    show_torcida, show_stadium, show_next_round, choose_postura,
+    show_torcida, show_stadium, show_next_round, choose_postura, show_calendar,
     show_transfer_market, show_top_scorers, show_match_result, prompt_contract_renewal,
     show_season_end, show_credits, confirm_play, show_notifications, prompt_job_offer,
+    prompt_sell_player, show_history,
 )
 from save import save_game, load_game, save_exists
 from term import BB, C, G, GG, RR, R, RST, W, WW, Y, YY, DIM, Table, pause, clear, rule, pad
 
 YEAR_START = 2025
-HALF_DURATION_SECONDS = float(os.getenv("CLASSICFOOT_HALF_DURATION_SECONDS", "27"))
+HALF_DURATION_SECONDS = float(os.getenv("CLASSICFOOT_HALF_DURATION_SECONDS", "21.9"))
 
 
 def _prompt_nonempty(label: str) -> str:
@@ -69,9 +70,12 @@ def _assign_random_last_division_team(teams, coach: Coach):
 
 
 def _append_notifications(career: CareerState, messages):
+    if not hasattr(career, "seen_notifications"):
+        career.seen_notifications = set()
     for message in messages:
-        if message:
+        if message and message not in career.seen_notifications:
             career.notifications.append(message)
+            career.seen_notifications.add(message)
 
 
 def _post_round_updates(season: Season, player_team, career: CareerState, transfer_messages):
@@ -86,7 +90,7 @@ def _post_round_updates(season: Season, player_team, career: CareerState, transf
         offers = generate_player_offers(season.all_teams, career)
         if offers:
             for offer in offers:
-                accepted = prompt_job_offer(career.player_coach.name, offer)
+                accepted = prompt_job_offer(career.player_coach.name, offer, season.all_teams)
                 if accepted:
                     player_team, messages = accept_player_offer(offer, season.all_teams, career)
                     show_notifications(messages, title="MERCADO DE TREINADORES")
@@ -97,7 +101,7 @@ def _post_round_updates(season: Season, player_team, career: CareerState, transf
     offers = generate_player_offers(season.all_teams, career)
     if offers:
         for offer in offers:
-            accepted = prompt_job_offer(career.player_coach.name, offer)
+            accepted = prompt_job_offer(career.player_coach.name, offer, season.all_teams)
             if accepted:
                 player_team, messages = accept_player_offer(offer, season.all_teams, career)
                 _append_notifications(career, messages)
@@ -126,7 +130,7 @@ def _collect_current_match_objects(season: Season, player_team):
             "competition": fixture.competition,
             "is_player": player_team is not None and (fixture.home_team.id == player_team.id or fixture.away_team.id == player_team.id),
         })
-    for tie in matchday.get("ties", []):
+    for tie in (matchday.get("ties") or []):
         home = tie.team_a if cup_leg == 1 or tie.single_leg else tie.team_b
         away = tie.team_b if cup_leg == 1 or tie.single_leg else tie.team_a
         games.append({
@@ -136,6 +140,7 @@ def _collect_current_match_objects(season: Season, player_team):
             "away": away,
             "competition": "Copa",
             "cup_leg": cup_leg,
+            "first_leg_result": tie.leg1 if cup_leg == 2 and not tie.single_leg else None,
             "is_player": player_team is not None and (tie.team_a.id == player_team.id or tie.team_b.id == player_team.id),
         })
     return matchday, games
@@ -163,25 +168,25 @@ def _prepare_live_games(season: Season, player_team):
             "away_goals": 0,
             "home_scorers": [],
             "away_scorers": [],
-            "attendance": _estimate_attendance(home),
+            "attendance": _estimate_attendance(home, game["competition"]),
             "events_first": simulate_half(home, away, home_lineup, away_lineup, 0, 45, game["competition"]),
             "events_second": None,
         }
         _apply_red_card_effects(live_game, "events_first")
-        _apply_auto_injury_substitutions(live_game, "events_first")
         if not game["is_player"]:
             live_game["events_second"] = simulate_half(
                 home, away, live_game["home_lineup"], live_game["away_lineup"], 46, 90, game["competition"]
             )
             _apply_red_card_effects(live_game, "events_second")
-            _apply_auto_injury_substitutions(live_game, "events_second")
         live_games.append(live_game)
     return matchday, live_games
 
 
-def _estimate_attendance(home_team) -> int:
+def _estimate_attendance(home_team, competition: str = "Liga") -> int:
     capacity_estimate = home_team.stadium_capacity
     occupation = min(0.96, max(0.28, 0.42 + (home_team.prestige / 200)))
+    if competition == "Liga":
+        occupation *= 1.25
     return min(capacity_estimate, int(capacity_estimate * occupation))
 
 
@@ -244,24 +249,41 @@ def _score_at_minute(live_game, minute: int):
     return home_goals, away_goals, recent[-8:]
 
 
+def _first_leg_text(game) -> str | None:
+    first_leg = game.get("first_leg_result")
+    if first_leg is None:
+        return None
+    # Exibe na ordem dos times da linha atual (mandante da volta x visitante da volta).
+    return f"{first_leg.away_goals}x{first_leg.home_goals}"
+
+
+def _aggregate_text(game, minute: int) -> str | None:
+    first_leg = game.get("first_leg_result")
+    if first_leg is None:
+        return None
+    home_goals, away_goals, _ = _score_at_minute(game, minute)
+    # Agregado também na ordem dos times da linha atual (volta: team_b x team_a).
+    agg_home = first_leg.away_goals + home_goals
+    agg_away = first_leg.home_goals + away_goals
+    return f"{agg_home}x{agg_away}"
+
+
 def _latest_event_text(events):
     if not events:
-        return DIM + "sem lance capital" + RST
+        return ""
     event = events[-1]
     prefix = f"{event['minute']:>2}' "
     event_type = event.get("type", "goal" if event.get("scorer") or event.get("player_name") else "event")
     player_name = event.get("player_name") or event.get("scorer") or "evento"
     if event_type == "goal":
-        return GG + prefix + RST + WW + f"{player_name}" + RST
+        return GG + prefix + RST + WW + f"{_fit_text(player_name, 46)}" + RST
     if event_type == "yellow":
-        return YY + prefix + RST + WW + f"cartão: {player_name}" + RST
+        return YY + prefix + RST + WW + f"cartão: {_fit_text(player_name, 40)}" + RST
     if event_type == "red":
-        return RR + prefix + RST + WW + f"expulso: {player_name}" + RST
-    if event_type == "injury":
-        return RR + prefix + RST + WW + f"lesão: {player_name}" + RST
+        return RR + prefix + RST + WW + f"expulso: {_fit_text(player_name, 39)}" + RST
     if event_type == "substitution":
-        return BB + prefix + RST + WW + f"sub: {player_name}" + RST
-    return WW + prefix + player_name + RST
+        return BB + prefix + RST + WW + f"sub: {_fit_text(player_name, 43)}" + RST
+    return WW + prefix + _fit_text(player_name, 46) + RST
 
 
 def _apply_red_card_effects(live_game, events_key: str):
@@ -286,13 +308,37 @@ def _apply_red_card_effects(live_game, events_key: str):
         lineup.remove(player)
         live_game[lineup_key] = lineup
 
+        # Em caso de expulsão do goleiro, faz troca automática se houver reservas.
+        if getattr(player, "position", None) is not None and player.position.name == "GK":
+            bench_key = f"{side}_bench"
+            used_key = f"{side}_used"
+            subs_key = f"{side}_subs_used"
+            if live_game[subs_key] < 5 and live_game[bench_key]:
+                replacement = _pick_injury_replacement(live_game[bench_key], player)
+                if replacement is not None:
+                    bench = list(live_game[bench_key])
+                    bench.remove(replacement)
+                    live_game[lineup_key].append(replacement)
+                    live_game[bench_key] = bench
+                    live_game[used_key].append(replacement)
+                    live_game[subs_key] += 1
+                    package["events"].append({
+                        "minute": event["minute"],
+                        "side": side,
+                        "type": "substitution",
+                        "player_name": f"{replacement.name} no lugar de {player.name}",
+                        "team_name": event.get("team_name"),
+                        "short_name": event.get("short_name"),
+                    })
+    package["events"].sort(key=lambda e: (e.get("minute", 0), 0 if e.get("type") != "substitution" else 1))
+
 
 def _pick_injury_replacement(bench, injured_player):
     if not bench:
         return None
     same_position = [player for player in bench if player.position == injured_player.position]
     pool = same_position or list(bench)
-    pool.sort(key=lambda player: (player.overall, player.forma, player.condicao_fisica), reverse=True)
+    pool.sort(key=lambda player: player.overall, reverse=True)
     return pool[0]
 
 
@@ -359,6 +405,12 @@ def _fit_team_name(name: str, limit: int = 17) -> str:
     return name[: limit - 1].rstrip() + "…"
 
 
+def _fit_text(text: str, limit: int = 40) -> str:
+    if len(text) <= limit:
+        return text
+    return text[: limit - 1].rstrip() + "…"
+
+
 def _format_live_fixture(home_team, away_team, home_goals: int, away_goals: int) -> str:
     home_name = pad(_fit_team_name(home_team.name, 18), 18)
     away_name = pad(_fit_team_name(away_team.name, 18), 18)
@@ -370,6 +422,39 @@ def _format_live_fixture(home_team, away_team, home_goals: int, away_goals: int)
         + " "
         + _paint_team(away_team, away_name)
     )
+
+
+def _current_aggregate(focus_game, minute: int):
+    first_leg = focus_game.get("first_leg_result")
+    if first_leg is None:
+        return None
+    home_goals, away_goals, _ = _score_at_minute(focus_game, minute)
+    team_a_total = first_leg.home_goals + away_goals
+    team_b_total = first_leg.away_goals + home_goals
+    return team_a_total, team_b_total
+
+
+def _render_penalty_shootout(focus_game):
+    penalties = focus_game.get("penalties")
+    if not penalties:
+        return
+    clear()
+    print(rule("DISPUTA DE PÊNALTIS"))
+    print()
+    print(pad(_format_live_fixture(focus_game["home"], focus_game["away"], focus_game["final_home_goals"], focus_game["final_away_goals"]), 100, "c"))
+    print()
+    for kick in penalties["log"]:
+        side_team = focus_game["home"] if kick["side"] == "home" else focus_game["away"]
+        result = GG + "GOL" + RST if kick["scored"] else RR + "ERROU" + RST
+        sudden = "  (morte súbita)" if kick.get("sudden") else ""
+        print(f"  {YY}{kick['round']:>2}ª cobrança{RST}  {side_team.name:<24}  {result}{sudden}")
+        time.sleep(0.5)
+    print()
+    pen_home, pen_away = penalties["score"]
+    winner = penalties["winner"]
+    print(C + f"  Pênaltis: {focus_game['home'].name} {pen_home} x {pen_away} {focus_game['away'].name}" + RST)
+    print(GG + f"  Classificado: {winner.name}" + RST)
+    pause()
 
 
 def _time_progress_bar(minute: int, phase: str) -> str:
@@ -397,9 +482,13 @@ def _render_live_scores(label: str, minute: int, live_games, focus_game=None, ph
     ordered_keys = sorted([k for k in grouped if isinstance(k, int)]) + [k for k in grouped if not isinstance(k, int)]
     for key in ordered_keys:
         title = _division_label(key) if isinstance(key, int) else str(key)
+        show_first_leg_column = any(_first_leg_text(game) for game in grouped[key])
         tbl = Table(title=title, border_color=C, header_color=YY, title_color=C)
-        tbl.add_column("Jogo", width=52, align="l", color=WW)
-        tbl.add_column("Lance Capital", width=38, align="l", color=WW)
+        tbl.add_column("Jogo", width=50, align="l", color=WW)
+        tbl.add_column("Lance Capital", width=42, align="l", color=WW)
+        if show_first_leg_column:
+            tbl.add_column("Ida", width=10, align="c", color=DIM)
+            tbl.add_column("Agregado", width=10, align="c", color=YY)
         tbl.add_column("Público", width=10, align="r", color=G)
 
         for game in grouped[key]:
@@ -409,16 +498,45 @@ def _render_live_scores(label: str, minute: int, live_games, focus_game=None, ph
                 game_str = GG + "► " + RST + game_str
             else:
                 game_str = "  " + game_str
-            tbl.add_row(
-                game_str,
-                _latest_event_text(recent),
-                f"{game['attendance']:,}",
-            )
+            capital = _latest_event_text(recent)
+            first_leg = _first_leg_text(game)
+            if show_first_leg_column:
+                tbl.add_row(
+                    game_str,
+                    _fit_text(capital, 40) if capital else "",
+                    first_leg or "",
+                    _aggregate_text(game, minute) or "",
+                    f"{game['attendance']:,}",
+                )
+            else:
+                tbl.add_row(
+                    game_str,
+                    _fit_text(capital, 40) if capital else "",
+                    f"{game['attendance']:,}",
+                )
         tbl.print()
         print()
 
     if focus_game:
         print(C + f"  Seu jogo: {focus_game['home'].name} x {focus_game['away'].name}" + RST)
+        if focus_game.get("first_leg_result") is not None:
+            ida = focus_game["first_leg_result"]
+            agg = _current_aggregate(focus_game, minute)
+            if agg is not None:
+                print(DIM + f"  Ida: {ida.home_team.name} {ida.home_goals}x{ida.away_goals} {ida.away_team.name}  │  Agregado: {focus_game['ref'].team_a.name} {agg[0]}x{agg[1]} {focus_game['ref'].team_b.name}" + RST)
+
+
+def _matchday_has_player_game(season: Season, player_team) -> bool:
+    if player_team is None or season.current_matchday >= len(season.calendar):
+        return False
+    matchday = season.calendar[season.current_matchday]
+    for fixture in matchday.get("fixtures", []):
+        if fixture.home_team.id == player_team.id or fixture.away_team.id == player_team.id:
+            return True
+    for tie in (matchday.get("ties") or []):
+        if tie.team_a.id == player_team.id or tie.team_b.id == player_team.id:
+            return True
+    return False
 
 
 def _render_substitution_screen(player_team, live_game, lineup, bench, subs_done: int):
@@ -435,9 +553,8 @@ def _render_substitution_screen(player_team, live_game, lineup, bench, subs_done
     starters.add_column("Nome", width=22, align="l", color=WW)
     starters.add_column("Pos", width=5, align="c", color=C)
     starters.add_column("OVR", width=5, align="c", color=YY)
-    starters.add_column("FIS", width=5, align="c", color=GG)
     for idx, player in enumerate(lineup, start=1):
-        starters.add_row(str(idx), player.name, player.pos_label(), str(player.overall), str(player.condicao_fisica))
+        starters.add_row(str(idx), player.name, player.pos_label(), str(int(round(player.overall))))
     starters.print()
 
     print()
@@ -446,9 +563,8 @@ def _render_substitution_screen(player_team, live_game, lineup, bench, subs_done
     reserves.add_column("Nome", width=22, align="l", color=WW)
     reserves.add_column("Pos", width=5, align="c", color=C)
     reserves.add_column("OVR", width=5, align="c", color=YY)
-    reserves.add_column("FIS", width=5, align="c", color=GG)
     for idx, player in enumerate(bench, start=1):
-        reserves.add_row(str(idx), player.name, player.pos_label(), str(player.overall), str(player.condicao_fisica))
+        reserves.add_row(str(idx), player.name, player.pos_label(), str(int(round(player.overall))))
     reserves.print()
     print()
 
@@ -483,6 +599,17 @@ def _handle_halftime_substitutions(player_team, live_game):
 
         leaving = lineup[out_idx]
         entering = bench.pop(in_idx)
+
+        # Regra rígida: sempre exatamente 1 goleiro em campo.
+        # Não pode entrar goleiro no lugar de jogador de linha nem sair goleiro para entrar jogador de linha.
+        if (leaving.position.name == "GK" and entering.position.name != "GK") or (
+            leaving.position.name != "GK" and entering.position.name == "GK"
+        ):
+            print(RR + "\n  Substituição inválida: o time deve manter exatamente 1 goleiro em campo." + RST)
+            time.sleep(1.2)
+            bench.insert(in_idx, entering)
+            continue
+
         lineup[out_idx] = entering
         live_game[used_key].append(entering)
         subs_done += 1
@@ -533,6 +660,7 @@ def _finalize_live_games(season: Season, live_games):
             away_goals=away_goals,
             home_scorers=home_scorers,
             away_scorers=away_scorers,
+            events=first["events"] + second["events"],
             home_used=game["home_used"],
             away_used=game["away_used"],
         )
@@ -572,9 +700,50 @@ def _play_live_matchday(season: Season, player_team):
             focus_game["competition"],
         )
         _apply_red_card_effects(focus_game, "events_second")
-        _apply_auto_injury_substitutions(focus_game, "events_second")
 
     _play_live_half(matchday["label"], "2º TEMPO", 46, 90, live_games, focus_game)
+
+    for game in live_games:
+        first = game["events_first"]
+        second = game["events_second"]
+        final_home_goals = first["home_goals"] + second["home_goals"]
+        final_away_goals = first["away_goals"] + second["away_goals"]
+        game["final_home_goals"] = final_home_goals
+        game["final_away_goals"] = final_away_goals
+        if game["kind"] != "tie":
+            continue
+        tie = game["ref"]
+        needs_penalties = False
+        if tie.single_leg:
+            needs_penalties = final_home_goals == final_away_goals
+        elif game.get("cup_leg") == 2 and game.get("first_leg_result") is not None:
+            first_leg = game["first_leg_result"]
+            agg_a = first_leg.home_goals + final_away_goals
+            agg_b = first_leg.away_goals + final_home_goals
+            needs_penalties = agg_a == agg_b
+        if needs_penalties:
+            winner, score, log = simulate_penalty_series(game["home"], game["away"])
+            mapped_winner = winner
+            if not tie.single_leg and game.get("cup_leg") == 2:
+                mapped_winner = tie.team_b if winner.id == game["home"].id else tie.team_a
+            elif tie.single_leg:
+                mapped_winner = winner
+            tie.set_penalty_winner(mapped_winner, score)
+            game["penalties"] = {
+                "winner": mapped_winner,
+                "score": score,
+                "log": [
+                    {
+                        **kick,
+                        "side": "home" if kick["team"] == game["home"].name else "away",
+                    }
+                    for kick in log
+                ],
+            }
+
+    if focus_game and focus_game.get("penalties"):
+        _render_penalty_shootout(focus_game)
+
     player_result, other_results = _finalize_live_games(season, live_games)
     advance_season_after_matchday(season)
     return {
@@ -589,12 +758,22 @@ def _play_live_matchday(season: Season, player_team):
 
 def run_game(season: Season, player_team, market: TransferMarket, career: CareerState):
     """Loop principal de uma temporada."""
+    if not hasattr(career, "back_to_main_menu"):
+        career.back_to_main_menu = False
     while not season.season_over:
         current = current_player_team(career, season.all_teams)
         unemployed = current is None and career.unemployed
         if current is not None:
             player_team = current
             season.player_team_id = current.id
+        if not unemployed and not _matchday_has_player_game(season, player_team):
+            round_data = _play_next_match(season, player_team, market)
+            if round_data.get("player_played"):
+                career.games_in_charge += 1
+            player_team, career_end = _post_round_updates(season, player_team, career, round_data.get("messages") or [])
+            if career_end:
+                return player_team
+            continue
         season_dashboard(season, None if unemployed else player_team)
         choice = game_menu()
 
@@ -609,6 +788,7 @@ def run_game(season: Season, player_team, market: TransferMarket, career: Career
         elif choice == "2":
             # Classificação
             show_standings(season, player_team)
+            show_top_scorers(season)
 
         elif choice == "3":
             # Copa
@@ -632,8 +812,10 @@ def run_game(season: Season, player_team, market: TransferMarket, career: Career
 
         elif choice == "6":
             # Jogar partida
-            transfer_messages = _play_next_match(season, None if unemployed else player_team, market)
-            player_team, career_end = _post_round_updates(season, player_team, career, transfer_messages or [])
+            round_data = _play_next_match(season, None if unemployed else player_team, market)
+            if round_data.get("player_played"):
+                career.games_in_charge += 1
+            player_team, career_end = _post_round_updates(season, player_team, career, round_data.get("messages") or [])
             season.player_team_id = player_team.id if player_team and not career.unemployed else season.player_team_id
             if career_end:
                 print(RR + "\n  Sem clube após a rodada. Fim da carreira." + RST)
@@ -664,6 +846,10 @@ def run_game(season: Season, player_team, market: TransferMarket, career: Career
             else:
                 show_stadium(player_team)
 
+        elif choice == "C":
+            # Calendário
+            show_calendar(season, None if unemployed else player_team)
+
         elif choice == "R":
             # Renovação de contrato
             if unemployed:
@@ -690,6 +876,22 @@ def run_game(season: Season, player_team, market: TransferMarket, career: Career
             # Artilheiros
             show_top_scorers(season)
 
+        elif choice == "V":
+            # Vender jogador
+            if unemployed:
+                print(YY + "\n  Sem clube no momento." + RST)
+                pause()
+            else:
+                player_to_sell = prompt_sell_player(player_team)
+                if player_to_sell:
+                    sold, message, _buyer = sell_player_to_club(player_to_sell, player_team, season.all_teams)
+                    print((GG if sold else RR) + f"\n  {message}" + RST)
+                    pause()
+
+        elif choice == "H":
+            # Histórico
+            show_history(career)
+
         elif choice == "S":
             # Salvar
             state = {"season": season, "player_team": player_team, "market": market, "career": career}
@@ -699,7 +901,8 @@ def run_game(season: Season, player_team, market: TransferMarket, career: Career
 
         elif choice == "0":
             # Volta ao menu principal
-            break
+            career.back_to_main_menu = True
+            return player_team
 
     if season.season_over and player_team is not None:
         show_season_end(season, player_team)
@@ -712,24 +915,25 @@ def _play_next_match(season: Season, player_team, market: TransferMarket):
     if season.current_matchday >= len(season.calendar):
         print(DIM + "  Temporada encerrada." + RST)
         pause()
-        return
+        return {"messages": [], "player_played": False}
+
+    has_player_game = _matchday_has_player_game(season, player_team)
 
     # Confirmação de postura
-    if player_team is not None and not confirm_play(player_team.formation, player_team.postura):
+    if player_team is not None and has_player_game and not confirm_play(player_team.formation, player_team.postura):
         player_team = show_tactics(player_team)
 
     # Gera leilões antes da rodada
     auctions = market.generate_auctions(season.all_teams)
-    if auctions and player_team is not None:
-        show_transfer_market(market, player_team)
-        # IA faz lances
+    if auctions:
         market.ai_bidding(season.all_teams)
-    elif auctions:
-        market.ai_bidding(season.all_teams)
+        if player_team is not None:
+            show_transfer_market(market, player_team)
 
     # Resolve leilões anteriores
     transfer_messages = []
     if market.auctions:
+        market.ai_bidding(season.all_teams)
         results = market.resolve_all()
         if results:
             transfer_messages.extend(results)
@@ -738,7 +942,7 @@ def _play_next_match(season: Season, player_team, market: TransferMarket):
     info = _play_live_matchday(season, player_team)
 
     if info.get("done"):
-        return
+        return {"messages": [], "player_played": False}
 
     # Exibe resultados dos outros jogos
     other = info.get("other_results", [])
@@ -753,9 +957,20 @@ def _play_next_match(season: Season, player_team, market: TransferMarket):
             else:         sc = YY + f"{hg} × {ag}" + RST
             print(f"  {WW}{r.home_team.name:<22}{RST} {sc} {WW}{r.away_team.name}{RST}")
 
+        # Exibe top 5 artilheiros da temporada
+        all_players = [(t, p) for t in season.all_teams for p in t.players]
+        top_scorers = sorted(all_players, key=lambda x: -x[1].gols_temp)[:5]
+
+        print()
+        print(C + "  TOP ARTILHEIROS DA RODADA:" + RST)
+        for i, (team, p) in enumerate(top_scorers, 1):
+            if p.gols_temp > 0:
+                print(f"  {DIM}{i}.{RST} {WW}{pad(p.name, 20)}{RST} ({C}{team.name}{RST}) — {GG}{p.gols_temp}{RST} gols")
+
     # Após a rodada, abre a visão macro da competição em vez do resultado isolado.
     if info.get("type") == "liga":
         show_standings(season, player_team)
+        show_top_scorers(season)
     else:
         show_copa(season, player_team)
 
@@ -765,7 +980,7 @@ def _play_next_match(season: Season, player_team, market: TransferMarket):
         print(RR + "\n  💸 Salários mensais pagos!" + RST)
         pause()
 
-    return transfer_messages
+    return {"messages": transfer_messages, "player_played": info.get("player_result") is not None}
 
 
 def new_game():
@@ -793,6 +1008,30 @@ def new_game():
             player_team = next((t for t in teams if t.id == player_team.id), player_team)
         show_copa(season, player_team)
         player_team = run_game(season, player_team, market, career)
+        if getattr(career, "back_to_main_menu", False):
+            career.back_to_main_menu = False
+            return
+
+        # Registra o histórico da temporada (se o jogador tinha um time)
+        if player_team is not None:
+            div_teams = [t for t in season.all_teams if t.division == player_team.division]
+            ranked = sorted(div_teams, key=lambda t: -t.div_points)
+            position = next((i + 1 for i, t in enumerate(ranked) if t.id == player_team.id), 0)
+
+            top_scorer = None
+            if season.top_scorers:
+                top_scorer = season.top_scorers[0]  # (name, team, goals)
+
+            history_entry = {
+                "year": season.year,
+                "team": player_team.name,
+                "division": player_team.division,
+                "position": position,
+                "copa_phase": player_team.copa_phase,
+                "top_scorer": top_scorer,
+                "copa_champion": season.copa_champion.name if season.copa_champion else None,
+            }
+            career.season_history.append(history_entry)
 
         end_firing = check_last_division_relegation_firing(season, career)
         if end_firing:
@@ -800,16 +1039,11 @@ def new_game():
             offers = generate_player_offers(season.all_teams, career)
             if offers:
                 for offer in offers:
-                    if prompt_job_offer(career.player_coach.name, offer):
+                    if prompt_job_offer(career.player_coach.name, offer, season.all_teams):
                         player_team, messages = accept_player_offer(offer, season.all_teams, career)
                         show_notifications(messages, title="MERCADO DE TREINADORES")
                         break
 
-        # Confirma nova temporada
-        clear()
-        print(YY + f"\n  Nova temporada {year + 1}?  [1] Sim   [0] Não" + RST)
-        if input("  Escolha: ").strip() != "1":
-            break
         year += 1
 
 
@@ -825,10 +1059,10 @@ def main():
             if save_exists():
                 state = load_game()
                 if state:
-                    season  = state["season"]
-                    pt      = state["player_team"]
-                    market  = state.get("market", TransferMarket())
-                    career  = state.get("career")
+                    season = state["season"]
+                    pt = state["player_team"]
+                    market = state.get("market", TransferMarket())
+                    career = state.get("career")
                     if career is None:
                         career = CareerState(
                             player_coach=pt.coach,
@@ -836,7 +1070,52 @@ def main():
                             unemployed=False,
                             free_coaches=create_free_coaches(),
                         )
-                    run_game(season, pt, market, career)
+
+                    while True:
+                        show_copa(season, None if career.unemployed else pt)
+                        pt = run_game(season, pt, market, career)
+                        if getattr(career, "back_to_main_menu", False):
+                            career.back_to_main_menu = False
+                            break
+
+                        # Registra histórico da temporada (quando o jogador tiver clube)
+                        if pt is not None:
+                            div_teams = [t for t in season.all_teams if t.division == pt.division]
+                            ranked = sorted(div_teams, key=lambda t: -t.div_points)
+                            position = next((i + 1 for i, t in enumerate(ranked) if t.id == pt.id), 0)
+
+                            top_scorer = None
+                            if season.top_scorers:
+                                top_scorer = season.top_scorers[0]
+
+                            history_entry = {
+                                "year": season.year,
+                                "team": pt.name,
+                                "division": pt.division,
+                                "position": position,
+                                "copa_phase": pt.copa_phase,
+                                "top_scorer": top_scorer,
+                                "copa_champion": season.copa_champion.name if season.copa_champion else None,
+                            }
+                            career.season_history.append(history_entry)
+
+                        end_firing = check_last_division_relegation_firing(season, career)
+                        if end_firing:
+                            show_notifications([end_firing], title="CENTRAL DE NOTÍCIAS")
+                            offers = generate_player_offers(season.all_teams, career)
+                            if offers:
+                                for offer in offers:
+                                    if prompt_job_offer(career.player_coach.name, offer, season.all_teams):
+                                        pt, messages = accept_player_offer(offer, season.all_teams, career)
+                                        show_notifications(messages, title="MERCADO DE TREINADORES")
+                                        break
+
+                        next_year = season.year + 1
+                        season = create_season(
+                            next_year,
+                            season.all_teams,
+                            pt.id if (pt is not None and not career.unemployed) else -1,
+                        )
                 else:
                     print(RR + "  Erro ao carregar o save." + RST)
                     pause()

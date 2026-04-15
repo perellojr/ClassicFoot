@@ -2,6 +2,7 @@
 ClassicFoot - Gerenciamento da Temporada
 Liga (4 divisões) + Copa mata-mata + Finanças
 """
+import math
 import random
 from dataclasses import dataclass, field
 from typing import List, Optional, Dict, Tuple
@@ -11,12 +12,25 @@ from engine import simulate_match, simulate_penalty_shootout, simulate_all_fixtu
 # ═══════════════════════════════════════════════════════════════
 # PRÊMIOS FINANCEIROS (R$ mil)
 # ═══════════════════════════════════════════════════════════════
-PRIZE_LIGA = {
-    1: {1: 8_000, 2: 6_000, 3: 4_500, 4: 3_000, 5: 2_000, 6: 1_000, 7: 600, 8: 400},
-    2: {1: 3_000, 2: 2_200, 3: 1_600, 4: 1_000, 5:   700, 6:   400, 7: 250, 8: 150},
-    3: {1: 1_500, 2: 1_100, 3:   800, 4:   600, 5:   400, 6:   200, 7: 120, 8: 80},
-    4: {1:   600, 2:   400, 3:   280, 4:   180, 5:   100, 6:    60, 7: 40, 8: 30},
-}
+def _build_gradual_liga_prizes(top_prize: int = 250, bottom_prize: int = 30) -> Dict[int, Dict[int, int]]:
+    """
+    Gera uma tabela gradual de premiação para 4 divisões x 8 posições.
+    Valores em R$ mil.
+    """
+    total_slots = 32
+    step = (top_prize - bottom_prize) / max(1, total_slots - 1)
+    values = [int(round(top_prize - (idx * step))) for idx in range(total_slots)]
+
+    prizes: Dict[int, Dict[int, int]] = {1: {}, 2: {}, 3: {}, 4: {}}
+    cursor = 0
+    for division in [1, 2, 3, 4]:
+        for position in range(1, 9):
+            prizes[division][position] = values[cursor]
+            cursor += 1
+    return prizes
+
+
+PRIZE_LIGA = _build_gradual_liga_prizes(top_prize=250, bottom_prize=30)
 PRIZE_COPA = {
     "primeira_fase":  300,
     "oitavas":        800,
@@ -26,19 +40,31 @@ PRIZE_COPA = {
     "campeão":     20_000,
     "vice":         8_000,
 }
+PRIZE_BEST_ATTACK = 1_000
+PRIZE_BEST_DEFENSE = 1_000
 CUSTO_MANUTENCAO = 200   # R$ mil/mês por estádio
 RENDA_TORCIDA_FACTOR = 0.00015  # fator de renda da bilheteria por torcedor
+BASE_PRIZE_YEAR = 2025
+
+
+def _season_prize_multiplier(year: int) -> float:
+    """
+    Premiação cresce 20% a cada temporada.
+    2025 = base 1.00, 2026 = 1.20, 2027 = 1.44, ...
+    """
+    seasons_passed = max(0, year - BASE_PRIZE_YEAR)
+    return 1.2 ** seasons_passed
 
 
 # ═══════════════════════════════════════════════════════════════
 # TABELA DE CLASSIFICAÇÃO
 # ═══════════════════════════════════════════════════════════════
 def sort_standings(teams: List[Team], copa: bool = False) -> List[Team]:
-    """Ordena por pontos → saldo → gols pró → prestige (desempate)."""
+    """Ordena por pontos → vitórias → saldo → gols pró → nome."""
     def key(t: Team):
         if copa:
-            return (-t.copa_points, -t.copa_gd, -t.copa_gf, -t.prestige)
-        return (-t.div_points, -t.div_gd, -t.div_gf, -t.prestige)
+            return (-t.copa_points, -t.copa_wins, -t.copa_gd, -t.copa_gf, t.name)
+        return (-t.div_points, -t.div_wins, -t.div_gd, -t.div_gf, t.name)
     return sorted(teams, key=key)
 
 
@@ -109,11 +135,22 @@ def create_season(year: int, all_teams: List[Team], player_team_id: int) -> Seas
     """Inicializa uma temporada completa com calendário e Copa."""
     season = Season(year=year, all_teams=all_teams, player_team_id=player_team_id)
 
+    # Pré-temporada: para temporadas já iniciadas, aplica variação suave de OVR (máx. +-2).
+    if any(p.partidas_total > 0 for t in all_teams for p in t.players):
+        _apply_offseason_ovr_adjustment(all_teams)
+
     # Reset stats
     for t in all_teams:
         t.reset_season_stats()
+        for p in t.players:
+            p.season_base_ovr = float(p.overall)
     for t in all_teams:
         _auto_salary_market(t)
+
+    # Rebalanceamento inicial de OVR por divisão:
+    # aplicar somente no início da carreira para evitar quedas bruscas a cada nova temporada.
+    if all(p.partidas_total == 0 for t in all_teams for p in t.players):
+        _clamp_division_ovr(all_teams)
 
     # Divisões
     divs = {1: [], 2: [], 3: [], 4: []}
@@ -214,6 +251,51 @@ def _auto_salary_market(t: Team):
         # Contrato inicial: rodadas restantes (variado para criar leilões ao longo da temporada)
         # Temporada dura ~24 rodadas; contratos escalonados
         p.contrato_rodadas = random.randint(4, 24)
+
+
+def _clamp_division_ovr(teams: List[Team]):
+    """
+    Reescala OVRs dos jogadores por divisão usando interpolação linear.
+    Mantém a distribuição relativa (melhor jogador continua melhor)
+    mas mapeia tudo para o intervalo correto da divisão.
+    """
+    target_ranges = {
+        1: (72, 97),   # Div 1: elite
+        2: (56, 82),   # Div 2: bons
+        3: (38, 68),   # Div 3: médios
+        4: (18, 52),   # Div 4: fracos
+    }
+
+    divs: Dict[int, List] = {1: [], 2: [], 3: [], 4: []}
+    for t in teams:
+        divs[t.division].append(t)
+
+    for div, div_teams in divs.items():
+        if not div_teams:
+            continue
+        t_min, t_max = target_ranges.get(div, (10, 99))
+        all_players = [p for t in div_teams for p in t.players]
+        if not all_players:
+            continue
+        src_min = min(p.overall for p in all_players)
+        src_max = max(p.overall for p in all_players)
+        src_range = src_max - src_min if src_max != src_min else 1
+        t_range = t_max - t_min
+        for p in all_players:
+            # Normaliza para [0,1] e mapeia para [t_min, t_max]
+            normalized = (p.overall - src_min) / src_range
+            p.overall = round(t_min + normalized * t_range, 1)
+
+
+def _apply_offseason_ovr_adjustment(teams: List[Team]):
+    """
+    Ajuste entre temporadas: preserva a evolução da temporada anterior,
+    mudando no máximo +-2 no início da nova temporada.
+    """
+    for team in teams:
+        for player in team.players:
+            delta = random.uniform(-2.0, 2.0)
+            player.overall = round(max(10, min(99, player.overall + delta)), 1)
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -365,6 +447,7 @@ def _check_advance_copa_knockout(season: Season):
                 winner = tie.winner()
                 if winner is None:
                     winner = simulate_penalty_shootout(tie.team_a, tie.team_b)
+                    tie.set_penalty_winner(winner)
                 winners.append(winner)
                 winner.copa_phase = "oitavas"
             season.copa_oitavas = _draw_knockout_round(winners, "oitavas", single_leg=False)
@@ -381,6 +464,7 @@ def _check_advance_copa_knockout(season: Season):
                 w = tie.winner()
                 if w is None:
                     w = simulate_penalty_shootout(tie.team_a, tie.team_b)
+                    tie.set_penalty_winner(w)
                 winners.append(w)
                 w.copa_phase = "quartas"
             season.copa_quartas = _draw_knockout_round(winners, "quartas", single_leg=False)
@@ -397,6 +481,7 @@ def _check_advance_copa_knockout(season: Season):
                 w = tie.winner()
                 if w is None:
                     w = simulate_penalty_shootout(tie.team_a, tie.team_b)
+                    tie.set_penalty_winner(w)
                 winners.append(w)
                 w.copa_phase = "semi"
             season.copa_semi = _draw_knockout_round(winners, "semi", single_leg=False)
@@ -412,6 +497,7 @@ def _check_advance_copa_knockout(season: Season):
                 w = tie.winner()
                 if w is None:
                     w = simulate_penalty_shootout(tie.team_a, tie.team_b)
+                    tie.set_penalty_winner(w)
                 finalists.append(w)
             if len(finalists) >= 2:
                 for f in finalists:
@@ -425,6 +511,7 @@ def _check_advance_copa_knockout(season: Season):
         winner = season.copa_final.winner()
         if winner is None:
             winner = simulate_penalty_shootout(season.copa_final.team_a, season.copa_final.team_b)
+            season.copa_final.set_penalty_winner(winner)
         season.copa_champion = winner
         winner.copa_phase = "campeão"
 
@@ -434,18 +521,42 @@ def _check_advance_copa_knockout(season: Season):
 # ═══════════════════════════════════════════════════════════════
 def _end_of_season(season: Season):
     """Distribui prêmios, promoção/rebaixamento, artilheiros."""
+    prize_multiplier = _season_prize_multiplier(season.year)
     divs = {1: [], 2: [], 3: [], 4: []}
     for t in season.all_teams:
         divs[t.division].append(t)
 
+    # Prêmios por posição e vitórias na liga
     for div, teams in divs.items():
         ranked = sort_standings(teams)
         for pos, t in enumerate(ranked, start=1):
             prize = PRIZE_LIGA.get(div, {}).get(pos, 0)
-            t.caixa += prize
+            t.caixa += int(round(prize * prize_multiplier))
 
     # Prêmio copa
     _award_copa_prizes(season)
+
+    # Encontra artilheiro e distribui bônus
+    top_scorer = None
+    max_goals = 0
+    for t in season.all_teams:
+        for p in t.players:
+            if p.gols_temp > max_goals:
+                max_goals = p.gols_temp
+                top_scorer = (p, t)
+
+    if top_scorer:
+        player, team = top_scorer
+        team.caixa += int(round(500 * prize_multiplier))  # bônus acompanha inflação da premiação
+        player.overall = min(99, player.overall + 1)  # +1 OVR para o artilheiro
+
+    # Melhor ataque da temporada (mais gols pró na liga).
+    best_attack_team = max(season.all_teams, key=lambda club: (club.div_gf, club.div_gd, -club.div_ga))
+    best_attack_team.caixa += int(round(PRIZE_BEST_ATTACK * prize_multiplier))
+
+    # Melhor defesa da temporada (menos gols sofridos na liga).
+    best_defense_team = min(season.all_teams, key=lambda club: (club.div_ga, -club.div_gd, -club.div_gf))
+    best_defense_team.caixa += int(round(PRIZE_BEST_DEFENSE * prize_multiplier))
 
     # Promoção / Rebaixamento (2 sobem, 2 descem por divisão)
     _apply_promotions(divs)
@@ -454,15 +565,16 @@ def _end_of_season(season: Season):
     all_players = []
     for t in season.all_teams:
         for p in t.players:
-            all_players.append((p.name, t.short_name, p.gols_temp))
+            all_players.append((p.name, t.name, p.gols_temp))
     season.top_scorers = sorted(all_players, key=lambda x: -x[2])[:10]
 
 
 def _award_copa_prizes(season: Season):
+    prize_multiplier = _season_prize_multiplier(season.year)
     for t in season.all_teams:
         phase = t.copa_phase
         prize = PRIZE_COPA.get(phase, 0)
-        t.caixa += prize
+        t.caixa += int(round(prize * prize_multiplier))
 
 
 def _apply_promotions(divs: Dict[int, List[Team]]):
@@ -494,6 +606,14 @@ def pay_monthly_salaries(teams: List[Team]):
         total_sal = sum(p.salario for p in t.players)
         t.caixa -= total_sal
         t.salario_mensal = total_sal
+        if t.loan_months_left > 0 and t.loan_monthly_payment > 0:
+            installment = min(t.loan_balance, t.loan_monthly_payment)
+            t.caixa -= installment
+            t.loan_balance = max(0, t.loan_balance - installment)
+            t.loan_months_left = max(0, t.loan_months_left - 1)
+            if t.loan_balance == 0:
+                t.loan_monthly_payment = 0
+                t.loan_months_left = 0
 
 
 def sell_player(team: Team, player_index: int) -> Tuple[bool, str, int]:
@@ -511,15 +631,39 @@ def buy_player(team: Team, player, price: int) -> Tuple[bool, str]:
     """Contrata um jogador livre."""
     if team.caixa < price:
         return False, f"Caixa insuficiente (R$ {team.caixa:,} mil disponíveis)."
-    if len(team.players) >= 30:
-        return False, "Elenco já está no limite de 30 jogadores."
+    if len(team.players) >= 45:
+        return False, "Elenco já está no limite de 45 jogadores."
     team.caixa -= price
     team.players.append(player)
     return True, f"{player.name} contratado por R$ {price:,} mil."
 
 
-def take_loan(team: Team, amount: int) -> Tuple[bool, str]:
-    """O clube toma um empréstimo (juros de 15% a.t.)."""
+def take_loan(team: Team, amount: int, months: int = 12) -> Tuple[bool, str]:
+    """O clube toma um empréstimo com 3% ao mês."""
+    if amount <= 0:
+        return False, "Valor inválido."
+    total_due = int(round(amount * ((1.03) ** months)))
+    monthly_payment = max(1, math.ceil(total_due / months))
     team.caixa += amount
-    debt = int(amount * 1.15)
-    return True, f"Empréstimo de R$ {amount:,} mil recebido. Dívida: R$ {debt:,} mil."
+    team.loan_balance += total_due
+    team.loan_monthly_payment += monthly_payment
+    team.loan_months_left = max(team.loan_months_left, months)
+    return True, (
+        f"Empréstimo de R$ {amount:,} mil recebido. "
+        f"Saldo devedor: R$ {team.loan_balance:,} mil em até {team.loan_months_left} meses "
+        f"(parcela: R$ {team.loan_monthly_payment:,} mil)."
+    )
+
+
+def settle_loan(team: Team) -> Tuple[bool, str]:
+    """Quita o empréstimo à vista com juros reduzidos."""
+    if team.loan_balance <= 0:
+        return False, "O clube não possui empréstimos ativos."
+    payoff = max(1, int(round(team.loan_balance * 0.97)))
+    if team.caixa < payoff:
+        return False, f"Caixa insuficiente para quitar. Necessário: R$ {payoff:,} mil."
+    team.caixa -= payoff
+    team.loan_balance = 0
+    team.loan_monthly_payment = 0
+    team.loan_months_left = 0
+    return True, f"Empréstimo quitado à vista por R$ {payoff:,} mil."
