@@ -475,6 +475,8 @@ def finalize_match_result(
         matchday=matchday,
         attendance=attendance,
         income=match_income,
+        home_used_names=[player.name for player in home_used],
+        away_used_names=[player.name for player in away_used],
     )
 
 

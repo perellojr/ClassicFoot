@@ -94,6 +94,30 @@ Se bloquear no Gatekeeper: clique direito no app > `Abrir`.
 python3 -m py_compile data.py main.py season.py engine.py ui.py term.py manager_market.py models.py transfers.py save.py launcher_gui.py
 ```
 
+## Testes automatizados
+
+Executar suíte completa:
+
+```bash
+python3 -m unittest discover -s tests -p "test_*.py" -v
+```
+
+Escopo atual dos testes:
+
+- estrutura dos dados e criação de temporada
+- engine e resultado de partida (incluindo metadados de escalação usada)
+- mercado de transferências (lances, bloqueio de IA, elenco mínimo)
+- mercado de treinadores (anti-reprocesso na rodada e anti-recontratação imediata)
+- fluxo principal (sorteio da copa e bloqueio do time do jogador no leilão IA)
+- save/load com backup automático
+- estresse de simulação com 40 temporadas completas
+
+Rodar somente o teste de estresse (40 temporadas):
+
+```bash
+python3 -m unittest tests.test_long_simulation -v
+```
+
 ## Estrutura do projeto
 
 - `main.py`: loop principal da carreira
@@ -106,6 +130,10 @@ python3 -m py_compile data.py main.py season.py engine.py ui.py term.py manager_
 - `data.py`: times, jogadores e dados iniciais
 - `models.py`: dataclasses e entidades
 - `save.py`: persistência
+
+## Regras oficiais da simulação
+
+- Consulte [SIMULATION_RULES.md](/Users/cperello/Documents/Dev/Pessoal/ClassicFoot/SIMULATION_RULES.md) para o baseline oficial da v1.
 
 ## Observações
 

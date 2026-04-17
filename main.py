@@ -20,7 +20,7 @@ from manager_market import (
 )
 from models import CareerState, Coach, Postura
 from engine import finalize_match_result, select_bench, select_starting_lineup, simulate_half, simulate_penalty_series
-from season import Season, advance_season_after_matchday, create_season, pay_monthly_salaries
+from season import Season, advance_season_after_matchday, create_season, pay_monthly_salaries, sort_standings
 from transfers import TransferMarket
 from transfers import negotiate_contract, run_immediate_contract_auction
 from ui import (
@@ -324,6 +324,43 @@ def _ensure_stars_in_all_teams(all_teams):
             player.is_star = True
 
 
+def _ensure_rivalry_fields(team):
+    if not hasattr(team, "rivalry_points") or not isinstance(getattr(team, "rivalry_points"), dict):
+        team.rivalry_points = {}
+    if not hasattr(team, "dynamic_rivals") or not isinstance(getattr(team, "dynamic_rivals"), list):
+        team.dynamic_rivals = []
+
+
+def _register_dynamic_rivalry(team_a, team_b, delta: float):
+    if delta <= 0:
+        return
+    _ensure_rivalry_fields(team_a)
+    _ensure_rivalry_fields(team_b)
+
+    for source, target in ((team_a, team_b), (team_b, team_a)):
+        old_score = float(source.rivalry_points.get(target.id, 0.0))
+        source.rivalry_points[target.id] = round(min(30.0, old_score + delta), 2)
+        if source.rivalry_points[target.id] >= 8.0 and target.id not in source.dynamic_rivals:
+            source.dynamic_rivals.append(target.id)
+
+
+def _league_rivalry_context(season: Season, home, away, round_num: int) -> dict:
+    division_teams = [club for club in season.all_teams if club.division == home.division]
+    ranked = sort_standings(division_teams)
+    position_by_id = {club.id: idx + 1 for idx, club in enumerate(ranked)}
+    pos_home = int(position_by_id.get(home.id, len(ranked)))
+    pos_away = int(position_by_id.get(away.id, len(ranked)))
+
+    # Divisão com 8 clubes: 14 rodadas de liga (ida e volta).
+    is_late_round = round_num >= 10
+    title_clash = is_late_round and pos_home <= 2 and pos_away <= 2
+    promotion_clash = is_late_round and home.division > 1 and pos_home <= 3 and pos_away <= 3
+    return {
+        "league_title_clash": title_clash,
+        "league_promotion_clash": promotion_clash,
+    }
+
+
 def _maybe_show_pending_cup_draws(season: Season, player_team=None) -> bool:
     if not hasattr(season, "shown_cup_draws") or not isinstance(getattr(season, "shown_cup_draws"), list):
         season.shown_cup_draws = []
@@ -566,6 +603,7 @@ def _post_round_updates(
 def _collect_current_match_objects(season: Season, player_team):
     matchday = season.calendar[season.current_matchday]
     cup_leg = matchday.get("cup_leg", 1)
+    round_num = int(matchday.get("round_num", 0) or 0)
     games = []
     for fixture in matchday.get("fixtures", []):
         games.append({
@@ -574,6 +612,7 @@ def _collect_current_match_objects(season: Season, player_team):
             "home": fixture.home_team,
             "away": fixture.away_team,
             "competition": fixture.competition,
+            "round_num": round_num,
             "is_player": player_team is not None and (fixture.home_team.id == player_team.id or fixture.away_team.id == player_team.id),
         })
     for tie in (matchday.get("ties") or []):
@@ -586,6 +625,7 @@ def _collect_current_match_objects(season: Season, player_team):
             "away": away,
             "competition": "Copa",
             "cup_leg": cup_leg,
+            "round_num": round_num,
             "first_leg_result": tie.leg1 if cup_leg == 2 and not tie.single_leg else None,
             "is_player": player_team is not None and (tie.team_a.id == player_team.id or tie.team_b.id == player_team.id),
         })
@@ -598,6 +638,8 @@ def _prepare_live_games(season: Season, player_team):
     for game in games:
         home = game["home"]
         away = game["away"]
+        if game["competition"] == "Liga":
+            game.update(_league_rivalry_context(season, home, away, int(game.get("round_num", 0))))
         home_lineup = select_starting_lineup(home)
         away_lineup = select_starting_lineup(away)
         live_game = {
@@ -634,7 +676,21 @@ def _prepare_live_games(season: Season, player_team):
 
 
 def _is_classic(home_team, away_team) -> bool:
-    return frozenset((home_team.id, away_team.id)) in CLASSIC_PAIRS
+    if frozenset((home_team.id, away_team.id)) in CLASSIC_PAIRS:
+        return True
+    home_rivals = set(getattr(home_team, "dynamic_rivals", []) or [])
+    away_rivals = set(getattr(away_team, "dynamic_rivals", []) or [])
+    return (away_team.id in home_rivals) or (home_team.id in away_rivals)
+
+
+def _is_state_rivalry(home_team, away_team) -> bool:
+    """Rivalidade intermediária: clubes do mesmo estado."""
+    return (
+        home_team.id != away_team.id
+        and str(getattr(home_team, "state", "")).strip().upper()
+        and str(getattr(home_team, "state", "")).strip().upper()
+        == str(getattr(away_team, "state", "")).strip().upper()
+    )
 
 
 def _estimate_attendance(home_team, away_team, competition: str = "Liga", phase: str | None = None) -> int:
@@ -642,6 +698,10 @@ def _estimate_attendance(home_team, away_team, competition: str = "Liga", phase:
     occupation = min(0.96, max(0.28, 0.42 + (home_team.prestige / 200)))
     if _is_classic(home_team, away_team):
         return capacity_estimate
+    if _is_state_rivalry(home_team, away_team):
+        # Clássico estadual "médio": aumenta bem o interesse, sem lotação garantida.
+        occupation = max(occupation, 0.62 if competition == "Liga" else 0.56)
+        occupation *= 1.18
 
     if competition == "Liga":
         occupation *= 1.25
@@ -1173,6 +1233,25 @@ def _finalize_live_games(season: Season, live_games):
             away_used=game["away_used"],
         )
 
+        rivalry_delta = 0.0
+        if game["competition"] == "Liga":
+            rivalry_delta += 0.40
+            if game.get("league_title_clash"):
+                rivalry_delta += 2.20
+            if game.get("league_promotion_clash"):
+                rivalry_delta += 1.80
+        else:
+            rivalry_delta += 1.00
+            if game["kind"] == "tie":
+                rivalry_delta += 0.80
+                cup_leg = int(game.get("cup_leg", 1) or 1)
+                tie = game.get("ref")
+                if tie is not None and (getattr(tie, "single_leg", False) or cup_leg == 2):
+                    rivalry_delta += 2.20
+            if game.get("penalties"):
+                rivalry_delta += 1.00
+        _register_dynamic_rivalry(game["home"], game["away"], rivalry_delta)
+
         if game["kind"] == "fixture":
             game["ref"].result = result
         else:
@@ -1511,7 +1590,9 @@ def _play_next_match(season: Season, player_team, market: TransferMarket):
         show_standings(season, player_team)
         show_top_scorers(season)
     else:
-        show_copa(season, player_team)
+        if not _maybe_show_pending_cup_draws(season, player_team):
+            show_copa(season, player_team)
+        show_top_scorers(season)
 
     # Paga salários a cada 4 rodadas (= ~1 mês)
     if season.current_matchday % 4 == 0:

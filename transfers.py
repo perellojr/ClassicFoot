@@ -89,6 +89,61 @@ class AuctionItem:
 class TransferMarket:
     auctions: List[AuctionItem] = field(default_factory=list)
     history: List[str]          = field(default_factory=list)   # log de transações
+    bid_stats_by_ovr_bucket: dict = field(default_factory=dict)  # {"70-79": {"count": 3, "sum": 9000}}
+
+    @staticmethod
+    def ovr_bucket_label(ovr_value: int) -> str:
+        ovr = max(0, min(99, int(ovr_value)))
+        start = (ovr // 10) * 10
+        end = 99 if start == 90 else start + 9
+        return f"{start:02d}-{end:02d}"
+
+    @staticmethod
+    def estimated_average_for_bucket(bucket_label: str) -> int:
+        """
+        Estimativa inicial em R$ mil para quando ainda não houver histórico na faixa.
+        """
+        try:
+            start = int(str(bucket_label).split("-")[0])
+        except Exception:
+            start = 50
+        # Escada simples por faixa de OVR (10 em 10).
+        table = {
+            0: 60,
+            10: 120,
+            20: 220,
+            30: 380,
+            40: 650,
+            50: 1_050,
+            60: 1_700,
+            70: 2_700,
+            80: 4_300,
+            90: 6_800,
+        }
+        return int(table.get(start, 1_200))
+
+    def average_bid_for_ovr(self, ovr_value: int) -> int:
+        bucket = self.ovr_bucket_label(ovr_value)
+        stats = dict(getattr(self, "bid_stats_by_ovr_bucket", {}) or {})
+        item = stats.get(bucket, {}) if isinstance(stats.get(bucket, {}), dict) else {}
+        count = int(item.get("count", 0) or 0)
+        total = int(item.get("sum", 0) or 0)
+        if count > 0 and total > 0:
+            return int(round(total / count))
+        return self.estimated_average_for_bucket(bucket)
+
+    def _record_resolved_bid(self, player: Player, final_value: int):
+        if final_value <= 0:
+            return
+        stats = dict(getattr(self, "bid_stats_by_ovr_bucket", {}) or {})
+        bucket = self.ovr_bucket_label(int(round(getattr(player, "overall", 50))))
+        item = stats.get(bucket)
+        if not isinstance(item, dict):
+            item = {"count": 0, "sum": 0}
+        item["count"] = int(item.get("count", 0) or 0) + 1
+        item["sum"] = int(item.get("sum", 0) or 0) + int(final_value)
+        stats[bucket] = item
+        self.bid_stats_by_ovr_bucket = stats
 
     def has_player_in_auction(self, player: Player) -> bool:
         return any((not auction.resolved) and auction.player.id == player.id for auction in self.auctions)
@@ -207,9 +262,10 @@ class TransferMarket:
         messages = []
         for auction in self.auctions:
             if not auction.resolved:
-                msg, _ = auction.resolve()
+                msg, final_value = auction.resolve()
                 messages.append(msg)
                 self.history.append(msg)
+                self._record_resolved_bid(auction.player, final_value)
         self.auctions = []
         return messages
 

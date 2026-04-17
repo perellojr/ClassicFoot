@@ -1372,6 +1372,10 @@ def show_transfer_market(market, player_team: Team):
         bidder = auction.current_bidder.name if auction.current_bidder else "—"
         market_index = market.auctions.index(auction)
         own_player_auction = auction.origin_team.id == player_team.id
+        ovr_value = int(round(p.overall))
+        bucket_label = market.ovr_bucket_label(ovr_value)
+        avg_bid_hint = market.average_bid_for_ovr(ovr_value)
+        avg_line = f"  Referência faixa OVR {bucket_label}: {YY}R${avg_bid_hint:,}k{RST}"
 
         if player_team.caixa < 0:
             lines = [
@@ -1379,6 +1383,7 @@ def show_transfer_market(market, player_team: Team):
                 f"  {WW}{p.name}{RST}  [{C}{p.pos_label()}{RST}]  "
                 f"{DIM}{p.nationality}{RST}",
                 f"  Lance atual: {GG}R${auction.current_bid:,}k{RST}  │  Líder: {M}{bidder}{RST}",
+                avg_line,
                 "",
                 RR + "  Clube com caixa negativo não pode participar de leilões." + RST,
                 "",
@@ -1396,11 +1401,12 @@ def show_transfer_market(market, player_team: Team):
         if own_player_auction:
             lines = [
                 "",
-                f"  {ovr_color(int(round(p.overall)))}OVR {int(round(p.overall))}{RST}  {WW}{p.name}{RST}  [{C}{p.pos_label()}{RST}]  "
+                f"  {ovr_color(ovr_value)}OVR {ovr_value}{RST}  {WW}{p.name}{RST}  [{C}{p.pos_label()}{RST}]  "
                 f"{DIM}{p.nationality}{RST}",
                 f"  Origem: {C}{auction.origin_team.name}{RST}  │  "
                 f"Lance atual: {GG}R${auction.current_bid:,}k{RST}  │  "
                 f"Líder: {M}{bidder}{RST}",
+                avg_line,
                 "",
                 YY + "  Jogador do seu clube: lance manual bloqueado" + RST,
                 "",
@@ -1419,10 +1425,11 @@ def show_transfer_market(market, player_team: Team):
         if player_team.caixa < auction.base_bid:
             lines = [
                 "",
-                f"  {ovr_color(int(round(p.overall)))}OVR {int(round(p.overall))}{RST}  {WW}{p.name}{RST}  [{C}{p.pos_label()}{RST}]  "
+                f"  {ovr_color(ovr_value)}OVR {ovr_value}{RST}  {WW}{p.name}{RST}  [{C}{p.pos_label()}{RST}]  "
                 f"{DIM}{p.nationality}{RST}",
                 f"  Origem: {C}{auction.origin_team.name}{RST}  │  "
                 f"Lance base: {Y}R${auction.base_bid:,}k{RST}",
+                avg_line,
                 "",
                 RR + f"  Saldo insuficiente para participar deste leilão" + RST,
                 "",
@@ -1442,9 +1449,10 @@ def show_transfer_market(market, player_team: Team):
         if len(player_team.players) >= 45:
             lines = [
                 "",
-                f"  {ovr_color(int(round(p.overall)))}OVR {int(round(p.overall))}{RST}  {WW}{p.name}{RST}  [{C}{p.pos_label()}{RST}]  "
+                f"  {ovr_color(ovr_value)}OVR {ovr_value}{RST}  {WW}{p.name}{RST}  [{C}{p.pos_label()}{RST}]  "
                 f"{DIM}{p.nationality}{RST}",
                 f"  Origem: {C}{auction.origin_team.name}{RST}",
+                avg_line,
                 "",
                 RR + f"  Elenco cheio (45/45)" + RST,
                 "",
@@ -1462,13 +1470,14 @@ def show_transfer_market(market, player_team: Team):
 
         lines = [
             "",
-            f"  {ovr_color(int(round(p.overall)))}OVR {int(round(p.overall))}{RST}  {WW}{p.name}{RST}  [{C}{p.pos_label()}{RST}]  "
+            f"  {ovr_color(ovr_value)}OVR {ovr_value}{RST}  {WW}{p.name}{RST}  [{C}{p.pos_label()}{RST}]  "
             f"{DIM}{p.nationality}{RST}",
             f"  Origem: {C}{auction.origin_team.name}{RST}  │  "
             f"Lance base: {Y}R${auction.base_bid:,}k{RST}  │  "
             f"Lance atual: {GG}R${auction.current_bid:,}k{RST}  │  "
             f"Líder: {M}{bidder}{RST}",
             f"  Salário: {RR}R${p.salario:,}k/mês{RST}  │  VM: {C}R${p.valor_mercado:,}k{RST}",
+            avg_line,
             "",
         ]
         print(box(lines, title=f"LOTE 1 DE {total}", border_color=YY, title_color=YY, width=72))
@@ -1506,7 +1515,8 @@ def show_top_scorers(season: Season):
     print(rule("ARTILHEIROS DA TEMPORADA"))
     print()
     all_players = [(t, p) for t in season.all_teams for p in t.players]
-    top_global = sorted(all_players, key=lambda x: (-x[1].gols_temp, x[1].name))[:20]
+    top_global = sorted(all_players, key=lambda x: (-x[1].gols_temp, x[1].name))[:33]
+    key_to_division = {(player.name, team.name): team.division for team, player in all_players}
 
     # Painel da esquerda: ranking global (mantido).
     left_lines = [
@@ -1531,6 +1541,44 @@ def show_top_scorers(season: Season):
 
     player_lookup = {(player.name, team.name): player for team, player in all_players}
 
+    def _competition_stats(prefix: str):
+        goals = {}
+        games = {}
+        for result in season.results_history:
+            competition = str(getattr(result, "competition", "") or "").lower()
+            if not competition.startswith(prefix):
+                continue
+
+            home_team_name = result.home_team.name
+            away_team_name = result.away_team.name
+            home_used = list(getattr(result, "home_used_names", []) or [])
+            away_used = list(getattr(result, "away_used_names", []) or [])
+
+            # Compatibilidade com saves antigos sem used_names:
+            # ao menos contabiliza jogo para quem marcou.
+            if not home_used:
+                home_used = list(getattr(result, "home_scorers", []) or [])
+            if not away_used:
+                away_used = list(getattr(result, "away_scorers", []) or [])
+
+            for player_name in home_used:
+                key = (player_name, home_team_name)
+                games[key] = int(games.get(key, 0)) + 1
+            for player_name in away_used:
+                key = (player_name, away_team_name)
+                games[key] = int(games.get(key, 0)) + 1
+
+            for scorer in getattr(result, "home_scorers", []) or []:
+                key = (scorer, home_team_name)
+                goals[key] = int(goals.get(key, 0)) + 1
+            for scorer in getattr(result, "away_scorers", []) or []:
+                key = (scorer, away_team_name)
+                goals[key] = int(goals.get(key, 0)) + 1
+        return goals, games
+
+    league_goals, league_games = _competition_stats("liga")
+    cup_goals, cup_games = _competition_stats("copa")
+
     def _append_right_section(title: str, rows: list[tuple[str, str, int, int]]):
         right_lines.append(YY + f"  {title}" + RST)
         if not rows:
@@ -1548,31 +1596,24 @@ def show_top_scorers(season: Season):
         right_lines.append("")
 
     for div in [1, 2, 3, 4]:
-        div_players = [(team, player) for team, player in all_players if team.division == div]
-        div_top = sorted(div_players, key=lambda x: (-x[1].gols_temp, x[1].name))[:5]
-        rows = [
-            (player.name, team.name, int(player.gols_temp), int(player.partidas_temp))
-            for team, player in div_top
-        ]
+        league_candidates = []
+        for (player_name, team_name), goals in league_goals.items():
+            if int(key_to_division.get((player_name, team_name), 0)) != div:
+                continue
+            league_candidates.append((player_name, team_name, int(goals), int(league_games.get((player_name, team_name), 0))))
+        league_candidates.sort(key=lambda item: (-item[2], item[0]))
+        rows = league_candidates[:5]
         _append_right_section(f"DIVISÃO {div}", rows)
 
-    cup_goals = {}
-    for result in season.results_history:
-        competition = str(getattr(result, "competition", "") or "").lower()
-        if not competition.startswith("copa"):
-            continue
-        for scorer in getattr(result, "home_scorers", []) or []:
-            key = (scorer, result.home_team.name)
-            cup_goals[key] = int(cup_goals.get(key, 0)) + 1
-        for scorer in getattr(result, "away_scorers", []) or []:
-            key = (scorer, result.away_team.name)
-            cup_goals[key] = int(cup_goals.get(key, 0)) + 1
     cup_top = sorted(cup_goals.items(), key=lambda item: (-item[1], item[0][0]))[:5]
     cup_rows = []
     for (player_name, team_name), goals in cup_top:
-        player = player_lookup.get((player_name, team_name))
-        games = int(player.partidas_temp) if player is not None else 0
-        cup_rows.append((player_name, team_name, int(goals), games))
+        games = int(cup_games.get((player_name, team_name), 0))
+        # Se ainda não houver tracking de escalação (save antigo), fallback para total.
+        if games <= 0:
+            player = player_lookup.get((player_name, team_name))
+            games = int(player.partidas_temp) if player is not None else 0
+        cup_rows.append((player_name, team_name, int(goals), int(games)))
     _append_right_section("COPA (TOP 5)", cup_rows)
 
     right_box = box(right_lines, title="LIGAS E COPA", border_color=C, title_color=C, width=58)

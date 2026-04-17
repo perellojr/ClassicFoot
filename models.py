@@ -2,7 +2,7 @@
 ClassicFoot - Modelos de dados do jogo
 """
 from dataclasses import dataclass, field
-from typing import List, Optional, Tuple, Set
+from typing import Dict, List, Optional, Tuple, Set
 from enum import Enum
 import math
 import random
@@ -173,6 +173,8 @@ class Team:
     loan_months_left: int = 0
     training_targets: List[int] = field(default_factory=list)
     training_round_applied: int = -1
+    rivalry_points: Dict[int, float] = field(default_factory=dict)
+    dynamic_rivals: List[int] = field(default_factory=list)
 
     # Estatísticas da divisão (temporada)
     div_wins: int = 0
@@ -270,6 +272,8 @@ class MatchResult:
     matchday: int = 0
     attendance: int = 0
     income: int = 0
+    home_used_names: List[str] = field(default_factory=list)
+    away_used_names: List[str] = field(default_factory=list)
 
     def winner(self) -> Optional['Team']:
         if self.home_goals > self.away_goals:
