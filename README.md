@@ -1,27 +1,30 @@
 # ClassicFoot
 
-Jogo de futebol manager em terminal, inspirado no estilo retrô do Elifoot 2.
+Manager de futebol retrô inspirado no Elifoot 2, com foco em gameplay rápido, visual DOS e progressão de carreira.
 
-## Principais recursos
+## O que o jogo tem hoje
 
-- 32 clubes brasileiros em 4 divisões (8 times por divisão)
-- carreira com criação de treinador (nome e sobrenome)
-- início obrigatório em clube sorteado da 4ª divisão
-- ligas com ida e volta, promoção/rebaixamento e premiação por posição
-- Copa em mata-mata com ida e volta (incluindo final em 2 jogos)
-- motor de partida ao vivo com eventos, intervalo e substituições
-- mercado de transferências com leilões e histórico de negociações
-- sistema de treinadores (demissões, ofertas, desemprego e recolocação)
-- finanças do clube (salários, estádio, empréstimos, rendas e bônus por vitória)
-- treino por rodada (até 5 jogadores com evolução aleatória)
-- jogadores `CRAQUE` com impacto adicional no desempenho do time
-- histórico de carreira e estatísticas históricas globais
-- save/load da carreira
-- tema visual retrô `MSDOS` opcional
+- 32 clubes em 4 divisões (8 por divisão)
+- criação de treinador e início aleatório na 4ª divisão
+- liga completa com promoção/rebaixamento, premiação e bônus por vitória
+- copa mata-mata com ida/volta em todas as fases (incluindo final em 2 jogos)
+- sorteio visual da copa por fase (times saindo da lista e confrontos sendo montados)
+- motor de jogo ao vivo com:
+  - tempo correndo minuto a minuto
+  - lances capitais
+  - intervalo com substituições
+  - pênaltis exibidos lance a lance quando necessário
+- mercado de jogadores por leilão (manual + IA), histórico e venda de atletas
+- mercado de treinadores (demissões, contratações, propostas e desemprego)
+- finanças (folha, patrocínio mensal, estádio, empréstimo em parcelas, renda de jogo)
+- treino por rodada (até 5 jogadores)
+- histórico de carreira + recordes globais
+- save/load
+- launcher desktop (`launcher_gui.py`) com aparência terminal
 
 ## Requisitos
 
-- Python 3.11+ (recomendado)
+- Python 3.11+
 - dependências em `requirements.txt`
 
 ## Instalação
@@ -32,37 +35,33 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Como rodar
+## Como executar
+
+Modo terminal:
 
 ```bash
 python3 main.py
 ```
 
-Rodar em janela própria (sem terminal externo):
+Modo janela própria (sem terminal externo):
 
 ```bash
 python3 launcher_gui.py
 ```
 
-Rodar com tema retrô MSDOS:
+Tema retrô MSDOS:
 
 ```bash
 CLASSICFOOT_THEME=msdos python3 main.py
 ```
 
-Opcional: ajustar duração de cada tempo (em segundos):
+Velocidade de cada tempo (segundos):
 
 ```bash
 CLASSICFOOT_HALF_DURATION_SECONDS=20 python3 main.py
 ```
 
-## Verificação rápida
-
-```bash
-python3 -m py_compile data.py main.py season.py engine.py ui.py term.py manager_market.py models.py transfers.py save.py
-```
-
-## Gerar app para Mac/Windows
+## Build app (macOS / Windows)
 
 Instale o empacotador:
 
@@ -70,38 +69,45 @@ Instale o empacotador:
 pip install pyinstaller
 ```
 
-Build (recomendado, sem console externo):
+Build manual:
 
 ```bash
 pyinstaller --noconfirm --windowed --name ClassicFoot launcher_gui.py
 ```
 
-Build com scripts prontos:
+Build por script:
 
 - macOS: `./build_mac.sh`
 - Windows: `build_windows.bat`
 
-No macOS, abra o jogo diretamente por `dist/ClassicFoot.app` (não via Installer `.pkg`).
-Se o Gatekeeper bloquear, use clique direito em `ClassicFoot.app` > `Abrir`.
-
 Saídas:
 
 - macOS: `dist/ClassicFoot.app`
-- Windows: `dist/ClassicFoot/ClassicFoot.exe` (ou `.exe` único, dependendo da versão/configuração)
+- Windows: `dist/ClassicFoot/ClassicFoot.exe`
+
+No macOS, abra o `.app` diretamente (não via `.pkg`).  
+Se bloquear no Gatekeeper: clique direito no app > `Abrir`.
+
+## Verificação rápida
+
+```bash
+python3 -m py_compile data.py main.py season.py engine.py ui.py term.py manager_market.py models.py transfers.py save.py launcher_gui.py
+```
 
 ## Estrutura do projeto
 
-- `main.py`: loop principal da carreira e fluxo de rodada
-- `ui.py`: telas e menus de terminal
-- `term.py`: renderização (caixas, tabela, cores e tema MSDOS)
-- `engine.py`: simulação das partidas e cálculo de desempenho
-- `season.py`: calendário, copa, premiações e transições de temporada
-- `transfers.py`: leilões e negociações de jogadores
-- `manager_market.py`: mercado de treinadores e lógica de ofertas/demissões
-- `data.py`: base de times/elencos e dados iniciais
-- `models.py`: entidades e dataclasses do domínio
-- `save.py`: persistência de jogo salvo
+- `main.py`: loop principal da carreira
+- `ui.py`: telas e navegação
+- `term.py`: renderização e estilos ANSI/box
+- `engine.py`: simulação de partidas
+- `season.py`: calendário, copa e regras de temporada
+- `transfers.py`: leilões e transferências
+- `manager_market.py`: mercado de treinadores
+- `data.py`: times, jogadores e dados iniciais
+- `models.py`: dataclasses e entidades
+- `save.py`: persistência
 
-## Estado atual
+## Observações
 
-Projeto em evolução contínua, com foco em experiência retrô, simulação rápida e progressão de carreira.
+- Save padrão: `classicfoot_save.pkl`
+- Pastas de build locais (`build/`, `dist/`) não são versionadas
