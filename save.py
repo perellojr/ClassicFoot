@@ -70,6 +70,8 @@ def _migrate_loaded_state(state: dict) -> dict:
     if market is not None:
         if not hasattr(market, "bid_stats_by_ovr_bucket") or not isinstance(getattr(market, "bid_stats_by_ovr_bucket"), dict):
             market.bid_stats_by_ovr_bucket = {}
+        if not hasattr(market, "transfer_records") or not isinstance(getattr(market, "transfer_records"), list):
+            market.transfer_records = []
 
     all_teams = []
     if season is not None:

@@ -90,6 +90,7 @@ class TransferMarket:
     auctions: List[AuctionItem] = field(default_factory=list)
     history: List[str]          = field(default_factory=list)   # log de transações
     bid_stats_by_ovr_bucket: dict = field(default_factory=dict)  # {"70-79": {"count": 3, "sum": 9000}}
+    transfer_records: List[dict] = field(default_factory=list)   # histórico estruturado da temporada
 
     @staticmethod
     def ovr_bucket_label(ovr_value: int) -> str:
@@ -257,7 +258,7 @@ class TransferMarket:
                     if bid <= club.caixa:
                         auction.accept_bid(club, bid)
 
-    def resolve_all(self) -> List[str]:
+    def resolve_all(self, round_num: int | None = None) -> List[str]:
         """Encerra todos os leilões ativos e retorna log de resultados."""
         messages = []
         for auction in self.auctions:
@@ -266,6 +267,17 @@ class TransferMarket:
                 messages.append(msg)
                 self.history.append(msg)
                 self._record_resolved_bid(auction.player, final_value)
+                if final_value > 0 and auction.current_bidder is not None:
+                    self.transfer_records.append(
+                        {
+                            "round": int(round_num or 0),
+                            "player": auction.player.name,
+                            "from": auction.origin_team.name,
+                            "to": auction.current_bidder.name,
+                            "value": int(final_value),
+                            "salary": int(auction.player.salario),
+                        }
+                    )
         self.auctions = []
         return messages
 

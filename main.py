@@ -1541,7 +1541,7 @@ def _play_next_match(season: Season, player_team, market: TransferMarket):
     # Resolve leilões anteriores
     if market.auctions:
         market.ai_bidding(season.all_teams, blocked_team_ids=blocked_bidder_ids)
-        results = market.resolve_all()
+        results = market.resolve_all(round_num=season.current_matchday + 1)
         if results:
             show_auction_results(results)
 

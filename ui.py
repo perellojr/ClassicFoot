@@ -1306,17 +1306,61 @@ def show_stadium(team: Team):
 # MERCADO DE TRANSFERÊNCIAS
 # ═══════════════════════════════════════════════════════════════
 def _show_transfer_history(market):
+    records = list(getattr(market, "transfer_records", []))
     history = list(getattr(market, "history", []))
     clear()
     print(rule("📜 HISTÓRICO DE TRANSFERÊNCIAS"))
     print()
 
-    if not history:
+    if not records and not history:
         print(DIM + "  Nenhuma transferência registrada nesta temporada." + RST)
         print()
         pause()
         return
 
+    if records:
+        page_size = 12
+        total_pages = (len(records) + page_size - 1) // page_size
+        page = 0
+        while True:
+            clear()
+            print(rule("📜 HISTÓRICO DE TRANSFERÊNCIAS"))
+            print(DIM + f"  Página {page + 1}/{total_pages}" + RST)
+            print()
+
+            table = Table(border_color=C, header_color=Y)
+            table.add_col("Rodada", 7, "r")
+            table.add_col("Jogador", 24, "l")
+            table.add_col("Clube Antigo", 22, "l")
+            table.add_col("Clube Novo", 22, "l")
+            table.add_col("Valor", 14, "r")
+            table.add_col("Salário", 14, "r")
+
+            start = page * page_size
+            end = start + page_size
+            for rec in records[start:end]:
+                round_num = int(rec.get("round", 0) or 0)
+                table.add_row(
+                    str(round_num),
+                    _ellipsize_visible(str(rec.get("player", "-")), 24),
+                    _ellipsize_visible(str(rec.get("from", "-")), 22),
+                    _ellipsize_visible(str(rec.get("to", "-")), 22),
+                    fmt_money(int(rec.get("value", 0) or 0)),
+                    fmt_money(int(rec.get("salary", 0) or 0)),
+                )
+
+            table.print()
+            print()
+            cmd = input("  ENTER próxima  |  [V] voltar  |  [0] sair: ").strip().upper()
+            if cmd == "0":
+                break
+            if cmd == "V":
+                page = max(0, page - 1)
+            else:
+                page = (page + 1) % total_pages
+        return
+
+    # Fallback para saves legados sem histórico estruturado.
     page_size = 16
     total_pages = (len(history) + page_size - 1) // page_size
     page = 0

@@ -1,0 +1,45 @@
+name: ClassicFoot CI
+
+on:
+  push:
+    branches:
+      - main
+      - "feature/**"
+      - "codex/**"
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Compile check
+        run: |
+          python -m py_compile \
+            data.py \
+            engine.py \
+            main.py \
+            manager_market.py \
+            models.py \
+            save.py \
+            season.py \
+            term.py \
+            transfers.py \
+            ui.py
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -p "test_*.py" -v
