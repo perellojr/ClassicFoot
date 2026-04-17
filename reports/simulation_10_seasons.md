@@ -1,0 +1,9175 @@
+# Relatorio de Simulacao ClassicFoot
+
+- Temporadas simuladas: 10
+- Ano inicial: 2025
+- Seed: 20260417
+
+## Temporada 2025
+
+### Campeoes
+- Divisao 1: Palmeiras
+- Divisao 2: Cruzeiro
+- Divisao 3: Atlético Goianiense
+- Divisao 4: Goiás
+- Copa: Flamengo
+
+### Artilheiros
+- Artilheiro da temporada: Leandro Vilela (Paysandu) - 9 gols
+- Top 1: Leandro Vilela (Paysandu) - 9 gols
+- Top 2: Fausto Vera (Atlético Mineiro) - 8 gols
+- Top 3: Martin Braithwaite (Grêmio) - 8 gols
+- Top 4: Mateo Ponte (Botafogo) - 7 gols
+- Top 5: Bruno Gomes (Internacional) - 7 gols
+- Top 6: Rafael Borré (Internacional) - 7 gols
+- Top 7: Thiago Borbas (RB Bragantino) - 7 gols
+- Top 8: Everton Ribeiro (Bahia) - 7 gols
+- Top 9: Gegê (Goiás) - 7 gols
+- Top 10: Nicolás De La Cruz (Flamengo) - 6 gols
+
+### Promovidos
+- Cruzeiro: 2 -> 1
+- RB Bragantino: 2 -> 1
+- Atlético Goianiense: 3 -> 2
+- Juventude: 3 -> 2
+- América Mineiro: 4 -> 3
+- Goiás: 4 -> 3
+
+### Rebaixados
+- Corinthians: 1 -> 2
+- Fluminense: 1 -> 2
+- Athletico Paranaense: 2 -> 3
+- Fortaleza: 2 -> 3
+- Cuiabá: 3 -> 4
+- Mirassol: 3 -> 4
+
+### Destaques Financeiros e Tecnicos
+- Melhor ataque: Internacional com 28 gols
+- Melhor defesa: Cruzeiro com 8 gols sofridos
+- Maior publico: Flamengo x Botafogo - 80,000
+- Maior renda: Flamengo x Fluminense - R$ 12,096 mil
+
+### Clubes, Financas e Elencos
+#### Divisao 1
+  - Palmeiras | Div final 1 | Pos 1 na Div 1 | Movimento = | Caixa R$ 522,606 mil | Folha R$ 24,000 mil | Torcida 14.3M | Prestigio 95 | Emprestimo R$ 0 mil | Media elenco 88.5
+    Elenco:
+      - GOL Weverton                 OVR 95  Sal  3217  G  0  J 15  Craque *
+      - GOL Marcelo Lomba            OVR 93  Sal  2832  G  0  J  2  Craque -
+      - GOL Mateus Oliveira          OVR 88  Sal  3129  G  0  J  0  Craque -
+      - ZAG Agustín Giay             OVR 93  Sal  3424  G  2  J 16  Craque *
+      - ZAG Mayke                    OVR 91  Sal  1899  G  4  J 16  Craque -
+      - ZAG Marcos Rocha             OVR 89  Sal  2118  G  0  J 16  Craque -
+      - ZAG Murilo                   OVR 86  Sal  1054  G  0  J  0  Craque -
+      - ZAG Gustavo Gómez            OVR 86  Sal  2321  G  2  J 16  Craque -
+      - ZAG Naves                    OVR 84  Sal  1093  G  0  J  0  Craque -
+      - ZAG Joaquín Piquerez         OVR 82  Sal  1162  G  0  J  0  Craque -
+      - MEI Aníbal Moreno            OVR 93  Sal  2972  G  3  J 16  Craque -
+      - MEI Richard Ríos             OVR 91  Sal  2339  G  0  J 16  Craque -
+      - MEI Emiliano Martínez        OVR 89  Sal  2627  G  4  J 16  Craque -
+      - MEI Raphael Veiga            OVR 86  Sal  2297  G  4  J 15  Craque -
+      - MEI Maurício                 OVR 86  Sal   704  G  0  J  1  Craque -
+      - MEI Felipe Anderson          OVR 84  Sal   681  G  0  J  0  Craque -
+      - MEI Fabinho                  OVR 82  Sal   590  G  0  J  0  Craque -
+      - ATA Estêvão                  OVR 96  Sal  1528  G  4  J 15  Craque *
+      - ATA Facundo Torres           OVR 93  Sal  1696  G  3  J 15  Craque -
+      - ATA Paulinho                 OVR 93  Sal  1238  G  0  J  2  Craque -
+      - ATA Flaco López              OVR 91  Sal  3013  G  0  J  0  Craque -
+      - ATA Vitor Roque              OVR 89  Sal  2578  G  0  J  0  Craque -
+      - ATA Bruno Rodrigues          OVR 86  Sal   675  G  0  J  0  Craque -
+      - ATA Luighi                   OVR 84  Sal   893  G  0  J  0  Craque -
+      - ATA Rony                     OVR 82  Sal   896  G  0  J  0  Craque -
+  - Botafogo | Div final 1 | Pos 2 na Div 1 | Movimento = | Caixa R$ 464,463 mil | Folha R$ 20,000 mil | Torcida 12.3M | Prestigio 88 | Emprestimo R$ 0 mil | Media elenco 83.8
+    Elenco:
+      - GOL John                     OVR 91  Sal  2181  G  0  J 19  Craque *
+      - GOL Raul                     OVR 88  Sal  1733  G  0  J  2  Craque -
+      - GOL Léo Linck                OVR 84  Sal   722  G  0  J  0  Craque -
+      - ZAG Vitinho                  OVR 88  Sal  2017  G  1  J 20  Craque *
+      - ZAG Mateo Ponte              OVR 86  Sal  1932  G  7  J 20  Craque -
+      - ZAG Alexander Barboza        OVR 84  Sal   526  G  1  J 20  Craque -
+      - ZAG David Ricardo            OVR 82  Sal   608  G  0  J  1  Craque -
+      - ZAG Bastos                   OVR 82  Sal   963  G  2  J 19  Craque -
+      - ZAG Alex Telles              OVR 80  Sal  1099  G  0  J  0  Craque -
+      - ZAG Cuiabano                 OVR 77  Sal   450  G  0  J  0  Craque -
+      - MEI Gregore                  OVR 88  Sal  2827  G  6  J 19  Craque -
+      - MEI Marlon Freitas           OVR 86  Sal  2397  G  5  J 20  Craque -
+      - MEI Patrick de Paula         OVR 84  Sal   659  G  3  J 20  Craque -
+      - MEI Jefferson Savarino       OVR 82  Sal   725  G  0  J  2  Craque -
+      - MEI Santiago Rodríguez       OVR 82  Sal   579  G  1  J 19  Craque -
+      - MEI Allan                    OVR 80  Sal   539  G  0  J  0  Craque -
+      - MEI Newton                   OVR 77  Sal   687  G  0  J  0  Craque -
+      - ATA Igor Jesus               OVR 91  Sal  3297  G  4  J 17  Craque *
+      - ATA Jeffinho                 OVR 88  Sal  1593  G  0  J  3  Craque -
+      - ATA Artur                    OVR 88  Sal  1516  G  6  J 20  Craque -
+      - ATA Matheus Martins          OVR 86  Sal  1185  G  0  J  0  Craque -
+      - ATA Rwan Cruz                OVR 84  Sal  1044  G  0  J  0  Craque -
+      - ATA Elias Manoel             OVR 82  Sal  1172  G  0  J  0  Craque -
+      - ATA Santiago                 OVR 80  Sal   845  G  0  J  0  Craque -
+      - ATA Kayque                   OVR 77  Sal   500  G  0  J  0  Craque -
+  - Grêmio | Div final 1 | Pos 3 na Div 1 | Movimento = | Caixa R$ 253,465 mil | Folha R$ 13,000 mil | Torcida 9.1M | Prestigio 83 | Emprestimo R$ 0 mil | Media elenco 81.6
+    Elenco:
+      - GOL Agustín Marchesín        OVR 88  Sal  1651  G  0  J 18  Craque *
+      - GOL Gabriel Grando           OVR 86  Sal   522  G  0  J  0  Craque -
+      - GOL Caíque                   OVR 82  Sal  1168  G  0  J  0  Craque -
+      - ZAG João Pedro               OVR 86  Sal  3181  G  2  J 18  Craque *
+      - ZAG Fábio                    OVR 84  Sal   926  G  4  J 18  Craque -
+      - ZAG Kannemann                OVR 82  Sal   904  G  1  J 17  Craque -
+      - ZAG Jemerson                 OVR 79  Sal  1163  G  1  J 18  Craque -
+      - ZAG Rodrigo Ely              OVR 79  Sal   757  G  0  J  1  Craque -
+      - ZAG Reinaldo                 OVR 77  Sal  1187  G  0  J  0  Craque -
+      - ZAG Mayk                     OVR 75  Sal   861  G  0  J  0  Craque -
+      - MEI Mathías Villasanti       OVR 86  Sal  2852  G  0  J 18  Craque -
+      - MEI Dodi                     OVR 84  Sal  1185  G  3  J 17  Craque -
+      - MEI Edenilson                OVR 82  Sal   502  G  4  J 18  Craque -
+      - MEI Pepê                     OVR 79  Sal   683  G  0  J  2  Craque -
+      - MEI Franco Cristaldo         OVR 79  Sal   861  G  3  J 17  Craque -
+      - MEI Miguel Monsalve          OVR 77  Sal  1018  G  0  J  0  Craque -
+      - MEI Nathan                   OVR 75  Sal   809  G  0  J  0  Craque -
+      - ATA Martin Braithwaite       OVR 88  Sal  2397  G  8  J 18  Craque *
+      - ATA Pavon                    OVR 86  Sal  1033  G  0  J  0  Craque -
+      - ATA Cristian Olivera         OVR 86  Sal  1522  G  3  J 18  Craque -
+      - ATA Aravena                  OVR 84  Sal   757  G  0  J  0  Craque -
+      - ATA André Henrique           OVR 82  Sal  1067  G  0  J  0  Craque -
+      - ATA Matias Arezo             OVR 80  Sal   533  G  0  J  0  Craque -
+      - ATA Alysson                  OVR 77  Sal   760  G  0  J  0  Craque -
+      - ATA Soteldo                  OVR 75  Sal   560  G  0  J  0  Craque -
+  - Atlético Mineiro | Div final 1 | Pos 4 na Div 1 | Movimento = | Caixa R$ 460,279 mil | Folha R$ 20,000 mil | Torcida 13.3M | Prestigio 91 | Emprestimo R$ 0 mil | Media elenco 83.7
+    Elenco:
+      - GOL Everson                  OVR 90  Sal  3447  G  2  J 24  Craque *
+      - GOL Gabriel Delfim           OVR 89  Sal  3476  G  0  J  0  Craque -
+      - GOL Matheus Mendes           OVR 84  Sal   909  G  0  J  0  Craque -
+      - ZAG Saravia                  OVR 87  Sal  1637  G  3  J 24  Craque *
+      - ZAG Lyanco                   OVR 85  Sal  3365  G  4  J 24  Craque -
+      - ZAG Bruno Fuchs              OVR 83  Sal   584  G  4  J 24  Craque -
+      - ZAG Igor Rabello             OVR 82  Sal   570  G  1  J 21  Craque -
+      - ZAG Júnior Alonso            OVR 82  Sal   855  G  0  J  3  Craque -
+      - ZAG Guilherme Arana          OVR 80  Sal   833  G  0  J  0  Craque -
+      - ZAG Rubens                   OVR 77  Sal   687  G  0  J  0  Craque -
+      - MEI Fausto Vera              OVR 88  Sal  1383  G  8  J 24  Craque -
+      - MEI Alan Franco              OVR 85  Sal  2772  G  4  J 24  Craque -
+      - MEI Otávio                   OVR 83  Sal  1110  G  4  J 24  Craque -
+      - MEI Gustavo Scarpa           OVR 82  Sal  1011  G  1  J  4  Craque -
+      - MEI Igor Gomes               OVR 82  Sal   805  G  2  J 20  Craque -
+      - MEI Bernard                  OVR 80  Sal  1048  G  0  J  0  Craque -
+      - MEI Patrick                  OVR 77  Sal   716  G  0  J  0  Craque -
+      - ATA Hulk                     OVR 90  Sal  2023  G  6  J 24  Craque *
+      - ATA Tomás Cuello             OVR 88  Sal  3272  G  0  J  3  Craque -
+      - ATA Deyverson                OVR 88  Sal  3472  G  2  J 21  Craque -
+      - ATA Cadu                     OVR 87  Sal   640  G  0  J  0  Craque -
+      - ATA Eduardo Vargas           OVR 84  Sal  1136  G  0  J  0  Craque -
+      - ATA Cristian Pavón           OVR 82  Sal   595  G  0  J  0  Craque -
+      - ATA Rony                     OVR 80  Sal  1177  G  0  J  0  Craque -
+      - ATA Alisson                  OVR 78  Sal  1166  G  0  J  0  Craque -
+  - Internacional | Div final 1 | Pos 5 na Div 1 | Movimento = | Caixa R$ 270,096 mil | Folha R$ 14,000 mil | Torcida 8.2M | Prestigio 83 | Emprestimo R$ 0 mil | Media elenco 79.3
+    Elenco:
+      - GOL Sergio Rochet            OVR 86  Sal  1457  G  0  J 18  Craque *
+      - GOL Anthoni                  OVR 84  Sal   461  G  0  J  4  Craque -
+      - GOL Ivan                     OVR 80  Sal   948  G  0  J  0  Craque -
+      - ZAG Bustos                   OVR 83  Sal   891  G  2  J 20  Craque *
+      - ZAG Braian Aguirre           OVR 81  Sal   981  G  2  J 20  Craque -
+      - ZAG Vitão                    OVR 79  Sal   944  G  2  J 19  Craque -
+      - ZAG Gabriel Mercado          OVR 77  Sal   638  G  2  J 18  Craque -
+      - ZAG Agustín Rogel            OVR 77  Sal   900  G  0  J  3  Craque -
+      - ZAG Alexandro Bernabei       OVR 75  Sal  1176  G  0  J  0  Craque -
+      - ZAG Juninho                  OVR 73  Sal   244  G  0  J  0  Craque -
+      - MEI Fernando                 OVR 84  Sal  1069  G  1  J 19  Craque -
+      - MEI Thiago Maia              OVR 81  Sal   863  G  3  J 20  Craque -
+      - MEI Bruno Henrique           OVR 79  Sal   517  G  3  J 20  Craque -
+      - MEI Alan Patrick             OVR 77  Sal   929  G  0  J  1  Craque -
+      - MEI Bruno Gomes              OVR 77  Sal   536  G  7  J 20  Craque -
+      - MEI Gabriel Tabata           OVR 75  Sal   834  G  0  J  0  Craque -
+      - MEI Rômulo                   OVR 73  Sal   317  G  0  J  0  Craque -
+      - ATA Rafael Borré             OVR 86  Sal  3479  G  7  J 20  Craque *
+      - ATA Wesley                   OVR 84  Sal   889  G  1  J  2  Craque -
+      - ATA Enner Valencia           OVR 84  Sal   845  G  4  J 18  Craque -
+      - ATA Lucas Alario             OVR 82  Sal   462  G  0  J  0  Craque -
+      - ATA Vitinho                  OVR 80  Sal  1152  G  0  J  0  Craque -
+      - ATA Lucca                    OVR 77  Sal   581  G  0  J  0  Craque -
+      - ATA Ricardo Mathias          OVR 75  Sal  1002  G  0  J  0  Craque -
+      - ATA Gustavo Prado            OVR 73  Sal   323  G  0  J  0  Craque -
+  - Flamengo | Div final 1 | Pos 6 na Div 1 | Movimento = | Caixa R$ 605,167 mil | Folha R$ 28,000 mil | Torcida 30.6M | Prestigio 98 | Emprestimo R$ 0 mil | Media elenco 88.3
+    Elenco:
+      - GOL Rossi                    OVR 95  Sal  1401  G  1  J 24  Craque *
+      - GOL Matheus Cunha            OVR 93  Sal  2497  G  0  J  0  Craque -
+      - GOL Dyogo Alves              OVR 89  Sal  1668  G  0  J  0  Craque -
+      - ZAG Wesley                   OVR 92  Sal  2353  G  3  J 24  Craque *
+      - ZAG Guillermo Varela         OVR 90  Sal  3212  G  3  J 24  Craque -
+      - ZAG Léo Pereira              OVR 88  Sal  3438  G  5  J 24  Craque -
+      - ZAG Danilo                   OVR 86  Sal   965  G  1  J  4  Craque -
+      - ZAG Léo Ortiz                OVR 86  Sal  1314  G  3  J 20  Craque -
+      - ZAG Alex Sandro              OVR 84  Sal   705  G  0  J  0  Craque -
+      - ZAG Ayrton Lucas             OVR 82  Sal  1029  G  0  J  0  Craque -
+      - MEI Erick Pulgar             OVR 92  Sal  2618  G  5  J 24  Craque -
+      - MEI Allan                    OVR 90  Sal  2604  G  2  J 23  Craque -
+      - MEI Nicolás De La Cruz       OVR 88  Sal  1452  G  6  J 24  Craque -
+      - MEI Gerson                   OVR 86  Sal   684  G  0  J  4  Craque -
+      - MEI Giorgian De Arrascaeta   OVR 86  Sal  2230  G  3  J 21  Craque -
+      - MEI Everton Araújo           OVR 84  Sal   501  G  0  J  0  Craque -
+      - MEI Carlos Alcaraz           OVR 82  Sal  1029  G  0  J  0  Craque -
+      - ATA Pedro                    OVR 94  Sal  1321  G  2  J 24  Craque *
+      - ATA Michael                  OVR 93  Sal  1302  G  0  J  4  Craque -
+      - ATA Bruno Henrique           OVR 93  Sal  2262  G  4  J 20  Craque -
+      - ATA Luiz Araújo              OVR 91  Sal  1330  G  0  J  0  Craque -
+      - ATA Everton Cebolinha        OVR 89  Sal  3190  G  0  J  0  Craque -
+      - ATA Gonzalo Plata            OVR 86  Sal   586  G  0  J  0  Craque -
+      - ATA Juninho                  OVR 84  Sal   508  G  0  J  0  Craque -
+      - ATA Matheus Gonçalves        OVR 82  Sal   935  G  0  J  0  Craque -
+  - Fluminense | Div final 2 | Pos 7 na Div 1 | Movimento REBAIXADO | Caixa R$ 225,170 mil | Folha R$ 16,000 mil | Torcida 10.3M | Prestigio 81 | Emprestimo R$ 0 mil | Media elenco 81.6
+    Elenco:
+      - GOL Fábio                    OVR 88  Sal  1939  G  0  J 18  Craque *
+      - GOL Vitor Eudes              OVR 86  Sal  1154  G  0  J  0  Craque -
+      - GOL Pedro Rangel             OVR 82  Sal   558  G  0  J  0  Craque -
+      - ZAG Samuel Xavier            OVR 86  Sal  3482  G  0  J 18  Craque *
+      - ZAG Guga                     OVR 84  Sal   873  G  3  J 18  Craque -
+      - ZAG Thiago Silva             OVR 82  Sal   815  G  3  J 17  Craque -
+      - ZAG Manoel                   OVR 79  Sal  1145  G  0  J  1  Craque -
+      - ZAG Thiago Santos            OVR 79  Sal   942  G  1  J 18  Craque -
+      - ZAG Renê                     OVR 77  Sal   963  G  0  J  0  Craque -
+      - ZAG Fretes                   OVR 75  Sal  1079  G  0  J  0  Craque -
+      - MEI Martinelli               OVR 86  Sal  2073  G  1  J 18  Craque -
+      - MEI Otávio                   OVR 84  Sal   604  G  0  J 17  Craque -
+      - MEI Nonato                   OVR 81  Sal   623  G  4  J 18  Craque -
+      - MEI Ganso                    OVR 79  Sal  1066  G  2  J 18  Craque -
+      - MEI Lima                     OVR 79  Sal  1180  G  0  J  1  Craque -
+      - MEI Jhon Arias               OVR 77  Sal  1037  G  0  J  0  Craque -
+      - MEI Kevin Serna              OVR 75  Sal  1097  G  0  J  0  Craque -
+      - ATA Germán Cano              OVR 89  Sal  2441  G  4  J 18  Craque *
+      - ATA Keno                     OVR 86  Sal  2547  G  1  J 17  Craque -
+      - ATA Everaldo                 OVR 86  Sal   903  G  0  J  1  Craque -
+      - ATA Agustín Canobbio         OVR 84  Sal  1025  G  0  J  0  Craque -
+      - ATA Lelê                     OVR 82  Sal   653  G  0  J  0  Craque -
+      - ATA Isaac                    OVR 79  Sal  1126  G  0  J  0  Craque -
+      - ATA Marquinhos               OVR 77  Sal   570  G  0  J  0  Craque -
+      - ATA Riquelme                 OVR 75  Sal  1161  G  0  J  0  Craque -
+  - Corinthians | Div final 2 | Pos 8 na Div 1 | Movimento REBAIXADO | Caixa R$ 159,345 mil | Folha R$ 19,000 mil | Torcida 27.0M | Prestigio 86 | Emprestimo R$ 0 mil | Media elenco 79.4
+    Elenco:
+      - GOL Hugo Souza               OVR 86  Sal  2394  G  0  J 16  Craque *
+      - GOL Matheus Donelli          OVR 84  Sal   845  G  0  J  0  Craque -
+      - GOL Felipe Longo             OVR 79  Sal  1173  G  0  J  0  Craque -
+      - ZAG Matheuzinho              OVR 84  Sal   877  G  2  J 15  Craque *
+      - ZAG Léo Maná                 OVR 82  Sal  1174  G  1  J 16  Craque -
+      - ZAG Félix Torres             OVR 80  Sal   573  G  0  J 15  Craque -
+      - ZAG Cacá                     OVR 77  Sal   843  G  2  J 15  Craque -
+      - ZAG Gustavo Henrique         OVR 77  Sal   807  G  0  J  3  Craque -
+      - ZAG Hugo                     OVR 75  Sal  1197  G  0  J  0  Craque -
+      - ZAG Bidu                     OVR 73  Sal   364  G  0  J  0  Craque -
+      - MEI Raniele                  OVR 84  Sal   865  G  4  J 16  Craque -
+      - MEI Breno Bidon              OVR 82  Sal  1092  G  3  J 16  Craque -
+      - MEI Maycon                   OVR 79  Sal   694  G  3  J 16  Craque -
+      - MEI Alex Santana             OVR 77  Sal   580  G  0  J 16  Craque -
+      - MEI Charles                  OVR 77  Sal   965  G  0  J  0  Craque -
+      - MEI Rodrigo Garro            OVR 75  Sal   901  G  0  J  0  Craque -
+      - MEI André Carrillo           OVR 73  Sal   364  G  0  J  0  Craque -
+      - ATA Yuri Alberto             OVR 86  Sal  1220  G  0  J 16  Craque *
+      - ATA Memphis Depay            OVR 84  Sal   990  G  2  J 16  Craque -
+      - ATA Ángel Romero             OVR 84  Sal  1184  G  0  J  0  Craque -
+      - ATA Talles Magno             OVR 82  Sal   631  G  0  J  0  Craque -
+      - ATA Pedro Raul               OVR 79  Sal   522  G  0  J  0  Craque -
+      - ATA Giovane                  OVR 77  Sal   916  G  0  J  0  Craque -
+      - ATA Wesley                   OVR 75  Sal  1113  G  0  J  0  Craque -
+      - ATA Kayke                    OVR 73  Sal   244  G  0  J  0  Craque -
+
+#### Divisao 2
+  - Cruzeiro | Div final 1 | Pos 1 na Div 2 | Movimento PROMOVIDO | Caixa R$ 172,309 mil | Folha R$ 13,000 mil | Torcida 10.0M | Prestigio 84 | Emprestimo R$ 0 mil | Media elenco 73.8
+    Elenco:
+      - GOL Cássio                   OVR 80  Sal  2511  G  1  J 16  Craque *
+      - GOL Anderson                 OVR 78  Sal   867  G  0  J  4  Craque -
+      - GOL Léo Aragão               OVR 74  Sal   675  G  0  J  0  Craque -
+      - ZAG William                  OVR 78  Sal  3234  G  2  J 18  Craque *
+      - ZAG Fagner                   OVR 76  Sal   688  G  3  J 18  Craque -
+      - ZAG Fabrício Bruno           OVR 74  Sal  1150  G  3  J 18  Craque -
+      - ZAG Lucas Villalba           OVR 72  Sal  1098  G  0  J  1  Craque -
+      - ZAG Jonathan Jesus           OVR 72  Sal   681  G  5  J 17  Craque -
+      - ZAG Kaiki                    OVR 70  Sal   676  G  0  J  0  Craque -
+      - ZAG Marlon                   OVR 67  Sal   813  G  0  J  0  Craque -
+      - MEI Lucas Romero             OVR 78  Sal  1414  G  1  J 18  Craque -
+      - MEI Walace                   OVR 76  Sal   697  G  2  J 17  Craque -
+      - MEI Matheus Henrique         OVR 74  Sal   910  G  1  J 18  Craque -
+      - MEI Christian                OVR 72  Sal   494  G  3  J 16  Craque -
+      - MEI Japa                     OVR 72  Sal   959  G  0  J  3  Craque -
+      - MEI Eduardo                  OVR 70  Sal  1199  G  0  J  0  Craque -
+      - MEI Matheus Pereira          OVR 68  Sal   800  G  0  J  0  Craque -
+      - ATA Kaio Jorge               OVR 80  Sal  3293  G  1  J 18  Craque *
+      - ATA Lautaro Díaz             OVR 78  Sal  1307  G  0  J 16  Craque -
+      - ATA Dudu                     OVR 78  Sal   820  G  1  J  2  Craque -
+      - ATA Yannick Bolasie          OVR 76  Sal   730  G  0  J  0  Craque -
+      - ATA Marquinhos               OVR 74  Sal  1069  G  0  J  0  Craque -
+      - ATA Wanderson                OVR 72  Sal   559  G  0  J  0  Craque -
+      - ATA Gabriel Veron            OVR 70  Sal   540  G  0  J  0  Craque -
+      - ATA Rafa Silva               OVR 67  Sal   880  G  0  J  0  Craque -
+  - RB Bragantino | Div final 1 | Pos 2 na Div 2 | Movimento PROMOVIDO | Caixa R$ 182,160 mil | Folha R$ 9,500 mil | Torcida 1.7M | Prestigio 77 | Emprestimo R$ 0 mil | Media elenco 71.5
+    Elenco:
+      - GOL Cleiton                  OVR 78  Sal  2029  G  0  J 22  Craque *
+      - GOL Lucão                    OVR 76  Sal   745  G  0  J  0  Craque -
+      - GOL Matheus Nogueira         OVR 72  Sal   883  G  0  J  0  Craque -
+      - ZAG Andrés Hurtado           OVR 75  Sal   883  G  0  J 22  Craque *
+      - ZAG Nathan Mendes            OVR 73  Sal   787  G  1  J 22  Craque -
+      - ZAG Pedro Henrique           OVR 71  Sal   799  G  1  J 22  Craque -
+      - ZAG Guzmán Rodríguez         OVR 70  Sal   919  G  0  J  3  Craque -
+      - ZAG Natan                    OVR 69  Sal   977  G  4  J 19  Craque -
+      - ZAG Juninho Capixaba         OVR 68  Sal  1115  G  0  J  0  Craque -
+      - ZAG Luan Cândido             OVR 66  Sal   172  G  0  J  0  Craque -
+      - MEI Jadsom                   OVR 75  Sal   843  G  5  J 22  Craque -
+      - MEI Matheus Fernandes        OVR 73  Sal   885  G  3  J 21  Craque -
+      - MEI Eric Ramires             OVR 71  Sal   878  G  5  J 22  Craque -
+      - MEI Raul                     OVR 69  Sal   727  G  0  J  3  Craque -
+      - MEI Lucas Evangelista        OVR 69  Sal   859  G  5  J 20  Craque -
+      - MEI Jhon Jhon                OVR 68  Sal   457  G  0  J  0  Craque -
+      - MEI Gustavinho               OVR 66  Sal   355  G  0  J  0  Craque -
+      - ATA Thiago Borbas            OVR 78  Sal  2535  G  7  J 22  Craque *
+      - ATA Eduardo Sasha            OVR 76  Sal  1058  G  3  J 18  Craque -
+      - ATA Vitinho                  OVR 76  Sal  1146  G  2  J  4  Craque -
+      - ATA Helinho                  OVR 74  Sal   962  G  0  J  0  Craque -
+      - ATA Henry Mosquera           OVR 72  Sal   846  G  0  J  0  Craque -
+      - ATA Ignacio Laquintana       OVR 70  Sal   698  G  0  J  0  Craque -
+      - ATA Lincoln                  OVR 68  Sal   542  G  0  J  0  Craque -
+      - ATA Talisson                 OVR 66  Sal   361  G  0  J  0  Craque -
+  - Vasco da Gama | Div final 2 | Pos 3 na Div 2 | Movimento = | Caixa R$ 138,602 mil | Folha R$ 9,000 mil | Torcida 10.3M | Prestigio 76 | Emprestimo R$ 0 mil | Media elenco 69.4
+    Elenco:
+      - GOL Léo Jardim               OVR 76  Sal   776  G  0  J 19  Craque *
+      - GOL Keiller                  OVR 74  Sal   856  G  0  J  2  Craque -
+      - GOL Pablo                    OVR 70  Sal   957  G  0  J  0  Craque -
+      - ZAG Paulo Henrique           OVR 74  Sal  1025  G  3  J 20  Craque *
+      - ZAG Puma Rodríguez           OVR 71  Sal   509  G  1  J 20  Craque -
+      - ZAG João Victor              OVR 69  Sal   800  G  4  J 20  Craque -
+      - ZAG Lucas Oliveira           OVR 67  Sal   635  G  0  J  2  Craque -
+      - ZAG Maicon                   OVR 67  Sal   870  G  2  J 18  Craque -
+      - ZAG Lucas Piton              OVR 65  Sal   267  G  0  J  0  Craque -
+      - ZAG Victor Luís              OVR 63  Sal   158  G  0  J  0  Craque -
+      - MEI Hugo Moura               OVR 73  Sal  1058  G  4  J 20  Craque -
+      - MEI Jair                     OVR 71  Sal   722  G  5  J 19  Craque -
+      - MEI Juan Sforza              OVR 69  Sal   516  G  2  J 20  Craque -
+      - MEI Philippe Coutinho        OVR 67  Sal   827  G  1  J  2  Craque -
+      - MEI Dimitri Payet            OVR 67  Sal   622  G  4  J 19  Craque -
+      - MEI Paulinho                 OVR 66  Sal   298  G  0  J  0  Craque -
+      - MEI Tchê Tchê                OVR 63  Sal   421  G  0  J  0  Craque -
+      - ATA Pablo Vegetti            OVR 76  Sal  1113  G  4  J 20  Craque *
+      - ATA Adson                    OVR 74  Sal   690  G  0  J  2  Craque -
+      - ATA Rayan                    OVR 74  Sal   593  G  5  J 18  Craque -
+      - ATA Alex Teixeira            OVR 72  Sal   613  G  0  J  0  Craque -
+      - ATA Rossi                    OVR 70  Sal   598  G  0  J  0  Craque -
+      - ATA David                    OVR 68  Sal   849  G  0  J  0  Craque -
+      - ATA GB                       OVR 65  Sal   418  G  0  J  0  Craque -
+      - ATA Jean David               OVR 63  Sal   282  G  0  J  0  Craque -
+  - Santos | Div final 2 | Pos 4 na Div 2 | Movimento = | Caixa R$ 131,541 mil | Folha R$ 7,000 mil | Torcida 10.1M | Prestigio 73 | Emprestimo R$ 0 mil | Media elenco 63.0
+    Elenco:
+      - GOL Gabriel Brazão           OVR 70  Sal   863  G  0  J 18  Craque *
+      - GOL João Paulo               OVR 68  Sal  1054  G  0  J  0  Craque -
+      - GOL Diógenes                 OVR 63  Sal   270  G  0  J  0  Craque -
+      - ZAG Aderlan                  OVR 67  Sal   979  G  2  J 18  Craque *
+      - ZAG JP Chermont              OVR 65  Sal   727  G  1  J 18  Craque -
+      - ZAG Gil                      OVR 63  Sal   226  G  1  J 18  Craque -
+      - ZAG Joaquim                  OVR 61  Sal   174  G  3  J 17  Craque -
+      - ZAG Zé Ivaldo                OVR 61  Sal   372  G  0  J  1  Craque -
+      - ZAG Escobar                  OVR 59  Sal   179  G  0  J  0  Craque -
+      - ZAG Kevyson                  OVR 57  Sal   182  G  0  J  0  Craque -
+      - MEI Diego Pituca             OVR 67  Sal   650  G  2  J 18  Craque -
+      - MEI Tomás Rincón             OVR 65  Sal   873  G  2  J 18  Craque -
+      - MEI João Schmidt             OVR 63  Sal   232  G  3  J 17  Craque -
+      - MEI Giuliano                 OVR 61  Sal   313  G  1  J 18  Craque -
+      - MEI Otero                    OVR 61  Sal   358  G  0  J  1  Craque -
+      - MEI Cazares                  OVR 59  Sal   396  G  0  J  0  Craque -
+      - MEI Miguelito                OVR 57  Sal   381  G  0  J  0  Craque -
+      - ATA Guilherme                OVR 69  Sal   488  G  6  J 17  Craque *
+      - ATA Julio Furch              OVR 67  Sal   868  G  0  J  1  Craque -
+      - ATA Pedrinho                 OVR 67  Sal   533  G  2  J 18  Craque -
+      - ATA Willian Bigode           OVR 65  Sal   208  G  0  J  0  Craque -
+      - ATA Wendel Silva             OVR 63  Sal   165  G  0  J  0  Craque -
+      - ATA Lucas Braga              OVR 61  Sal   368  G  0  J  0  Craque -
+      - ATA Morelos                  OVR 59  Sal   353  G  0  J  0  Craque -
+      - ATA Enzo Monteiro            OVR 57  Sal   152  G  0  J  0  Craque -
+  - São Paulo FC | Div final 2 | Pos 5 na Div 2 | Movimento = | Caixa R$ 163,223 mil | Folha R$ 14,000 mil | Torcida 15.2M | Prestigio 81 | Emprestimo R$ 0 mil | Media elenco 73.8
+    Elenco:
+      - GOL Rafael                   OVR 80  Sal  1271  G  0  J 16  Craque *
+      - GOL Jandrei                  OVR 78  Sal   703  G  0  J  0  Craque -
+      - GOL Young                    OVR 74  Sal  1025  G  0  J  0  Craque -
+      - ZAG Igor Vinícius            OVR 78  Sal  2739  G  2  J 16  Craque *
+      - ZAG Ferraresi                OVR 76  Sal   627  G  1  J 15  Craque -
+      - ZAG Arboleda                 OVR 74  Sal  1152  G  1  J 16  Craque -
+      - ZAG Alan Franco              OVR 72  Sal  1172  G  0  J 16  Craque -
+      - ZAG Sabino                   OVR 72  Sal  1146  G  0  J  1  Craque -
+      - ZAG Patryck                  OVR 70  Sal  1158  G  0  J  0  Craque -
+      - ZAG Welington                OVR 67  Sal   724  G  0  J  0  Craque -
+      - MEI Alisson                  OVR 78  Sal  3075  G  4  J 16  Craque -
+      - MEI Pablo Maia               OVR 76  Sal   605  G  4  J 16  Craque -
+      - MEI Damián Bobadilla         OVR 74  Sal   699  G  4  J 16  Craque -
+      - MEI Marcos Antônio           OVR 72  Sal   527  G  2  J 15  Craque -
+      - MEI Rodriguinho              OVR 72  Sal   702  G  0  J  1  Craque -
+      - MEI Wellington Rato          OVR 70  Sal   849  G  0  J  0  Craque -
+      - MEI Matheus Alves            OVR 67  Sal   687  G  0  J  0  Craque -
+      - ATA Calleri                  OVR 80  Sal  2138  G  4  J 15  Craque *
+      - ATA Luciano                  OVR 78  Sal   845  G  0  J  1  Craque -
+      - ATA Lucas Moura              OVR 78  Sal  1636  G  1  J 16  Craque -
+      - ATA Ferreira                 OVR 76  Sal  1110  G  0  J  0  Craque -
+      - ATA André Silva              OVR 74  Sal  1170  G  0  J  0  Craque -
+      - ATA William Gomes            OVR 72  Sal   604  G  0  J  0  Craque -
+      - ATA Erick                    OVR 70  Sal   665  G  0  J  0  Craque -
+      - ATA Henrique Carmo           OVR 67  Sal   704  G  0  J  0  Craque -
+  - Bahia | Div final 2 | Pos 6 na Div 2 | Movimento = | Caixa R$ 116,233 mil | Folha R$ 8,500 mil | Torcida 3.0M | Prestigio 73 | Emprestimo R$ 0 mil | Media elenco 71.7
+    Elenco:
+      - GOL Marcos Felipe            OVR 78  Sal  3268  G  0  J 16  Craque *
+      - GOL Danilo Fernandes         OVR 76  Sal   462  G  0  J  0  Craque -
+      - GOL Adriel                   OVR 72  Sal   543  G  0  J  0  Craque -
+      - ZAG Gilberto                 OVR 76  Sal   740  G  1  J 16  Craque *
+      - ZAG Arias                    OVR 74  Sal  1163  G  0  J 16  Craque -
+      - ZAG Kanu                     OVR 72  Sal   560  G  1  J 16  Craque -
+      - ZAG David Duarte             OVR 70  Sal   525  G  1  J 16  Craque -
+      - ZAG Gabriel Xavier           OVR 70  Sal   675  G  0  J  0  Craque -
+      - ZAG Iago Borduchi            OVR 67  Sal   832  G  0  J  0  Craque -
+      - ZAG Luciano Juba             OVR 65  Sal   200  G  0  J  0  Craque -
+      - MEI Caio Alexandre           OVR 76  Sal   590  G  3  J 16  Craque -
+      - MEI Jean Lucas               OVR 74  Sal  1173  G  0  J 16  Craque -
+      - MEI Everton Ribeiro          OVR 72  Sal  1116  G  7  J 16  Craque -
+      - MEI Cauly                    OVR 70  Sal  1153  G  0  J 15  Craque -
+      - MEI Rezende                  OVR 70  Sal   902  G  0  J  1  Craque -
+      - MEI Nicolás Acevedo          OVR 68  Sal  1120  G  0  J  0  Craque -
+      - MEI Erick                    OVR 65  Sal   358  G  0  J  0  Craque -
+      - ATA Everaldo                 OVR 78  Sal  1835  G  4  J 16  Craque *
+      - ATA Ademir                   OVR 76  Sal   634  G  2  J 15  Craque -
+      - ATA Biel                     OVR 76  Sal   985  G  0  J  1  Craque -
+      - ATA Lucho Rodríguez          OVR 74  Sal   510  G  0  J  0  Craque -
+      - ATA Kayky                    OVR 72  Sal   823  G  0  J  0  Craque -
+      - ATA Tiago                    OVR 70  Sal  1144  G  0  J  0  Craque -
+      - ATA Rafael Ratão             OVR 67  Sal   784  G  0  J  0  Craque -
+      - ATA Willian José             OVR 65  Sal   152  G  0  J  0  Craque -
+  - Athletico Paranaense | Div final 3 | Pos 7 na Div 2 | Movimento REBAIXADO | Caixa R$ 127,201 mil | Folha R$ 9,000 mil | Torcida 4.6M | Prestigio 72 | Emprestimo R$ 0 mil | Media elenco 67.3
+    Elenco:
+      - GOL Mycael                   OVR 74  Sal  1190  G  0  J 15  Craque *
+      - GOL Léo Linck                OVR 72  Sal  1098  G  0  J  2  Craque -
+      - GOL Santos                   OVR 67  Sal   733  G  0  J  0  Craque -
+      - ZAG Léo Godoy                OVR 72  Sal  1198  G  1  J 16  Craque *
+      - ZAG Madson                   OVR 70  Sal   511  G  1  J 15  Craque -
+      - ZAG Kaique Rocha             OVR 67  Sal  1071  G  1  J 16  Craque -
+      - ZAG Matheus Felipe           OVR 65  Sal   347  G  0  J  1  Craque -
+      - ZAG Belezi                   OVR 65  Sal   898  G  2  J 16  Craque -
+      - ZAG Lucas Esquivel           OVR 63  Sal   274  G  0  J  0  Craque -
+      - ZAG Fernando                 OVR 61  Sal   266  G  0  J  0  Craque -
+      - MEI Erick                    OVR 72  Sal  1168  G  2  J 16  Craque -
+      - MEI Felipinho                OVR 70  Sal   983  G  1  J 16  Craque -
+      - MEI Bruno Zapelli            OVR 67  Sal   716  G  1  J 16  Craque -
+      - MEI Christian                OVR 65  Sal  1190  G  1  J 15  Craque -
+      - MEI Canobbio                 OVR 65  Sal   381  G  0  J  1  Craque -
+      - MEI Giuliano                 OVR 63  Sal   379  G  0  J  0  Craque -
+      - MEI Alex Santana             OVR 61  Sal   277  G  0  J  0  Craque -
+      - ATA Pablo                    OVR 74  Sal   507  G  3  J 16  Craque *
+      - ATA Cuello                   OVR 72  Sal  1175  G  0  J  1  Craque -
+      - ATA Mastriani                OVR 72  Sal   980  G  1  J 15  Craque -
+      - ATA Rômulo                   OVR 70  Sal  1066  G  0  J  0  Craque -
+      - ATA Di Yorio                 OVR 67  Sal   648  G  0  J  0  Craque -
+      - ATA Julimar                  OVR 65  Sal   376  G  0  J  0  Craque -
+      - ATA Emersonn                 OVR 63  Sal   304  G  0  J  0  Craque -
+      - ATA Isaac                    OVR 61  Sal   418  G  0  J  0  Craque -
+  - Fortaleza | Div final 3 | Pos 8 na Div 2 | Movimento REBAIXADO | Caixa R$ 176,440 mil | Folha R$ 11,000 mil | Torcida 3.3M | Prestigio 73 | Emprestimo R$ 0 mil | Media elenco 73.8
+    Elenco:
+      - GOL João Ricardo             OVR 80  Sal  3174  G  0  J 19  Craque *
+      - GOL Santos                   OVR 78  Sal   854  G  0  J  2  Craque -
+      - GOL Magrão                   OVR 74  Sal   575  G  0  J  0  Craque -
+      - ZAG Tinga                    OVR 78  Sal  2855  G  3  J 20  Craque *
+      - ZAG Emanuel Brítez           OVR 76  Sal  1137  G  2  J 20  Craque -
+      - ZAG Titi                     OVR 74  Sal   535  G  0  J 20  Craque -
+      - ZAG Bruno Pacheco            OVR 72  Sal   696  G  0  J  2  Craque -
+      - ZAG Kuscevic                 OVR 72  Sal   870  G  0  J 18  Craque -
+      - ZAG Mancuso                  OVR 70  Sal  1035  G  0  J  0  Craque -
+      - ZAG Talocha                  OVR 68  Sal   585  G  0  J  0  Craque -
+      - MEI Lucas Sasha              OVR 78  Sal  3418  G  1  J 20  Craque -
+      - MEI Pochettino               OVR 75  Sal   762  G  0  J 20  Craque -
+      - MEI Martínez                 OVR 74  Sal   860  G  5  J 20  Craque -
+      - MEI Zé Welison               OVR 72  Sal  1123  G  0  J  2  Craque -
+      - MEI Hércules                 OVR 72  Sal   539  G  6  J 18  Craque -
+      - MEI Kervin Andrade           OVR 70  Sal   973  G  0  J  0  Craque -
+      - MEI Calebe                   OVR 68  Sal   950  G  0  J  0  Craque -
+      - ATA Lucero                   OVR 80  Sal  1411  G  2  J 20  Craque *
+      - ATA Moisés                   OVR 78  Sal  3396  G  3  J 17  Craque -
+      - ATA Marinho                  OVR 78  Sal   938  G  0  J  3  Craque -
+      - ATA Breno Lopes              OVR 76  Sal   992  G  0  J  0  Craque -
+      - ATA Yago Pikachu             OVR 74  Sal   997  G  0  J  0  Craque -
+      - ATA Renato Kayzer            OVR 72  Sal  1108  G  0  J  0  Craque -
+      - ATA Allanzinho               OVR 70  Sal   829  G  0  J  0  Craque -
+      - ATA Pedro Rocha              OVR 67  Sal   999  G  0  J  0  Craque -
+
+#### Divisao 3
+  - Atlético Goianiense | Div final 2 | Pos 1 na Div 3 | Movimento PROMOVIDO | Caixa R$ 53,829 mil | Folha R$ 4,500 mil | Torcida 1.7M | Prestigio 63 | Emprestimo R$ 0 mil | Media elenco 52.3
+    Elenco:
+      - GOL Ronaldo                  OVR 63  Sal   893  G  0  J 16  Craque *
+      - GOL Luan Polli               OVR 59  Sal   414  G  0  J  0  Craque -
+      - GOL Pedro Paulo              OVR 52  Sal   288  G  0  J  0  Craque -
+      - ZAG Bruno Tubarão            OVR 60  Sal   759  G  2  J 16  Craque *
+      - ZAG Maguinho                 OVR 56  Sal   233  G  2  J 16  Craque -
+      - ZAG Alix Vinicius            OVR 53  Sal   390  G  1  J 16  Craque -
+      - ZAG Lucas Gazal              OVR 50  Sal   279  G  5  J 16  Craque -
+      - ZAG Luiz Felipe              OVR 49  Sal   427  G  0  J  0  Craque -
+      - ZAG Guilherme Romão          OVR 45  Sal   275  G  0  J  0  Craque -
+      - ZAG Rhaldney                 OVR 42  Sal   283  G  0  J  0  Craque -
+      - MEI Roni                     OVR 60  Sal   733  G  1  J 16  Craque -
+      - MEI Baralhas                 OVR 57  Sal   250  G  4  J 15  Craque -
+      - MEI Shaylon                  OVR 53  Sal   306  G  4  J 16  Craque -
+      - MEI Jorginho                 OVR 50  Sal   216  G  1  J 16  Craque -
+      - MEI Emiliano Rodríguez       OVR 48  Sal   223  G  0  J  1  Craque -
+      - MEI Léo Pereira              OVR 45  Sal   335  G  0  J  0  Craque -
+      - MEI Campanharo               OVR 42  Sal   346  G  0  J  0  Craque -
+      - ATA Luiz Fernando            OVR 63  Sal  1043  G  3  J 15  Craque *
+      - ATA Derek                    OVR 60  Sal   604  G  1  J 16  Craque -
+      - ATA Janderson                OVR 58  Sal   271  G  0  J  1  Craque -
+      - ATA Hyuri                    OVR 55  Sal   175  G  0  J  0  Craque -
+      - ATA Alejo Cruz               OVR 52  Sal   383  G  0  J  0  Craque -
+      - ATA Danielzinho              OVR 49  Sal   406  G  0  J  0  Craque -
+      - ATA Yony González            OVR 45  Sal   307  G  0  J  0  Craque -
+      - ATA Gustavo Coutinho         OVR 42  Sal   234  G  0  J  0  Craque -
+  - Juventude | Div final 2 | Pos 2 na Div 3 | Movimento PROMOVIDO | Caixa R$ 75,019 mil | Folha R$ 5,500 mil | Torcida 1.1M | Prestigio 66 | Emprestimo R$ 0 mil | Media elenco 55.5
+    Elenco:
+      - GOL Gabriel                  OVR 66  Sal  1014  G  0  J 22  Craque *
+      - GOL César                    OVR 62  Sal   589  G  0  J  0  Craque -
+      - GOL Marcão                   OVR 56  Sal   405  G  0  J  0  Craque -
+      - ZAG João Lucas               OVR 62  Sal  1131  G  2  J 22  Craque *
+      - ZAG Ewerthon                 OVR 59  Sal   879  G  2  J 22  Craque -
+      - ZAG Rodrigo Sam              OVR 56  Sal   185  G  4  J 22  Craque -
+      - ZAG Danilo Boza              OVR 53  Sal   167  G  2  J 22  Craque -
+      - ZAG Abner                    OVR 52  Sal   371  G  0  J  0  Craque -
+      - ZAG Alan Ruschel             OVR 49  Sal   307  G  0  J  0  Craque -
+      - ZAG Marcos Paulo             OVR 46  Sal   362  G  0  J  0  Craque -
+      - MEI Jean Irmer               OVR 62  Sal  1178  G  1  J 22  Craque -
+      - MEI Caique                   OVR 59  Sal  1085  G  4  J 21  Craque -
+      - MEI Mandaca                  OVR 56  Sal   406  G  3  J 22  Craque -
+      - MEI Jadson                   OVR 53  Sal   402  G  3  J 22  Craque -
+      - MEI Nenê                     OVR 52  Sal   240  G  1  J  1  Craque -
+      - MEI Luis Oyama               OVR 49  Sal   284  G  0  J  0  Craque -
+      - MEI Luan Dias                OVR 46  Sal   346  G  0  J  0  Craque -
+      - ATA Erick Farias             OVR 66  Sal  1144  G  3  J 22  Craque *
+      - ATA Gilberto                 OVR 63  Sal   605  G  4  J 21  Craque -
+      - ATA Lucas Barbosa            OVR 62  Sal   610  G  1  J  1  Craque -
+      - ATA Marcelinho               OVR 59  Sal   396  G  0  J  0  Craque -
+      - ATA Edinho                   OVR 56  Sal   166  G  0  J  0  Craque -
+      - ATA Taliari                  OVR 52  Sal   185  G  0  J  0  Craque -
+      - ATA Gabriel Taliari          OVR 49  Sal   309  G  0  J  0  Craque -
+      - ATA Da Silva                 OVR 46  Sal   400  G  0  J  0  Craque -
+  - Ceará | Div final 3 | Pos 3 na Div 3 | Movimento = | Caixa R$ 56,743 mil | Folha R$ 4,000 mil | Torcida 2.5M | Prestigio 62 | Emprestimo R$ 0 mil | Media elenco 52.3
+    Elenco:
+      - GOL Richard                  OVR 63  Sal   819  G  1  J 18  Craque *
+      - GOL Bruno Ferreira           OVR 59  Sal   198  G  0  J  0  Craque -
+      - GOL Fernando Miguel          OVR 52  Sal   193  G  0  J  0  Craque -
+      - ZAG Rafael Ramos             OVR 59  Sal   866  G  1  J 18  Craque *
+      - ZAG Raí Ramos                OVR 56  Sal   348  G  2  J 18  Craque -
+      - ZAG David Ricardo            OVR 53  Sal   339  G  1  J 18  Craque -
+      - ZAG Luiz Otávio              OVR 49  Sal   274  G  2  J 18  Craque -
+      - ZAG Matheus Felipe           OVR 49  Sal   302  G  0  J  0  Craque -
+      - ZAG Eric Melo                OVR 45  Sal   227  G  0  J  0  Craque -
+      - ZAG Warley                   OVR 42  Sal   272  G  0  J  0  Craque -
+      - MEI Richardson               OVR 60  Sal  1107  G  4  J 18  Craque -
+      - MEI Lourenço                 OVR 56  Sal   342  G  1  J 18  Craque -
+      - MEI Lucas Mugni              OVR 53  Sal   210  G  1  J 18  Craque -
+      - MEI Rômulo                   OVR 49  Sal   404  G  4  J 18  Craque -
+      - MEI Aylon                    OVR 49  Sal   420  G  0  J  0  Craque -
+      - MEI De Lucca                 OVR 45  Sal   157  G  0  J  0  Craque -
+      - MEI Fernando Sobral          OVR 42  Sal   153  G  0  J  0  Craque -
+      - ATA Saulo Mineiro            OVR 63  Sal   587  G  6  J 18  Craque *
+      - ATA Facundo Castro           OVR 59  Sal  1151  G  6  J 18  Craque -
+      - ATA Barceló                  OVR 59  Sal   170  G  0  J  0  Craque -
+      - ATA Cléber                   OVR 55  Sal   443  G  0  J  0  Craque -
+      - ATA Recalde                  OVR 52  Sal   421  G  0  J  0  Craque -
+      - ATA Janderson                OVR 49  Sal   214  G  0  J  0  Craque -
+      - ATA Erick Pulga              OVR 45  Sal   427  G  0  J  0  Craque -
+      - ATA Guilherme Bissoli        OVR 42  Sal   165  G  0  J  0  Craque -
+  - Vitória | Div final 3 | Pos 4 na Div 3 | Movimento = | Caixa R$ 57,555 mil | Folha R$ 5,000 mil | Torcida 3.0M | Prestigio 64 | Emprestimo R$ 0 mil | Media elenco 55.7
+    Elenco:
+      - GOL Lucas Arcanjo            OVR 66  Sal   454  G  1  J 16  Craque *
+      - GOL Muriel                   OVR 62  Sal   669  G  0  J  0  Craque -
+      - GOL Dalton                   OVR 55  Sal   281  G  0  J  0  Craque -
+      - ZAG Raul Cáceres             OVR 63  Sal  1168  G  3  J 16  Craque *
+      - ZAG Zeca                     OVR 60  Sal   867  G  0  J 16  Craque -
+      - ZAG Wagner Leonardo          OVR 56  Sal   376  G  2  J 16  Craque -
+      - ZAG Camutanga                OVR 53  Sal   252  G  2  J 16  Craque -
+      - ZAG Neris                    OVR 52  Sal   243  G  0  J  0  Craque -
+      - ZAG PK                       OVR 49  Sal   355  G  0  J  0  Craque -
+      - ZAG Patric Calmon            OVR 45  Sal   404  G  0  J  0  Craque -
+      - MEI Léo Naldi                OVR 63  Sal   481  G  1  J 15  Craque -
+      - MEI Rodrigo Andrade          OVR 59  Sal   495  G  5  J 16  Craque -
+      - MEI Willian Oliveira         OVR 56  Sal   330  G  1  J 15  Craque -
+      - MEI Jean Mota                OVR 53  Sal   294  G  4  J 16  Craque -
+      - MEI Matheuzinho              OVR 52  Sal   219  G  0  J  2  Craque -
+      - MEI Caio Vinícius            OVR 49  Sal   224  G  0  J  0  Craque -
+      - MEI Dudu                     OVR 45  Sal   278  G  0  J  0  Craque -
+      - ATA Alerrandro               OVR 67  Sal   644  G  1  J 16  Craque *
+      - ATA Osvaldo                  OVR 63  Sal   583  G  1  J 16  Craque -
+      - ATA Janderson                OVR 62  Sal   672  G  0  J  0  Craque -
+      - ATA Everaldo                 OVR 59  Sal   177  G  0  J  0  Craque -
+      - ATA Iury Castilho            OVR 55  Sal   348  G  0  J  0  Craque -
+      - ATA Wellington Rato          OVR 52  Sal   406  G  0  J  0  Craque -
+      - ATA Fábio Soares             OVR 49  Sal   235  G  0  J  0  Craque -
+      - ATA Carlos Eduardo           OVR 45  Sal   431  G  0  J  0  Craque -
+  - Sport Recife | Div final 3 | Pos 5 na Div 3 | Movimento = | Caixa R$ 49,587 mil | Folha R$ 4,000 mil | Torcida 2.5M | Prestigio 61 | Emprestimo R$ 0 mil | Media elenco 49.0
+    Elenco:
+      - GOL Caíque França            OVR 60  Sal   842  G  0  J 16  Craque *
+      - GOL Denis                    OVR 55  Sal   214  G  0  J  0  Craque -
+      - GOL Adriel                   OVR 49  Sal   406  G  0  J  0  Craque -
+      - ZAG Rosales                  OVR 56  Sal   276  G  1  J 16  Craque *
+      - ZAG Hereda                   OVR 53  Sal   331  G  3  J 16  Craque -
+      - ZAG Rafael Thyere            OVR 50  Sal   302  G  2  J 16  Craque -
+      - ZAG Chico                    OVR 46  Sal   170  G  2  J 16  Craque -
+      - ZAG Luciano Castán           OVR 45  Sal   235  G  0  J  0  Craque -
+      - ZAG Felipinho                OVR 42  Sal   251  G  0  J  0  Craque -
+      - ZAG Igor Cariús              OVR 39  Sal   130  G  0  J  0  Craque -
+      - MEI Fabinho                  OVR 57  Sal   309  G  3  J 15  Craque -
+      - MEI Felipe                   OVR 53  Sal   419  G  1  J 16  Craque -
+      - MEI Lucas Lima               OVR 50  Sal   265  G  3  J 16  Craque -
+      - MEI Titi Ortíz               OVR 47  Sal   422  G  4  J 16  Craque -
+      - MEI Julián Fernández         OVR 45  Sal   376  G  0  J  1  Craque -
+      - MEI Pedro Vilhena            OVR 42  Sal   299  G  0  J  0  Craque -
+      - MEI Alan Ruiz                OVR 39  Sal   117  G  0  J  0  Craque -
+      - ATA Barletta                 OVR 60  Sal   970  G  3  J 16  Craque *
+      - ATA Gustavo Coutinho         OVR 56  Sal   190  G  1  J 15  Craque -
+      - ATA Zé Roberto               OVR 55  Sal   182  G  0  J  1  Craque -
+      - ATA Romarinho                OVR 52  Sal   435  G  0  J  0  Craque -
+      - ATA Pablo Dyego              OVR 49  Sal   196  G  0  J  0  Craque -
+      - ATA Chrystian                OVR 45  Sal   446  G  0  J  0  Craque -
+      - ATA Lenny Lobato             OVR 42  Sal   387  G  0  J  0  Craque -
+      - ATA Diego Souza Jr           OVR 39  Sal   146  G  0  J  0  Craque -
+  - Criciúma | Div final 3 | Pos 6 na Div 3 | Movimento = | Caixa R$ 46,914 mil | Folha R$ 4,500 mil | Torcida 807K | Prestigio 58 | Emprestimo R$ 0 mil | Media elenco 49.0
+    Elenco:
+      - GOL Gustavo                  OVR 60  Sal  1055  G  1  J 18  Craque *
+      - GOL Alisson                  OVR 56  Sal   202  G  0  J  0  Craque -
+      - GOL Kauã                     OVR 49  Sal   189  G  0  J  0  Craque -
+      - ZAG Claudinho                OVR 56  Sal   406  G  2  J 18  Craque *
+      - ZAG Jonathan                 OVR 53  Sal   233  G  2  J 18  Craque -
+      - ZAG Rodrigo                  OVR 49  Sal   274  G  1  J 18  Craque -
+      - ZAG Tobias Figueiredo        OVR 46  Sal   173  G  2  J 18  Craque -
+      - ZAG Victor Luís              OVR 45  Sal   363  G  0  J  0  Craque -
+      - ZAG Marcelo Hermes           OVR 42  Sal   352  G  0  J  0  Craque -
+      - ZAG Dudu                     OVR 39  Sal    85  G  0  J  0  Craque -
+      - MEI Barreto                  OVR 56  Sal   171  G  1  J 18  Craque -
+      - MEI Higor Meritão            OVR 53  Sal   381  G  4  J 18  Craque -
+      - MEI Fellipe Mateus           OVR 49  Sal   421  G  4  J 18  Craque -
+      - MEI Marquinhos Gabriel       OVR 46  Sal   268  G  1  J 18  Craque -
+      - MEI Newton                   OVR 45  Sal   330  G  0  J  0  Craque -
+      - MEI Rômulo                   OVR 42  Sal   341  G  0  J  0  Craque -
+      - MEI Miquéias                 OVR 39  Sal   102  G  0  J  0  Craque -
+      - ATA Yannick Bolasie          OVR 60  Sal   961  G  3  J 17  Craque *
+      - ATA Arthur Caíke             OVR 56  Sal   259  G  3  J 18  Craque -
+      - ATA Allano                   OVR 55  Sal   164  G  0  J  1  Craque -
+      - ATA Ronald                   OVR 52  Sal   178  G  0  J  0  Craque -
+      - ATA Matheusinho              OVR 49  Sal   163  G  0  J  0  Craque -
+      - ATA Jhonata Robert           OVR 45  Sal   276  G  0  J  0  Craque -
+      - ATA Éder                     OVR 42  Sal   285  G  0  J  0  Craque -
+      - ATA Felipinho                OVR 39  Sal   148  G  0  J  0  Craque -
+  - Cuiabá | Div final 4 | Pos 7 na Div 3 | Movimento REBAIXADO | Caixa R$ 52,023 mil | Folha R$ 5,000 mil | Torcida 1.1M | Prestigio 56 | Emprestimo R$ 0 mil | Media elenco 55.7
+    Elenco:
+      - GOL Walter                   OVR 67  Sal  1084  G  0  J 16  Craque *
+      - GOL João Carlos              OVR 62  Sal  1184  G  0  J  1  Craque -
+      - GOL Mateus Pasinato          OVR 55  Sal   446  G  0  J  0  Craque -
+      - ZAG Matheus Alexandre        OVR 63  Sal  1150  G  1  J 16  Craque *
+      - ZAG Railan                   OVR 60  Sal   861  G  2  J 16  Craque -
+      - ZAG Marllon                  OVR 57  Sal   215  G  2  J 15  Craque -
+      - ZAG Alan Empereur            OVR 53  Sal   428  G  2  J 16  Craque -
+      - ZAG Bruno Alves              OVR 52  Sal   321  G  0  J  1  Craque -
+      - ZAG Ramon                    OVR 49  Sal   346  G  0  J  0  Craque -
+      - ZAG Sander                   OVR 45  Sal   266  G  0  J  0  Craque -
+      - MEI Denilson                 OVR 63  Sal  1137  G  4  J 16  Craque -
+      - MEI Lucas Mineiro            OVR 60  Sal   617  G  3  J 16  Craque -
+      - MEI Fernando Sobral          OVR 56  Sal   223  G  1  J 16  Craque -
+      - MEI Max                      OVR 53  Sal   322  G  1  J 16  Craque -
+      - MEI Clayson                  OVR 52  Sal   337  G  0  J  0  Craque -
+      - MEI Filipe Augusto           OVR 49  Sal   446  G  0  J  0  Craque -
+      - MEI Ronald                   OVR 45  Sal   256  G  0  J  0  Craque -
+      - ATA Isidro Pitta             OVR 66  Sal  1020  G  2  J 16  Craque *
+      - ATA Deyverson                OVR 63  Sal  1183  G  0  J 15  Craque -
+      - ATA Jonathan Cafu            OVR 62  Sal   753  G  0  J  1  Craque -
+      - ATA Eliel                    OVR 59  Sal   382  G  0  J  0  Craque -
+      - ATA Derik Lacerda            OVR 55  Sal   331  G  0  J  0  Craque -
+      - ATA André Luís               OVR 52  Sal   196  G  0  J  0  Craque -
+      - ATA Wellington Silva         OVR 49  Sal   328  G  0  J  0  Craque -
+      - ATA Alisson Safira           OVR 45  Sal   300  G  0  J  0  Craque -
+  - Mirassol | Div final 4 | Pos 8 na Div 3 | Movimento REBAIXADO | Caixa R$ 33,015 mil | Folha R$ 3,500 mil | Torcida 439K | Prestigio 50 | Emprestimo R$ 0 mil | Media elenco 49.0
+    Elenco:
+      - GOL Alex Muralha             OVR 60  Sal   645  G  0  J 16  Craque *
+      - GOL Walter                   OVR 55  Sal   217  G  0  J  0  Craque -
+      - GOL Vanderlei                OVR 49  Sal   446  G  0  J  0  Craque -
+      - ZAG Lucas Ramon              OVR 57  Sal   360  G  2  J 16  Craque *
+      - ZAG Daniel Borges            OVR 53  Sal   436  G  2  J 16  Craque -
+      - ZAG Luiz Otávio              OVR 50  Sal   362  G  1  J 16  Craque -
+      - ZAG Rodrigo Ferreira         OVR 46  Sal   348  G  1  J 16  Craque -
+      - ZAG João Victor              OVR 45  Sal   185  G  0  J  0  Craque -
+      - ZAG Reinaldo                 OVR 42  Sal   299  G  0  J  0  Craque -
+      - ZAG Zeca                     OVR 39  Sal    78  G  0  J  0  Craque -
+      - MEI Neto Moura               OVR 56  Sal   223  G  4  J 16  Craque -
+      - MEI Danielzinho              OVR 53  Sal   408  G  2  J 16  Craque -
+      - MEI Chico Kim                OVR 50  Sal   388  G  0  J 16  Craque -
+      - MEI Negueba                  OVR 47  Sal   386  G  1  J 16  Craque -
+      - MEI Gabriel                  OVR 45  Sal   289  G  0  J  0  Craque -
+      - MEI Yago Felipe              OVR 42  Sal   402  G  0  J  0  Craque -
+      - MEI Iury                     OVR 39  Sal   113  G  0  J  0  Craque -
+      - ATA Dellatorre               OVR 60  Sal  1067  G  3  J 15  Craque *
+      - ATA Quirino                  OVR 57  Sal   174  G  1  J 16  Craque -
+      - ATA Zé Roberto               OVR 55  Sal   327  G  0  J  1  Craque -
+      - ATA Fernandinho              OVR 52  Sal   309  G  0  J  0  Craque -
+      - ATA Fabrício Daniel          OVR 49  Sal   177  G  0  J  0  Craque -
+      - ATA Rafinha                  OVR 45  Sal   227  G  0  J  0  Craque -
+      - ATA Nicolas                  OVR 42  Sal   206  G  0  J  0  Craque -
+      - ATA Alex Silva               OVR 39  Sal    82  G  0  J  0  Craque -
+
+#### Divisao 4
+  - Goiás | Div final 3 | Pos 1 na Div 4 | Movimento PROMOVIDO | Caixa R$ 55,596 mil | Folha R$ 4,600 mil | Torcida 2.9M | Prestigio 62 | Emprestimo R$ 0 mil | Media elenco 36.0
+    Elenco:
+      - GOL Tadeu                    OVR 47  Sal   384  G  0  J 16  Craque *
+      - GOL Thiago Rodrigues         OVR 43  Sal   226  G  0  J  0  Craque -
+      - GOL Marcão                   OVR 36  Sal   423  G  0  J  0  Craque -
+      - ZAG Ezequiel                 OVR 44  Sal   394  G  1  J 16  Craque *
+      - ZAG Lucas Ribeiro            OVR 40  Sal   419  G  2  J 16  Craque -
+      - ZAG Luiz Felipe              OVR 37  Sal   353  G  2  J 16  Craque -
+      - ZAG Titi                     OVR 33  Sal   380  G  0  J 15  Craque -
+      - ZAG Anthony                  OVR 32  Sal   143  G  0  J  1  Craque -
+      - ZAG Nicolas                  OVR 29  Sal    91  G  0  J  0  Craque -
+      - ZAG Rodrigo Soares           OVR 25  Sal    74  G  0  J  0  Craque -
+      - MEI Gegê                     OVR 44  Sal   429  G  7  J 16  Craque -
+      - MEI Juninho                  OVR 40  Sal   399  G  3  J 15  Craque -
+      - MEI Brayann                  OVR 37  Sal   387  G  3  J 16  Craque -
+      - MEI Filipe Machado           OVR 33  Sal   403  G  1  J 16  Craque -
+      - MEI Lourenço                 OVR 32  Sal   106  G  0  J  1  Craque -
+      - MEI Lucas Lima               OVR 29  Sal   120  G  0  J  0  Craque -
+      - MEI Jean Carlos              OVR 25  Sal   122  G  0  J  0  Craque -
+      - ATA Wellington Rato          OVR 47  Sal   396  G  5  J 16  Craque *
+      - ATA Bruno Sávio              OVR 44  Sal   289  G  1  J 16  Craque -
+      - ATA Esli García              OVR 42  Sal   386  G  0  J  0  Craque -
+      - ATA Pedrinho                 OVR 39  Sal   157  G  0  J  0  Craque -
+      - ATA Anselmo Ramon            OVR 36  Sal   386  G  0  J  0  Craque -
+      - ATA Jajá                     OVR 32  Sal   124  G  0  J  0  Craque -
+      - ATA Cadu                     OVR 29  Sal    75  G  0  J  0  Craque -
+      - ATA Arthur Caíke             OVR 25  Sal    81  G  0  J  0  Craque -
+  - América Mineiro | Div final 3 | Pos 2 na Div 4 | Movimento PROMOVIDO | Caixa R$ 50,835 mil | Folha R$ 4,500 mil | Torcida 2.7M | Prestigio 64 | Emprestimo R$ 0 mil | Media elenco 36.0
+    Elenco:
+      - GOL Matheus Mendes           OVR 47  Sal   409  G  0  J 16  Craque *
+      - GOL Jori                     OVR 42  Sal   333  G  0  J  0  Craque -
+      - GOL Dalberson                OVR 36  Sal   156  G  0  J  0  Craque -
+      - ZAG Marlon                   OVR 44  Sal   169  G  3  J 16  Craque *
+      - ZAG Ricardo Silva            OVR 40  Sal   238  G  2  J 16  Craque -
+      - ZAG Júlio                    OVR 37  Sal   153  G  1  J 16  Craque -
+      - ZAG Maguinho                 OVR 34  Sal   358  G  1  J 16  Craque -
+      - ZAG Nicolas                  OVR 32  Sal    86  G  0  J  0  Craque -
+      - ZAG Lucão                    OVR 29  Sal   108  G  0  J  0  Craque -
+      - ZAG Paulinho                 OVR 25  Sal   120  G  0  J  0  Craque -
+      - MEI Alê                      OVR 44  Sal   376  G  4  J 14  Craque -
+      - MEI Moisés                   OVR 40  Sal   422  G  6  J 16  Craque -
+      - MEI Fabinho Santos           OVR 37  Sal   160  G  3  J 16  Craque -
+      - MEI Miguelito                OVR 34  Sal   370  G  1  J 16  Craque -
+      - MEI Benítez                  OVR 32  Sal   112  G  0  J  2  Craque -
+      - MEI Cauan Barros             OVR 29  Sal   121  G  0  J  0  Craque -
+      - MEI Jhosefer                 OVR 25  Sal   103  G  0  J  0  Craque -
+      - ATA Fabinho                  OVR 47  Sal   435  G  4  J 16  Craque *
+      - ATA Adyson                   OVR 43  Sal   260  G  4  J 16  Craque -
+      - ATA Willian Bigode           OVR 42  Sal   385  G  0  J  0  Craque -
+      - ATA Guilherme Pato           OVR 39  Sal   245  G  0  J  0  Craque -
+      - ATA Renato Marques           OVR 36  Sal   377  G  0  J  0  Craque -
+      - ATA Brenner                  OVR 32  Sal   106  G  0  J  0  Craque -
+      - ATA Stênio                   OVR 29  Sal    90  G  0  J  0  Craque -
+      - ATA Aloísio                  OVR 25  Sal   143  G  0  J  0  Craque -
+  - Paysandu | Div final 4 | Pos 3 na Div 4 | Movimento = | Caixa R$ 39,237 mil | Folha R$ 3,600 mil | Torcida 1.4M | Prestigio 57 | Emprestimo R$ 0 mil | Media elenco 29.2
+    Elenco:
+      - GOL Gabriel Mesquita         OVR 40  Sal   307  G  0  J 18  Craque *
+      - GOL Jean Drosny              OVR 36  Sal   424  G  0  J  0  Craque -
+      - GOL Matheus Nogueira         OVR 29  Sal   139  G  0  J  0  Craque -
+      - ZAG Marcão                   OVR 37  Sal   257  G  2  J 18  Craque *
+      - ZAG Yeferson Quintana        OVR 33  Sal   170  G  1  J 18  Craque -
+      - ZAG Edílson                  OVR 30  Sal   127  G  1  J 18  Craque -
+      - ZAG Luccão                   OVR 27  Sal    92  G  0  J 17  Craque -
+      - ZAG Bruno Bispo              OVR 25  Sal   132  G  0  J  1  Craque -
+      - ZAG PK                       OVR 22  Sal   138  G  0  J  0  Craque -
+      - ZAG Reverson                 OVR 19  Sal    82  G  0  J  0  Craque -
+      - MEI Leandro Vilela           OVR 37  Sal   252  G  9  J 18  Craque -
+      - MEI Marlon                   OVR 33  Sal   412  G  4  J 18  Craque -
+      - MEI Matheus Vargas           OVR 30  Sal   113  G  3  J 18  Craque -
+      - MEI Cavan                    OVR 26  Sal   122  G  2  J 18  Craque -
+      - MEI Ramon Martinez           OVR 26  Sal    98  G  0  J  0  Craque -
+      - MEI Giovanni                 OVR 22  Sal   113  G  0  J  0  Craque -
+      - MEI Robinho                  OVR 19  Sal    91  G  0  J  0  Craque -
+      - ATA Nicolas                  OVR 40  Sal   169  G  4  J 18  Craque *
+      - ATA Marlon Douglas           OVR 37  Sal   401  G  2  J 18  Craque -
+      - ATA Benitez                  OVR 36  Sal   194  G  0  J  0  Craque -
+      - ATA Edinho                   OVR 32  Sal   135  G  0  J  0  Craque -
+      - ATA Ciel                     OVR 29  Sal    78  G  0  J  0  Craque -
+      - ATA Kevin                    OVR 25  Sal   112  G  0  J  0  Craque -
+      - ATA Eliel                    OVR 22  Sal    97  G  0  J  0  Craque -
+      - ATA Diogo Oliveira           OVR 19  Sal   142  G  0  J  0  Craque -
+  - Vila Nova | Div final 4 | Pos 4 na Div 4 | Movimento = | Caixa R$ 34,361 mil | Folha R$ 3,600 mil | Torcida 1.3M | Prestigio 58 | Emprestimo R$ 0 mil | Media elenco 32.6
+    Elenco:
+      - GOL Helton Leite             OVR 44  Sal   379  G  0  J 16  Craque *
+      - GOL Dalberson                OVR 39  Sal   407  G  0  J  0  Craque -
+      - GOL Airton                   OVR 32  Sal   124  G  0  J  0  Craque -
+      - ZAG Caio Marcelo             OVR 40  Sal   165  G  3  J 16  Craque *
+      - ZAG Anderson Jesus           OVR 37  Sal   361  G  1  J 16  Craque -
+      - ZAG Elias                    OVR 34  Sal   448  G  4  J 15  Craque -
+      - ZAG Weverton                 OVR 30  Sal   113  G  0  J 16  Craque -
+      - ZAG Tiago Pagnussat          OVR 29  Sal    75  G  0  J  1  Craque -
+      - ZAG Higor                    OVR 25  Sal    95  G  0  J  0  Craque -
+      - ZAG Hayner                   OVR 22  Sal   141  G  0  J  0  Craque -
+      - MEI Dudu                     OVR 40  Sal   273  G  4  J 16  Craque -
+      - MEI Nathan Camargo           OVR 37  Sal   205  G  4  J 16  Craque -
+      - MEI Dodô                     OVR 33  Sal   193  G  2  J 16  Craque -
+      - MEI João Vieira              OVR 30  Sal   136  G  1  J 16  Craque -
+      - MEI Marco Antonio            OVR 29  Sal   125  G  0  J  0  Craque -
+      - MEI Willian Maranhão         OVR 25  Sal   124  G  0  J  0  Craque -
+      - MEI Marquinhos Gabriel       OVR 22  Sal    77  G  0  J  0  Craque -
+      - ATA Ruan Ribeiro             OVR 44  Sal   367  G  2  J 16  Craque *
+      - ATA Dellatorre               OVR 40  Sal   363  G  4  J 16  Craque -
+      - ATA Andre Luis               OVR 39  Sal   298  G  0  J  0  Craque -
+      - ATA Bruno Xavier             OVR 36  Sal   403  G  0  J  0  Craque -
+      - ATA Rafa Silva               OVR 32  Sal   104  G  0  J  0  Craque -
+      - ATA Emerson Urso             OVR 29  Sal   108  G  0  J  0  Craque -
+      - ATA Janderson                OVR 25  Sal   138  G  0  J  0  Craque -
+      - ATA Alesson                  OVR 22  Sal   112  G  0  J  0  Craque -
+  - Coritiba | Div final 4 | Pos 5 na Div 4 | Movimento = | Caixa R$ 52,920 mil | Folha R$ 4,800 mil | Torcida 2.8M | Prestigio 62 | Emprestimo R$ 0 mil | Media elenco 39.4
+    Elenco:
+      - GOL Pedro Morisco            OVR 50  Sal   237  G  1  J 16  Craque *
+      - GOL Pedro Rangel             OVR 46  Sal   322  G  0  J  0  Craque -
+      - GOL Gabriel Leite            OVR 39  Sal   347  G  0  J  0  Craque -
+      - ZAG Tiago Coser              OVR 47  Sal   223  G  2  J 16  Craque *
+      - ZAG Maicon                   OVR 44  Sal   417  G  2  J 16  Craque -
+      - ZAG Jacy                     OVR 40  Sal   301  G  2  J 15  Craque -
+      - ZAG João Almeida             OVR 37  Sal   373  G  2  J 16  Craque -
+      - ZAG Felipe Guimarães         OVR 36  Sal   161  G  0  J  1  Craque -
+      - ZAG Guilherme Aquino         OVR 32  Sal    72  G  0  J  0  Craque -
+      - ZAG Bruno Melo               OVR 29  Sal    70  G  0  J  0  Craque -
+      - MEI Sebastián Gómez          OVR 47  Sal   260  G  4  J 16  Craque -
+      - MEI Willian Oliveira         OVR 44  Sal   290  G  4  J 15  Craque -
+      - MEI Jean Gabriel             OVR 40  Sal   284  G  2  J 16  Craque -
+      - MEI Geovane                  OVR 37  Sal   360  G  1  J 15  Craque -
+      - MEI Josué                    OVR 35  Sal   354  G  1  J  2  Craque -
+      - MEI Carlos de Pena           OVR 32  Sal    76  G  0  J  0  Craque -
+      - MEI Matheus Bianqui          OVR 29  Sal   129  G  0  J  0  Craque -
+      - ATA Clayson                  OVR 51  Sal   212  G  6  J 15  Craque *
+      - ATA Lucas Ronier             OVR 47  Sal   314  G  2  J 16  Craque -
+      - ATA Dellatorre               OVR 46  Sal   154  G  0  J  1  Craque -
+      - ATA Nicolas Careca           OVR 42  Sal   350  G  0  J  0  Craque -
+      - ATA Gustavo Coutinho         OVR 39  Sal   378  G  0  J  0  Craque -
+      - ATA Iury Castilho            OVR 36  Sal   416  G  0  J  0  Craque -
+      - ATA Joaquín Lavega           OVR 32  Sal   146  G  0  J  0  Craque -
+      - ATA Pedro Rocha              OVR 29  Sal   112  G  0  J  0  Craque -
+  - Avaí | Div final 4 | Pos 6 na Div 4 | Movimento = | Caixa R$ 38,251 mil | Folha R$ 3,800 mil | Torcida 1.5M | Prestigio 59 | Emprestimo R$ 0 mil | Media elenco 32.6
+    Elenco:
+      - GOL Igor Bohn                OVR 43  Sal   220  G  0  J 18  Craque *
+      - GOL Otávio Passos            OVR 39  Sal   285  G  0  J  0  Craque -
+      - GOL Léo Aragão               OVR 32  Sal   130  G  0  J  0  Craque -
+      - ZAG Douglas Teixeira         OVR 40  Sal   367  G  0  J 18  Craque *
+      - ZAG Quaresma                 OVR 37  Sal   300  G  4  J 18  Craque -
+      - ZAG Allyson                  OVR 33  Sal   372  G  6  J 17  Craque -
+      - ZAG Wallison                 OVR 30  Sal    74  G  0  J 18  Craque -
+      - ZAG Wesley Gasolina          OVR 29  Sal   108  G  0  J  1  Craque -
+      - ZAG Guilherme Aquino         OVR 26  Sal   140  G  0  J  0  Craque -
+      - ZAG Gabriel Simples          OVR 22  Sal    95  G  0  J  0  Craque -
+      - MEI Jean Lucas               OVR 40  Sal   387  G  1  J 18  Craque -
+      - MEI Daniel Penha             OVR 37  Sal   356  G  1  J 18  Craque -
+      - MEI Zé Ricardo               OVR 33  Sal   313  G  1  J 18  Craque -
+      - MEI Romildo Del Piage        OVR 30  Sal   150  G  0  J 18  Craque -
+      - MEI Wenderson                OVR 29  Sal   150  G  0  J  0  Craque -
+      - MEI Hyan                     OVR 26  Sal   133  G  0  J  0  Craque -
+      - MEI Luiz Henrique            OVR 22  Sal    98  G  0  J  0  Craque -
+      - ATA Rafael Bilu              OVR 43  Sal   426  G  6  J 18  Craque *
+      - ATA Felipe Avenatti          OVR 40  Sal   429  G  4  J 18  Craque -
+      - ATA Sorriso                  OVR 39  Sal   237  G  0  J  0  Craque -
+      - ATA Gaspar                   OVR 36  Sal   233  G  0  J  0  Craque -
+      - ATA Maurício Garcez          OVR 32  Sal   123  G  0  J  0  Craque -
+      - ATA Thayllon                 OVR 29  Sal   143  G  0  J  0  Craque -
+      - ATA Igor Rosa                OVR 25  Sal    72  G  0  J  0  Craque -
+      - ATA Mário Sérgio             OVR 22  Sal    91  G  0  J  0  Craque -
+  - Novorizontino | Div final 4 | Pos 7 na Div 4 | Movimento = | Caixa R$ 27,662 mil | Folha R$ 3,200 mil | Torcida 912K | Prestigio 55 | Emprestimo R$ 0 mil | Media elenco 29.2
+    Elenco:
+      - GOL Jordi                    OVR 40  Sal   221  G  1  J 16  Craque *
+      - GOL Airton                   OVR 36  Sal   441  G  0  J  0  Craque -
+      - GOL César Augusto            OVR 29  Sal    71  G  0  J  0  Craque -
+      - ZAG Patrick                  OVR 37  Sal   153  G  0  J 16  Craque *
+      - ZAG Dantas                   OVR 33  Sal   276  G  1  J 16  Craque -
+      - ZAG Rômulo                   OVR 30  Sal    93  G  3  J 16  Craque -
+      - ZAG César Martins            OVR 26  Sal    85  G  1  J 16  Craque -
+      - ZAG Mayk                     OVR 25  Sal   111  G  0  J  0  Craque -
+      - ZAG Rafael Donato            OVR 22  Sal    76  G  0  J  0  Craque -
+      - ZAG Raí Ramos                OVR 19  Sal    91  G  0  J  0  Craque -
+      - MEI Fábio Matheus            OVR 37  Sal   387  G  4  J 16  Craque -
+      - MEI Jean Irmer               OVR 33  Sal   170  G  2  J 16  Craque -
+      - MEI Marlon                   OVR 30  Sal    70  G  1  J 16  Craque -
+      - MEI Matheus Frizzo           OVR 27  Sal   125  G  0  J 16  Craque -
+      - MEI Lucca                    OVR 25  Sal    80  G  0  J  0  Craque -
+      - MEI Robson                   OVR 22  Sal    82  G  0  J  0  Craque -
+      - MEI Waguininho               OVR 19  Sal   141  G  0  J  0  Craque -
+      - ATA Caio Dantas              OVR 40  Sal   352  G  1  J 16  Craque *
+      - ATA Nicolas Careca           OVR 37  Sal   353  G  3  J 16  Craque -
+      - ATA Léo Tocantins            OVR 36  Sal   167  G  0  J  0  Craque -
+      - ATA Bruno José               OVR 32  Sal   103  G  0  J  0  Craque -
+      - ATA Everaldo                 OVR 29  Sal   120  G  0  J  0  Craque -
+      - ATA Neto Pessoa              OVR 25  Sal   102  G  0  J  0  Craque -
+      - ATA Jenison                  OVR 22  Sal   150  G  0  J  0  Craque -
+      - ATA Rodolfo                  OVR 19  Sal   120  G  0  J  0  Craque -
+  - CRB | Div final 4 | Pos 8 na Div 4 | Movimento = | Caixa R$ 29,581 mil | Folha R$ 3,500 mil | Torcida 1.2M | Prestigio 56 | Emprestimo R$ 0 mil | Media elenco 29.2
+    Elenco:
+      - GOL Matheus Albino           OVR 40  Sal   376  G  1  J 16  Craque *
+      - GOL Vitor Caetano            OVR 36  Sal   223  G  0  J  0  Craque -
+      - GOL Pablo                    OVR 29  Sal    71  G  0  J  0  Craque -
+      - ZAG Hereda                   OVR 37  Sal   419  G  2  J 16  Craque *
+      - ZAG Henri                    OVR 34  Sal   377  G  1  J 16  Craque -
+      - ZAG Segovia                  OVR 30  Sal   118  G  0  J 16  Craque -
+      - ZAG Fábio Alemão             OVR 27  Sal   104  G  2  J 16  Craque -
+      - ZAG Lucas Lovat              OVR 25  Sal    78  G  0  J  0  Craque -
+      - ZAG Weverton                 OVR 22  Sal   118  G  0  J  0  Craque -
+      - ZAG Ryan                     OVR 19  Sal   149  G  0  J  0  Craque -
+      - MEI Danielzinho              OVR 37  Sal   185  G  1  J 15  Craque -
+      - MEI Higor Meritão            OVR 34  Sal   230  G  0  J 16  Craque -
+      - MEI Geovane                  OVR 30  Sal   145  G  2  J 16  Craque -
+      - MEI Lucas Kallyel            OVR 27  Sal   142  G  0  J 16  Craque -
+      - MEI Gegê                     OVR 25  Sal   112  G  0  J  1  Craque -
+      - MEI Mikael                   OVR 22  Sal   130  G  0  J  0  Craque -
+      - MEI Douglas Baggio           OVR 19  Sal   133  G  0  J  0  Craque -
+      - ATA Anselmo Ramon            OVR 40  Sal   250  G  3  J 16  Craque *
+      - ATA Léo Pereira              OVR 37  Sal   284  G  3  J 16  Craque -
+      - ATA William Pottker          OVR 36  Sal   327  G  0  J  0  Craque -
+      - ATA Dadá Belmonte            OVR 32  Sal   139  G  0  J  0  Craque -
+      - ATA João Neto                OVR 29  Sal   107  G  0  J  0  Craque -
+      - ATA Thiaguinho               OVR 25  Sal   129  G  0  J  0  Craque -
+      - ATA Rafinha                  OVR 22  Sal   130  G  0  J  0  Craque -
+      - ATA Labandeira               OVR 19  Sal   110  G  0  J  0  Craque -
+
+## Temporada 2026
+
+### Campeoes
+- Divisao 1: Internacional
+- Divisao 2: Fluminense
+- Divisao 3: Athletico Paranaense
+- Divisao 4: Cuiabá
+- Copa: Internacional
+
+### Artilheiros
+- Artilheiro da temporada: Germán Cano (Fluminense) - 11 gols
+- Top 1: Germán Cano (Fluminense) - 11 gols
+- Top 2: Keno (Fluminense) - 9 gols
+- Top 3: Saulo Mineiro (Ceará) - 9 gols
+- Top 4: Igor Jesus (Botafogo) - 8 gols
+- Top 5: Zé Roberto (Mirassol) - 8 gols
+- Top 6: Vitão (Internacional) - 7 gols
+- Top 7: Agustín Giay (Palmeiras) - 6 gols
+- Top 8: Bruno Fuchs (Atlético Mineiro) - 6 gols
+- Top 9: Gregore (Botafogo) - 6 gols
+- Top 10: Patrick de Paula (Botafogo) - 6 gols
+
+### Promovidos
+- Fluminense: 2 -> 1
+- São Paulo FC: 2 -> 1
+- Athletico Paranaense: 3 -> 2
+- Fortaleza: 3 -> 2
+- Cuiabá: 4 -> 3
+- Mirassol: 4 -> 3
+
+### Rebaixados
+- Cruzeiro: 1 -> 2
+- Palmeiras: 1 -> 2
+- Atlético Goianiense: 2 -> 3
+- Juventude: 2 -> 3
+- Goiás: 3 -> 4
+- Sport Recife: 3 -> 4
+
+### Destaques Financeiros e Tecnicos
+- Melhor ataque: Mirassol com 33 gols
+- Melhor defesa: São Paulo FC com 9 gols sofridos
+- Maior publico: Flamengo x Botafogo - 80,000
+- Maior renda: Flamengo x Botafogo - R$ 12,096 mil
+
+### Clubes, Financas e Elencos
+#### Divisao 1
+  - Internacional | Div final 1 | Pos 1 na Div 1 | Movimento = | Caixa R$ 449,493 mil | Folha R$ 14,000 mil | Torcida 8.4M | Prestigio 83 | Emprestimo R$ 0 mil | Media elenco 78.5
+    Elenco:
+      - GOL Sergio Rochet            OVR 85  Sal  1272  G  2  J 15  Craque *
+      - GOL Anthoni                  OVR 85  Sal  2917  G  0  J  9  Craque -
+      - GOL Ivan                     OVR 82  Sal   613  G  0  J  0  Craque -
+      - ZAG Braian Aguirre           OVR 80  Sal  1828  G  5  J 24  Craque -
+      - ZAG Bustos                   OVR 79  Sal   744  G  2  J 24  Craque *
+      - ZAG Vitão                    OVR 76  Sal  1139  G  7  J 24  Craque -
+      - ZAG Agustín Rogel            OVR 75  Sal   421  G  0  J 10  Craque -
+      - ZAG Gabriel Mercado          OVR 75  Sal   714  G  2  J 13  Craque -
+      - ZAG Juninho                  OVR 75  Sal   363  G  0  J  1  Craque -
+      - ZAG Alexandro Bernabei       OVR 75  Sal   406  G  0  J  0  Craque -
+      - MEI Fernando                 OVR 82  Sal  2525  G  2  J 24  Craque -
+      - MEI Thiago Maia              OVR 78  Sal   940  G  2  J 24  Craque -
+      - MEI Bruno Henrique           OVR 78  Sal   589  G  3  J 23  Craque -
+      - MEI Alan Patrick             OVR 75  Sal   387  G  2  J  7  Craque -
+      - MEI Bruno Gomes              OVR 75  Sal   589  G  1  J 13  Craque -
+      - MEI Gabriel Tabata           OVR 75  Sal   170  G  1  J  5  Craque -
+      - MEI Rômulo                   OVR 72  Sal   200  G  0  J  0  Craque -
+      - ATA Rafael Borré             OVR 83  Sal  2573  G  3  J 17  Craque *
+      - ATA Wesley                   OVR 83  Sal  1256  G  2  J  7  Craque -
+      - ATA Lucas Alario             OVR 83  Sal  3346  G  1  J  5  Craque -
+      - ATA Enner Valencia           OVR 83  Sal  2513  G  3  J 19  Craque -
+      - ATA Lucca                    OVR 80  Sal   807  G  0  J  0  Craque -
+      - ATA Vitinho                  OVR 79  Sal   921  G  0  J  0  Craque -
+      - ATA Ricardo Mathias          OVR 77  Sal   587  G  0  J  0  Craque -
+      - ATA Gustavo Prado            OVR 72  Sal   380  G  0  J  0  Craque -
+  - Atlético Mineiro | Div final 1 | Pos 2 na Div 1 | Movimento = | Caixa R$ 616,721 mil | Folha R$ 20,000 mil | Torcida 13.4M | Prestigio 91 | Emprestimo R$ 0 mil | Media elenco 83.1
+    Elenco:
+      - GOL Gabriel Delfim           OVR 88  Sal  1803  G  0  J  3  Craque -
+      - GOL Everson                  OVR 88  Sal  6124  G  1  J 18  Craque *
+      - GOL Matheus Mendes           OVR 84  Sal  1971  G  0  J  0  Craque -
+      - ZAG Saravia                  OVR 86  Sal  1491  G  1  J 20  Craque *
+      - ZAG Lyanco                   OVR 84  Sal  2019  G  4  J 20  Craque -
+      - ZAG Bruno Fuchs              OVR 82  Sal  2694  G  6  J 20  Craque -
+      - ZAG Júnior Alonso            OVR 81  Sal   944  G  1  J  4  Craque -
+      - ZAG Igor Rabello             OVR 81  Sal  2493  G  0  J 16  Craque -
+      - ZAG Rubens                   OVR 80  Sal  1181  G  0  J  0  Craque -
+      - ZAG Guilherme Arana          OVR 80  Sal   752  G  0  J  0  Craque -
+      - MEI Fausto Vera              OVR 86  Sal  1814  G  4  J 20  Craque -
+      - MEI Otávio                   OVR 82  Sal  1210  G  4  J 20  Craque -
+      - MEI Gustavo Scarpa           OVR 82  Sal  2935  G  4  J 11  Craque -
+      - MEI Alan Franco              OVR 82  Sal  2155  G  2  J 19  Craque -
+      - MEI Igor Gomes               OVR 82  Sal  1841  G  4  J 10  Craque -
+      - MEI Bernard                  OVR 79  Sal   808  G  0  J  0  Craque -
+      - MEI Patrick                  OVR 77  Sal   535  G  0  J  0  Craque -
+      - ATA Cadu                     OVR 87  Sal  1364  G  0  J  0  Craque -
+      - ATA Tomás Cuello             OVR 87  Sal  1340  G  1  J  3  Craque -
+      - ATA Deyverson                OVR 87  Sal  5208  G  4  J 18  Craque -
+      - ATA Hulk                     OVR 87  Sal  3865  G  0  J 19  Craque *
+      - ATA Eduardo Vargas           OVR 85  Sal  1934  G  0  J  0  Craque -
+      - ATA Rony                     OVR 82  Sal   520  G  0  J  0  Craque -
+      - ATA Cristian Pavón           OVR 81  Sal   484  G  0  J  0  Craque -
+      - ATA Alisson                  OVR 79  Sal   878  G  0  J  0  Craque -
+  - Flamengo | Div final 1 | Pos 3 na Div 1 | Movimento = | Caixa R$ 758,529 mil | Folha R$ 28,000 mil | Torcida 31.2M | Prestigio 98 | Emprestimo R$ 0 mil | Media elenco 87.9
+    Elenco:
+      - GOL Matheus Cunha            OVR 94  Sal  5722  G  0  J 10  Craque -
+      - GOL Rossi                    OVR 94  Sal  3641  G  0  J  8  Craque *
+      - GOL Dyogo Alves              OVR 90  Sal  3735  G  0  J  0  Craque -
+      - ZAG Wesley                   OVR 88  Sal  4925  G  0  J 18  Craque *
+      - ZAG Léo Pereira              OVR 87  Sal  6897  G  1  J 17  Craque -
+      - ZAG Léo Ortiz                OVR 87  Sal  2202  G  0  J  9  Craque -
+      - ZAG Guillermo Varela         OVR 87  Sal  5270  G  3  J 14  Craque -
+      - ZAG Danilo                   OVR 87  Sal  5161  G  1  J 14  Craque -
+      - ZAG Alex Sandro              OVR 84  Sal  2050  G  0  J  0  Craque -
+      - ZAG Ayrton Lucas             OVR 83  Sal  2168  G  0  J  0  Craque -
+      - MEI Erick Pulgar             OVR 93  Sal  5398  G  3  J 18  Craque -
+      - MEI Allan                    OVR 87  Sal  4987  G  4  J 18  Craque -
+      - MEI Giorgian De Arrascaeta   OVR 86  Sal  3255  G  2  J  9  Craque -
+      - MEI Nicolás De La Cruz       OVR 86  Sal  1368  G  2  J 10  Craque -
+      - MEI Gerson                   OVR 85  Sal  2630  G  1  J 17  Craque -
+      - MEI Everton Araújo           OVR 85  Sal  3316  G  0  J  0  Craque -
+      - MEI Carlos Alcaraz           OVR 81  Sal  1094  G  0  J  0  Craque -
+      - ATA Bruno Henrique           OVR 93  Sal  5265  G  2  J 10  Craque -
+      - ATA Luiz Araújo              OVR 93  Sal  4615  G  0  J  3  Craque -
+      - ATA Pedro                    OVR 93  Sal  6708  G  2  J 17  Craque *
+      - ATA Michael                  OVR 93  Sal  6740  G  0  J  6  Craque -
+      - ATA Everton Cebolinha        OVR 89  Sal  4338  G  0  J  0  Craque -
+      - ATA Gonzalo Plata            OVR 86  Sal  1372  G  0  J  0  Craque -
+      - ATA Juninho                  OVR 84  Sal  1479  G  0  J  0  Craque -
+      - ATA Matheus Gonçalves        OVR 82  Sal   659  G  0  J  0  Craque -
+  - RB Bragantino | Div final 1 | Pos 4 na Div 1 | Movimento = | Caixa R$ 241,390 mil | Folha R$ 9,500 mil | Torcida 1.8M | Prestigio 77 | Emprestimo R$ 0 mil | Media elenco 70.5
+    Elenco:
+      - GOL Cleiton                  OVR 78  Sal   555  G  0  J 18  Craque *
+      - GOL Lucão                    OVR 77  Sal  1028  G  0  J  0  Craque -
+      - GOL Matheus Nogueira         OVR 73  Sal   231  G  0  J  0  Craque -
+      - ZAG Andrés Hurtado           OVR 75  Sal   660  G  0  J 17  Craque *
+      - ZAG Nathan Mendes            OVR 71  Sal   361  G  2  J 18  Craque -
+      - ZAG Guzmán Rodríguez         OVR 68  Sal   119  G  5  J 14  Craque -
+      - ZAG Pedro Henrique           OVR 68  Sal   188  G  2  J 18  Craque -
+      - ZAG Natan                    OVR 68  Sal    97  G  0  J  5  Craque -
+      - ZAG Juninho Capixaba         OVR 67  Sal   118  G  0  J  0  Craque -
+      - ZAG Luan Cândido             OVR 66  Sal   114  G  0  J  0  Craque -
+      - MEI Jadsom                   OVR 74  Sal   865  G  0  J 18  Craque -
+      - MEI Matheus Fernandes        OVR 70  Sal   242  G  5  J 18  Craque -
+      - MEI Eric Ramires             OVR 68  Sal    73  G  2  J 17  Craque -
+      - MEI Raul                     OVR 67  Sal    73  G  0  J  9  Craque -
+      - MEI Lucas Evangelista        OVR 67  Sal   128  G  2  J 10  Craque -
+      - MEI Jhon Jhon                OVR 67  Sal   114  G  0  J  0  Craque -
+      - MEI Gustavinho               OVR 65  Sal   142  G  0  J  0  Craque -
+      - ATA Thiago Borbas            OVR 75  Sal   918  G  3  J 18  Craque *
+      - ATA Eduardo Sasha            OVR 74  Sal   361  G  2  J 11  Craque -
+      - ATA Vitinho                  OVR 74  Sal   343  G  0  J  7  Craque -
+      - ATA Helinho                  OVR 74  Sal   368  G  0  J  0  Craque -
+      - ATA Henry Mosquera           OVR 71  Sal   383  G  0  J  0  Craque -
+      - ATA Lincoln                  OVR 70  Sal   124  G  0  J  0  Craque -
+      - ATA Ignacio Laquintana       OVR 69  Sal    95  G  0  J  0  Craque -
+      - ATA Talisson                 OVR 67  Sal   124  G  0  J  0  Craque -
+  - Grêmio | Div final 1 | Pos 5 na Div 1 | Movimento = | Caixa R$ 354,769 mil | Folha R$ 13,000 mil | Torcida 9.2M | Prestigio 83 | Emprestimo R$ 0 mil | Media elenco 81.5
+    Elenco:
+      - GOL Gabriel Grando           OVR 87  Sal  3147  G  0  J  5  Craque -
+      - GOL Agustín Marchesín        OVR 87  Sal  2684  G  1  J 11  Craque *
+      - GOL Caíque                   OVR 83  Sal  2574  G  0  J  0  Craque -
+      - ZAG João Pedro               OVR 86  Sal  3027  G  1  J 16  Craque *
+      - ZAG Fábio                    OVR 82  Sal  1846  G  2  J 16  Craque -
+      - ZAG Kannemann                OVR 80  Sal   694  G  2  J 16  Craque -
+      - ZAG Reinaldo                 OVR 79  Sal   982  G  0  J  3  Craque -
+      - ZAG Jemerson                 OVR 78  Sal   625  G  0  J  5  Craque -
+      - ZAG Rodrigo Ely              OVR 78  Sal   657  G  0  J  8  Craque -
+      - ZAG Mayk                     OVR 77  Sal  1007  G  0  J  0  Craque -
+      - MEI Mathías Villasanti       OVR 86  Sal  3252  G  3  J 16  Craque -
+      - MEI Dodi                     OVR 85  Sal  2011  G  1  J 16  Craque -
+      - MEI Edenilson                OVR 80  Sal   935  G  0  J 15  Craque -
+      - MEI Pepê                     OVR 79  Sal   990  G  2  J 10  Craque -
+      - MEI Franco Cristaldo         OVR 78  Sal  1080  G  3  J  7  Craque -
+      - MEI Nathan                   OVR 77  Sal   859  G  0  J  0  Craque -
+      - MEI Miguel Monsalve          OVR 77  Sal   996  G  0  J  0  Craque -
+      - ATA Pavon                    OVR 87  Sal  3579  G  1  J 15  Craque -
+      - ATA Martin Braithwaite       OVR 86  Sal  2579  G  4  J 16  Craque *
+      - ATA Cristian Olivera         OVR 86  Sal  1969  G  0  J  1  Craque -
+      - ATA Aravena                  OVR 86  Sal  2935  G  0  J  0  Craque -
+      - ATA André Henrique           OVR 81  Sal   630  G  0  J  0  Craque -
+      - ATA Alysson                  OVR 79  Sal   955  G  0  J  0  Craque -
+      - ATA Matias Arezo             OVR 78  Sal   644  G  0  J  0  Craque -
+      - ATA Soteldo                  OVR 77  Sal   631  G  0  J  0  Craque -
+  - Botafogo | Div final 1 | Pos 6 na Div 1 | Movimento = | Caixa R$ 636,345 mil | Folha R$ 20,000 mil | Torcida 12.6M | Prestigio 89 | Emprestimo R$ 0 mil | Media elenco 83.7
+    Elenco:
+      - GOL Raul                     OVR 89  Sal  3693  G  0  J  9  Craque -
+      - GOL John                     OVR 88  Sal  4869  G  0  J 15  Craque *
+      - GOL Léo Linck                OVR 85  Sal  2060  G  0  J  0  Craque -
+      - ZAG Vitinho                  OVR 85  Sal  1614  G  1  J 24  Craque *
+      - ZAG Mateo Ponte              OVR 83  Sal  1680  G  4  J 22  Craque -
+      - ZAG Alexander Barboza        OVR 83  Sal  1510  G  2  J 24  Craque -
+      - ZAG David Ricardo            OVR 82  Sal  3271  G  2  J 17  Craque -
+      - ZAG Bastos                   OVR 82  Sal   539  G  1  J  7  Craque -
+      - ZAG Alex Telles              OVR 82  Sal   845  G  0  J  2  Craque -
+      - ZAG Cuiabano                 OVR 79  Sal  1166  G  0  J  0  Craque -
+      - MEI Gregore                  OVR 86  Sal  6382  G  6  J 24  Craque -
+      - MEI Marlon Freitas           OVR 86  Sal  2219  G  5  J 24  Craque -
+      - MEI Patrick de Paula         OVR 83  Sal  3211  G  6  J 24  Craque -
+      - MEI Jefferson Savarino       OVR 81  Sal  1748  G  2  J 20  Craque -
+      - MEI Santiago Rodríguez       OVR 81  Sal   467  G  2  J  4  Craque -
+      - MEI Newton                   OVR 80  Sal   957  G  0  J  0  Craque -
+      - MEI Allan                    OVR 80  Sal  1096  G  0  J  0  Craque -
+      - ATA Artur                    OVR 88  Sal  3861  G  5  J 22  Craque -
+      - ATA Igor Jesus               OVR 88  Sal  6872  G  8  J 20  Craque *
+      - ATA Jeffinho                 OVR 88  Sal  1933  G  1  J  6  Craque -
+      - ATA Matheus Martins          OVR 86  Sal  3224  G  0  J  0  Craque -
+      - ATA Elias Manoel             OVR 84  Sal  3001  G  0  J  0  Craque -
+      - ATA Rwan Cruz                OVR 84  Sal  2437  G  0  J  0  Craque -
+      - ATA Santiago                 OVR 81  Sal   700  G  0  J  0  Craque -
+      - ATA Kayque                   OVR 80  Sal   973  G  0  J  0  Craque -
+  - Palmeiras | Div final 2 | Pos 7 na Div 1 | Movimento REBAIXADO | Caixa R$ 649,750 mil | Folha R$ 24,000 mil | Torcida 13.4M | Prestigio 93 | Emprestimo R$ 0 mil | Media elenco 88.2
+    Elenco:
+      - GOL Weverton                 OVR 95  Sal  4245  G  1  J 16  Craque *
+      - GOL Marcelo Lomba            OVR 92  Sal  5538  G  0  J  0  Craque -
+      - GOL Mateus Oliveira          OVR 90  Sal  4156  G  0  J  0  Craque -
+      - ZAG Agustín Giay             OVR 93  Sal  5877  G  6  J 16  Craque *
+      - ZAG Mayke                    OVR 90  Sal  6980  G  3  J 16  Craque -
+      - ZAG Marcos Rocha             OVR 87  Sal  5141  G  0  J 15  Craque -
+      - ZAG Murilo                   OVR 86  Sal  2870  G  1  J 14  Craque -
+      - ZAG Naves                    OVR 86  Sal  2149  G  0  J  3  Craque -
+      - ZAG Gustavo Gómez            OVR 85  Sal  1643  G  0  J  0  Craque -
+      - ZAG Joaquín Piquerez         OVR 81  Sal   676  G  0  J  0  Craque -
+      - MEI Richard Ríos             OVR 91  Sal  3960  G  0  J 16  Craque -
+      - MEI Aníbal Moreno            OVR 90  Sal  5755  G  4  J 16  Craque -
+      - MEI Emiliano Martínez        OVR 88  Sal  6414  G  3  J 15  Craque -
+      - MEI Raphael Veiga            OVR 86  Sal  1850  G  2  J 11  Craque -
+      - MEI Felipe Anderson          OVR 86  Sal  3497  G  2  J  6  Craque -
+      - MEI Maurício                 OVR 85  Sal  3039  G  0  J  0  Craque -
+      - MEI Fabinho                  OVR 82  Sal   644  G  0  J  0  Craque -
+      - ATA Estêvão                  OVR 94  Sal  6088  G  1  J 16  Craque *
+      - ATA Facundo Torres           OVR 93  Sal  6552  G  3  J  9  Craque -
+      - ATA Paulinho                 OVR 93  Sal  6228  G  1  J  7  Craque -
+      - ATA Flaco López              OVR 91  Sal  4310  G  0  J  0  Craque -
+      - ATA Vitor Roque              OVR 89  Sal  5100  G  0  J  0  Craque -
+      - ATA Bruno Rodrigues          OVR 85  Sal  3135  G  0  J  0  Craque -
+      - ATA Luighi                   OVR 85  Sal  1531  G  0  J  0  Craque -
+      - ATA Rony                     OVR 84  Sal  1398  G  0  J  0  Craque -
+  - Cruzeiro | Div final 2 | Pos 8 na Div 1 | Movimento REBAIXADO | Caixa R$ 271,065 mil | Folha R$ 13,000 mil | Torcida 8.7M | Prestigio 81 | Emprestimo R$ 0 mil | Media elenco 73.0
+    Elenco:
+      - GOL Anderson                 OVR 79  Sal   592  G  0  J  0  Craque -
+      - GOL Cássio                   OVR 79  Sal   529  G  0  J 18  Craque *
+      - GOL Léo Aragão               OVR 76  Sal   338  G  0  J  0  Craque -
+      - ZAG William                  OVR 75  Sal   821  G  2  J 18  Craque *
+      - ZAG Fagner                   OVR 73  Sal   445  G  2  J 18  Craque -
+      - ZAG Lucas Villalba           OVR 71  Sal   291  G  2  J  8  Craque -
+      - ZAG Jonathan Jesus           OVR 71  Sal   419  G  2  J 12  Craque -
+      - ZAG Fabrício Bruno           OVR 71  Sal   301  G  1  J 16  Craque -
+      - ZAG Kaiki                    OVR 70  Sal    72  G  0  J  0  Craque -
+      - ZAG Marlon                   OVR 67  Sal    97  G  0  J  0  Craque -
+      - MEI Lucas Romero             OVR 77  Sal  1133  G  5  J 18  Craque -
+      - MEI Walace                   OVR 72  Sal   391  G  3  J 18  Craque -
+      - MEI Matheus Henrique         OVR 72  Sal   424  G  3  J 18  Craque -
+      - MEI Japa                     OVR 70  Sal   298  G  1  J 13  Craque -
+      - MEI Christian                OVR 70  Sal    80  G  1  J  5  Craque -
+      - MEI Eduardo                  OVR 69  Sal   105  G  0  J  0  Craque -
+      - MEI Matheus Pereira          OVR 67  Sal    71  G  0  J  0  Craque -
+      - ATA Kaio Jorge               OVR 78  Sal   654  G  0  J 14  Craque *
+      - ATA Lautaro Díaz             OVR 78  Sal   938  G  2  J 13  Craque -
+      - ATA Dudu                     OVR 78  Sal   715  G  0  J  9  Craque -
+      - ATA Yannick Bolasie          OVR 76  Sal   322  G  0  J  0  Craque -
+      - ATA Marquinhos               OVR 74  Sal   168  G  0  J  0  Craque -
+      - ATA Wanderson                OVR 72  Sal   372  G  0  J  0  Craque -
+      - ATA Gabriel Veron            OVR 71  Sal   215  G  0  J  0  Craque -
+      - ATA Rafa Silva               OVR 68  Sal   126  G  0  J  0  Craque -
+
+#### Divisao 2
+  - Fluminense | Div final 1 | Pos 1 na Div 2 | Movimento PROMOVIDO | Caixa R$ 352,719 mil | Folha R$ 16,000 mil | Torcida 11.4M | Prestigio 83 | Emprestimo R$ 0 mil | Media elenco 81.2
+    Elenco:
+      - GOL Fábio                    OVR 88  Sal  3696  G  1  J 22  Craque *
+      - GOL Vitor Eudes              OVR 87  Sal  1842  G  0  J  0  Craque -
+      - GOL Pedro Rangel             OVR 82  Sal   847  G  0  J  0  Craque -
+      - ZAG Guga                     OVR 83  Sal  2945  G  0  J 22  Craque -
+      - ZAG Samuel Xavier            OVR 83  Sal  2971  G  4  J 22  Craque *
+      - ZAG Manoel                   OVR 79  Sal  1081  G  3  J 14  Craque -
+      - ZAG Thiago Silva             OVR 79  Sal  1016  G  0  J 12  Craque -
+      - ZAG Thiago Santos            OVR 79  Sal   805  G  2  J 18  Craque -
+      - ZAG Renê                     OVR 79  Sal  1069  G  0  J  0  Craque -
+      - ZAG Fretes                   OVR 75  Sal   294  G  0  J  0  Craque -
+      - MEI Otávio                   OVR 83  Sal  3062  G  4  J 22  Craque -
+      - MEI Martinelli               OVR 83  Sal  2460  G  1  J 21  Craque -
+      - MEI Lima                     OVR 79  Sal   907  G  1  J 19  Craque -
+      - MEI Ganso                    OVR 78  Sal   541  G  2  J  7  Craque -
+      - MEI Nonato                   OVR 78  Sal   863  G  3  J 19  Craque -
+      - MEI Jhon Arias               OVR 78  Sal  1122  G  0  J  0  Craque -
+      - MEI Kevin Serna              OVR 74  Sal   219  G  0  J  0  Craque -
+      - ATA Germán Cano              OVR 89  Sal  5168  G 11  J 22  Craque *
+      - ATA Everaldo                 OVR 85  Sal  1295  G  0  J  1  Craque -
+      - ATA Keno                     OVR 85  Sal  1308  G  9  J 21  Craque -
+      - ATA Agustín Canobbio         OVR 85  Sal  1994  G  0  J  0  Craque -
+      - ATA Lelê                     OVR 84  Sal  2280  G  0  J  0  Craque -
+      - ATA Isaac                    OVR 79  Sal   870  G  0  J  0  Craque -
+      - ATA Marquinhos               OVR 79  Sal  1181  G  0  J  0  Craque -
+      - ATA Riquelme                 OVR 74  Sal   291  G  0  J  0  Craque -
+  - São Paulo FC | Div final 1 | Pos 2 na Div 2 | Movimento PROMOVIDO | Caixa R$ 273,774 mil | Folha R$ 14,000 mil | Torcida 17.6M | Prestigio 84 | Emprestimo R$ 0 mil | Media elenco 73.5
+    Elenco:
+      - GOL Jandrei                  OVR 78  Sal  1062  G  0  J  2  Craque -
+      - GOL Rafael                   OVR 78  Sal  1116  G  0  J 14  Craque *
+      - GOL Young                    OVR 75  Sal   316  G  0  J  0  Craque -
+      - ZAG Igor Vinícius            OVR 79  Sal  1057  G  0  J 16  Craque *
+      - ZAG Ferraresi                OVR 74  Sal   323  G  2  J 16  Craque -
+      - ZAG Arboleda                 OVR 73  Sal   440  G  2  J 16  Craque -
+      - ZAG Alan Franco              OVR 72  Sal   409  G  1  J 12  Craque -
+      - ZAG Sabino                   OVR 72  Sal   189  G  0  J  4  Craque -
+      - ZAG Patryck                  OVR 69  Sal    98  G  0  J  0  Craque -
+      - ZAG Welington                OVR 66  Sal   126  G  0  J  0  Craque -
+      - MEI Alisson                  OVR 76  Sal  1164  G  2  J 16  Craque -
+      - MEI Pablo Maia               OVR 73  Sal   365  G  1  J 16  Craque -
+      - MEI Marcos Antônio           OVR 72  Sal   407  G  1  J 10  Craque -
+      - MEI Rodriguinho              OVR 72  Sal   227  G  1  J  9  Craque -
+      - MEI Damián Bobadilla         OVR 72  Sal   346  G  0  J 13  Craque -
+      - MEI Wellington Rato          OVR 71  Sal   414  G  0  J  0  Craque -
+      - MEI Matheus Alves            OVR 69  Sal    93  G  0  J  0  Craque -
+      - ATA Calleri                  OVR 79  Sal  1025  G  6  J 16  Craque *
+      - ATA Luciano                  OVR 78  Sal   855  G  6  J  7  Craque -
+      - ATA Ferreira                 OVR 78  Sal   996  G  1  J  4  Craque -
+      - ATA Lucas Moura              OVR 78  Sal  1000  G  1  J  5  Craque -
+      - ATA André Silva              OVR 76  Sal   447  G  0  J  0  Craque -
+      - ATA William Gomes            OVR 71  Sal   382  G  0  J  0  Craque -
+      - ATA Erick                    OVR 70  Sal    98  G  0  J  0  Craque -
+      - ATA Henrique Carmo           OVR 66  Sal    90  G  0  J  0  Craque -
+  - Santos | Div final 2 | Pos 3 na Div 2 | Movimento = | Caixa R$ 215,136 mil | Folha R$ 7,000 mil | Torcida 10.2M | Prestigio 74 | Emprestimo R$ 0 mil | Media elenco 62.8
+    Elenco:
+      - GOL Gabriel Brazão           OVR 69  Sal   320  G  0  J 13  Craque *
+      - GOL João Paulo               OVR 69  Sal   105  G  0  J  4  Craque -
+      - GOL Diógenes                 OVR 65  Sal    73  G  0  J  0  Craque -
+      - ZAG Aderlan                  OVR 65  Sal    88  G  1  J 16  Craque *
+      - ZAG JP Chermont              OVR 65  Sal   113  G  1  J 16  Craque -
+      - ZAG Gil                      OVR 62  Sal    50  G  2  J 16  Craque -
+      - ZAG Joaquim                  OVR 60  Sal    32  G  0  J 12  Craque -
+      - ZAG Escobar                  OVR 60  Sal    38  G  0  J  4  Craque -
+      - ZAG Zé Ivaldo                OVR 60  Sal    42  G  0  J  0  Craque -
+      - ZAG Kevyson                  OVR 57  Sal    64  G  0  J  0  Craque -
+      - MEI Diego Pituca             OVR 66  Sal   109  G  5  J 16  Craque -
+      - MEI Tomás Rincón             OVR 63  Sal   150  G  1  J 16  Craque -
+      - MEI João Schmidt             OVR 61  Sal    65  G  1  J 16  Craque -
+      - MEI Giuliano                 OVR 59  Sal    70  G  3  J 10  Craque -
+      - MEI Otero                    OVR 59  Sal    62  G  0  J  0  Craque -
+      - MEI Cazares                  OVR 59  Sal    68  G  0  J  6  Craque -
+      - MEI Miguelito                OVR 58  Sal    43  G  0  J  0  Craque -
+      - ATA Guilherme                OVR 69  Sal   233  G  2  J 16  Craque *
+      - ATA Willian Bigode           OVR 67  Sal    71  G  1  J  3  Craque -
+      - ATA Pedrinho                 OVR 66  Sal   123  G  0  J  3  Craque -
+      - ATA Julio Furch              OVR 66  Sal   132  G  3  J 10  Craque -
+      - ATA Wendel Silva             OVR 65  Sal   102  G  0  J  0  Craque -
+      - ATA Lucas Braga              OVR 61  Sal    58  G  0  J  0  Craque -
+      - ATA Morelos                  OVR 60  Sal    47  G  0  J  0  Craque -
+      - ATA Enzo Monteiro            OVR 57  Sal    69  G  0  J  0  Craque -
+  - Vasco da Gama | Div final 2 | Pos 4 na Div 2 | Movimento = | Caixa R$ 222,665 mil | Folha R$ 9,000 mil | Torcida 10.3M | Prestigio 77 | Emprestimo R$ 0 mil | Media elenco 68.5
+    Elenco:
+      - GOL Léo Jardim               OVR 74  Sal   343  G  1  J 18  Craque *
+      - GOL Keiller                  OVR 73  Sal   322  G  0  J  0  Craque -
+      - GOL Pablo                    OVR 71  Sal   435  G  0  J  0  Craque -
+      - ZAG Paulo Henrique           OVR 71  Sal   374  G  4  J 18  Craque *
+      - ZAG Puma Rodríguez           OVR 70  Sal   256  G  1  J 18  Craque -
+      - ZAG Lucas Oliveira           OVR 67  Sal   122  G  0  J 17  Craque -
+      - ZAG João Victor              OVR 67  Sal   148  G  2  J 13  Craque -
+      - ZAG Lucas Piton              OVR 67  Sal   127  G  2  J  6  Craque -
+      - ZAG Maicon                   OVR 66  Sal    72  G  0  J  0  Craque -
+      - ZAG Victor Luís              OVR 62  Sal    52  G  0  J  0  Craque -
+      - MEI Hugo Moura               OVR 70  Sal   416  G  4  J 18  Craque -
+      - MEI Jair                     OVR 69  Sal   312  G  1  J 18  Craque -
+      - MEI Philippe Coutinho        OVR 66  Sal   121  G  5  J 18  Craque -
+      - MEI Juan Sforza              OVR 66  Sal   106  G  2  J 17  Craque -
+      - MEI Dimitri Payet            OVR 66  Sal    92  G  0  J  1  Craque -
+      - MEI Paulinho                 OVR 65  Sal   128  G  0  J  0  Craque -
+      - MEI Tchê Tchê                OVR 64  Sal    51  G  0  J  0  Craque -
+      - ATA Pablo Vegetti            OVR 73  Sal   282  G  3  J 18  Craque *
+      - ATA Adson                    OVR 73  Sal   193  G  6  J 10  Craque -
+      - ATA Rayan                    OVR 72  Sal   335  G  3  J  8  Craque -
+      - ATA Alex Teixeira            OVR 72  Sal   357  G  0  J  0  Craque -
+      - ATA Rossi                    OVR 71  Sal   150  G  0  J  0  Craque -
+      - ATA David                    OVR 68  Sal    84  G  0  J  0  Craque -
+      - ATA GB                       OVR 67  Sal    80  G  0  J  0  Craque -
+      - ATA Jean David               OVR 63  Sal    47  G  0  J  0  Craque -
+  - Corinthians | Div final 2 | Pos 5 na Div 2 | Movimento = | Caixa R$ 255,491 mil | Folha R$ 19,000 mil | Torcida 27.4M | Prestigio 86 | Emprestimo R$ 0 mil | Media elenco 79.0
+    Elenco:
+      - GOL Matheus Donelli          OVR 84  Sal  2704  G  0  J  7  Craque -
+      - GOL Hugo Souza               OVR 84  Sal  3065  G  1  J  9  Craque *
+      - GOL Felipe Longo             OVR 80  Sal   898  G  0  J  0  Craque -
+      - ZAG Matheuzinho              OVR 84  Sal  1844  G  1  J 16  Craque *
+      - ZAG Léo Maná                 OVR 80  Sal   954  G  1  J 16  Craque -
+      - ZAG Félix Torres             OVR 78  Sal   822  G  1  J 16  Craque -
+      - ZAG Cacá                     OVR 76  Sal   668  G  0  J  7  Craque -
+      - ZAG Gustavo Henrique         OVR 76  Sal   548  G  1  J  7  Craque -
+      - ZAG Hugo                     OVR 76  Sal   415  G  0  J  2  Craque -
+      - ZAG Bidu                     OVR 74  Sal   227  G  0  J  0  Craque -
+      - MEI Raniele                  OVR 83  Sal  1895  G  2  J 15  Craque -
+      - MEI Breno Bidon              OVR 82  Sal  2767  G  3  J 15  Craque -
+      - MEI Maycon                   OVR 79  Sal  1045  G  4  J 16  Craque -
+      - MEI Charles                  OVR 76  Sal   783  G  2  J 10  Craque -
+      - MEI Alex Santana             OVR 76  Sal   881  G  1  J  3  Craque -
+      - MEI Rodrigo Garro            OVR 76  Sal   768  G  1  J  5  Craque -
+      - MEI André Carrillo           OVR 74  Sal   213  G  0  J  0  Craque -
+      - ATA Yuri Alberto             OVR 85  Sal  1468  G  3  J 16  Craque *
+      - ATA Ángel Romero             OVR 83  Sal  1206  G  0  J  2  Craque -
+      - ATA Memphis Depay            OVR 83  Sal  2108  G  3  J 14  Craque -
+      - ATA Talles Magno             OVR 81  Sal   675  G  0  J  0  Craque -
+      - ATA Pedro Raul               OVR 79  Sal   947  G  0  J  0  Craque -
+      - ATA Giovane                  OVR 78  Sal   453  G  0  J  0  Craque -
+      - ATA Wesley                   OVR 75  Sal   222  G  0  J  0  Craque -
+      - ATA Kayke                    OVR 74  Sal   151  G  0  J  0  Craque -
+  - Bahia | Div final 2 | Pos 6 na Div 2 | Movimento = | Caixa R$ 152,164 mil | Folha R$ 8,500 mil | Torcida 3.1M | Prestigio 74 | Emprestimo R$ 0 mil | Media elenco 70.6
+    Elenco:
+      - GOL Danilo Fernandes         OVR 76  Sal   774  G  0  J 12  Craque -
+      - GOL Marcos Felipe            OVR 76  Sal   873  G  1  J  4  Craque *
+      - GOL Adriel                   OVR 73  Sal   202  G  0  J  0  Craque -
+      - ZAG Arias                    OVR 73  Sal   157  G  1  J 16  Craque -
+      - ZAG Gilberto                 OVR 72  Sal   291  G  3  J 16  Craque *
+      - ZAG Kanu                     OVR 69  Sal   270  G  2  J 16  Craque -
+      - ZAG Gabriel Xavier           OVR 68  Sal   105  G  0  J 15  Craque -
+      - ZAG David Duarte             OVR 68  Sal   145  G  0  J  1  Craque -
+      - ZAG Iago Borduchi            OVR 67  Sal   131  G  0  J  0  Craque -
+      - ZAG Luciano Juba             OVR 66  Sal    89  G  0  J  0  Craque -
+      - MEI Caio Alexandre           OVR 72  Sal   225  G  1  J 16  Craque -
+      - MEI Everton Ribeiro          OVR 72  Sal   202  G  4  J 16  Craque -
+      - MEI Jean Lucas               OVR 71  Sal   361  G  3  J 16  Craque -
+      - MEI Cauly                    OVR 68  Sal    78  G  1  J  6  Craque -
+      - MEI Rezende                  OVR 67  Sal   115  G  0  J 10  Craque -
+      - MEI Nicolás Acevedo          OVR 67  Sal   140  G  0  J  0  Craque -
+      - MEI Erick                    OVR 66  Sal   147  G  0  J  0  Craque -
+      - ATA Everaldo                 OVR 75  Sal   828  G  4  J 16  Craque *
+      - ATA Biel                     OVR 74  Sal   284  G  1  J  8  Craque -
+      - ATA Lucho Rodríguez          OVR 74  Sal   385  G  0  J  1  Craque -
+      - ATA Ademir                   OVR 74  Sal   320  G  0  J  7  Craque -
+      - ATA Kayky                    OVR 73  Sal   406  G  0  J  0  Craque -
+      - ATA Tiago                    OVR 68  Sal   125  G  0  J  0  Craque -
+      - ATA Willian José             OVR 67  Sal   144  G  0  J  0  Craque -
+      - ATA Rafael Ratão             OVR 66  Sal   112  G  0  J  0  Craque -
+  - Atlético Goianiense | Div final 3 | Pos 7 na Div 2 | Movimento REBAIXADO | Caixa R$ 89,169 mil | Folha R$ 4,500 mil | Torcida 1.5M | Prestigio 59 | Emprestimo R$ 0 mil | Media elenco 52.1
+    Elenco:
+      - GOL Ronaldo                  OVR 61  Sal    41  G  0  J 16  Craque *
+      - GOL Luan Polli               OVR 61  Sal    55  G  0  J  4  Craque -
+      - GOL Pedro Paulo              OVR 52  Sal    63  G  0  J  0  Craque -
+      - ZAG Bruno Tubarão            OVR 59  Sal    61  G  0  J 20  Craque *
+      - ZAG Maguinho                 OVR 54  Sal    68  G  3  J 19  Craque -
+      - ZAG Alix Vinicius            OVR 52  Sal    38  G  1  J 20  Craque -
+      - ZAG Lucas Gazal              OVR 50  Sal    48  G  1  J 19  Craque -
+      - ZAG Luiz Felipe              OVR 49  Sal    42  G  0  J  2  Craque -
+      - ZAG Guilherme Romão          OVR 45  Sal    49  G  0  J  0  Craque -
+      - ZAG Rhaldney                 OVR 43  Sal    40  G  0  J  0  Craque -
+      - MEI Roni                     OVR 58  Sal    58  G  3  J 20  Craque -
+      - MEI Baralhas                 OVR 53  Sal    44  G  4  J 20  Craque -
+      - MEI Shaylon                  OVR 51  Sal    64  G  0  J 20  Craque -
+      - MEI Emiliano Rodríguez       OVR 49  Sal    39  G  0  J  0  Craque -
+      - MEI Jorginho                 OVR 49  Sal    46  G  3  J 20  Craque -
+      - MEI Léo Pereira              OVR 47  Sal    59  G  0  J  0  Craque -
+      - MEI Campanharo               OVR 41  Sal    55  G  0  J  0  Craque -
+      - ATA Luiz Fernando            OVR 62  Sal    41  G  4  J 19  Craque *
+      - ATA Janderson                OVR 59  Sal    40  G  1  J 16  Craque -
+      - ATA Derek                    OVR 59  Sal    40  G  0  J  5  Craque -
+      - ATA Hyuri                    OVR 57  Sal    60  G  0  J  0  Craque -
+      - ATA Alejo Cruz               OVR 53  Sal    53  G  0  J  0  Craque -
+      - ATA Danielzinho              OVR 51  Sal    38  G  0  J  0  Craque -
+      - ATA Yony González            OVR 45  Sal    37  G  0  J  0  Craque -
+      - ATA Gustavo Coutinho         OVR 43  Sal    48  G  0  J  0  Craque -
+  - Juventude | Div final 3 | Pos 8 na Div 2 | Movimento REBAIXADO | Caixa R$ 98,810 mil | Folha R$ 5,500 mil | Torcida 1.0M | Prestigio 64 | Emprestimo R$ 0 mil | Media elenco 55.2
+    Elenco:
+      - GOL Gabriel                  OVR 66  Sal    76  G  0  J 16  Craque *
+      - GOL César                    OVR 63  Sal    34  G  0  J  0  Craque -
+      - GOL Marcão                   OVR 56  Sal    67  G  0  J  0  Craque -
+      - ZAG João Lucas               OVR 62  Sal    62  G  2  J 16  Craque *
+      - ZAG Ewerthon                 OVR 57  Sal    37  G  1  J 16  Craque -
+      - ZAG Rodrigo Sam              OVR 54  Sal    57  G  0  J 16  Craque -
+      - ZAG Danilo Boza              OVR 51  Sal    67  G  1  J 10  Craque -
+      - ZAG Abner                    OVR 51  Sal    33  G  1  J  6  Craque -
+      - ZAG Alan Ruschel             OVR 50  Sal    31  G  0  J  0  Craque -
+      - ZAG Marcos Paulo             OVR 46  Sal    34  G  0  J  0  Craque -
+      - MEI Jean Irmer               OVR 61  Sal    60  G  3  J 16  Craque -
+      - MEI Caique                   OVR 59  Sal    38  G  2  J 16  Craque -
+      - MEI Mandaca                  OVR 54  Sal    36  G  1  J 16  Craque -
+      - MEI Jadson                   OVR 53  Sal    30  G  0  J 11  Craque -
+      - MEI Nenê                     OVR 53  Sal    52  G  0  J  5  Craque -
+      - MEI Luis Oyama               OVR 48  Sal    53  G  0  J  0  Craque -
+      - MEI Luan Dias                OVR 46  Sal    64  G  0  J  0  Craque -
+      - ATA Erick Farias             OVR 65  Sal   149  G  1  J 16  Craque *
+      - ATA Gilberto                 OVR 61  Sal    31  G  0  J 10  Craque -
+      - ATA Lucas Barbosa            OVR 61  Sal    38  G  1  J  6  Craque -
+      - ATA Marcelinho               OVR 58  Sal    39  G  0  J  0  Craque -
+      - ATA Edinho                   OVR 55  Sal    41  G  0  J  0  Craque -
+      - ATA Taliari                  OVR 53  Sal    44  G  0  J  0  Craque -
+      - ATA Gabriel Taliari          OVR 51  Sal    30  G  0  J  0  Craque -
+      - ATA Da Silva                 OVR 45  Sal    62  G  0  J  0  Craque -
+
+#### Divisao 3
+  - Athletico Paranaense | Div final 2 | Pos 1 na Div 3 | Movimento PROMOVIDO | Caixa R$ 173,075 mil | Folha R$ 9,000 mil | Torcida 5.4M | Prestigio 76 | Emprestimo R$ 0 mil | Media elenco 67.0
+    Elenco:
+      - GOL Mycael                   OVR 72  Sal   270  G  0  J 14  Craque *
+      - GOL Léo Linck                OVR 72  Sal   447  G  0  J  4  Craque -
+      - GOL Santos                   OVR 68  Sal   107  G  0  J  0  Craque -
+      - ZAG Madson                   OVR 69  Sal   367  G  2  J 17  Craque -
+      - ZAG Léo Godoy                OVR 68  Sal   206  G  3  J 17  Craque *
+      - ZAG Kaique Rocha             OVR 66  Sal   113  G  5  J 17  Craque -
+      - ZAG Fernando                 OVR 63  Sal    32  G  1  J  3  Craque -
+      - ZAG Matheus Felipe           OVR 63  Sal    69  G  2  J  9  Craque -
+      - ZAG Lucas Esquivel           OVR 63  Sal    38  G  0  J  3  Craque -
+      - ZAG Belezi                   OVR 63  Sal    60  G  2  J  6  Craque -
+      - MEI Erick                    OVR 70  Sal   161  G  5  J 17  Craque -
+      - MEI Felipinho                OVR 69  Sal   434  G  3  J 18  Craque -
+      - MEI Bruno Zapelli            OVR 67  Sal   135  G  1  J 18  Craque -
+      - MEI Giuliano                 OVR 65  Sal    97  G  2  J  6  Craque -
+      - MEI Canobbio                 OVR 65  Sal   109  G  3  J 13  Craque -
+      - MEI Christian                OVR 65  Sal    46  G  0  J  0  Craque -
+      - MEI Alex Santana             OVR 63  Sal    41  G  0  J  0  Craque -
+      - ATA Cuello                   OVR 72  Sal   334  G  2  J  9  Craque -
+      - ATA Mastriani                OVR 72  Sal   301  G  2  J 10  Craque -
+      - ATA Pablo                    OVR 72  Sal   309  G  6  J 16  Craque *
+      - ATA Rômulo                   OVR 72  Sal   295  G  0  J  1  Craque -
+      - ATA Di Yorio                 OVR 68  Sal    92  G  0  J  0  Craque -
+      - ATA Julimar                  OVR 65  Sal    70  G  0  J  0  Craque -
+      - ATA Emersonn                 OVR 63  Sal    49  G  0  J  0  Craque -
+      - ATA Isaac                    OVR 62  Sal    53  G  0  J  0  Craque -
+  - Fortaleza | Div final 2 | Pos 2 na Div 3 | Movimento PROMOVIDO | Caixa R$ 220,522 mil | Folha R$ 11,000 mil | Torcida 3.8M | Prestigio 75 | Emprestimo R$ 0 mil | Media elenco 73.2
+    Elenco:
+      - GOL João Ricardo             OVR 79  Sal   655  G  0  J 10  Craque *
+      - GOL Santos                   OVR 78  Sal  1188  G  0  J 10  Craque -
+      - GOL Magrão                   OVR 74  Sal   186  G  0  J  0  Craque -
+      - ZAG Tinga                    OVR 75  Sal   578  G  1  J 19  Craque *
+      - ZAG Emanuel Brítez           OVR 73  Sal   283  G  1  J 20  Craque -
+      - ZAG Kuscevic                 OVR 71  Sal   375  G  1  J  3  Craque -
+      - ZAG Titi                     OVR 71  Sal   304  G  0  J 19  Craque -
+      - ZAG Mancuso                  OVR 71  Sal   352  G  0  J  2  Craque -
+      - ZAG Bruno Pacheco            OVR 71  Sal   313  G  5  J 17  Craque -
+      - ZAG Talocha                  OVR 68  Sal   134  G  0  J  0  Craque -
+      - MEI Lucas Sasha              OVR 78  Sal  1107  G  3  J 20  Craque -
+      - MEI Pochettino               OVR 73  Sal   445  G  4  J 20  Craque -
+      - MEI Zé Welison               OVR 71  Sal   317  G  0  J 11  Craque -
+      - MEI Kervin Andrade           OVR 71  Sal   396  G  1  J  4  Craque -
+      - MEI Hércules                 OVR 71  Sal   237  G  3  J 16  Craque -
+      - MEI Martínez                 OVR 71  Sal   157  G  3  J  9  Craque -
+      - MEI Calebe                   OVR 68  Sal    93  G  0  J  0  Craque -
+      - ATA Marinho                  OVR 78  Sal   886  G  4  J 20  Craque -
+      - ATA Lucero                   OVR 77  Sal   515  G  4  J 14  Craque *
+      - ATA Moisés                   OVR 77  Sal  1186  G  2  J  6  Craque -
+      - ATA Yago Pikachu             OVR 77  Sal   918  G  0  J  0  Craque -
+      - ATA Breno Lopes              OVR 76  Sal   373  G  0  J  0  Craque -
+      - ATA Renato Kayzer            OVR 75  Sal   347  G  0  J  0  Craque -
+      - ATA Allanzinho               OVR 69  Sal    76  G  0  J  0  Craque -
+      - ATA Pedro Rocha              OVR 68  Sal    85  G  0  J  0  Craque -
+  - Criciúma | Div final 3 | Pos 3 na Div 3 | Movimento = | Caixa R$ 72,829 mil | Folha R$ 4,500 mil | Torcida 823K | Prestigio 59 | Emprestimo R$ 0 mil | Media elenco 47.9
+    Elenco:
+      - GOL Gustavo                  OVR 56  Sal    42  G  0  J 18  Craque *
+      - GOL Alisson                  OVR 56  Sal    61  G  0  J  0  Craque -
+      - GOL Kauã                     OVR 50  Sal    69  G  0  J  0  Craque -
+      - ZAG Claudinho                OVR 53  Sal    30  G  2  J 18  Craque *
+      - ZAG Jonathan                 OVR 51  Sal    36  G  4  J 18  Craque -
+      - ZAG Rodrigo                  OVR 47  Sal    59  G  1  J 18  Craque -
+      - ZAG Tobias Figueiredo        OVR 44  Sal    59  G  3  J 13  Craque -
+      - ZAG Victor Luís              OVR 44  Sal    30  G  1  J  5  Craque -
+      - ZAG Marcelo Hermes           OVR 41  Sal    53  G  0  J  0  Craque -
+      - ZAG Dudu                     OVR 38  Sal    51  G  0  J  0  Craque -
+      - MEI Barreto                  OVR 55  Sal    70  G  1  J 18  Craque -
+      - MEI Higor Meritão            OVR 50  Sal    39  G  5  J 17  Craque -
+      - MEI Fellipe Mateus           OVR 48  Sal    52  G  5  J 18  Craque -
+      - MEI Marquinhos Gabriel       OVR 45  Sal    32  G  0  J  3  Craque -
+      - MEI Newton                   OVR 45  Sal    37  G  4  J 16  Craque -
+      - MEI Rômulo                   OVR 41  Sal    46  G  0  J  0  Craque -
+      - MEI Miquéias                 OVR 39  Sal    43  G  0  J  0  Craque -
+      - ATA Yannick Bolasie          OVR 56  Sal    64  G  4  J 18  Craque *
+      - ATA Arthur Caíke             OVR 54  Sal    59  G  0  J  6  Craque -
+      - ATA Allano                   OVR 54  Sal    66  G  3  J 12  Craque -
+      - ATA Ronald                   OVR 51  Sal    36  G  0  J  0  Craque -
+      - ATA Matheusinho              OVR 48  Sal    58  G  0  J  0  Craque -
+      - ATA Jhonata Robert           OVR 47  Sal    67  G  0  J  0  Craque -
+      - ATA Éder                     OVR 45  Sal    45  G  0  J  0  Craque -
+      - ATA Felipinho                OVR 39  Sal    58  G  0  J  0  Craque -
+  - Ceará | Div final 3 | Pos 4 na Div 3 | Movimento = | Caixa R$ 100,428 mil | Folha R$ 4,000 mil | Torcida 2.6M | Prestigio 62 | Emprestimo R$ 0 mil | Media elenco 51.7
+    Elenco:
+      - GOL Richard                  OVR 60  Sal    70  G  1  J 20  Craque *
+      - GOL Bruno Ferreira           OVR 60  Sal    36  G  0  J  2  Craque -
+      - GOL Fernando Miguel          OVR 54  Sal    51  G  0  J  0  Craque -
+      - ZAG Rafael Ramos             OVR 56  Sal    45  G  0  J 22  Craque *
+      - ZAG Raí Ramos                OVR 53  Sal    40  G  1  J 22  Craque -
+      - ZAG David Ricardo            OVR 52  Sal    55  G  1  J 22  Craque -
+      - ZAG Matheus Felipe           OVR 48  Sal    47  G  2  J  9  Craque -
+      - ZAG Luiz Otávio              OVR 48  Sal    55  G  2  J 13  Craque -
+      - ZAG Eric Melo                OVR 47  Sal    69  G  0  J  0  Craque -
+      - ZAG Warley                   OVR 42  Sal    30  G  0  J  0  Craque -
+      - MEI Richardson               OVR 58  Sal    54  G  6  J 22  Craque -
+      - MEI Lourenço                 OVR 54  Sal    60  G  5  J 21  Craque -
+      - MEI Lucas Mugni              OVR 52  Sal    32  G  3  J 22  Craque -
+      - MEI Aylon                    OVR 48  Sal    45  G  5  J 15  Craque -
+      - MEI Rômulo                   OVR 48  Sal    65  G  1  J  8  Craque -
+      - MEI De Lucca                 OVR 47  Sal    62  G  0  J  0  Craque -
+      - MEI Fernando Sobral          OVR 41  Sal    57  G  0  J  0  Craque -
+      - ATA Saulo Mineiro            OVR 60  Sal    62  G  9  J 22  Craque *
+      - ATA Barceló                  OVR 58  Sal    34  G  1  J  3  Craque -
+      - ATA Cléber                   OVR 58  Sal    55  G  1  J  5  Craque -
+      - ATA Facundo Castro           OVR 58  Sal    48  G  1  J 14  Craque -
+      - ATA Recalde                  OVR 51  Sal    65  G  0  J  0  Craque -
+      - ATA Janderson                OVR 50  Sal    56  G  0  J  0  Craque -
+      - ATA Erick Pulga              OVR 47  Sal    35  G  0  J  0  Craque -
+      - ATA Guilherme Bissoli        OVR 43  Sal    69  G  0  J  0  Craque -
+  - Vitória | Div final 3 | Pos 5 na Div 3 | Movimento = | Caixa R$ 90,581 mil | Folha R$ 5,000 mil | Torcida 3.1M | Prestigio 64 | Emprestimo R$ 0 mil | Media elenco 55.0
+    Elenco:
+      - GOL Muriel                   OVR 64  Sal    36  G  0  J  3  Craque -
+      - GOL Lucas Arcanjo            OVR 64  Sal   117  G  0  J 15  Craque *
+      - GOL Dalton                   OVR 55  Sal    49  G  0  J  0  Craque -
+      - ZAG Raul Cáceres             OVR 63  Sal   121  G  0  J 18  Craque *
+      - ZAG Zeca                     OVR 57  Sal    66  G  3  J 18  Craque -
+      - ZAG Wagner Leonardo          OVR 55  Sal    33  G  4  J 18  Craque -
+      - ZAG Neris                    OVR 52  Sal    65  G  0  J  5  Craque -
+      - ZAG Camutanga                OVR 52  Sal    69  G  2  J 13  Craque -
+      - ZAG PK                       OVR 49  Sal    53  G  0  J  0  Craque -
+      - ZAG Patric Calmon            OVR 46  Sal    35  G  0  J  0  Craque -
+      - MEI Léo Naldi                OVR 63  Sal    73  G  1  J 17  Craque -
+      - MEI Rodrigo Andrade          OVR 58  Sal    44  G  3  J 18  Craque -
+      - MEI Willian Oliveira         OVR 54  Sal    59  G  5  J 18  Craque -
+      - MEI Jean Mota                OVR 53  Sal    50  G  2  J 17  Craque -
+      - MEI Matheuzinho              OVR 50  Sal    36  G  0  J  2  Craque -
+      - MEI Caio Vinícius            OVR 49  Sal    36  G  0  J  0  Craque -
+      - MEI Dudu                     OVR 45  Sal    70  G  0  J  0  Craque -
+      - ATA Alerrandro               OVR 65  Sal   126  G  5  J 18  Craque *
+      - ATA Janderson                OVR 62  Sal    34  G  1  J  7  Craque -
+      - ATA Osvaldo                  OVR 62  Sal    58  G  1  J 11  Craque -
+      - ATA Everaldo                 OVR 58  Sal    47  G  0  J  0  Craque -
+      - ATA Iury Castilho            OVR 57  Sal    35  G  0  J  0  Craque -
+      - ATA Wellington Rato          OVR 52  Sal    35  G  0  J  0  Craque -
+      - ATA Fábio Soares             OVR 48  Sal    66  G  0  J  0  Craque -
+      - ATA Carlos Eduardo           OVR 44  Sal    42  G  0  J  0  Craque -
+  - América Mineiro | Div final 3 | Pos 6 na Div 3 | Movimento = | Caixa R$ 79,852 mil | Folha R$ 4,500 mil | Torcida 2.8M | Prestigio 65 | Emprestimo R$ 0 mil | Media elenco 35.6
+    Elenco:
+      - GOL Matheus Mendes           OVR 45  Sal    55  G  1  J 16  Craque *
+      - GOL Jori                     OVR 45  Sal    58  G  0  J  0  Craque -
+      - GOL Dalberson                OVR 35  Sal    48  G  0  J  0  Craque -
+      - ZAG Marlon                   OVR 41  Sal    67  G  1  J 16  Craque *
+      - ZAG Ricardo Silva            OVR 40  Sal    30  G  0  J 16  Craque -
+      - ZAG Júlio                    OVR 35  Sal    62  G  1  J 16  Craque -
+      - ZAG Maguinho                 OVR 33  Sal    59  G  0  J  4  Craque -
+      - ZAG Nicolas                  OVR 33  Sal    63  G  1  J 12  Craque -
+      - ZAG Lucão                    OVR 31  Sal    39  G  0  J  0  Craque -
+      - ZAG Paulinho                 OVR 25  Sal    56  G  0  J  0  Craque -
+      - MEI Alê                      OVR 41  Sal    31  G  4  J 16  Craque -
+      - MEI Moisés                   OVR 38  Sal    61  G  0  J 16  Craque -
+      - MEI Fabinho Santos           OVR 34  Sal    32  G  1  J 16  Craque -
+      - MEI Benítez                  OVR 32  Sal    34  G  3  J 10  Craque -
+      - MEI Miguelito                OVR 32  Sal    50  G  1  J  6  Craque -
+      - MEI Cauan Barros             OVR 30  Sal    33  G  0  J  0  Craque -
+      - MEI Jhosefer                 OVR 25  Sal    59  G  0  J  0  Craque -
+      - ATA Fabinho                  OVR 46  Sal    47  G  0  J 15  Craque *
+      - ATA Adyson                   OVR 42  Sal    55  G  0  J  2  Craque -
+      - ATA Willian Bigode           OVR 42  Sal    38  G  4  J 15  Craque -
+      - ATA Guilherme Pato           OVR 40  Sal    52  G  0  J  0  Craque -
+      - ATA Renato Marques           OVR 35  Sal    49  G  0  J  0  Craque -
+      - ATA Brenner                  OVR 34  Sal    55  G  0  J  0  Craque -
+      - ATA Stênio                   OVR 28  Sal    53  G  0  J  0  Craque -
+      - ATA Aloísio                  OVR 26  Sal    45  G  0  J  0  Craque -
+  - Sport Recife | Div final 4 | Pos 7 na Div 3 | Movimento REBAIXADO | Caixa R$ 72,980 mil | Folha R$ 4,000 mil | Torcida 2.4M | Prestigio 56 | Emprestimo R$ 0 mil | Media elenco 48.4
+    Elenco:
+      - GOL Caíque França            OVR 58  Sal    42  G  0  J 16  Craque *
+      - GOL Denis                    OVR 56  Sal    35  G  0  J  0  Craque -
+      - GOL Adriel                   OVR 51  Sal    44  G  0  J  0  Craque -
+      - ZAG Rosales                  OVR 53  Sal    60  G  2  J 16  Craque *
+      - ZAG Hereda                   OVR 51  Sal    66  G  1  J 16  Craque -
+      - ZAG Rafael Thyere            OVR 49  Sal    30  G  2  J 16  Craque -
+      - ZAG Chico                    OVR 46  Sal    61  G  0  J 16  Craque -
+      - ZAG Luciano Castán           OVR 45  Sal    68  G  0  J  0  Craque -
+      - ZAG Felipinho                OVR 42  Sal    66  G  0  J  0  Craque -
+      - ZAG Igor Cariús              OVR 41  Sal    44  G  0  J  0  Craque -
+      - MEI Fabinho                  OVR 53  Sal    34  G  0  J 16  Craque -
+      - MEI Felipe                   OVR 51  Sal    70  G  3  J 16  Craque -
+      - MEI Lucas Lima               OVR 48  Sal    46  G  3  J 16  Craque -
+      - MEI Julián Fernández         OVR 45  Sal    69  G  0  J  5  Craque -
+      - MEI Titi Ortíz               OVR 45  Sal    61  G  3  J 11  Craque -
+      - MEI Pedro Vilhena            OVR 43  Sal    36  G  0  J  0  Craque -
+      - MEI Alan Ruiz                OVR 38  Sal    59  G  0  J  0  Craque -
+      - ATA Barletta                 OVR 58  Sal    33  G  4  J 16  Craque *
+      - ATA Zé Roberto               OVR 55  Sal    42  G  0  J  5  Craque -
+      - ATA Gustavo Coutinho         OVR 55  Sal    53  G  3  J 11  Craque -
+      - ATA Romarinho                OVR 52  Sal    48  G  0  J  0  Craque -
+      - ATA Pablo Dyego              OVR 48  Sal    67  G  0  J  0  Craque -
+      - ATA Chrystian                OVR 48  Sal    38  G  0  J  0  Craque -
+      - ATA Lenny Lobato             OVR 42  Sal    36  G  0  J  0  Craque -
+      - ATA Diego Souza Jr           OVR 40  Sal    35  G  0  J  0  Craque -
+  - Goiás | Div final 4 | Pos 8 na Div 3 | Movimento REBAIXADO | Caixa R$ 75,520 mil | Folha R$ 4,600 mil | Torcida 2.6M | Prestigio 60 | Emprestimo R$ 0 mil | Media elenco 35.7
+    Elenco:
+      - GOL Tadeu                    OVR 47  Sal    62  G  0  J 16  Craque *
+      - GOL Thiago Rodrigues         OVR 42  Sal    51  G  0  J  0  Craque -
+      - GOL Marcão                   OVR 35  Sal    44  G  0  J  0  Craque -
+      - ZAG Ezequiel                 OVR 41  Sal    47  G  1  J 16  Craque *
+      - ZAG Lucas Ribeiro            OVR 39  Sal    57  G  0  J 16  Craque -
+      - ZAG Luiz Felipe              OVR 36  Sal    34  G  2  J 16  Craque -
+      - ZAG Anthony                  OVR 31  Sal    35  G  0  J  5  Craque -
+      - ZAG Titi                     OVR 31  Sal    48  G  0  J 11  Craque -
+      - ZAG Nicolas                  OVR 29  Sal    70  G  0  J  0  Craque -
+      - ZAG Rodrigo Soares           OVR 26  Sal    57  G  0  J  0  Craque -
+      - MEI Gegê                     OVR 43  Sal    39  G  1  J 15  Craque -
+      - MEI Juninho                  OVR 39  Sal    56  G  2  J 16  Craque -
+      - MEI Brayann                  OVR 33  Sal    48  G  2  J 15  Craque -
+      - MEI Lourenço                 OVR 32  Sal    55  G  0  J 13  Craque -
+      - MEI Filipe Machado           OVR 32  Sal    33  G  0  J  5  Craque -
+      - MEI Lucas Lima               OVR 29  Sal    45  G  0  J  0  Craque -
+      - MEI Jean Carlos              OVR 26  Sal    60  G  0  J  0  Craque -
+      - ATA Wellington Rato          OVR 46  Sal    62  G  2  J 15  Craque *
+      - ATA Esli García              OVR 43  Sal    65  G  0  J 10  Craque -
+      - ATA Bruno Sávio              OVR 43  Sal    56  G  1  J  7  Craque -
+      - ATA Pedrinho                 OVR 39  Sal    30  G  0  J  0  Craque -
+      - ATA Anselmo Ramon            OVR 36  Sal    36  G  0  J  0  Craque -
+      - ATA Jajá                     OVR 33  Sal    38  G  0  J  0  Craque -
+      - ATA Cadu                     OVR 31  Sal    49  G  0  J  0  Craque -
+      - ATA Arthur Caíke             OVR 28  Sal    34  G  0  J  0  Craque -
+
+#### Divisao 4
+  - Cuiabá | Div final 3 | Pos 1 na Div 4 | Movimento PROMOVIDO | Caixa R$ 70,963 mil | Folha R$ 5,000 mil | Torcida 1.2M | Prestigio 60 | Emprestimo R$ 0 mil | Media elenco 55.1
+    Elenco:
+      - GOL Walter                   OVR 64  Sal   101  G  0  J 15  Craque *
+      - GOL João Carlos              OVR 64  Sal    43  G  0  J  1  Craque -
+      - GOL Mateus Pasinato          OVR 56  Sal    61  G  0  J  0  Craque -
+      - ZAG Matheus Alexandre        OVR 63  Sal    82  G  4  J 16  Craque *
+      - ZAG Railan                   OVR 57  Sal    59  G  3  J 16  Craque -
+      - ZAG Marllon                  OVR 56  Sal    39  G  2  J 16  Craque -
+      - ZAG Alan Empereur            OVR 52  Sal    52  G  3  J 15  Craque -
+      - ZAG Bruno Alves              OVR 51  Sal    34  G  0  J  1  Craque -
+      - ZAG Ramon                    OVR 48  Sal    57  G  0  J  0  Craque -
+      - ZAG Sander                   OVR 48  Sal    31  G  0  J  0  Craque -
+      - MEI Denilson                 OVR 61  Sal    44  G  2  J 16  Craque -
+      - MEI Lucas Mineiro            OVR 56  Sal    53  G  3  J 16  Craque -
+      - MEI Fernando Sobral          OVR 53  Sal    52  G  1  J 16  Craque -
+      - MEI Max                      OVR 52  Sal    70  G  4  J 16  Craque -
+      - MEI Clayson                  OVR 51  Sal    54  G  0  J  0  Craque -
+      - MEI Filipe Augusto           OVR 50  Sal    43  G  0  J  0  Craque -
+      - MEI Ronald                   OVR 46  Sal    53  G  0  J  0  Craque -
+      - ATA Isidro Pitta             OVR 65  Sal   133  G  1  J 16  Craque *
+      - ATA Deyverson                OVR 61  Sal    56  G  3  J 11  Craque -
+      - ATA Jonathan Cafu            OVR 61  Sal    67  G  1  J  5  Craque -
+      - ATA Eliel                    OVR 59  Sal    55  G  0  J  0  Craque -
+      - ATA Derik Lacerda            OVR 56  Sal    64  G  0  J  0  Craque -
+      - ATA André Luís               OVR 54  Sal    61  G  0  J  0  Craque -
+      - ATA Wellington Silva         OVR 49  Sal    55  G  0  J  0  Craque -
+      - ATA Alisson Safira           OVR 45  Sal    68  G  0  J  0  Craque -
+  - Mirassol | Div final 3 | Pos 2 na Div 4 | Movimento PROMOVIDO | Caixa R$ 55,661 mil | Folha R$ 3,500 mil | Torcida 514K | Prestigio 54 | Emprestimo R$ 0 mil | Media elenco 48.9
+    Elenco:
+      - GOL Alex Muralha             OVR 59  Sal    62  G  0  J 20  Craque *
+      - GOL Walter                   OVR 57  Sal    34  G  0  J  0  Craque -
+      - GOL Vanderlei                OVR 51  Sal    35  G  0  J  0  Craque -
+      - ZAG Lucas Ramon              OVR 53  Sal    51  G  2  J 20  Craque *
+      - ZAG Luiz Otávio              OVR 50  Sal    55  G  3  J 20  Craque -
+      - ZAG Daniel Borges            OVR 49  Sal    46  G  0  J 20  Craque -
+      - ZAG Rodrigo Ferreira         OVR 47  Sal    55  G  5  J 15  Craque -
+      - ZAG João Victor              OVR 47  Sal    51  G  0  J  5  Craque -
+      - ZAG Reinaldo                 OVR 41  Sal    66  G  0  J  0  Craque -
+      - ZAG Zeca                     OVR 39  Sal    59  G  0  J  0  Craque -
+      - MEI Neto Moura               OVR 56  Sal    48  G  5  J 20  Craque -
+      - MEI Danielzinho              OVR 51  Sal    59  G  5  J 20  Craque -
+      - MEI Chico Kim                OVR 48  Sal    33  G  2  J 20  Craque -
+      - MEI Gabriel                  OVR 45  Sal    67  G  0  J  1  Craque -
+      - MEI Negueba                  OVR 45  Sal    59  G  5  J 19  Craque -
+      - MEI Yago Felipe              OVR 43  Sal    70  G  0  J  0  Craque -
+      - MEI Iury                     OVR 41  Sal    40  G  0  J  0  Craque -
+      - ATA Dellatorre               OVR 57  Sal    32  G  4  J 20  Craque *
+      - ATA Zé Roberto               OVR 55  Sal    33  G  8  J 13  Craque -
+      - ATA Quirino                  OVR 55  Sal    37  G  1  J  7  Craque -
+      - ATA Fernandinho              OVR 54  Sal    55  G  0  J  0  Craque -
+      - ATA Fabrício Daniel          OVR 51  Sal    43  G  0  J  0  Craque -
+      - ATA Rafinha                  OVR 45  Sal    56  G  0  J  0  Craque -
+      - ATA Nicolas                  OVR 43  Sal    41  G  0  J  0  Craque -
+      - ATA Alex Silva               OVR 39  Sal    33  G  0  J  0  Craque -
+  - Vila Nova | Div final 4 | Pos 3 na Div 4 | Movimento = | Caixa R$ 51,175 mil | Folha R$ 3,600 mil | Torcida 1.3M | Prestigio 58 | Emprestimo R$ 0 mil | Media elenco 32.4
+    Elenco:
+      - GOL Helton Leite             OVR 41  Sal    31  G  0  J 16  Craque *
+      - GOL Dalberson                OVR 41  Sal    37  G  0  J  0  Craque -
+      - GOL Airton                   OVR 34  Sal    68  G  0  J  0  Craque -
+      - ZAG Caio Marcelo             OVR 39  Sal    50  G  4  J 16  Craque *
+      - ZAG Anderson Jesus           OVR 36  Sal    35  G  1  J 16  Craque -
+      - ZAG Elias                    OVR 33  Sal    69  G  2  J 16  Craque -
+      - ZAG Tiago Pagnussat          OVR 30  Sal    46  G  1  J 10  Craque -
+      - ZAG Weverton                 OVR 29  Sal    33  G  1  J  6  Craque -
+      - ZAG Higor                    OVR 27  Sal    41  G  0  J  0  Craque -
+      - ZAG Hayner                   OVR 22  Sal    50  G  0  J  0  Craque -
+      - MEI Dudu                     OVR 41  Sal    57  G  1  J 16  Craque -
+      - MEI Nathan Camargo           OVR 37  Sal    61  G  0  J 16  Craque -
+      - MEI Dodô                     OVR 30  Sal    36  G  5  J 16  Craque -
+      - MEI João Vieira              OVR 29  Sal    60  G  3  J 11  Craque -
+      - MEI Marco Antonio            OVR 29  Sal    64  G  1  J  5  Craque -
+      - MEI Willian Maranhão         OVR 27  Sal    39  G  0  J  0  Craque -
+      - MEI Marquinhos Gabriel       OVR 21  Sal    40  G  0  J  0  Craque -
+      - ATA Ruan Ribeiro             OVR 42  Sal    59  G  4  J 16  Craque *
+      - ATA Dellatorre               OVR 40  Sal    58  G  0  J 12  Craque -
+      - ATA Andre Luis               OVR 40  Sal    46  G  1  J  4  Craque -
+      - ATA Bruno Xavier             OVR 36  Sal    48  G  0  J  0  Craque -
+      - ATA Rafa Silva               OVR 34  Sal    67  G  0  J  0  Craque -
+      - ATA Emerson Urso             OVR 29  Sal    61  G  0  J  0  Craque -
+      - ATA Janderson                OVR 26  Sal    57  G  0  J  0  Craque -
+      - ATA Alesson                  OVR 21  Sal    55  G  0  J  0  Craque -
+  - Coritiba | Div final 4 | Pos 4 na Div 4 | Movimento = | Caixa R$ 74,280 mil | Folha R$ 4,800 mil | Torcida 2.9M | Prestigio 62 | Emprestimo R$ 0 mil | Media elenco 39.2
+    Elenco:
+      - GOL Pedro Morisco            OVR 50  Sal    33  G  1  J 18  Craque *
+      - GOL Pedro Rangel             OVR 45  Sal    41  G  0  J  0  Craque -
+      - GOL Gabriel Leite            OVR 39  Sal    40  G  0  J  0  Craque -
+      - ZAG Tiago Coser              OVR 46  Sal    43  G  3  J 18  Craque *
+      - ZAG Maicon                   OVR 44  Sal    69  G  1  J 18  Craque -
+      - ZAG Jacy                     OVR 37  Sal    48  G  0  J 18  Craque -
+      - ZAG Felipe Guimarães         OVR 35  Sal    54  G  0  J  7  Craque -
+      - ZAG João Almeida             OVR 35  Sal    68  G  1  J 11  Craque -
+      - ZAG Guilherme Aquino         OVR 34  Sal    30  G  0  J  0  Craque -
+      - ZAG Bruno Melo               OVR 28  Sal    30  G  0  J  0  Craque -
+      - MEI Sebastián Gómez          OVR 46  Sal    56  G  6  J 18  Craque -
+      - MEI Willian Oliveira         OVR 41  Sal    38  G  0  J 18  Craque -
+      - MEI Jean Gabriel             OVR 40  Sal    70  G  2  J 18  Craque -
+      - MEI Geovane                  OVR 37  Sal    68  G  4  J 17  Craque -
+      - MEI Josué                    OVR 37  Sal    38  G  1  J  1  Craque -
+      - MEI Carlos de Pena           OVR 33  Sal    51  G  0  J  0  Craque -
+      - MEI Matheus Bianqui          OVR 31  Sal    55  G  0  J  0  Craque -
+      - ATA Clayson                  OVR 49  Sal    38  G  1  J 18  Craque *
+      - ATA Nicolas Careca           OVR 44  Sal    46  G  0  J  3  Craque -
+      - ATA Lucas Ronier             OVR 44  Sal    62  G  5  J 13  Craque -
+      - ATA Dellatorre               OVR 44  Sal    36  G  0  J  2  Craque -
+      - ATA Gustavo Coutinho         OVR 39  Sal    69  G  0  J  0  Craque -
+      - ATA Iury Castilho            OVR 38  Sal    31  G  0  J  0  Craque -
+      - ATA Joaquín Lavega           OVR 35  Sal    33  G  0  J  0  Craque -
+      - ATA Pedro Rocha              OVR 28  Sal    57  G  0  J  0  Craque -
+  - CRB | Div final 4 | Pos 5 na Div 4 | Movimento = | Caixa R$ 44,104 mil | Folha R$ 3,500 mil | Torcida 1.2M | Prestigio 57 | Emprestimo R$ 0 mil | Media elenco 28.9
+    Elenco:
+      - GOL Matheus Albino           OVR 39  Sal    39  G  0  J 16  Craque *
+      - GOL Vitor Caetano            OVR 36  Sal    52  G  0  J  0  Craque -
+      - GOL Pablo                    OVR 31  Sal    40  G  0  J  0  Craque -
+      - ZAG Hereda                   OVR 35  Sal    47  G  1  J 16  Craque *
+      - ZAG Henri                    OVR 32  Sal    33  G  1  J 16  Craque -
+      - ZAG Segovia                  OVR 26  Sal    41  G  0  J 16  Craque -
+      - ZAG Fábio Alemão             OVR 25  Sal    43  G  0  J 11  Craque -
+      - ZAG Lucas Lovat              OVR 25  Sal    31  G  1  J  5  Craque -
+      - ZAG Weverton                 OVR 22  Sal    54  G  0  J  0  Craque -
+      - ZAG Ryan                     OVR 20  Sal    41  G  0  J  0  Craque -
+      - MEI Danielzinho              OVR 34  Sal    67  G  1  J 16  Craque -
+      - MEI Higor Meritão            OVR 32  Sal    63  G  3  J 16  Craque -
+      - MEI Geovane                  OVR 29  Sal    42  G  2  J 16  Craque -
+      - MEI Lucas Kallyel            OVR 26  Sal    68  G  0  J  1  Craque -
+      - MEI Gegê                     OVR 26  Sal    63  G  4  J 15  Craque -
+      - MEI Mikael                   OVR 23  Sal    39  G  0  J  0  Craque -
+      - MEI Douglas Baggio           OVR 19  Sal    69  G  0  J  0  Craque -
+      - ATA Anselmo Ramon            OVR 39  Sal    34  G  6  J 16  Craque *
+      - ATA Léo Pereira              OVR 37  Sal    60  G  1  J 15  Craque -
+      - ATA William Pottker          OVR 35  Sal    42  G  0  J  1  Craque -
+      - ATA Dadá Belmonte            OVR 34  Sal    55  G  0  J  0  Craque -
+      - ATA João Neto                OVR 30  Sal    49  G  0  J  0  Craque -
+      - ATA Thiaguinho               OVR 28  Sal    43  G  0  J  0  Craque -
+      - ATA Rafinha                  OVR 21  Sal    64  G  0  J  0  Craque -
+      - ATA Labandeira               OVR 21  Sal    57  G  0  J  0  Craque -
+  - Paysandu | Div final 4 | Pos 6 na Div 4 | Movimento = | Caixa R$ 54,848 mil | Folha R$ 3,600 mil | Torcida 1.5M | Prestigio 57 | Emprestimo R$ 0 mil | Media elenco 28.7
+    Elenco:
+      - GOL Gabriel Mesquita         OVR 38  Sal    53  G  0  J 16  Craque *
+      - GOL Jean Drosny              OVR 35  Sal    46  G  0  J  0  Craque -
+      - GOL Matheus Nogueira         OVR 28  Sal    63  G  0  J  0  Craque -
+      - ZAG Marcão                   OVR 34  Sal    30  G  2  J 16  Craque *
+      - ZAG Yeferson Quintana        OVR 30  Sal    45  G  1  J 16  Craque -
+      - ZAG Edílson                  OVR 30  Sal    58  G  2  J 16  Craque -
+      - ZAG Luccão                   OVR 25  Sal    30  G  2  J 16  Craque -
+      - ZAG Bruno Bispo              OVR 25  Sal    62  G  0  J  0  Craque -
+      - ZAG PK                       OVR 25  Sal    33  G  0  J  0  Craque -
+      - ZAG Reverson                 OVR 20  Sal    34  G  0  J  0  Craque -
+      - MEI Leandro Vilela           OVR 37  Sal    43  G  2  J 16  Craque -
+      - MEI Marlon                   OVR 30  Sal    64  G  1  J 16  Craque -
+      - MEI Matheus Vargas           OVR 27  Sal    49  G  2  J 16  Craque -
+      - MEI Cavan                    OVR 25  Sal    68  G  0  J 15  Craque -
+      - MEI Ramon Martinez           OVR 25  Sal    33  G  0  J  1  Craque -
+      - MEI Giovanni                 OVR 22  Sal    66  G  0  J  0  Craque -
+      - MEI Robinho                  OVR 19  Sal    45  G  0  J  0  Craque -
+      - ATA Nicolas                  OVR 39  Sal    52  G  0  J 15  Craque *
+      - ATA Marlon Douglas           OVR 35  Sal    55  G  2  J 16  Craque -
+      - ATA Benitez                  OVR 35  Sal    54  G  0  J  1  Craque -
+      - ATA Edinho                   OVR 31  Sal    61  G  0  J  0  Craque -
+      - ATA Ciel                     OVR 29  Sal    35  G  0  J  0  Craque -
+      - ATA Kevin                    OVR 26  Sal    31  G  0  J  0  Craque -
+      - ATA Eliel                    OVR 25  Sal    59  G  0  J  0  Craque -
+      - ATA Diogo Oliveira           OVR 20  Sal    62  G  0  J  0  Craque -
+  - Novorizontino | Div final 4 | Pos 7 na Div 4 | Movimento = | Caixa R$ 40,339 mil | Folha R$ 3,200 mil | Torcida 930K | Prestigio 56 | Emprestimo R$ 0 mil | Media elenco 28.5
+    Elenco:
+      - GOL Jordi                    OVR 37  Sal    51  G  0  J 16  Craque *
+      - GOL Airton                   OVR 34  Sal    70  G  0  J  0  Craque -
+      - GOL César Augusto            OVR 30  Sal    47  G  0  J  0  Craque -
+      - ZAG Patrick                  OVR 33  Sal    37  G  0  J 15  Craque *
+      - ZAG Dantas                   OVR 30  Sal    53  G  1  J 15  Craque -
+      - ZAG Rômulo                   OVR 27  Sal    53  G  2  J 15  Craque -
+      - ZAG César Martins            OVR 25  Sal    56  G  1  J 15  Craque -
+      - ZAG Mayk                     OVR 24  Sal    38  G  0  J  4  Craque -
+      - ZAG Rafael Donato            OVR 23  Sal    52  G  0  J  0  Craque -
+      - ZAG Raí Ramos                OVR 18  Sal    49  G  0  J  0  Craque -
+      - MEI Fábio Matheus            OVR 37  Sal    44  G  3  J 16  Craque -
+      - MEI Jean Irmer               OVR 31  Sal    62  G  4  J 16  Craque -
+      - MEI Marlon                   OVR 28  Sal    69  G  5  J 16  Craque -
+      - MEI Matheus Frizzo           OVR 27  Sal    32  G  1  J 10  Craque -
+      - MEI Lucca                    OVR 27  Sal    62  G  0  J  6  Craque -
+      - MEI Robson                   OVR 22  Sal    69  G  0  J  0  Craque -
+      - MEI Waguininho               OVR 21  Sal    47  G  0  J  0  Craque -
+      - ATA Caio Dantas              OVR 38  Sal    51  G  3  J 16  Craque *
+      - ATA Léo Tocantins            OVR 36  Sal    46  G  1  J 12  Craque -
+      - ATA Nicolas Careca           OVR 35  Sal    65  G  0  J  4  Craque -
+      - ATA Bruno José               OVR 33  Sal    37  G  0  J  0  Craque -
+      - ATA Everaldo                 OVR 28  Sal    67  G  0  J  0  Craque -
+      - ATA Neto Pessoa              OVR 26  Sal    32  G  0  J  0  Craque -
+      - ATA Jenison                  OVR 23  Sal    68  G  0  J  0  Craque -
+      - ATA Rodolfo                  OVR 20  Sal    51  G  0  J  0  Craque -
+  - Avaí | Div final 4 | Pos 8 na Div 4 | Movimento = | Caixa R$ 50,624 mil | Folha R$ 3,800 mil | Torcida 1.5M | Prestigio 60 | Emprestimo R$ 0 mil | Media elenco 32.0
+    Elenco:
+      - GOL Igor Bohn                OVR 41  Sal    34  G  0  J 16  Craque *
+      - GOL Otávio Passos            OVR 40  Sal    32  G  0  J  0  Craque -
+      - GOL Léo Aragão               OVR 33  Sal    56  G  0  J  0  Craque -
+      - ZAG Douglas Teixeira         OVR 39  Sal    52  G  2  J 16  Craque *
+      - ZAG Quaresma                 OVR 35  Sal    65  G  0  J 16  Craque -
+      - ZAG Allyson                  OVR 30  Sal    52  G  0  J 14  Craque -
+      - ZAG Wallison                 OVR 30  Sal    61  G  1  J 16  Craque -
+      - ZAG Wesley Gasolina          OVR 28  Sal    34  G  0  J  2  Craque -
+      - ZAG Guilherme Aquino         OVR 27  Sal    36  G  0  J  0  Craque -
+      - ZAG Gabriel Simples          OVR 22  Sal    47  G  0  J  0  Craque -
+      - MEI Jean Lucas               OVR 38  Sal    70  G  3  J 16  Craque -
+      - MEI Daniel Penha             OVR 33  Sal    32  G  0  J 16  Craque -
+      - MEI Zé Ricardo               OVR 33  Sal    68  G  1  J 16  Craque -
+      - MEI Romildo Del Piage        OVR 28  Sal    40  G  1  J 13  Craque -
+      - MEI Wenderson                OVR 28  Sal    32  G  0  J  3  Craque -
+      - MEI Hyan                     OVR 26  Sal    53  G  0  J  0  Craque -
+      - MEI Luiz Henrique            OVR 22  Sal    47  G  0  J  0  Craque -
+      - ATA Rafael Bilu              OVR 43  Sal    50  G  2  J 16  Craque *
+      - ATA Felipe Avenatti          OVR 40  Sal    67  G  0  J  6  Craque -
+      - ATA Sorriso                  OVR 40  Sal    55  G  2  J 10  Craque -
+      - ATA Gaspar                   OVR 35  Sal    32  G  0  J  0  Craque -
+      - ATA Maurício Garcez          OVR 34  Sal    43  G  0  J  0  Craque -
+      - ATA Thayllon                 OVR 29  Sal    41  G  0  J  0  Craque -
+      - ATA Igor Rosa                OVR 26  Sal    68  G  0  J  0  Craque -
+      - ATA Mário Sérgio             OVR 22  Sal    56  G  0  J  0  Craque -
+
+## Temporada 2027
+
+### Campeoes
+- Divisao 1: São Paulo FC
+- Divisao 2: Palmeiras
+- Divisao 3: Cuiabá
+- Divisao 4: Sport Recife
+- Copa: Botafogo
+
+### Artilheiros
+- Artilheiro da temporada: Richard Ríos (Palmeiras) - 9 gols
+- Top 1: Richard Ríos (Palmeiras) - 9 gols
+- Top 2: Naves (Palmeiras) - 8 gols
+- Top 3: Fabinho (Sport Recife) - 8 gols
+- Top 4: Raniele (Corinthians) - 7 gols
+- Top 5: Igor Jesus (Botafogo) - 7 gols
+- Top 6: Bustos (Internacional) - 7 gols
+- Top 7: Lucas Moura (São Paulo FC) - 7 gols
+- Top 8: Kaio Jorge (Cruzeiro) - 7 gols
+- Top 9: Hugo Moura (Vasco da Gama) - 7 gols
+- Top 10: Lucas Ramon (Mirassol) - 7 gols
+
+### Promovidos
+- Corinthians: 2 -> 1
+- Palmeiras: 2 -> 1
+- Cuiabá: 3 -> 2
+- Vitória: 3 -> 2
+- Sport Recife: 4 -> 3
+- Vila Nova: 4 -> 3
+
+### Rebaixados
+- Fluminense: 1 -> 2
+- Internacional: 1 -> 2
+- Athletico Paranaense: 2 -> 3
+- Santos: 2 -> 3
+- América Mineiro: 3 -> 4
+- Ceará: 3 -> 4
+
+### Destaques Financeiros e Tecnicos
+- Melhor ataque: Flamengo com 31 gols
+- Melhor defesa: Cuiabá com 9 gols sofridos
+- Maior publico: São Paulo FC x Botafogo - 80,000
+- Maior renda: São Paulo FC x Botafogo - R$ 12,096 mil
+
+### Clubes, Financas e Elencos
+#### Divisao 1
+  - São Paulo FC | Div final 1 | Pos 1 na Div 1 | Movimento = | Caixa R$ 434,526 mil | Folha R$ 14,000 mil | Torcida 18.1M | Prestigio 84 | Emprestimo R$ 0 mil | Media elenco 73.0
+    Elenco:
+      - GOL Rafael                   OVR 77  Sal   812  G  0  J  5  Craque *
+      - GOL Jandrei                  OVR 77  Sal   616  G  1  J 11  Craque -
+      - GOL Young                    OVR 74  Sal   408  G  0  J  0  Craque -
+      - ZAG Igor Vinícius            OVR 77  Sal   809  G  1  J 16  Craque *
+      - ZAG Ferraresi                OVR 73  Sal   331  G  0  J 16  Craque -
+      - ZAG Arboleda                 OVR 73  Sal   262  G  2  J 16  Craque -
+      - ZAG Sabino                   OVR 71  Sal   303  G  1  J  9  Craque -
+      - ZAG Alan Franco              OVR 71  Sal   294  G  1  J  7  Craque -
+      - ZAG Patryck                  OVR 68  Sal   146  G  0  J  0  Craque -
+      - ZAG Welington                OVR 68  Sal    76  G  0  J  0  Craque -
+      - MEI Alisson                  OVR 74  Sal   411  G  5  J 16  Craque -
+      - MEI Pablo Maia               OVR 74  Sal   450  G  3  J 16  Craque -
+      - MEI Damián Bobadilla         OVR 72  Sal   308  G  2  J 16  Craque -
+      - MEI Rodriguinho              OVR 70  Sal   384  G  1  J  5  Craque -
+      - MEI Marcos Antônio           OVR 70  Sal   442  G  1  J  6  Craque -
+      - MEI Wellington Rato          OVR 70  Sal   285  G  1  J  5  Craque -
+      - MEI Matheus Alves            OVR 69  Sal    84  G  0  J  0  Craque -
+      - ATA Calleri                  OVR 80  Sal   537  G  3  J 16  Craque *
+      - ATA Luciano                  OVR 79  Sal   870  G  0  J  0  Craque -
+      - ATA Lucas Moura              OVR 78  Sal   664  G  7  J 16  Craque -
+      - ATA Ferreira                 OVR 78  Sal   610  G  0  J  0  Craque -
+      - ATA André Silva              OVR 76  Sal   387  G  0  J  0  Craque -
+      - ATA William Gomes            OVR 71  Sal   113  G  0  J  0  Craque -
+      - ATA Erick                    OVR 69  Sal    98  G  0  J  0  Craque -
+      - ATA Henrique Carmo           OVR 68  Sal   115  G  0  J  0  Craque -
+  - Atlético Mineiro | Div final 1 | Pos 2 na Div 1 | Movimento = | Caixa R$ 771,792 mil | Folha R$ 20,000 mil | Torcida 13.6M | Prestigio 91 | Emprestimo R$ 0 mil | Media elenco 82.4
+    Elenco:
+      - GOL Gabriel Delfim           OVR 87  Sal  3297  G  0  J  7  Craque -
+      - GOL Everson                  OVR 87  Sal  1902  G  1  J 12  Craque *
+      - GOL Matheus Mendes           OVR 86  Sal  3479  G  0  J  0  Craque -
+      - ZAG Saravia                  OVR 82  Sal  1384  G  4  J 17  Craque *
+      - ZAG Lyanco                   OVR 81  Sal  2566  G  3  J 18  Craque -
+      - ZAG Guilherme Arana          OVR 80  Sal   813  G  0  J  0  Craque -
+      - ZAG Bruno Fuchs              OVR 80  Sal   826  G  0  J  5  Craque -
+      - ZAG Igor Rabello             OVR 80  Sal  1083  G  1  J 14  Craque -
+      - ZAG Júnior Alonso            OVR 80  Sal  1347  G  2  J 18  Craque -
+      - ZAG Rubens                   OVR 80  Sal   578  G  0  J  0  Craque -
+      - MEI Fausto Vera              OVR 83  Sal  3107  G  5  J 18  Craque -
+      - MEI Otávio                   OVR 81  Sal  1337  G  6  J 18  Craque -
+      - MEI Igor Gomes               OVR 80  Sal   465  G  3  J 13  Craque -
+      - MEI Gustavo Scarpa           OVR 80  Sal   617  G  2  J 13  Craque -
+      - MEI Alan Franco              OVR 80  Sal   610  G  3  J 10  Craque -
+      - MEI Patrick                  OVR 80  Sal   881  G  0  J  0  Craque -
+      - MEI Bernard                  OVR 79  Sal   953  G  0  J  0  Craque -
+      - ATA Tomás Cuello             OVR 87  Sal  5534  G  3  J 16  Craque -
+      - ATA Deyverson                OVR 87  Sal  6742  G  0  J 17  Craque -
+      - ATA Eduardo Vargas           OVR 86  Sal  2559  G  2  J  2  Craque -
+      - ATA Cadu                     OVR 86  Sal  1719  G  0  J  1  Craque -
+      - ATA Hulk                     OVR 86  Sal  1370  G  0  J  0  Craque *
+      - ATA Rony                     OVR 82  Sal   504  G  0  J  0  Craque -
+      - ATA Alisson                  OVR 81  Sal   589  G  0  J  0  Craque -
+      - ATA Cristian Pavón           OVR 80  Sal   942  G  0  J  0  Craque -
+  - Flamengo | Div final 1 | Pos 3 na Div 1 | Movimento = | Caixa R$ 915,345 mil | Folha R$ 28,000 mil | Torcida 31.7M | Prestigio 98 | Emprestimo R$ 0 mil | Media elenco 87.3
+    Elenco:
+      - GOL Dyogo Alves              OVR 93  Sal  5184  G  0  J  1  Craque -
+      - GOL Rossi                    OVR 93  Sal  5968  G  0  J 15  Craque *
+      - GOL Matheus Cunha            OVR 92  Sal  5086  G  0  J  0  Craque -
+      - ZAG Wesley                   OVR 86  Sal  3333  G  1  J 16  Craque *
+      - ZAG Léo Ortiz                OVR 86  Sal  3142  G  4  J 16  Craque -
+      - ZAG Alex Sandro              OVR 86  Sal  3219  G  1  J  5  Craque -
+      - ZAG Danilo                   OVR 86  Sal  2550  G  1  J  3  Craque -
+      - ZAG Léo Pereira              OVR 86  Sal  3235  G  1  J 11  Craque -
+      - ZAG Guillermo Varela         OVR 86  Sal  2855  G  1  J 13  Craque -
+      - ZAG Ayrton Lucas             OVR 83  Sal  2106  G  0  J  0  Craque -
+      - MEI Erick Pulgar             OVR 90  Sal  6945  G  5  J 16  Craque -
+      - MEI Giorgian De Arrascaeta   OVR 85  Sal  2177  G  5  J 16  Craque -
+      - MEI Nicolás De La Cruz       OVR 85  Sal  2942  G  0  J  2  Craque -
+      - MEI Gerson                   OVR 85  Sal  2912  G  2  J 11  Craque -
+      - MEI Everton Araújo           OVR 85  Sal  2688  G  0  J 13  Craque -
+      - MEI Allan                    OVR 85  Sal  1766  G  1  J  6  Craque -
+      - MEI Carlos Alcaraz           OVR 83  Sal  3003  G  0  J  0  Craque -
+      - ATA Bruno Henrique           OVR 93  Sal  6573  G  5  J 15  Craque -
+      - ATA Luiz Araújo              OVR 92  Sal  6008  G  0  J  4  Craque -
+      - ATA Michael                  OVR 92  Sal  5098  G  3  J  4  Craque -
+      - ATA Pedro                    OVR 92  Sal  6230  G  2  J  9  Craque *
+      - ATA Everton Cebolinha        OVR 88  Sal  1602  G  0  J  0  Craque -
+      - ATA Gonzalo Plata            OVR 85  Sal  1723  G  0  J  0  Craque -
+      - ATA Juninho                  OVR 83  Sal  1248  G  0  J  0  Craque -
+      - ATA Matheus Gonçalves        OVR 83  Sal  3244  G  0  J  0  Craque -
+  - Botafogo | Div final 1 | Pos 4 na Div 1 | Movimento = | Caixa R$ 834,188 mil | Folha R$ 20,000 mil | Torcida 12.7M | Prestigio 90 | Emprestimo R$ 0 mil | Media elenco 83.0
+    Elenco:
+      - GOL Raul                     OVR 88  Sal  4308  G  1  J 18  Craque -
+      - GOL John                     OVR 88  Sal  6414  G  0  J  6  Craque *
+      - GOL Léo Linck                OVR 85  Sal  1707  G  0  J  0  Craque -
+      - ZAG Alexander Barboza        OVR 82  Sal  2144  G  2  J 23  Craque -
+      - ZAG Mateo Ponte              OVR 82  Sal  1944  G  2  J 23  Craque -
+      - ZAG Alex Telles              OVR 82  Sal  1007  G  0  J  6  Craque -
+      - ZAG David Ricardo            OVR 82  Sal  1986  G  2  J 17  Craque -
+      - ZAG Bastos                   OVR 82  Sal   755  G  0  J  4  Craque -
+      - ZAG Vitinho                  OVR 82  Sal  1938  G  3  J 23  Craque *
+      - ZAG Cuiabano                 OVR 78  Sal   729  G  0  J  0  Craque -
+      - MEI Gregore                  OVR 83  Sal  2066  G  1  J 24  Craque -
+      - MEI Marlon Freitas           OVR 81  Sal  2711  G  1  J 24  Craque -
+      - MEI Patrick de Paula         OVR 81  Sal  2770  G  5  J 24  Craque -
+      - MEI Jefferson Savarino       OVR 80  Sal   592  G  0  J  0  Craque -
+      - MEI Santiago Rodríguez       OVR 80  Sal   639  G  2  J 12  Craque -
+      - MEI Newton                   OVR 80  Sal   618  G  2  J 12  Craque -
+      - MEI Allan                    OVR 80  Sal   591  G  0  J  0  Craque -
+      - ATA Igor Jesus               OVR 87  Sal  4886  G  7  J 23  Craque *
+      - ATA Jeffinho                 OVR 86  Sal  1928  G  2  J 10  Craque -
+      - ATA Artur                    OVR 86  Sal  2931  G  3  J 15  Craque -
+      - ATA Matheus Martins          OVR 86  Sal  3264  G  0  J  0  Craque -
+      - ATA Elias Manoel             OVR 85  Sal  1718  G  0  J  0  Craque -
+      - ATA Rwan Cruz                OVR 84  Sal  2959  G  0  J  0  Craque -
+      - ATA Santiago                 OVR 84  Sal  1807  G  0  J  0  Craque -
+      - ATA Kayque                   OVR 82  Sal  1075  G  0  J  0  Craque -
+  - Grêmio | Div final 1 | Pos 5 na Div 1 | Movimento = | Caixa R$ 461,032 mil | Folha R$ 13,000 mil | Torcida 9.4M | Prestigio 83 | Emprestimo R$ 0 mil | Media elenco 80.8
+    Elenco:
+      - GOL Agustín Marchesín        OVR 85  Sal  1382  G  2  J 11  Craque *
+      - GOL Gabriel Grando           OVR 85  Sal  2862  G  0  J  9  Craque -
+      - GOL Caíque                   OVR 84  Sal  1545  G  0  J  0  Craque -
+      - ZAG João Pedro               OVR 82  Sal  2442  G  3  J 20  Craque *
+      - ZAG Kannemann                OVR 79  Sal  1023  G  2  J 20  Craque -
+      - ZAG Fábio                    OVR 79  Sal   838  G  4  J 20  Craque -
+      - ZAG Reinaldo                 OVR 79  Sal   909  G  1  J  8  Craque -
+      - ZAG Mayk                     OVR 79  Sal   743  G  1  J  4  Craque -
+      - ZAG Rodrigo Ely              OVR 78  Sal  1111  G  2  J  8  Craque -
+      - ZAG Jemerson                 OVR 78  Sal  1056  G  0  J  0  Craque -
+      - MEI Mathías Villasanti       OVR 83  Sal  3077  G  1  J 18  Craque -
+      - MEI Dodi                     OVR 81  Sal  2073  G  2  J 20  Craque -
+      - MEI Edenilson                OVR 78  Sal   522  G  2  J 20  Craque -
+      - MEI Franco Cristaldo         OVR 78  Sal   603  G  3  J 18  Craque -
+      - MEI Pepê                     OVR 78  Sal   693  G  0  J  4  Craque -
+      - MEI Miguel Monsalve          OVR 78  Sal  1139  G  0  J  0  Craque -
+      - MEI Nathan                   OVR 76  Sal   343  G  0  J  0  Craque -
+      - ATA Pavon                    OVR 87  Sal  6785  G  2  J 20  Craque -
+      - ATA Cristian Olivera         OVR 86  Sal  1489  G  0  J  3  Craque -
+      - ATA Aravena                  OVR 86  Sal  3421  G  2  J  8  Craque -
+      - ATA Martin Braithwaite       OVR 86  Sal  2168  G  2  J  9  Craque *
+      - ATA André Henrique           OVR 83  Sal  1578  G  0  J  0  Craque -
+      - ATA Alysson                  OVR 79  Sal   978  G  0  J  0  Craque -
+      - ATA Matias Arezo             OVR 79  Sal  1099  G  0  J  0  Craque -
+      - ATA Soteldo                  OVR 77  Sal   737  G  0  J  0  Craque -
+  - RB Bragantino | Div final 1 | Pos 6 na Div 1 | Movimento = | Caixa R$ 291,943 mil | Folha R$ 9,500 mil | Torcida 1.8M | Prestigio 78 | Emprestimo R$ 0 mil | Media elenco 70.0
+    Elenco:
+      - GOL Lucão                    OVR 77  Sal  1082  G  0  J 12  Craque -
+      - GOL Cleiton                  OVR 77  Sal   940  G  1  J  6  Craque *
+      - GOL Matheus Nogueira         OVR 75  Sal   323  G  0  J  0  Craque -
+      - ZAG Andrés Hurtado           OVR 72  Sal   238  G  1  J 18  Craque *
+      - ZAG Natan                    OVR 68  Sal   428  G  4  J 18  Craque -
+      - ZAG Luan Cândido             OVR 68  Sal   137  G  0  J  4  Craque -
+      - ZAG Pedro Henrique           OVR 68  Sal   111  G  0  J  5  Craque -
+      - ZAG Nathan Mendes            OVR 67  Sal   134  G  1  J 18  Craque -
+      - ZAG Guzmán Rodríguez         OVR 67  Sal   116  G  0  J  0  Craque -
+      - ZAG Juninho Capixaba         OVR 67  Sal   150  G  0  J  9  Craque -
+      - MEI Jadsom                   OVR 71  Sal   248  G  4  J 18  Craque -
+      - MEI Matheus Fernandes        OVR 70  Sal   445  G  0  J 18  Craque -
+      - MEI Eric Ramires             OVR 67  Sal   111  G  1  J 16  Craque -
+      - MEI Jhon Jhon                OVR 67  Sal   120  G  1  J  4  Craque -
+      - MEI Lucas Evangelista        OVR 67  Sal    75  G  3  J 16  Craque -
+      - MEI Raul                     OVR 66  Sal    75  G  0  J  0  Craque -
+      - MEI Gustavinho               OVR 66  Sal   131  G  0  J  0  Craque -
+      - ATA Eduardo Sasha            OVR 73  Sal   180  G  4  J 18  Craque -
+      - ATA Thiago Borbas            OVR 73  Sal   377  G  1  J  6  Craque *
+      - ATA Helinho                  OVR 73  Sal   259  G  0  J  1  Craque -
+      - ATA Vitinho                  OVR 73  Sal   442  G  2  J 11  Craque -
+      - ATA Henry Mosquera           OVR 71  Sal   358  G  0  J  0  Craque -
+      - ATA Talisson                 OVR 69  Sal   111  G  0  J  0  Craque -
+      - ATA Lincoln                  OVR 69  Sal    87  G  0  J  0  Craque -
+      - ATA Ignacio Laquintana       OVR 68  Sal   131  G  0  J  0  Craque -
+  - Internacional | Div final 2 | Pos 7 na Div 1 | Movimento REBAIXADO | Caixa R$ 571,199 mil | Folha R$ 14,000 mil | Torcida 7.4M | Prestigio 80 | Emprestimo R$ 0 mil | Media elenco 78.0
+    Elenco:
+      - GOL Anthoni                  OVR 84  Sal  1969  G  0  J 12  Craque -
+      - GOL Sergio Rochet            OVR 84  Sal  2972  G  0  J 11  Craque *
+      - GOL Ivan                     OVR 82  Sal   641  G  0  J  0  Craque -
+      - ZAG Braian Aguirre           OVR 76  Sal   564  G  3  J 22  Craque -
+      - ZAG Bustos                   OVR 76  Sal   596  G  7  J 22  Craque *
+      - ZAG Gabriel Mercado          OVR 75  Sal   160  G  1  J 10  Craque -
+      - ZAG Vitão                    OVR 75  Sal   530  G  4  J 20  Craque -
+      - ZAG Alexandro Bernabei       OVR 75  Sal   976  G  3  J 14  Craque -
+      - ZAG Agustín Rogel            OVR 75  Sal   431  G  0  J  0  Craque -
+      - ZAG Juninho                  OVR 74  Sal   386  G  0  J  0  Craque -
+      - MEI Fernando                 OVR 79  Sal   841  G  4  J 22  Craque -
+      - MEI Thiago Maia              OVR 76  Sal   758  G  3  J 22  Craque -
+      - MEI Bruno Henrique           OVR 76  Sal   907  G  1  J 22  Craque -
+      - MEI Gabriel Tabata           OVR 75  Sal  1156  G  2  J 12  Craque -
+      - MEI Bruno Gomes              OVR 75  Sal   331  G  0  J  4  Craque -
+      - MEI Alan Patrick             OVR 75  Sal   230  G  2  J  6  Craque -
+      - MEI Rômulo                   OVR 73  Sal   353  G  0  J  0  Craque -
+      - ATA Lucas Alario             OVR 82  Sal  1215  G  2  J 13  Craque -
+      - ATA Enner Valencia           OVR 82  Sal   900  G  0  J  2  Craque -
+      - ATA Rafael Borré             OVR 82  Sal  2266  G  3  J 12  Craque *
+      - ATA Wesley                   OVR 82  Sal  1411  G  3  J 17  Craque -
+      - ATA Lucca                    OVR 82  Sal  1013  G  0  J  0  Craque -
+      - ATA Vitinho                  OVR 80  Sal   800  G  0  J  0  Craque -
+      - ATA Ricardo Mathias          OVR 79  Sal  1161  G  0  J  0  Craque -
+      - ATA Gustavo Prado            OVR 75  Sal   150  G  0  J  0  Craque -
+  - Fluminense | Div final 2 | Pos 8 na Div 1 | Movimento REBAIXADO | Caixa R$ 443,310 mil | Folha R$ 16,000 mil | Torcida 9.9M | Prestigio 81 | Emprestimo R$ 0 mil | Media elenco 80.7
+    Elenco:
+      - GOL Fábio                    OVR 88  Sal  6440  G  0  J 15  Craque *
+      - GOL Vitor Eudes              OVR 87  Sal  3356  G  0  J  2  Craque -
+      - GOL Pedro Rangel             OVR 84  Sal  2198  G  0  J  0  Craque -
+      - ZAG Guga                     OVR 83  Sal  1241  G  1  J 16  Craque -
+      - ZAG Samuel Xavier            OVR 81  Sal  2502  G  0  J 16  Craque *
+      - ZAG Manoel                   OVR 79  Sal   758  G  0  J  3  Craque -
+      - ZAG Thiago Silva             OVR 79  Sal   919  G  1  J 11  Craque -
+      - ZAG Thiago Santos            OVR 79  Sal   984  G  0  J  3  Craque -
+      - ZAG Renê                     OVR 79  Sal  1108  G  2  J 15  Craque -
+      - ZAG Fretes                   OVR 75  Sal   336  G  0  J  0  Craque -
+      - MEI Otávio                   OVR 81  Sal  2842  G  5  J 16  Craque -
+      - MEI Martinelli               OVR 80  Sal   883  G  2  J 16  Craque -
+      - MEI Nonato                   OVR 78  Sal   985  G  1  J 16  Craque -
+      - MEI Jhon Arias               OVR 77  Sal   556  G  0  J  8  Craque -
+      - MEI Lima                     OVR 77  Sal   596  G  0  J  2  Craque -
+      - MEI Ganso                    OVR 77  Sal  1158  G  1  J  6  Craque -
+      - MEI Kevin Serna              OVR 74  Sal   276  G  0  J  0  Craque -
+      - ATA Germán Cano              OVR 88  Sal  5759  G  0  J 15  Craque *
+      - ATA Keno                     OVR 86  Sal  3109  G  0  J  4  Craque -
+      - ATA Everaldo                 OVR 85  Sal  2432  G  1  J 13  Craque -
+      - ATA Lelê                     OVR 85  Sal  2865  G  0  J  0  Craque -
+      - ATA Agustín Canobbio         OVR 85  Sal  2722  G  0  J  0  Craque -
+      - ATA Marquinhos               OVR 79  Sal  1038  G  0  J  0  Craque -
+      - ATA Isaac                    OVR 78  Sal   967  G  0  J  0  Craque -
+      - ATA Riquelme                 OVR 74  Sal   245  G  0  J  0  Craque -
+
+#### Divisao 2
+  - Palmeiras | Div final 1 | Pos 1 na Div 2 | Movimento PROMOVIDO | Caixa R$ 758,788 mil | Folha R$ 24,000 mil | Torcida 15.1M | Prestigio 95 | Emprestimo R$ 0 mil | Media elenco 88.0
+    Elenco:
+      - GOL Weverton                 OVR 93  Sal  5732  G  0  J  8  Craque *
+      - GOL Marcelo Lomba            OVR 93  Sal  4161  G  0  J 11  Craque -
+      - GOL Mateus Oliveira          OVR 92  Sal  6768  G  0  J  0  Craque -
+      - ZAG Agustín Giay             OVR 93  Sal  6065  G  3  J 17  Craque *
+      - ZAG Mayke                    OVR 88  Sal  6716  G  0  J 18  Craque -
+      - ZAG Marcos Rocha             OVR 87  Sal  5394  G  0  J 17  Craque -
+      - ZAG Naves                    OVR 86  Sal  1972  G  8  J 17  Craque -
+      - ZAG Gustavo Gómez            OVR 86  Sal  1505  G  0  J  3  Craque -
+      - ZAG Murilo                   OVR 86  Sal  2768  G  0  J  0  Craque -
+      - ZAG Joaquín Piquerez         OVR 80  Sal   741  G  0  J  0  Craque -
+      - MEI Richard Ríos             OVR 90  Sal  6078  G  9  J 18  Craque -
+      - MEI Emiliano Martínez        OVR 87  Sal  6300  G  3  J 18  Craque -
+      - MEI Aníbal Moreno            OVR 87  Sal  6355  G  3  J 18  Craque -
+      - MEI Felipe Anderson          OVR 85  Sal  1862  G  2  J 15  Craque -
+      - MEI Raphael Veiga            OVR 85  Sal  2707  G  0  J  3  Craque -
+      - MEI Maurício                 OVR 84  Sal  2518  G  0  J  0  Craque -
+      - MEI Fabinho                  OVR 82  Sal  1147  G  0  J  0  Craque -
+      - ATA Estêvão                  OVR 92  Sal  4167  G  0  J  2  Craque *
+      - ATA Facundo Torres           OVR 92  Sal  6026  G  0  J 16  Craque -
+      - ATA Flaco López              OVR 92  Sal  5176  G  1  J  7  Craque -
+      - ATA Paulinho                 OVR 92  Sal  5615  G  2  J 11  Craque -
+      - ATA Vitor Roque              OVR 89  Sal  1312  G  0  J  0  Craque -
+      - ATA Bruno Rodrigues          OVR 87  Sal  1981  G  0  J  0  Craque -
+      - ATA Luighi                   OVR 86  Sal  3338  G  0  J  0  Craque -
+      - ATA Rony                     OVR 86  Sal  1277  G  0  J  0  Craque -
+  - Corinthians | Div final 1 | Pos 2 na Div 2 | Movimento PROMOVIDO | Caixa R$ 415,561 mil | Folha R$ 19,000 mil | Torcida 31.5M | Prestigio 89 | Emprestimo R$ 0 mil | Media elenco 78.4
+    Elenco:
+      - GOL Matheus Donelli          OVR 85  Sal  3430  G  0  J 13  Craque -
+      - GOL Hugo Souza               OVR 85  Sal  1911  G  0  J 11  Craque *
+      - GOL Felipe Longo             OVR 82  Sal   512  G  0  J  0  Craque -
+      - ZAG Matheuzinho              OVR 84  Sal  1590  G  5  J 24  Craque *
+      - ZAG Cacá                     OVR 76  Sal  1022  G  1  J 14  Craque -
+      - ZAG Hugo                     OVR 76  Sal   339  G  0  J  4  Craque -
+      - ZAG Léo Maná                 OVR 76  Sal   771  G  3  J 24  Craque -
+      - ZAG Gustavo Henrique         OVR 76  Sal   825  G  0  J 16  Craque -
+      - ZAG Félix Torres             OVR 76  Sal   642  G  3  J 14  Craque -
+      - ZAG Bidu                     OVR 73  Sal   424  G  0  J  0  Craque -
+      - MEI Raniele                  OVR 82  Sal  2409  G  7  J 24  Craque -
+      - MEI Breno Bidon              OVR 78  Sal  1041  G  4  J 24  Craque -
+      - MEI Maycon                   OVR 76  Sal   607  G  4  J 24  Craque -
+      - MEI Rodrigo Garro            OVR 75  Sal   563  G  3  J 17  Craque -
+      - MEI Alex Santana             OVR 75  Sal   350  G  0  J  3  Craque -
+      - MEI Charles                  OVR 75  Sal   277  G  0  J  4  Craque -
+      - MEI André Carrillo           OVR 74  Sal   162  G  0  J  0  Craque -
+      - ATA Ángel Romero             OVR 82  Sal  1712  G  3  J 18  Craque -
+      - ATA Talles Magno             OVR 82  Sal  1167  G  1  J  3  Craque -
+      - ATA Memphis Depay            OVR 82  Sal  1022  G  1  J  5  Craque -
+      - ATA Yuri Alberto             OVR 82  Sal  2934  G  4  J 22  Craque *
+      - ATA Giovane                  OVR 79  Sal   508  G  0  J  0  Craque -
+      - ATA Pedro Raul               OVR 79  Sal  1013  G  0  J  0  Craque -
+      - ATA Wesley                   OVR 78  Sal   845  G  0  J  0  Craque -
+      - ATA Kayke                    OVR 74  Sal   373  G  0  J  0  Craque -
+  - Fortaleza | Div final 2 | Pos 3 na Div 2 | Movimento = | Caixa R$ 299,389 mil | Folha R$ 11,000 mil | Torcida 3.8M | Prestigio 75 | Emprestimo R$ 0 mil | Media elenco 73.1
+    Elenco:
+      - GOL João Ricardo             OVR 79  Sal   948  G  0  J 14  Craque *
+      - GOL Santos                   OVR 79  Sal   598  G  0  J  9  Craque -
+      - GOL Magrão                   OVR 75  Sal   230  G  0  J  0  Craque -
+      - ZAG Tinga                    OVR 73  Sal   321  G  4  J 21  Craque *
+      - ZAG Emanuel Brítez           OVR 72  Sal   198  G  2  J 22  Craque -
+      - ZAG Mancuso                  OVR 71  Sal   433  G  1  J 15  Craque -
+      - ZAG Kuscevic                 OVR 71  Sal   193  G  4  J 20  Craque -
+      - ZAG Titi                     OVR 71  Sal   165  G  0  J 10  Craque -
+      - ZAG Bruno Pacheco            OVR 71  Sal    85  G  0  J  0  Craque -
+      - ZAG Talocha                  OVR 67  Sal    83  G  0  J  0  Craque -
+      - MEI Lucas Sasha              OVR 77  Sal   952  G  5  J 22  Craque -
+      - MEI Kervin Andrade           OVR 70  Sal   393  G  1  J  7  Craque -
+      - MEI Hércules                 OVR 70  Sal   270  G  4  J 15  Craque -
+      - MEI Zé Welison               OVR 70  Sal   424  G  3  J 10  Craque -
+      - MEI Pochettino               OVR 70  Sal   265  G  4  J 19  Craque -
+      - MEI Martínez                 OVR 70  Sal   236  G  3  J 15  Craque -
+      - MEI Calebe                   OVR 70  Sal    93  G  0  J  0  Craque -
+      - ATA Yago Pikachu             OVR 78  Sal  1195  G  1  J  3  Craque -
+      - ATA Moisés                   OVR 78  Sal   879  G  4  J 14  Craque -
+      - ATA Lucero                   OVR 78  Sal  1148  G  4  J 20  Craque *
+      - ATA Marinho                  OVR 77  Sal   935  G  1  J  7  Craque -
+      - ATA Renato Kayzer            OVR 76  Sal   436  G  0  J  0  Craque -
+      - ATA Breno Lopes              OVR 75  Sal   320  G  0  J  0  Craque -
+      - ATA Allanzinho               OVR 69  Sal   103  G  0  J  0  Craque -
+      - ATA Pedro Rocha              OVR 68  Sal   130  G  0  J  0  Craque -
+  - Vasco da Gama | Div final 2 | Pos 4 na Div 2 | Movimento = | Caixa R$ 301,332 mil | Folha R$ 9,000 mil | Torcida 10.4M | Prestigio 77 | Emprestimo R$ 0 mil | Media elenco 68.2
+    Elenco:
+      - GOL Léo Jardim               OVR 74  Sal   207  G  1  J  7  Craque *
+      - GOL Keiller                  OVR 74  Sal   253  G  0  J 11  Craque -
+      - GOL Pablo                    OVR 71  Sal   443  G  0  J  0  Craque -
+      - ZAG Puma Rodríguez           OVR 70  Sal   207  G  2  J 18  Craque -
+      - ZAG Paulo Henrique           OVR 68  Sal   108  G  2  J 18  Craque *
+      - ZAG Maicon                   OVR 66  Sal   116  G  0  J 18  Craque -
+      - ZAG João Victor              OVR 65  Sal    84  G  0  J  8  Craque -
+      - ZAG Lucas Oliveira           OVR 65  Sal   103  G  1  J  7  Craque -
+      - ZAG Lucas Piton              OVR 65  Sal   126  G  0  J  3  Craque -
+      - ZAG Victor Luís              OVR 64  Sal    32  G  0  J  0  Craque -
+      - MEI Hugo Moura               OVR 68  Sal   112  G  7  J 18  Craque -
+      - MEI Jair                     OVR 66  Sal    98  G  3  J 18  Craque -
+      - MEI Philippe Coutinho        OVR 66  Sal    97  G  3  J 18  Craque -
+      - MEI Tchê Tchê                OVR 66  Sal   109  G  0  J  0  Craque -
+      - MEI Dimitri Payet            OVR 66  Sal   133  G  1  J 18  Craque -
+      - MEI Juan Sforza              OVR 65  Sal    76  G  0  J  0  Craque -
+      - MEI Paulinho                 OVR 64  Sal    37  G  0  J  0  Craque -
+      - ATA Adson                    OVR 73  Sal   337  G  0  J  9  Craque -
+      - ATA Alex Teixeira            OVR 73  Sal   150  G  0  J  1  Craque -
+      - ATA Rossi                    OVR 73  Sal   189  G  1  J  2  Craque -
+      - ATA Pablo Vegetti            OVR 73  Sal   342  G  2  J 12  Craque *
+      - ATA Rayan                    OVR 73  Sal   258  G  0  J 12  Craque -
+      - ATA GB                       OVR 68  Sal   127  G  0  J  0  Craque -
+      - ATA David                    OVR 68  Sal   110  G  0  J  0  Craque -
+      - ATA Jean David               OVR 62  Sal    57  G  0  J  0  Craque -
+  - Bahia | Div final 2 | Pos 5 na Div 2 | Movimento = | Caixa R$ 208,093 mil | Folha R$ 8,500 mil | Torcida 3.1M | Prestigio 74 | Emprestimo R$ 0 mil | Media elenco 70.4
+    Elenco:
+      - GOL Danilo Fernandes         OVR 76  Sal   954  G  1  J 17  Craque -
+      - GOL Marcos Felipe            OVR 76  Sal   408  G  0  J  3  Craque *
+      - GOL Adriel                   OVR 72  Sal   252  G  0  J  0  Craque -
+      - ZAG Arias                    OVR 72  Sal   173  G  3  J 20  Craque -
+      - ZAG Gilberto                 OVR 70  Sal   311  G  3  J 20  Craque *
+      - ZAG David Duarte             OVR 68  Sal    72  G  1  J 19  Craque -
+      - ZAG Iago Borduchi            OVR 68  Sal   112  G  0  J  7  Craque -
+      - ZAG Luciano Juba             OVR 68  Sal    71  G  2  J  4  Craque -
+      - ZAG Kanu                     OVR 68  Sal    99  G  1  J 10  Craque -
+      - ZAG Gabriel Xavier           OVR 68  Sal   111  G  0  J  0  Craque -
+      - MEI Jean Lucas               OVR 70  Sal   410  G  3  J 20  Craque -
+      - MEI Caio Alexandre           OVR 69  Sal   326  G  2  J 20  Craque -
+      - MEI Everton Ribeiro          OVR 69  Sal   273  G  4  J 20  Craque -
+      - MEI Rezende                  OVR 68  Sal    91  G  3  J 10  Craque -
+      - MEI Erick                    OVR 68  Sal    96  G  1  J  3  Craque -
+      - MEI Cauly                    OVR 68  Sal   103  G  1  J  7  Craque -
+      - MEI Nicolás Acevedo          OVR 68  Sal   116  G  0  J  0  Craque -
+      - ATA Biel                     OVR 74  Sal   188  G  2  J  6  Craque -
+      - ATA Ademir                   OVR 74  Sal   409  G  2  J  9  Craque -
+      - ATA Everaldo                 OVR 74  Sal   203  G  2  J 18  Craque *
+      - ATA Kayky                    OVR 74  Sal   309  G  2  J  3  Craque -
+      - ATA Lucho Rodríguez          OVR 74  Sal   161  G  0  J  4  Craque -
+      - ATA Tiago                    OVR 70  Sal   114  G  0  J  0  Craque -
+      - ATA Willian José             OVR 68  Sal    84  G  0  J  0  Craque -
+      - ATA Rafael Ratão             OVR 67  Sal   130  G  0  J  0  Craque -
+  - Cruzeiro | Div final 2 | Pos 6 na Div 2 | Movimento = | Caixa R$ 354,216 mil | Folha R$ 13,000 mil | Torcida 8.8M | Prestigio 82 | Emprestimo R$ 0 mil | Media elenco 72.6
+    Elenco:
+      - GOL Anderson                 OVR 79  Sal   749  G  0  J  7  Craque -
+      - GOL Cássio                   OVR 79  Sal  1169  G  1  J 13  Craque *
+      - GOL Léo Aragão               OVR 75  Sal   303  G  0  J  0  Craque -
+      - ZAG William                  OVR 73  Sal   342  G  1  J 19  Craque *
+      - ZAG Fabrício Bruno           OVR 71  Sal   353  G  2  J 20  Craque -
+      - ZAG Lucas Villalba           OVR 71  Sal   408  G  1  J 12  Craque -
+      - ZAG Jonathan Jesus           OVR 71  Sal    75  G  0  J  1  Craque -
+      - ZAG Kaiki                    OVR 70  Sal   324  G  1  J  9  Craque -
+      - ZAG Fagner                   OVR 70  Sal   412  G  1  J 19  Craque -
+      - ZAG Marlon                   OVR 67  Sal   143  G  0  J  0  Craque -
+      - MEI Lucas Romero             OVR 76  Sal  1118  G  2  J 19  Craque -
+      - MEI Matheus Henrique         OVR 72  Sal   408  G  3  J 20  Craque -
+      - MEI Eduardo                  OVR 70  Sal    70  G  3  J  6  Craque -
+      - MEI Walace                   OVR 70  Sal   308  G  4  J 17  Craque -
+      - MEI Japa                     OVR 70  Sal   378  G  4  J 15  Craque -
+      - MEI Christian                OVR 70  Sal   145  G  0  J  3  Craque -
+      - MEI Matheus Pereira          OVR 67  Sal   102  G  0  J  0  Craque -
+      - ATA Dudu                     OVR 79  Sal   847  G  1  J  8  Craque -
+      - ATA Lautaro Díaz             OVR 79  Sal   562  G  4  J 14  Craque -
+      - ATA Kaio Jorge               OVR 78  Sal  1108  G  7  J 18  Craque *
+      - ATA Marquinhos               OVR 75  Sal   363  G  0  J  0  Craque -
+      - ATA Yannick Bolasie          OVR 75  Sal   344  G  0  J  0  Craque -
+      - ATA Wanderson                OVR 72  Sal   347  G  0  J  0  Craque -
+      - ATA Gabriel Veron            OVR 70  Sal   124  G  0  J  0  Craque -
+      - ATA Rafa Silva               OVR 67  Sal   104  G  0  J  0  Craque -
+  - Santos | Div final 3 | Pos 7 na Div 2 | Movimento REBAIXADO | Caixa R$ 292,726 mil | Folha R$ 7,000 mil | Torcida 9.3M | Prestigio 71 | Emprestimo R$ 0 mil | Media elenco 62.3
+    Elenco:
+      - GOL Gabriel Brazão           OVR 69  Sal    82  G  0  J  2  Craque *
+      - GOL João Paulo               OVR 68  Sal    77  G  1  J 16  Craque -
+      - GOL Diógenes                 OVR 66  Sal   126  G  0  J  0  Craque -
+      - ZAG Aderlan                  OVR 63  Sal   125  G  0  J 18  Craque *
+      - ZAG JP Chermont              OVR 62  Sal   129  G  1  J 18  Craque -
+      - ZAG Gil                      OVR 60  Sal    67  G  3  J 18  Craque -
+      - ZAG Joaquim                  OVR 60  Sal    54  G  3  J 10  Craque -
+      - ZAG Zé Ivaldo                OVR 60  Sal    43  G  0  J  2  Craque -
+      - ZAG Escobar                  OVR 60  Sal    58  G  0  J  6  Craque -
+      - ZAG Kevyson                  OVR 57  Sal    53  G  0  J  0  Craque -
+      - MEI Diego Pituca             OVR 63  Sal   147  G  3  J 17  Craque -
+      - MEI Tomás Rincón             OVR 62  Sal    51  G  3  J 18  Craque -
+      - MEI Giuliano                 OVR 58  Sal    70  G  2  J 13  Craque -
+      - MEI Cazares                  OVR 58  Sal    64  G  1  J  8  Craque -
+      - MEI Otero                    OVR 58  Sal    61  G  1  J  2  Craque -
+      - MEI João Schmidt             OVR 58  Sal    30  G  3  J 14  Craque -
+      - MEI Miguelito                OVR 57  Sal    46  G  0  J  0  Craque -
+      - ATA Pedrinho                 OVR 67  Sal   141  G  0  J  9  Craque -
+      - ATA Wendel Silva             OVR 67  Sal   138  G  3  J  5  Craque -
+      - ATA Willian Bigode           OVR 67  Sal    74  G  2  J 11  Craque -
+      - ATA Guilherme                OVR 67  Sal    76  G  2  J 11  Craque *
+      - ATA Julio Furch              OVR 67  Sal   131  G  0  J  0  Craque -
+      - ATA Lucas Braga              OVR 63  Sal    70  G  0  J  0  Craque -
+      - ATA Morelos                  OVR 61  Sal    35  G  0  J  0  Craque -
+      - ATA Enzo Monteiro            OVR 58  Sal    49  G  0  J  0  Craque -
+  - Athletico Paranaense | Div final 3 | Pos 8 na Div 2 | Movimento REBAIXADO | Caixa R$ 221,006 mil | Folha R$ 9,000 mil | Torcida 5.0M | Prestigio 74 | Emprestimo R$ 0 mil | Media elenco 66.5
+    Elenco:
+      - GOL Léo Linck                OVR 72  Sal   373  G  0  J 16  Craque -
+      - GOL Mycael                   OVR 71  Sal   205  G  0  J  0  Craque *
+      - GOL Santos                   OVR 70  Sal   128  G  0  J  0  Craque -
+      - ZAG Léo Godoy                OVR 66  Sal    94  G  2  J 16  Craque *
+      - ZAG Madson                   OVR 65  Sal    82  G  1  J 15  Craque -
+      - ZAG Kaique Rocha             OVR 64  Sal   118  G  3  J 16  Craque -
+      - ZAG Fernando                 OVR 63  Sal    91  G  1  J 16  Craque -
+      - ZAG Matheus Felipe           OVR 63  Sal    58  G  0  J  1  Craque -
+      - ZAG Lucas Esquivel           OVR 62  Sal    37  G  0  J  0  Craque -
+      - ZAG Belezi                   OVR 62  Sal    61  G  0  J  0  Craque -
+      - MEI Erick                    OVR 69  Sal   356  G  2  J 16  Craque -
+      - MEI Felipinho                OVR 66  Sal    92  G  0  J 16  Craque -
+      - MEI Giuliano                 OVR 65  Sal   133  G  0  J 10  Craque -
+      - MEI Canobbio                 OVR 65  Sal   131  G  1  J 14  Craque -
+      - MEI Bruno Zapelli            OVR 65  Sal    70  G  1  J  7  Craque -
+      - MEI Christian                OVR 65  Sal    73  G  0  J  1  Craque -
+      - MEI Alex Santana             OVR 64  Sal    56  G  0  J  0  Craque -
+      - ATA Pablo                    OVR 72  Sal   320  G  0  J 11  Craque *
+      - ATA Rômulo                   OVR 72  Sal   235  G  2  J 14  Craque -
+      - ATA Cuello                   OVR 72  Sal   164  G  4  J  7  Craque -
+      - ATA Mastriani                OVR 72  Sal   296  G  0  J  0  Craque -
+      - ATA Di Yorio                 OVR 67  Sal   141  G  0  J  0  Craque -
+      - ATA Emersonn                 OVR 64  Sal    41  G  0  J  0  Craque -
+      - ATA Isaac                    OVR 64  Sal    47  G  0  J  0  Craque -
+      - ATA Julimar                  OVR 63  Sal    55  G  0  J  0  Craque -
+
+#### Divisao 3
+  - Cuiabá | Div final 2 | Pos 1 na Div 3 | Movimento PROMOVIDO | Caixa R$ 101,232 mil | Folha R$ 5,000 mil | Torcida 1.4M | Prestigio 64 | Emprestimo R$ 0 mil | Media elenco 55.0
+    Elenco:
+      - GOL João Carlos              OVR 63  Sal    30  G  0  J 11  Craque -
+      - GOL Walter                   OVR 63  Sal    34  G  0  J  5  Craque *
+      - GOL Mateus Pasinato          OVR 55  Sal    56  G  0  J  0  Craque -
+      - ZAG Matheus Alexandre        OVR 61  Sal    64  G  2  J 16  Craque *
+      - ZAG Railan                   OVR 56  Sal    50  G  2  J 16  Craque -
+      - ZAG Marllon                  OVR 56  Sal    39  G  1  J 15  Craque -
+      - ZAG Alan Empereur            OVR 51  Sal    69  G  4  J 16  Craque -
+      - ZAG Bruno Alves              OVR 50  Sal    58  G  0  J  0  Craque -
+      - ZAG Sander                   OVR 50  Sal    66  G  0  J  1  Craque -
+      - ZAG Ramon                    OVR 47  Sal    63  G  0  J  0  Craque -
+      - MEI Denilson                 OVR 60  Sal    46  G  4  J 16  Craque -
+      - MEI Lucas Mineiro            OVR 56  Sal    59  G  2  J 16  Craque -
+      - MEI Filipe Augusto           OVR 51  Sal    44  G  0  J  6  Craque -
+      - MEI Fernando Sobral          OVR 51  Sal    51  G  2  J 14  Craque -
+      - MEI Max                      OVR 51  Sal    54  G  0  J  1  Craque -
+      - MEI Clayson                  OVR 51  Sal    37  G  2  J 11  Craque -
+      - MEI Ronald                   OVR 49  Sal    34  G  0  J  0  Craque -
+      - ATA Isidro Pitta             OVR 63  Sal    90  G  3  J 16  Craque *
+      - ATA Jonathan Cafu            OVR 61  Sal    70  G  0  J  3  Craque -
+      - ATA Deyverson                OVR 61  Sal    32  G  0  J  8  Craque -
+      - ATA Eliel                    OVR 61  Sal    63  G  1  J  5  Craque -
+      - ATA Derik Lacerda            OVR 57  Sal    55  G  0  J  0  Craque -
+      - ATA André Luís               OVR 56  Sal    60  G  0  J  0  Craque -
+      - ATA Wellington Silva         OVR 51  Sal    66  G  0  J  0  Craque -
+      - ATA Alisson Safira           OVR 48  Sal    38  G  0  J  0  Craque -
+  - Vitória | Div final 2 | Pos 2 na Div 3 | Movimento PROMOVIDO | Caixa R$ 122,103 mil | Folha R$ 5,000 mil | Torcida 3.6M | Prestigio 68 | Emprestimo R$ 0 mil | Media elenco 54.5
+    Elenco:
+      - GOL Muriel                   OVR 63  Sal    32  G  0  J  9  Craque -
+      - GOL Lucas Arcanjo            OVR 63  Sal    68  G  0  J  7  Craque *
+      - GOL Dalton                   OVR 55  Sal    50  G  0  J  0  Craque -
+      - ZAG Raul Cáceres             OVR 61  Sal    66  G  3  J 16  Craque *
+      - ZAG Zeca                     OVR 55  Sal    68  G  4  J 16  Craque -
+      - ZAG Wagner Leonardo          OVR 53  Sal    68  G  2  J 16  Craque -
+      - ZAG Neris                    OVR 50  Sal    51  G  1  J  8  Craque -
+      - ZAG Camutanga                OVR 50  Sal    46  G  0  J  8  Craque -
+      - ZAG Patric Calmon            OVR 48  Sal    31  G  0  J  0  Craque -
+      - ZAG PK                       OVR 48  Sal    42  G  0  J  0  Craque -
+      - MEI Léo Naldi                OVR 63  Sal    73  G  3  J 16  Craque -
+      - MEI Rodrigo Andrade          OVR 57  Sal    58  G  1  J 16  Craque -
+      - MEI Jean Mota                OVR 52  Sal    67  G  1  J 16  Craque -
+      - MEI Willian Oliveira         OVR 51  Sal    44  G  3  J 16  Craque -
+      - MEI Matheuzinho              OVR 50  Sal    52  G  0  J  0  Craque -
+      - MEI Caio Vinícius            OVR 49  Sal    54  G  0  J  0  Craque -
+      - MEI Dudu                     OVR 46  Sal    63  G  0  J  0  Craque -
+      - ATA Alerrandro               OVR 64  Sal    80  G  2  J 16  Craque *
+      - ATA Janderson                OVR 62  Sal    57  G  2  J  3  Craque -
+      - ATA Osvaldo                  OVR 62  Sal    31  G  4  J 13  Craque -
+      - ATA Everaldo                 OVR 59  Sal    35  G  0  J  0  Craque -
+      - ATA Iury Castilho            OVR 56  Sal    53  G  0  J  0  Craque -
+      - ATA Wellington Rato          OVR 53  Sal    61  G  0  J  0  Craque -
+      - ATA Fábio Soares             OVR 47  Sal    44  G  0  J  0  Craque -
+      - ATA Carlos Eduardo           OVR 45  Sal    57  G  0  J  0  Craque -
+  - Criciúma | Div final 3 | Pos 3 na Div 3 | Movimento = | Caixa R$ 95,252 mil | Folha R$ 4,500 mil | Torcida 836K | Prestigio 60 | Emprestimo R$ 0 mil | Media elenco 47.9
+    Elenco:
+      - GOL Alisson                  OVR 55  Sal    43  G  0  J  4  Craque -
+      - GOL Gustavo                  OVR 55  Sal    34  G  0  J 12  Craque *
+      - GOL Kauã                     OVR 51  Sal    59  G  0  J  0  Craque -
+      - ZAG Claudinho                OVR 53  Sal    60  G  3  J 16  Craque *
+      - ZAG Jonathan                 OVR 51  Sal    47  G  2  J 16  Craque -
+      - ZAG Rodrigo                  OVR 47  Sal    57  G  0  J 16  Craque -
+      - ZAG Victor Luís              OVR 45  Sal    58  G  1  J  7  Craque -
+      - ZAG Tobias Figueiredo        OVR 45  Sal    58  G  1  J  9  Craque -
+      - ZAG Marcelo Hermes           OVR 44  Sal    59  G  0  J  0  Craque -
+      - ZAG Dudu                     OVR 38  Sal    38  G  0  J  0  Craque -
+      - MEI Barreto                  OVR 51  Sal    36  G  5  J 16  Craque -
+      - MEI Higor Meritão            OVR 47  Sal    56  G  2  J 16  Craque -
+      - MEI Fellipe Mateus           OVR 47  Sal    61  G  2  J 16  Craque -
+      - MEI Newton                   OVR 45  Sal    38  G  0  J  5  Craque -
+      - MEI Marquinhos Gabriel       OVR 45  Sal    61  G  1  J 11  Craque -
+      - MEI Rômulo                   OVR 40  Sal    34  G  0  J  0  Craque -
+      - MEI Miquéias                 OVR 38  Sal    48  G  0  J  0  Craque -
+      - ATA Allano                   OVR 55  Sal    35  G  1  J  7  Craque -
+      - ATA Yannick Bolasie          OVR 55  Sal    47  G  1  J 11  Craque *
+      - ATA Arthur Caíke             OVR 55  Sal    55  G  5  J 14  Craque -
+      - ATA Ronald                   OVR 51  Sal    38  G  0  J  0  Craque -
+      - ATA Matheusinho              OVR 49  Sal    45  G  0  J  0  Craque -
+      - ATA Jhonata Robert           OVR 49  Sal    44  G  0  J  0  Craque -
+      - ATA Éder                     OVR 47  Sal    56  G  0  J  0  Craque -
+      - ATA Felipinho                OVR 41  Sal    44  G  0  J  0  Craque -
+  - Juventude | Div final 3 | Pos 4 na Div 3 | Movimento = | Caixa R$ 120,725 mil | Folha R$ 5,500 mil | Torcida 1.0M | Prestigio 65 | Emprestimo R$ 0 mil | Media elenco 54.9
+    Elenco:
+      - GOL Gabriel                  OVR 66  Sal   145  G  0  J 16  Craque *
+      - GOL César                    OVR 62  Sal    67  G  0  J  0  Craque -
+      - GOL Marcão                   OVR 58  Sal    55  G  0  J  0  Craque -
+      - ZAG João Lucas               OVR 62  Sal    43  G  1  J 16  Craque *
+      - ZAG Ewerthon                 OVR 55  Sal    62  G  2  J 16  Craque -
+      - ZAG Rodrigo Sam              OVR 54  Sal    61  G  3  J 16  Craque -
+      - ZAG Abner                    OVR 50  Sal    47  G  0  J  6  Craque -
+      - ZAG Danilo Boza              OVR 50  Sal    64  G  1  J  7  Craque -
+      - ZAG Alan Ruschel             OVR 50  Sal    32  G  0  J  3  Craque -
+      - ZAG Marcos Paulo             OVR 46  Sal    48  G  0  J  0  Craque -
+      - MEI Jean Irmer               OVR 60  Sal    40  G  3  J 16  Craque -
+      - MEI Caique                   OVR 57  Sal    36  G  2  J 16  Craque -
+      - MEI Jadson                   OVR 53  Sal    63  G  0  J  1  Craque -
+      - MEI Nenê                     OVR 53  Sal    64  G  2  J 16  Craque -
+      - MEI Mandaca                  OVR 53  Sal    62  G  3  J 15  Craque -
+      - MEI Luis Oyama               OVR 49  Sal    60  G  0  J  0  Craque -
+      - MEI Luan Dias                OVR 46  Sal    45  G  0  J  0  Craque -
+      - ATA Erick Farias             OVR 62  Sal    48  G  1  J 16  Craque *
+      - ATA Lucas Barbosa            OVR 60  Sal    34  G  0  J  6  Craque -
+      - ATA Gilberto                 OVR 60  Sal    56  G  1  J 10  Craque -
+      - ATA Marcelinho               OVR 58  Sal    36  G  0  J  0  Craque -
+      - ATA Edinho                   OVR 57  Sal    62  G  0  J  0  Craque -
+      - ATA Taliari                  OVR 53  Sal    34  G  0  J  0  Craque -
+      - ATA Gabriel Taliari          OVR 52  Sal    47  G  0  J  0  Craque -
+      - ATA Da Silva                 OVR 47  Sal    36  G  0  J  0  Craque -
+  - Atlético Goianiense | Div final 3 | Pos 5 na Div 3 | Movimento = | Caixa R$ 111,137 mil | Folha R$ 4,500 mil | Torcida 1.6M | Prestigio 60 | Emprestimo R$ 0 mil | Media elenco 51.8
+    Elenco:
+      - GOL Luan Polli               OVR 61  Sal    32  G  0  J 16  Craque -
+      - GOL Ronaldo                  OVR 59  Sal    55  G  0  J  0  Craque *
+      - GOL Pedro Paulo              OVR 54  Sal    46  G  0  J  0  Craque -
+      - ZAG Bruno Tubarão            OVR 57  Sal    69  G  0  J 16  Craque *
+      - ZAG Alix Vinicius            OVR 51  Sal    47  G  3  J 16  Craque -
+      - ZAG Maguinho                 OVR 50  Sal    44  G  1  J 16  Craque -
+      - ZAG Lucas Gazal              OVR 49  Sal    42  G  0  J 15  Craque -
+      - ZAG Luiz Felipe              OVR 48  Sal    55  G  0  J  1  Craque -
+      - ZAG Guilherme Romão          OVR 46  Sal    49  G  0  J  0  Craque -
+      - ZAG Rhaldney                 OVR 43  Sal    58  G  0  J  0  Craque -
+      - MEI Roni                     OVR 58  Sal    46  G  1  J 16  Craque -
+      - MEI Baralhas                 OVR 50  Sal    56  G  3  J 16  Craque -
+      - MEI Shaylon                  OVR 49  Sal    33  G  0  J 16  Craque -
+      - MEI Jorginho                 OVR 48  Sal    61  G  1  J  5  Craque -
+      - MEI Emiliano Rodríguez       OVR 48  Sal    65  G  1  J 11  Craque -
+      - MEI Léo Pereira              OVR 46  Sal    66  G  0  J  0  Craque -
+      - MEI Campanharo               OVR 43  Sal    59  G  0  J  0  Craque -
+      - ATA Luiz Fernando            OVR 61  Sal    53  G  3  J 15  Craque *
+      - ATA Janderson                OVR 60  Sal    67  G  1  J  7  Craque -
+      - ATA Derek                    OVR 60  Sal    37  G  3  J 10  Craque -
+      - ATA Hyuri                    OVR 57  Sal    42  G  0  J  0  Craque -
+      - ATA Alejo Cruz               OVR 55  Sal    41  G  0  J  0  Craque -
+      - ATA Danielzinho              OVR 52  Sal    44  G  0  J  0  Craque -
+      - ATA Yony González            OVR 45  Sal    32  G  0  J  0  Craque -
+      - ATA Gustavo Coutinho         OVR 44  Sal    52  G  0  J  0  Craque -
+  - Mirassol | Div final 3 | Pos 6 na Div 3 | Movimento = | Caixa R$ 74,661 mil | Folha R$ 3,500 mil | Torcida 519K | Prestigio 55 | Emprestimo R$ 0 mil | Media elenco 48.2
+    Elenco:
+      - GOL Walter                   OVR 57  Sal    45  G  0  J  4  Craque -
+      - GOL Alex Muralha             OVR 57  Sal    44  G  0  J 16  Craque *
+      - GOL Vanderlei                OVR 52  Sal    30  G  0  J  0  Craque -
+      - ZAG Lucas Ramon              OVR 50  Sal    39  G  7  J 18  Craque *
+      - ZAG Luiz Otávio              OVR 46  Sal    37  G  1  J 18  Craque -
+      - ZAG Daniel Borges            OVR 45  Sal    43  G  1  J 18  Craque -
+      - ZAG João Victor              OVR 45  Sal    58  G  0  J 12  Craque -
+      - ZAG Rodrigo Ferreira         OVR 45  Sal    43  G  1  J  6  Craque -
+      - ZAG Reinaldo                 OVR 42  Sal    33  G  0  J  0  Craque -
+      - ZAG Zeca                     OVR 40  Sal    34  G  0  J  0  Craque -
+      - MEI Neto Moura               OVR 54  Sal    54  G  1  J 18  Craque -
+      - MEI Danielzinho              OVR 51  Sal    44  G  2  J 18  Craque -
+      - MEI Chico Kim                OVR 45  Sal    46  G  1  J 18  Craque -
+      - MEI Negueba                  OVR 45  Sal    67  G  0  J 16  Craque -
+      - MEI Gabriel                  OVR 44  Sal    51  G  1  J  2  Craque -
+      - MEI Yago Felipe              OVR 44  Sal    45  G  0  J  0  Craque -
+      - MEI Iury                     OVR 43  Sal    44  G  0  J  0  Craque -
+      - ATA Dellatorre               OVR 55  Sal    46  G  3  J 18  Craque *
+      - ATA Quirino                  OVR 54  Sal    48  G  0  J  5  Craque -
+      - ATA Zé Roberto               OVR 54  Sal    44  G  1  J 13  Craque -
+      - ATA Fernandinho              OVR 53  Sal    45  G  0  J  0  Craque -
+      - ATA Fabrício Daniel          OVR 52  Sal    64  G  0  J  0  Craque -
+      - ATA Rafinha                  OVR 45  Sal    66  G  0  J  0  Craque -
+      - ATA Nicolas                  OVR 44  Sal    51  G  0  J  0  Craque -
+      - ATA Alex Silva               OVR 41  Sal    33  G  0  J  0  Craque -
+  - América Mineiro | Div final 4 | Pos 7 na Div 3 | Movimento REBAIXADO | Caixa R$ 101,632 mil | Folha R$ 4,500 mil | Torcida 2.4M | Prestigio 63 | Emprestimo R$ 0 mil | Media elenco 35.1
+    Elenco:
+      - GOL Matheus Mendes           OVR 44  Sal    62  G  0  J 16  Craque *
+      - GOL Jori                     OVR 44  Sal    59  G  0  J  0  Craque -
+      - GOL Dalberson                OVR 35  Sal    45  G  0  J  0  Craque -
+      - ZAG Ricardo Silva            OVR 40  Sal    40  G  2  J 16  Craque -
+      - ZAG Marlon                   OVR 38  Sal    49  G  2  J 16  Craque *
+      - ZAG Júlio                    OVR 33  Sal    50  G  1  J 15  Craque -
+      - ZAG Nicolas                  OVR 32  Sal    44  G  0  J 16  Craque -
+      - ZAG Maguinho                 OVR 32  Sal    55  G  0  J  1  Craque -
+      - ZAG Lucão                    OVR 31  Sal    60  G  0  J  0  Craque -
+      - ZAG Paulinho                 OVR 26  Sal    47  G  0  J  0  Craque -
+      - MEI Alê                      OVR 39  Sal    38  G  1  J 16  Craque -
+      - MEI Moisés                   OVR 35  Sal    55  G  1  J 16  Craque -
+      - MEI Fabinho Santos           OVR 34  Sal    37  G  1  J 16  Craque -
+      - MEI Benítez                  OVR 31  Sal    61  G  1  J  6  Craque -
+      - MEI Cauan Barros             OVR 31  Sal    63  G  1  J  3  Craque -
+      - MEI Miguelito                OVR 31  Sal    57  G  1  J  7  Craque -
+      - MEI Jhosefer                 OVR 24  Sal    34  G  0  J  0  Craque -
+      - ATA Fabinho                  OVR 46  Sal    48  G  2  J 16  Craque *
+      - ATA Willian Bigode           OVR 43  Sal    54  G  0  J  4  Craque -
+      - ATA Adyson                   OVR 43  Sal    64  G  4  J 12  Craque -
+      - ATA Guilherme Pato           OVR 42  Sal    64  G  0  J  0  Craque -
+      - ATA Brenner                  OVR 35  Sal    62  G  0  J  0  Craque -
+      - ATA Renato Marques           OVR 34  Sal    60  G  0  J  0  Craque -
+      - ATA Stênio                   OVR 30  Sal    33  G  0  J  0  Craque -
+      - ATA Aloísio                  OVR 27  Sal    32  G  0  J  0  Craque -
+  - Ceará | Div final 4 | Pos 8 na Div 3 | Movimento REBAIXADO | Caixa R$ 124,091 mil | Folha R$ 4,000 mil | Torcida 2.2M | Prestigio 58 | Emprestimo R$ 0 mil | Media elenco 51.5
+    Elenco:
+      - GOL Richard                  OVR 59  Sal    55  G  0  J  5  Craque *
+      - GOL Bruno Ferreira           OVR 59  Sal    38  G  0  J 13  Craque -
+      - GOL Fernando Miguel          OVR 56  Sal    30  G  0  J  0  Craque -
+      - ZAG Rafael Ramos             OVR 55  Sal    44  G  0  J 18  Craque *
+      - ZAG David Ricardo            OVR 52  Sal    43  G  1  J 16  Craque -
+      - ZAG Raí Ramos                OVR 51  Sal    44  G  3  J 18  Craque -
+      - ZAG Matheus Felipe           OVR 48  Sal    41  G  0  J 11  Craque -
+      - ZAG Luiz Otávio              OVR 48  Sal    63  G  2  J  9  Craque -
+      - ZAG Eric Melo                OVR 46  Sal    42  G  0  J  0  Craque -
+      - ZAG Warley                   OVR 44  Sal    61  G  0  J  0  Craque -
+      - MEI Richardson               OVR 57  Sal    42  G  1  J 18  Craque -
+      - MEI Lourenço                 OVR 52  Sal    49  G  2  J 18  Craque -
+      - MEI Lucas Mugni              OVR 51  Sal    56  G  1  J 18  Craque -
+      - MEI Rômulo                   OVR 46  Sal    52  G  0  J  3  Craque -
+      - MEI Aylon                    OVR 46  Sal    42  G  2  J  4  Craque -
+      - MEI De Lucca                 OVR 46  Sal    38  G  1  J 11  Craque -
+      - MEI Fernando Sobral          OVR 41  Sal    38  G  0  J  0  Craque -
+      - ATA Saulo Mineiro            OVR 59  Sal    33  G  0  J 18  Craque *
+      - ATA Cléber                   OVR 58  Sal    52  G  0  J  0  Craque -
+      - ATA Facundo Castro           OVR 58  Sal    59  G  0  J  4  Craque -
+      - ATA Barceló                  OVR 58  Sal    38  G  2  J 14  Craque -
+      - ATA Recalde                  OVR 54  Sal    69  G  0  J  0  Craque -
+      - ATA Janderson                OVR 52  Sal    64  G  0  J  0  Craque -
+      - ATA Erick Pulga              OVR 48  Sal    32  G  0  J  0  Craque -
+      - ATA Guilherme Bissoli        OVR 42  Sal    40  G  0  J  0  Craque -
+
+#### Divisao 4
+  - Sport Recife | Div final 3 | Pos 1 na Div 4 | Movimento PROMOVIDO | Caixa R$ 99,840 mil | Folha R$ 4,000 mil | Torcida 2.6M | Prestigio 61 | Emprestimo R$ 0 mil | Media elenco 48.0
+    Elenco:
+      - GOL Denis                    OVR 56  Sal    58  G  0  J  1  Craque -
+      - GOL Caíque França            OVR 56  Sal    58  G  0  J 19  Craque *
+      - GOL Adriel                   OVR 53  Sal    55  G  0  J  0  Craque -
+      - ZAG Rosales                  OVR 51  Sal    36  G  2  J 20  Craque *
+      - ZAG Hereda                   OVR 48  Sal    56  G  2  J 20  Craque -
+      - ZAG Rafael Thyere            OVR 47  Sal    52  G  4  J 20  Craque -
+      - ZAG Chico                    OVR 45  Sal    65  G  0  J  2  Craque -
+      - ZAG Luciano Castán           OVR 45  Sal    42  G  1  J 18  Craque -
+      - ZAG Felipinho                OVR 43  Sal    32  G  0  J  0  Craque -
+      - ZAG Igor Cariús              OVR 42  Sal    33  G  0  J  0  Craque -
+      - MEI Fabinho                  OVR 53  Sal    56  G  8  J 20  Craque -
+      - MEI Felipe                   OVR 49  Sal    55  G  3  J 19  Craque -
+      - MEI Lucas Lima               OVR 46  Sal    44  G  2  J 20  Craque -
+      - MEI Titi Ortíz               OVR 43  Sal    51  G  4  J 17  Craque -
+      - MEI Julián Fernández         OVR 43  Sal    43  G  1  J  4  Craque -
+      - MEI Pedro Vilhena            OVR 43  Sal    35  G  0  J  0  Craque -
+      - MEI Alan Ruiz                OVR 40  Sal    52  G  0  J  0  Craque -
+      - ATA Barletta                 OVR 58  Sal    69  G  2  J 20  Craque *
+      - ATA Zé Roberto               OVR 53  Sal    47  G  3  J 13  Craque -
+      - ATA Gustavo Coutinho         OVR 53  Sal    68  G  4  J  7  Craque -
+      - ATA Romarinho                OVR 52  Sal    56  G  0  J  0  Craque -
+      - ATA Chrystian                OVR 50  Sal    68  G  0  J  0  Craque -
+      - ATA Pablo Dyego              OVR 48  Sal    55  G  0  J  0  Craque -
+      - ATA Lenny Lobato             OVR 43  Sal    30  G  0  J  0  Craque -
+      - ATA Diego Souza Jr           OVR 40  Sal    32  G  0  J  0  Craque -
+  - Vila Nova | Div final 3 | Pos 2 na Div 4 | Movimento PROMOVIDO | Caixa R$ 69,584 mil | Folha R$ 3,600 mil | Torcida 1.6M | Prestigio 60 | Emprestimo R$ 0 mil | Media elenco 32.1
+    Elenco:
+      - GOL Dalberson                OVR 40  Sal    53  G  0  J 14  Craque -
+      - GOL Helton Leite             OVR 40  Sal    39  G  0  J  2  Craque *
+      - GOL Airton                   OVR 32  Sal    38  G  0  J  0  Craque -
+      - ZAG Caio Marcelo             OVR 38  Sal    64  G  2  J 16  Craque *
+      - ZAG Anderson Jesus           OVR 34  Sal    58  G  1  J 16  Craque -
+      - ZAG Elias                    OVR 32  Sal    30  G  0  J 15  Craque -
+      - ZAG Tiago Pagnussat          OVR 29  Sal    62  G  0  J  0  Craque -
+      - ZAG Higor                    OVR 28  Sal    64  G  0  J  1  Craque -
+      - ZAG Weverton                 OVR 28  Sal    38  G  2  J 16  Craque -
+      - ZAG Hayner                   OVR 22  Sal    31  G  0  J  0  Craque -
+      - MEI Dudu                     OVR 38  Sal    54  G  4  J 16  Craque -
+      - MEI Nathan Camargo           OVR 36  Sal    57  G  2  J 15  Craque -
+      - MEI Dodô                     OVR 29  Sal    62  G  2  J 16  Craque -
+      - MEI Marco Antonio            OVR 29  Sal    45  G  3  J  2  Craque -
+      - MEI João Vieira              OVR 28  Sal    53  G  0  J 15  Craque -
+      - MEI Willian Maranhão         OVR 27  Sal    59  G  0  J  0  Craque -
+      - MEI Marquinhos Gabriel       OVR 23  Sal    51  G  0  J  0  Craque -
+      - ATA Ruan Ribeiro             OVR 41  Sal    43  G  4  J 16  Craque *
+      - ATA Andre Luis               OVR 39  Sal    59  G  3  J 15  Craque -
+      - ATA Dellatorre               OVR 39  Sal    32  G  0  J  1  Craque -
+      - ATA Bruno Xavier             OVR 37  Sal    45  G  0  J  0  Craque -
+      - ATA Rafa Silva               OVR 36  Sal    62  G  0  J  0  Craque -
+      - ATA Emerson Urso             OVR 29  Sal    63  G  0  J  0  Craque -
+      - ATA Janderson                OVR 28  Sal    33  G  0  J  0  Craque -
+      - ATA Alesson                  OVR 22  Sal    42  G  0  J  0  Craque -
+  - Coritiba | Div final 4 | Pos 3 na Div 4 | Movimento = | Caixa R$ 96,117 mil | Folha R$ 4,800 mil | Torcida 2.9M | Prestigio 62 | Emprestimo R$ 0 mil | Media elenco 38.8
+    Elenco:
+      - GOL Pedro Morisco            OVR 48  Sal    70  G  0  J 16  Craque *
+      - GOL Pedro Rangel             OVR 46  Sal    68  G  0  J  0  Craque -
+      - GOL Gabriel Leite            OVR 41  Sal    45  G  0  J  0  Craque -
+      - ZAG Tiago Coser              OVR 43  Sal    32  G  4  J 15  Craque *
+      - ZAG Maicon                   OVR 43  Sal    37  G  1  J 16  Craque -
+      - ZAG Jacy                     OVR 35  Sal    38  G  1  J  5  Craque -
+      - ZAG João Almeida             OVR 35  Sal    41  G  0  J  0  Craque -
+      - ZAG Felipe Guimarães         OVR 34  Sal    52  G  1  J 14  Craque -
+      - ZAG Guilherme Aquino         OVR 34  Sal    34  G  3  J 14  Craque -
+      - ZAG Bruno Melo               OVR 30  Sal    48  G  0  J  0  Craque -
+      - MEI Sebastián Gómez          OVR 44  Sal    64  G  2  J 16  Craque -
+      - MEI Willian Oliveira         OVR 40  Sal    41  G  4  J 16  Craque -
+      - MEI Jean Gabriel             OVR 38  Sal    34  G  2  J 16  Craque -
+      - MEI Geovane                  OVR 37  Sal    62  G  1  J  2  Craque -
+      - MEI Josué                    OVR 37  Sal    52  G  1  J 14  Craque -
+      - MEI Carlos de Pena           OVR 33  Sal    57  G  0  J  0  Craque -
+      - MEI Matheus Bianqui          OVR 33  Sal    33  G  0  J  0  Craque -
+      - ATA Clayson                  OVR 49  Sal    39  G  3  J 16  Craque *
+      - ATA Nicolas Careca           OVR 44  Sal    30  G  0  J  0  Craque -
+      - ATA Lucas Ronier             OVR 44  Sal    48  G  3  J 16  Craque -
+      - ATA Dellatorre               OVR 43  Sal    64  G  0  J  0  Craque -
+      - ATA Iury Castilho            OVR 40  Sal    45  G  0  J  0  Craque -
+      - ATA Gustavo Coutinho         OVR 39  Sal    48  G  0  J  0  Craque -
+      - ATA Joaquín Lavega           OVR 35  Sal    46  G  0  J  0  Craque -
+      - ATA Pedro Rocha              OVR 27  Sal    50  G  0  J  0  Craque -
+  - CRB | Div final 4 | Pos 4 na Div 4 | Movimento = | Caixa R$ 60,445 mil | Folha R$ 3,500 mil | Torcida 1.2M | Prestigio 58 | Emprestimo R$ 0 mil | Media elenco 28.6
+    Elenco:
+      - GOL Matheus Albino           OVR 38  Sal    30  G  0  J 15  Craque *
+      - GOL Vitor Caetano            OVR 36  Sal    30  G  0  J  2  Craque -
+      - GOL Pablo                    OVR 32  Sal    68  G  0  J  0  Craque -
+      - ZAG Hereda                   OVR 32  Sal    52  G  1  J 16  Craque *
+      - ZAG Henri                    OVR 29  Sal    68  G  0  J 16  Craque -
+      - ZAG Segovia                  OVR 27  Sal    54  G  0  J 16  Craque -
+      - ZAG Lucas Lovat              OVR 25  Sal    33  G  0  J 12  Craque -
+      - ZAG Fábio Alemão             OVR 25  Sal    35  G  0  J  4  Craque -
+      - ZAG Weverton                 OVR 24  Sal    54  G  0  J  0  Craque -
+      - ZAG Ryan                     OVR 21  Sal    49  G  0  J  0  Craque -
+      - MEI Danielzinho              OVR 34  Sal    50  G  3  J 16  Craque -
+      - MEI Higor Meritão            OVR 32  Sal    64  G  2  J 16  Craque -
+      - MEI Geovane                  OVR 28  Sal    64  G  3  J 16  Craque -
+      - MEI Gegê                     OVR 25  Sal    55  G  0  J  5  Craque -
+      - MEI Lucas Kallyel            OVR 25  Sal    34  G  0  J  2  Craque -
+      - MEI Mikael                   OVR 25  Sal    57  G  0  J  9  Craque -
+      - MEI Douglas Baggio           OVR 19  Sal    49  G  0  J  0  Craque -
+      - ATA Anselmo Ramon            OVR 39  Sal    50  G  2  J 16  Craque *
+      - ATA Léo Pereira              OVR 36  Sal    64  G  4  J  4  Craque -
+      - ATA William Pottker          OVR 36  Sal    41  G  3  J 12  Craque -
+      - ATA Dadá Belmonte            OVR 33  Sal    48  G  0  J  0  Craque -
+      - ATA João Neto                OVR 29  Sal    64  G  0  J  0  Craque -
+      - ATA Thiaguinho               OVR 28  Sal    62  G  0  J  0  Craque -
+      - ATA Rafinha                  OVR 21  Sal    37  G  0  J  0  Craque -
+      - ATA Labandeira               OVR 20  Sal    32  G  0  J  0  Craque -
+  - Goiás | Div final 4 | Pos 5 na Div 4 | Movimento = | Caixa R$ 93,989 mil | Folha R$ 4,600 mil | Torcida 2.6M | Prestigio 60 | Emprestimo R$ 0 mil | Media elenco 35.3
+    Elenco:
+      - GOL Tadeu                    OVR 47  Sal    65  G  1  J 14  Craque *
+      - GOL Thiago Rodrigues         OVR 44  Sal    67  G  0  J  4  Craque -
+      - GOL Marcão                   OVR 37  Sal    49  G  0  J  0  Craque -
+      - ZAG Ezequiel                 OVR 40  Sal    63  G  2  J 16  Craque *
+      - ZAG Lucas Ribeiro            OVR 39  Sal    56  G  2  J 16  Craque -
+      - ZAG Luiz Felipe              OVR 35  Sal    35  G  2  J 16  Craque -
+      - ZAG Nicolas                  OVR 29  Sal    30  G  1  J  6  Craque -
+      - ZAG Titi                     OVR 29  Sal    31  G  0  J  4  Craque -
+      - ZAG Anthony                  OVR 29  Sal    62  G  0  J  6  Craque -
+      - ZAG Rodrigo Soares           OVR 28  Sal    63  G  0  J  0  Craque -
+      - MEI Gegê                     OVR 42  Sal    36  G  5  J 16  Craque -
+      - MEI Juninho                  OVR 36  Sal    35  G  3  J 15  Craque -
+      - MEI Brayann                  OVR 33  Sal    46  G  1  J  9  Craque -
+      - MEI Filipe Machado           OVR 33  Sal    39  G  1  J 12  Craque -
+      - MEI Lourenço                 OVR 33  Sal    70  G  1  J 12  Craque -
+      - MEI Lucas Lima               OVR 30  Sal    56  G  0  J  0  Craque -
+      - MEI Jean Carlos              OVR 24  Sal    44  G  0  J  0  Craque -
+      - ATA Wellington Rato          OVR 44  Sal    50  G  3  J 16  Craque *
+      - ATA Bruno Sávio              OVR 42  Sal    60  G  1  J  4  Craque -
+      - ATA Esli García              OVR 42  Sal    49  G  3  J 12  Craque -
+      - ATA Pedrinho                 OVR 40  Sal    42  G  0  J  0  Craque -
+      - ATA Anselmo Ramon            OVR 37  Sal    33  G  0  J  0  Craque -
+      - ATA Jajá                     OVR 33  Sal    53  G  0  J  0  Craque -
+      - ATA Cadu                     OVR 31  Sal    69  G  0  J  0  Craque -
+      - ATA Arthur Caíke             OVR 28  Sal    56  G  0  J  0  Craque -
+  - Paysandu | Div final 4 | Pos 6 na Div 4 | Movimento = | Caixa R$ 67,968 mil | Folha R$ 3,600 mil | Torcida 1.5M | Prestigio 57 | Emprestimo R$ 0 mil | Media elenco 28.4
+    Elenco:
+      - GOL Gabriel Mesquita         OVR 36  Sal    42  G  1  J 16  Craque *
+      - GOL Jean Drosny              OVR 34  Sal    68  G  0  J  0  Craque -
+      - GOL Matheus Nogueira         OVR 28  Sal    66  G  0  J  0  Craque -
+      - ZAG Marcão                   OVR 34  Sal    53  G  3  J 16  Craque *
+      - ZAG Yeferson Quintana        OVR 28  Sal    48  G  1  J 16  Craque -
+      - ZAG Edílson                  OVR 28  Sal    48  G  2  J 16  Craque -
+      - ZAG Luccão                   OVR 25  Sal    36  G  0  J 14  Craque -
+      - ZAG PK                       OVR 25  Sal    69  G  0  J  2  Craque -
+      - ZAG Bruno Bispo              OVR 24  Sal    36  G  0  J  0  Craque -
+      - ZAG Reverson                 OVR 20  Sal    55  G  0  J  0  Craque -
+      - MEI Leandro Vilela           OVR 37  Sal    52  G  1  J 16  Craque -
+      - MEI Marlon                   OVR 29  Sal    34  G  3  J 16  Craque -
+      - MEI Matheus Vargas           OVR 25  Sal    34  G  1  J 11  Craque -
+      - MEI Cavan                    OVR 25  Sal    35  G  0  J  6  Craque -
+      - MEI Ramon Martinez           OVR 25  Sal    49  G  3  J 15  Craque -
+      - MEI Giovanni                 OVR 23  Sal    65  G  0  J  0  Craque -
+      - MEI Robinho                  OVR 20  Sal    31  G  0  J  0  Craque -
+      - ATA Nicolas                  OVR 36  Sal    52  G  4  J 16  Craque *
+      - ATA Marlon Douglas           OVR 35  Sal    46  G  2  J 16  Craque -
+      - ATA Benitez                  OVR 35  Sal    49  G  0  J  0  Craque -
+      - ATA Edinho                   OVR 33  Sal    58  G  0  J  0  Craque -
+      - ATA Ciel                     OVR 29  Sal    62  G  0  J  0  Craque -
+      - ATA Eliel                    OVR 27  Sal    57  G  0  J  0  Craque -
+      - ATA Kevin                    OVR 25  Sal    34  G  0  J  0  Craque -
+      - ATA Diogo Oliveira           OVR 22  Sal    51  G  0  J  0  Craque -
+  - Avaí | Div final 4 | Pos 7 na Div 4 | Movimento = | Caixa R$ 65,255 mil | Folha R$ 3,800 mil | Torcida 1.6M | Prestigio 60 | Emprestimo R$ 0 mil | Media elenco 31.8
+    Elenco:
+      - GOL Otávio Passos            OVR 40  Sal    42  G  0  J 16  Craque -
+      - GOL Igor Bohn                OVR 40  Sal    42  G  0  J  0  Craque *
+      - GOL Léo Aragão               OVR 35  Sal    55  G  0  J  0  Craque -
+      - ZAG Douglas Teixeira         OVR 38  Sal    58  G  1  J 16  Craque *
+      - ZAG Quaresma                 OVR 34  Sal    67  G  1  J 16  Craque -
+      - ZAG Allyson                  OVR 30  Sal    38  G  0  J 16  Craque -
+      - ZAG Wallison                 OVR 30  Sal    52  G  0  J 16  Craque -
+      - ZAG Wesley Gasolina          OVR 29  Sal    51  G  0  J  0  Craque -
+      - ZAG Guilherme Aquino         OVR 29  Sal    55  G  0  J  0  Craque -
+      - ZAG Gabriel Simples          OVR 24  Sal    31  G  0  J  0  Craque -
+      - MEI Jean Lucas               OVR 37  Sal    62  G  1  J 16  Craque -
+      - MEI Daniel Penha             OVR 32  Sal    42  G  1  J 16  Craque -
+      - MEI Zé Ricardo               OVR 31  Sal    53  G  1  J 16  Craque -
+      - MEI Wenderson                OVR 28  Sal    57  G  1  J 16  Craque -
+      - MEI Romildo Del Piage        OVR 28  Sal    51  G  0  J  0  Craque -
+      - MEI Hyan                     OVR 25  Sal    43  G  0  J  0  Craque -
+      - MEI Luiz Henrique            OVR 21  Sal    67  G  0  J  0  Craque -
+      - ATA Rafael Bilu              OVR 42  Sal    36  G  3  J 15  Craque *
+      - ATA Sorriso                  OVR 38  Sal    49  G  3  J  6  Craque -
+      - ATA Felipe Avenatti          OVR 38  Sal    58  G  2  J 11  Craque -
+      - ATA Gaspar                   OVR 34  Sal    69  G  0  J  0  Craque -
+      - ATA Maurício Garcez          OVR 34  Sal    46  G  0  J  0  Craque -
+      - ATA Thayllon                 OVR 31  Sal    47  G  0  J  0  Craque -
+      - ATA Igor Rosa                OVR 25  Sal    36  G  0  J  0  Craque -
+      - ATA Mário Sérgio             OVR 22  Sal    63  G  0  J  0  Craque -
+  - Novorizontino | Div final 4 | Pos 8 na Div 4 | Movimento = | Caixa R$ 53,782 mil | Folha R$ 3,200 mil | Torcida 952K | Prestigio 56 | Emprestimo R$ 0 mil | Media elenco 28.3
+    Elenco:
+      - GOL Airton                   OVR 36  Sal    35  G  1  J  7  Craque -
+      - GOL Jordi                    OVR 36  Sal    58  G  0  J 11  Craque *
+      - GOL César Augusto            OVR 30  Sal    70  G  0  J  0  Craque -
+      - ZAG Patrick                  OVR 33  Sal    44  G  0  J 18  Craque *
+      - ZAG Dantas                   OVR 27  Sal    31  G  3  J 17  Craque -
+      - ZAG Rômulo                   OVR 26  Sal    35  G  1  J 18  Craque -
+      - ZAG Rafael Donato            OVR 24  Sal    56  G  1  J  8  Craque -
+      - ZAG César Martins            OVR 24  Sal    69  G  2  J 11  Craque -
+      - ZAG Mayk                     OVR 24  Sal    67  G  0  J  0  Craque -
+      - ZAG Raí Ramos                OVR 18  Sal    48  G  0  J  0  Craque -
+      - MEI Fábio Matheus            OVR 35  Sal    70  G  2  J 18  Craque -
+      - MEI Jean Irmer               OVR 31  Sal    54  G  1  J 18  Craque -
+      - MEI Marlon                   OVR 28  Sal    66  G  3  J 18  Craque -
+      - MEI Lucca                    OVR 25  Sal    42  G  0  J  5  Craque -
+      - MEI Matheus Frizzo           OVR 25  Sal    52  G  1  J 13  Craque -
+      - MEI Robson                   OVR 23  Sal    57  G  0  J  0  Craque -
+      - MEI Waguininho               OVR 22  Sal    65  G  0  J  0  Craque -
+      - ATA Caio Dantas              OVR 37  Sal    46  G  0  J 16  Craque *
+      - ATA Bruno José               OVR 34  Sal    47  G  0  J  6  Craque -
+      - ATA Nicolas Careca           OVR 34  Sal    62  G  0  J  3  Craque -
+      - ATA Léo Tocantins            OVR 34  Sal    36  G  2  J 11  Craque -
+      - ATA Neto Pessoa              OVR 29  Sal    41  G  0  J  0  Craque -
+      - ATA Everaldo                 OVR 28  Sal    55  G  0  J  0  Craque -
+      - ATA Jenison                  OVR 24  Sal    42  G  0  J  0  Craque -
+      - ATA Rodolfo                  OVR 20  Sal    39  G  0  J  0  Craque -
+
+## Temporada 2028
+
+### Campeoes
+- Divisao 1: Palmeiras
+- Divisao 2: Fortaleza
+- Divisao 3: Santos
+- Divisao 4: Ceará
+- Copa: Grêmio
+
+### Artilheiros
+- Artilheiro da temporada: Mayke (Palmeiras) - 8 gols
+- Top 1: Mayke (Palmeiras) - 8 gols
+- Top 2: Mathías Villasanti (Grêmio) - 8 gols
+- Top 3: Richard Ríos (Palmeiras) - 7 gols
+- Top 4: Lelê (Fluminense) - 7 gols
+- Top 5: Bruno Gomes (Internacional) - 7 gols
+- Top 6: Rafael Borré (Internacional) - 7 gols
+- Top 7: Walace (Cruzeiro) - 7 gols
+- Top 8: Pochettino (Fortaleza) - 7 gols
+- Top 9: Tomás Rincón (Santos) - 7 gols
+- Top 10: Estêvão (Palmeiras) - 6 gols
+
+### Promovidos
+- Fortaleza: 2 -> 1
+- Internacional: 2 -> 1
+- Mirassol: 3 -> 2
+- Santos: 3 -> 2
+- América Mineiro: 4 -> 3
+- Ceará: 4 -> 3
+
+### Rebaixados
+- Corinthians: 1 -> 2
+- RB Bragantino: 1 -> 2
+- Cuiabá: 2 -> 3
+- Fluminense: 2 -> 3
+- Criciúma: 3 -> 4
+- Vila Nova: 3 -> 4
+
+### Destaques Financeiros e Tecnicos
+- Melhor ataque: Palmeiras com 31 gols
+- Melhor defesa: América Mineiro com 9 gols sofridos
+- Maior publico: Palmeiras x São Paulo FC - 80,000
+- Maior renda: Flamengo x Corinthians - R$ 12,096 mil
+
+### Clubes, Financas e Elencos
+#### Divisao 1
+  - Palmeiras | Div final 1 | Pos 1 na Div 1 | Movimento = | Caixa R$ 967,905 mil | Folha R$ 24,000 mil | Torcida 15.4M | Prestigio 96 | Emprestimo R$ 0 mil | Media elenco 87.4
+    Elenco:
+      - GOL Weverton                 OVR 93  Sal  5549  G  0  J 14  Craque *
+      - GOL Marcelo Lomba            OVR 93  Sal  4514  G  0  J  6  Craque -
+      - GOL Mateus Oliveira          OVR 90  Sal  3687  G  0  J  0  Craque -
+      - ZAG Agustín Giay             OVR 92  Sal  4146  G  4  J 20  Craque *
+      - ZAG Mayke                    OVR 88  Sal  5134  G  8  J 20  Craque -
+      - ZAG Marcos Rocha             OVR 87  Sal  6046  G  2  J 20  Craque -
+      - ZAG Naves                    OVR 85  Sal  2653  G  0  J  2  Craque -
+      - ZAG Gustavo Gómez            OVR 85  Sal  2874  G  0  J  2  Craque -
+      - ZAG Murilo                   OVR 85  Sal  2373  G  4  J 16  Craque -
+      - ZAG Joaquín Piquerez         OVR 79  Sal  1156  G  0  J  0  Craque -
+      - MEI Richard Ríos             OVR 86  Sal  5837  G  7  J 20  Craque -
+      - MEI Aníbal Moreno            OVR 85  Sal  2590  G  3  J 20  Craque -
+      - MEI Raphael Veiga            OVR 84  Sal  2716  G  1  J 18  Craque -
+      - MEI Emiliano Martínez        OVR 84  Sal  2317  G  4  J 13  Craque -
+      - MEI Felipe Anderson          OVR 84  Sal  1850  G  0  J  9  Craque -
+      - MEI Maurício                 OVR 84  Sal  2103  G  0  J  0  Craque -
+      - MEI Fabinho                  OVR 82  Sal   967  G  0  J  0  Craque -
+      - ATA Flaco López              OVR 92  Sal  5279  G  0  J  0  Craque -
+      - ATA Paulinho                 OVR 92  Sal  6277  G  6  J 16  Craque -
+      - ATA Facundo Torres           OVR 92  Sal  4970  G  1  J  8  Craque -
+      - ATA Estêvão                  OVR 92  Sal  6910  G  6  J 16  Craque *
+      - ATA Vitor Roque              OVR 89  Sal  6701  G  0  J  0  Craque -
+      - ATA Bruno Rodrigues          OVR 88  Sal  1323  G  0  J  0  Craque -
+      - ATA Luighi                   OVR 86  Sal  2935  G  0  J  0  Craque -
+      - ATA Rony                     OVR 85  Sal  2480  G  0  J  0  Craque -
+  - Atlético Mineiro | Div final 1 | Pos 2 na Div 1 | Movimento = | Caixa R$ 930,508 mil | Folha R$ 20,000 mil | Torcida 13.7M | Prestigio 92 | Emprestimo R$ 0 mil | Media elenco 82.0
+    Elenco:
+      - GOL Matheus Mendes           OVR 85  Sal  3150  G  0  J  0  Craque -
+      - GOL Everson                  OVR 85  Sal  2158  G  0  J  5  Craque *
+      - GOL Gabriel Delfim           OVR 85  Sal  1510  G  2  J 15  Craque -
+      - ZAG Saravia                  OVR 82  Sal  3430  G  1  J 20  Craque *
+      - ZAG Rubens                   OVR 81  Sal   650  G  1  J 10  Craque -
+      - ZAG Bruno Fuchs              OVR 81  Sal   653  G  2  J 15  Craque -
+      - ZAG Guilherme Arana          OVR 81  Sal   879  G  0  J 15  Craque -
+      - ZAG Lyanco                   OVR 81  Sal   842  G  0  J  3  Craque -
+      - ZAG Júnior Alonso            OVR 81  Sal   465  G  0  J  3  Craque -
+      - ZAG Igor Rabello             OVR 81  Sal   492  G  3  J 14  Craque -
+      - MEI Fausto Vera              OVR 80  Sal  1681  G  5  J 20  Craque -
+      - MEI Otávio                   OVR 79  Sal  1162  G  4  J  9  Craque -
+      - MEI Gustavo Scarpa           OVR 79  Sal   681  G  0  J  8  Craque -
+      - MEI Bernard                  OVR 79  Sal  1166  G  6  J 14  Craque -
+      - MEI Igor Gomes               OVR 79  Sal   529  G  6  J 17  Craque -
+      - MEI Patrick                  OVR 79  Sal   760  G  1  J 12  Craque -
+      - MEI Alan Franco              OVR 79  Sal   915  G  0  J  0  Craque -
+      - ATA Deyverson                OVR 86  Sal  1862  G  3  J 10  Craque -
+      - ATA Tomás Cuello             OVR 86  Sal  2853  G  3  J 17  Craque -
+      - ATA Eduardo Vargas           OVR 86  Sal  2102  G  4  J  6  Craque -
+      - ATA Hulk                     OVR 86  Sal  1870  G  2  J  7  Craque *
+      - ATA Cadu                     OVR 85  Sal  3494  G  0  J  0  Craque -
+      - ATA Rony                     OVR 84  Sal  2161  G  0  J  0  Craque -
+      - ATA Alisson                  OVR 81  Sal   589  G  0  J  0  Craque -
+      - ATA Cristian Pavón           OVR 79  Sal   926  G  0  J  0  Craque -
+  - Grêmio | Div final 1 | Pos 3 na Div 1 | Movimento = | Caixa R$ 649,967 mil | Folha R$ 13,000 mil | Torcida 9.6M | Prestigio 83 | Emprestimo R$ 0 mil | Media elenco 80.4
+    Elenco:
+      - GOL Gabriel Grando           OVR 85  Sal  3215  G  0  J  8  Craque -
+      - GOL Caíque                   OVR 85  Sal  1981  G  0  J  2  Craque -
+      - GOL Agustín Marchesín        OVR 85  Sal  2080  G  0  J 15  Craque *
+      - ZAG João Pedro               OVR 82  Sal  2916  G  3  J 24  Craque *
+      - ZAG Reinaldo                 OVR 78  Sal   947  G  3  J 14  Craque -
+      - ZAG Fábio                    OVR 78  Sal  1113  G  1  J 21  Craque -
+      - ZAG Rodrigo Ely              OVR 78  Sal   874  G  0  J 11  Craque -
+      - ZAG Mayk                     OVR 78  Sal   591  G  1  J 16  Craque -
+      - ZAG Jemerson                 OVR 78  Sal   610  G  1  J  1  Craque -
+      - ZAG Kannemann                OVR 78  Sal   609  G  0  J  9  Craque -
+      - MEI Mathías Villasanti       OVR 82  Sal  2911  G  8  J 24  Craque -
+      - MEI Dodi                     OVR 80  Sal  2897  G  2  J 24  Craque -
+      - MEI Edenilson                OVR 77  Sal   890  G  0  J 10  Craque -
+      - MEI Miguel Monsalve          OVR 77  Sal   775  G  1  J 11  Craque -
+      - MEI Franco Cristaldo         OVR 77  Sal   804  G  5  J 24  Craque -
+      - MEI Pepê                     OVR 77  Sal  1009  G  0  J  3  Craque -
+      - MEI Nathan                   OVR 76  Sal   436  G  0  J  0  Craque -
+      - ATA Pavon                    OVR 86  Sal  2563  G  5  J 16  Craque -
+      - ATA Martin Braithwaite       OVR 86  Sal  2144  G  3  J 14  Craque *
+      - ATA Cristian Olivera         OVR 86  Sal  2624  G  0  J  7  Craque -
+      - ATA Aravena                  OVR 86  Sal  2140  G  3  J 11  Craque -
+      - ATA André Henrique           OVR 84  Sal  2351  G  0  J  0  Craque -
+      - ATA Alysson                  OVR 79  Sal  1181  G  0  J  0  Craque -
+      - ATA Matias Arezo             OVR 78  Sal   968  G  0  J  0  Craque -
+      - ATA Soteldo                  OVR 77  Sal   267  G  0  J  0  Craque -
+  - Flamengo | Div final 1 | Pos 4 na Div 1 | Movimento = | Caixa R$ 1,064,230 mil | Folha R$ 28,000 mil | Torcida 32.5M | Prestigio 99 | Emprestimo R$ 0 mil | Media elenco 86.6
+    Elenco:
+      - GOL Dyogo Alves              OVR 92  Sal  6830  G  0  J 11  Craque -
+      - GOL Rossi                    OVR 92  Sal  3890  G  1  J  7  Craque *
+      - GOL Matheus Cunha            OVR 92  Sal  6257  G  0  J  0  Craque -
+      - ZAG Danilo                   OVR 85  Sal  2127  G  3  J 18  Craque -
+      - ZAG Wesley                   OVR 85  Sal  2566  G  3  J 18  Craque *
+      - ZAG Guillermo Varela         OVR 85  Sal  2564  G  2  J 17  Craque -
+      - ZAG Léo Ortiz                OVR 85  Sal  2543  G  1  J 10  Craque -
+      - ZAG Alex Sandro              OVR 85  Sal  1826  G  1  J  4  Craque -
+      - ZAG Léo Pereira              OVR 85  Sal  3381  G  0  J  5  Craque -
+      - ZAG Ayrton Lucas             OVR 82  Sal   565  G  0  J  0  Craque -
+      - MEI Erick Pulgar             OVR 87  Sal  6818  G  2  J 18  Craque -
+      - MEI Allan                    OVR 85  Sal  2649  G  2  J 14  Craque -
+      - MEI Nicolás De La Cruz       OVR 85  Sal  1319  G  0  J  2  Craque -
+      - MEI Everton Araújo           OVR 85  Sal  2278  G  1  J 16  Craque -
+      - MEI Carlos Alcaraz           OVR 85  Sal  2625  G  0  J  0  Craque -
+      - MEI Gerson                   OVR 85  Sal  3304  G  0  J  7  Craque -
+      - MEI Giorgian De Arrascaeta   OVR 85  Sal  1278  G  1  J 15  Craque -
+      - ATA Bruno Henrique           OVR 91  Sal  4387  G  2  J 10  Craque -
+      - ATA Pedro                    OVR 91  Sal  6119  G  4  J 13  Craque *
+      - ATA Luiz Araújo              OVR 91  Sal  4509  G  1  J 10  Craque -
+      - ATA Michael                  OVR 91  Sal  5002  G  1  J  3  Craque -
+      - ATA Everton Cebolinha        OVR 87  Sal  2176  G  0  J  0  Craque -
+      - ATA Juninho                  OVR 85  Sal  3016  G  0  J  0  Craque -
+      - ATA Gonzalo Plata            OVR 85  Sal  2465  G  0  J  0  Craque -
+      - ATA Matheus Gonçalves        OVR 81  Sal  1080  G  0  J  0  Craque -
+  - São Paulo FC | Div final 1 | Pos 5 na Div 1 | Movimento = | Caixa R$ 563,794 mil | Folha R$ 14,000 mil | Torcida 18.3M | Prestigio 84 | Emprestimo R$ 0 mil | Media elenco 72.5
+    Elenco:
+      - GOL Jandrei                  OVR 76  Sal  1101  G  0  J 13  Craque -
+      - GOL Rafael                   OVR 76  Sal  1185  G  0  J  3  Craque *
+      - GOL Young                    OVR 76  Sal   165  G  0  J  0  Craque -
+      - ZAG Igor Vinícius            OVR 75  Sal   764  G  1  J 16  Craque *
+      - ZAG Ferraresi                OVR 71  Sal   256  G  1  J 11  Craque -
+      - ZAG Alan Franco              OVR 71  Sal   156  G  2  J  7  Craque -
+      - ZAG Sabino                   OVR 71  Sal   349  G  0  J 16  Craque -
+      - ZAG Arboleda                 OVR 71  Sal   334  G  2  J 14  Craque -
+      - ZAG Patryck                  OVR 70  Sal   121  G  0  J  0  Craque -
+      - ZAG Welington                OVR 67  Sal   101  G  0  J  0  Craque -
+      - MEI Pablo Maia               OVR 74  Sal   191  G  2  J 16  Craque -
+      - MEI Alisson                  OVR 72  Sal   249  G  4  J 16  Craque -
+      - MEI Damián Bobadilla         OVR 69  Sal   229  G  0  J 14  Craque -
+      - MEI Matheus Alves            OVR 69  Sal   120  G  0  J  3  Craque -
+      - MEI Rodriguinho              OVR 69  Sal   116  G  2  J  5  Craque -
+      - MEI Marcos Antônio           OVR 69  Sal    93  G  0  J  1  Craque -
+      - MEI Wellington Rato          OVR 69  Sal   117  G  0  J  9  Craque -
+      - ATA Ferreira                 OVR 77  Sal   724  G  1  J  1  Craque -
+      - ATA Lucas Moura              OVR 77  Sal   577  G  4  J 10  Craque -
+      - ATA André Silva              OVR 77  Sal   823  G  0  J  2  Craque -
+      - ATA Calleri                  OVR 77  Sal   701  G  2  J 14  Craque *
+      - ATA Luciano                  OVR 77  Sal  1007  G  1  J  5  Craque -
+      - ATA William Gomes            OVR 71  Sal   233  G  0  J  0  Craque -
+      - ATA Erick                    OVR 71  Sal   428  G  0  J  0  Craque -
+      - ATA Henrique Carmo           OVR 69  Sal   116  G  0  J  0  Craque -
+  - Botafogo | Div final 1 | Pos 6 na Div 1 | Movimento = | Caixa R$ 963,229 mil | Folha R$ 20,000 mil | Torcida 12.9M | Prestigio 91 | Emprestimo R$ 0 mil | Media elenco 82.5
+    Elenco:
+      - GOL John                     OVR 87  Sal  2683  G  0  J  4  Craque *
+      - GOL Raul                     OVR 87  Sal  6862  G  1  J 16  Craque -
+      - GOL Léo Linck                OVR 86  Sal  1813  G  0  J  0  Craque -
+      - ZAG David Ricardo            OVR 80  Sal  1294  G  6  J 20  Craque -
+      - ZAG Bastos                   OVR 80  Sal   532  G  0  J  9  Craque -
+      - ZAG Alex Telles              OVR 80  Sal   736  G  2  J 17  Craque -
+      - ZAG Alexander Barboza        OVR 80  Sal   514  G  2  J 11  Craque -
+      - ZAG Vitinho                  OVR 80  Sal   964  G  3  J 17  Craque *
+      - ZAG Mateo Ponte              OVR 80  Sal   484  G  0  J  6  Craque -
+      - ZAG Cuiabano                 OVR 78  Sal   497  G  0  J  0  Craque -
+      - MEI Gregore                  OVR 83  Sal  1897  G  4  J 19  Craque -
+      - MEI Patrick de Paula         OVR 80  Sal   516  G  4  J 13  Craque -
+      - MEI Santiago Rodríguez       OVR 80  Sal   860  G  3  J 11  Craque -
+      - MEI Newton                   OVR 80  Sal   876  G  1  J  8  Craque -
+      - MEI Jefferson Savarino       OVR 80  Sal   817  G  0  J  4  Craque -
+      - MEI Allan                    OVR 80  Sal  1108  G  2  J 13  Craque -
+      - MEI Marlon Freitas           OVR 80  Sal   655  G  1  J 12  Craque -
+      - ATA Igor Jesus               OVR 87  Sal  2690  G  1  J 13  Craque *
+      - ATA Artur                    OVR 87  Sal  2754  G  3  J 14  Craque -
+      - ATA Jeffinho                 OVR 87  Sal  1897  G  3  J 13  Craque -
+      - ATA Matheus Martins          OVR 86  Sal  1756  G  0  J  0  Craque -
+      - ATA Elias Manoel             OVR 84  Sal  3183  G  0  J  0  Craque -
+      - ATA Santiago                 OVR 84  Sal  2016  G  0  J  0  Craque -
+      - ATA Rwan Cruz                OVR 83  Sal  1965  G  0  J  0  Craque -
+      - ATA Kayque                   OVR 83  Sal   550  G  0  J  0  Craque -
+  - RB Bragantino | Div final 2 | Pos 7 na Div 1 | Movimento REBAIXADO | Caixa R$ 343,774 mil | Folha R$ 9,500 mil | Torcida 1.6M | Prestigio 76 | Emprestimo R$ 0 mil | Media elenco 70.0
+    Elenco:
+      - GOL Lucão                    OVR 76  Sal   668  G  1  J  5  Craque -
+      - GOL Cleiton                  OVR 76  Sal   563  G  0  J  6  Craque *
+      - GOL Matheus Nogueira         OVR 76  Sal   870  G  1  J  7  Craque -
+      - ZAG Andrés Hurtado           OVR 72  Sal   199  G  2  J 17  Craque *
+      - ZAG Natan                    OVR 69  Sal   361  G  3  J 18  Craque -
+      - ZAG Nathan Mendes            OVR 68  Sal   130  G  4  J 17  Craque -
+      - ZAG Juninho Capixaba         OVR 67  Sal   120  G  0  J  0  Craque -
+      - ZAG Luan Cândido             OVR 67  Sal   128  G  2  J 11  Craque -
+      - ZAG Guzmán Rodríguez         OVR 67  Sal    99  G  0  J  9  Craque -
+      - ZAG Pedro Henrique           OVR 67  Sal   128  G  0  J  0  Craque -
+      - MEI Matheus Fernandes        OVR 70  Sal   314  G  3  J 18  Craque -
+      - MEI Jadsom                   OVR 70  Sal   198  G  2  J 18  Craque -
+      - MEI Jhon Jhon                OVR 66  Sal   150  G  5  J 15  Craque -
+      - MEI Lucas Evangelista        OVR 66  Sal   144  G  0  J  4  Craque -
+      - MEI Eric Ramires             OVR 66  Sal   141  G  2  J 17  Craque -
+      - MEI Gustavinho               OVR 66  Sal   137  G  0  J  0  Craque -
+      - MEI Raul                     OVR 66  Sal   102  G  0  J  0  Craque -
+      - ATA Eduardo Sasha            OVR 74  Sal   182  G  4  J 18  Craque -
+      - ATA Vitinho                  OVR 73  Sal   216  G  2  J  7  Craque -
+      - ATA Thiago Borbas            OVR 73  Sal   211  G  1  J  2  Craque *
+      - ATA Helinho                  OVR 73  Sal   309  G  0  J  9  Craque -
+      - ATA Henry Mosquera           OVR 72  Sal   302  G  0  J  0  Craque -
+      - ATA Lincoln                  OVR 71  Sal   145  G  0  J  0  Craque -
+      - ATA Talisson                 OVR 71  Sal    96  G  0  J  0  Craque -
+      - ATA Ignacio Laquintana       OVR 68  Sal    82  G  0  J  0  Craque -
+  - Corinthians | Div final 2 | Pos 8 na Div 1 | Movimento REBAIXADO | Caixa R$ 564,164 mil | Folha R$ 19,000 mil | Torcida 27.6M | Prestigio 87 | Emprestimo R$ 0 mil | Media elenco 78.0
+    Elenco:
+      - GOL Matheus Donelli          OVR 84  Sal  2958  G  0  J  3  Craque -
+      - GOL Hugo Souza               OVR 84  Sal  2284  G  0  J 19  Craque *
+      - GOL Felipe Longo             OVR 83  Sal  2222  G  0  J  0  Craque -
+      - ZAG Matheuzinho              OVR 80  Sal  2729  G  3  J 22  Craque *
+      - ZAG Gustavo Henrique         OVR 76  Sal   954  G  3  J 22  Craque -
+      - ZAG Hugo                     OVR 76  Sal  1116  G  2  J 10  Craque -
+      - ZAG Léo Maná                 OVR 76  Sal   880  G  2  J 18  Craque -
+      - ZAG Cacá                     OVR 76  Sal   437  G  1  J  5  Craque -
+      - ZAG Félix Torres             OVR 76  Sal   649  G  0  J 11  Craque -
+      - ZAG Bidu                     OVR 74  Sal   383  G  0  J  0  Craque -
+      - MEI Raniele                  OVR 80  Sal  2152  G  1  J 21  Craque -
+      - MEI Breno Bidon              OVR 76  Sal   753  G  5  J 22  Craque -
+      - MEI Charles                  OVR 75  Sal   410  G  0  J 13  Craque -
+      - MEI Maycon                   OVR 75  Sal  1103  G  3  J 17  Craque -
+      - MEI Rodrigo Garro            OVR 74  Sal   283  G  2  J 15  Craque -
+      - MEI Alex Santana             OVR 74  Sal   364  G  0  J  0  Craque -
+      - MEI André Carrillo           OVR 74  Sal   318  G  0  J  0  Craque -
+      - ATA Memphis Depay            OVR 81  Sal  2573  G  4  J 21  Craque -
+      - ATA Giovane                  OVR 81  Sal   924  G  0  J  4  Craque -
+      - ATA Yuri Alberto             OVR 81  Sal   650  G  1  J  5  Craque *
+      - ATA Talles Magno             OVR 81  Sal   941  G  4  J 13  Craque -
+      - ATA Ángel Romero             OVR 81  Sal  1013  G  0  J  1  Craque -
+      - ATA Pedro Raul               OVR 81  Sal   804  G  0  J  0  Craque -
+      - ATA Wesley                   OVR 79  Sal   639  G  0  J  0  Craque -
+      - ATA Kayke                    OVR 74  Sal   437  G  0  J  0  Craque -
+
+#### Divisao 2
+  - Fortaleza | Div final 1 | Pos 1 na Div 2 | Movimento PROMOVIDO | Caixa R$ 367,741 mil | Folha R$ 11,000 mil | Torcida 4.3M | Prestigio 78 | Emprestimo R$ 0 mil | Media elenco 72.8
+    Elenco:
+      - GOL Santos                   OVR 78  Sal  1010  G  0  J 20  Craque -
+      - GOL João Ricardo             OVR 78  Sal   801  G  0  J  0  Craque *
+      - GOL Magrão                   OVR 76  Sal   160  G  0  J  0  Craque -
+      - ZAG Tinga                    OVR 72  Sal   444  G  1  J 20  Craque *
+      - ZAG Mancuso                  OVR 70  Sal   392  G  4  J 17  Craque -
+      - ZAG Kuscevic                 OVR 70  Sal   149  G  0  J  5  Craque -
+      - ZAG Bruno Pacheco            OVR 70  Sal   433  G  2  J 15  Craque -
+      - ZAG Emanuel Brítez           OVR 70  Sal   305  G  0  J 10  Craque -
+      - ZAG Titi                     OVR 70  Sal   238  G  0  J 13  Craque -
+      - ZAG Talocha                  OVR 69  Sal    97  G  0  J  0  Craque -
+      - MEI Lucas Sasha              OVR 76  Sal   986  G  1  J 20  Craque -
+      - MEI Kervin Andrade           OVR 70  Sal   286  G  1  J 15  Craque -
+      - MEI Zé Welison               OVR 70  Sal   230  G  1  J 11  Craque -
+      - MEI Calebe                   OVR 70  Sal   208  G  1  J 15  Craque -
+      - MEI Martínez                 OVR 70  Sal   131  G  2  J  4  Craque -
+      - MEI Pochettino               OVR 70  Sal   392  G  7  J 15  Craque -
+      - MEI Hércules                 OVR 69  Sal   133  G  0  J  0  Craque -
+      - ATA Marinho                  OVR 77  Sal  1119  G  4  J 14  Craque -
+      - ATA Breno Lopes              OVR 77  Sal   459  G  0  J  0  Craque -
+      - ATA Lucero                   OVR 77  Sal   638  G  3  J 19  Craque *
+      - ATA Yago Pikachu             OVR 77  Sal   634  G  1  J  7  Craque -
+      - ATA Moisés                   OVR 77  Sal   175  G  0  J  0  Craque -
+      - ATA Renato Kayzer            OVR 75  Sal   232  G  0  J  0  Craque -
+      - ATA Pedro Rocha              OVR 71  Sal   369  G  0  J  0  Craque -
+      - ATA Allanzinho               OVR 69  Sal   138  G  0  J  0  Craque -
+  - Internacional | Div final 1 | Pos 2 na Div 2 | Movimento PROMOVIDO | Caixa R$ 670,627 mil | Folha R$ 14,000 mil | Torcida 8.8M | Prestigio 82 | Emprestimo R$ 0 mil | Media elenco 77.4
+    Elenco:
+      - GOL Sergio Rochet            OVR 84  Sal  1316  G  0  J  0  Craque *
+      - GOL Anthoni                  OVR 84  Sal  3226  G  1  J 22  Craque -
+      - GOL Ivan                     OVR 82  Sal   485  G  0  J  0  Craque -
+      - ZAG Vitão                    OVR 75  Sal   921  G  2  J 22  Craque -
+      - ZAG Alexandro Bernabei       OVR 74  Sal   814  G  0  J 18  Craque -
+      - ZAG Gabriel Mercado          OVR 74  Sal   430  G  1  J  1  Craque -
+      - ZAG Agustín Rogel            OVR 74  Sal   397  G  1  J 15  Craque -
+      - ZAG Bustos                   OVR 74  Sal   234  G  0  J  9  Craque *
+      - ZAG Braian Aguirre           OVR 74  Sal   385  G  1  J  5  Craque -
+      - ZAG Juninho                  OVR 74  Sal   365  G  4  J 18  Craque -
+      - MEI Thiago Maia              OVR 75  Sal   943  G  4  J 22  Craque -
+      - MEI Bruno Henrique           OVR 75  Sal   276  G  1  J 10  Craque -
+      - MEI Gabriel Tabata           OVR 75  Sal   294  G  0  J  8  Craque -
+      - MEI Alan Patrick             OVR 75  Sal   327  G  1  J  8  Craque -
+      - MEI Bruno Gomes              OVR 75  Sal  1139  G  7  J 22  Craque -
+      - MEI Fernando                 OVR 75  Sal  1154  G  5  J 18  Craque -
+      - MEI Rômulo                   OVR 74  Sal   318  G  0  J  0  Craque -
+      - ATA Lucca                    OVR 82  Sal   535  G  0  J  3  Craque -
+      - ATA Rafael Borré             OVR 82  Sal  1977  G  7  J 20  Craque *
+      - ATA Lucas Alario             OVR 82  Sal  1821  G  2  J 13  Craque -
+      - ATA Enner Valencia           OVR 82  Sal   603  G  2  J  8  Craque -
+      - ATA Wesley                   OVR 81  Sal   920  G  0  J  0  Craque -
+      - ATA Vitinho                  OVR 81  Sal   811  G  0  J  0  Craque -
+      - ATA Ricardo Mathias          OVR 78  Sal   876  G  0  J  0  Craque -
+      - ATA Gustavo Prado            OVR 74  Sal   313  G  0  J  0  Craque -
+  - Bahia | Div final 2 | Pos 3 na Div 2 | Movimento = | Caixa R$ 261,709 mil | Folha R$ 8,500 mil | Torcida 3.2M | Prestigio 74 | Emprestimo R$ 0 mil | Media elenco 69.9
+    Elenco:
+      - GOL Danilo Fernandes         OVR 76  Sal   993  G  1  J 12  Craque -
+      - GOL Marcos Felipe            OVR 76  Sal   728  G  0  J  4  Craque *
+      - GOL Adriel                   OVR 71  Sal   131  G  0  J  0  Craque -
+      - ZAG Arias                    OVR 71  Sal   194  G  1  J 16  Craque -
+      - ZAG Gilberto                 OVR 68  Sal   114  G  2  J 16  Craque *
+      - ZAG Luciano Juba             OVR 68  Sal   109  G  2  J 16  Craque -
+      - ZAG Kanu                     OVR 67  Sal   131  G  0  J  8  Craque -
+      - ZAG Gabriel Xavier           OVR 67  Sal    73  G  0  J  1  Craque -
+      - ZAG Iago Borduchi            OVR 67  Sal    70  G  0  J  7  Craque -
+      - ZAG David Duarte             OVR 67  Sal   109  G  0  J  0  Craque -
+      - MEI Everton Ribeiro          OVR 69  Sal   288  G  3  J 15  Craque -
+      - MEI Jean Lucas               OVR 68  Sal   408  G  2  J 16  Craque -
+      - MEI Rezende                  OVR 68  Sal   138  G  3  J 14  Craque -
+      - MEI Erick                    OVR 68  Sal   149  G  1  J  3  Craque -
+      - MEI Cauly                    OVR 68  Sal   117  G  2  J  7  Craque -
+      - MEI Caio Alexandre           OVR 68  Sal   140  G  0  J  9  Craque -
+      - MEI Nicolás Acevedo          OVR 67  Sal   149  G  0  J  0  Craque -
+      - ATA Biel                     OVR 74  Sal  1188  G  2  J 15  Craque -
+      - ATA Lucho Rodríguez          OVR 73  Sal   351  G  0  J  0  Craque -
+      - ATA Ademir                   OVR 73  Sal   420  G  2  J 11  Craque -
+      - ATA Everaldo                 OVR 73  Sal   202  G  0  J  6  Craque *
+      - ATA Kayky                    OVR 73  Sal   383  G  0  J  0  Craque -
+      - ATA Tiago                    OVR 71  Sal   299  G  0  J  0  Craque -
+      - ATA Willian José             OVR 69  Sal    70  G  0  J  0  Craque -
+      - ATA Rafael Ratão             OVR 67  Sal    97  G  0  J  0  Craque -
+  - Cruzeiro | Div final 2 | Pos 4 na Div 2 | Movimento = | Caixa R$ 434,550 mil | Folha R$ 13,000 mil | Torcida 8.9M | Prestigio 83 | Emprestimo R$ 0 mil | Media elenco 72.2
+    Elenco:
+      - GOL Cássio                   OVR 78  Sal   587  G  0  J  0  Craque *
+      - GOL Anderson                 OVR 78  Sal  1043  G  0  J 18  Craque -
+      - GOL Léo Aragão               OVR 75  Sal   233  G  0  J  0  Craque -
+      - ZAG William                  OVR 70  Sal   238  G  2  J 18  Craque *
+      - ZAG Fagner                   OVR 70  Sal   427  G  3  J 18  Craque -
+      - ZAG Jonathan Jesus           OVR 69  Sal    88  G  3  J  7  Craque -
+      - ZAG Fabrício Bruno           OVR 69  Sal    83  G  2  J 10  Craque -
+      - ZAG Kaiki                    OVR 69  Sal   112  G  0  J  9  Craque -
+      - ZAG Lucas Villalba           OVR 69  Sal   139  G  0  J 10  Craque -
+      - ZAG Marlon                   OVR 66  Sal   129  G  0  J  0  Craque -
+      - MEI Lucas Romero             OVR 75  Sal  1123  G  3  J 17  Craque -
+      - MEI Matheus Henrique         OVR 70  Sal   330  G  4  J 18  Craque -
+      - MEI Walace                   OVR 69  Sal   258  G  7  J 18  Craque -
+      - MEI Christian                OVR 69  Sal   116  G  2  J  7  Craque -
+      - MEI Eduardo                  OVR 69  Sal    93  G  4  J 12  Craque -
+      - MEI Japa                     OVR 69  Sal   114  G  0  J  0  Craque -
+      - MEI Matheus Pereira          OVR 68  Sal    75  G  0  J  0  Craque -
+      - ATA Kaio Jorge               OVR 79  Sal   559  G  1  J 15  Craque *
+      - ATA Lautaro Díaz             OVR 79  Sal   712  G  0  J  8  Craque -
+      - ATA Dudu                     OVR 79  Sal  1075  G  1  J 13  Craque -
+      - ATA Yannick Bolasie          OVR 76  Sal   327  G  0  J  0  Craque -
+      - ATA Marquinhos               OVR 76  Sal   333  G  0  J  0  Craque -
+      - ATA Wanderson                OVR 73  Sal   166  G  0  J  0  Craque -
+      - ATA Gabriel Veron            OVR 71  Sal   330  G  0  J  0  Craque -
+      - ATA Rafa Silva               OVR 70  Sal   144  G  0  J  0  Craque -
+  - Vitória | Div final 2 | Pos 5 na Div 2 | Movimento = | Caixa R$ 168,442 mil | Folha R$ 5,000 mil | Torcida 3.7M | Prestigio 68 | Emprestimo R$ 0 mil | Media elenco 53.8
+    Elenco:
+      - GOL Lucas Arcanjo            OVR 62  Sal    51  G  0  J  5  Craque *
+      - GOL Muriel                   OVR 62  Sal    67  G  0  J 11  Craque -
+      - GOL Dalton                   OVR 56  Sal    45  G  0  J  0  Craque -
+      - ZAG Raul Cáceres             OVR 60  Sal    44  G  1  J 16  Craque *
+      - ZAG Zeca                     OVR 52  Sal    37  G  2  J 16  Craque -
+      - ZAG Neris                    OVR 50  Sal    46  G  1  J  6  Craque -
+      - ZAG Wagner Leonardo          OVR 50  Sal    49  G  0  J 16  Craque -
+      - ZAG Camutanga                OVR 50  Sal    55  G  1  J 10  Craque -
+      - ZAG PK                       OVR 50  Sal    36  G  0  J  0  Craque -
+      - ZAG Patric Calmon            OVR 48  Sal    35  G  0  J  0  Craque -
+      - MEI Léo Naldi                OVR 62  Sal   134  G  2  J 16  Craque -
+      - MEI Rodrigo Andrade          OVR 53  Sal    57  G  2  J 16  Craque -
+      - MEI Willian Oliveira         OVR 51  Sal    39  G  2  J 16  Craque -
+      - MEI Jean Mota                OVR 50  Sal    51  G  4  J 15  Craque -
+      - MEI Caio Vinícius            OVR 49  Sal    66  G  0  J  1  Craque -
+      - MEI Matheuzinho              OVR 49  Sal    60  G  0  J  0  Craque -
+      - MEI Dudu                     OVR 46  Sal    67  G  0  J  0  Craque -
+      - ATA Alerrandro               OVR 62  Sal    50  G  4  J 14  Craque *
+      - ATA Osvaldo                  OVR 60  Sal    59  G  0  J  3  Craque -
+      - ATA Janderson                OVR 60  Sal    52  G  3  J 15  Craque -
+      - ATA Everaldo                 OVR 58  Sal    36  G  0  J  0  Craque -
+      - ATA Iury Castilho            OVR 56  Sal    55  G  0  J  0  Craque -
+      - ATA Wellington Rato          OVR 54  Sal    64  G  0  J  0  Craque -
+      - ATA Fábio Soares             OVR 46  Sal    50  G  0  J  0  Craque -
+      - ATA Carlos Eduardo           OVR 45  Sal    40  G  0  J  0  Craque -
+  - Vasco da Gama | Div final 2 | Pos 6 na Div 2 | Movimento = | Caixa R$ 388,387 mil | Folha R$ 9,000 mil | Torcida 10.7M | Prestigio 77 | Emprestimo R$ 0 mil | Media elenco 67.4
+    Elenco:
+      - GOL Léo Jardim               OVR 74  Sal   278  G  0  J 18  Craque *
+      - GOL Keiller                  OVR 73  Sal   446  G  0  J  0  Craque -
+      - GOL Pablo                    OVR 73  Sal   243  G  0  J  0  Craque -
+      - ZAG Puma Rodríguez           OVR 67  Sal   117  G  2  J 17  Craque -
+      - ZAG Paulo Henrique           OVR 65  Sal    99  G  1  J 18  Craque *
+      - ZAG Victor Luís              OVR 65  Sal   139  G  0  J  8  Craque -
+      - ZAG Maicon                   OVR 65  Sal   139  G  0  J  0  Craque -
+      - ZAG João Victor              OVR 65  Sal   112  G  2  J 12  Craque -
+      - ZAG Lucas Oliveira           OVR 65  Sal   120  G  2  J 17  Craque -
+      - ZAG Lucas Piton              OVR 64  Sal    55  G  0  J  0  Craque -
+      - MEI Tchê Tchê                OVR 66  Sal   120  G  1  J 17  Craque -
+      - MEI Hugo Moura               OVR 65  Sal   136  G  1  J 18  Craque -
+      - MEI Dimitri Payet            OVR 64  Sal    43  G  1  J  6  Craque -
+      - MEI Jair                     OVR 64  Sal    82  G  0  J  8  Craque -
+      - MEI Juan Sforza              OVR 64  Sal   112  G  0  J 11  Craque -
+      - MEI Philippe Coutinho        OVR 63  Sal    97  G  1  J 12  Craque -
+      - MEI Paulinho                 OVR 63  Sal    50  G  0  J  0  Craque -
+      - ATA Rayan                    OVR 72  Sal   339  G  1  J  5  Craque -
+      - ATA Pablo Vegetti            OVR 72  Sal   441  G  3  J 13  Craque *
+      - ATA Adson                    OVR 72  Sal   383  G  1  J  3  Craque -
+      - ATA Rossi                    OVR 72  Sal   442  G  2  J  7  Craque -
+      - ATA Alex Teixeira            OVR 72  Sal   180  G  2  J  8  Craque -
+      - ATA David                    OVR 69  Sal   140  G  0  J  0  Craque -
+      - ATA GB                       OVR 69  Sal    74  G  0  J  0  Craque -
+      - ATA Jean David               OVR 65  Sal    46  G  0  J  0  Craque -
+  - Fluminense | Div final 3 | Pos 7 na Div 2 | Movimento REBAIXADO | Caixa R$ 558,352 mil | Folha R$ 16,000 mil | Torcida 8.5M | Prestigio 79 | Emprestimo R$ 0 mil | Media elenco 80.1
+    Elenco:
+      - GOL Fábio                    OVR 87  Sal  4747  G  0  J 24  Craque *
+      - GOL Vitor Eudes              OVR 86  Sal  1761  G  0  J  0  Craque -
+      - GOL Pedro Rangel             OVR 86  Sal  2501  G  0  J  0  Craque -
+      - ZAG Guga                     OVR 81  Sal  1881  G  3  J 24  Craque -
+      - ZAG Fretes                   OVR 78  Sal   561  G  0  J  0  Craque -
+      - ZAG Thiago Silva             OVR 78  Sal   564  G  0  J  3  Craque -
+      - ZAG Manoel                   OVR 78  Sal   754  G  0  J  0  Craque -
+      - ZAG Thiago Santos            OVR 78  Sal   757  G  4  J 23  Craque -
+      - ZAG Renê                     OVR 78  Sal  1110  G  4  J 22  Craque -
+      - ZAG Samuel Xavier            OVR 78  Sal  1133  G  1  J 24  Craque *
+      - MEI Martinelli               OVR 78  Sal   759  G  4  J 24  Craque -
+      - MEI Otávio                   OVR 78  Sal   751  G  6  J 24  Craque -
+      - MEI Jhon Arias               OVR 77  Sal   806  G  4  J 24  Craque -
+      - MEI Nonato                   OVR 77  Sal   910  G  3  J 15  Craque -
+      - MEI Lima                     OVR 77  Sal   510  G  4  J  9  Craque -
+      - MEI Ganso                    OVR 77  Sal   300  G  0  J  0  Craque -
+      - MEI Kevin Serna              OVR 76  Sal   368  G  0  J  0  Craque -
+      - ATA Keno                     OVR 85  Sal  2033  G  4  J 13  Craque -
+      - ATA Germán Cano              OVR 85  Sal  1397  G  1  J 17  Craque *
+      - ATA Lelê                     OVR 85  Sal  2355  G  7  J 18  Craque -
+      - ATA Everaldo                 OVR 85  Sal  3310  G  0  J  0  Craque -
+      - ATA Agustín Canobbio         OVR 85  Sal  2769  G  0  J  0  Craque -
+      - ATA Marquinhos               OVR 80  Sal   987  G  0  J  0  Craque -
+      - ATA Isaac                    OVR 80  Sal   958  G  0  J  0  Craque -
+      - ATA Riquelme                 OVR 74  Sal   305  G  0  J  0  Craque -
+  - Cuiabá | Div final 3 | Pos 8 na Div 2 | Movimento REBAIXADO | Caixa R$ 129,743 mil | Folha R$ 5,000 mil | Torcida 1.2M | Prestigio 61 | Emprestimo R$ 0 mil | Media elenco 54.7
+    Elenco:
+      - GOL João Carlos              OVR 62  Sal    42  G  0  J 15  Craque -
+      - GOL Walter                   OVR 62  Sal    34  G  0  J  3  Craque *
+      - GOL Mateus Pasinato          OVR 57  Sal    70  G  0  J  0  Craque -
+      - ZAG Matheus Alexandre        OVR 60  Sal    69  G  1  J 17  Craque *
+      - ZAG Marllon                  OVR 55  Sal    30  G  1  J 18  Craque -
+      - ZAG Railan                   OVR 53  Sal    51  G  1  J 17  Craque -
+      - ZAG Bruno Alves              OVR 49  Sal    64  G  0  J  7  Craque -
+      - ZAG Alan Empereur            OVR 49  Sal    37  G  0  J 13  Craque -
+      - ZAG Sander                   OVR 49  Sal    65  G  0  J  0  Craque -
+      - ZAG Ramon                    OVR 46  Sal    55  G  0  J  0  Craque -
+      - MEI Denilson                 OVR 58  Sal    38  G  2  J 18  Craque -
+      - MEI Lucas Mineiro            OVR 54  Sal    31  G  1  J 17  Craque -
+      - MEI Max                      OVR 51  Sal    50  G  2  J 10  Craque -
+      - MEI Ronald                   OVR 51  Sal    45  G  0  J  1  Craque -
+      - MEI Filipe Augusto           OVR 51  Sal    50  G  0  J 18  Craque -
+      - MEI Fernando Sobral          OVR 51  Sal    60  G  1  J  8  Craque -
+      - MEI Clayson                  OVR 50  Sal    53  G  0  J  0  Craque -
+      - ATA Isidro Pitta             OVR 61  Sal    62  G  4  J 17  Craque *
+      - ATA Deyverson                OVR 60  Sal    56  G  3  J  4  Craque -
+      - ATA Jonathan Cafu            OVR 60  Sal    44  G  1  J 13  Craque -
+      - ATA Eliel                    OVR 60  Sal    35  G  0  J  2  Craque -
+      - ATA Derik Lacerda            OVR 59  Sal    31  G  0  J  0  Craque -
+      - ATA André Luís               OVR 58  Sal    40  G  0  J  0  Craque -
+      - ATA Wellington Silva         OVR 52  Sal    40  G  0  J  0  Craque -
+      - ATA Alisson Safira           OVR 50  Sal    58  G  0  J  0  Craque -
+
+#### Divisao 3
+  - Santos | Div final 2 | Pos 1 na Div 3 | Movimento PROMOVIDO | Caixa R$ 351,114 mil | Folha R$ 7,000 mil | Torcida 10.6M | Prestigio 73 | Emprestimo R$ 0 mil | Media elenco 62.1
+    Elenco:
+      - GOL Gabriel Brazão           OVR 69  Sal   140  G  1  J  5  Craque *
+      - GOL João Paulo               OVR 69  Sal   258  G  1  J 11  Craque -
+      - GOL Diógenes                 OVR 67  Sal   136  G  0  J  0  Craque -
+      - ZAG Aderlan                  OVR 63  Sal    98  G  1  J 16  Craque *
+      - ZAG JP Chermont              OVR 62  Sal   101  G  0  J 16  Craque -
+      - ZAG Zé Ivaldo                OVR 60  Sal    41  G  0  J  3  Craque -
+      - ZAG Escobar                  OVR 60  Sal    33  G  1  J 16  Craque -
+      - ZAG Gil                      OVR 60  Sal    66  G  1  J 13  Craque -
+      - ZAG Joaquim                  OVR 59  Sal    38  G  0  J  0  Craque -
+      - ZAG Kevyson                  OVR 58  Sal    37  G  0  J  0  Craque -
+      - MEI Tomás Rincón             OVR 61  Sal    66  G  7  J 16  Craque -
+      - MEI Diego Pituca             OVR 60  Sal    30  G  3  J 16  Craque -
+      - MEI Miguelito                OVR 58  Sal    59  G  0  J  6  Craque -
+      - MEI João Schmidt             OVR 58  Sal    67  G  0  J  2  Craque -
+      - MEI Otero                    OVR 58  Sal    33  G  2  J 11  Craque -
+      - MEI Cazares                  OVR 58  Sal    57  G  1  J 13  Craque -
+      - MEI Giuliano                 OVR 58  Sal    67  G  0  J  0  Craque -
+      - ATA Pedrinho                 OVR 66  Sal    86  G  1  J  6  Craque -
+      - ATA Guilherme                OVR 66  Sal   150  G  4  J 14  Craque *
+      - ATA Wendel Silva             OVR 66  Sal   118  G  1  J  2  Craque -
+      - ATA Willian Bigode           OVR 66  Sal    99  G  2  J 10  Craque -
+      - ATA Julio Furch              OVR 66  Sal   143  G  0  J  0  Craque -
+      - ATA Lucas Braga              OVR 65  Sal    83  G  0  J  0  Craque -
+      - ATA Morelos                  OVR 62  Sal    46  G  0  J  0  Craque -
+      - ATA Enzo Monteiro            OVR 58  Sal    41  G  0  J  0  Craque -
+  - Mirassol | Div final 2 | Pos 2 na Div 3 | Movimento PROMOVIDO | Caixa R$ 102,592 mil | Folha R$ 3,500 mil | Torcida 567K | Prestigio 57 | Emprestimo R$ 0 mil | Media elenco 47.5
+    Elenco:
+      - GOL Alex Muralha             OVR 57  Sal    63  G  1  J 16  Craque *
+      - GOL Walter                   OVR 57  Sal    57  G  0  J  0  Craque -
+      - GOL Vanderlei                OVR 52  Sal    70  G  0  J  0  Craque -
+      - ZAG Lucas Ramon              OVR 49  Sal    63  G  3  J 16  Craque *
+      - ZAG Rodrigo Ferreira         OVR 45  Sal    61  G  1  J 15  Craque -
+      - ZAG Daniel Borges            OVR 45  Sal    46  G  0  J  2  Craque -
+      - ZAG João Victor              OVR 45  Sal    45  G  2  J 15  Craque -
+      - ZAG Luiz Otávio              OVR 45  Sal    64  G  2  J 16  Craque -
+      - ZAG Zeca                     OVR 41  Sal    66  G  0  J  0  Craque -
+      - ZAG Reinaldo                 OVR 41  Sal    61  G  0  J  0  Craque -
+      - MEI Neto Moura               OVR 50  Sal    67  G  1  J 16  Craque -
+      - MEI Danielzinho              OVR 50  Sal    41  G  6  J 16  Craque -
+      - MEI Chico Kim                OVR 44  Sal    37  G  0  J  7  Craque -
+      - MEI Yago Felipe              OVR 44  Sal    47  G  1  J 11  Craque -
+      - MEI Negueba                  OVR 44  Sal    62  G  2  J 14  Craque -
+      - MEI Gabriel                  OVR 43  Sal    54  G  0  J  0  Craque -
+      - MEI Iury                     OVR 42  Sal    61  G  0  J  0  Craque -
+      - ATA Quirino                  OVR 54  Sal    39  G  3  J 16  Craque -
+      - ATA Fernandinho              OVR 54  Sal    38  G  0  J  3  Craque -
+      - ATA Dellatorre               OVR 54  Sal    55  G  0  J  8  Craque *
+      - ATA Zé Roberto               OVR 54  Sal    62  G  1  J  5  Craque -
+      - ATA Fabrício Daniel          OVR 52  Sal    39  G  0  J  0  Craque -
+      - ATA Rafinha                  OVR 46  Sal    70  G  0  J  0  Craque -
+      - ATA Nicolas                  OVR 44  Sal    35  G  0  J  0  Craque -
+      - ATA Alex Silva               OVR 41  Sal    60  G  0  J  0  Craque -
+  - Juventude | Div final 3 | Pos 3 na Div 3 | Movimento = | Caixa R$ 149,200 mil | Folha R$ 5,500 mil | Torcida 1.0M | Prestigio 65 | Emprestimo R$ 0 mil | Media elenco 54.9
+    Elenco:
+      - GOL Gabriel                  OVR 66  Sal    94  G  0  J 18  Craque *
+      - GOL César                    OVR 61  Sal    53  G  0  J  0  Craque -
+      - GOL Marcão                   OVR 60  Sal    55  G  0  J  0  Craque -
+      - ZAG João Lucas               OVR 62  Sal    69  G  3  J 18  Craque *
+      - ZAG Ewerthon                 OVR 53  Sal    63  G  1  J 18  Craque -
+      - ZAG Rodrigo Sam              OVR 51  Sal    38  G  4  J 18  Craque -
+      - ZAG Alan Ruschel             OVR 50  Sal    69  G  0  J  2  Craque -
+      - ZAG Danilo Boza              OVR 50  Sal    34  G  1  J 12  Craque -
+      - ZAG Abner                    OVR 50  Sal    58  G  0  J  4  Craque -
+      - ZAG Marcos Paulo             OVR 48  Sal    44  G  0  J  0  Craque -
+      - MEI Caique                   OVR 57  Sal    40  G  4  J 16  Craque -
+      - MEI Jean Irmer               OVR 56  Sal    57  G  1  J 18  Craque -
+      - MEI Mandaca                  OVR 53  Sal    31  G  3  J 14  Craque -
+      - MEI Jadson                   OVR 52  Sal    52  G  2  J  6  Craque -
+      - MEI Nenê                     OVR 52  Sal    69  G  2  J 18  Craque -
+      - MEI Luis Oyama               OVR 48  Sal    45  G  0  J  0  Craque -
+      - MEI Luan Dias                OVR 47  Sal    68  G  0  J  0  Craque -
+      - ATA Gilberto                 OVR 61  Sal    53  G  0  J  2  Craque -
+      - ATA Lucas Barbosa            OVR 61  Sal    33  G  1  J 17  Craque -
+      - ATA Erick Farias             OVR 61  Sal    51  G  5  J 17  Craque *
+      - ATA Marcelinho               OVR 60  Sal    40  G  0  J  0  Craque -
+      - ATA Edinho                   OVR 56  Sal    61  G  0  J  0  Craque -
+      - ATA Gabriel Taliari          OVR 54  Sal    46  G  0  J  0  Craque -
+      - ATA Taliari                  OVR 54  Sal    40  G  0  J  0  Craque -
+      - ATA Da Silva                 OVR 48  Sal    32  G  0  J  0  Craque -
+  - Sport Recife | Div final 3 | Pos 4 na Div 3 | Movimento = | Caixa R$ 126,523 mil | Folha R$ 4,000 mil | Torcida 2.6M | Prestigio 61 | Emprestimo R$ 0 mil | Media elenco 47.8
+    Elenco:
+      - GOL Caíque França            OVR 57  Sal    43  G  0  J  9  Craque *
+      - GOL Denis                    OVR 57  Sal    60  G  0  J  7  Craque -
+      - GOL Adriel                   OVR 54  Sal    33  G  0  J  0  Craque -
+      - ZAG Rosales                  OVR 48  Sal    65  G  2  J 16  Craque *
+      - ZAG Hereda                   OVR 45  Sal    34  G  1  J 16  Craque -
+      - ZAG Chico                    OVR 44  Sal    63  G  1  J  6  Craque -
+      - ZAG Luciano Castán           OVR 44  Sal    67  G  2  J 15  Craque -
+      - ZAG Rafael Thyere            OVR 44  Sal    54  G  1  J 11  Craque -
+      - ZAG Felipinho                OVR 44  Sal    49  G  0  J  0  Craque -
+      - ZAG Igor Cariús              OVR 43  Sal    61  G  0  J  0  Craque -
+      - MEI Fabinho                  OVR 51  Sal    69  G  2  J 16  Craque -
+      - MEI Felipe                   OVR 49  Sal    68  G  4  J 16  Craque -
+      - MEI Lucas Lima               OVR 46  Sal    49  G  1  J 16  Craque -
+      - MEI Julián Fernández         OVR 42  Sal    63  G  1  J 11  Craque -
+      - MEI Pedro Vilhena            OVR 42  Sal    62  G  1  J  2  Craque -
+      - MEI Titi Ortíz               OVR 42  Sal    53  G  0  J  3  Craque -
+      - MEI Alan Ruiz                OVR 41  Sal    62  G  0  J  0  Craque -
+      - ATA Barletta                 OVR 55  Sal    61  G  3  J 16  Craque *
+      - ATA Gustavo Coutinho         OVR 54  Sal    62  G  1  J 14  Craque -
+      - ATA Zé Roberto               OVR 54  Sal    65  G  1  J  2  Craque -
+      - ATA Romarinho                OVR 53  Sal    39  G  0  J  0  Craque -
+      - ATA Chrystian                OVR 51  Sal    67  G  0  J  0  Craque -
+      - ATA Pablo Dyego              OVR 50  Sal    30  G  0  J  0  Craque -
+      - ATA Lenny Lobato             OVR 45  Sal    35  G  0  J  0  Craque -
+      - ATA Diego Souza Jr           OVR 42  Sal    59  G  0  J  0  Craque -
+  - Atlético Goianiense | Div final 3 | Pos 5 na Div 3 | Movimento = | Caixa R$ 132,986 mil | Folha R$ 4,500 mil | Torcida 1.6M | Prestigio 61 | Emprestimo R$ 0 mil | Media elenco 51.5
+    Elenco:
+      - GOL Ronaldo                  OVR 60  Sal    59  G  0  J 11  Craque *
+      - GOL Luan Polli               OVR 60  Sal    36  G  0  J  5  Craque -
+      - GOL Pedro Paulo              OVR 53  Sal    44  G  0  J  0  Craque -
+      - ZAG Bruno Tubarão            OVR 57  Sal    38  G  1  J 16  Craque *
+      - ZAG Maguinho                 OVR 49  Sal    68  G  3  J 16  Craque -
+      - ZAG Alix Vinicius            OVR 48  Sal    63  G  2  J 16  Craque -
+      - ZAG Lucas Gazal              OVR 47  Sal    44  G  1  J  7  Craque -
+      - ZAG Guilherme Romão          OVR 47  Sal    69  G  1  J  4  Craque -
+      - ZAG Luiz Felipe              OVR 47  Sal    60  G  1  J  5  Craque -
+      - ZAG Rhaldney                 OVR 44  Sal    41  G  0  J  0  Craque -
+      - MEI Roni                     OVR 57  Sal    47  G  3  J 15  Craque -
+      - MEI Emiliano Rodríguez       OVR 48  Sal    69  G  1  J 16  Craque -
+      - MEI Jorginho                 OVR 48  Sal    49  G  2  J 12  Craque -
+      - MEI Shaylon                  OVR 48  Sal    34  G  1  J  7  Craque -
+      - MEI Baralhas                 OVR 48  Sal    32  G  3  J 14  Craque -
+      - MEI Léo Pereira              OVR 47  Sal    32  G  0  J  0  Craque -
+      - MEI Campanharo               OVR 45  Sal    65  G  0  J  0  Craque -
+      - ATA Luiz Fernando            OVR 61  Sal    70  G  1  J 16  Craque *
+      - ATA Janderson                OVR 59  Sal    60  G  0  J 10  Craque -
+      - ATA Derek                    OVR 59  Sal    44  G  1  J  6  Craque -
+      - ATA Alejo Cruz               OVR 57  Sal    55  G  0  J  0  Craque -
+      - ATA Hyuri                    OVR 56  Sal    58  G  0  J  0  Craque -
+      - ATA Danielzinho              OVR 52  Sal    56  G  0  J  0  Craque -
+      - ATA Gustavo Coutinho         OVR 46  Sal    58  G  0  J  0  Craque -
+      - ATA Yony González            OVR 45  Sal    70  G  0  J  0  Craque -
+  - Athletico Paranaense | Div final 3 | Pos 6 na Div 3 | Movimento = | Caixa R$ 257,404 mil | Folha R$ 9,000 mil | Torcida 5.1M | Prestigio 74 | Emprestimo R$ 0 mil | Media elenco 66.2
+    Elenco:
+      - GOL Léo Linck                OVR 71  Sal   348  G  0  J  0  Craque -
+      - GOL Santos                   OVR 71  Sal   156  G  0  J 11  Craque -
+      - GOL Mycael                   OVR 71  Sal   238  G  0  J  5  Craque *
+      - ZAG Léo Godoy                OVR 64  Sal    80  G  2  J 16  Craque *
+      - ZAG Kaique Rocha             OVR 63  Sal    79  G  0  J 16  Craque -
+      - ZAG Fernando                 OVR 63  Sal    57  G  0  J  8  Craque -
+      - ZAG Madson                   OVR 63  Sal    35  G  5  J 13  Craque -
+      - ZAG Belezi                   OVR 63  Sal    31  G  0  J  3  Craque -
+      - ZAG Lucas Esquivel           OVR 63  Sal    59  G  2  J  8  Craque -
+      - ZAG Matheus Felipe           OVR 63  Sal    62  G  0  J  0  Craque -
+      - MEI Erick                    OVR 69  Sal    74  G  1  J 15  Craque -
+      - MEI Canobbio                 OVR 65  Sal    96  G  3  J 16  Craque -
+      - MEI Christian                OVR 65  Sal   121  G  2  J 16  Craque -
+      - MEI Giuliano                 OVR 64  Sal   112  G  3  J 13  Craque -
+      - MEI Alex Santana             OVR 64  Sal    37  G  0  J  0  Craque -
+      - MEI Felipinho                OVR 64  Sal    39  G  0  J  1  Craque -
+      - MEI Bruno Zapelli            OVR 64  Sal    97  G  0  J  3  Craque -
+      - ATA Mastriani                OVR 72  Sal   387  G  3  J 13  Craque -
+      - ATA Cuello                   OVR 72  Sal   438  G  2  J 14  Craque -
+      - ATA Pablo                    OVR 72  Sal   357  G  0  J  5  Craque *
+      - ATA Rômulo                   OVR 72  Sal   412  G  0  J  0  Craque -
+      - ATA Di Yorio                 OVR 67  Sal    78  G  0  J  0  Craque -
+      - ATA Isaac                    OVR 65  Sal   126  G  0  J  0  Craque -
+      - ATA Emersonn                 OVR 65  Sal    82  G  0  J  0  Craque -
+      - ATA Julimar                  OVR 64  Sal    48  G  0  J  0  Craque -
+  - Criciúma | Div final 4 | Pos 7 na Div 3 | Movimento REBAIXADO | Caixa R$ 117,657 mil | Folha R$ 4,500 mil | Torcida 727K | Prestigio 56 | Emprestimo R$ 0 mil | Media elenco 47.9
+    Elenco:
+      - GOL Alisson                  OVR 54  Sal    65  G  2  J 17  Craque -
+      - GOL Gustavo                  OVR 54  Sal    66  G  0  J  2  Craque *
+      - GOL Kauã                     OVR 51  Sal    50  G  0  J  0  Craque -
+      - ZAG Claudinho                OVR 52  Sal    66  G  4  J 18  Craque *
+      - ZAG Jonathan                 OVR 49  Sal    36  G  0  J 17  Craque -
+      - ZAG Rodrigo                  OVR 46  Sal    65  G  1  J 18  Craque -
+      - ZAG Tobias Figueiredo        OVR 46  Sal    31  G  0  J 10  Craque -
+      - ZAG Victor Luís              OVR 46  Sal    70  G  0  J  9  Craque -
+      - ZAG Marcelo Hermes           OVR 44  Sal    53  G  0  J  0  Craque -
+      - ZAG Dudu                     OVR 36  Sal    69  G  0  J  0  Craque -
+      - MEI Barreto                  OVR 51  Sal    43  G  4  J 18  Craque -
+      - MEI Higor Meritão            OVR 47  Sal    70  G  3  J 18  Craque -
+      - MEI Fellipe Mateus           OVR 46  Sal    54  G  1  J 17  Craque -
+      - MEI Marquinhos Gabriel       OVR 44  Sal    35  G  0  J  5  Craque -
+      - MEI Newton                   OVR 44  Sal    56  G  0  J 14  Craque -
+      - MEI Rômulo                   OVR 41  Sal    54  G  0  J  0  Craque -
+      - MEI Miquéias                 OVR 38  Sal    49  G  0  J  0  Craque -
+      - ATA Allano                   OVR 54  Sal    36  G  5  J 14  Craque -
+      - ATA Yannick Bolasie          OVR 54  Sal    39  G  2  J 17  Craque *
+      - ATA Arthur Caíke             OVR 54  Sal    35  G  0  J  5  Craque -
+      - ATA Ronald                   OVR 53  Sal    53  G  0  J  0  Craque -
+      - ATA Matheusinho              OVR 52  Sal    35  G  0  J  0  Craque -
+      - ATA Jhonata Robert           OVR 51  Sal    62  G  0  J  0  Craque -
+      - ATA Éder                     OVR 48  Sal    59  G  0  J  0  Craque -
+      - ATA Felipinho                OVR 42  Sal    52  G  0  J  0  Craque -
+  - Vila Nova | Div final 4 | Pos 8 na Div 3 | Movimento REBAIXADO | Caixa R$ 91,110 mil | Folha R$ 3,600 mil | Torcida 1.5M | Prestigio 56 | Emprestimo R$ 0 mil | Media elenco 31.8
+    Elenco:
+      - GOL Helton Leite             OVR 38  Sal    64  G  0  J  3  Craque *
+      - GOL Dalberson                OVR 38  Sal    62  G  0  J 14  Craque -
+      - GOL Airton                   OVR 34  Sal    53  G  0  J  0  Craque -
+      - ZAG Caio Marcelo             OVR 35  Sal    62  G  1  J 16  Craque *
+      - ZAG Anderson Jesus           OVR 33  Sal    31  G  1  J 16  Craque -
+      - ZAG Elias                    OVR 30  Sal    38  G  3  J 16  Craque -
+      - ZAG Weverton                 OVR 29  Sal    68  G  1  J  6  Craque -
+      - ZAG Higor                    OVR 29  Sal    57  G  1  J 10  Craque -
+      - ZAG Tiago Pagnussat          OVR 28  Sal    68  G  0  J  0  Craque -
+      - ZAG Hayner                   OVR 24  Sal    63  G  0  J  0  Craque -
+      - MEI Nathan Camargo           OVR 36  Sal    31  G  1  J 16  Craque -
+      - MEI Dudu                     OVR 35  Sal    66  G  2  J 14  Craque -
+      - MEI João Vieira              OVR 28  Sal    36  G  1  J 13  Craque -
+      - MEI Willian Maranhão         OVR 28  Sal    42  G  0  J  8  Craque -
+      - MEI Dodô                     OVR 28  Sal    68  G  0  J  9  Craque -
+      - MEI Marco Antonio            OVR 28  Sal    48  G  0  J  4  Craque -
+      - MEI Marquinhos Gabriel       OVR 24  Sal    70  G  0  J  0  Craque -
+      - ATA Andre Luis               OVR 39  Sal    55  G  2  J 13  Craque -
+      - ATA Dellatorre               OVR 39  Sal    33  G  0  J 11  Craque -
+      - ATA Ruan Ribeiro             OVR 39  Sal    66  G  2  J  8  Craque *
+      - ATA Bruno Xavier             OVR 37  Sal    57  G  0  J  0  Craque -
+      - ATA Rafa Silva               OVR 35  Sal    37  G  0  J  0  Craque -
+      - ATA Emerson Urso             OVR 30  Sal    38  G  0  J  0  Craque -
+      - ATA Janderson                OVR 28  Sal    38  G  0  J  0  Craque -
+      - ATA Alesson                  OVR 23  Sal    60  G  0  J  0  Craque -
+
+#### Divisao 4
+  - Ceará | Div final 3 | Pos 1 na Div 4 | Movimento PROMOVIDO | Caixa R$ 146,204 mil | Folha R$ 4,000 mil | Torcida 2.4M | Prestigio 62 | Emprestimo R$ 0 mil | Media elenco 51.2
+    Elenco:
+      - GOL Richard                  OVR 60  Sal    45  G  1  J 16  Craque *
+      - GOL Bruno Ferreira           OVR 58  Sal    64  G  0  J  0  Craque -
+      - GOL Fernando Miguel          OVR 57  Sal    56  G  0  J  0  Craque -
+      - ZAG Rafael Ramos             OVR 53  Sal    64  G  0  J 16  Craque *
+      - ZAG Raí Ramos                OVR 52  Sal    68  G  0  J 16  Craque -
+      - ZAG David Ricardo            OVR 49  Sal    36  G  4  J 15  Craque -
+      - ZAG Eric Melo                OVR 48  Sal    65  G  0  J  3  Craque -
+      - ZAG Luiz Otávio              OVR 48  Sal    54  G  1  J  8  Craque -
+      - ZAG Matheus Felipe           OVR 47  Sal    55  G  0  J  6  Craque -
+      - ZAG Warley                   OVR 43  Sal    60  G  0  J  0  Craque -
+      - MEI Richardson               OVR 56  Sal    66  G  4  J 16  Craque -
+      - MEI Lourenço                 OVR 52  Sal    47  G  3  J 16  Craque -
+      - MEI Lucas Mugni              OVR 49  Sal    48  G  3  J 16  Craque -
+      - MEI Rômulo                   OVR 46  Sal    46  G  4  J  7  Craque -
+      - MEI Aylon                    OVR 46  Sal    31  G  5  J  9  Craque -
+      - MEI De Lucca                 OVR 45  Sal    67  G  0  J  0  Craque -
+      - MEI Fernando Sobral          OVR 44  Sal    60  G  0  J  0  Craque -
+      - ATA Barceló                  OVR 58  Sal    40  G  1  J 14  Craque -
+      - ATA Saulo Mineiro            OVR 57  Sal    37  G  0  J  3  Craque *
+      - ATA Cléber                   OVR 57  Sal    30  G  1  J 15  Craque -
+      - ATA Facundo Castro           OVR 57  Sal    32  G  0  J  0  Craque -
+      - ATA Recalde                  OVR 56  Sal    58  G  0  J  0  Craque -
+      - ATA Janderson                OVR 51  Sal    30  G  0  J  0  Craque -
+      - ATA Erick Pulga              OVR 50  Sal    31  G  0  J  0  Craque -
+      - ATA Guilherme Bissoli        OVR 43  Sal    54  G  0  J  0  Craque -
+  - América Mineiro | Div final 3 | Pos 2 na Div 4 | Movimento PROMOVIDO | Caixa R$ 130,232 mil | Folha R$ 4,500 mil | Torcida 2.7M | Prestigio 68 | Emprestimo R$ 0 mil | Media elenco 34.4
+    Elenco:
+      - GOL Matheus Mendes           OVR 42  Sal    45  G  0  J 17  Craque *
+      - GOL Jori                     OVR 42  Sal    70  G  0  J  2  Craque -
+      - GOL Dalberson                OVR 34  Sal    39  G  0  J  0  Craque -
+      - ZAG Ricardo Silva            OVR 38  Sal    53  G  2  J 18  Craque -
+      - ZAG Marlon                   OVR 38  Sal    69  G  2  J 18  Craque *
+      - ZAG Maguinho                 OVR 32  Sal    50  G  3  J 17  Craque -
+      - ZAG Júlio                    OVR 32  Sal    55  G  1  J  7  Craque -
+      - ZAG Nicolas                  OVR 32  Sal    66  G  1  J 12  Craque -
+      - ZAG Lucão                    OVR 30  Sal    58  G  0  J  0  Craque -
+      - ZAG Paulinho                 OVR 25  Sal    69  G  0  J  0  Craque -
+      - MEI Alê                      OVR 36  Sal    68  G  2  J 18  Craque -
+      - MEI Moisés                   OVR 34  Sal    68  G  2  J 18  Craque -
+      - MEI Cauan Barros             OVR 31  Sal    70  G  0  J  9  Craque -
+      - MEI Fabinho Santos           OVR 31  Sal    40  G  2  J 18  Craque -
+      - MEI Miguelito                OVR 31  Sal    52  G  2  J  9  Craque -
+      - MEI Benítez                  OVR 30  Sal    65  G  0  J  0  Craque -
+      - MEI Jhosefer                 OVR 26  Sal    62  G  0  J  0  Craque -
+      - ATA Fabinho                  OVR 43  Sal    48  G  5  J 18  Craque *
+      - ATA Willian Bigode           OVR 42  Sal    31  G  2  J 10  Craque -
+      - ATA Adyson                   OVR 42  Sal    67  G  1  J  8  Craque -
+      - ATA Guilherme Pato           OVR 42  Sal    47  G  0  J  0  Craque -
+      - ATA Brenner                  OVR 36  Sal    31  G  0  J  0  Craque -
+      - ATA Renato Marques           OVR 34  Sal    35  G  0  J  0  Craque -
+      - ATA Stênio                   OVR 31  Sal    57  G  0  J  0  Craque -
+      - ATA Aloísio                  OVR 27  Sal    32  G  0  J  0  Craque -
+  - Avaí | Div final 4 | Pos 3 na Div 4 | Movimento = | Caixa R$ 83,935 mil | Folha R$ 3,800 mil | Torcida 1.6M | Prestigio 61 | Emprestimo R$ 0 mil | Media elenco 30.9
+    Elenco:
+      - GOL Otávio Passos            OVR 38  Sal    69  G  0  J 13  Craque -
+      - GOL Igor Bohn                OVR 38  Sal    42  G  0  J  3  Craque *
+      - GOL Léo Aragão               OVR 35  Sal    38  G  0  J  0  Craque -
+      - ZAG Douglas Teixeira         OVR 36  Sal    49  G  1  J 16  Craque *
+      - ZAG Quaresma                 OVR 31  Sal    69  G  0  J 16  Craque -
+      - ZAG Allyson                  OVR 29  Sal    40  G  3  J 15  Craque -
+      - ZAG Wesley Gasolina          OVR 28  Sal    60  G  0  J  6  Craque -
+      - ZAG Wallison                 OVR 28  Sal    44  G  0  J  7  Craque -
+      - ZAG Guilherme Aquino         OVR 28  Sal    44  G  1  J  4  Craque -
+      - ZAG Gabriel Simples          OVR 24  Sal    70  G  0  J  0  Craque -
+      - MEI Jean Lucas               OVR 37  Sal    47  G  2  J 15  Craque -
+      - MEI Daniel Penha             OVR 29  Sal    39  G  5  J 16  Craque -
+      - MEI Zé Ricardo               OVR 28  Sal    67  G  2  J 16  Craque -
+      - MEI Romildo Del Piage        OVR 26  Sal    68  G  2  J  8  Craque -
+      - MEI Wenderson                OVR 26  Sal    67  G  0  J  9  Craque -
+      - MEI Hyan                     OVR 25  Sal    63  G  0  J  0  Craque -
+      - MEI Luiz Henrique            OVR 23  Sal    67  G  0  J  0  Craque -
+      - ATA Rafael Bilu              OVR 41  Sal    49  G  2  J 16  Craque *
+      - ATA Sorriso                  OVR 37  Sal    59  G  3  J 16  Craque -
+      - ATA Felipe Avenatti          OVR 37  Sal    69  G  0  J  0  Craque -
+      - ATA Maurício Garcez          OVR 35  Sal    45  G  0  J  0  Craque -
+      - ATA Gaspar                   OVR 35  Sal    45  G  0  J  0  Craque -
+      - ATA Thayllon                 OVR 31  Sal    66  G  0  J  0  Craque -
+      - ATA Igor Rosa                OVR 26  Sal    62  G  0  J  0  Craque -
+      - ATA Mário Sérgio             OVR 22  Sal    46  G  0  J  0  Craque -
+  - Goiás | Div final 4 | Pos 4 na Div 4 | Movimento = | Caixa R$ 114,659 mil | Folha R$ 4,600 mil | Torcida 2.7M | Prestigio 60 | Emprestimo R$ 0 mil | Media elenco 35.2
+    Elenco:
+      - GOL Tadeu                    OVR 45  Sal    37  G  0  J 16  Craque *
+      - GOL Thiago Rodrigues         OVR 44  Sal    59  G  0  J  0  Craque -
+      - GOL Marcão                   OVR 36  Sal    46  G  0  J  0  Craque -
+      - ZAG Ezequiel                 OVR 39  Sal    70  G  2  J 16  Craque *
+      - ZAG Lucas Ribeiro            OVR 39  Sal    45  G  2  J 16  Craque -
+      - ZAG Luiz Felipe              OVR 33  Sal    38  G  2  J 16  Craque -
+      - ZAG Rodrigo Soares           OVR 30  Sal    55  G  0  J  1  Craque -
+      - ZAG Nicolas                  OVR 30  Sal    35  G  1  J  9  Craque -
+      - ZAG Anthony                  OVR 30  Sal    59  G  0  J  6  Craque -
+      - ZAG Titi                     OVR 29  Sal    67  G  0  J  0  Craque -
+      - MEI Gegê                     OVR 42  Sal    43  G  3  J 16  Craque -
+      - MEI Juninho                  OVR 34  Sal    69  G  2  J 16  Craque -
+      - MEI Lourenço                 OVR 32  Sal    51  G  0  J  9  Craque -
+      - MEI Brayann                  OVR 32  Sal    46  G  4  J 10  Craque -
+      - MEI Filipe Machado           OVR 32  Sal    54  G  1  J 13  Craque -
+      - MEI Lucas Lima               OVR 31  Sal    31  G  0  J  0  Craque -
+      - MEI Jean Carlos              OVR 27  Sal    50  G  0  J  0  Craque -
+      - ATA Wellington Rato          OVR 43  Sal    56  G  5  J 16  Craque *
+      - ATA Bruno Sávio              OVR 42  Sal    53  G  1  J 12  Craque -
+      - ATA Pedrinho                 OVR 42  Sal    36  G  0  J  1  Craque -
+      - ATA Esli García              OVR 42  Sal    44  G  1  J  3  Craque -
+      - ATA Anselmo Ramon            OVR 38  Sal    60  G  0  J  0  Craque -
+      - ATA Jajá                     OVR 32  Sal    59  G  0  J  0  Craque -
+      - ATA Cadu                     OVR 30  Sal    64  G  0  J  0  Craque -
+      - ATA Arthur Caíke             OVR 29  Sal    36  G  0  J  0  Craque -
+  - Paysandu | Div final 4 | Pos 5 na Div 4 | Movimento = | Caixa R$ 85,057 mil | Folha R$ 3,600 mil | Torcida 1.5M | Prestigio 57 | Emprestimo R$ 0 mil | Media elenco 27.9
+    Elenco:
+      - GOL Gabriel Mesquita         OVR 33  Sal    44  G  0  J 16  Craque *
+      - GOL Jean Drosny              OVR 33  Sal    40  G  0  J  0  Craque -
+      - GOL Matheus Nogueira         OVR 30  Sal    31  G  0  J  0  Craque -
+      - ZAG Marcão                   OVR 32  Sal    37  G  3  J 16  Craque *
+      - ZAG Edílson                  OVR 28  Sal    68  G  0  J 16  Craque -
+      - ZAG Luccão                   OVR 26  Sal    50  G  2  J  8  Craque -
+      - ZAG Bruno Bispo              OVR 26  Sal    55  G  1  J  5  Craque -
+      - ZAG Yeferson Quintana        OVR 26  Sal    38  G  2  J 16  Craque -
+      - ZAG PK                       OVR 26  Sal    69  G  0  J  3  Craque -
+      - ZAG Reverson                 OVR 19  Sal    68  G  0  J  0  Craque -
+      - MEI Leandro Vilela           OVR 35  Sal    37  G  0  J 16  Craque -
+      - MEI Marlon                   OVR 29  Sal    30  G  2  J 16  Craque -
+      - MEI Matheus Vargas           OVR 24  Sal    41  G  4  J 16  Craque -
+      - MEI Cavan                    OVR 24  Sal    64  G  0  J  2  Craque -
+      - MEI Ramon Martinez           OVR 24  Sal    41  G  2  J 14  Craque -
+      - MEI Giovanni                 OVR 23  Sal    60  G  0  J  0  Craque -
+      - MEI Robinho                  OVR 21  Sal    51  G  0  J  0  Craque -
+      - ATA Nicolas                  OVR 34  Sal    51  G  2  J 13  Craque *
+      - ATA Benitez                  OVR 34  Sal    55  G  1  J  8  Craque -
+      - ATA Marlon Douglas           OVR 34  Sal    31  G  2  J 11  Craque -
+      - ATA Edinho                   OVR 34  Sal    54  G  0  J  0  Craque -
+      - ATA Ciel                     OVR 28  Sal    47  G  0  J  0  Craque -
+      - ATA Eliel                    OVR 26  Sal    39  G  0  J  0  Craque -
+      - ATA Kevin                    OVR 25  Sal    61  G  0  J  0  Craque -
+      - ATA Diogo Oliveira           OVR 24  Sal    33  G  0  J  0  Craque -
+  - Novorizontino | Div final 4 | Pos 6 na Div 4 | Movimento = | Caixa R$ 67,428 mil | Folha R$ 3,200 mil | Torcida 959K | Prestigio 57 | Emprestimo R$ 0 mil | Media elenco 27.7
+    Elenco:
+      - GOL Airton                   OVR 34  Sal    59  G  0  J  9  Craque -
+      - GOL Jordi                    OVR 34  Sal    63  G  1  J  7  Craque *
+      - GOL César Augusto            OVR 31  Sal    44  G  0  J  0  Craque -
+      - ZAG Patrick                  OVR 31  Sal    52  G  3  J 16  Craque *
+      - ZAG Dantas                   OVR 26  Sal    50  G  0  J 16  Craque -
+      - ZAG César Martins            OVR 24  Sal    60  G  1  J 14  Craque -
+      - ZAG Rômulo                   OVR 24  Sal    30  G  0  J  2  Craque -
+      - ZAG Mayk                     OVR 24  Sal    48  G  0  J  5  Craque -
+      - ZAG Rafael Donato            OVR 24  Sal    37  G  0  J 11  Craque -
+      - ZAG Raí Ramos                OVR 21  Sal    41  G  0  J  0  Craque -
+      - MEI Fábio Matheus            OVR 32  Sal    49  G  0  J 16  Craque -
+      - MEI Jean Irmer               OVR 30  Sal    68  G  2  J 16  Craque -
+      - MEI Lucca                    OVR 26  Sal    44  G  4  J 16  Craque -
+      - MEI Matheus Frizzo           OVR 25  Sal    58  G  0  J  0  Craque -
+      - MEI Marlon                   OVR 25  Sal    64  G  3  J 16  Craque -
+      - MEI Waguininho               OVR 23  Sal    39  G  0  J  0  Craque -
+      - MEI Robson                   OVR 22  Sal    51  G  0  J  0  Craque -
+      - ATA Bruno José               OVR 34  Sal    31  G  2  J 10  Craque -
+      - ATA Nicolas Careca           OVR 34  Sal    54  G  0  J  9  Craque -
+      - ATA Caio Dantas              OVR 34  Sal    41  G  2  J 13  Craque *
+      - ATA Léo Tocantins            OVR 33  Sal    42  G  0  J  0  Craque -
+      - ATA Neto Pessoa              OVR 29  Sal    55  G  0  J  0  Craque -
+      - ATA Everaldo                 OVR 28  Sal    49  G  0  J  0  Craque -
+      - ATA Jenison                  OVR 23  Sal    37  G  0  J  0  Craque -
+      - ATA Rodolfo                  OVR 21  Sal    39  G  0  J  0  Craque -
+  - Coritiba | Div final 4 | Pos 7 na Div 4 | Movimento = | Caixa R$ 112,167 mil | Folha R$ 4,800 mil | Torcida 3.0M | Prestigio 63 | Emprestimo R$ 0 mil | Media elenco 38.3
+    Elenco:
+      - GOL Pedro Morisco            OVR 46  Sal    49  G  0  J 12  Craque *
+      - GOL Pedro Rangel             OVR 46  Sal    57  G  0  J  4  Craque -
+      - GOL Gabriel Leite            OVR 44  Sal    47  G  0  J  0  Craque -
+      - ZAG Maicon                   OVR 41  Sal    61  G  1  J 16  Craque -
+      - ZAG Tiago Coser              OVR 41  Sal    49  G  0  J 16  Craque *
+      - ZAG João Almeida             OVR 35  Sal    55  G  0  J 10  Craque -
+      - ZAG Felipe Guimarães         OVR 35  Sal    36  G  0  J  1  Craque -
+      - ZAG Guilherme Aquino         OVR 34  Sal    51  G  0  J  8  Craque -
+      - ZAG Jacy                     OVR 34  Sal    61  G  2  J 13  Craque -
+      - ZAG Bruno Melo               OVR 30  Sal    41  G  0  J  0  Craque -
+      - MEI Sebastián Gómez          OVR 44  Sal    37  G  2  J 16  Craque -
+      - MEI Willian Oliveira         OVR 37  Sal    67  G  1  J 16  Craque -
+      - MEI Josué                    OVR 36  Sal    36  G  2  J 15  Craque -
+      - MEI Geovane                  OVR 35  Sal    68  G  0  J  5  Craque -
+      - MEI Jean Gabriel             OVR 35  Sal    56  G  1  J 12  Craque -
+      - MEI Carlos de Pena           OVR 32  Sal    42  G  0  J  0  Craque -
+      - MEI Matheus Bianqui          OVR 31  Sal    53  G  0  J  0  Craque -
+      - ATA Clayson                  OVR 46  Sal    67  G  2  J 16  Craque *
+      - ATA Dellatorre               OVR 44  Sal    38  G  1  J  7  Craque -
+      - ATA Lucas Ronier             OVR 44  Sal    54  G  2  J  9  Craque -
+      - ATA Nicolas Careca           OVR 44  Sal    61  G  0  J  0  Craque -
+      - ATA Gustavo Coutinho         OVR 42  Sal    39  G  0  J  0  Craque -
+      - ATA Iury Castilho            OVR 39  Sal    35  G  0  J  0  Craque -
+      - ATA Joaquín Lavega           OVR 35  Sal    39  G  0  J  0  Craque -
+      - ATA Pedro Rocha              OVR 29  Sal    52  G  0  J  0  Craque -
+  - CRB | Div final 4 | Pos 8 na Div 4 | Movimento = | Caixa R$ 71,205 mil | Folha R$ 3,500 mil | Torcida 1.3M | Prestigio 59 | Emprestimo R$ 0 mil | Media elenco 28.2
+    Elenco:
+      - GOL Matheus Albino           OVR 36  Sal    41  G  0  J 15  Craque *
+      - GOL Vitor Caetano            OVR 36  Sal    60  G  0  J  2  Craque -
+      - GOL Pablo                    OVR 31  Sal    62  G  0  J  0  Craque -
+      - ZAG Hereda                   OVR 30  Sal    58  G  2  J 15  Craque *
+      - ZAG Henri                    OVR 28  Sal    51  G  0  J 16  Craque -
+      - ZAG Segovia                  OVR 27  Sal    35  G  0  J 16  Craque -
+      - ZAG Fábio Alemão             OVR 25  Sal    54  G  1  J 16  Craque -
+      - ZAG Lucas Lovat              OVR 25  Sal    38  G  0  J  1  Craque -
+      - ZAG Weverton                 OVR 24  Sal    61  G  0  J  0  Craque -
+      - ZAG Ryan                     OVR 23  Sal    53  G  0  J  0  Craque -
+      - MEI Danielzinho              OVR 31  Sal    36  G  2  J 15  Craque -
+      - MEI Higor Meritão            OVR 29  Sal    67  G  0  J 16  Craque -
+      - MEI Geovane                  OVR 25  Sal    47  G  0  J 15  Craque -
+      - MEI Gegê                     OVR 24  Sal    69  G  0  J 14  Craque -
+      - MEI Lucas Kallyel            OVR 24  Sal    38  G  0  J  4  Craque -
+      - MEI Mikael                   OVR 24  Sal    33  G  0  J  0  Craque -
+      - MEI Douglas Baggio           OVR 21  Sal    68  G  0  J  0  Craque -
+      - ATA Léo Pereira              OVR 36  Sal    51  G  2  J 10  Craque -
+      - ATA William Pottker          OVR 36  Sal    67  G  1  J  6  Craque -
+      - ATA Anselmo Ramon            OVR 36  Sal    31  G  1  J 16  Craque *
+      - ATA Dadá Belmonte            OVR 34  Sal    30  G  0  J  0  Craque -
+      - ATA João Neto                OVR 29  Sal    70  G  0  J  0  Craque -
+      - ATA Thiaguinho               OVR 27  Sal    52  G  0  J  0  Craque -
+      - ATA Labandeira               OVR 23  Sal    40  G  0  J  0  Craque -
+      - ATA Rafinha                  OVR 22  Sal    42  G  0  J  0  Craque -
+
+## Temporada 2029
+
+### Campeoes
+- Divisao 1: Palmeiras
+- Divisao 2: Corinthians
+- Divisao 3: Fluminense
+- Divisao 4: Criciúma
+- Copa: Atlético Mineiro
+
+### Artilheiros
+- Artilheiro da temporada: Felipe Anderson (Palmeiras) - 9 gols
+- Top 1: Felipe Anderson (Palmeiras) - 9 gols
+- Top 2: Otávio (Atlético Mineiro) - 9 gols
+- Top 3: Raniele (Corinthians) - 8 gols
+- Top 4: Erick Pulgar (Flamengo) - 7 gols
+- Top 5: Allan (Flamengo) - 7 gols
+- Top 6: Alan Franco (Atlético Mineiro) - 7 gols
+- Top 7: Hulk (Atlético Mineiro) - 7 gols
+- Top 8: Keno (Fluminense) - 7 gols
+- Top 9: Matheus Fernandes (RB Bragantino) - 7 gols
+- Top 10: Everton Araújo (Flamengo) - 6 gols
+
+### Promovidos
+- Corinthians: 2 -> 1
+- RB Bragantino: 2 -> 1
+- Ceará: 3 -> 2
+- Fluminense: 3 -> 2
+- Criciúma: 4 -> 3
+- Goiás: 4 -> 3
+
+### Rebaixados
+- Internacional: 1 -> 2
+- São Paulo FC: 1 -> 2
+- Bahia: 2 -> 3
+- Mirassol: 2 -> 3
+- América Mineiro: 3 -> 4
+- Sport Recife: 3 -> 4
+
+### Destaques Financeiros e Tecnicos
+- Melhor ataque: Fluminense com 36 gols
+- Melhor defesa: Fluminense com 9 gols sofridos
+- Maior publico: Palmeiras x São Paulo FC - 80,000
+- Maior renda: Flamengo x Corinthians - R$ 12,096 mil
+
+### Clubes, Financas e Elencos
+#### Divisao 1
+  - Palmeiras | Div final 1 | Pos 1 na Div 1 | Movimento = | Caixa R$ 1,152,744 mil | Folha R$ 24,000 mil | Torcida 15.6M | Prestigio 96 | Emprestimo R$ 0 mil | Media elenco 86.8
+    Elenco:
+      - GOL Weverton                 OVR 93  Sal  6662  G  0  J 16  Craque *
+      - GOL Marcelo Lomba            OVR 92  Sal  5187  G  0  J  4  Craque -
+      - GOL Mateus Oliveira          OVR 90  Sal  6979  G  0  J  0  Craque -
+      - ZAG Agustín Giay             OVR 88  Sal  4123  G  2  J 20  Craque *
+      - ZAG Murilo                   OVR 85  Sal  2986  G  3  J 16  Craque -
+      - ZAG Mayke                    OVR 85  Sal  2252  G  1  J 18  Craque -
+      - ZAG Naves                    OVR 85  Sal  2890  G  0  J  8  Craque -
+      - ZAG Marcos Rocha             OVR 85  Sal  1922  G  1  J 18  Craque -
+      - ZAG Gustavo Gómez            OVR 84  Sal  1876  G  0  J  0  Craque -
+      - ZAG Joaquín Piquerez         OVR 78  Sal   887  G  0  J  0  Craque -
+      - MEI Felipe Anderson          OVR 85  Sal  3471  G  9  J 20  Craque -
+      - MEI Emiliano Martínez        OVR 84  Sal  3206  G  3  J 18  Craque -
+      - MEI Richard Ríos             OVR 84  Sal  3310  G  1  J 20  Craque -
+      - MEI Aníbal Moreno            OVR 83  Sal  2038  G  1  J 13  Craque -
+      - MEI Raphael Veiga            OVR 83  Sal  1769  G  2  J  9  Craque -
+      - MEI Maurício                 OVR 83  Sal  2323  G  0  J  0  Craque -
+      - MEI Fabinho                  OVR 83  Sal  1966  G  0  J  0  Craque -
+      - ATA Facundo Torres           OVR 92  Sal  6269  G  4  J 20  Craque -
+      - ATA Estêvão                  OVR 91  Sal  3826  G  0  J  4  Craque *
+      - ATA Paulinho                 OVR 91  Sal  6329  G  1  J  5  Craque -
+      - ATA Flaco López              OVR 91  Sal  3824  G  6  J 11  Craque -
+      - ATA Bruno Rodrigues          OVR 91  Sal  5258  G  0  J  0  Craque -
+      - ATA Vitor Roque              OVR 90  Sal  6569  G  0  J  0  Craque -
+      - ATA Luighi                   OVR 88  Sal  2382  G  0  J  0  Craque -
+      - ATA Rony                     OVR 86  Sal  2588  G  0  J  0  Craque -
+  - Atlético Mineiro | Div final 1 | Pos 2 na Div 1 | Movimento = | Caixa R$ 1,161,106 mil | Folha R$ 20,000 mil | Torcida 14.1M | Prestigio 93 | Emprestimo R$ 0 mil | Media elenco 81.4
+    Elenco:
+      - GOL Gabriel Delfim           OVR 86  Sal  3054  G  0  J  6  Craque -
+      - GOL Everson                  OVR 86  Sal  3071  G  1  J 18  Craque *
+      - GOL Matheus Mendes           OVR 85  Sal  2387  G  0  J  0  Craque -
+      - ZAG Rubens                   OVR 80  Sal  3051  G  2  J 24  Craque -
+      - ZAG Igor Rabello             OVR 80  Sal   962  G  0  J 10  Craque -
+      - ZAG Lyanco                   OVR 80  Sal  1172  G  0  J  8  Craque -
+      - ZAG Júnior Alonso            OVR 80  Sal  1119  G  0  J 14  Craque -
+      - ZAG Guilherme Arana          OVR 80  Sal   558  G  4  J 10  Craque -
+      - ZAG Bruno Fuchs              OVR 80  Sal   581  G  1  J 16  Craque -
+      - ZAG Saravia                  OVR 80  Sal   463  G  4  J 14  Craque *
+      - MEI Alan Franco              OVR 79  Sal   627  G  7  J 22  Craque -
+      - MEI Patrick                  OVR 78  Sal  1100  G  6  J 23  Craque -
+      - MEI Otávio                   OVR 78  Sal   851  G  9  J 18  Craque -
+      - MEI Bernard                  OVR 78  Sal   724  G  0  J  4  Craque -
+      - MEI Igor Gomes               OVR 78  Sal  1166  G  0  J  3  Craque -
+      - MEI Gustavo Scarpa           OVR 78  Sal   557  G  3  J  8  Craque -
+      - MEI Fausto Vera              OVR 78  Sal   810  G  5  J 18  Craque -
+      - ATA Tomás Cuello             OVR 85  Sal  1404  G  0  J  1  Craque -
+      - ATA Cadu                     OVR 85  Sal  2869  G  2  J  4  Craque -
+      - ATA Deyverson                OVR 85  Sal  2660  G  2  J 12  Craque -
+      - ATA Eduardo Vargas           OVR 85  Sal  2386  G  3  J 15  Craque -
+      - ATA Hulk                     OVR 85  Sal  1395  G  7  J 16  Craque *
+      - ATA Alisson                  OVR 84  Sal  1249  G  0  J  0  Craque -
+      - ATA Rony                     OVR 84  Sal  1323  G  0  J  0  Craque -
+      - ATA Cristian Pavón           OVR 79  Sal  1132  G  0  J  0  Craque -
+  - Fortaleza | Div final 1 | Pos 3 na Div 1 | Movimento = | Caixa R$ 449,359 mil | Folha R$ 11,000 mil | Torcida 4.4M | Prestigio 79 | Emprestimo R$ 0 mil | Media elenco 72.3
+    Elenco:
+      - GOL Santos                   OVR 78  Sal   489  G  0  J 10  Craque -
+      - GOL João Ricardo             OVR 78  Sal  1192  G  0  J  2  Craque *
+      - GOL Magrão                   OVR 78  Sal   840  G  0  J  4  Craque -
+      - ZAG Bruno Pacheco            OVR 70  Sal   426  G  0  J 16  Craque -
+      - ZAG Kuscevic                 OVR 69  Sal   137  G  0  J  8  Craque -
+      - ZAG Mancuso                  OVR 69  Sal   232  G  2  J 14  Craque -
+      - ZAG Emanuel Brítez           OVR 69  Sal    84  G  0  J  1  Craque -
+      - ZAG Talocha                  OVR 69  Sal   341  G  1  J 16  Craque -
+      - ZAG Tinga                    OVR 69  Sal    82  G  2  J  9  Craque *
+      - ZAG Titi                     OVR 68  Sal   116  G  0  J  0  Craque -
+      - MEI Lucas Sasha              OVR 73  Sal   258  G  0  J 16  Craque -
+      - MEI Kervin Andrade           OVR 70  Sal   442  G  3  J 16  Craque -
+      - MEI Pochettino               OVR 70  Sal   336  G  0  J 14  Craque -
+      - MEI Hércules                 OVR 70  Sal    87  G  1  J  1  Craque -
+      - MEI Calebe                   OVR 70  Sal    75  G  0  J  5  Craque -
+      - MEI Zé Welison               OVR 70  Sal   153  G  3  J 12  Craque -
+      - MEI Martínez                 OVR 69  Sal    91  G  0  J  0  Craque -
+      - ATA Breno Lopes              OVR 78  Sal  1093  G  1  J  3  Craque -
+      - ATA Lucero                   OVR 78  Sal  1052  G  2  J  7  Craque *
+      - ATA Yago Pikachu             OVR 78  Sal  1044  G  3  J 11  Craque -
+      - ATA Marinho                  OVR 77  Sal   911  G  2  J 11  Craque -
+      - ATA Moisés                   OVR 75  Sal   299  G  0  J  0  Craque -
+      - ATA Renato Kayzer            OVR 74  Sal   284  G  0  J  0  Craque -
+      - ATA Pedro Rocha              OVR 73  Sal   352  G  0  J  0  Craque -
+      - ATA Allanzinho               OVR 67  Sal    77  G  0  J  0  Craque -
+  - Grêmio | Div final 1 | Pos 4 na Div 1 | Movimento = | Caixa R$ 798,867 mil | Folha R$ 13,000 mil | Torcida 9.7M | Prestigio 84 | Emprestimo R$ 0 mil | Media elenco 79.7
+    Elenco:
+      - GOL Caíque                   OVR 84  Sal  1721  G  0  J  1  Craque -
+      - GOL Agustín Marchesín        OVR 84  Sal  1818  G  0  J  8  Craque *
+      - GOL Gabriel Grando           OVR 84  Sal  3490  G  0  J 15  Craque -
+      - ZAG João Pedro               OVR 79  Sal  1132  G  2  J 22  Craque *
+      - ZAG Reinaldo                 OVR 77  Sal   652  G  1  J 22  Craque -
+      - ZAG Jemerson                 OVR 77  Sal  1016  G  0  J  5  Craque -
+      - ZAG Kannemann                OVR 77  Sal   759  G  0  J  2  Craque -
+      - ZAG Fábio                    OVR 77  Sal  1200  G  3  J 14  Craque -
+      - ZAG Rodrigo Ely              OVR 77  Sal   911  G  4  J 20  Craque -
+      - ZAG Mayk                     OVR 77  Sal   592  G  0  J  3  Craque -
+      - MEI Mathías Villasanti       OVR 80  Sal  3097  G  2  J 22  Craque -
+      - MEI Dodi                     OVR 79  Sal   708  G  1  J 22  Craque -
+      - MEI Pepê                     OVR 77  Sal   926  G  0  J  0  Craque -
+      - MEI Franco Cristaldo         OVR 77  Sal   661  G  2  J 18  Craque -
+      - MEI Edenilson                OVR 77  Sal   552  G  4  J 17  Craque -
+      - MEI Nathan                   OVR 77  Sal   952  G  0  J  9  Craque -
+      - MEI Miguel Monsalve          OVR 77  Sal   442  G  0  J  0  Craque -
+      - ATA Martin Braithwaite       OVR 84  Sal  1282  G  0  J  8  Craque *
+      - ATA Pavon                    OVR 84  Sal  2164  G  1  J 11  Craque -
+      - ATA Cristian Olivera         OVR 84  Sal  2896  G  1  J  6  Craque -
+      - ATA Aravena                  OVR 84  Sal  2039  G  4  J 17  Craque -
+      - ATA André Henrique           OVR 84  Sal  1856  G  1  J  2  Craque -
+      - ATA Alysson                  OVR 81  Sal   693  G  0  J  0  Craque -
+      - ATA Matias Arezo             OVR 80  Sal   996  G  0  J  0  Craque -
+      - ATA Soteldo                  OVR 78  Sal   900  G  0  J  0  Craque -
+  - Flamengo | Div final 1 | Pos 5 na Div 1 | Movimento = | Caixa R$ 1,263,736 mil | Folha R$ 28,000 mil | Torcida 32.8M | Prestigio 100 | Emprestimo R$ 0 mil | Media elenco 86.1
+    Elenco:
+      - GOL Matheus Cunha            OVR 92  Sal  5734  G  0  J  5  Craque -
+      - GOL Dyogo Alves              OVR 92  Sal  3905  G  1  J 19  Craque -
+      - GOL Rossi                    OVR 92  Sal  4427  G  0  J  1  Craque *
+      - ZAG Alex Sandro              OVR 84  Sal  1568  G  3  J 24  Craque -
+      - ZAG Danilo                   OVR 83  Sal  2902  G  3  J 12  Craque -
+      - ZAG Guillermo Varela         OVR 83  Sal  1731  G  0  J 19  Craque -
+      - ZAG Léo Ortiz                OVR 83  Sal  1705  G  2  J  7  Craque -
+      - ZAG Léo Pereira              OVR 83  Sal  1497  G  1  J 15  Craque -
+      - ZAG Wesley                   OVR 83  Sal  2092  G  1  J 19  Craque *
+      - ZAG Ayrton Lucas             OVR 82  Sal   580  G  0  J  0  Craque -
+      - MEI Erick Pulgar             OVR 86  Sal  6215  G  7  J 24  Craque -
+      - MEI Nicolás De La Cruz       OVR 84  Sal  3150  G  2  J  8  Craque -
+      - MEI Everton Araújo           OVR 84  Sal  2035  G  6  J 18  Craque -
+      - MEI Carlos Alcaraz           OVR 84  Sal  3411  G  0  J  6  Craque -
+      - MEI Allan                    OVR 84  Sal  3125  G  7  J 18  Craque -
+      - MEI Giorgian De Arrascaeta   OVR 84  Sal  3049  G  3  J 16  Craque -
+      - MEI Gerson                   OVR 84  Sal  3008  G  1  J  6  Craque -
+      - ATA Bruno Henrique           OVR 91  Sal  4840  G  1  J 12  Craque -
+      - ATA Luiz Araújo              OVR 91  Sal  4080  G  1  J 22  Craque -
+      - ATA Michael                  OVR 90  Sal  5644  G  0  J  4  Craque -
+      - ATA Pedro                    OVR 90  Sal  3612  G  0  J 10  Craque *
+      - ATA Everton Cebolinha        OVR 88  Sal  1989  G  0  J  0  Craque -
+      - ATA Gonzalo Plata            OVR 86  Sal  1389  G  0  J  0  Craque -
+      - ATA Juninho                  OVR 86  Sal  2383  G  0  J  0  Craque -
+      - ATA Matheus Gonçalves        OVR 84  Sal  2067  G  0  J  0  Craque -
+  - Botafogo | Div final 1 | Pos 6 na Div 1 | Movimento = | Caixa R$ 1,101,901 mil | Folha R$ 20,000 mil | Torcida 13.2M | Prestigio 92 | Emprestimo R$ 0 mil | Media elenco 82.2
+    Elenco:
+      - GOL John                     OVR 88  Sal  3717  G  0  J 11  Craque *
+      - GOL Raul                     OVR 88  Sal  4672  G  0  J  8  Craque -
+      - GOL Léo Linck                OVR 87  Sal  3348  G  0  J  0  Craque -
+      - ZAG David Ricardo            OVR 80  Sal  1180  G  0  J 18  Craque -
+      - ZAG Bastos                   OVR 79  Sal   524  G  0  J  4  Craque -
+      - ZAG Alex Telles              OVR 79  Sal   762  G  0  J  3  Craque -
+      - ZAG Cuiabano                 OVR 79  Sal   523  G  0  J 10  Craque -
+      - ZAG Mateo Ponte              OVR 79  Sal   845  G  2  J 10  Craque -
+      - ZAG Vitinho                  OVR 79  Sal  1056  G  1  J 15  Craque *
+      - ZAG Alexander Barboza        OVR 79  Sal   693  G  1  J 12  Craque -
+      - MEI Gregore                  OVR 81  Sal  1810  G  3  J 18  Craque -
+      - MEI Jefferson Savarino       OVR 80  Sal   832  G  0  J 18  Craque -
+      - MEI Allan                    OVR 79  Sal   625  G  0  J  1  Craque -
+      - MEI Patrick de Paula         OVR 79  Sal  1014  G  1  J 12  Craque -
+      - MEI Newton                   OVR 79  Sal   544  G  4  J 10  Craque -
+      - MEI Santiago Rodríguez       OVR 79  Sal  1200  G  2  J  9  Craque -
+      - MEI Marlon Freitas           OVR 79  Sal   749  G  2  J  4  Craque -
+      - ATA Artur                    OVR 86  Sal  1327  G  1  J  7  Craque -
+      - ATA Santiago                 OVR 86  Sal  2904  G  0  J  1  Craque -
+      - ATA Elias Manoel             OVR 86  Sal  1793  G  0  J  0  Craque -
+      - ATA Igor Jesus               OVR 86  Sal  3602  G  5  J 18  Craque *
+      - ATA Matheus Martins          OVR 86  Sal  2496  G  1  J 10  Craque -
+      - ATA Jeffinho                 OVR 86  Sal  1616  G  0  J  0  Craque -
+      - ATA Rwan Cruz                OVR 85  Sal  2723  G  0  J  0  Craque -
+      - ATA Kayque                   OVR 82  Sal   948  G  0  J  0  Craque -
+  - Internacional | Div final 2 | Pos 7 na Div 1 | Movimento REBAIXADO | Caixa R$ 771,787 mil | Folha R$ 14,000 mil | Torcida 7.7M | Prestigio 77 | Emprestimo R$ 0 mil | Media elenco 76.9
+    Elenco:
+      - GOL Anthoni                  OVR 84  Sal  1402  G  0  J  2  Craque -
+      - GOL Sergio Rochet            OVR 84  Sal  2056  G  0  J 15  Craque *
+      - GOL Ivan                     OVR 81  Sal  1192  G  0  J  0  Craque -
+      - ZAG Agustín Rogel            OVR 73  Sal   298  G  2  J 16  Craque -
+      - ZAG Alexandro Bernabei       OVR 73  Sal   372  G  1  J  9  Craque -
+      - ZAG Bustos                   OVR 73  Sal   284  G  0  J  1  Craque *
+      - ZAG Braian Aguirre           OVR 73  Sal   205  G  3  J 15  Craque -
+      - ZAG Juninho                  OVR 73  Sal   294  G  0  J  6  Craque -
+      - ZAG Gabriel Mercado          OVR 73  Sal   289  G  0  J  4  Craque -
+      - ZAG Vitão                    OVR 73  Sal   315  G  1  J 13  Craque -
+      - MEI Thiago Maia              OVR 76  Sal   566  G  3  J 16  Craque -
+      - MEI Fernando                 OVR 74  Sal   410  G  1  J 12  Craque -
+      - MEI Bruno Gomes              OVR 74  Sal   209  G  0  J  2  Craque -
+      - MEI Bruno Henrique           OVR 74  Sal   173  G  0  J  4  Craque -
+      - MEI Alan Patrick             OVR 74  Sal   228  G  3  J  7  Craque -
+      - MEI Gabriel Tabata           OVR 74  Sal   291  G  0  J 15  Craque -
+      - MEI Rômulo                   OVR 74  Sal   443  G  0  J  8  Craque -
+      - ATA Rafael Borré             OVR 81  Sal   968  G  0  J  0  Craque *
+      - ATA Lucas Alario             OVR 81  Sal  1006  G  1  J  5  Craque -
+      - ATA Lucca                    OVR 81  Sal  3088  G  0  J  9  Craque -
+      - ATA Wesley                   OVR 81  Sal  3030  G  3  J  9  Craque -
+      - ATA Vitinho                  OVR 81  Sal  3185  G  2  J  9  Craque -
+      - ATA Enner Valencia           OVR 81  Sal   685  G  0  J  0  Craque -
+      - ATA Ricardo Mathias          OVR 80  Sal   948  G  0  J  0  Craque -
+      - ATA Gustavo Prado            OVR 74  Sal   395  G  0  J  0  Craque -
+  - São Paulo FC | Div final 2 | Pos 8 na Div 1 | Movimento REBAIXADO | Caixa R$ 716,100 mil | Folha R$ 14,000 mil | Torcida 16.7M | Prestigio 82 | Emprestimo R$ 0 mil | Media elenco 71.8
+    Elenco:
+      - GOL Young                    OVR 75  Sal   261  G  0  J  5  Craque -
+      - GOL Jandrei                  OVR 75  Sal   252  G  0  J 11  Craque -
+      - GOL Rafael                   OVR 75  Sal   227  G  0  J  4  Craque *
+      - ZAG Igor Vinícius            OVR 72  Sal   296  G  2  J 20  Craque *
+      - ZAG Ferraresi                OVR 71  Sal   278  G  1  J 20  Craque -
+      - ZAG Arboleda                 OVR 71  Sal   424  G  3  J 20  Craque -
+      - ZAG Sabino                   OVR 70  Sal   268  G  0  J  6  Craque -
+      - ZAG Alan Franco              OVR 70  Sal   359  G  1  J 14  Craque -
+      - ZAG Patryck                  OVR 70  Sal    89  G  0  J  0  Craque -
+      - ZAG Welington                OVR 66  Sal   102  G  0  J  0  Craque -
+      - MEI Pablo Maia               OVR 72  Sal   299  G  5  J 20  Craque -
+      - MEI Rodriguinho              OVR 69  Sal    89  G  1  J 11  Craque -
+      - MEI Alisson                  OVR 69  Sal   436  G  2  J 19  Craque -
+      - MEI Matheus Alves            OVR 69  Sal   138  G  0  J 11  Craque -
+      - MEI Marcos Antônio           OVR 69  Sal   145  G  0  J  6  Craque -
+      - MEI Damián Bobadilla         OVR 69  Sal   127  G  2  J 13  Craque -
+      - MEI Wellington Rato          OVR 69  Sal    70  G  0  J  0  Craque -
+      - ATA André Silva              OVR 77  Sal   709  G  4  J 20  Craque -
+      - ATA Calleri                  OVR 76  Sal   229  G  1  J  6  Craque *
+      - ATA Ferreira                 OVR 76  Sal   685  G  1  J 10  Craque -
+      - ATA Luciano                  OVR 76  Sal   202  G  0  J  2  Craque -
+      - ATA Lucas Moura              OVR 76  Sal   334  G  0  J  2  Craque -
+      - ATA Erick                    OVR 73  Sal   225  G  0  J  0  Craque -
+      - ATA Henrique Carmo           OVR 71  Sal   195  G  0  J  0  Craque -
+      - ATA William Gomes            OVR 70  Sal    96  G  0  J  0  Craque -
+
+#### Divisao 2
+  - Corinthians | Div final 1 | Pos 1 na Div 2 | Movimento PROMOVIDO | Caixa R$ 689,127 mil | Folha R$ 19,000 mil | Torcida 31.1M | Prestigio 92 | Emprestimo R$ 0 mil | Media elenco 77.8
+    Elenco:
+      - GOL Felipe Longo             OVR 84  Sal  2082  G  0  J  2  Craque -
+      - GOL Matheus Donelli          OVR 84  Sal  2230  G  0  J 13  Craque -
+      - GOL Hugo Souza               OVR 84  Sal  1491  G  0  J  3  Craque *
+      - ZAG Matheuzinho              OVR 78  Sal  1191  G  1  J 18  Craque *
+      - ZAG Gustavo Henrique         OVR 75  Sal   477  G  2  J 18  Craque -
+      - ZAG Bidu                     OVR 75  Sal   241  G  1  J  5  Craque -
+      - ZAG Léo Maná                 OVR 75  Sal   489  G  5  J 13  Craque -
+      - ZAG Cacá                     OVR 75  Sal   677  G  4  J 18  Craque -
+      - ZAG Hugo                     OVR 75  Sal   311  G  0  J  0  Craque -
+      - ZAG Félix Torres             OVR 75  Sal   206  G  0  J  0  Craque -
+      - MEI Raniele                  OVR 77  Sal  1147  G  8  J 18  Craque -
+      - MEI Alex Santana             OVR 74  Sal   975  G  3  J 17  Craque -
+      - MEI Breno Bidon              OVR 74  Sal   261  G  2  J 15  Craque -
+      - MEI Maycon                   OVR 74  Sal   347  G  1  J  3  Craque -
+      - MEI André Carrillo           OVR 74  Sal   449  G  2  J 15  Craque -
+      - MEI Rodrigo Garro            OVR 74  Sal   450  G  1  J  4  Craque -
+      - MEI Charles                  OVR 74  Sal   177  G  0  J  0  Craque -
+      - ATA Pedro Raul               OVR 81  Sal   781  G  1  J  7  Craque -
+      - ATA Yuri Alberto             OVR 81  Sal   455  G  4  J 10  Craque *
+      - ATA Memphis Depay            OVR 81  Sal   959  G  3  J  9  Craque -
+      - ATA Ángel Romero             OVR 81  Sal  1025  G  1  J 10  Craque -
+      - ATA Giovane                  OVR 81  Sal  1169  G  0  J  0  Craque -
+      - ATA Talles Magno             OVR 80  Sal   600  G  0  J  0  Craque -
+      - ATA Wesley                   OVR 80  Sal   741  G  0  J  0  Craque -
+      - ATA Kayke                    OVR 76  Sal   270  G  0  J  0  Craque -
+  - RB Bragantino | Div final 1 | Pos 2 na Div 2 | Movimento PROMOVIDO | Caixa R$ 409,354 mil | Folha R$ 9,500 mil | Torcida 1.8M | Prestigio 79 | Emprestimo R$ 0 mil | Media elenco 69.2
+    Elenco:
+      - GOL Lucão                    OVR 76  Sal   999  G  0  J 18  Craque -
+      - GOL Cleiton                  OVR 76  Sal   720  G  0  J  5  Craque *
+      - GOL Matheus Nogueira         OVR 76  Sal   401  G  0  J  0  Craque -
+      - ZAG Andrés Hurtado           OVR 68  Sal   120  G  2  J 22  Craque *
+      - ZAG Natan                    OVR 67  Sal   105  G  6  J 22  Craque -
+      - ZAG Nathan Mendes            OVR 66  Sal   115  G  2  J 11  Craque -
+      - ZAG Juninho Capixaba         OVR 66  Sal    95  G  2  J 17  Craque -
+      - ZAG Luan Cândido             OVR 66  Sal   110  G  0  J 16  Craque -
+      - ZAG Guzmán Rodríguez         OVR 66  Sal    76  G  0  J  0  Craque -
+      - ZAG Pedro Henrique           OVR 66  Sal    78  G  0  J  0  Craque -
+      - MEI Matheus Fernandes        OVR 69  Sal   361  G  7  J 22  Craque -
+      - MEI Jadsom                   OVR 67  Sal   145  G  0  J 22  Craque -
+      - MEI Jhon Jhon                OVR 66  Sal   127  G  1  J  9  Craque -
+      - MEI Gustavinho               OVR 66  Sal   100  G  0  J  4  Craque -
+      - MEI Lucas Evangelista        OVR 66  Sal   101  G  3  J 21  Craque -
+      - MEI Eric Ramires             OVR 66  Sal   137  G  2  J 10  Craque -
+      - MEI Raul                     OVR 66  Sal   100  G  0  J  0  Craque -
+      - ATA Lincoln                  OVR 72  Sal   423  G  0  J  1  Craque -
+      - ATA Henry Mosquera           OVR 72  Sal   406  G  1  J 12  Craque -
+      - ATA Vitinho                  OVR 72  Sal   331  G  4  J  8  Craque -
+      - ATA Helinho                  OVR 72  Sal   233  G  1  J  6  Craque -
+      - ATA Thiago Borbas            OVR 72  Sal   159  G  1  J  7  Craque *
+      - ATA Eduardo Sasha            OVR 72  Sal   377  G  2  J 10  Craque -
+      - ATA Talisson                 OVR 70  Sal   138  G  0  J  0  Craque -
+      - ATA Ignacio Laquintana       OVR 68  Sal    86  G  0  J  0  Craque -
+  - Vasco da Gama | Div final 2 | Pos 3 na Div 2 | Movimento = | Caixa R$ 485,791 mil | Folha R$ 9,000 mil | Torcida 11.0M | Prestigio 78 | Emprestimo R$ 0 mil | Media elenco 67.0
+    Elenco:
+      - GOL Keiller                  OVR 74  Sal   229  G  1  J 11  Craque -
+      - GOL Pablo                    OVR 74  Sal   186  G  0  J  7  Craque -
+      - GOL Léo Jardim               OVR 72  Sal   282  G  0  J  0  Craque *
+      - ZAG Puma Rodríguez           OVR 65  Sal    81  G  1  J 18  Craque -
+      - ZAG Paulo Henrique           OVR 64  Sal   124  G  1  J 10  Craque *
+      - ZAG Maicon                   OVR 64  Sal    63  G  1  J  5  Craque -
+      - ZAG Lucas Piton              OVR 64  Sal    61  G  0  J  3  Craque -
+      - ZAG João Victor              OVR 64  Sal    87  G  2  J 18  Craque -
+      - ZAG Lucas Oliveira           OVR 64  Sal    42  G  0  J  3  Craque -
+      - ZAG Victor Luís              OVR 64  Sal    89  G  1  J 15  Craque -
+      - MEI Tchê Tchê                OVR 64  Sal   138  G  5  J 18  Craque -
+      - MEI Jair                     OVR 64  Sal    95  G  1  J 10  Craque -
+      - MEI Hugo Moura               OVR 64  Sal   147  G  1  J 10  Craque -
+      - MEI Philippe Coutinho        OVR 63  Sal   114  G  6  J 14  Craque -
+      - MEI Paulinho                 OVR 63  Sal    46  G  1  J  3  Craque -
+      - MEI Juan Sforza              OVR 63  Sal    87  G  1  J 17  Craque -
+      - MEI Dimitri Payet            OVR 63  Sal    68  G  0  J  0  Craque -
+      - ATA Adson                    OVR 72  Sal   397  G  1  J 17  Craque -
+      - ATA Pablo Vegetti            OVR 72  Sal   396  G  1  J  9  Craque *
+      - ATA Rossi                    OVR 72  Sal   420  G  2  J 10  Craque -
+      - ATA Alex Teixeira            OVR 71  Sal   269  G  0  J  0  Craque -
+      - ATA Rayan                    OVR 71  Sal   400  G  0  J  0  Craque -
+      - ATA David                    OVR 71  Sal   314  G  0  J  0  Craque -
+      - ATA GB                       OVR 70  Sal   146  G  0  J  0  Craque -
+      - ATA Jean David               OVR 64  Sal    47  G  0  J  0  Craque -
+  - Cruzeiro | Div final 2 | Pos 4 na Div 2 | Movimento = | Caixa R$ 507,958 mil | Folha R$ 13,000 mil | Torcida 9.0M | Prestigio 84 | Emprestimo R$ 0 mil | Media elenco 71.4
+    Elenco:
+      - GOL Cássio                   OVR 77  Sal  1174  G  0  J  5  Craque *
+      - GOL Anderson                 OVR 77  Sal  1139  G  0  J 11  Craque -
+      - GOL Léo Aragão               OVR 75  Sal   264  G  0  J  0  Craque -
+      - ZAG Kaiki                    OVR 68  Sal   132  G  1  J 13  Craque -
+      - ZAG William                  OVR 68  Sal   124  G  1  J  6  Craque *
+      - ZAG Fagner                   OVR 68  Sal   129  G  2  J  7  Craque -
+      - ZAG Fabrício Bruno           OVR 68  Sal   141  G  3  J 15  Craque -
+      - ZAG Jonathan Jesus           OVR 68  Sal    75  G  1  J 14  Craque -
+      - ZAG Lucas Villalba           OVR 68  Sal   123  G  1  J  9  Craque -
+      - ZAG Marlon                   OVR 68  Sal   119  G  0  J  0  Craque -
+      - MEI Lucas Romero             OVR 73  Sal   151  G  1  J 16  Craque -
+      - MEI Walace                   OVR 68  Sal    95  G  1  J  6  Craque -
+      - MEI Matheus Henrique         OVR 67  Sal    73  G  1  J 12  Craque -
+      - MEI Christian                OVR 67  Sal   148  G  2  J 11  Craque -
+      - MEI Eduardo                  OVR 67  Sal    96  G  1  J  9  Craque -
+      - MEI Matheus Pereira          OVR 67  Sal   104  G  0  J  0  Craque -
+      - MEI Japa                     OVR 67  Sal    97  G  2  J 10  Craque -
+      - ATA Lautaro Díaz             OVR 79  Sal   800  G  3  J 16  Craque -
+      - ATA Dudu                     OVR 78  Sal  1168  G  2  J  2  Craque -
+      - ATA Kaio Jorge               OVR 78  Sal   760  G  6  J 14  Craque *
+      - ATA Marquinhos               OVR 76  Sal   421  G  0  J  0  Craque -
+      - ATA Yannick Bolasie          OVR 75  Sal   339  G  0  J  0  Craque -
+      - ATA Wanderson                OVR 73  Sal   389  G  0  J  0  Craque -
+      - ATA Rafa Silva               OVR 72  Sal   303  G  0  J  0  Craque -
+      - ATA Gabriel Veron            OVR 71  Sal   270  G  0  J  0  Craque -
+  - Santos | Div final 2 | Pos 5 na Div 2 | Movimento = | Caixa R$ 433,847 mil | Folha R$ 7,000 mil | Torcida 10.8M | Prestigio 74 | Emprestimo R$ 0 mil | Media elenco 61.9
+    Elenco:
+      - GOL Gabriel Brazão           OVR 68  Sal    79  G  0  J  4  Craque *
+      - GOL Diógenes                 OVR 68  Sal   136  G  0  J 11  Craque -
+      - GOL João Paulo               OVR 68  Sal   120  G  0  J  2  Craque -
+      - ZAG JP Chermont              OVR 60  Sal    45  G  0  J 16  Craque -
+      - ZAG Aderlan                  OVR 60  Sal    38  G  1  J 16  Craque *
+      - ZAG Gil                      OVR 60  Sal    58  G  1  J  5  Craque -
+      - ZAG Escobar                  OVR 60  Sal    69  G  1  J 13  Craque -
+      - ZAG Zé Ivaldo                OVR 60  Sal    61  G  0  J  9  Craque -
+      - ZAG Joaquim                  OVR 59  Sal    66  G  1  J  5  Craque -
+      - ZAG Kevyson                  OVR 58  Sal    40  G  0  J  0  Craque -
+      - MEI Miguelito                OVR 59  Sal    46  G  1  J 15  Craque -
+      - MEI Cazares                  OVR 58  Sal    38  G  1  J  6  Craque -
+      - MEI Diego Pituca             OVR 58  Sal    39  G  0  J  5  Craque -
+      - MEI Otero                    OVR 58  Sal    45  G  5  J 16  Craque -
+      - MEI Tomás Rincón             OVR 58  Sal    55  G  0  J 11  Craque -
+      - MEI Giuliano                 OVR 58  Sal    41  G  2  J 11  Craque -
+      - MEI João Schmidt             OVR 58  Sal    52  G  0  J  0  Craque -
+      - ATA Julio Furch              OVR 67  Sal    77  G  0  J  5  Craque -
+      - ATA Pedrinho                 OVR 67  Sal   105  G  0  J  1  Craque -
+      - ATA Willian Bigode           OVR 67  Sal    76  G  1  J 12  Craque -
+      - ATA Wendel Silva             OVR 67  Sal   128  G  5  J 14  Craque -
+      - ATA Lucas Braga              OVR 66  Sal   122  G  0  J  0  Craque -
+      - ATA Guilherme                OVR 66  Sal   126  G  0  J  0  Craque *
+      - ATA Morelos                  OVR 64  Sal    52  G  0  J  0  Craque -
+      - ATA Enzo Monteiro            OVR 58  Sal    64  G  0  J  0  Craque -
+  - Vitória | Div final 2 | Pos 6 na Div 2 | Movimento = | Caixa R$ 223,177 mil | Folha R$ 5,000 mil | Torcida 3.8M | Prestigio 68 | Emprestimo R$ 0 mil | Media elenco 53.7
+    Elenco:
+      - GOL Lucas Arcanjo            OVR 61  Sal    69  G  0  J  4  Craque *
+      - GOL Muriel                   OVR 61  Sal    39  G  0  J 14  Craque -
+      - GOL Dalton                   OVR 56  Sal    48  G  0  J  0  Craque -
+      - ZAG Raul Cáceres             OVR 59  Sal    65  G  0  J 18  Craque *
+      - ZAG Wagner Leonardo          OVR 50  Sal    45  G  3  J 18  Craque -
+      - ZAG PK                       OVR 50  Sal    57  G  0  J  5  Craque -
+      - ZAG Camutanga                OVR 50  Sal    31  G  2  J 14  Craque -
+      - ZAG Zeca                     OVR 50  Sal    51  G  1  J 16  Craque -
+      - ZAG Neris                    OVR 50  Sal    45  G  0  J  1  Craque -
+      - ZAG Patric Calmon            OVR 49  Sal    62  G  0  J  0  Craque -
+      - MEI Léo Naldi                OVR 62  Sal    30  G  3  J 18  Craque -
+      - MEI Rodrigo Andrade          OVR 53  Sal    65  G  5  J 18  Craque -
+      - MEI Willian Oliveira         OVR 50  Sal    59  G  3  J 13  Craque -
+      - MEI Jean Mota                OVR 50  Sal    60  G  2  J 14  Craque -
+      - MEI Matheuzinho              OVR 50  Sal    53  G  0  J  9  Craque -
+      - MEI Caio Vinícius            OVR 50  Sal    36  G  0  J  0  Craque -
+      - MEI Dudu                     OVR 48  Sal    46  G  0  J  0  Craque -
+      - ATA Alerrandro               OVR 60  Sal    59  G  2  J 17  Craque *
+      - ATA Janderson                OVR 60  Sal    59  G  4  J 17  Craque -
+      - ATA Osvaldo                  OVR 59  Sal    35  G  0  J  2  Craque -
+      - ATA Iury Castilho            OVR 59  Sal    48  G  0  J  0  Craque -
+      - ATA Everaldo                 OVR 59  Sal    51  G  0  J  0  Craque -
+      - ATA Wellington Rato          OVR 53  Sal    48  G  0  J  0  Craque -
+      - ATA Fábio Soares             OVR 47  Sal    61  G  0  J  0  Craque -
+      - ATA Carlos Eduardo           OVR 46  Sal    56  G  0  J  0  Craque -
+  - Bahia | Div final 3 | Pos 7 na Div 2 | Movimento REBAIXADO | Caixa R$ 304,624 mil | Folha R$ 8,500 mil | Torcida 2.8M | Prestigio 72 | Emprestimo R$ 0 mil | Media elenco 69.0
+    Elenco:
+      - GOL Marcos Felipe            OVR 75  Sal   184  G  0  J  8  Craque *
+      - GOL Danilo Fernandes         OVR 75  Sal   342  G  1  J  8  Craque -
+      - GOL Adriel                   OVR 71  Sal   234  G  0  J  0  Craque -
+      - ZAG Arias                    OVR 72  Sal   338  G  2  J 16  Craque -
+      - ZAG Gilberto                 OVR 67  Sal   100  G  1  J 16  Craque *
+      - ZAG Iago Borduchi            OVR 66  Sal   138  G  0  J  2  Craque -
+      - ZAG Kanu                     OVR 66  Sal    96  G  1  J  6  Craque -
+      - ZAG Luciano Juba             OVR 66  Sal    71  G  1  J 13  Craque -
+      - ZAG Gabriel Xavier           OVR 66  Sal   113  G  0  J  4  Craque -
+      - ZAG David Duarte             OVR 66  Sal   140  G  0  J  7  Craque -
+      - MEI Nicolás Acevedo          OVR 67  Sal   145  G  3  J 16  Craque -
+      - MEI Jean Lucas               OVR 67  Sal   125  G  0  J 16  Craque -
+      - MEI Everton Ribeiro          OVR 66  Sal    98  G  1  J 16  Craque -
+      - MEI Caio Alexandre           OVR 66  Sal   109  G  0  J  0  Craque -
+      - MEI Cauly                    OVR 66  Sal    97  G  0  J 10  Craque -
+      - MEI Erick                    OVR 66  Sal    80  G  2  J  4  Craque -
+      - MEI Rezende                  OVR 66  Sal   133  G  0  J  2  Craque -
+      - ATA Biel                     OVR 75  Sal   510  G  2  J 16  Craque -
+      - ATA Lucho Rodríguez          OVR 73  Sal   307  G  1  J  6  Craque -
+      - ATA Ademir                   OVR 73  Sal   369  G  1  J 10  Craque -
+      - ATA Everaldo                 OVR 72  Sal   247  G  0  J  0  Craque *
+      - ATA Kayky                    OVR 72  Sal   201  G  0  J  0  Craque -
+      - ATA Tiago                    OVR 71  Sal   221  G  0  J  0  Craque -
+      - ATA Willian José             OVR 68  Sal   140  G  0  J  0  Craque -
+      - ATA Rafael Ratão             OVR 67  Sal   137  G  0  J  0  Craque -
+  - Mirassol | Div final 3 | Pos 8 na Div 2 | Movimento REBAIXADO | Caixa R$ 130,367 mil | Folha R$ 3,500 mil | Torcida 499K | Prestigio 53 | Emprestimo R$ 0 mil | Media elenco 47.4
+    Elenco:
+      - GOL Alex Muralha             OVR 56  Sal    45  G  1  J 15  Craque *
+      - GOL Walter                   OVR 55  Sal    35  G  0  J  2  Craque -
+      - GOL Vanderlei                OVR 54  Sal    43  G  0  J  0  Craque -
+      - ZAG Lucas Ramon              OVR 49  Sal    64  G  1  J 16  Craque *
+      - ZAG Luiz Otávio              OVR 44  Sal    37  G  1  J 15  Craque -
+      - ZAG João Victor              OVR 44  Sal    54  G  0  J 10  Craque -
+      - ZAG Rodrigo Ferreira         OVR 44  Sal    37  G  1  J 10  Craque -
+      - ZAG Daniel Borges            OVR 44  Sal    51  G  0  J 13  Craque -
+      - ZAG Zeca                     OVR 43  Sal    52  G  0  J  0  Craque -
+      - ZAG Reinaldo                 OVR 42  Sal    56  G  0  J  0  Craque -
+      - MEI Danielzinho              OVR 50  Sal    51  G  0  J 16  Craque -
+      - MEI Neto Moura               OVR 48  Sal    63  G  2  J 16  Craque -
+      - MEI Yago Felipe              OVR 45  Sal    53  G  2  J 16  Craque -
+      - MEI Chico Kim                OVR 44  Sal    36  G  1  J 16  Craque -
+      - MEI Negueba                  OVR 44  Sal    38  G  0  J  0  Craque -
+      - MEI Gabriel                  OVR 43  Sal    54  G  0  J  0  Craque -
+      - MEI Iury                     OVR 43  Sal    33  G  0  J  0  Craque -
+      - ATA Fernandinho              OVR 54  Sal    69  G  1  J 16  Craque -
+      - ATA Quirino                  OVR 54  Sal    66  G  0  J 10  Craque -
+      - ATA Fabrício Daniel          OVR 53  Sal    45  G  0  J  2  Craque -
+      - ATA Dellatorre               OVR 53  Sal    54  G  0  J  4  Craque *
+      - ATA Zé Roberto               OVR 53  Sal    62  G  0  J  0  Craque -
+      - ATA Rafinha                  OVR 46  Sal    48  G  0  J  0  Craque -
+      - ATA Nicolas                  OVR 42  Sal    43  G  0  J  0  Craque -
+      - ATA Alex Silva               OVR 40  Sal    67  G  0  J  0  Craque -
+
+#### Divisao 3
+  - Fluminense | Div final 2 | Pos 1 na Div 3 | Movimento PROMOVIDO | Caixa R$ 634,616 mil | Folha R$ 16,000 mil | Torcida 9.7M | Prestigio 81 | Emprestimo R$ 0 mil | Media elenco 79.7
+    Elenco:
+      - GOL Fábio                    OVR 86  Sal  2568  G  1  J 16  Craque *
+      - GOL Pedro Rangel             OVR 85  Sal  1571  G  0  J  5  Craque -
+      - GOL Vitor Eudes              OVR 85  Sal  3030  G  0  J  0  Craque -
+      - ZAG Guga                     OVR 79  Sal   746  G  1  J 18  Craque -
+      - ZAG Manoel                   OVR 78  Sal   479  G  3  J 18  Craque -
+      - ZAG Fretes                   OVR 77  Sal   999  G  3  J 18  Craque -
+      - ZAG Thiago Silva             OVR 77  Sal   606  G  3  J 16  Craque -
+      - ZAG Thiago Santos            OVR 77  Sal   794  G  0  J  2  Craque -
+      - ZAG Samuel Xavier            OVR 77  Sal   640  G  0  J  0  Craque *
+      - ZAG Renê                     OVR 77  Sal   530  G  0  J  0  Craque -
+      - MEI Martinelli               OVR 77  Sal   899  G  4  J 18  Craque -
+      - MEI Nonato                   OVR 77  Sal   461  G  3  J 18  Craque -
+      - MEI Ganso                    OVR 77  Sal   743  G  2  J  5  Craque -
+      - MEI Jhon Arias               OVR 77  Sal   991  G  1  J  7  Craque -
+      - MEI Lima                     OVR 77  Sal   614  G  4  J  8  Craque -
+      - MEI Otávio                   OVR 76  Sal   564  G  5  J 16  Craque -
+      - MEI Kevin Serna              OVR 76  Sal   245  G  0  J  0  Craque -
+      - ATA Keno                     OVR 84  Sal  2563  G  7  J 17  Craque -
+      - ATA Agustín Canobbio         OVR 84  Sal  2515  G  1  J  8  Craque -
+      - ATA Everaldo                 OVR 84  Sal  1531  G  1  J  3  Craque -
+      - ATA Germán Cano              OVR 84  Sal  2499  G  0  J  1  Craque *
+      - ATA Lelê                     OVR 84  Sal  2570  G  2  J  7  Craque -
+      - ATA Isaac                    OVR 82  Sal  1074  G  0  J  0  Craque -
+      - ATA Marquinhos               OVR 81  Sal  1149  G  0  J  0  Craque -
+      - ATA Riquelme                 OVR 73  Sal   400  G  0  J  0  Craque -
+  - Ceará | Div final 2 | Pos 2 na Div 3 | Movimento PROMOVIDO | Caixa R$ 183,200 mil | Folha R$ 4,000 mil | Torcida 2.8M | Prestigio 64 | Emprestimo R$ 0 mil | Media elenco 50.8
+    Elenco:
+      - GOL Bruno Ferreira           OVR 58  Sal    37  G  0  J  7  Craque -
+      - GOL Fernando Miguel          OVR 58  Sal    34  G  1  J 10  Craque -
+      - GOL Richard                  OVR 58  Sal    46  G  0  J  3  Craque *
+      - ZAG Raí Ramos                OVR 51  Sal    64  G  1  J 20  Craque -
+      - ZAG Rafael Ramos             OVR 50  Sal    51  G  1  J 20  Craque *
+      - ZAG Luiz Otávio              OVR 47  Sal    63  G  2  J 10  Craque -
+      - ZAG David Ricardo            OVR 47  Sal    68  G  3  J 19  Craque -
+      - ZAG Matheus Felipe           OVR 47  Sal    38  G  1  J 11  Craque -
+      - ZAG Eric Melo                OVR 46  Sal    70  G  0  J  0  Craque -
+      - ZAG Warley                   OVR 42  Sal    69  G  0  J  0  Craque -
+      - MEI Richardson               OVR 55  Sal    47  G  4  J 20  Craque -
+      - MEI Lourenço                 OVR 50  Sal    62  G  6  J 20  Craque -
+      - MEI Lucas Mugni              OVR 46  Sal    53  G  1  J 20  Craque -
+      - MEI De Lucca                 OVR 45  Sal    57  G  0  J  0  Craque -
+      - MEI Rômulo                   OVR 45  Sal    52  G  0  J  6  Craque -
+      - MEI Aylon                    OVR 45  Sal    41  G  1  J 14  Craque -
+      - MEI Fernando Sobral          OVR 43  Sal    65  G  0  J  0  Craque -
+      - ATA Facundo Castro           OVR 58  Sal    57  G  1  J 12  Craque -
+      - ATA Cléber                   OVR 57  Sal    42  G  1  J 11  Craque -
+      - ATA Barceló                  OVR 57  Sal    56  G  0  J  4  Craque -
+      - ATA Saulo Mineiro            OVR 57  Sal    62  G  2  J 13  Craque *
+      - ATA Recalde                  OVR 57  Sal    51  G  0  J  0  Craque -
+      - ATA Janderson                OVR 53  Sal    55  G  0  J  0  Craque -
+      - ATA Erick Pulga              OVR 52  Sal    55  G  0  J  0  Craque -
+      - ATA Guilherme Bissoli        OVR 44  Sal    61  G  0  J  0  Craque -
+  - Juventude | Div final 3 | Pos 3 na Div 3 | Movimento = | Caixa R$ 181,849 mil | Folha R$ 5,500 mil | Torcida 1.1M | Prestigio 66 | Emprestimo R$ 0 mil | Media elenco 54.8
+    Elenco:
+      - GOL Gabriel                  OVR 65  Sal    87  G  1  J 20  Craque *
+      - GOL César                    OVR 60  Sal    52  G  0  J  0  Craque -
+      - GOL Marcão                   OVR 59  Sal    60  G  0  J  0  Craque -
+      - ZAG João Lucas               OVR 61  Sal    70  G  3  J 20  Craque *
+      - ZAG Ewerthon                 OVR 51  Sal    31  G  1  J 20  Craque -
+      - ZAG Marcos Paulo             OVR 50  Sal    67  G  1  J  8  Craque -
+      - ZAG Abner                    OVR 50  Sal    64  G  3  J 12  Craque -
+      - ZAG Danilo Boza              OVR 50  Sal    53  G  3  J 14  Craque -
+      - ZAG Rodrigo Sam              OVR 50  Sal    40  G  0  J  4  Craque -
+      - ZAG Alan Ruschel             OVR 50  Sal    35  G  0  J  2  Craque -
+      - MEI Caique                   OVR 57  Sal    53  G  4  J 20  Craque -
+      - MEI Jean Irmer               OVR 55  Sal    60  G  3  J 20  Craque -
+      - MEI Mandaca                  OVR 52  Sal    56  G  2  J 18  Craque -
+      - MEI Nenê                     OVR 52  Sal    69  G  3  J 17  Craque -
+      - MEI Jadson                   OVR 51  Sal    36  G  0  J  5  Craque -
+      - MEI Luis Oyama               OVR 49  Sal    57  G  0  J  0  Craque -
+      - MEI Luan Dias                OVR 48  Sal    66  G  0  J  0  Craque -
+      - ATA Lucas Barbosa            OVR 60  Sal    58  G  4  J  9  Craque -
+      - ATA Marcelinho               OVR 60  Sal    50  G  4  J 16  Craque -
+      - ATA Gilberto                 OVR 60  Sal    65  G  2  J  7  Craque -
+      - ATA Erick Farias             OVR 60  Sal    54  G  4  J  8  Craque *
+      - ATA Edinho                   OVR 58  Sal    57  G  0  J  0  Craque -
+      - ATA Gabriel Taliari          OVR 56  Sal    66  G  0  J  0  Craque -
+      - ATA Taliari                  OVR 54  Sal    64  G  0  J  0  Craque -
+      - ATA Da Silva                 OVR 50  Sal    47  G  0  J  0  Craque -
+  - Athletico Paranaense | Div final 3 | Pos 4 na Div 3 | Movimento = | Caixa R$ 296,156 mil | Folha R$ 9,000 mil | Torcida 5.2M | Prestigio 74 | Emprestimo R$ 0 mil | Media elenco 65.7
+    Elenco:
+      - GOL Léo Linck                OVR 72  Sal   427  G  0  J 11  Craque -
+      - GOL Mycael                   OVR 71  Sal   390  G  0  J  2  Craque *
+      - GOL Santos                   OVR 71  Sal   273  G  1  J  3  Craque -
+      - ZAG Fernando                 OVR 63  Sal   104  G  1  J 15  Craque -
+      - ZAG Belezi                   OVR 63  Sal    35  G  1  J 14  Craque -
+      - ZAG Lucas Esquivel           OVR 62  Sal    55  G  0  J  3  Craque -
+      - ZAG Matheus Felipe           OVR 62  Sal    61  G  0  J  8  Craque -
+      - ZAG Kaique Rocha             OVR 61  Sal    51  G  1  J 14  Craque -
+      - ZAG Madson                   OVR 61  Sal    39  G  0  J  3  Craque -
+      - ZAG Léo Godoy                OVR 61  Sal    45  G  0  J  7  Craque *
+      - MEI Erick                    OVR 66  Sal   118  G  5  J 16  Craque -
+      - MEI Canobbio                 OVR 64  Sal    85  G  0  J 16  Craque -
+      - MEI Giuliano                 OVR 63  Sal   109  G  4  J 16  Craque -
+      - MEI Christian                OVR 63  Sal    56  G  0  J  0  Craque -
+      - MEI Felipinho                OVR 63  Sal    89  G  0  J 10  Craque -
+      - MEI Alex Santana             OVR 63  Sal    48  G  0  J  1  Craque -
+      - MEI Bruno Zapelli            OVR 63  Sal    57  G  0  J  5  Craque -
+      - ATA Rômulo                   OVR 72  Sal   337  G  2  J 16  Craque -
+      - ATA Cuello                   OVR 70  Sal   261  G  1  J 10  Craque -
+      - ATA Mastriani                OVR 70  Sal   238  G  1  J  5  Craque -
+      - ATA Pablo                    OVR 70  Sal    75  G  0  J  1  Craque *
+      - ATA Di Yorio                 OVR 67  Sal    92  G  0  J  0  Craque -
+      - ATA Emersonn                 OVR 67  Sal    81  G  0  J  0  Craque -
+      - ATA Julimar                  OVR 66  Sal   119  G  0  J  0  Craque -
+      - ATA Isaac                    OVR 66  Sal   139  G  0  J  0  Craque -
+  - Cuiabá | Div final 3 | Pos 5 na Div 3 | Movimento = | Caixa R$ 158,111 mil | Folha R$ 5,000 mil | Torcida 1.2M | Prestigio 61 | Emprestimo R$ 0 mil | Media elenco 54.5
+    Elenco:
+      - GOL Walter                   OVR 61  Sal    56  G  0  J  2  Craque *
+      - GOL João Carlos              OVR 61  Sal    60  G  2  J 16  Craque -
+      - GOL Mateus Pasinato          OVR 58  Sal    70  G  0  J  0  Craque -
+      - ZAG Matheus Alexandre        OVR 58  Sal    53  G  0  J 18  Craque *
+      - ZAG Marllon                  OVR 55  Sal    52  G  2  J 18  Craque -
+      - ZAG Railan                   OVR 51  Sal    65  G  1  J 17  Craque -
+      - ZAG Alan Empereur            OVR 49  Sal    51  G  2  J  7  Craque -
+      - ZAG Sander                   OVR 49  Sal    50  G  1  J 12  Craque -
+      - ZAG Bruno Alves              OVR 49  Sal    30  G  0  J  0  Craque -
+      - ZAG Ramon                    OVR 45  Sal    43  G  0  J  0  Craque -
+      - MEI Denilson                 OVR 55  Sal    30  G  3  J 18  Craque -
+      - MEI Lucas Mineiro            OVR 51  Sal    61  G  0  J 18  Craque -
+      - MEI Clayson                  OVR 50  Sal    40  G  0  J  0  Craque -
+      - MEI Ronald                   OVR 50  Sal    37  G  2  J  5  Craque -
+      - MEI Fernando Sobral          OVR 50  Sal    70  G  0  J  7  Craque -
+      - MEI Filipe Augusto           OVR 50  Sal    61  G  4  J 16  Craque -
+      - MEI Max                      OVR 50  Sal    68  G  0  J  8  Craque -
+      - ATA Isidro Pitta             OVR 61  Sal    57  G  4  J 18  Craque *
+      - ATA Eliel                    OVR 61  Sal    46  G  3  J 11  Craque -
+      - ATA Derik Lacerda            OVR 61  Sal    32  G  2  J  7  Craque -
+      - ATA André Luís               OVR 60  Sal    69  G  0  J  0  Craque -
+      - ATA Jonathan Cafu            OVR 60  Sal    36  G  0  J  0  Craque -
+      - ATA Deyverson                OVR 59  Sal    54  G  0  J  0  Craque -
+      - ATA Wellington Silva         OVR 53  Sal    68  G  0  J  0  Craque -
+      - ATA Alisson Safira           OVR 52  Sal    40  G  0  J  0  Craque -
+  - Atlético Goianiense | Div final 3 | Pos 6 na Div 3 | Movimento = | Caixa R$ 158,090 mil | Folha R$ 4,500 mil | Torcida 1.6M | Prestigio 61 | Emprestimo R$ 0 mil | Media elenco 51.0
+    Elenco:
+      - GOL Luan Polli               OVR 59  Sal    62  G  1  J 16  Craque -
+      - GOL Ronaldo                  OVR 59  Sal    62  G  0  J  0  Craque *
+      - GOL Pedro Paulo              OVR 55  Sal    35  G  0  J  0  Craque -
+      - ZAG Bruno Tubarão            OVR 56  Sal    45  G  2  J 16  Craque *
+      - ZAG Maguinho                 OVR 49  Sal    40  G  1  J 16  Craque -
+      - ZAG Lucas Gazal              OVR 47  Sal    54  G  0  J 15  Craque -
+      - ZAG Alix Vinicius            OVR 47  Sal    32  G  0  J  2  Craque -
+      - ZAG Luiz Felipe              OVR 47  Sal    49  G  2  J 15  Craque -
+      - ZAG Guilherme Romão          OVR 47  Sal    70  G  0  J  0  Craque -
+      - ZAG Rhaldney                 OVR 46  Sal    53  G  0  J  0  Craque -
+      - MEI Roni                     OVR 57  Sal    68  G  4  J 16  Craque -
+      - MEI Léo Pereira              OVR 46  Sal    53  G  2  J 11  Craque -
+      - MEI Jorginho                 OVR 46  Sal    61  G  0  J  6  Craque -
+      - MEI Shaylon                  OVR 46  Sal    48  G  1  J  6  Craque -
+      - MEI Baralhas                 OVR 46  Sal    42  G  4  J 11  Craque -
+      - MEI Campanharo               OVR 46  Sal    36  G  1  J  4  Craque -
+      - MEI Emiliano Rodríguez       OVR 46  Sal    32  G  1  J 10  Craque -
+      - ATA Luiz Fernando            OVR 60  Sal    59  G  4  J 16  Craque *
+      - ATA Janderson                OVR 57  Sal    47  G  1  J 10  Craque -
+      - ATA Derek                    OVR 57  Sal    70  G  0  J  6  Craque -
+      - ATA Alejo Cruz               OVR 56  Sal    58  G  0  J  0  Craque -
+      - ATA Hyuri                    OVR 55  Sal    39  G  0  J  0  Craque -
+      - ATA Danielzinho              OVR 54  Sal    45  G  0  J  0  Craque -
+      - ATA Gustavo Coutinho         OVR 45  Sal    62  G  0  J  0  Craque -
+      - ATA Yony González            OVR 44  Sal    61  G  0  J  0  Craque -
+  - Sport Recife | Div final 4 | Pos 7 na Div 3 | Movimento REBAIXADO | Caixa R$ 152,259 mil | Folha R$ 4,000 mil | Torcida 2.3M | Prestigio 57 | Emprestimo R$ 0 mil | Media elenco 47.7
+    Elenco:
+      - GOL Caíque França            OVR 57  Sal    36  G  0  J 15  Craque *
+      - GOL Adriel                   OVR 56  Sal    68  G  0  J  2  Craque -
+      - GOL Denis                    OVR 56  Sal    35  G  0  J  0  Craque -
+      - ZAG Rosales                  OVR 47  Sal    51  G  3  J 16  Craque *
+      - ZAG Hereda                   OVR 45  Sal    62  G  3  J 16  Craque -
+      - ZAG Felipinho                OVR 44  Sal    70  G  0  J  9  Craque -
+      - ZAG Chico                    OVR 44  Sal    48  G  0  J  0  Craque -
+      - ZAG Rafael Thyere            OVR 44  Sal    37  G  1  J 13  Craque -
+      - ZAG Igor Cariús              OVR 44  Sal    57  G  0  J  3  Craque -
+      - ZAG Luciano Castán           OVR 44  Sal    70  G  2  J  7  Craque -
+      - MEI Fabinho                  OVR 49  Sal    50  G  3  J 16  Craque -
+      - MEI Felipe                   OVR 46  Sal    66  G  3  J 16  Craque -
+      - MEI Lucas Lima               OVR 46  Sal    66  G  0  J 16  Craque -
+      - MEI Alan Ruiz                OVR 42  Sal    36  G  0  J  4  Craque -
+      - MEI Pedro Vilhena            OVR 42  Sal    53  G  0  J  5  Craque -
+      - MEI Julián Fernández         OVR 42  Sal    51  G  1  J  7  Craque -
+      - MEI Titi Ortíz               OVR 42  Sal    48  G  0  J  0  Craque -
+      - ATA Barletta                 OVR 53  Sal    62  G  2  J 14  Craque *
+      - ATA Gustavo Coutinho         OVR 53  Sal    35  G  0  J  7  Craque -
+      - ATA Zé Roberto               OVR 53  Sal    40  G  1  J  2  Craque -
+      - ATA Chrystian                OVR 53  Sal    36  G  1  J  9  Craque -
+      - ATA Pablo Dyego              OVR 52  Sal    41  G  0  J  0  Craque -
+      - ATA Romarinho                OVR 52  Sal    53  G  0  J  0  Craque -
+      - ATA Lenny Lobato             OVR 45  Sal    43  G  0  J  0  Craque -
+      - ATA Diego Souza Jr           OVR 42  Sal    43  G  0  J  0  Craque -
+  - América Mineiro | Div final 4 | Pos 8 na Div 3 | Movimento REBAIXADO | Caixa R$ 155,204 mil | Folha R$ 4,500 mil | Torcida 2.5M | Prestigio 63 | Emprestimo R$ 0 mil | Media elenco 34.3
+    Elenco:
+      - GOL Matheus Mendes           OVR 42  Sal    57  G  2  J 16  Craque *
+      - GOL Jori                     OVR 41  Sal    46  G  0  J  0  Craque -
+      - GOL Dalberson                OVR 35  Sal    67  G  0  J  0  Craque -
+      - ZAG Marlon                   OVR 37  Sal    50  G  4  J 16  Craque *
+      - ZAG Ricardo Silva            OVR 35  Sal    39  G  1  J 16  Craque -
+      - ZAG Maguinho                 OVR 31  Sal    35  G  1  J 16  Craque -
+      - ZAG Nicolas                  OVR 30  Sal    63  G  0  J  8  Craque -
+      - ZAG Júlio                    OVR 30  Sal    40  G  0  J  4  Craque -
+      - ZAG Lucão                    OVR 30  Sal    59  G  0  J  4  Craque -
+      - ZAG Paulinho                 OVR 25  Sal    52  G  0  J  0  Craque -
+      - MEI Alê                      OVR 36  Sal    55  G  0  J 16  Craque -
+      - MEI Moisés                   OVR 32  Sal    65  G  1  J 16  Craque -
+      - MEI Cauan Barros             OVR 30  Sal    58  G  0  J 16  Craque -
+      - MEI Fabinho Santos           OVR 30  Sal    66  G  0  J  4  Craque -
+      - MEI Benítez                  OVR 30  Sal    57  G  1  J 12  Craque -
+      - MEI Miguelito                OVR 30  Sal    34  G  0  J  0  Craque -
+      - MEI Jhosefer                 OVR 28  Sal    63  G  0  J  0  Craque -
+      - ATA Fabinho                  OVR 43  Sal    47  G  1  J 15  Craque *
+      - ATA Adyson                   OVR 43  Sal    33  G  2  J 11  Craque -
+      - ATA Guilherme Pato           OVR 43  Sal    49  G  0  J  6  Craque -
+      - ATA Willian Bigode           OVR 42  Sal    53  G  0  J  0  Craque -
+      - ATA Brenner                  OVR 34  Sal    54  G  0  J  0  Craque -
+      - ATA Stênio                   OVR 34  Sal    64  G  0  J  0  Craque -
+      - ATA Renato Marques           OVR 34  Sal    33  G  0  J  0  Craque -
+      - ATA Aloísio                  OVR 29  Sal    40  G  0  J  0  Craque -
+
+#### Divisao 4
+  - Criciúma | Div final 3 | Pos 1 na Div 4 | Movimento PROMOVIDO | Caixa R$ 135,752 mil | Folha R$ 4,500 mil | Torcida 808K | Prestigio 59 | Emprestimo R$ 0 mil | Media elenco 47.6
+    Elenco:
+      - GOL Alisson                  OVR 54  Sal    48  G  0  J  6  Craque -
+      - GOL Gustavo                  OVR 53  Sal    58  G  1  J 10  Craque *
+      - GOL Kauã                     OVR 50  Sal    68  G  0  J  0  Craque -
+      - ZAG Claudinho                OVR 52  Sal    54  G  1  J 16  Craque *
+      - ZAG Jonathan                 OVR 48  Sal    47  G  1  J 16  Craque -
+      - ZAG Marcelo Hermes           OVR 45  Sal    38  G  0  J  2  Craque -
+      - ZAG Rodrigo                  OVR 45  Sal    43  G  4  J 12  Craque -
+      - ZAG Victor Luís              OVR 44  Sal    55  G  1  J  4  Craque -
+      - ZAG Tobias Figueiredo        OVR 44  Sal    31  G  5  J 14  Craque -
+      - ZAG Dudu                     OVR 35  Sal    65  G  0  J  0  Craque -
+      - MEI Barreto                  OVR 49  Sal    65  G  4  J 15  Craque -
+      - MEI Higor Meritão            OVR 44  Sal    33  G  2  J 15  Craque -
+      - MEI Newton                   OVR 44  Sal    34  G  1  J 16  Craque -
+      - MEI Fellipe Mateus           OVR 44  Sal    58  G  2  J 16  Craque -
+      - MEI Marquinhos Gabriel       OVR 43  Sal    55  G  1  J  1  Craque -
+      - MEI Rômulo                   OVR 43  Sal    66  G  1  J  1  Craque -
+      - MEI Miquéias                 OVR 39  Sal    60  G  0  J  0  Craque -
+      - ATA Allano                   OVR 54  Sal    58  G  3  J 16  Craque -
+      - ATA Ronald                   OVR 54  Sal    42  G  5  J 12  Craque -
+      - ATA Yannick Bolasie          OVR 54  Sal    44  G  0  J  4  Craque *
+      - ATA Jhonata Robert           OVR 53  Sal    30  G  0  J  0  Craque -
+      - ATA Matheusinho              OVR 53  Sal    34  G  0  J  0  Craque -
+      - ATA Arthur Caíke             OVR 53  Sal    56  G  0  J  0  Craque -
+      - ATA Éder                     OVR 50  Sal    47  G  0  J  0  Craque -
+      - ATA Felipinho                OVR 43  Sal    53  G  0  J  0  Craque -
+  - Goiás | Div final 3 | Pos 2 na Div 4 | Movimento PROMOVIDO | Caixa R$ 137,640 mil | Folha R$ 4,600 mil | Torcida 3.0M | Prestigio 63 | Emprestimo R$ 0 mil | Media elenco 34.7
+    Elenco:
+      - GOL Thiago Rodrigues         OVR 44  Sal    70  G  0  J 15  Craque -
+      - GOL Tadeu                    OVR 44  Sal    47  G  0  J  2  Craque *
+      - GOL Marcão                   OVR 37  Sal    65  G  0  J  0  Craque -
+      - ZAG Ezequiel                 OVR 38  Sal    55  G  4  J 15  Craque *
+      - ZAG Lucas Ribeiro            OVR 37  Sal    62  G  0  J 16  Craque -
+      - ZAG Luiz Felipe              OVR 32  Sal    35  G  4  J 16  Craque -
+      - ZAG Titi                     OVR 29  Sal    33  G  0  J  3  Craque -
+      - ZAG Rodrigo Soares           OVR 29  Sal    41  G  0  J  1  Craque -
+      - ZAG Nicolas                  OVR 29  Sal    30  G  1  J  2  Craque -
+      - ZAG Anthony                  OVR 29  Sal    60  G  1  J 11  Craque -
+      - MEI Gegê                     OVR 38  Sal    51  G  6  J 16  Craque -
+      - MEI Juninho                  OVR 32  Sal    64  G  2  J 16  Craque -
+      - MEI Lucas Lima               OVR 31  Sal    54  G  0  J  9  Craque -
+      - MEI Brayann                  OVR 31  Sal    70  G  3  J 14  Craque -
+      - MEI Lourenço                 OVR 31  Sal    49  G  0  J  9  Craque -
+      - MEI Filipe Machado           OVR 31  Sal    70  G  0  J  0  Craque -
+      - MEI Jean Carlos              OVR 29  Sal    39  G  0  J  0  Craque -
+      - ATA Bruno Sávio              OVR 42  Sal    70  G  3  J 15  Craque -
+      - ATA Wellington Rato          OVR 41  Sal    33  G  5  J 16  Craque *
+      - ATA Pedrinho                 OVR 41  Sal    42  G  1  J  1  Craque -
+      - ATA Esli García              OVR 41  Sal    30  G  0  J  0  Craque -
+      - ATA Anselmo Ramon            OVR 38  Sal    33  G  0  J  0  Craque -
+      - ATA Jajá                     OVR 32  Sal    69  G  0  J  0  Craque -
+      - ATA Cadu                     OVR 32  Sal    64  G  0  J  0  Craque -
+      - ATA Arthur Caíke             OVR 29  Sal    67  G  0  J  0  Craque -
+  - Avaí | Div final 4 | Pos 3 na Div 4 | Movimento = | Caixa R$ 103,670 mil | Folha R$ 3,800 mil | Torcida 1.6M | Prestigio 61 | Emprestimo R$ 0 mil | Media elenco 30.3
+    Elenco:
+      - GOL Otávio Passos            OVR 38  Sal    58  G  0  J  3  Craque -
+      - GOL Igor Bohn                OVR 38  Sal    60  G  0  J 13  Craque *
+      - GOL Léo Aragão               OVR 35  Sal    61  G  0  J  0  Craque -
+      - ZAG Douglas Teixeira         OVR 35  Sal    36  G  1  J 16  Craque *
+      - ZAG Quaresma                 OVR 29  Sal    50  G  1  J 16  Craque -
+      - ZAG Guilherme Aquino         OVR 28  Sal    39  G  1  J  8  Craque -
+      - ZAG Allyson                  OVR 28  Sal    40  G  0  J 12  Craque -
+      - ZAG Wesley Gasolina          OVR 28  Sal    44  G  1  J 12  Craque -
+      - ZAG Wallison                 OVR 27  Sal    66  G  0  J  0  Craque -
+      - ZAG Gabriel Simples          OVR 25  Sal    31  G  0  J  0  Craque -
+      - MEI Jean Lucas               OVR 34  Sal    43  G  3  J 16  Craque -
+      - MEI Daniel Penha             OVR 26  Sal    40  G  2  J 16  Craque -
+      - MEI Romildo Del Piage        OVR 24  Sal    42  G  0  J 10  Craque -
+      - MEI Hyan                     OVR 24  Sal    61  G  1  J  3  Craque -
+      - MEI Wenderson                OVR 24  Sal    33  G  1  J  4  Craque -
+      - MEI Zé Ricardo               OVR 24  Sal    59  G  2  J 15  Craque -
+      - MEI Luiz Henrique            OVR 22  Sal    50  G  0  J  0  Craque -
+      - ATA Rafael Bilu              OVR 40  Sal    63  G  6  J 16  Craque *
+      - ATA Maurício Garcez          OVR 36  Sal    32  G  3  J  7  Craque -
+      - ATA Felipe Avenatti          OVR 36  Sal    53  G  1  J  2  Craque -
+      - ATA Gaspar                   OVR 36  Sal    40  G  0  J  0  Craque -
+      - ATA Sorriso                  OVR 36  Sal    55  G  0  J  7  Craque -
+      - ATA Thayllon                 OVR 30  Sal    66  G  0  J  0  Craque -
+      - ATA Igor Rosa                OVR 28  Sal    36  G  0  J  0  Craque -
+      - ATA Mário Sérgio             OVR 24  Sal    57  G  0  J  0  Craque -
+  - Coritiba | Div final 4 | Pos 4 na Div 4 | Movimento = | Caixa R$ 137,259 mil | Folha R$ 4,800 mil | Torcida 3.1M | Prestigio 64 | Emprestimo R$ 0 mil | Media elenco 38.1
+    Elenco:
+      - GOL Pedro Morisco            OVR 46  Sal    66  G  1  J  8  Craque *
+      - GOL Pedro Rangel             OVR 46  Sal    58  G  1  J 10  Craque -
+      - GOL Gabriel Leite            OVR 45  Sal    47  G  0  J  0  Craque -
+      - ZAG Tiago Coser              OVR 40  Sal    33  G  3  J 17  Craque *
+      - ZAG Maicon                   OVR 39  Sal    42  G  2  J 18  Craque -
+      - ZAG João Almeida             OVR 34  Sal    32  G  1  J 18  Craque -
+      - ZAG Felipe Guimarães         OVR 34  Sal    56  G  0  J  5  Craque -
+      - ZAG Jacy                     OVR 34  Sal    62  G  1  J  6  Craque -
+      - ZAG Guilherme Aquino         OVR 34  Sal    35  G  2  J  8  Craque -
+      - ZAG Bruno Melo               OVR 32  Sal    63  G  0  J  0  Craque -
+      - MEI Sebastián Gómez          OVR 44  Sal    30  G  5  J 18  Craque -
+      - MEI Geovane                  OVR 35  Sal    44  G  0  J  9  Craque -
+      - MEI Willian Oliveira         OVR 35  Sal    55  G  0  J 11  Craque -
+      - MEI Josué                    OVR 35  Sal    30  G  3  J 18  Craque -
+      - MEI Jean Gabriel             OVR 35  Sal    61  G  2  J 16  Craque -
+      - MEI Matheus Bianqui          OVR 32  Sal    33  G  0  J  0  Craque -
+      - MEI Carlos de Pena           OVR 32  Sal    36  G  0  J  0  Craque -
+      - ATA Clayson                  OVR 44  Sal    48  G  6  J 18  Craque *
+      - ATA Dellatorre               OVR 44  Sal    52  G  0  J  5  Craque -
+      - ATA Nicolas Careca           OVR 44  Sal    57  G  1  J  8  Craque -
+      - ATA Lucas Ronier             OVR 44  Sal    53  G  0  J  5  Craque -
+      - ATA Gustavo Coutinho         OVR 42  Sal    51  G  0  J  0  Craque -
+      - ATA Iury Castilho            OVR 40  Sal    34  G  0  J  0  Craque -
+      - ATA Joaquín Lavega           OVR 34  Sal    31  G  0  J  0  Craque -
+      - ATA Pedro Rocha              OVR 29  Sal    60  G  0  J  0  Craque -
+  - Novorizontino | Div final 4 | Pos 5 na Div 4 | Movimento = | Caixa R$ 81,286 mil | Folha R$ 3,200 mil | Torcida 986K | Prestigio 57 | Emprestimo R$ 0 mil | Media elenco 27.6
+    Elenco:
+      - GOL Jordi                    OVR 33  Sal    55  G  0  J 11  Craque *
+      - GOL Airton                   OVR 33  Sal    61  G  0  J  5  Craque -
+      - GOL César Augusto            OVR 31  Sal    34  G  0  J  0  Craque -
+      - ZAG Patrick                  OVR 31  Sal    41  G  2  J 15  Craque *
+      - ZAG Dantas                   OVR 26  Sal    53  G  1  J 16  Craque -
+      - ZAG Rafael Donato            OVR 24  Sal    51  G  3  J 16  Craque -
+      - ZAG Mayk                     OVR 24  Sal    54  G  1  J 15  Craque -
+      - ZAG César Martins            OVR 24  Sal    56  G  0  J  2  Craque -
+      - ZAG Rômulo                   OVR 23  Sal    48  G  0  J  0  Craque -
+      - ZAG Raí Ramos                OVR 21  Sal    42  G  0  J  0  Craque -
+      - MEI Jean Irmer               OVR 30  Sal    35  G  1  J 16  Craque -
+      - MEI Fábio Matheus            OVR 30  Sal    67  G  4  J 16  Craque -
+      - MEI Lucca                    OVR 25  Sal    50  G  0  J 16  Craque -
+      - MEI Waguininho               OVR 24  Sal    52  G  1  J 11  Craque -
+      - MEI Matheus Frizzo           OVR 24  Sal    62  G  1  J  5  Craque -
+      - MEI Marlon                   OVR 24  Sal    42  G  0  J  0  Craque -
+      - MEI Robson                   OVR 21  Sal    61  G  0  J  0  Craque -
+      - ATA Bruno José               OVR 34  Sal    31  G  1  J 13  Craque -
+      - ATA Nicolas Careca           OVR 34  Sal    45  G  4  J 15  Craque -
+      - ATA Caio Dantas              OVR 34  Sal    70  G  0  J  4  Craque *
+      - ATA Léo Tocantins            OVR 33  Sal    46  G  0  J  0  Craque -
+      - ATA Neto Pessoa              OVR 31  Sal    57  G  0  J  0  Craque -
+      - ATA Everaldo                 OVR 28  Sal    31  G  0  J  0  Craque -
+      - ATA Jenison                  OVR 25  Sal    34  G  0  J  0  Craque -
+      - ATA Rodolfo                  OVR 23  Sal    68  G  0  J  0  Craque -
+  - CRB | Div final 4 | Pos 6 na Div 4 | Movimento = | Caixa R$ 85,456 mil | Folha R$ 3,500 mil | Torcida 1.3M | Prestigio 60 | Emprestimo R$ 0 mil | Media elenco 27.6
+    Elenco:
+      - GOL Matheus Albino           OVR 36  Sal    44  G  0  J 16  Craque *
+      - GOL Vitor Caetano            OVR 35  Sal    49  G  0  J  0  Craque -
+      - GOL Pablo                    OVR 30  Sal    46  G  0  J  0  Craque -
+      - ZAG Hereda                   OVR 26  Sal    68  G  1  J 16  Craque *
+      - ZAG Segovia                  OVR 26  Sal    48  G  0  J 16  Craque -
+      - ZAG Henri                    OVR 26  Sal    30  G  1  J 15  Craque -
+      - ZAG Ryan                     OVR 24  Sal    65  G  1  J  7  Craque -
+      - ZAG Weverton                 OVR 24  Sal    64  G  0  J  1  Craque -
+      - ZAG Fábio Alemão             OVR 24  Sal    47  G  0  J  4  Craque -
+      - ZAG Lucas Lovat              OVR 24  Sal    30  G  0  J  5  Craque -
+      - MEI Danielzinho              OVR 29  Sal    45  G  1  J 16  Craque -
+      - MEI Higor Meritão            OVR 29  Sal    63  G  4  J 16  Craque -
+      - MEI Gegê                     OVR 24  Sal    40  G  1  J 15  Craque -
+      - MEI Lucas Kallyel            OVR 23  Sal    58  G  0  J 11  Craque -
+      - MEI Geovane                  OVR 23  Sal    65  G  0  J  6  Craque -
+      - MEI Douglas Baggio           OVR 23  Sal    33  G  0  J  0  Craque -
+      - MEI Mikael                   OVR 23  Sal    52  G  0  J  0  Craque -
+      - ATA William Pottker          OVR 34  Sal    65  G  1  J 16  Craque -
+      - ATA Dadá Belmonte            OVR 34  Sal    34  G  1  J  2  Craque -
+      - ATA Léo Pereira              OVR 34  Sal    45  G  1  J  6  Craque -
+      - ATA Anselmo Ramon            OVR 34  Sal    34  G  1  J  8  Craque *
+      - ATA João Neto                OVR 30  Sal    37  G  0  J  0  Craque -
+      - ATA Thiaguinho               OVR 27  Sal    68  G  0  J  0  Craque -
+      - ATA Labandeira               OVR 24  Sal    33  G  0  J  0  Craque -
+      - ATA Rafinha                  OVR 24  Sal    30  G  0  J  0  Craque -
+  - Paysandu | Div final 4 | Pos 7 na Div 4 | Movimento = | Caixa R$ 102,666 mil | Folha R$ 3,600 mil | Torcida 1.5M | Prestigio 57 | Emprestimo R$ 0 mil | Media elenco 27.7
+    Elenco:
+      - GOL Jean Drosny              OVR 32  Sal    40  G  0  J 12  Craque -
+      - GOL Gabriel Mesquita         OVR 32  Sal    32  G  0  J  6  Craque *
+      - GOL Matheus Nogueira         OVR 31  Sal    36  G  0  J  0  Craque -
+      - ZAG Marcão                   OVR 28  Sal    49  G  4  J 18  Craque *
+      - ZAG Edílson                  OVR 28  Sal    53  G  1  J 17  Craque -
+      - ZAG Bruno Bispo              OVR 26  Sal    63  G  4  J 17  Craque -
+      - ZAG PK                       OVR 26  Sal    53  G  2  J 18  Craque -
+      - ZAG Yeferson Quintana        OVR 26  Sal    70  G  0  J  2  Craque -
+      - ZAG Luccão                   OVR 26  Sal    36  G  0  J  0  Craque -
+      - ZAG Reverson                 OVR 21  Sal    42  G  0  J  0  Craque -
+      - MEI Leandro Vilela           OVR 34  Sal    58  G  0  J 18  Craque -
+      - MEI Marlon                   OVR 25  Sal    31  G  2  J 18  Craque -
+      - MEI Matheus Vargas           OVR 24  Sal    43  G  1  J 18  Craque -
+      - MEI Giovanni                 OVR 23  Sal    60  G  0  J  0  Craque -
+      - MEI Ramon Martinez           OVR 23  Sal    47  G  1  J 17  Craque -
+      - MEI Robinho                  OVR 23  Sal    33  G  1  J  1  Craque -
+      - MEI Cavan                    OVR 23  Sal    66  G  0  J  0  Craque -
+      - ATA Edinho                   OVR 34  Sal    56  G  0  J  3  Craque -
+      - ATA Nicolas                  OVR 34  Sal    49  G  4  J 10  Craque *
+      - ATA Benitez                  OVR 34  Sal    38  G  1  J 11  Craque -
+      - ATA Marlon Douglas           OVR 34  Sal    59  G  0  J 12  Craque -
+      - ATA Ciel                     OVR 27  Sal    57  G  0  J  0  Craque -
+      - ATA Kevin                    OVR 27  Sal    42  G  0  J  0  Craque -
+      - ATA Eliel                    OVR 25  Sal    60  G  0  J  0  Craque -
+      - ATA Diogo Oliveira           OVR 24  Sal    61  G  0  J  0  Craque -
+  - Vila Nova | Div final 4 | Pos 8 na Div 4 | Movimento = | Caixa R$ 103,546 mil | Folha R$ 3,600 mil | Torcida 1.5M | Prestigio 57 | Emprestimo R$ 0 mil | Media elenco 31.1
+    Elenco:
+      - GOL Helton Leite             OVR 36  Sal    59  G  0  J  9  Craque *
+      - GOL Dalberson                OVR 36  Sal    30  G  0  J  8  Craque -
+      - GOL Airton                   OVR 32  Sal    50  G  0  J  1  Craque -
+      - ZAG Caio Marcelo             OVR 34  Sal    39  G  0  J 16  Craque *
+      - ZAG Anderson Jesus           OVR 33  Sal    34  G  0  J 16  Craque -
+      - ZAG Elias                    OVR 30  Sal    46  G  1  J 16  Craque -
+      - ZAG Higor                    OVR 28  Sal    67  G  2  J 13  Craque -
+      - ZAG Weverton                 OVR 28  Sal    67  G  0  J  2  Craque -
+      - ZAG Tiago Pagnussat          OVR 28  Sal    38  G  0  J  1  Craque -
+      - ZAG Hayner                   OVR 24  Sal    49  G  0  J  0  Craque -
+      - MEI Dudu                     OVR 35  Sal    52  G  3  J 16  Craque -
+      - MEI Nathan Camargo           OVR 33  Sal    56  G  2  J 16  Craque -
+      - MEI João Vieira              OVR 28  Sal    31  G  0  J 16  Craque -
+      - MEI Dodô                     OVR 27  Sal    45  G  2  J 11  Craque -
+      - MEI Marco Antonio            OVR 27  Sal    56  G  0  J  5  Craque -
+      - MEI Willian Maranhão         OVR 27  Sal    59  G  0  J  0  Craque -
+      - MEI Marquinhos Gabriel       OVR 23  Sal    32  G  0  J  0  Craque -
+      - ATA Dellatorre               OVR 38  Sal    44  G  2  J 16  Craque -
+      - ATA Andre Luis               OVR 38  Sal    66  G  1  J  8  Craque -
+      - ATA Ruan Ribeiro             OVR 38  Sal    33  G  0  J  8  Craque *
+      - ATA Bruno Xavier             OVR 37  Sal    54  G  0  J  0  Craque -
+      - ATA Rafa Silva               OVR 35  Sal    64  G  0  J  0  Craque -
+      - ATA Emerson Urso             OVR 30  Sal    65  G  0  J  0  Craque -
+      - ATA Janderson                OVR 27  Sal    34  G  0  J  0  Craque -
+      - ATA Alesson                  OVR 26  Sal    59  G  0  J  0  Craque -
+
+## Temporada 2030
+
+### Campeoes
+- Divisao 1: Atlético Mineiro
+- Divisao 2: Fluminense
+- Divisao 3: Bahia
+- Divisao 4: Avaí
+- Copa: Atlético Mineiro
+
+### Artilheiros
+- Artilheiro da temporada: Wesley (Internacional) - 8 gols
+- Top 1: Wesley (Internacional) - 8 gols
+- Top 2: Alisson (Atlético Mineiro) - 7 gols
+- Top 3: Pablo Maia (São Paulo FC) - 7 gols
+- Top 4: Raul Cáceres (Vitória) - 7 gols
+- Top 5: Dellatorre (Coritiba) - 7 gols
+- Top 6: Igor Gomes (Atlético Mineiro) - 6 gols
+- Top 7: Lima (Fluminense) - 6 gols
+- Top 8: Pablo (Athletico Paranaense) - 6 gols
+- Top 9: Erick Farias (Juventude) - 6 gols
+- Top 10: Fabinho (América Mineiro) - 6 gols
+
+### Promovidos
+- Fluminense: 2 -> 1
+- Santos: 2 -> 1
+- Bahia: 3 -> 2
+- Criciúma: 3 -> 2
+- Avaí: 4 -> 3
+- Sport Recife: 4 -> 3
+
+### Rebaixados
+- Grêmio: 1 -> 2
+- RB Bragantino: 1 -> 2
+- Ceará: 2 -> 3
+- Vitória: 2 -> 3
+- Atlético Goianiense: 3 -> 4
+- Cuiabá: 3 -> 4
+
+### Destaques Financeiros e Tecnicos
+- Melhor ataque: Sport Recife com 32 gols
+- Melhor defesa: Avaí com 10 gols sofridos
+- Maior publico: Flamengo x RB Bragantino - 80,000
+- Maior renda: Palmeiras x Cruzeiro - R$ 12,096 mil
+
+### Clubes, Financas e Elencos
+#### Divisao 1
+  - Atlético Mineiro | Div final 1 | Pos 1 na Div 1 | Movimento = | Caixa R$ 1,408,979 mil | Folha R$ 20,000 mil | Torcida 14.3M | Prestigio 93 | Emprestimo R$ 0 mil | Media elenco 80.7
+    Elenco:
+      - GOL Gabriel Delfim           OVR 85  Sal  2734  G  1  J  3  Craque -
+      - GOL Everson                  OVR 85  Sal  2446  G  1  J 14  Craque *
+      - GOL Matheus Mendes           OVR 85  Sal  2295  G  0  J  7  Craque -
+      - ZAG Igor Rabello             OVR 79  Sal  1035  G  2  J 15  Craque -
+      - ZAG Guilherme Arana          OVR 79  Sal  1089  G  1  J 10  Craque -
+      - ZAG Bruno Fuchs              OVR 79  Sal  1088  G  4  J 23  Craque -
+      - ZAG Saravia                  OVR 79  Sal  1119  G  1  J 23  Craque *
+      - ZAG Lyanco                   OVR 79  Sal   748  G  0  J  0  Craque -
+      - ZAG Rubens                   OVR 79  Sal  1191  G  2  J 20  Craque -
+      - ZAG Júnior Alonso            OVR 79  Sal   761  G  0  J  5  Craque -
+      - MEI Alan Franco              OVR 77  Sal   766  G  4  J 22  Craque -
+      - MEI Igor Gomes               OVR 77  Sal   692  G  6  J 18  Craque -
+      - MEI Fausto Vera              OVR 77  Sal   700  G  1  J 20  Craque -
+      - MEI Bernard                  OVR 77  Sal  1124  G  5  J 10  Craque -
+      - MEI Patrick                  OVR 77  Sal   462  G  1  J 10  Craque -
+      - MEI Gustavo Scarpa           OVR 77  Sal   631  G  1  J  8  Craque -
+      - MEI Otávio                   OVR 77  Sal  1188  G  0  J  8  Craque -
+      - ATA Hulk                     OVR 85  Sal  2365  G  5  J 12  Craque *
+      - ATA Deyverson                OVR 85  Sal  2143  G  1  J  3  Craque -
+      - ATA Alisson                  OVR 85  Sal  2223  G  7  J 15  Craque -
+      - ATA Cadu                     OVR 85  Sal  1662  G  5  J 14  Craque -
+      - ATA Tomás Cuello             OVR 85  Sal  2743  G  1  J  4  Craque -
+      - ATA Eduardo Vargas           OVR 84  Sal  2516  G  0  J  0  Craque -
+      - ATA Rony                     OVR 83  Sal   758  G  0  J  0  Craque -
+      - ATA Cristian Pavón           OVR 82  Sal   717  G  0  J  0  Craque -
+  - Palmeiras | Div final 1 | Pos 2 na Div 1 | Movimento = | Caixa R$ 1,304,234 mil | Folha R$ 24,000 mil | Torcida 15.8M | Prestigio 97 | Emprestimo R$ 0 mil | Media elenco 86.1
+    Elenco:
+      - GOL Weverton                 OVR 91  Sal  5230  G  1  J  8  Craque *
+      - GOL Marcelo Lomba            OVR 91  Sal  5911  G  0  J 10  Craque -
+      - GOL Mateus Oliveira          OVR 89  Sal  5774  G  0  J  0  Craque -
+      - ZAG Agustín Giay             OVR 89  Sal  5818  G  2  J 17  Craque *
+      - ZAG Murilo                   OVR 84  Sal  3490  G  2  J 14  Craque -
+      - ZAG Marcos Rocha             OVR 84  Sal  3443  G  1  J  3  Craque -
+      - ZAG Naves                    OVR 84  Sal  2927  G  1  J  8  Craque -
+      - ZAG Mayke                    OVR 84  Sal  1346  G  5  J 17  Craque -
+      - ZAG Gustavo Gómez            OVR 84  Sal  2901  G  1  J 13  Craque -
+      - ZAG Joaquín Piquerez         OVR 79  Sal  1132  G  0  J  0  Craque -
+      - MEI Richard Ríos             OVR 84  Sal  3088  G  3  J 18  Craque -
+      - MEI Aníbal Moreno            OVR 83  Sal  2734  G  1  J  3  Craque -
+      - MEI Fabinho                  OVR 83  Sal  1368  G  1  J  6  Craque -
+      - MEI Maurício                 OVR 83  Sal  3474  G  3  J 18  Craque -
+      - MEI Raphael Veiga            OVR 82  Sal  1714  G  1  J  3  Craque -
+      - MEI Emiliano Martínez        OVR 82  Sal  1669  G  1  J  6  Craque -
+      - MEI Felipe Anderson          OVR 82  Sal  1877  G  4  J 18  Craque -
+      - ATA Estêvão                  OVR 91  Sal  5497  G  2  J  8  Craque *
+      - ATA Facundo Torres           OVR 91  Sal  6764  G  1  J  1  Craque -
+      - ATA Flaco López              OVR 91  Sal  5713  G  4  J 12  Craque -
+      - ATA Paulinho                 OVR 91  Sal  4756  G  4  J 15  Craque -
+      - ATA Bruno Rodrigues          OVR 91  Sal  5691  G  0  J  0  Craque -
+      - ATA Luighi                   OVR 89  Sal  5231  G  0  J  0  Craque -
+      - ATA Vitor Roque              OVR 89  Sal  5356  G  0  J  0  Craque -
+      - ATA Rony                     OVR 85  Sal  1747  G  0  J  0  Craque -
+  - Botafogo | Div final 1 | Pos 3 na Div 1 | Movimento = | Caixa R$ 1,245,351 mil | Folha R$ 20,000 mil | Torcida 13.6M | Prestigio 93 | Emprestimo R$ 0 mil | Media elenco 81.5
+    Elenco:
+      - GOL John                     OVR 87  Sal  6038  G  0  J 16  Craque *
+      - GOL Léo Linck                OVR 87  Sal  3479  G  0  J  0  Craque -
+      - GOL Raul                     OVR 87  Sal  2420  G  0  J  0  Craque -
+      - ZAG Alexander Barboza        OVR 79  Sal  1172  G  0  J 15  Craque -
+      - ZAG David Ricardo            OVR 78  Sal   555  G  2  J 16  Craque -
+      - ZAG Vitinho                  OVR 78  Sal   868  G  0  J 15  Craque *
+      - ZAG Cuiabano                 OVR 78  Sal  1067  G  0  J  7  Craque -
+      - ZAG Bastos                   OVR 78  Sal   500  G  0  J  3  Craque -
+      - ZAG Mateo Ponte              OVR 78  Sal  1087  G  1  J  4  Craque -
+      - ZAG Alex Telles              OVR 78  Sal  1091  G  0  J  4  Craque -
+      - MEI Gregore                  OVR 79  Sal   768  G  5  J 16  Craque -
+      - MEI Allan                    OVR 79  Sal   505  G  1  J 16  Craque -
+      - MEI Jefferson Savarino       OVR 78  Sal  1067  G  0  J  1  Craque -
+      - MEI Newton                   OVR 78  Sal   649  G  5  J  7  Craque -
+      - MEI Santiago Rodríguez       OVR 78  Sal  1177  G  1  J  8  Craque -
+      - MEI Patrick de Paula         OVR 78  Sal   854  G  0  J  2  Craque -
+      - MEI Marlon Freitas           OVR 78  Sal   664  G  0  J 14  Craque -
+      - ATA Matheus Martins          OVR 87  Sal  2172  G  3  J 10  Craque -
+      - ATA Artur                    OVR 87  Sal  3500  G  2  J  8  Craque -
+      - ATA Igor Jesus               OVR 87  Sal  2810  G  5  J 14  Craque *
+      - ATA Santiago                 OVR 86  Sal  2851  G  0  J  0  Craque -
+      - ATA Jeffinho                 OVR 86  Sal  2962  G  0  J  0  Craque -
+      - ATA Elias Manoel             OVR 85  Sal  3312  G  0  J  0  Craque -
+      - ATA Rwan Cruz                OVR 84  Sal  1239  G  0  J  0  Craque -
+      - ATA Kayque                   OVR 81  Sal   658  G  0  J  0  Craque -
+  - Corinthians | Div final 1 | Pos 4 na Div 1 | Movimento = | Caixa R$ 820,206 mil | Folha R$ 19,000 mil | Torcida 31.9M | Prestigio 93 | Emprestimo R$ 0 mil | Media elenco 77.6
+    Elenco:
+      - GOL Hugo Souza               OVR 85  Sal  3384  G  0  J 13  Craque *
+      - GOL Matheus Donelli          OVR 85  Sal  1228  G  0  J  3  Craque -
+      - GOL Felipe Longo             OVR 83  Sal  3040  G  0  J  0  Craque -
+      - ZAG Matheuzinho              OVR 75  Sal  1054  G  5  J 16  Craque *
+      - ZAG Gustavo Henrique         OVR 75  Sal   383  G  0  J  1  Craque -
+      - ZAG Bidu                     OVR 75  Sal   399  G  1  J  4  Craque -
+      - ZAG Félix Torres             OVR 74  Sal   309  G  0  J 11  Craque -
+      - ZAG Léo Maná                 OVR 74  Sal   422  G  1  J 10  Craque -
+      - ZAG Hugo                     OVR 74  Sal   332  G  2  J  8  Craque -
+      - ZAG Cacá                     OVR 74  Sal   390  G  1  J 14  Craque -
+      - MEI Raniele                  OVR 77  Sal   736  G  3  J 15  Craque -
+      - MEI André Carrillo           OVR 73  Sal   249  G  3  J 11  Craque -
+      - MEI Maycon                   OVR 73  Sal   310  G  0  J  5  Craque -
+      - MEI Rodrigo Garro            OVR 73  Sal   417  G  0  J 10  Craque -
+      - MEI Alex Santana             OVR 73  Sal   291  G  1  J  7  Craque -
+      - MEI Charles                  OVR 73  Sal   278  G  0  J 11  Craque -
+      - MEI Breno Bidon              OVR 73  Sal   277  G  1  J  5  Craque -
+      - ATA Giovane                  OVR 81  Sal  2659  G  4  J 16  Craque -
+      - ATA Memphis Depay            OVR 81  Sal   603  G  0  J  1  Craque -
+      - ATA Talles Magno             OVR 81  Sal   814  G  0  J  6  Craque -
+      - ATA Wesley                   OVR 81  Sal   998  G  0  J  3  Craque -
+      - ATA Ángel Romero             OVR 81  Sal   537  G  0  J  2  Craque -
+      - ATA Yuri Alberto             OVR 81  Sal   497  G  0  J  1  Craque *
+      - ATA Pedro Raul               OVR 81  Sal   956  G  1  J  3  Craque -
+      - ATA Kayke                    OVR 79  Sal  1100  G  0  J  0  Craque -
+  - Flamengo | Div final 1 | Pos 5 na Div 1 | Movimento = | Caixa R$ 1,402,534 mil | Folha R$ 28,000 mil | Torcida 33.8M | Prestigio 100 | Emprestimo R$ 0 mil | Media elenco 85.8
+    Elenco:
+      - GOL Dyogo Alves              OVR 92  Sal  3759  G  0  J 14  Craque -
+      - GOL Rossi                    OVR 92  Sal  4273  G  0  J  4  Craque *
+      - GOL Matheus Cunha            OVR 91  Sal  3855  G  0  J  0  Craque -
+      - ZAG Alex Sandro              OVR 84  Sal  2328  G  2  J 18  Craque -
+      - ZAG Danilo                   OVR 83  Sal  2755  G  2  J 18  Craque -
+      - ZAG Léo Ortiz                OVR 83  Sal  1749  G  1  J 18  Craque -
+      - ZAG Léo Pereira              OVR 83  Sal  2879  G  4  J 15  Craque -
+      - ZAG Ayrton Lucas             OVR 82  Sal  2309  G  0  J  3  Craque -
+      - ZAG Wesley                   OVR 82  Sal  1092  G  0  J  0  Craque *
+      - ZAG Guillermo Varela         OVR 82  Sal  1070  G  0  J  0  Craque -
+      - MEI Everton Araújo           OVR 84  Sal  2775  G  5  J  9  Craque -
+      - MEI Carlos Alcaraz           OVR 84  Sal  2074  G  1  J 13  Craque -
+      - MEI Allan                    OVR 84  Sal  1572  G  0  J 15  Craque -
+      - MEI Nicolás De La Cruz       OVR 84  Sal  1644  G  0  J  0  Craque -
+      - MEI Giorgian De Arrascaeta   OVR 84  Sal  3338  G  4  J 16  Craque -
+      - MEI Erick Pulgar             OVR 84  Sal  3021  G  2  J 10  Craque -
+      - MEI Gerson                   OVR 84  Sal  2789  G  0  J  9  Craque -
+      - ATA Bruno Henrique           OVR 90  Sal  4872  G  2  J 18  Craque -
+      - ATA Luiz Araújo              OVR 89  Sal  6784  G  0  J  2  Craque -
+      - ATA Michael                  OVR 89  Sal  6066  G  0  J  1  Craque -
+      - ATA Pedro                    OVR 89  Sal  5947  G  4  J 14  Craque *
+      - ATA Everton Cebolinha        OVR 89  Sal  6894  G  0  J  1  Craque -
+      - ATA Juninho                  OVR 87  Sal  3316  G  0  J  0  Craque -
+      - ATA Matheus Gonçalves        OVR 85  Sal  2774  G  0  J  0  Craque -
+      - ATA Gonzalo Plata            OVR 84  Sal  1403  G  0  J  0  Craque -
+  - Fortaleza | Div final 1 | Pos 6 na Div 1 | Movimento = | Caixa R$ 518,251 mil | Folha R$ 11,000 mil | Torcida 4.4M | Prestigio 80 | Emprestimo R$ 0 mil | Media elenco 72.1
+    Elenco:
+      - GOL Santos                   OVR 77  Sal  1045  G  0  J  2  Craque -
+      - GOL João Ricardo             OVR 77  Sal  1127  G  1  J  5  Craque *
+      - GOL Magrão                   OVR 77  Sal  1074  G  0  J  9  Craque -
+      - ZAG Bruno Pacheco            OVR 70  Sal   450  G  2  J 16  Craque -
+      - ZAG Kuscevic                 OVR 69  Sal   353  G  2  J 16  Craque -
+      - ZAG Mancuso                  OVR 69  Sal   200  G  1  J 13  Craque -
+      - ZAG Talocha                  OVR 69  Sal   264  G  0  J 14  Craque -
+      - ZAG Tinga                    OVR 69  Sal    83  G  0  J  1  Craque *
+      - ZAG Emanuel Brítez           OVR 69  Sal   128  G  0  J  4  Craque -
+      - ZAG Titi                     OVR 68  Sal   146  G  0  J  0  Craque -
+      - MEI Lucas Sasha              OVR 72  Sal   328  G  2  J 16  Craque -
+      - MEI Kervin Andrade           OVR 69  Sal   257  G  1  J 16  Craque -
+      - MEI Martínez                 OVR 69  Sal   374  G  2  J 13  Craque -
+      - MEI Zé Welison               OVR 69  Sal   114  G  0  J  5  Craque -
+      - MEI Hércules                 OVR 69  Sal    94  G  0  J  3  Craque -
+      - MEI Pochettino               OVR 69  Sal   113  G  1  J 11  Craque -
+      - MEI Calebe                   OVR 68  Sal    96  G  0  J  0  Craque -
+      - ATA Marinho                  OVR 78  Sal   490  G  2  J 16  Craque -
+      - ATA Breno Lopes              OVR 78  Sal   594  G  1  J  3  Craque -
+      - ATA Yago Pikachu             OVR 78  Sal   670  G  1  J 13  Craque -
+      - ATA Lucero                   OVR 77  Sal   872  G  0  J  0  Craque *
+      - ATA Renato Kayzer            OVR 77  Sal   445  G  0  J  0  Craque -
+      - ATA Moisés                   OVR 75  Sal   350  G  0  J  0  Craque -
+      - ATA Pedro Rocha              OVR 72  Sal   326  G  0  J  0  Craque -
+      - ATA Allanzinho               OVR 67  Sal    99  G  0  J  0  Craque -
+  - Grêmio | Div final 2 | Pos 7 na Div 1 | Movimento REBAIXADO | Caixa R$ 894,991 mil | Folha R$ 13,000 mil | Torcida 9.1M | Prestigio 82 | Emprestimo R$ 0 mil | Media elenco 79.1
+    Elenco:
+      - GOL Agustín Marchesín        OVR 85  Sal  1699  G  2  J  4  Craque *
+      - GOL Caíque                   OVR 84  Sal  2663  G  0  J  2  Craque -
+      - GOL Gabriel Grando           OVR 84  Sal  2296  G  0  J 12  Craque -
+      - ZAG Reinaldo                 OVR 77  Sal  1145  G  3  J 17  Craque -
+      - ZAG João Pedro               OVR 77  Sal  1157  G  2  J 18  Craque *
+      - ZAG Jemerson                 OVR 76  Sal   814  G  2  J 16  Craque -
+      - ZAG Mayk                     OVR 76  Sal   180  G  0  J  4  Craque -
+      - ZAG Rodrigo Ely              OVR 76  Sal   218  G  1  J  1  Craque -
+      - ZAG Fábio                    OVR 76  Sal   820  G  0  J 13  Craque -
+      - ZAG Kannemann                OVR 76  Sal   267  G  1  J  3  Craque -
+      - MEI Mathías Villasanti       OVR 79  Sal   719  G  4  J 17  Craque -
+      - MEI Dodi                     OVR 77  Sal   793  G  1  J 18  Craque -
+      - MEI Nathan                   OVR 77  Sal  1131  G  0  J  0  Craque -
+      - MEI Franco Cristaldo         OVR 77  Sal   825  G  2  J 17  Craque -
+      - MEI Pepê                     OVR 77  Sal   979  G  4  J 12  Craque -
+      - MEI Miguel Monsalve          OVR 77  Sal   796  G  0  J  8  Craque -
+      - MEI Edenilson                OVR 76  Sal   178  G  0  J  0  Craque -
+      - ATA Martin Braithwaite       OVR 83  Sal  2284  G  0  J  1  Craque *
+      - ATA Aravena                  OVR 83  Sal  3161  G  3  J 13  Craque -
+      - ATA André Henrique           OVR 83  Sal  2423  G  1  J 10  Craque -
+      - ATA Pavon                    OVR 83  Sal  1948  G  2  J  9  Craque -
+      - ATA Cristian Olivera         OVR 83  Sal  2426  G  0  J  3  Craque -
+      - ATA Alysson                  OVR 81  Sal   841  G  0  J  0  Craque -
+      - ATA Matias Arezo             OVR 79  Sal   787  G  0  J  0  Craque -
+      - ATA Soteldo                  OVR 77  Sal   707  G  0  J  0  Craque -
+  - RB Bragantino | Div final 2 | Pos 8 na Div 1 | Movimento REBAIXADO | Caixa R$ 466,073 mil | Folha R$ 9,500 mil | Torcida 1.7M | Prestigio 75 | Emprestimo R$ 0 mil | Media elenco 68.9
+    Elenco:
+      - GOL Cleiton                  OVR 76  Sal   459  G  0  J 10  Craque *
+      - GOL Lucão                    OVR 76  Sal  1180  G  1  J 10  Craque -
+      - GOL Matheus Nogueira         OVR 76  Sal   401  G  0  J  0  Craque -
+      - ZAG Andrés Hurtado           OVR 67  Sal   132  G  2  J 19  Craque *
+      - ZAG Guzmán Rodríguez         OVR 65  Sal   130  G  4  J 20  Craque -
+      - ZAG Natan                    OVR 65  Sal    85  G  0  J  2  Craque -
+      - ZAG Nathan Mendes            OVR 65  Sal   116  G  0  J  1  Craque -
+      - ZAG Luan Cândido             OVR 65  Sal   150  G  1  J  6  Craque -
+      - ZAG Pedro Henrique           OVR 65  Sal   113  G  5  J 14  Craque -
+      - ZAG Juninho Capixaba         OVR 65  Sal   139  G  3  J 18  Craque -
+      - MEI Matheus Fernandes        OVR 68  Sal   222  G  1  J 20  Craque -
+      - MEI Gustavinho               OVR 65  Sal   142  G  2  J  8  Craque -
+      - MEI Jhon Jhon                OVR 65  Sal   141  G  0  J  8  Craque -
+      - MEI Eric Ramires             OVR 65  Sal   138  G  2  J 14  Craque -
+      - MEI Jadsom                   OVR 65  Sal    97  G  2  J 13  Craque -
+      - MEI Lucas Evangelista        OVR 65  Sal    97  G  1  J  7  Craque -
+      - MEI Raul                     OVR 65  Sal   126  G  1  J 10  Craque -
+      - ATA Helinho                  OVR 72  Sal   237  G  0  J  0  Craque -
+      - ATA Henry Mosquera           OVR 72  Sal   276  G  4  J 16  Craque -
+      - ATA Thiago Borbas            OVR 72  Sal   225  G  2  J 15  Craque *
+      - ATA Vitinho                  OVR 72  Sal   367  G  0  J  9  Craque -
+      - ATA Eduardo Sasha            OVR 72  Sal   391  G  0  J  0  Craque -
+      - ATA Lincoln                  OVR 71  Sal   227  G  0  J  0  Craque -
+      - ATA Ignacio Laquintana       OVR 71  Sal   139  G  0  J  0  Craque -
+      - ATA Talisson                 OVR 71  Sal   150  G  0  J  0  Craque -
+
+#### Divisao 2
+  - Fluminense | Div final 1 | Pos 1 na Div 2 | Movimento PROMOVIDO | Caixa R$ 740,841 mil | Folha R$ 16,000 mil | Torcida 10.8M | Prestigio 85 | Emprestimo R$ 0 mil | Media elenco 78.9
+    Elenco:
+      - GOL Pedro Rangel             OVR 85  Sal  1746  G  0  J 19  Craque -
+      - GOL Vitor Eudes              OVR 85  Sal  1664  G  0  J  0  Craque -
+      - GOL Fábio                    OVR 85  Sal  1394  G  0  J  1  Craque *
+      - ZAG Guga                     OVR 77  Sal   787  G  3  J 20  Craque -
+      - ZAG Manoel                   OVR 76  Sal   774  G  1  J 20  Craque -
+      - ZAG Fretes                   OVR 76  Sal   202  G  0  J  3  Craque -
+      - ZAG Thiago Santos            OVR 76  Sal   228  G  0  J  0  Craque -
+      - ZAG Samuel Xavier            OVR 76  Sal   762  G  1  J 15  Craque *
+      - ZAG Renê                     OVR 76  Sal   992  G  3  J 18  Craque -
+      - ZAG Thiago Silva             OVR 76  Sal   405  G  0  J  4  Craque -
+      - MEI Lima                     OVR 76  Sal   866  G  6  J 20  Craque -
+      - MEI Jhon Arias               OVR 75  Sal   333  G  0  J  0  Craque -
+      - MEI Ganso                    OVR 75  Sal   443  G  2  J  9  Craque -
+      - MEI Nonato                   OVR 75  Sal   870  G  4  J 20  Craque -
+      - MEI Martinelli               OVR 75  Sal   232  G  2  J 11  Craque -
+      - MEI Otávio                   OVR 75  Sal   389  G  0  J  8  Craque -
+      - MEI Kevin Serna              OVR 75  Sal   475  G  4  J 12  Craque -
+      - ATA Keno                     OVR 84  Sal  1407  G  3  J 10  Craque -
+      - ATA Agustín Canobbio         OVR 84  Sal  2070  G  0  J 12  Craque -
+      - ATA Germán Cano              OVR 84  Sal  2173  G  3  J 10  Craque *
+      - ATA Isaac                    OVR 84  Sal  2424  G  0  J  1  Craque -
+      - ATA Everaldo                 OVR 84  Sal  2768  G  2  J  7  Craque -
+      - ATA Lelê                     OVR 84  Sal  2053  G  0  J  0  Craque -
+      - ATA Marquinhos               OVR 81  Sal   900  G  0  J  0  Craque -
+      - ATA Riquelme                 OVR 75  Sal   316  G  0  J  0  Craque -
+  - Santos | Div final 1 | Pos 2 na Div 2 | Movimento PROMOVIDO | Caixa R$ 512,146 mil | Folha R$ 7,000 mil | Torcida 12.6M | Prestigio 78 | Emprestimo R$ 0 mil | Media elenco 61.9
+    Elenco:
+      - GOL Gabriel Brazão           OVR 69  Sal    78  G  0  J 11  Craque *
+      - GOL Diógenes                 OVR 69  Sal    78  G  0  J  5  Craque -
+      - GOL João Paulo               OVR 68  Sal    72  G  0  J  0  Craque -
+      - ZAG Joaquim                  OVR 60  Sal    33  G  2  J 16  Craque -
+      - ZAG JP Chermont              OVR 60  Sal    34  G  1  J 16  Craque -
+      - ZAG Aderlan                  OVR 59  Sal    58  G  1  J 16  Craque *
+      - ZAG Gil                      OVR 59  Sal    48  G  0  J 12  Craque -
+      - ZAG Escobar                  OVR 59  Sal    70  G  0  J  4  Craque -
+      - ZAG Kevyson                  OVR 59  Sal    33  G  0  J  0  Craque -
+      - ZAG Zé Ivaldo                OVR 59  Sal    42  G  0  J  0  Craque -
+      - MEI Miguelito                OVR 58  Sal    67  G  0  J 16  Craque -
+      - MEI Tomás Rincón             OVR 58  Sal    41  G  3  J 16  Craque -
+      - MEI Cazares                  OVR 58  Sal    51  G  4  J 15  Craque -
+      - MEI Diego Pituca             OVR 58  Sal    46  G  1  J  5  Craque -
+      - MEI Giuliano                 OVR 58  Sal    49  G  4  J 12  Craque -
+      - MEI Otero                    OVR 58  Sal    38  G  0  J  0  Craque -
+      - MEI João Schmidt             OVR 57  Sal    30  G  0  J  0  Craque -
+      - ATA Guilherme                OVR 67  Sal   123  G  0  J  1  Craque *
+      - ATA Lucas Braga              OVR 67  Sal   129  G  0  J 14  Craque -
+      - ATA Willian Bigode           OVR 67  Sal   117  G  1  J  7  Craque -
+      - ATA Julio Furch              OVR 67  Sal   144  G  0  J  0  Craque -
+      - ATA Pedrinho                 OVR 67  Sal   121  G  5  J 10  Craque -
+      - ATA Wendel Silva             OVR 66  Sal    96  G  0  J  0  Craque -
+      - ATA Morelos                  OVR 65  Sal    93  G  0  J  0  Craque -
+      - ATA Enzo Monteiro            OVR 57  Sal    58  G  0  J  0  Craque -
+  - São Paulo FC | Div final 2 | Pos 3 na Div 2 | Movimento = | Caixa R$ 875,028 mil | Folha R$ 14,000 mil | Torcida 17.2M | Prestigio 82 | Emprestimo R$ 0 mil | Media elenco 71.6
+    Elenco:
+      - GOL Young                    OVR 76  Sal   496  G  1  J 11  Craque -
+      - GOL Jandrei                  OVR 76  Sal   909  G  1  J 13  Craque -
+      - GOL Rafael                   OVR 74  Sal   347  G  0  J  0  Craque *
+      - ZAG Ferraresi                OVR 69  Sal   234  G  2  J 24  Craque -
+      - ZAG Sabino                   OVR 69  Sal   201  G  5  J 24  Craque -
+      - ZAG Alan Franco              OVR 68  Sal    87  G  1  J  6  Craque -
+      - ZAG Igor Vinícius            OVR 68  Sal   389  G  2  J 21  Craque *
+      - ZAG Patryck                  OVR 68  Sal   146  G  0  J  1  Craque -
+      - ZAG Arboleda                 OVR 68  Sal   252  G  3  J 20  Craque -
+      - ZAG Welington                OVR 68  Sal   116  G  0  J  0  Craque -
+      - MEI Pablo Maia               OVR 72  Sal   269  G  7  J 24  Craque -
+      - MEI Wellington Rato          OVR 69  Sal    86  G  0  J  4  Craque -
+      - MEI Matheus Alves            OVR 69  Sal   210  G  5  J 19  Craque -
+      - MEI Damián Bobadilla         OVR 69  Sal    99  G  2  J  6  Craque -
+      - MEI Rodriguinho              OVR 69  Sal   339  G  4  J 14  Craque -
+      - MEI Marcos Antônio           OVR 69  Sal   135  G  0  J 10  Craque -
+      - MEI Alisson                  OVR 69  Sal   257  G  2  J 19  Craque -
+      - ATA Luciano                  OVR 76  Sal   421  G  0  J  8  Craque -
+      - ATA Calleri                  OVR 76  Sal   488  G  4  J 19  Craque *
+      - ATA Ferreira                 OVR 76  Sal   624  G  2  J 12  Craque -
+      - ATA André Silva              OVR 76  Sal  1094  G  0  J  9  Craque -
+      - ATA Lucas Moura              OVR 76  Sal   359  G  0  J  0  Craque -
+      - ATA Erick                    OVR 76  Sal   232  G  0  J  0  Craque -
+      - ATA Henrique Carmo           OVR 74  Sal   182  G  0  J  0  Craque -
+      - ATA William Gomes            OVR 71  Sal   437  G  0  J  0  Craque -
+  - Vasco da Gama | Div final 2 | Pos 4 na Div 2 | Movimento = | Caixa R$ 578,998 mil | Folha R$ 9,000 mil | Torcida 11.1M | Prestigio 78 | Emprestimo R$ 0 mil | Media elenco 67.0
+    Elenco:
+      - GOL Keiller                  OVR 74  Sal   322  G  0  J  5  Craque -
+      - GOL Pablo                    OVR 74  Sal   273  G  0  J 13  Craque -
+      - GOL Léo Jardim               OVR 72  Sal   279  G  0  J  0  Craque *
+      - ZAG Lucas Piton              OVR 64  Sal    99  G  3  J 18  Craque -
+      - ZAG Lucas Oliveira           OVR 64  Sal   132  G  3  J 18  Craque -
+      - ZAG Victor Luís              OVR 63  Sal    70  G  0  J  6  Craque -
+      - ZAG João Victor              OVR 63  Sal   111  G  3  J 15  Craque -
+      - ZAG Paulo Henrique           OVR 63  Sal   119  G  1  J  9  Craque *
+      - ZAG Maicon                   OVR 63  Sal    35  G  0  J  0  Craque -
+      - ZAG Puma Rodríguez           OVR 63  Sal    56  G  1  J  6  Craque -
+      - MEI Tchê Tchê                OVR 63  Sal    97  G  1  J 17  Craque -
+      - MEI Jair                     OVR 63  Sal   131  G  1  J 18  Craque -
+      - MEI Philippe Coutinho        OVR 63  Sal    30  G  0  J  9  Craque -
+      - MEI Dimitri Payet            OVR 63  Sal    91  G  4  J 13  Craque -
+      - MEI Juan Sforza              OVR 63  Sal    91  G  1  J 15  Craque -
+      - MEI Hugo Moura               OVR 63  Sal    63  G  0  J  0  Craque -
+      - MEI Paulinho                 OVR 62  Sal    30  G  0  J  0  Craque -
+      - ATA Rayan                    OVR 72  Sal   166  G  1  J  7  Craque -
+      - ATA David                    OVR 72  Sal   350  G  4  J  7  Craque -
+      - ATA Rossi                    OVR 72  Sal   305  G  0  J  0  Craque -
+      - ATA Adson                    OVR 72  Sal   214  G  2  J 15  Craque -
+      - ATA Alex Teixeira            OVR 72  Sal   180  G  0  J  7  Craque -
+      - ATA GB                       OVR 72  Sal   237  G  0  J  0  Craque -
+      - ATA Pablo Vegetti            OVR 71  Sal   170  G  0  J  0  Craque *
+      - ATA Jean David               OVR 65  Sal   135  G  0  J  0  Craque -
+  - Internacional | Div final 2 | Pos 5 na Div 2 | Movimento = | Caixa R$ 860,548 mil | Folha R$ 14,000 mil | Torcida 7.8M | Prestigio 78 | Emprestimo R$ 0 mil | Media elenco 76.4
+    Elenco:
+      - GOL Sergio Rochet            OVR 85  Sal  1869  G  0  J  8  Craque *
+      - GOL Anthoni                  OVR 85  Sal  1783  G  1  J 14  Craque -
+      - GOL Ivan                     OVR 81  Sal  1120  G  0  J  0  Craque -
+      - ZAG Braian Aguirre           OVR 72  Sal   376  G  2  J 22  Craque -
+      - ZAG Gabriel Mercado          OVR 72  Sal   198  G  0  J 10  Craque -
+      - ZAG Agustín Rogel            OVR 72  Sal   266  G  2  J 10  Craque -
+      - ZAG Vitão                    OVR 72  Sal   318  G  1  J  8  Craque -
+      - ZAG Juninho                  OVR 72  Sal   327  G  1  J 12  Craque -
+      - ZAG Bustos                   OVR 72  Sal   425  G  2  J 13  Craque *
+      - ZAG Alexandro Bernabei       OVR 72  Sal   405  G  1  J 13  Craque -
+      - MEI Thiago Maia              OVR 75  Sal   493  G  2  J 22  Craque -
+      - MEI Bruno Gomes              OVR 74  Sal   407  G  2  J 22  Craque -
+      - MEI Gabriel Tabata           OVR 73  Sal   401  G  5  J 21  Craque -
+      - MEI Rômulo                   OVR 73  Sal   172  G  0  J  4  Craque -
+      - MEI Bruno Henrique           OVR 73  Sal   332  G  3  J 14  Craque -
+      - MEI Fernando                 OVR 73  Sal   329  G  0  J  2  Craque -
+      - MEI Alan Patrick             OVR 73  Sal   241  G  0  J  3  Craque -
+      - ATA Wesley                   OVR 82  Sal  3307  G  8  J 15  Craque -
+      - ATA Lucca                    OVR 81  Sal   777  G  0  J  0  Craque -
+      - ATA Vitinho                  OVR 81  Sal  1126  G  0  J  8  Craque -
+      - ATA Rafael Borré             OVR 81  Sal   834  G  3  J 12  Craque *
+      - ATA Ricardo Mathias          OVR 81  Sal   744  G  2  J  9  Craque -
+      - ATA Lucas Alario             OVR 80  Sal   563  G  0  J  0  Craque -
+      - ATA Enner Valencia           OVR 80  Sal  1172  G  0  J  0  Craque -
+      - ATA Gustavo Prado            OVR 74  Sal   294  G  0  J  0  Craque -
+  - Cruzeiro | Div final 2 | Pos 6 na Div 2 | Movimento = | Caixa R$ 592,397 mil | Folha R$ 13,000 mil | Torcida 9.1M | Prestigio 84 | Emprestimo R$ 0 mil | Media elenco 70.9
+    Elenco:
+      - GOL Cássio                   OVR 76  Sal   743  G  1  J 15  Craque *
+      - GOL Anderson                 OVR 76  Sal  1166  G  0  J  5  Craque -
+      - GOL Léo Aragão               OVR 75  Sal   236  G  0  J  0  Craque -
+      - ZAG Jonathan Jesus           OVR 68  Sal   103  G  4  J 14  Craque -
+      - ZAG Kaiki                    OVR 68  Sal   136  G  1  J 11  Craque -
+      - ZAG Fagner                   OVR 68  Sal    89  G  4  J 17  Craque -
+      - ZAG Lucas Villalba           OVR 68  Sal    94  G  0  J  5  Craque -
+      - ZAG Fabrício Bruno           OVR 68  Sal    99  G  2  J 14  Craque -
+      - ZAG William                  OVR 68  Sal   136  G  3  J 11  Craque *
+      - ZAG Marlon                   OVR 68  Sal   140  G  0  J  8  Craque -
+      - MEI Lucas Romero             OVR 70  Sal   237  G  0  J 18  Craque -
+      - MEI Japa                     OVR 67  Sal   125  G  1  J  6  Craque -
+      - MEI Walace                   OVR 67  Sal   125  G  4  J 20  Craque -
+      - MEI Matheus Henrique         OVR 67  Sal   138  G  0  J 13  Craque -
+      - MEI Matheus Pereira          OVR 67  Sal   126  G  1  J 10  Craque -
+      - MEI Eduardo                  OVR 67  Sal   114  G  0  J  2  Craque -
+      - MEI Christian                OVR 67  Sal   136  G  4  J 11  Craque -
+      - ATA Lautaro Díaz             OVR 79  Sal   962  G  4  J 20  Craque -
+      - ATA Kaio Jorge               OVR 78  Sal  1081  G  3  J  9  Craque *
+      - ATA Dudu                     OVR 77  Sal  1080  G  1  J 11  Craque -
+      - ATA Marquinhos               OVR 75  Sal   195  G  0  J  0  Craque -
+      - ATA Wanderson                OVR 75  Sal   329  G  0  J  0  Craque -
+      - ATA Yannick Bolasie          OVR 74  Sal   372  G  0  J  0  Craque -
+      - ATA Gabriel Veron            OVR 72  Sal   258  G  0  J  0  Craque -
+      - ATA Rafa Silva               OVR 70  Sal   112  G  0  J  0  Craque -
+  - Ceará | Div final 3 | Pos 7 na Div 2 | Movimento REBAIXADO | Caixa R$ 215,690 mil | Folha R$ 4,000 mil | Torcida 2.4M | Prestigio 59 | Emprestimo R$ 0 mil | Media elenco 50.9
+    Elenco:
+      - GOL Bruno Ferreira           OVR 59  Sal    56  G  0  J 15  Craque -
+      - GOL Richard                  OVR 57  Sal    44  G  0  J  2  Craque *
+      - GOL Fernando Miguel          OVR 57  Sal    39  G  0  J  0  Craque -
+      - ZAG Rafael Ramos             OVR 51  Sal    34  G  0  J 15  Craque *
+      - ZAG Raí Ramos                OVR 49  Sal    47  G  0  J 16  Craque -
+      - ZAG Luiz Otávio              OVR 47  Sal    54  G  1  J 11  Craque -
+      - ZAG Matheus Felipe           OVR 47  Sal    52  G  1  J 10  Craque -
+      - ZAG David Ricardo            OVR 47  Sal    69  G  2  J 12  Craque -
+      - ZAG Eric Melo                OVR 47  Sal    51  G  0  J  0  Craque -
+      - ZAG Warley                   OVR 42  Sal    35  G  0  J  0  Craque -
+      - MEI Richardson               OVR 54  Sal    67  G  2  J 16  Craque -
+      - MEI Lourenço                 OVR 49  Sal    68  G  4  J 16  Craque -
+      - MEI Aylon                    OVR 45  Sal    59  G  1  J 15  Craque -
+      - MEI Lucas Mugni              OVR 45  Sal    51  G  1  J  9  Craque -
+      - MEI Rômulo                   OVR 45  Sal    34  G  1  J  5  Craque -
+      - MEI Fernando Sobral          OVR 45  Sal    49  G  0  J  3  Craque -
+      - MEI De Lucca                 OVR 44  Sal    45  G  0  J  0  Craque -
+      - ATA Barceló                  OVR 58  Sal    58  G  1  J  7  Craque -
+      - ATA Facundo Castro           OVR 58  Sal    39  G  0  J  7  Craque -
+      - ATA Saulo Mineiro            OVR 58  Sal    36  G  1  J  8  Craque *
+      - ATA Cléber                   OVR 58  Sal    59  G  3  J 10  Craque -
+      - ATA Recalde                  OVR 56  Sal    56  G  0  J  0  Craque -
+      - ATA Erick Pulga              OVR 53  Sal    69  G  0  J  0  Craque -
+      - ATA Janderson                OVR 53  Sal    32  G  0  J  0  Craque -
+      - ATA Guilherme Bissoli        OVR 46  Sal    68  G  0  J  0  Craque -
+  - Vitória | Div final 3 | Pos 8 na Div 2 | Movimento REBAIXADO | Caixa R$ 271,149 mil | Folha R$ 5,000 mil | Torcida 3.5M | Prestigio 66 | Emprestimo R$ 0 mil | Media elenco 53.5
+    Elenco:
+      - GOL Lucas Arcanjo            OVR 60  Sal    64  G  0  J 11  Craque *
+      - GOL Muriel                   OVR 60  Sal    35  G  0  J  9  Craque -
+      - GOL Dalton                   OVR 56  Sal    56  G  0  J  0  Craque -
+      - ZAG Raul Cáceres             OVR 55  Sal    41  G  7  J 19  Craque *
+      - ZAG Zeca                     OVR 50  Sal    51  G  0  J  1  Craque -
+      - ZAG Wagner Leonardo          OVR 50  Sal    66  G  0  J 11  Craque -
+      - ZAG Neris                    OVR 50  Sal    41  G  0  J 12  Craque -
+      - ZAG Camutanga                OVR 50  Sal    31  G  2  J 19  Craque -
+      - ZAG PK                       OVR 50  Sal    61  G  0  J 18  Craque -
+      - ZAG Patric Calmon            OVR 49  Sal    39  G  0  J  0  Craque -
+      - MEI Léo Naldi                OVR 58  Sal    59  G  2  J 19  Craque -
+      - MEI Caio Vinícius            OVR 50  Sal    63  G  1  J  6  Craque -
+      - MEI Dudu                     OVR 50  Sal    37  G  0  J  3  Craque -
+      - MEI Jean Mota                OVR 50  Sal    62  G  1  J 11  Craque -
+      - MEI Rodrigo Andrade          OVR 50  Sal    56  G  0  J 16  Craque -
+      - MEI Matheuzinho              OVR 50  Sal    47  G  1  J 13  Craque -
+      - MEI Willian Oliveira         OVR 50  Sal    64  G  1  J 12  Craque -
+      - ATA Janderson                OVR 60  Sal    31  G  0  J 15  Craque -
+      - ATA Iury Castilho            OVR 60  Sal    43  G  3  J 10  Craque -
+      - ATA Alerrandro               OVR 60  Sal    50  G  2  J  8  Craque *
+      - ATA Everaldo                 OVR 60  Sal    66  G  0  J  0  Craque -
+      - ATA Osvaldo                  OVR 60  Sal    63  G  2  J  7  Craque -
+      - ATA Wellington Rato          OVR 52  Sal    56  G  0  J  0  Craque -
+      - ATA Fábio Soares             OVR 50  Sal    42  G  0  J  0  Craque -
+      - ATA Carlos Eduardo           OVR 48  Sal    37  G  0  J  0  Craque -
+
+#### Divisao 3
+  - Bahia | Div final 2 | Pos 1 na Div 3 | Movimento PROMOVIDO | Caixa R$ 338,803 mil | Folha R$ 8,500 mil | Torcida 3.0M | Prestigio 74 | Emprestimo R$ 0 mil | Media elenco 68.5
+    Elenco:
+      - GOL Danilo Fernandes         OVR 74  Sal   395  G  0  J 14  Craque -
+      - GOL Marcos Felipe            OVR 74  Sal   179  G  0  J  3  Craque *
+      - GOL Adriel                   OVR 70  Sal   104  G  0  J  0  Craque -
+      - ZAG Arias                    OVR 69  Sal   238  G  1  J 16  Craque -
+      - ZAG Iago Borduchi            OVR 66  Sal   136  G  4  J 16  Craque -
+      - ZAG David Duarte             OVR 65  Sal   101  G  1  J  4  Craque -
+      - ZAG Kanu                     OVR 65  Sal   138  G  0  J 10  Craque -
+      - ZAG Gabriel Xavier           OVR 65  Sal   122  G  2  J 16  Craque -
+      - ZAG Gilberto                 OVR 65  Sal    86  G  0  J  2  Craque *
+      - ZAG Luciano Juba             OVR 65  Sal    80  G  0  J  0  Craque -
+      - MEI Jean Lucas               OVR 67  Sal    98  G  1  J 16  Craque -
+      - MEI Rezende                  OVR 67  Sal   121  G  3  J 15  Craque -
+      - MEI Nicolás Acevedo          OVR 66  Sal   122  G  1  J 14  Craque -
+      - MEI Everton Ribeiro          OVR 66  Sal   147  G  2  J 10  Craque -
+      - MEI Erick                    OVR 66  Sal   103  G  2  J  9  Craque -
+      - MEI Cauly                    OVR 65  Sal    71  G  0  J  0  Craque -
+      - MEI Caio Alexandre           OVR 65  Sal   111  G  0  J  0  Craque -
+      - ATA Biel                     OVR 74  Sal   392  G  5  J 16  Craque -
+      - ATA Ademir                   OVR 73  Sal   311  G  4  J 13  Craque -
+      - ATA Everaldo                 OVR 73  Sal   347  G  0  J  3  Craque *
+      - ATA Lucho Rodríguez          OVR 73  Sal   197  G  0  J  0  Craque -
+      - ATA Kayky                    OVR 72  Sal   243  G  0  J  0  Craque -
+      - ATA Tiago                    OVR 71  Sal   231  G  0  J  0  Craque -
+      - ATA Willian José             OVR 68  Sal   150  G  0  J  0  Craque -
+      - ATA Rafael Ratão             OVR 68  Sal    77  G  0  J  0  Craque -
+  - Criciúma | Div final 2 | Pos 2 na Div 3 | Movimento PROMOVIDO | Caixa R$ 161,314 mil | Folha R$ 4,500 mil | Torcida 927K | Prestigio 64 | Emprestimo R$ 0 mil | Media elenco 47.2
+    Elenco:
+      - GOL Alisson                  OVR 54  Sal    39  G  0  J 14  Craque -
+      - GOL Gustavo                  OVR 54  Sal    67  G  0  J  2  Craque *
+      - GOL Kauã                     OVR 49  Sal    65  G  0  J  0  Craque -
+      - ZAG Claudinho                OVR 51  Sal    34  G  0  J 15  Craque *
+      - ZAG Jonathan                 OVR 46  Sal    55  G  1  J 16  Craque -
+      - ZAG Victor Luís              OVR 44  Sal    43  G  2  J 16  Craque -
+      - ZAG Rodrigo                  OVR 43  Sal    54  G  0  J  5  Craque -
+      - ZAG Tobias Figueiredo        OVR 43  Sal    68  G  0  J  1  Craque -
+      - ZAG Marcelo Hermes           OVR 43  Sal    65  G  2  J 11  Craque -
+      - ZAG Dudu                     OVR 35  Sal    67  G  0  J  0  Craque -
+      - MEI Barreto                  OVR 48  Sal    59  G  3  J 16  Craque -
+      - MEI Higor Meritão            OVR 44  Sal    63  G  2  J 16  Craque -
+      - MEI Fellipe Mateus           OVR 44  Sal    35  G  3  J 16  Craque -
+      - MEI Marquinhos Gabriel       OVR 43  Sal    43  G  0  J  4  Craque -
+      - MEI Newton                   OVR 43  Sal    37  G  1  J  6  Craque -
+      - MEI Rômulo                   OVR 43  Sal    32  G  0  J  6  Craque -
+      - MEI Miquéias                 OVR 40  Sal    67  G  0  J  0  Craque -
+      - ATA Ronald                   OVR 54  Sal    67  G  4  J 16  Craque -
+      - ATA Yannick Bolasie          OVR 54  Sal    41  G  1  J  3  Craque *
+      - ATA Allano                   OVR 54  Sal    56  G  0  J  6  Craque -
+      - ATA Matheusinho              OVR 54  Sal    30  G  4  J  7  Craque -
+      - ATA Jhonata Robert           OVR 52  Sal    56  G  0  J  0  Craque -
+      - ATA Arthur Caíke             OVR 52  Sal    35  G  0  J  0  Craque -
+      - ATA Éder                     OVR 50  Sal    38  G  0  J  0  Craque -
+      - ATA Felipinho                OVR 43  Sal    53  G  0  J  0  Craque -
+  - Athletico Paranaense | Div final 3 | Pos 3 na Div 3 | Movimento = | Caixa R$ 356,611 mil | Folha R$ 9,000 mil | Torcida 5.3M | Prestigio 75 | Emprestimo R$ 0 mil | Media elenco 65.0
+    Elenco:
+      - GOL Mycael                   OVR 70  Sal   131  G  1  J  7  Craque *
+      - GOL Santos                   OVR 70  Sal   133  G  0  J  6  Craque -
+      - GOL Léo Linck                OVR 69  Sal   127  G  1  J  9  Craque -
+      - ZAG Kaique Rocha             OVR 61  Sal    40  G  1  J 20  Craque -
+      - ZAG Madson                   OVR 61  Sal    54  G  3  J 21  Craque -
+      - ZAG Belezi                   OVR 60  Sal    57  G  1  J  9  Craque -
+      - ZAG Lucas Esquivel           OVR 60  Sal    57  G  0  J  2  Craque -
+      - ZAG Fernando                 OVR 60  Sal    37  G  4  J 17  Craque -
+      - ZAG Léo Godoy                OVR 60  Sal    61  G  0  J  7  Craque *
+      - ZAG Matheus Felipe           OVR 60  Sal    40  G  4  J 12  Craque -
+      - MEI Erick                    OVR 66  Sal    72  G  2  J 21  Craque -
+      - MEI Felipinho                OVR 63  Sal    96  G  0  J 21  Craque -
+      - MEI Giuliano                 OVR 62  Sal    33  G  3  J 14  Craque -
+      - MEI Canobbio                 OVR 62  Sal    43  G  2  J  9  Craque -
+      - MEI Alex Santana             OVR 62  Sal    51  G  1  J  6  Craque -
+      - MEI Bruno Zapelli            OVR 62  Sal    59  G  1  J 12  Craque -
+      - MEI Christian                OVR 62  Sal    32  G  1  J  5  Craque -
+      - ATA Mastriani                OVR 70  Sal    85  G  1  J  2  Craque -
+      - ATA Cuello                   OVR 70  Sal   193  G  2  J  7  Craque -
+      - ATA Rômulo                   OVR 70  Sal   428  G  2  J 15  Craque -
+      - ATA Pablo                    OVR 70  Sal   314  G  6  J 20  Craque *
+      - ATA Emersonn                 OVR 70  Sal   121  G  0  J  0  Craque -
+      - ATA Isaac                    OVR 67  Sal   115  G  0  J  0  Craque -
+      - ATA Julimar                  OVR 67  Sal    97  G  0  J  0  Craque -
+      - ATA Di Yorio                 OVR 67  Sal   114  G  0  J  0  Craque -
+  - Mirassol | Div final 3 | Pos 4 na Div 3 | Movimento = | Caixa R$ 152,814 mil | Folha R$ 3,500 mil | Torcida 505K | Prestigio 53 | Emprestimo R$ 0 mil | Media elenco 47.1
+    Elenco:
+      - GOL Alex Muralha             OVR 55  Sal    55  G  0  J 13  Craque *
+      - GOL Walter                   OVR 55  Sal    54  G  0  J  3  Craque -
+      - GOL Vanderlei                OVR 54  Sal    62  G  0  J  0  Craque -
+      - ZAG Lucas Ramon              OVR 47  Sal    40  G  2  J 15  Craque *
+      - ZAG Luiz Otávio              OVR 45  Sal    39  G  0  J 14  Craque -
+      - ZAG Rodrigo Ferreira         OVR 43  Sal    45  G  1  J 15  Craque -
+      - ZAG Daniel Borges            OVR 43  Sal    60  G  0  J  7  Craque -
+      - ZAG João Victor              OVR 43  Sal    30  G  0  J  5  Craque -
+      - ZAG Reinaldo                 OVR 43  Sal    68  G  2  J  8  Craque -
+      - ZAG Zeca                     OVR 42  Sal    51  G  0  J  0  Craque -
+      - MEI Danielzinho              OVR 50  Sal    30  G  2  J 16  Craque -
+      - MEI Neto Moura               OVR 45  Sal    48  G  3  J 16  Craque -
+      - MEI Negueba                  OVR 43  Sal    68  G  2  J 13  Craque -
+      - MEI Gabriel                  OVR 43  Sal    33  G  0  J  2  Craque -
+      - MEI Chico Kim                OVR 43  Sal    42  G  3  J  9  Craque -
+      - MEI Yago Felipe              OVR 43  Sal    33  G  0  J  8  Craque -
+      - MEI Iury                     OVR 42  Sal    54  G  0  J  0  Craque -
+      - ATA Zé Roberto               OVR 54  Sal    30  G  2  J  9  Craque -
+      - ATA Fabrício Daniel          OVR 54  Sal    37  G  3  J  9  Craque -
+      - ATA Fernandinho              OVR 54  Sal    69  G  3  J 11  Craque -
+      - ATA Dellatorre               OVR 54  Sal    40  G  0  J  3  Craque *
+      - ATA Quirino                  OVR 54  Sal    32  G  0  J  0  Craque -
+      - ATA Rafinha                  OVR 45  Sal    64  G  0  J  0  Craque -
+      - ATA Nicolas                  OVR 44  Sal    67  G  0  J  0  Craque -
+      - ATA Alex Silva               OVR 39  Sal    56  G  0  J  0  Craque -
+  - Juventude | Div final 3 | Pos 5 na Div 3 | Movimento = | Caixa R$ 211,160 mil | Folha R$ 5,500 mil | Torcida 1.1M | Prestigio 66 | Emprestimo R$ 0 mil | Media elenco 54.1
+    Elenco:
+      - GOL Gabriel                  OVR 63  Sal    84  G  0  J 18  Craque *
+      - GOL César                    OVR 60  Sal    58  G  0  J  1  Craque -
+      - GOL Marcão                   OVR 59  Sal    36  G  0  J  0  Craque -
+      - ZAG João Lucas               OVR 57  Sal    42  G  2  J 17  Craque *
+      - ZAG Abner                    OVR 49  Sal    31  G  0  J 18  Craque -
+      - ZAG Alan Ruschel             OVR 48  Sal    52  G  0  J  2  Craque -
+      - ZAG Marcos Paulo             OVR 48  Sal    48  G  0  J 12  Craque -
+      - ZAG Rodrigo Sam              OVR 48  Sal    44  G  0  J  3  Craque -
+      - ZAG Ewerthon                 OVR 48  Sal    48  G  1  J 18  Craque -
+      - ZAG Danilo Boza              OVR 48  Sal    52  G  0  J  2  Craque -
+      - MEI Caique                   OVR 57  Sal    47  G  4  J 18  Craque -
+      - MEI Jean Irmer               OVR 52  Sal    56  G  3  J 18  Craque -
+      - MEI Mandaca                  OVR 51  Sal    51  G  2  J 18  Craque -
+      - MEI Jadson                   OVR 50  Sal    40  G  1  J  1  Craque -
+      - MEI Nenê                     OVR 50  Sal    39  G  4  J 15  Craque -
+      - MEI Luan Dias                OVR 50  Sal    33  G  0  J  2  Craque -
+      - MEI Luis Oyama               OVR 49  Sal    57  G  0  J  0  Craque -
+      - ATA Erick Farias             OVR 60  Sal    49  G  6  J 15  Craque *
+      - ATA Edinho                   OVR 60  Sal    57  G  1  J  5  Craque -
+      - ATA Lucas Barbosa            OVR 60  Sal    36  G  2  J  7  Craque -
+      - ATA Marcelinho               OVR 60  Sal    62  G  1  J  1  Craque -
+      - ATA Gilberto                 OVR 60  Sal    31  G  2  J  8  Craque -
+      - ATA Taliari                  OVR 56  Sal    38  G  0  J  0  Craque -
+      - ATA Gabriel Taliari          OVR 56  Sal    57  G  0  J  0  Craque -
+      - ATA Da Silva                 OVR 50  Sal    43  G  0  J  0  Craque -
+  - Goiás | Div final 3 | Pos 6 na Div 3 | Movimento = | Caixa R$ 163,601 mil | Folha R$ 4,600 mil | Torcida 3.1M | Prestigio 64 | Emprestimo R$ 0 mil | Media elenco 34.6
+    Elenco:
+      - GOL Thiago Rodrigues         OVR 45  Sal    52  G  0  J 16  Craque -
+      - GOL Tadeu                    OVR 45  Sal    47  G  0  J  0  Craque *
+      - GOL Marcão                   OVR 38  Sal    60  G  0  J  0  Craque -
+      - ZAG Ezequiel                 OVR 35  Sal    49  G  2  J 15  Craque *
+      - ZAG Lucas Ribeiro            OVR 34  Sal    37  G  1  J 16  Craque -
+      - ZAG Luiz Felipe              OVR 32  Sal    43  G  2  J 16  Craque -
+      - ZAG Nicolas                  OVR 29  Sal    51  G  0  J  0  Craque -
+      - ZAG Rodrigo Soares           OVR 29  Sal    67  G  1  J  7  Craque -
+      - ZAG Titi                     OVR 29  Sal    33  G  0  J 10  Craque -
+      - ZAG Anthony                  OVR 28  Sal    41  G  0  J  0  Craque -
+      - MEI Gegê                     OVR 38  Sal    34  G  2  J 15  Craque -
+      - MEI Juninho                  OVR 32  Sal    44  G  1  J 15  Craque -
+      - MEI Lucas Lima               OVR 31  Sal    40  G  3  J 16  Craque -
+      - MEI Brayann                  OVR 31  Sal    47  G  2  J 16  Craque -
+      - MEI Lourenço                 OVR 31  Sal    42  G  0  J  2  Craque -
+      - MEI Jean Carlos              OVR 31  Sal    38  G  0  J  0  Craque -
+      - MEI Filipe Machado           OVR 30  Sal    46  G  0  J  0  Craque -
+      - ATA Wellington Rato          OVR 41  Sal    61  G  0  J 16  Craque *
+      - ATA Pedrinho                 OVR 41  Sal    50  G  0  J  2  Craque -
+      - ATA Esli García              OVR 41  Sal    57  G  0  J  2  Craque -
+      - ATA Bruno Sávio              OVR 41  Sal    51  G  1  J 12  Craque -
+      - ATA Anselmo Ramon            OVR 38  Sal    40  G  0  J  0  Craque -
+      - ATA Arthur Caíke             OVR 32  Sal    57  G  0  J  0  Craque -
+      - ATA Cadu                     OVR 32  Sal    49  G  0  J  0  Craque -
+      - ATA Jajá                     OVR 32  Sal    49  G  0  J  0  Craque -
+  - Atlético Goianiense | Div final 4 | Pos 7 na Div 3 | Movimento REBAIXADO | Caixa R$ 179,350 mil | Folha R$ 4,500 mil | Torcida 1.5M | Prestigio 56 | Emprestimo R$ 0 mil | Media elenco 50.8
+    Elenco:
+      - GOL Luan Polli               OVR 59  Sal    34  G  0  J  6  Craque -
+      - GOL Ronaldo                  OVR 59  Sal    70  G  0  J 11  Craque *
+      - GOL Pedro Paulo              OVR 57  Sal    61  G  0  J  0  Craque -
+      - ZAG Bruno Tubarão            OVR 56  Sal    59  G  3  J 16  Craque *
+      - ZAG Maguinho                 OVR 48  Sal    53  G  0  J 16  Craque -
+      - ZAG Luiz Felipe              OVR 47  Sal    47  G  1  J 16  Craque -
+      - ZAG Guilherme Romão          OVR 46  Sal    45  G  0  J  2  Craque -
+      - ZAG Rhaldney                 OVR 46  Sal    44  G  0  J  8  Craque -
+      - ZAG Alix Vinicius            OVR 46  Sal    62  G  2  J  6  Craque -
+      - ZAG Lucas Gazal              OVR 46  Sal    66  G  0  J  0  Craque -
+      - MEI Roni                     OVR 54  Sal    59  G  2  J 16  Craque -
+      - MEI Campanharo               OVR 46  Sal    48  G  1  J 16  Craque -
+      - MEI Baralhas                 OVR 46  Sal    62  G  2  J 16  Craque -
+      - MEI Shaylon                  OVR 45  Sal    44  G  1  J  4  Craque -
+      - MEI Jorginho                 OVR 45  Sal    37  G  0  J 10  Craque -
+      - MEI Léo Pereira              OVR 45  Sal    46  G  0  J  0  Craque -
+      - MEI Emiliano Rodríguez       OVR 45  Sal    42  G  0  J  2  Craque -
+      - ATA Luiz Fernando            OVR 58  Sal    65  G  0  J 16  Craque *
+      - ATA Derek                    OVR 57  Sal    31  G  3  J  8  Craque -
+      - ATA Janderson                OVR 57  Sal    34  G  1  J  4  Craque -
+      - ATA Alejo Cruz               OVR 57  Sal    36  G  0  J  3  Craque -
+      - ATA Hyuri                    OVR 57  Sal    60  G  0  J  1  Craque -
+      - ATA Danielzinho              OVR 55  Sal    35  G  0  J  0  Craque -
+      - ATA Gustavo Coutinho         OVR 45  Sal    61  G  0  J  0  Craque -
+      - ATA Yony González            OVR 45  Sal    46  G  0  J  0  Craque -
+  - Cuiabá | Div final 4 | Pos 8 na Div 3 | Movimento REBAIXADO | Caixa R$ 178,739 mil | Folha R$ 5,000 mil | Torcida 1.1M | Prestigio 56 | Emprestimo R$ 0 mil | Media elenco 54.1
+    Elenco:
+      - GOL Walter                   OVR 60  Sal    49  G  1  J  8  Craque *
+      - GOL João Carlos              OVR 60  Sal    53  G  0  J 10  Craque -
+      - GOL Mateus Pasinato          OVR 58  Sal    34  G  0  J  0  Craque -
+      - ZAG Matheus Alexandre        OVR 58  Sal    37  G  3  J 18  Craque *
+      - ZAG Marllon                  OVR 55  Sal    47  G  0  J 18  Craque -
+      - ZAG Railan                   OVR 49  Sal    52  G  2  J 12  Craque -
+      - ZAG Sander                   OVR 49  Sal    55  G  1  J 13  Craque -
+      - ZAG Alan Empereur            OVR 49  Sal    52  G  0  J  5  Craque -
+      - ZAG Bruno Alves              OVR 49  Sal    64  G  0  J  6  Craque -
+      - ZAG Ramon                    OVR 48  Sal    69  G  0  J  0  Craque -
+      - MEI Denilson                 OVR 54  Sal    64  G  1  J 18  Craque -
+      - MEI Lucas Mineiro            OVR 51  Sal    39  G  1  J 17  Craque -
+      - MEI Max                      OVR 50  Sal    69  G  0  J 15  Craque -
+      - MEI Ronald                   OVR 50  Sal    55  G  2  J  6  Craque -
+      - MEI Clayson                  OVR 50  Sal    53  G  1  J 16  Craque -
+      - MEI Filipe Augusto           OVR 50  Sal    52  G  0  J  0  Craque -
+      - MEI Fernando Sobral          OVR 50  Sal    33  G  0  J  0  Craque -
+      - ATA Eliel                    OVR 60  Sal    39  G  0  J 11  Craque -
+      - ATA Jonathan Cafu            OVR 60  Sal    58  G  1  J  5  Craque -
+      - ATA André Luís               OVR 60  Sal    52  G  0  J  1  Craque -
+      - ATA Derik Lacerda            OVR 60  Sal    50  G  0  J  2  Craque -
+      - ATA Isidro Pitta             OVR 60  Sal    50  G  3  J 17  Craque *
+      - ATA Deyverson                OVR 59  Sal    37  G  0  J  0  Craque -
+      - ATA Wellington Silva         OVR 54  Sal    60  G  0  J  0  Craque -
+      - ATA Alisson Safira           OVR 51  Sal    45  G  0  J  0  Craque -
+
+#### Divisao 4
+  - Avaí | Div final 3 | Pos 1 na Div 4 | Movimento PROMOVIDO | Caixa R$ 131,261 mil | Folha R$ 3,800 mil | Torcida 1.8M | Prestigio 66 | Emprestimo R$ 0 mil | Media elenco 30.1
+    Elenco:
+      - GOL Igor Bohn                OVR 38  Sal    30  G  1  J  8  Craque *
+      - GOL Otávio Passos            OVR 38  Sal    57  G  0  J  8  Craque -
+      - GOL Léo Aragão               OVR 33  Sal    69  G  0  J  0  Craque -
+      - ZAG Douglas Teixeira         OVR 32  Sal    51  G  2  J 16  Craque *
+      - ZAG Quaresma                 OVR 29  Sal    48  G  3  J 16  Craque -
+      - ZAG Guilherme Aquino         OVR 27  Sal    32  G  1  J  8  Craque -
+      - ZAG Allyson                  OVR 27  Sal    66  G  0  J  1  Craque -
+      - ZAG Wallison                 OVR 27  Sal    32  G  4  J 14  Craque -
+      - ZAG Wesley Gasolina          OVR 27  Sal    41  G  1  J  9  Craque -
+      - ZAG Gabriel Simples          OVR 26  Sal    31  G  0  J  0  Craque -
+      - MEI Jean Lucas               OVR 34  Sal    43  G  0  J 16  Craque -
+      - MEI Hyan                     OVR 25  Sal    49  G  0  J 16  Craque -
+      - MEI Romildo Del Piage        OVR 24  Sal    51  G  0  J  5  Craque -
+      - MEI Wenderson                OVR 24  Sal    59  G  0  J  0  Craque -
+      - MEI Zé Ricardo               OVR 24  Sal    53  G  1  J 15  Craque -
+      - MEI Luiz Henrique            OVR 24  Sal    42  G  0  J  0  Craque -
+      - MEI Daniel Penha             OVR 24  Sal    47  G  0  J 12  Craque -
+      - ATA Rafael Bilu              OVR 38  Sal    41  G  4  J 16  Craque *
+      - ATA Maurício Garcez          OVR 37  Sal    49  G  0  J  1  Craque -
+      - ATA Gaspar                   OVR 37  Sal    67  G  0  J  4  Craque -
+      - ATA Felipe Avenatti          OVR 37  Sal    50  G  4  J 11  Craque -
+      - ATA Sorriso                  OVR 36  Sal    68  G  0  J  0  Craque -
+      - ATA Thayllon                 OVR 32  Sal    59  G  0  J  0  Craque -
+      - ATA Igor Rosa                OVR 27  Sal    64  G  0  J  0  Craque -
+      - ATA Mário Sérgio             OVR 26  Sal    61  G  0  J  0  Craque -
+  - Sport Recife | Div final 3 | Pos 2 na Div 4 | Movimento PROMOVIDO | Caixa R$ 177,858 mil | Folha R$ 4,000 mil | Torcida 2.6M | Prestigio 59 | Emprestimo R$ 0 mil | Media elenco 47.2
+    Elenco:
+      - GOL Caíque França            OVR 57  Sal    53  G  1  J 16  Craque *
+      - GOL Adriel                   OVR 57  Sal    57  G  0  J  0  Craque -
+      - GOL Denis                    OVR 55  Sal    68  G  0  J  0  Craque -
+      - ZAG Rosales                  OVR 46  Sal    70  G  5  J 16  Craque *
+      - ZAG Hereda                   OVR 43  Sal    44  G  2  J 16  Craque -
+      - ZAG Luciano Castán           OVR 43  Sal    30  G  1  J 11  Craque -
+      - ZAG Rafael Thyere            OVR 43  Sal    52  G  2  J  5  Craque -
+      - ZAG Felipinho                OVR 43  Sal    50  G  2  J 10  Craque -
+      - ZAG Chico                    OVR 43  Sal    40  G  0  J  6  Craque -
+      - ZAG Igor Cariús              OVR 43  Sal    45  G  0  J  0  Craque -
+      - MEI Fabinho                  OVR 49  Sal    45  G  4  J 16  Craque -
+      - MEI Felipe                   OVR 46  Sal    64  G  3  J 16  Craque -
+      - MEI Lucas Lima               OVR 43  Sal    67  G  1  J 16  Craque -
+      - MEI Julián Fernández         OVR 43  Sal    51  G  2  J 12  Craque -
+      - MEI Alan Ruiz                OVR 42  Sal    63  G  3  J  4  Craque -
+      - MEI Titi Ortíz               OVR 42  Sal    32  G  0  J  0  Craque -
+      - MEI Pedro Vilhena            OVR 42  Sal    34  G  0  J  0  Craque -
+      - ATA Zé Roberto               OVR 52  Sal    67  G  2  J 10  Craque -
+      - ATA Barletta                 OVR 52  Sal    59  G  3  J 12  Craque *
+      - ATA Gustavo Coutinho         OVR 52  Sal    51  G  2  J  6  Craque -
+      - ATA Chrystian                OVR 52  Sal    38  G  0  J  3  Craque -
+      - ATA Pablo Dyego              OVR 52  Sal    37  G  0  J  1  Craque -
+      - ATA Romarinho                OVR 51  Sal    57  G  0  J  0  Craque -
+      - ATA Lenny Lobato             OVR 44  Sal    37  G  0  J  0  Craque -
+      - ATA Diego Souza Jr           OVR 42  Sal    34  G  0  J  0  Craque -
+  - Vila Nova | Div final 4 | Pos 3 na Div 4 | Movimento = | Caixa R$ 122,738 mil | Folha R$ 3,600 mil | Torcida 1.5M | Prestigio 57 | Emprestimo R$ 0 mil | Media elenco 30.7
+    Elenco:
+      - GOL Dalberson                OVR 36  Sal    48  G  0  J 10  Craque -
+      - GOL Helton Leite             OVR 36  Sal    65  G  0  J  7  Craque *
+      - GOL Airton                   OVR 34  Sal    32  G  0  J  0  Craque -
+      - ZAG Caio Marcelo             OVR 31  Sal    48  G  1  J 16  Craque *
+      - ZAG Anderson Jesus           OVR 31  Sal    67  G  0  J 16  Craque -
+      - ZAG Weverton                 OVR 27  Sal    31  G  1  J  4  Craque -
+      - ZAG Elias                    OVR 27  Sal    39  G  1  J 14  Craque -
+      - ZAG Tiago Pagnussat          OVR 27  Sal    32  G  2  J 14  Craque -
+      - ZAG Higor                    OVR 27  Sal    45  G  0  J  0  Craque -
+      - ZAG Hayner                   OVR 25  Sal    65  G  0  J  0  Craque -
+      - MEI Dudu                     OVR 35  Sal    36  G  1  J 16  Craque -
+      - MEI Nathan Camargo           OVR 32  Sal    30  G  5  J 16  Craque -
+      - MEI João Vieira              OVR 28  Sal    54  G  2  J  3  Craque -
+      - MEI Marco Antonio            OVR 27  Sal    44  G  2  J 13  Craque -
+      - MEI Dodô                     OVR 27  Sal    49  G  4  J 16  Craque -
+      - MEI Willian Maranhão         OVR 27  Sal    32  G  0  J  0  Craque -
+      - MEI Marquinhos Gabriel       OVR 25  Sal    52  G  0  J  0  Craque -
+      - ATA Bruno Xavier             OVR 37  Sal    55  G  1  J  4  Craque -
+      - ATA Andre Luis               OVR 37  Sal    66  G  2  J 11  Craque -
+      - ATA Rafa Silva               OVR 37  Sal    31  G  1  J  2  Craque -
+      - ATA Dellatorre               OVR 37  Sal    64  G  0  J  0  Craque -
+      - ATA Ruan Ribeiro             OVR 37  Sal    46  G  3  J 15  Craque *
+      - ATA Emerson Urso             OVR 30  Sal    40  G  0  J  0  Craque -
+      - ATA Janderson                OVR 26  Sal    66  G  0  J  0  Craque -
+      - ATA Alesson                  OVR 25  Sal    49  G  0  J  0  Craque -
+  - Coritiba | Div final 4 | Pos 4 na Div 4 | Movimento = | Caixa R$ 160,226 mil | Folha R$ 4,800 mil | Torcida 3.1M | Prestigio 64 | Emprestimo R$ 0 mil | Media elenco 37.6
+    Elenco:
+      - GOL Pedro Rangel             OVR 46  Sal    56  G  0  J 16  Craque -
+      - GOL Pedro Morisco            OVR 45  Sal    67  G  0  J  0  Craque *
+      - GOL Gabriel Leite            OVR 45  Sal    67  G  0  J  0  Craque -
+      - ZAG Tiago Coser              OVR 37  Sal    48  G  3  J 16  Craque *
+      - ZAG Maicon                   OVR 36  Sal    60  G  0  J 16  Craque -
+      - ZAG João Almeida             OVR 33  Sal    39  G  0  J  7  Craque -
+      - ZAG Bruno Melo               OVR 33  Sal    48  G  0  J  2  Craque -
+      - ZAG Felipe Guimarães         OVR 33  Sal    69  G  0  J  4  Craque -
+      - ZAG Jacy                     OVR 33  Sal    40  G  4  J 15  Craque -
+      - ZAG Guilherme Aquino         OVR 33  Sal    34  G  2  J  4  Craque -
+      - MEI Sebastián Gómez          OVR 43  Sal    58  G  3  J 16  Craque -
+      - MEI Geovane                  OVR 36  Sal    64  G  2  J 16  Craque -
+      - MEI Jean Gabriel             OVR 35  Sal    31  G  2  J 16  Craque -
+      - MEI Josué                    OVR 33  Sal    36  G  0  J  5  Craque -
+      - MEI Willian Oliveira         OVR 33  Sal    60  G  1  J 11  Craque -
+      - MEI Matheus Bianqui          OVR 30  Sal    54  G  0  J  0  Craque -
+      - MEI Carlos de Pena           OVR 30  Sal    35  G  0  J  0  Craque -
+      - ATA Nicolas Careca           OVR 44  Sal    64  G  3  J  5  Craque -
+      - ATA Lucas Ronier             OVR 44  Sal    31  G  2  J 11  Craque -
+      - ATA Clayson                  OVR 44  Sal    50  G  0  J  7  Craque *
+      - ATA Dellatorre               OVR 44  Sal    41  G  7  J  9  Craque -
+      - ATA Gustavo Coutinho         OVR 43  Sal    60  G  0  J  0  Craque -
+      - ATA Iury Castilho            OVR 41  Sal    46  G  0  J  0  Craque -
+      - ATA Joaquín Lavega           OVR 37  Sal    51  G  0  J  0  Craque -
+      - ATA Pedro Rocha              OVR 27  Sal    58  G  0  J  0  Craque -
+  - Paysandu | Div final 4 | Pos 5 na Div 4 | Movimento = | Caixa R$ 119,278 mil | Folha R$ 3,600 mil | Torcida 1.6M | Prestigio 57 | Emprestimo R$ 0 mil | Media elenco 27.6
+    Elenco:
+      - GOL Jean Drosny              OVR 32  Sal    64  G  0  J  7  Craque -
+      - GOL Gabriel Mesquita         OVR 32  Sal    44  G  0  J  0  Craque *
+      - GOL Matheus Nogueira         OVR 32  Sal    50  G  0  J  9  Craque -
+      - ZAG PK                       OVR 26  Sal    56  G  0  J 16  Craque -
+      - ZAG Marcão                   OVR 26  Sal    67  G  1  J 16  Craque *
+      - ZAG Edílson                  OVR 26  Sal    50  G  1  J 16  Craque -
+      - ZAG Bruno Bispo              OVR 25  Sal    32  G  0  J 15  Craque -
+      - ZAG Luccão                   OVR 24  Sal    35  G  1  J  1  Craque -
+      - ZAG Yeferson Quintana        OVR 24  Sal    43  G  0  J  0  Craque -
+      - ZAG Reverson                 OVR 24  Sal    37  G  0  J  0  Craque -
+      - MEI Leandro Vilela           OVR 34  Sal    62  G  2  J 16  Craque -
+      - MEI Matheus Vargas           OVR 24  Sal    32  G  1  J 16  Craque -
+      - MEI Marlon                   OVR 24  Sal    43  G  0  J 15  Craque -
+      - MEI Cavan                    OVR 24  Sal    68  G  0  J  4  Craque -
+      - MEI Giovanni                 OVR 24  Sal    47  G  1  J  3  Craque -
+      - MEI Robinho                  OVR 23  Sal    68  G  1  J 10  Craque -
+      - MEI Ramon Martinez           OVR 23  Sal    52  G  0  J  0  Craque -
+      - ATA Edinho                   OVR 34  Sal    43  G  0  J  8  Craque -
+      - ATA Marlon Douglas           OVR 34  Sal    37  G  2  J 14  Craque -
+      - ATA Nicolas                  OVR 34  Sal    55  G  4  J 10  Craque *
+      - ATA Benitez                  OVR 33  Sal    39  G  0  J  0  Craque -
+      - ATA Ciel                     OVR 29  Sal    46  G  0  J  0  Craque -
+      - ATA Kevin                    OVR 29  Sal    63  G  0  J  0  Craque -
+      - ATA Eliel                    OVR 26  Sal    45  G  0  J  0  Craque -
+      - ATA Diogo Oliveira           OVR 24  Sal    45  G  0  J  0  Craque -
+  - Novorizontino | Div final 4 | Pos 6 na Div 4 | Movimento = | Caixa R$ 98,681 mil | Folha R$ 3,200 mil | Torcida 1.0M | Prestigio 58 | Emprestimo R$ 0 mil | Media elenco 27.2
+    Elenco:
+      - GOL Jordi                    OVR 32  Sal    66  G  0  J 13  Craque *
+      - GOL Airton                   OVR 32  Sal    53  G  0  J  5  Craque -
+      - GOL César Augusto            OVR 30  Sal    55  G  0  J  0  Craque -
+      - ZAG Patrick                  OVR 30  Sal    46  G  2  J 18  Craque *
+      - ZAG Rafael Donato            OVR 25  Sal    45  G  2  J 18  Craque -
+      - ZAG Dantas                   OVR 24  Sal    43  G  2  J 18  Craque -
+      - ZAG Mayk                     OVR 22  Sal    53  G  0  J  8  Craque -
+      - ZAG César Martins            OVR 22  Sal    55  G  1  J  6  Craque -
+      - ZAG Rômulo                   OVR 22  Sal    51  G  0  J  4  Craque -
+      - ZAG Raí Ramos                OVR 21  Sal    50  G  0  J  0  Craque -
+      - MEI Jean Irmer               OVR 28  Sal    66  G  3  J 18  Craque -
+      - MEI Fábio Matheus            OVR 27  Sal    32  G  2  J 18  Craque -
+      - MEI Waguininho               OVR 24  Sal    52  G  2  J 18  Craque -
+      - MEI Matheus Frizzo           OVR 24  Sal    63  G  0  J  9  Craque -
+      - MEI Lucca                    OVR 24  Sal    44  G  1  J  6  Craque -
+      - MEI Marlon                   OVR 24  Sal    34  G  2  J  3  Craque -
+      - MEI Robson                   OVR 22  Sal    57  G  0  J  0  Craque -
+      - ATA Nicolas Careca           OVR 35  Sal    36  G  1  J 14  Craque -
+      - ATA Bruno José               OVR 35  Sal    66  G  4  J 11  Craque -
+      - ATA Léo Tocantins            OVR 35  Sal    36  G  2  J  6  Craque -
+      - ATA Caio Dantas              OVR 35  Sal    51  G  0  J  5  Craque *
+      - ATA Neto Pessoa              OVR 33  Sal    37  G  0  J  0  Craque -
+      - ATA Everaldo                 OVR 28  Sal    42  G  0  J  0  Craque -
+      - ATA Jenison                  OVR 25  Sal    51  G  0  J  0  Craque -
+      - ATA Rodolfo                  OVR 23  Sal    47  G  0  J  0  Craque -
+  - CRB | Div final 4 | Pos 7 na Div 4 | Movimento = | Caixa R$ 100,076 mil | Folha R$ 3,500 mil | Torcida 1.3M | Prestigio 61 | Emprestimo R$ 0 mil | Media elenco 27.0
+    Elenco:
+      - GOL Matheus Albino           OVR 36  Sal    67  G  0  J  9  Craque *
+      - GOL Vitor Caetano            OVR 36  Sal    65  G  1  J  8  Craque -
+      - GOL Pablo                    OVR 32  Sal    54  G  0  J  0  Craque -
+      - ZAG Henri                    OVR 24  Sal    50  G  1  J 16  Craque -
+      - ZAG Segovia                  OVR 24  Sal    55  G  0  J 16  Craque -
+      - ZAG Lucas Lovat              OVR 23  Sal    58  G  0  J 15  Craque -
+      - ZAG Ryan                     OVR 23  Sal    55  G  0  J  4  Craque -
+      - ZAG Weverton                 OVR 23  Sal    38  G  0  J  1  Craque -
+      - ZAG Hereda                   OVR 23  Sal    30  G  0  J 12  Craque *
+      - ZAG Fábio Alemão             OVR 22  Sal    51  G  0  J  0  Craque -
+      - MEI Higor Meritão            OVR 27  Sal    33  G  4  J 16  Craque -
+      - MEI Danielzinho              OVR 26  Sal    50  G  2  J 16  Craque -
+      - MEI Gegê                     OVR 23  Sal    36  G  1  J 15  Craque -
+      - MEI Douglas Baggio           OVR 22  Sal    47  G  0  J  1  Craque -
+      - MEI Geovane                  OVR 22  Sal    61  G  2  J  9  Craque -
+      - MEI Lucas Kallyel            OVR 22  Sal    31  G  0  J  7  Craque -
+      - MEI Mikael                   OVR 21  Sal    56  G  0  J  0  Craque -
+      - ATA Dadá Belmonte            OVR 35  Sal    46  G  3  J 15  Craque -
+      - ATA Anselmo Ramon            OVR 35  Sal    39  G  0  J  9  Craque *
+      - ATA Léo Pereira              OVR 35  Sal    57  G  1  J  4  Craque -
+      - ATA William Pottker          OVR 34  Sal    65  G  0  J  4  Craque -
+      - ATA João Neto                OVR 29  Sal    50  G  0  J  0  Craque -
+      - ATA Labandeira               OVR 27  Sal    67  G  0  J  0  Craque -
+      - ATA Thiaguinho               OVR 25  Sal    48  G  0  J  0  Craque -
+      - ATA Rafinha                  OVR 25  Sal    47  G  0  J  0  Craque -
+  - América Mineiro | Div final 4 | Pos 8 na Div 4 | Movimento = | Caixa R$ 173,795 mil | Folha R$ 4,500 mil | Torcida 2.5M | Prestigio 64 | Emprestimo R$ 0 mil | Media elenco 34.1
+    Elenco:
+      - GOL Jori                     OVR 40  Sal    35  G  0  J  1  Craque -
+      - GOL Matheus Mendes           OVR 39  Sal    35  G  0  J 17  Craque *
+      - GOL Dalberson                OVR 37  Sal    65  G  0  J  0  Craque -
+      - ZAG Marlon                   OVR 35  Sal    50  G  2  J 18  Craque *
+      - ZAG Ricardo Silva            OVR 34  Sal    67  G  0  J 18  Craque -
+      - ZAG Nicolas                  OVR 31  Sal    56  G  1  J 18  Craque -
+      - ZAG Maguinho                 OVR 29  Sal    46  G  0  J 12  Craque -
+      - ZAG Júlio                    OVR 29  Sal    31  G  0  J  6  Craque -
+      - ZAG Lucão                    OVR 29  Sal    43  G  0  J  0  Craque -
+      - ZAG Paulinho                 OVR 27  Sal    32  G  0  J  0  Craque -
+      - MEI Alê                      OVR 36  Sal    44  G  1  J 18  Craque -
+      - MEI Fabinho Santos           OVR 31  Sal    42  G  1  J 13  Craque -
+      - MEI Moisés                   OVR 31  Sal    47  G  1  J 16  Craque -
+      - MEI Miguelito                OVR 31  Sal    57  G  2  J  9  Craque -
+      - MEI Cauan Barros             OVR 31  Sal    49  G  1  J  8  Craque -
+      - MEI Benítez                  OVR 31  Sal    66  G  0  J  8  Craque -
+      - MEI Jhosefer                 OVR 29  Sal    65  G  0  J  0  Craque -
+      - ATA Adyson                   OVR 43  Sal    56  G  1  J  7  Craque -
+      - ATA Fabinho                  OVR 43  Sal    47  G  6  J 17  Craque *
+      - ATA Guilherme Pato           OVR 43  Sal    52  G  2  J 12  Craque -
+      - ATA Willian Bigode           OVR 43  Sal    30  G  0  J  0  Craque -
+      - ATA Brenner                  OVR 33  Sal    34  G  0  J  0  Craque -
+      - ATA Renato Marques           OVR 33  Sal    60  G  0  J  0  Craque -
+      - ATA Stênio                   OVR 33  Sal    49  G  0  J  0  Craque -
+      - ATA Aloísio                  OVR 29  Sal    43  G  0  J  0  Craque -
+
+## Temporada 2031
+
+### Campeoes
+- Divisao 1: Atlético Mineiro
+- Divisao 2: Grêmio
+- Divisao 3: Mirassol
+- Divisao 4: Cuiabá
+- Copa: Grêmio
+
+### Artilheiros
+- Artilheiro da temporada: Erick (Athletico Paranaense) - 9 gols
+- Top 1: Erick (Athletico Paranaense) - 9 gols
+- Top 2: Pepê (Grêmio) - 8 gols
+- Top 3: Gustavo Scarpa (Atlético Mineiro) - 7 gols
+- Top 4: Lelê (Fluminense) - 7 gols
+- Top 5: Aníbal Moreno (Palmeiras) - 6 gols
+- Top 6: Igor Gomes (Atlético Mineiro) - 6 gols
+- Top 7: Edenilson (Grêmio) - 6 gols
+- Top 8: Martin Braithwaite (Grêmio) - 6 gols
+- Top 9: Christian (Cruzeiro) - 6 gols
+- Top 10: Rafael Ramos (Ceará) - 6 gols
+
+### Promovidos
+- Grêmio: 2 -> 1
+- São Paulo FC: 2 -> 1
+- Juventude: 3 -> 2
+- Mirassol: 3 -> 2
+- Atlético Goianiense: 4 -> 3
+- Cuiabá: 4 -> 3
+
+### Rebaixados
+- Flamengo: 1 -> 2
+- Santos: 1 -> 2
+- Criciúma: 2 -> 3
+- Vasco da Gama: 2 -> 3
+- Avaí: 3 -> 4
+- Goiás: 3 -> 4
+
+### Destaques Financeiros e Tecnicos
+- Melhor ataque: Grêmio com 29 gols
+- Melhor defesa: Atlético Goianiense com 9 gols sofridos
+- Maior publico: Flamengo x Botafogo - 80,000
+- Maior renda: Corinthians x Fortaleza - R$ 12,096 mil
+
+### Clubes, Financas e Elencos
+#### Divisao 1
+  - Atlético Mineiro | Div final 1 | Pos 1 na Div 1 | Movimento = | Caixa R$ 1,597,924 mil | Folha R$ 20,000 mil | Torcida 14.6M | Prestigio 94 | Emprestimo R$ 0 mil | Media elenco 80.3
+    Elenco:
+      - GOL Matheus Mendes           OVR 85  Sal  2255  G  1  J  8  Craque -
+      - GOL Gabriel Delfim           OVR 85  Sal  3149  G  1  J 12  Craque -
+      - GOL Everson                  OVR 84  Sal  1356  G  0  J  0  Craque *
+      - ZAG Rubens                   OVR 79  Sal   766  G  3  J 20  Craque -
+      - ZAG Guilherme Arana          OVR 79  Sal  1033  G  1  J 19  Craque -
+      - ZAG Igor Rabello             OVR 78  Sal  1029  G  2  J 10  Craque -
+      - ZAG Júnior Alonso            OVR 78  Sal  1183  G  0  J  4  Craque -
+      - ZAG Bruno Fuchs              OVR 78  Sal   492  G  5  J 10  Craque -
+      - ZAG Lyanco                   OVR 78  Sal   651  G  3  J 17  Craque -
+      - ZAG Saravia                  OVR 78  Sal   514  G  0  J  0  Craque *
+      - MEI Gustavo Scarpa           OVR 76  Sal  1099  G  7  J 20  Craque -
+      - MEI Igor Gomes               OVR 76  Sal   821  G  6  J 13  Craque -
+      - MEI Bernard                  OVR 75  Sal   339  G  2  J  6  Craque -
+      - MEI Alan Franco              OVR 75  Sal   434  G  0  J  8  Craque -
+      - MEI Otávio                   OVR 75  Sal  1102  G  2  J 13  Craque -
+      - MEI Patrick                  OVR 75  Sal   388  G  0  J  2  Craque -
+      - MEI Fausto Vera              OVR 75  Sal   821  G  3  J 18  Craque -
+      - ATA Hulk                     OVR 85  Sal  1267  G  1  J  4  Craque *
+      - ATA Tomás Cuello             OVR 85  Sal  1937  G  3  J 15  Craque -
+      - ATA Cadu                     OVR 85  Sal  1824  G  2  J 12  Craque -
+      - ATA Alisson                  OVR 85  Sal  1772  G  3  J  9  Craque -
+      - ATA Deyverson                OVR 84  Sal  2936  G  0  J  0  Craque -
+      - ATA Cristian Pavón           OVR 84  Sal  1984  G  0  J  0  Craque -
+      - ATA Eduardo Vargas           OVR 83  Sal  2284  G  0  J  0  Craque -
+      - ATA Rony                     OVR 83  Sal   766  G  0  J  0  Craque -
+  - Corinthians | Div final 1 | Pos 2 na Div 1 | Movimento = | Caixa R$ 1,016,962 mil | Folha R$ 19,000 mil | Torcida 32.6M | Prestigio 93 | Emprestimo R$ 0 mil | Media elenco 77.4
+    Elenco:
+      - GOL Hugo Souza               OVR 85  Sal  1677  G  0  J  3  Craque *
+      - GOL Matheus Donelli          OVR 85  Sal  2647  G  1  J 17  Craque -
+      - GOL Felipe Longo             OVR 82  Sal  1003  G  0  J  0  Craque -
+      - ZAG Matheuzinho              OVR 75  Sal  1127  G  2  J 19  Craque *
+      - ZAG Gustavo Henrique         OVR 75  Sal   741  G  3  J 20  Craque -
+      - ZAG Cacá                     OVR 74  Sal   790  G  3  J 20  Craque -
+      - ZAG Félix Torres             OVR 74  Sal   355  G  2  J  6  Craque -
+      - ZAG Léo Maná                 OVR 74  Sal   448  G  0  J  1  Craque -
+      - ZAG Hugo                     OVR 74  Sal   354  G  0  J  2  Craque -
+      - ZAG Bidu                     OVR 74  Sal   151  G  1  J 12  Craque -
+      - MEI Raniele                  OVR 74  Sal   559  G  4  J 19  Craque -
+      - MEI Breno Bidon              OVR 73  Sal   260  G  2  J  7  Craque -
+      - MEI Alex Santana             OVR 73  Sal   207  G  2  J 18  Craque -
+      - MEI Maycon                   OVR 73  Sal   321  G  1  J 10  Craque -
+      - MEI André Carrillo           OVR 73  Sal   362  G  1  J 11  Craque -
+      - MEI Charles                  OVR 73  Sal   200  G  5  J 15  Craque -
+      - MEI Rodrigo Garro            OVR 73  Sal   377  G  0  J  0  Craque -
+      - ATA Ángel Romero             OVR 82  Sal  1119  G  0  J  3  Craque -
+      - ATA Wesley                   OVR 82  Sal  1676  G  4  J  6  Craque -
+      - ATA Pedro Raul               OVR 82  Sal  3043  G  3  J 13  Craque -
+      - ATA Yuri Alberto             OVR 82  Sal  3092  G  1  J 14  Craque *
+      - ATA Talles Magno             OVR 82  Sal   973  G  1  J  4  Craque -
+      - ATA Memphis Depay            OVR 82  Sal   988  G  0  J  0  Craque -
+      - ATA Giovane                  OVR 81  Sal  1000  G  0  J  0  Craque -
+      - ATA Kayke                    OVR 81  Sal   455  G  0  J  0  Craque -
+  - Palmeiras | Div final 1 | Pos 3 na Div 1 | Movimento = | Caixa R$ 1,452,911 mil | Folha R$ 24,000 mil | Torcida 16.1M | Prestigio 97 | Emprestimo R$ 0 mil | Media elenco 85.4
+    Elenco:
+      - GOL Marcelo Lomba            OVR 90  Sal  3527  G  0  J  3  Craque -
+      - GOL Weverton                 OVR 90  Sal  3947  G  1  J 14  Craque *
+      - GOL Mateus Oliveira          OVR 88  Sal  3474  G  0  J  0  Craque -
+      - ZAG Agustín Giay             OVR 89  Sal  6824  G  5  J 16  Craque *
+      - ZAG Mayke                    OVR 83  Sal  2877  G  3  J 16  Craque -
+      - ZAG Marcos Rocha             OVR 83  Sal  1497  G  3  J 16  Craque -
+      - ZAG Gustavo Gómez            OVR 83  Sal  3137  G  0  J 10  Craque -
+      - ZAG Murilo                   OVR 83  Sal  2242  G  1  J  6  Craque -
+      - ZAG Naves                    OVR 82  Sal   485  G  0  J  0  Craque -
+      - ZAG Joaquín Piquerez         OVR 81  Sal   871  G  0  J  0  Craque -
+      - MEI Maurício                 OVR 81  Sal  1856  G  1  J 16  Craque -
+      - MEI Raphael Veiga            OVR 81  Sal   561  G  0  J  4  Craque -
+      - MEI Aníbal Moreno            OVR 81  Sal  2684  G  6  J 15  Craque -
+      - MEI Fabinho                  OVR 81  Sal  1150  G  0  J  7  Craque -
+      - MEI Richard Ríos             OVR 81  Sal  1750  G  2  J 13  Craque -
+      - MEI Emiliano Martínez        OVR 81  Sal   732  G  1  J  6  Craque -
+      - MEI Felipe Anderson          OVR 81  Sal   874  G  0  J  3  Craque -
+      - ATA Estêvão                  OVR 91  Sal  5138  G  2  J 10  Craque *
+      - ATA Paulinho                 OVR 91  Sal  5026  G  1  J  2  Craque -
+      - ATA Luighi                   OVR 91  Sal  5208  G  0  J  5  Craque -
+      - ATA Facundo Torres           OVR 91  Sal  4236  G  0  J 10  Craque -
+      - ATA Bruno Rodrigues          OVR 91  Sal  4440  G  3  J  5  Craque -
+      - ATA Flaco López              OVR 90  Sal  5824  G  0  J  0  Craque -
+      - ATA Vitor Roque              OVR 88  Sal  2438  G  0  J  0  Craque -
+      - ATA Rony                     OVR 86  Sal  3470  G  0  J  0  Craque -
+  - Fortaleza | Div final 1 | Pos 4 na Div 1 | Movimento = | Caixa R$ 658,257 mil | Folha R$ 11,000 mil | Torcida 4.5M | Prestigio 80 | Emprestimo R$ 0 mil | Media elenco 71.9
+    Elenco:
+      - GOL Magrão                   OVR 77  Sal  1103  G  0  J  2  Craque -
+      - GOL Santos                   OVR 77  Sal   942  G  0  J 12  Craque -
+      - GOL João Ricardo             OVR 77  Sal   625  G  0  J 11  Craque *
+      - ZAG Emanuel Brítez           OVR 68  Sal   109  G  1  J 12  Craque -
+      - ZAG Mancuso                  OVR 67  Sal    90  G  4  J 12  Craque -
+      - ZAG Kuscevic                 OVR 67  Sal   122  G  2  J 17  Craque -
+      - ZAG Bruno Pacheco            OVR 67  Sal   132  G  2  J 19  Craque -
+      - ZAG Titi                     OVR 67  Sal   103  G  1  J  4  Craque -
+      - ZAG Talocha                  OVR 67  Sal   102  G  1  J 11  Craque -
+      - ZAG Tinga                    OVR 67  Sal   103  G  5  J 21  Craque *
+      - MEI Lucas Sasha              OVR 70  Sal   323  G  4  J 23  Craque -
+      - MEI Hércules                 OVR 69  Sal   335  G  4  J 19  Craque -
+      - MEI Zé Welison               OVR 69  Sal   307  G  4  J 15  Craque -
+      - MEI Pochettino               OVR 69  Sal   144  G  0  J  6  Craque -
+      - MEI Calebe                   OVR 69  Sal   101  G  1  J  9  Craque -
+      - MEI Kervin Andrade           OVR 69  Sal   426  G  3  J 22  Craque -
+      - MEI Martínez                 OVR 69  Sal   142  G  0  J  2  Craque -
+      - ATA Lucero                   OVR 78  Sal   562  G  3  J 10  Craque *
+      - ATA Breno Lopes              OVR 78  Sal   539  G  2  J 11  Craque -
+      - ATA Marinho                  OVR 78  Sal  1037  G  4  J 10  Craque -
+      - ATA Yago Pikachu             OVR 78  Sal   586  G  4  J 17  Craque -
+      - ATA Moisés                   OVR 77  Sal   737  G  0  J  0  Craque -
+      - ATA Renato Kayzer            OVR 76  Sal   276  G  0  J  0  Craque -
+      - ATA Pedro Rocha              OVR 75  Sal   391  G  0  J  0  Craque -
+      - ATA Allanzinho               OVR 70  Sal   139  G  0  J  0  Craque -
+  - Botafogo | Div final 1 | Pos 5 na Div 1 | Movimento = | Caixa R$ 1,377,240 mil | Folha R$ 20,000 mil | Torcida 13.8M | Prestigio 93 | Emprestimo R$ 0 mil | Media elenco 81.4
+    Elenco:
+      - GOL Léo Linck                OVR 86  Sal  1319  G  0  J  6  Craque -
+      - GOL John                     OVR 86  Sal  2307  G  0  J 12  Craque *
+      - GOL Raul                     OVR 86  Sal  2546  G  0  J  0  Craque -
+      - ZAG Alexander Barboza        OVR 79  Sal   948  G  2  J 18  Craque -
+      - ZAG Bastos                   OVR 78  Sal  1179  G  2  J 17  Craque -
+      - ZAG Cuiabano                 OVR 78  Sal   457  G  0  J  1  Craque -
+      - ZAG David Ricardo            OVR 78  Sal  1072  G  0  J  1  Craque -
+      - ZAG Alex Telles              OVR 78  Sal  1115  G  2  J  8  Craque -
+      - ZAG Vitinho                  OVR 78  Sal   828  G  2  J 12  Craque *
+      - ZAG Mateo Ponte              OVR 78  Sal   718  G  2  J 15  Craque -
+      - MEI Patrick de Paula         OVR 79  Sal   919  G  2  J 18  Craque -
+      - MEI Gregore                  OVR 78  Sal   585  G  2  J 17  Craque -
+      - MEI Jefferson Savarino       OVR 78  Sal   532  G  0  J  7  Craque -
+      - MEI Marlon Freitas           OVR 78  Sal  1139  G  3  J  9  Craque -
+      - MEI Newton                   OVR 78  Sal   803  G  2  J 16  Craque -
+      - MEI Allan                    OVR 77  Sal   562  G  0  J  5  Craque -
+      - MEI Santiago Rodríguez       OVR 77  Sal   932  G  0  J  0  Craque -
+      - ATA Elias Manoel             OVR 86  Sal  2225  G  0  J  4  Craque -
+      - ATA Jeffinho                 OVR 86  Sal  2325  G  1  J  2  Craque -
+      - ATA Santiago                 OVR 86  Sal  3455  G  1  J  6  Craque -
+      - ATA Matheus Martins          OVR 86  Sal  2528  G  2  J 14  Craque -
+      - ATA Artur                    OVR 86  Sal  2057  G  3  J 10  Craque -
+      - ATA Rwan Cruz                OVR 86  Sal  3014  G  0  J  0  Craque -
+      - ATA Igor Jesus               OVR 86  Sal  2416  G  0  J  0  Craque *
+      - ATA Kayque                   OVR 83  Sal  2933  G  0  J  0  Craque -
+  - Fluminense | Div final 1 | Pos 6 na Div 1 | Movimento = | Caixa R$ 856,848 mil | Folha R$ 16,000 mil | Torcida 11.0M | Prestigio 85 | Emprestimo R$ 0 mil | Media elenco 78.5
+    Elenco:
+      - GOL Fábio                    OVR 86  Sal  2926  G  1  J  7  Craque *
+      - GOL Vitor Eudes              OVR 86  Sal  3101  G  0  J  2  Craque -
+      - GOL Pedro Rangel             OVR 86  Sal  2371  G  0  J  9  Craque -
+      - ZAG Guga                     OVR 77  Sal   738  G  2  J 16  Craque -
+      - ZAG Manoel                   OVR 76  Sal   450  G  2  J 18  Craque -
+      - ZAG Thiago Silva             OVR 76  Sal   990  G  0  J 18  Craque -
+      - ZAG Fretes                   OVR 75  Sal   205  G  0  J  5  Craque -
+      - ZAG Renê                     OVR 75  Sal   450  G  2  J  3  Craque -
+      - ZAG Samuel Xavier            OVR 75  Sal   450  G  0  J 10  Craque *
+      - ZAG Thiago Santos            OVR 75  Sal   360  G  0  J  2  Craque -
+      - MEI Nonato                   OVR 75  Sal   772  G  1  J 17  Craque -
+      - MEI Ganso                    OVR 75  Sal   176  G  0  J  1  Craque -
+      - MEI Otávio                   OVR 75  Sal   278  G  0  J  1  Craque -
+      - MEI Jhon Arias               OVR 74  Sal   431  G  0  J  5  Craque -
+      - MEI Kevin Serna              OVR 74  Sal   646  G  0  J 18  Craque -
+      - MEI Martinelli               OVR 74  Sal   355  G  2  J 12  Craque -
+      - MEI Lima                     OVR 74  Sal   987  G  1  J 18  Craque -
+      - ATA Agustín Canobbio         OVR 83  Sal  3207  G  0  J  4  Craque -
+      - ATA Lelê                     OVR 83  Sal  2951  G  7  J 18  Craque -
+      - ATA Germán Cano              OVR 83  Sal  3021  G  1  J 11  Craque *
+      - ATA Isaac                    OVR 83  Sal  2583  G  0  J  3  Craque -
+      - ATA Everaldo                 OVR 83  Sal  2825  G  0  J  0  Craque -
+      - ATA Keno                     OVR 83  Sal  2448  G  0  J  0  Craque -
+      - ATA Marquinhos               OVR 81  Sal   828  G  0  J  0  Craque -
+      - ATA Riquelme                 OVR 74  Sal   195  G  0  J  0  Craque -
+  - Flamengo | Div final 2 | Pos 7 na Div 1 | Movimento REBAIXADO | Caixa R$ 1,574,313 mil | Folha R$ 28,000 mil | Torcida 29.3M | Prestigio 98 | Emprestimo R$ 0 mil | Media elenco 85.5
+    Elenco:
+      - GOL Matheus Cunha            OVR 92  Sal  4849  G  0  J  7  Craque -
+      - GOL Dyogo Alves              OVR 92  Sal  6947  G  0  J  0  Craque -
+      - GOL Rossi                    OVR 92  Sal  5617  G  0  J 15  Craque *
+      - ZAG Alex Sandro              OVR 82  Sal  2658  G  3  J 22  Craque -
+      - ZAG Ayrton Lucas             OVR 81  Sal  2377  G  1  J 16  Craque -
+      - ZAG Léo Pereira              OVR 81  Sal   970  G  0  J  6  Craque -
+      - ZAG Guillermo Varela         OVR 81  Sal  1208  G  1  J 20  Craque -
+      - ZAG Danilo                   OVR 81  Sal  3491  G  0  J 13  Craque -
+      - ZAG Wesley                   OVR 81  Sal   532  G  2  J  6  Craque *
+      - ZAG Léo Ortiz                OVR 81  Sal   500  G  1  J  5  Craque -
+      - MEI Nicolás De La Cruz       OVR 83  Sal  1437  G  1  J 22  Craque -
+      - MEI Giorgian De Arrascaeta   OVR 83  Sal   792  G  0  J  0  Craque -
+      - MEI Gerson                   OVR 83  Sal  3155  G  1  J  3  Craque -
+      - MEI Erick Pulgar             OVR 83  Sal  2877  G  1  J  9  Craque -
+      - MEI Carlos Alcaraz           OVR 83  Sal  2515  G  0  J 12  Craque -
+      - MEI Everton Araújo           OVR 83  Sal  3119  G  4  J 20  Craque -
+      - MEI Allan                    OVR 83  Sal  2410  G  2  J 22  Craque -
+      - ATA Luiz Araújo              OVR 90  Sal  5291  G  4  J 15  Craque -
+      - ATA Everton Cebolinha        OVR 90  Sal  5258  G  2  J 10  Craque -
+      - ATA Bruno Henrique           OVR 90  Sal  4793  G  2  J 13  Craque -
+      - ATA Pedro                    OVR 90  Sal  5602  G  0  J  6  Craque *
+      - ATA Michael                  OVR 89  Sal  5186  G  0  J  0  Craque -
+      - ATA Juninho                  OVR 89  Sal  4871  G  0  J  0  Craque -
+      - ATA Matheus Gonçalves        OVR 88  Sal  1567  G  0  J  0  Craque -
+      - ATA Gonzalo Plata            OVR 87  Sal  3122  G  0  J  0  Craque -
+  - Santos | Div final 2 | Pos 8 na Div 1 | Movimento REBAIXADO | Caixa R$ 613,114 mil | Folha R$ 7,000 mil | Torcida 11.7M | Prestigio 73 | Emprestimo R$ 0 mil | Media elenco 61.5
+    Elenco:
+      - GOL Diógenes                 OVR 67  Sal    88  G  0  J  7  Craque -
+      - GOL Gabriel Brazão           OVR 67  Sal    94  G  0  J  3  Craque *
+      - GOL João Paulo               OVR 67  Sal   132  G  0  J  6  Craque -
+      - ZAG Joaquim                  OVR 60  Sal    58  G  2  J 16  Craque -
+      - ZAG JP Chermont              OVR 60  Sal    61  G  0  J 16  Craque -
+      - ZAG Escobar                  OVR 59  Sal    60  G  0  J  3  Craque -
+      - ZAG Gil                      OVR 59  Sal    50  G  0  J  8  Craque -
+      - ZAG Aderlan                  OVR 59  Sal    36  G  1  J  7  Craque *
+      - ZAG Kevyson                  OVR 59  Sal    62  G  0  J 14  Craque -
+      - ZAG Zé Ivaldo                OVR 59  Sal    59  G  0  J  0  Craque -
+      - MEI Miguelito                OVR 58  Sal    39  G  1  J 16  Craque -
+      - MEI Diego Pituca             OVR 57  Sal    35  G  0  J  2  Craque -
+      - MEI Otero                    OVR 57  Sal    36  G  1  J 12  Craque -
+      - MEI Giuliano                 OVR 57  Sal    70  G  0  J  1  Craque -
+      - MEI Tomás Rincón             OVR 57  Sal    48  G  0  J 11  Craque -
+      - MEI Cazares                  OVR 57  Sal    63  G  0  J  9  Craque -
+      - MEI João Schmidt             OVR 57  Sal    45  G  1  J 13  Craque -
+      - ATA Willian Bigode           OVR 67  Sal    72  G  2  J 13  Craque -
+      - ATA Guilherme                OVR 67  Sal    77  G  2  J 11  Craque *
+      - ATA Pedrinho                 OVR 67  Sal    98  G  2  J  8  Craque -
+      - ATA Wendel Silva             OVR 66  Sal   139  G  0  J  0  Craque -
+      - ATA Lucas Braga              OVR 66  Sal   113  G  0  J  0  Craque -
+      - ATA Julio Furch              OVR 66  Sal   130  G  0  J  0  Craque -
+      - ATA Morelos                  OVR 65  Sal    80  G  0  J  0  Craque -
+      - ATA Enzo Monteiro            OVR 57  Sal    67  G  0  J  0  Craque -
+
+#### Divisao 2
+  - Grêmio | Div final 1 | Pos 1 na Div 2 | Movimento PROMOVIDO | Caixa R$ 1,070,338 mil | Folha R$ 13,000 mil | Torcida 10.0M | Prestigio 85 | Emprestimo R$ 0 mil | Media elenco 78.6
+    Elenco:
+      - GOL Caíque                   OVR 85  Sal  1900  G  0  J  0  Craque -
+      - GOL Gabriel Grando           OVR 85  Sal  3418  G  0  J  7  Craque -
+      - GOL Agustín Marchesín        OVR 85  Sal  1522  G  0  J 17  Craque *
+      - ZAG Reinaldo                 OVR 76  Sal   822  G  5  J 24  Craque -
+      - ZAG Jemerson                 OVR 75  Sal   360  G  0  J  3  Craque -
+      - ZAG Rodrigo Ely              OVR 75  Sal   997  G  1  J 18  Craque -
+      - ZAG Mayk                     OVR 75  Sal   415  G  1  J  7  Craque -
+      - ZAG Kannemann                OVR 75  Sal   260  G  2  J 15  Craque -
+      - ZAG Fábio                    OVR 75  Sal   395  G  5  J 14  Craque -
+      - ZAG João Pedro               OVR 74  Sal   282  G  0  J 15  Craque *
+      - MEI Pepê                     OVR 76  Sal   482  G  8  J 23  Craque -
+      - MEI Dodi                     OVR 76  Sal   495  G  3  J  7  Craque -
+      - MEI Mathías Villasanti       OVR 76  Sal   942  G  1  J 17  Craque -
+      - MEI Miguel Monsalve          OVR 76  Sal  1037  G  3  J 15  Craque -
+      - MEI Franco Cristaldo         OVR 76  Sal   691  G  1  J  7  Craque -
+      - MEI Nathan                   OVR 76  Sal   921  G  4  J 10  Craque -
+      - MEI Edenilson                OVR 76  Sal   481  G  6  J 17  Craque -
+      - ATA Aravena                  OVR 83  Sal  2175  G  2  J 12  Craque -
+      - ATA Cristian Olivera         OVR 83  Sal  3447  G  2  J  2  Craque -
+      - ATA Martin Braithwaite       OVR 83  Sal  1263  G  6  J 20  Craque *
+      - ATA André Henrique           OVR 83  Sal  2939  G  3  J 11  Craque -
+      - ATA Pavon                    OVR 83  Sal  2850  G  0  J  3  Craque -
+      - ATA Alysson                  OVR 81  Sal  1165  G  0  J  0  Craque -
+      - ATA Soteldo                  OVR 80  Sal   543  G  0  J  0  Craque -
+      - ATA Matias Arezo             OVR 79  Sal   509  G  0  J  0  Craque -
+  - São Paulo FC | Div final 1 | Pos 2 na Div 2 | Movimento PROMOVIDO | Caixa R$ 1,014,238 mil | Folha R$ 14,000 mil | Torcida 18.8M | Prestigio 86 | Emprestimo R$ 0 mil | Media elenco 70.6
+    Elenco:
+      - GOL Jandrei                  OVR 74  Sal   398  G  0  J 12  Craque -
+      - GOL Young                    OVR 74  Sal   381  G  0  J  9  Craque -
+      - GOL Rafael                   OVR 74  Sal   274  G  0  J  0  Craque *
+      - ZAG Alan Franco              OVR 67  Sal    84  G  5  J 20  Craque -
+      - ZAG Igor Vinícius            OVR 67  Sal   140  G  4  J 16  Craque *
+      - ZAG Arboleda                 OVR 67  Sal   107  G  2  J 11  Craque -
+      - ZAG Ferraresi                OVR 67  Sal    74  G  1  J 15  Craque -
+      - ZAG Sabino                   OVR 67  Sal   101  G  0  J  7  Craque -
+      - ZAG Welington                OVR 67  Sal   113  G  0  J  2  Craque -
+      - ZAG Patryck                  OVR 67  Sal    85  G  2  J  9  Craque -
+      - MEI Pablo Maia               OVR 69  Sal   260  G  4  J 19  Craque -
+      - MEI Damián Bobadilla         OVR 69  Sal   144  G  4  J 14  Craque -
+      - MEI Marcos Antônio           OVR 69  Sal    70  G  0  J  6  Craque -
+      - MEI Wellington Rato          OVR 69  Sal   258  G  4  J 20  Craque -
+      - MEI Rodriguinho              OVR 69  Sal   321  G  2  J 17  Craque -
+      - MEI Alisson                  OVR 69  Sal   123  G  2  J  4  Craque -
+      - MEI Matheus Alves            OVR 68  Sal   144  G  0  J  0  Craque -
+      - ATA Ferreira                 OVR 74  Sal   236  G  3  J  5  Craque -
+      - ATA Luciano                  OVR 74  Sal   156  G  0  J  1  Craque -
+      - ATA Lucas Moura              OVR 74  Sal   604  G  5  J 17  Craque -
+      - ATA André Silva              OVR 74  Sal   308  G  0  J  1  Craque -
+      - ATA Erick                    OVR 74  Sal   170  G  0  J  3  Craque -
+      - ATA Calleri                  OVR 74  Sal   335  G  2  J 13  Craque *
+      - ATA Henrique Carmo           OVR 74  Sal   163  G  0  J  0  Craque -
+      - ATA William Gomes            OVR 72  Sal   312  G  0  J  0  Craque -
+  - RB Bragantino | Div final 2 | Pos 3 na Div 2 | Movimento = | Caixa R$ 527,212 mil | Folha R$ 9,500 mil | Torcida 1.7M | Prestigio 75 | Emprestimo R$ 0 mil | Media elenco 68.3
+    Elenco:
+      - GOL Lucão                    OVR 76  Sal   389  G  0  J  4  Craque -
+      - GOL Cleiton                  OVR 76  Sal   249  G  0  J  5  Craque *
+      - GOL Matheus Nogueira         OVR 76  Sal   673  G  0  J  9  Craque -
+      - ZAG Andrés Hurtado           OVR 65  Sal    77  G  2  J 17  Craque *
+      - ZAG Luan Cândido             OVR 64  Sal   120  G  0  J  8  Craque -
+      - ZAG Pedro Henrique           OVR 64  Sal    46  G  1  J  5  Craque -
+      - ZAG Guzmán Rodríguez         OVR 64  Sal    50  G  0  J  5  Craque -
+      - ZAG Natan                    OVR 64  Sal    78  G  0  J 18  Craque -
+      - ZAG Nathan Mendes            OVR 64  Sal    79  G  1  J 17  Craque -
+      - ZAG Juninho Capixaba         OVR 64  Sal    53  G  1  J  2  Craque -
+      - MEI Matheus Fernandes        OVR 66  Sal   129  G  4  J 18  Craque -
+      - MEI Gustavinho               OVR 65  Sal   121  G  2  J  8  Craque -
+      - MEI Lucas Evangelista        OVR 65  Sal   121  G  3  J 16  Craque -
+      - MEI Raul                     OVR 65  Sal    85  G  1  J 13  Craque -
+      - MEI Jhon Jhon                OVR 65  Sal   139  G  2  J 10  Craque -
+      - MEI Jadsom                   OVR 65  Sal    96  G  1  J  7  Craque -
+      - MEI Eric Ramires             OVR 65  Sal   120  G  0  J  0  Craque -
+      - ATA Ignacio Laquintana       OVR 72  Sal   154  G  1  J  6  Craque -
+      - ATA Lincoln                  OVR 72  Sal   435  G  0  J  2  Craque -
+      - ATA Vitinho                  OVR 72  Sal   403  G  2  J  6  Craque -
+      - ATA Eduardo Sasha            OVR 72  Sal   309  G  5  J  8  Craque -
+      - ATA Helinho                  OVR 72  Sal   438  G  1  J 10  Craque -
+      - ATA Talisson                 OVR 72  Sal   184  G  0  J  4  Craque -
+      - ATA Thiago Borbas            OVR 72  Sal   419  G  0  J  0  Craque *
+      - ATA Henry Mosquera           OVR 72  Sal   429  G  0  J  0  Craque -
+  - Cruzeiro | Div final 2 | Pos 4 na Div 2 | Movimento = | Caixa R$ 670,108 mil | Folha R$ 13,000 mil | Torcida 9.3M | Prestigio 85 | Emprestimo R$ 0 mil | Media elenco 70.7
+    Elenco:
+      - GOL Léo Aragão               OVR 77  Sal  1094  G  0  J  1  Craque -
+      - GOL Cássio                   OVR 77  Sal   463  G  0  J 15  Craque *
+      - GOL Anderson                 OVR 75  Sal   334  G  0  J  0  Craque -
+      - ZAG Lucas Villalba           OVR 68  Sal   119  G  1  J 15  Craque -
+      - ZAG Marlon                   OVR 68  Sal   100  G  1  J 16  Craque -
+      - ZAG Fagner                   OVR 68  Sal   124  G  2  J 12  Craque -
+      - ZAG Fabrício Bruno           OVR 68  Sal    95  G  1  J  8  Craque -
+      - ZAG Jonathan Jesus           OVR 68  Sal    86  G  0  J  6  Craque -
+      - ZAG William                  OVR 68  Sal    78  G  1  J  6  Craque *
+      - ZAG Kaiki                    OVR 68  Sal    95  G  0  J  1  Craque -
+      - MEI Christian                OVR 67  Sal   126  G  6  J 16  Craque -
+      - MEI Lucas Romero             OVR 66  Sal   109  G  0  J 16  Craque -
+      - MEI Japa                     OVR 66  Sal   144  G  0  J  4  Craque -
+      - MEI Matheus Pereira          OVR 66  Sal    89  G  2  J 16  Craque -
+      - MEI Eduardo                  OVR 66  Sal   115  G  2  J 11  Craque -
+      - MEI Matheus Henrique         OVR 66  Sal   137  G  0  J  0  Craque -
+      - MEI Walace                   OVR 66  Sal    91  G  0  J  1  Craque -
+      - ATA Lautaro Díaz             OVR 79  Sal   524  G  1  J 16  Craque -
+      - ATA Kaio Jorge               OVR 78  Sal   831  G  1  J  7  Craque *
+      - ATA Dudu                     OVR 78  Sal  1022  G  2  J  9  Craque -
+      - ATA Marquinhos               OVR 76  Sal   321  G  0  J  0  Craque -
+      - ATA Wanderson                OVR 76  Sal   383  G  0  J  0  Craque -
+      - ATA Yannick Bolasie          OVR 73  Sal   188  G  0  J  0  Craque -
+      - ATA Gabriel Veron            OVR 73  Sal   433  G  0  J  0  Craque -
+      - ATA Rafa Silva               OVR 71  Sal   426  G  0  J  0  Craque -
+  - Bahia | Div final 2 | Pos 5 na Div 2 | Movimento = | Caixa R$ 388,881 mil | Folha R$ 8,500 mil | Torcida 3.1M | Prestigio 75 | Emprestimo R$ 0 mil | Media elenco 68.2
+    Elenco:
+      - GOL Danilo Fernandes         OVR 76  Sal   534  G  0  J 10  Craque -
+      - GOL Marcos Felipe            OVR 75  Sal   331  G  1  J  8  Craque *
+      - GOL Adriel                   OVR 72  Sal   220  G  0  J  0  Craque -
+      - ZAG Arias                    OVR 66  Sal   103  G  1  J 18  Craque -
+      - ZAG Iago Borduchi            OVR 65  Sal    89  G  2  J 18  Craque -
+      - ZAG Luciano Juba             OVR 64  Sal   117  G  2  J 12  Craque -
+      - ZAG David Duarte             OVR 64  Sal    81  G  1  J 13  Craque -
+      - ZAG Kanu                     OVR 64  Sal   108  G  3  J  4  Craque -
+      - ZAG Gabriel Xavier           OVR 64  Sal   124  G  0  J  7  Craque -
+      - ZAG Gilberto                 OVR 64  Sal    49  G  0  J  0  Craque *
+      - MEI Erick                    OVR 66  Sal   100  G  1  J 17  Craque -
+      - MEI Jean Lucas               OVR 65  Sal   132  G  2  J 18  Craque -
+      - MEI Cauly                    OVR 65  Sal    96  G  5  J 18  Craque -
+      - MEI Everton Ribeiro          OVR 65  Sal   117  G  1  J  7  Craque -
+      - MEI Nicolás Acevedo          OVR 65  Sal   146  G  0  J  9  Craque -
+      - MEI Rezende                  OVR 65  Sal   138  G  1  J  3  Craque -
+      - MEI Caio Alexandre           OVR 64  Sal    60  G  0  J  0  Craque -
+      - ATA Everaldo                 OVR 73  Sal   362  G  2  J 12  Craque *
+      - ATA Tiago                    OVR 73  Sal   246  G  0  J  0  Craque -
+      - ATA Biel                     OVR 73  Sal   385  G  1  J 14  Craque -
+      - ATA Lucho Rodríguez          OVR 73  Sal   287  G  0  J  2  Craque -
+      - ATA Kayky                    OVR 73  Sal   435  G  0  J  8  Craque -
+      - ATA Ademir                   OVR 72  Sal   316  G  0  J  0  Craque -
+      - ATA Willian José             OVR 70  Sal   149  G  0  J  0  Craque -
+      - ATA Rafael Ratão             OVR 70  Sal    77  G  0  J  0  Craque -
+  - Internacional | Div final 2 | Pos 6 na Div 2 | Movimento = | Caixa R$ 931,142 mil | Folha R$ 14,000 mil | Torcida 7.9M | Prestigio 79 | Emprestimo R$ 0 mil | Media elenco 75.9
+    Elenco:
+      - GOL Sergio Rochet            OVR 85  Sal  3092  G  0  J  3  Craque *
+      - GOL Anthoni                  OVR 85  Sal  2424  G  0  J 15  Craque -
+      - GOL Ivan                     OVR 81  Sal   725  G  0  J  0  Craque -
+      - ZAG Juninho                  OVR 72  Sal   386  G  0  J 18  Craque -
+      - ZAG Agustín Rogel            OVR 71  Sal   330  G  0  J  4  Craque -
+      - ZAG Vitão                    OVR 71  Sal   357  G  0  J  7  Craque -
+      - ZAG Alexandro Bernabei       OVR 71  Sal   208  G  0  J 14  Craque -
+      - ZAG Braian Aguirre           OVR 71  Sal   265  G  1  J 13  Craque -
+      - ZAG Bustos                   OVR 71  Sal   367  G  1  J 16  Craque *
+      - ZAG Gabriel Mercado          OVR 71  Sal   330  G  0  J  0  Craque -
+      - MEI Gabriel Tabata           OVR 73  Sal   269  G  2  J 18  Craque -
+      - MEI Bruno Gomes              OVR 73  Sal   280  G  4  J 18  Craque -
+      - MEI Rômulo                   OVR 72  Sal   354  G  1  J 14  Craque -
+      - MEI Bruno Henrique           OVR 72  Sal   304  G  0  J  4  Craque -
+      - MEI Thiago Maia              OVR 72  Sal   221  G  1  J  8  Craque -
+      - MEI Fernando                 OVR 72  Sal   232  G  0  J  1  Craque -
+      - MEI Alan Patrick             OVR 72  Sal   289  G  1  J  9  Craque -
+      - ATA Rafael Borré             OVR 81  Sal  3314  G  3  J 18  Craque *
+      - ATA Wesley                   OVR 81  Sal   783  G  0  J  2  Craque -
+      - ATA Lucca                    OVR 81  Sal   612  G  0  J  0  Craque -
+      - ATA Vitinho                  OVR 81  Sal  2786  G  1  J 16  Craque -
+      - ATA Ricardo Mathias          OVR 80  Sal   559  G  0  J  0  Craque -
+      - ATA Lucas Alario             OVR 80  Sal   746  G  0  J  0  Craque -
+      - ATA Enner Valencia           OVR 79  Sal   805  G  0  J  0  Craque -
+      - ATA Gustavo Prado            OVR 75  Sal   152  G  0  J  0  Craque -
+  - Vasco da Gama | Div final 3 | Pos 7 na Div 2 | Movimento REBAIXADO | Caixa R$ 691,826 mil | Folha R$ 9,000 mil | Torcida 9.9M | Prestigio 76 | Emprestimo R$ 0 mil | Media elenco 66.4
+    Elenco:
+      - GOL Pablo                    OVR 72  Sal   181  G  0  J  3  Craque -
+      - GOL Keiller                  OVR 72  Sal   372  G  0  J 19  Craque -
+      - GOL Léo Jardim               OVR 71  Sal   344  G  0  J  0  Craque *
+      - ZAG João Victor              OVR 63  Sal   100  G  2  J 15  Craque -
+      - ZAG Paulo Henrique           OVR 63  Sal    39  G  1  J 10  Craque *
+      - ZAG Victor Luís              OVR 63  Sal    72  G  2  J 15  Craque -
+      - ZAG Maicon                   OVR 63  Sal   125  G  1  J 16  Craque -
+      - ZAG Lucas Piton              OVR 63  Sal   110  G  0  J 15  Craque -
+      - ZAG Puma Rodríguez           OVR 63  Sal    76  G  0  J 17  Craque -
+      - ZAG Lucas Oliveira           OVR 63  Sal    36  G  0  J  0  Craque -
+      - MEI Dimitri Payet            OVR 61  Sal    65  G  2  J 22  Craque -
+      - MEI Juan Sforza              OVR 61  Sal    34  G  0  J  5  Craque -
+      - MEI Paulinho                 OVR 61  Sal    31  G  0  J  1  Craque -
+      - MEI Jair                     OVR 61  Sal    56  G  2  J 18  Craque -
+      - MEI Tchê Tchê                OVR 61  Sal    53  G  3  J 16  Craque -
+      - MEI Hugo Moura               OVR 61  Sal    67  G  1  J 11  Craque -
+      - MEI Philippe Coutinho        OVR 61  Sal    52  G  1  J 15  Craque -
+      - ATA Rossi                    OVR 73  Sal   329  G  4  J 15  Craque -
+      - ATA Rayan                    OVR 73  Sal   418  G  0  J  0  Craque -
+      - ATA David                    OVR 73  Sal   409  G  1  J  8  Craque -
+      - ATA Adson                    OVR 73  Sal   299  G  3  J 14  Craque -
+      - ATA GB                       OVR 73  Sal   389  G  2  J  7  Craque -
+      - ATA Pablo Vegetti            OVR 72  Sal   241  G  0  J  0  Craque *
+      - ATA Alex Teixeira            OVR 72  Sal   199  G  0  J  0  Craque -
+      - ATA Jean David               OVR 65  Sal    50  G  0  J  0  Craque -
+  - Criciúma | Div final 3 | Pos 8 na Div 2 | Movimento REBAIXADO | Caixa R$ 199,344 mil | Folha R$ 4,500 mil | Torcida 859K | Prestigio 59 | Emprestimo R$ 0 mil | Media elenco 46.3
+    Elenco:
+      - GOL Gustavo                  OVR 53  Sal    44  G  0  J 16  Craque *
+      - GOL Alisson                  OVR 53  Sal    61  G  0  J  0  Craque -
+      - GOL Kauã                     OVR 48  Sal    39  G  0  J  0  Craque -
+      - ZAG Claudinho                OVR 51  Sal    68  G  2  J 16  Craque *
+      - ZAG Marcelo Hermes           OVR 43  Sal    45  G  0  J 16  Craque -
+      - ZAG Jonathan                 OVR 43  Sal    30  G  1  J 16  Craque -
+      - ZAG Tobias Figueiredo        OVR 42  Sal    55  G  0  J  4  Craque -
+      - ZAG Victor Luís              OVR 42  Sal    59  G  0  J 12  Craque -
+      - ZAG Rodrigo                  OVR 42  Sal    58  G  0  J  0  Craque -
+      - ZAG Dudu                     OVR 35  Sal    43  G  0  J  0  Craque -
+      - MEI Barreto                  OVR 47  Sal    63  G  2  J 16  Craque -
+      - MEI Fellipe Mateus           OVR 44  Sal    68  G  0  J 16  Craque -
+      - MEI Higor Meritão            OVR 44  Sal    37  G  3  J 16  Craque -
+      - MEI Rômulo                   OVR 41  Sal    46  G  1  J  4  Craque -
+      - MEI Marquinhos Gabriel       OVR 41  Sal    34  G  0  J  8  Craque -
+      - MEI Newton                   OVR 41  Sal    70  G  1  J  4  Craque -
+      - MEI Miquéias                 OVR 40  Sal    63  G  0  J  0  Craque -
+      - ATA Yannick Bolasie          OVR 53  Sal    63  G  3  J 16  Craque *
+      - ATA Matheusinho              OVR 53  Sal    67  G  2  J  4  Craque -
+      - ATA Allano                   OVR 53  Sal    56  G  2  J  9  Craque -
+      - ATA Ronald                   OVR 53  Sal    51  G  1  J  3  Craque -
+      - ATA Arthur Caíke             OVR 52  Sal    66  G  0  J  0  Craque -
+      - ATA Jhonata Robert           OVR 51  Sal    44  G  0  J  0  Craque -
+      - ATA Éder                     OVR 50  Sal    42  G  0  J  0  Craque -
+      - ATA Felipinho                OVR 43  Sal    44  G  0  J  0  Craque -
+
+#### Divisao 3
+  - Mirassol | Div final 2 | Pos 1 na Div 3 | Movimento PROMOVIDO | Caixa R$ 183,516 mil | Folha R$ 3,500 mil | Torcida 566K | Prestigio 58 | Emprestimo R$ 0 mil | Media elenco 46.8
+    Elenco:
+      - GOL Vanderlei                OVR 56  Sal    53  G  0  J  1  Craque -
+      - GOL Walter                   OVR 56  Sal    55  G  1  J 13  Craque -
+      - GOL Alex Muralha             OVR 56  Sal    54  G  0  J  2  Craque *
+      - ZAG Lucas Ramon              OVR 46  Sal    69  G  4  J 15  Craque *
+      - ZAG Luiz Otávio              OVR 43  Sal    44  G  2  J 16  Craque -
+      - ZAG Rodrigo Ferreira         OVR 42  Sal    34  G  0  J 10  Craque -
+      - ZAG João Victor              OVR 42  Sal    55  G  3  J  6  Craque -
+      - ZAG Reinaldo                 OVR 42  Sal    55  G  0  J  3  Craque -
+      - ZAG Daniel Borges            OVR 42  Sal    65  G  1  J 14  Craque -
+      - ZAG Zeca                     OVR 42  Sal    61  G  0  J  0  Craque -
+      - MEI Danielzinho              OVR 47  Sal    70  G  3  J 16  Craque -
+      - MEI Neto Moura               OVR 45  Sal    38  G  2  J 16  Craque -
+      - MEI Yago Felipe              OVR 42  Sal    34  G  0  J  3  Craque -
+      - MEI Negueba                  OVR 42  Sal    59  G  0  J  2  Craque -
+      - MEI Gabriel                  OVR 42  Sal    36  G  0  J  8  Craque -
+      - MEI Chico Kim                OVR 42  Sal    63  G  2  J  8  Craque -
+      - MEI Iury                     OVR 42  Sal    55  G  1  J 11  Craque -
+      - ATA Fernandinho              OVR 54  Sal    39  G  0  J  0  Craque -
+      - ATA Zé Roberto               OVR 54  Sal    63  G  5  J 14  Craque -
+      - ATA Quirino                  OVR 54  Sal    56  G  0  J  3  Craque -
+      - ATA Fabrício Daniel          OVR 54  Sal    68  G  1  J 15  Craque -
+      - ATA Dellatorre               OVR 53  Sal    69  G  0  J  0  Craque *
+      - ATA Rafinha                  OVR 47  Sal    66  G  0  J  0  Craque -
+      - ATA Nicolas                  OVR 45  Sal    67  G  0  J  0  Craque -
+      - ATA Alex Silva               OVR 39  Sal    70  G  0  J  0  Craque -
+  - Juventude | Div final 2 | Pos 2 na Div 3 | Movimento PROMOVIDO | Caixa R$ 242,906 mil | Folha R$ 5,500 mil | Torcida 1.2M | Prestigio 69 | Emprestimo R$ 0 mil | Media elenco 53.8
+    Elenco:
+      - GOL Gabriel                  OVR 63  Sal    83  G  0  J 17  Craque *
+      - GOL César                    OVR 60  Sal    41  G  0  J  1  Craque -
+      - GOL Marcão                   OVR 58  Sal    36  G  0  J  0  Craque -
+      - ZAG João Lucas               OVR 58  Sal    55  G  4  J 18  Craque *
+      - ZAG Abner                    OVR 48  Sal    64  G  1  J 18  Craque -
+      - ZAG Marcos Paulo             OVR 48  Sal    68  G  0  J  2  Craque -
+      - ZAG Rodrigo Sam              OVR 48  Sal    45  G  1  J  9  Craque -
+      - ZAG Danilo Boza              OVR 48  Sal    40  G  0  J 11  Craque -
+      - ZAG Ewerthon                 OVR 48  Sal    48  G  0  J  1  Craque -
+      - ZAG Alan Ruschel             OVR 48  Sal    38  G  2  J 13  Craque -
+      - MEI Caique                   OVR 55  Sal    49  G  4  J 18  Craque -
+      - MEI Mandaca                  OVR 51  Sal    53  G  2  J 17  Craque -
+      - MEI Luis Oyama               OVR 50  Sal    32  G  0  J  4  Craque -
+      - MEI Nenê                     OVR 50  Sal    63  G  0  J  4  Craque -
+      - MEI Luan Dias                OVR 50  Sal    56  G  0  J 16  Craque -
+      - MEI Jean Irmer               OVR 50  Sal    60  G  2  J 13  Craque -
+      - MEI Jadson                   OVR 50  Sal    54  G  0  J  0  Craque -
+      - ATA Lucas Barbosa            OVR 60  Sal    67  G  1  J 18  Craque -
+      - ATA Marcelinho               OVR 60  Sal    44  G  3  J 11  Craque -
+      - ATA Gilberto                 OVR 60  Sal    61  G  4  J  7  Craque -
+      - ATA Erick Farias             OVR 59  Sal    49  G  0  J  0  Craque *
+      - ATA Edinho                   OVR 58  Sal    31  G  0  J  0  Craque -
+      - ATA Gabriel Taliari          OVR 58  Sal    64  G  0  J  0  Craque -
+      - ATA Taliari                  OVR 56  Sal    36  G  0  J  0  Craque -
+      - ATA Da Silva                 OVR 52  Sal    49  G  0  J  0  Craque -
+  - Vitória | Div final 3 | Pos 3 na Div 3 | Movimento = | Caixa R$ 305,514 mil | Folha R$ 5,000 mil | Torcida 3.5M | Prestigio 66 | Emprestimo R$ 0 mil | Media elenco 53.1
+    Elenco:
+      - GOL Lucas Arcanjo            OVR 60  Sal    45  G  0  J 15  Craque *
+      - GOL Muriel                   OVR 60  Sal    45  G  0  J  2  Craque -
+      - GOL Dalton                   OVR 56  Sal    69  G  0  J  0  Craque -
+      - ZAG Raul Cáceres             OVR 55  Sal    70  G  2  J 16  Craque *
+      - ZAG Zeca                     OVR 49  Sal    70  G  1  J  6  Craque -
+      - ZAG PK                       OVR 49  Sal    52  G  1  J 11  Craque -
+      - ZAG Patric Calmon            OVR 49  Sal    44  G  1  J  7  Craque -
+      - ZAG Camutanga                OVR 49  Sal    68  G  3  J 12  Craque -
+      - ZAG Wagner Leonardo          OVR 49  Sal    42  G  2  J 12  Craque -
+      - ZAG Neris                    OVR 49  Sal    39  G  0  J  0  Craque -
+      - MEI Léo Naldi                OVR 55  Sal    68  G  4  J 16  Craque -
+      - MEI Dudu                     OVR 51  Sal    66  G  0  J 15  Craque -
+      - MEI Caio Vinícius            OVR 51  Sal    35  G  2  J 16  Craque -
+      - MEI Willian Oliveira         OVR 50  Sal    69  G  1  J  7  Craque -
+      - MEI Matheuzinho              OVR 50  Sal    33  G  0  J 10  Craque -
+      - MEI Rodrigo Andrade          OVR 50  Sal    38  G  0  J  0  Craque -
+      - MEI Jean Mota                OVR 49  Sal    44  G  0  J  0  Craque -
+      - ATA Alerrandro               OVR 60  Sal    33  G  0  J  1  Craque *
+      - ATA Everaldo                 OVR 60  Sal    41  G  3  J 16  Craque -
+      - ATA Janderson                OVR 60  Sal    45  G  3  J 15  Craque -
+      - ATA Iury Castilho            OVR 59  Sal    33  G  0  J  0  Craque -
+      - ATA Osvaldo                  OVR 59  Sal    32  G  0  J  0  Craque -
+      - ATA Wellington Rato          OVR 53  Sal    53  G  0  J  0  Craque -
+      - ATA Fábio Soares             OVR 49  Sal    51  G  0  J  0  Craque -
+      - ATA Carlos Eduardo           OVR 47  Sal    53  G  0  J  0  Craque -
+  - Athletico Paranaense | Div final 3 | Pos 4 na Div 3 | Movimento = | Caixa R$ 402,585 mil | Folha R$ 9,000 mil | Torcida 5.4M | Prestigio 76 | Emprestimo R$ 0 mil | Media elenco 64.4
+    Elenco:
+      - GOL Santos                   OVR 69  Sal   102  G  0  J  2  Craque -
+      - GOL Léo Linck                OVR 69  Sal   217  G  0  J 15  Craque -
+      - GOL Mycael                   OVR 69  Sal   136  G  0  J  1  Craque *
+      - ZAG Belezi                   OVR 61  Sal    46  G  2  J 18  Craque -
+      - ZAG Fernando                 OVR 60  Sal    48  G  1  J 17  Craque -
+      - ZAG Lucas Esquivel           OVR 60  Sal    45  G  1  J  6  Craque -
+      - ZAG Matheus Felipe           OVR 60  Sal    44  G  3  J 10  Craque -
+      - ZAG Kaique Rocha             OVR 60  Sal    34  G  2  J 14  Craque -
+      - ZAG Madson                   OVR 60  Sal    30  G  0  J  7  Craque -
+      - ZAG Léo Godoy                OVR 59  Sal    61  G  0  J  0  Craque *
+      - MEI Erick                    OVR 67  Sal    81  G  9  J 18  Craque -
+      - MEI Bruno Zapelli            OVR 62  Sal    75  G  1  J 17  Craque -
+      - MEI Canobbio                 OVR 62  Sal    33  G  4  J 17  Craque -
+      - MEI Felipinho                OVR 62  Sal    45  G  3  J 10  Craque -
+      - MEI Christian                OVR 62  Sal    41  G  2  J 10  Craque -
+      - MEI Alex Santana             OVR 62  Sal    62  G  0  J  0  Craque -
+      - MEI Giuliano                 OVR 61  Sal    70  G  0  J  0  Craque -
+      - ATA Emersonn                 OVR 69  Sal   146  G  1  J 11  Craque -
+      - ATA Cuello                   OVR 69  Sal   120  G  0  J  0  Craque -
+      - ATA Mastriani                OVR 69  Sal    81  G  0  J  8  Craque -
+      - ATA Pablo                    OVR 69  Sal   149  G  0  J  2  Craque *
+      - ATA Rômulo                   OVR 69  Sal   211  G  2  J 15  Craque -
+      - ATA Isaac                    OVR 68  Sal    99  G  0  J  0  Craque -
+      - ATA Julimar                  OVR 67  Sal   150  G  0  J  0  Craque -
+      - ATA Di Yorio                 OVR 67  Sal   132  G  0  J  0  Craque -
+  - Ceará | Div final 3 | Pos 5 na Div 3 | Movimento = | Caixa R$ 250,454 mil | Folha R$ 4,000 mil | Torcida 2.4M | Prestigio 59 | Emprestimo R$ 0 mil | Media elenco 50.5
+    Elenco:
+      - GOL Fernando Miguel          OVR 58  Sal    59  G  0  J  4  Craque -
+      - GOL Bruno Ferreira           OVR 58  Sal    51  G  0  J 16  Craque -
+      - GOL Richard                  OVR 57  Sal    57  G  0  J  0  Craque *
+      - ZAG Rafael Ramos             OVR 48  Sal    67  G  6  J 20  Craque *
+      - ZAG Eric Melo                OVR 46  Sal    52  G  1  J 19  Craque -
+      - ZAG Raí Ramos                OVR 46  Sal    51  G  1  J 20  Craque -
+      - ZAG David Ricardo            OVR 46  Sal    54  G  0  J  4  Craque -
+      - ZAG Matheus Felipe           OVR 46  Sal    43  G  1  J 10  Craque -
+      - ZAG Luiz Otávio              OVR 46  Sal    47  G  1  J  7  Craque -
+      - ZAG Warley                   OVR 44  Sal    53  G  0  J  0  Craque -
+      - MEI Richardson               OVR 52  Sal    46  G  0  J 19  Craque -
+      - MEI Fernando Sobral          OVR 45  Sal    38  G  0  J 14  Craque -
+      - MEI Lourenço                 OVR 45  Sal    62  G  0  J 19  Craque -
+      - MEI Lucas Mugni              OVR 45  Sal    38  G  0  J  7  Craque -
+      - MEI Aylon                    OVR 45  Sal    54  G  0  J  0  Craque -
+      - MEI De Lucca                 OVR 45  Sal    69  G  1  J 12  Craque -
+      - MEI Rômulo                   OVR 45  Sal    65  G  3  J  9  Craque -
+      - ATA Barceló                  OVR 59  Sal    67  G  6  J 19  Craque -
+      - ATA Saulo Mineiro            OVR 58  Sal    41  G  3  J 10  Craque *
+      - ATA Recalde                  OVR 58  Sal    38  G  0  J  1  Craque -
+      - ATA Facundo Castro           OVR 58  Sal    44  G  0  J 10  Craque -
+      - ATA Cléber                   OVR 58  Sal    35  G  0  J  0  Craque -
+      - ATA Erick Pulga              OVR 54  Sal    59  G  0  J  0  Craque -
+      - ATA Janderson                OVR 52  Sal    40  G  0  J  0  Craque -
+      - ATA Guilherme Bissoli        OVR 48  Sal    39  G  0  J  0  Craque -
+  - Sport Recife | Div final 3 | Pos 6 na Div 3 | Movimento = | Caixa R$ 209,328 mil | Folha R$ 4,000 mil | Torcida 2.7M | Prestigio 59 | Emprestimo R$ 0 mil | Media elenco 47.0
+    Elenco:
+      - GOL Adriel                   OVR 57  Sal    67  G  0  J  3  Craque -
+      - GOL Caíque França            OVR 57  Sal    35  G  0  J 10  Craque *
+      - GOL Denis                    OVR 57  Sal    45  G  0  J  6  Craque -
+      - ZAG Rosales                  OVR 44  Sal    47  G  2  J 18  Craque *
+      - ZAG Chico                    OVR 43  Sal    40  G  0  J 18  Craque -
+      - ZAG Luciano Castán           OVR 43  Sal    58  G  1  J 14  Craque -
+      - ZAG Igor Cariús              OVR 43  Sal    55  G  0  J  1  Craque -
+      - ZAG Hereda                   OVR 43  Sal    64  G  2  J  5  Craque -
+      - ZAG Felipinho                OVR 43  Sal    55  G  0  J  0  Craque -
+      - ZAG Rafael Thyere            OVR 43  Sal    58  G  0  J 16  Craque -
+      - MEI Fabinho                  OVR 47  Sal    50  G  4  J 18  Craque -
+      - MEI Felipe                   OVR 44  Sal    60  G  1  J 18  Craque -
+      - MEI Pedro Vilhena            OVR 43  Sal    31  G  2  J 17  Craque -
+      - MEI Titi Ortíz               OVR 42  Sal    62  G  1  J 10  Craque -
+      - MEI Lucas Lima               OVR 42  Sal    45  G  4  J  9  Craque -
+      - MEI Alan Ruiz                OVR 42  Sal    54  G  0  J  0  Craque -
+      - MEI Julián Fernández         OVR 42  Sal    50  G  0  J  0  Craque -
+      - ATA Zé Roberto               OVR 52  Sal    49  G  1  J  5  Craque -
+      - ATA Barletta                 OVR 52  Sal    34  G  1  J 14  Craque *
+      - ATA Pablo Dyego              OVR 52  Sal    59  G  1  J  8  Craque -
+      - ATA Romarinho                OVR 52  Sal    59  G  2  J  2  Craque -
+      - ATA Chrystian                OVR 52  Sal    49  G  5  J  7  Craque -
+      - ATA Gustavo Coutinho         OVR 52  Sal    30  G  0  J  0  Craque -
+      - ATA Diego Souza Jr           OVR 45  Sal    70  G  0  J  0  Craque -
+      - ATA Lenny Lobato             OVR 44  Sal    65  G  0  J  0  Craque -
+  - Goiás | Div final 4 | Pos 7 na Div 3 | Movimento REBAIXADO | Caixa R$ 190,568 mil | Folha R$ 4,600 mil | Torcida 2.9M | Prestigio 62 | Emprestimo R$ 0 mil | Media elenco 34.3
+    Elenco:
+      - GOL Thiago Rodrigues         OVR 46  Sal    69  G  0  J 11  Craque -
+      - GOL Tadeu                    OVR 46  Sal    53  G  0  J  5  Craque *
+      - GOL Marcão                   OVR 40  Sal    40  G  0  J  0  Craque -
+      - ZAG Ezequiel                 OVR 32  Sal    36  G  1  J 16  Craque *
+      - ZAG Luiz Felipe              OVR 32  Sal    42  G  2  J 15  Craque -
+      - ZAG Lucas Ribeiro            OVR 31  Sal    40  G  2  J 16  Craque -
+      - ZAG Rodrigo Soares           OVR 30  Sal    66  G  0  J 11  Craque -
+      - ZAG Nicolas                  OVR 30  Sal    53  G  1  J  6  Craque -
+      - ZAG Titi                     OVR 28  Sal    33  G  0  J  0  Craque -
+      - ZAG Anthony                  OVR 27  Sal    32  G  0  J  0  Craque -
+      - MEI Gegê                     OVR 38  Sal    37  G  1  J 16  Craque -
+      - MEI Lucas Lima               OVR 32  Sal    62  G  0  J 15  Craque -
+      - MEI Brayann                  OVR 32  Sal    68  G  3  J 16  Craque -
+      - MEI Juninho                  OVR 31  Sal    46  G  0  J  3  Craque -
+      - MEI Jean Carlos              OVR 31  Sal    54  G  4  J 14  Craque -
+      - MEI Filipe Machado           OVR 30  Sal    69  G  0  J  0  Craque -
+      - MEI Lourenço                 OVR 30  Sal    42  G  0  J  0  Craque -
+      - ATA Pedrinho                 OVR 40  Sal    57  G  1  J 16  Craque -
+      - ATA Wellington Rato          OVR 40  Sal    39  G  0  J  4  Craque *
+      - ATA Bruno Sávio              OVR 40  Sal    45  G  3  J 12  Craque -
+      - ATA Esli García              OVR 40  Sal    61  G  0  J  0  Craque -
+      - ATA Anselmo Ramon            OVR 39  Sal    46  G  0  J  0  Craque -
+      - ATA Arthur Caíke             OVR 34  Sal    44  G  0  J  0  Craque -
+      - ATA Cadu                     OVR 31  Sal    66  G  0  J  0  Craque -
+      - ATA Jajá                     OVR 30  Sal    61  G  0  J  0  Craque -
+  - Avaí | Div final 4 | Pos 8 na Div 3 | Movimento REBAIXADO | Caixa R$ 153,212 mil | Folha R$ 3,800 mil | Torcida 1.6M | Prestigio 61 | Emprestimo R$ 0 mil | Media elenco 30.0
+    Elenco:
+      - GOL Igor Bohn                OVR 36  Sal    57  G  0  J  6  Craque *
+      - GOL Otávio Passos            OVR 36  Sal    41  G  0  J 11  Craque -
+      - GOL Léo Aragão               OVR 36  Sal    34  G  0  J  0  Craque -
+      - ZAG Douglas Teixeira         OVR 28  Sal    54  G  1  J 16  Craque *
+      - ZAG Wesley Gasolina          OVR 28  Sal    32  G  0  J 14  Craque -
+      - ZAG Guilherme Aquino         OVR 27  Sal    56  G  0  J  7  Craque -
+      - ZAG Quaresma                 OVR 27  Sal    46  G  0  J  5  Craque -
+      - ZAG Allyson                  OVR 27  Sal    46  G  0  J  6  Craque -
+      - ZAG Wallison                 OVR 27  Sal    66  G  1  J 16  Craque -
+      - ZAG Gabriel Simples          OVR 27  Sal    47  G  0  J  0  Craque -
+      - MEI Jean Lucas               OVR 32  Sal    36  G  3  J 16  Craque -
+      - MEI Hyan                     OVR 24  Sal    67  G  1  J 10  Craque -
+      - MEI Wenderson                OVR 24  Sal    65  G  0  J  1  Craque -
+      - MEI Luiz Henrique            OVR 24  Sal    53  G  0  J 15  Craque -
+      - MEI Zé Ricardo               OVR 24  Sal    50  G  1  J  6  Craque -
+      - MEI Romildo Del Piage        OVR 24  Sal    69  G  1  J 16  Craque -
+      - MEI Daniel Penha             OVR 23  Sal    30  G  0  J  0  Craque -
+      - ATA Felipe Avenatti          OVR 38  Sal    39  G  3  J 12  Craque -
+      - ATA Maurício Garcez          OVR 38  Sal    68  G  1  J  6  Craque -
+      - ATA Rafael Bilu              OVR 38  Sal    65  G  1  J 14  Craque *
+      - ATA Gaspar                   OVR 37  Sal    32  G  0  J  0  Craque -
+      - ATA Sorriso                  OVR 36  Sal    69  G  0  J  0  Craque -
+      - ATA Thayllon                 OVR 33  Sal    45  G  0  J  0  Craque -
+      - ATA Igor Rosa                OVR 27  Sal    66  G  0  J  0  Craque -
+      - ATA Mário Sérgio             OVR 26  Sal    48  G  0  J  0  Craque -
+
+#### Divisao 4
+  - Cuiabá | Div final 3 | Pos 1 na Div 4 | Movimento PROMOVIDO | Caixa R$ 198,599 mil | Folha R$ 5,000 mil | Torcida 1.2M | Prestigio 60 | Emprestimo R$ 0 mil | Media elenco 53.6
+    Elenco:
+      - GOL Walter                   OVR 61  Sal    69  G  0  J 14  Craque *
+      - GOL João Carlos              OVR 61  Sal    34  G  0  J  2  Craque -
+      - GOL Mateus Pasinato          OVR 60  Sal    41  G  0  J  0  Craque -
+      - ZAG Matheus Alexandre        OVR 57  Sal    70  G  0  J 15  Craque *
+      - ZAG Marllon                  OVR 52  Sal    69  G  2  J 16  Craque -
+      - ZAG Alan Empereur            OVR 49  Sal    43  G  0  J 10  Craque -
+      - ZAG Railan                   OVR 49  Sal    69  G  0  J 14  Craque -
+      - ZAG Sander                   OVR 48  Sal    61  G  3  J  9  Craque -
+      - ZAG Bruno Alves              OVR 47  Sal    65  G  0  J  0  Craque -
+      - ZAG Ramon                    OVR 47  Sal    38  G  0  J  0  Craque -
+      - MEI Denilson                 OVR 54  Sal    50  G  2  J 16  Craque -
+      - MEI Ronald                   OVR 50  Sal    49  G  5  J 15  Craque -
+      - MEI Fernando Sobral          OVR 49  Sal    35  G  1  J  6  Craque -
+      - MEI Lucas Mineiro            OVR 49  Sal    39  G  5  J 16  Craque -
+      - MEI Max                      OVR 49  Sal    61  G  0  J  3  Craque -
+      - MEI Clayson                  OVR 49  Sal    31  G  1  J  5  Craque -
+      - MEI Filipe Augusto           OVR 49  Sal    42  G  1  J  3  Craque -
+      - ATA Derik Lacerda            OVR 59  Sal    63  G  3  J 12  Craque -
+      - ATA Deyverson                OVR 59  Sal    41  G  2  J  3  Craque -
+      - ATA Isidro Pitta             OVR 59  Sal    52  G  1  J  7  Craque *
+      - ATA Jonathan Cafu            OVR 59  Sal    67  G  3  J 10  Craque -
+      - ATA Eliel                    OVR 59  Sal    52  G  0  J  0  Craque -
+      - ATA André Luís               OVR 59  Sal    64  G  0  J  0  Craque -
+      - ATA Wellington Silva         OVR 56  Sal    51  G  0  J  0  Craque -
+      - ATA Alisson Safira           OVR 53  Sal    54  G  0  J  0  Craque -
+  - Atlético Goianiense | Div final 3 | Pos 2 na Div 4 | Movimento PROMOVIDO | Caixa R$ 202,800 mil | Folha R$ 4,500 mil | Torcida 1.7M | Prestigio 61 | Emprestimo R$ 0 mil | Media elenco 50.2
+    Elenco:
+      - GOL Luan Polli               OVR 60  Sal    56  G  0  J 15  Craque -
+      - GOL Pedro Paulo              OVR 58  Sal    48  G  0  J  1  Craque -
+      - GOL Ronaldo                  OVR 58  Sal    35  G  0  J  1  Craque *
+      - ZAG Bruno Tubarão            OVR 55  Sal    40  G  4  J 16  Craque *
+      - ZAG Lucas Gazal              OVR 45  Sal    66  G  0  J  6  Craque -
+      - ZAG Maguinho                 OVR 45  Sal    46  G  1  J 15  Craque -
+      - ZAG Luiz Felipe              OVR 45  Sal    68  G  4  J 14  Craque -
+      - ZAG Rhaldney                 OVR 45  Sal    54  G  3  J 13  Craque -
+      - ZAG Alix Vinicius            OVR 45  Sal    56  G  0  J  0  Craque -
+      - ZAG Guilherme Romão          OVR 45  Sal    56  G  0  J  0  Craque -
+      - MEI Roni                     OVR 55  Sal    38  G  3  J 16  Craque -
+      - MEI Emiliano Rodríguez       OVR 45  Sal    59  G  1  J  4  Craque -
+      - MEI Shaylon                  OVR 45  Sal    57  G  1  J 16  Craque -
+      - MEI Jorginho                 OVR 45  Sal    33  G  0  J  0  Craque -
+      - MEI Léo Pereira              OVR 45  Sal    50  G  0  J  0  Craque -
+      - MEI Campanharo               OVR 45  Sal    61  G  1  J 14  Craque -
+      - MEI Baralhas                 OVR 45  Sal    68  G  2  J 14  Craque -
+      - ATA Luiz Fernando            OVR 57  Sal    70  G  1  J 15  Craque *
+      - ATA Hyuri                    OVR 56  Sal    33  G  2  J  7  Craque -
+      - ATA Danielzinho              OVR 56  Sal    37  G  0  J  2  Craque -
+      - ATA Janderson                OVR 56  Sal    69  G  2  J  8  Craque -
+      - ATA Derek                    OVR 56  Sal    31  G  0  J  0  Craque -
+      - ATA Alejo Cruz               OVR 56  Sal    34  G  0  J  0  Craque -
+      - ATA Gustavo Coutinho         OVR 48  Sal    50  G  0  J  0  Craque -
+      - ATA Yony González            OVR 44  Sal    57  G  0  J  0  Craque -
+  - América Mineiro | Div final 4 | Pos 3 na Div 4 | Movimento = | Caixa R$ 196,325 mil | Folha R$ 4,500 mil | Torcida 2.6M | Prestigio 65 | Emprestimo R$ 0 mil | Media elenco 34.0
+    Elenco:
+      - GOL Matheus Mendes           OVR 40  Sal    38  G  0  J 14  Craque *
+      - GOL Jori                     OVR 40  Sal    51  G  0  J  2  Craque -
+      - GOL Dalberson                OVR 40  Sal    41  G  0  J  0  Craque -
+      - ZAG Ricardo Silva            OVR 33  Sal    60  G  3  J 15  Craque -
+      - ZAG Marlon                   OVR 33  Sal    61  G  3  J 16  Craque *
+      - ZAG Nicolas                  OVR 30  Sal    34  G  1  J 16  Craque -
+      - ZAG Júlio                    OVR 29  Sal    54  G  0  J  7  Craque -
+      - ZAG Lucão                    OVR 29  Sal    67  G  0  J  4  Craque -
+      - ZAG Maguinho                 OVR 29  Sal    49  G  0  J  6  Craque -
+      - ZAG Paulinho                 OVR 28  Sal    59  G  0  J  0  Craque -
+      - MEI Alê                      OVR 33  Sal    36  G  1  J 16  Craque -
+      - MEI Miguelito                OVR 31  Sal    39  G  0  J  2  Craque -
+      - MEI Fabinho Santos           OVR 31  Sal    30  G  1  J  5  Craque -
+      - MEI Moisés                   OVR 31  Sal    43  G  3  J 14  Craque -
+      - MEI Cauan Barros             OVR 31  Sal    42  G  1  J 13  Craque -
+      - MEI Benítez                  OVR 31  Sal    44  G  3  J 14  Craque -
+      - MEI Jhosefer                 OVR 30  Sal    69  G  0  J  0  Craque -
+      - ATA Fabinho                  OVR 44  Sal    40  G  2  J 16  Craque *
+      - ATA Guilherme Pato           OVR 43  Sal    48  G  5  J 15  Craque -
+      - ATA Adyson                   OVR 43  Sal    43  G  0  J  1  Craque -
+      - ATA Willian Bigode           OVR 42  Sal    39  G  0  J  0  Craque -
+      - ATA Stênio                   OVR 34  Sal    57  G  0  J  0  Craque -
+      - ATA Renato Marques           OVR 34  Sal    44  G  0  J  0  Craque -
+      - ATA Brenner                  OVR 33  Sal    59  G  0  J  0  Craque -
+      - ATA Aloísio                  OVR 29  Sal    31  G  0  J  0  Craque -
+  - Coritiba | Div final 4 | Pos 4 na Div 4 | Movimento = | Caixa R$ 183,284 mil | Folha R$ 4,800 mil | Torcida 3.2M | Prestigio 65 | Emprestimo R$ 0 mil | Media elenco 36.9
+    Elenco:
+      - GOL Gabriel Leite            OVR 45  Sal    61  G  0  J  8  Craque -
+      - GOL Pedro Morisco            OVR 45  Sal    59  G  0  J  9  Craque *
+      - GOL Pedro Rangel             OVR 45  Sal    70  G  0  J  0  Craque -
+      - ZAG Tiago Coser              OVR 38  Sal    36  G  2  J 15  Craque *
+      - ZAG Maicon                   OVR 34  Sal    52  G  2  J 16  Craque -
+      - ZAG Jacy                     OVR 33  Sal    47  G  1  J 15  Craque -
+      - ZAG Felipe Guimarães         OVR 33  Sal    37  G  0  J  6  Craque -
+      - ZAG Bruno Melo               OVR 33  Sal    38  G  1  J  9  Craque -
+      - ZAG João Almeida             OVR 33  Sal    31  G  1  J  3  Craque -
+      - ZAG Guilherme Aquino         OVR 32  Sal    65  G  0  J  0  Craque -
+      - MEI Sebastián Gómez          OVR 41  Sal    35  G  3  J 15  Craque -
+      - MEI Geovane                  OVR 34  Sal    51  G  3  J 16  Craque -
+      - MEI Jean Gabriel             OVR 34  Sal    67  G  0  J 16  Craque -
+      - MEI Josué                    OVR 32  Sal    52  G  0  J  2  Craque -
+      - MEI Willian Oliveira         OVR 32  Sal    42  G  0  J 15  Craque -
+      - MEI Carlos de Pena           OVR 31  Sal    46  G  0  J  0  Craque -
+      - MEI Matheus Bianqui          OVR 30  Sal    53  G  0  J  0  Craque -
+      - ATA Clayson                  OVR 44  Sal    48  G  1  J 15  Craque *
+      - ATA Gustavo Coutinho         OVR 43  Sal    67  G  3  J  9  Craque -
+      - ATA Lucas Ronier             OVR 43  Sal    66  G  0  J  4  Craque -
+      - ATA Dellatorre               OVR 43  Sal    57  G  0  J  4  Craque -
+      - ATA Nicolas Careca           OVR 43  Sal    48  G  0  J  0  Craque -
+      - ATA Iury Castilho            OVR 40  Sal    51  G  0  J  0  Craque -
+      - ATA Joaquín Lavega           OVR 36  Sal    60  G  0  J  0  Craque -
+      - ATA Pedro Rocha              OVR 27  Sal    34  G  0  J  0  Craque -
+  - CRB | Div final 4 | Pos 5 na Div 4 | Movimento = | Caixa R$ 116,707 mil | Folha R$ 3,500 mil | Torcida 1.3M | Prestigio 62 | Emprestimo R$ 0 mil | Media elenco 26.9
+    Elenco:
+      - GOL Vitor Caetano            OVR 37  Sal    62  G  0  J  3  Craque -
+      - GOL Matheus Albino           OVR 37  Sal    31  G  0  J 13  Craque *
+      - GOL Pablo                    OVR 35  Sal    46  G  0  J  0  Craque -
+      - ZAG Segovia                  OVR 24  Sal    58  G  1  J 15  Craque -
+      - ZAG Fábio Alemão             OVR 23  Sal    46  G  2  J 14  Craque -
+      - ZAG Henri                    OVR 22  Sal    55  G  0  J  2  Craque -
+      - ZAG Ryan                     OVR 22  Sal    55  G  0  J 14  Craque -
+      - ZAG Lucas Lovat              OVR 22  Sal    35  G  1  J  2  Craque -
+      - ZAG Weverton                 OVR 22  Sal    55  G  1  J  3  Craque -
+      - ZAG Hereda                   OVR 22  Sal    43  G  3  J 14  Craque *
+      - MEI Higor Meritão            OVR 27  Sal    50  G  2  J 16  Craque -
+      - MEI Danielzinho              OVR 25  Sal    48  G  3  J 16  Craque -
+      - MEI Douglas Baggio           OVR 22  Sal    38  G  2  J 16  Craque -
+      - MEI Geovane                  OVR 22  Sal    37  G  0  J  4  Craque -
+      - MEI Mikael                   OVR 22  Sal    39  G  1  J  5  Craque -
+      - MEI Gegê                     OVR 22  Sal    70  G  1  J  7  Craque -
+      - MEI Lucas Kallyel            OVR 22  Sal    54  G  0  J  0  Craque -
+      - ATA Anselmo Ramon            OVR 35  Sal    44  G  1  J  5  Craque *
+      - ATA Léo Pereira              OVR 35  Sal    58  G  2  J 13  Craque -
+      - ATA Dadá Belmonte            OVR 35  Sal    51  G  4  J 14  Craque -
+      - ATA William Pottker          OVR 33  Sal    70  G  0  J  0  Craque -
+      - ATA João Neto                OVR 29  Sal    68  G  0  J  0  Craque -
+      - ATA Labandeira               OVR 26  Sal    53  G  0  J  0  Craque -
+      - ATA Rafinha                  OVR 25  Sal    50  G  0  J  0  Craque -
+      - ATA Thiaguinho               OVR 25  Sal    61  G  0  J  0  Craque -
+  - Vila Nova | Div final 4 | Pos 6 na Div 4 | Movimento = | Caixa R$ 137,795 mil | Folha R$ 3,600 mil | Torcida 1.5M | Prestigio 58 | Emprestimo R$ 0 mil | Media elenco 30.9
+    Elenco:
+      - GOL Airton                   OVR 35  Sal    49  G  0  J  4  Craque -
+      - GOL Dalberson                OVR 35  Sal    38  G  1  J 12  Craque -
+      - GOL Helton Leite             OVR 35  Sal    30  G  0  J  0  Craque *
+      - ZAG Caio Marcelo             OVR 31  Sal    40  G  0  J 15  Craque *
+      - ZAG Anderson Jesus           OVR 30  Sal    35  G  0  J 16  Craque -
+      - ZAG Weverton                 OVR 27  Sal    61  G  2  J 16  Craque -
+      - ZAG Hayner                   OVR 27  Sal    44  G  1  J  3  Craque -
+      - ZAG Higor                    OVR 26  Sal    56  G  0  J  4  Craque -
+      - ZAG Elias                    OVR 26  Sal    33  G  0  J 10  Craque -
+      - ZAG Tiago Pagnussat          OVR 26  Sal    38  G  0  J  0  Craque -
+      - MEI Dudu                     OVR 35  Sal    47  G  1  J 16  Craque -
+      - MEI Nathan Camargo           OVR 29  Sal    45  G  1  J 15  Craque -
+      - MEI João Vieira              OVR 27  Sal    61  G  1  J  6  Craque -
+      - MEI Marquinhos Gabriel       OVR 27  Sal    57  G  0  J  1  Craque -
+      - MEI Dodô                     OVR 27  Sal    37  G  0  J 16  Craque -
+      - MEI Marco Antonio            OVR 27  Sal    68  G  2  J 10  Craque -
+      - MEI Willian Maranhão         OVR 27  Sal    57  G  0  J  0  Craque -
+      - ATA Bruno Xavier             OVR 38  Sal    51  G  1  J 10  Craque -
+      - ATA Andre Luis               OVR 38  Sal    55  G  0  J  8  Craque -
+      - ATA Dellatorre               OVR 38  Sal    62  G  0  J  6  Craque -
+      - ATA Rafa Silva               OVR 38  Sal    53  G  1  J  8  Craque -
+      - ATA Ruan Ribeiro             OVR 38  Sal    58  G  0  J  0  Craque *
+      - ATA Emerson Urso             OVR 30  Sal    69  G  0  J  0  Craque -
+      - ATA Janderson                OVR 29  Sal    48  G  0  J  0  Craque -
+      - ATA Alesson                  OVR 25  Sal    30  G  0  J  0  Craque -
+  - Paysandu | Div final 4 | Pos 7 na Div 4 | Movimento = | Caixa R$ 132,929 mil | Folha R$ 3,600 mil | Torcida 1.6M | Prestigio 57 | Emprestimo R$ 0 mil | Media elenco 26.9
+    Elenco:
+      - GOL Matheus Nogueira         OVR 31  Sal    62  G  0  J  8  Craque -
+      - GOL Jean Drosny              OVR 31  Sal    41  G  0  J  9  Craque -
+      - GOL Gabriel Mesquita         OVR 31  Sal    59  G  0  J  0  Craque *
+      - ZAG Marcão                   OVR 26  Sal    55  G  0  J 15  Craque *
+      - ZAG PK                       OVR 24  Sal    61  G  0  J 16  Craque -
+      - ZAG Bruno Bispo              OVR 23  Sal    50  G  0  J  8  Craque -
+      - ZAG Yeferson Quintana        OVR 23  Sal    41  G  0  J  1  Craque -
+      - ZAG Reverson                 OVR 23  Sal    46  G  0  J  5  Craque -
+      - ZAG Edílson                  OVR 23  Sal    67  G  2  J 13  Craque -
+      - ZAG Luccão                   OVR 23  Sal    43  G  0  J  6  Craque -
+      - MEI Leandro Vilela           OVR 30  Sal    58  G  2  J 16  Craque -
+      - MEI Matheus Vargas           OVR 24  Sal    38  G  1  J 15  Craque -
+      - MEI Robinho                  OVR 23  Sal    62  G  0  J  9  Craque -
+      - MEI Cavan                    OVR 23  Sal    52  G  1  J  1  Craque -
+      - MEI Giovanni                 OVR 23  Sal    37  G  0  J  1  Craque -
+      - MEI Marlon                   OVR 23  Sal    35  G  0  J 11  Craque -
+      - MEI Ramon Martinez           OVR 23  Sal    44  G  0  J 11  Craque -
+      - ATA Marlon Douglas           OVR 35  Sal    53  G  5  J 16  Craque -
+      - ATA Nicolas                  OVR 33  Sal    38  G  0  J  2  Craque *
+      - ATA Benitez                  OVR 33  Sal    58  G  2  J 10  Craque -
+      - ATA Edinho                   OVR 33  Sal    45  G  0  J  4  Craque -
+      - ATA Kevin                    OVR 30  Sal    37  G  0  J  0  Craque -
+      - ATA Ciel                     OVR 28  Sal    34  G  0  J  0  Craque -
+      - ATA Eliel                    OVR 28  Sal    58  G  0  J  0  Craque -
+      - ATA Diogo Oliveira           OVR 23  Sal    61  G  0  J  0  Craque -
+  - Novorizontino | Div final 4 | Pos 8 na Div 4 | Movimento = | Caixa R$ 111,373 mil | Folha R$ 3,200 mil | Torcida 1.0M | Prestigio 59 | Emprestimo R$ 0 mil | Media elenco 27.2
+    Elenco:
+      - GOL Airton                   OVR 33  Sal    70  G  0  J  7  Craque -
+      - GOL Jordi                    OVR 33  Sal    53  G  0  J  9  Craque *
+      - GOL César Augusto            OVR 31  Sal    54  G  0  J  0  Craque -
+      - ZAG Patrick                  OVR 26  Sal    54  G  1  J 16  Craque *
+      - ZAG Dantas                   OVR 23  Sal    46  G  0  J  7  Craque -
+      - ZAG César Martins            OVR 23  Sal    46  G  1  J  8  Craque -
+      - ZAG Rafael Donato            OVR 23  Sal    65  G  1  J 12  Craque -
+      - ZAG Rômulo                   OVR 23  Sal    44  G  0  J  9  Craque -
+      - ZAG Mayk                     OVR 23  Sal    68  G  0  J 12  Craque -
+      - ZAG Raí Ramos                OVR 20  Sal    49  G  0  J  0  Craque -
+      - MEI Fábio Matheus            OVR 27  Sal    46  G  1  J 15  Craque -
+      - MEI Jean Irmer               OVR 24  Sal    56  G  1  J 16  Craque -
+      - MEI Waguininho               OVR 24  Sal    61  G  2  J 16  Craque -
+      - MEI Lucca                    OVR 24  Sal    49  G  1  J  4  Craque -
+      - MEI Marlon                   OVR 24  Sal    58  G  3  J 13  Craque -
+      - MEI Matheus Frizzo           OVR 23  Sal    68  G  0  J  0  Craque -
+      - MEI Robson                   OVR 22  Sal    47  G  0  J  0  Craque -
+      - ATA Nicolas Careca           OVR 35  Sal    70  G  0  J  2  Craque -
+      - ATA Bruno José               OVR 35  Sal    41  G  0  J 14  Craque -
+      - ATA Caio Dantas              OVR 35  Sal    68  G  1  J  5  Craque *
+      - ATA Léo Tocantins            OVR 35  Sal    36  G  1  J 11  Craque -
+      - ATA Neto Pessoa              OVR 34  Sal    69  G  0  J  0  Craque -
+      - ATA Everaldo                 OVR 30  Sal    57  G  0  J  0  Craque -
+      - ATA Jenison                  OVR 25  Sal    45  G  0  J  0  Craque -
+      - ATA Rodolfo                  OVR 22  Sal    68  G  0  J  0  Craque -
+
+## Temporada 2032
+
+### Campeoes
+- Divisao 1: Corinthians
+- Divisao 2: Cruzeiro
+- Divisao 3: Vasco da Gama
+- Divisao 4: Coritiba
+- Copa: Palmeiras
+
+### Artilheiros
+- Artilheiro da temporada: Estêvão (Palmeiras) - 9 gols
+- Top 1: Estêvão (Palmeiras) - 9 gols
+- Top 2: Lautaro Díaz (Cruzeiro) - 9 gols
+- Top 3: Nonato (Fluminense) - 8 gols
+- Top 4: Everton Cebolinha (Flamengo) - 7 gols
+- Top 5: Luciano (São Paulo FC) - 6 gols
+- Top 6: Erick (São Paulo FC) - 6 gols
+- Top 7: Ignacio Laquintana (RB Bragantino) - 6 gols
+- Top 8: Everaldo (Bahia) - 6 gols
+- Top 9: Lucas Piton (Vasco da Gama) - 6 gols
+- Top 10: Mandaca (Juventude) - 6 gols
+
+### Promovidos
+- Cruzeiro: 2 -> 1
+- Flamengo: 2 -> 1
+- Sport Recife: 3 -> 2
+- Vasco da Gama: 3 -> 2
+- Coritiba: 4 -> 3
+- Paysandu: 4 -> 3
+
+### Rebaixados
+- Atlético Mineiro: 1 -> 2
+- Grêmio: 1 -> 2
+- Internacional: 2 -> 3
+- Mirassol: 2 -> 3
+- Ceará: 3 -> 4
+- Criciúma: 3 -> 4
+
+### Destaques Financeiros e Tecnicos
+- Melhor ataque: Flamengo com 30 gols
+- Melhor defesa: Athletico Paranaense com 10 gols sofridos
+- Maior publico: Corinthians x Grêmio - 80,000
+- Maior renda: São Paulo FC x Fluminense - R$ 12,096 mil
+
+### Clubes, Financas e Elencos
+#### Divisao 1
+  - Corinthians | Div final 1 | Pos 1 na Div 1 | Movimento = | Caixa R$ 1,174,692 mil | Folha R$ 19,000 mil | Torcida 33.3M | Prestigio 94 | Emprestimo R$ 0 mil | Media elenco 77.3
+    Elenco:
+      - GOL Matheus Donelli          OVR 86  Sal  1525  G  0  J 11  Craque -
+      - GOL Hugo Souza               OVR 85  Sal  2091  G  1  J  5  Craque *
+      - GOL Felipe Longo             OVR 84  Sal  2471  G  0  J  0  Craque -
+      - ZAG Cacá                     OVR 74  Sal   196  G  2  J 15  Craque -
+      - ZAG Gustavo Henrique         OVR 73  Sal   175  G  2  J 15  Craque -
+      - ZAG Matheuzinho              OVR 73  Sal   417  G  3  J 12  Craque *
+      - ZAG Bidu                     OVR 73  Sal   302  G  0  J  1  Craque -
+      - ZAG Félix Torres             OVR 73  Sal   344  G  0  J 13  Craque -
+      - ZAG Hugo                     OVR 73  Sal   164  G  0  J  2  Craque -
+      - ZAG Léo Maná                 OVR 73  Sal   319  G  1  J  6  Craque -
+      - MEI Raniele                  OVR 74  Sal   438  G  3  J 16  Craque -
+      - MEI Rodrigo Garro            OVR 73  Sal   450  G  1  J  2  Craque -
+      - MEI Maycon                   OVR 73  Sal   299  G  2  J 12  Craque -
+      - MEI Breno Bidon              OVR 73  Sal   289  G  3  J 15  Craque -
+      - MEI André Carrillo           OVR 73  Sal   291  G  0  J 11  Craque -
+      - MEI Charles                  OVR 73  Sal   259  G  0  J  8  Craque -
+      - MEI Alex Santana             OVR 72  Sal   324  G  0  J  0  Craque -
+      - ATA Memphis Depay            OVR 82  Sal  1951  G  0  J  7  Craque -
+      - ATA Talles Magno             OVR 82  Sal  2741  G  3  J 15  Craque -
+      - ATA Ángel Romero             OVR 82  Sal  2640  G  0  J  5  Craque -
+      - ATA Wesley                   OVR 82  Sal  2648  G  1  J  5  Craque -
+      - ATA Giovane                  OVR 82  Sal   934  G  0  J  0  Craque -
+      - ATA Yuri Alberto             OVR 81  Sal   886  G  0  J  0  Craque *
+      - ATA Pedro Raul               OVR 81  Sal  1076  G  0  J  0  Craque -
+      - ATA Kayke                    OVR 80  Sal  1095  G  0  J  0  Craque -
+  - São Paulo FC | Div final 1 | Pos 2 na Div 1 | Movimento = | Caixa R$ 1,178,126 mil | Folha R$ 14,000 mil | Torcida 19.1M | Prestigio 87 | Emprestimo R$ 0 mil | Media elenco 70.4
+    Elenco:
+      - GOL Rafael                   OVR 74  Sal   178  G  0  J  5  Craque *
+      - GOL Young                    OVR 74  Sal   390  G  0  J 11  Craque -
+      - GOL Jandrei                  OVR 73  Sal   160  G  0  J  0  Craque -
+      - ZAG Welington                OVR 67  Sal   100  G  2  J 14  Craque -
+      - ZAG Alan Franco              OVR 67  Sal    87  G  1  J 14  Craque -
+      - ZAG Igor Vinícius            OVR 67  Sal    78  G  2  J 16  Craque *
+      - ZAG Sabino                   OVR 67  Sal    96  G  0  J 15  Craque -
+      - ZAG Ferraresi                OVR 67  Sal   144  G  0  J  1  Craque -
+      - ZAG Arboleda                 OVR 67  Sal    86  G  1  J  4  Craque -
+      - ZAG Patryck                  OVR 66  Sal   116  G  0  J  0  Craque -
+      - MEI Damián Bobadilla         OVR 69  Sal   431  G  1  J 16  Craque -
+      - MEI Marcos Antônio           OVR 68  Sal    85  G  4  J 15  Craque -
+      - MEI Wellington Rato          OVR 68  Sal   132  G  0  J  9  Craque -
+      - MEI Alisson                  OVR 68  Sal   118  G  1  J  7  Craque -
+      - MEI Pablo Maia               OVR 68  Sal    96  G  0  J  4  Craque -
+      - MEI Rodriguinho              OVR 68  Sal   129  G  1  J  8  Craque -
+      - MEI Matheus Alves            OVR 68  Sal    93  G  1  J  5  Craque -
+      - ATA Calleri                  OVR 75  Sal   422  G  1  J  9  Craque *
+      - ATA Erick                    OVR 75  Sal   224  G  6  J 11  Craque -
+      - ATA Luciano                  OVR 75  Sal   165  G  6  J 11  Craque -
+      - ATA Ferreira                 OVR 74  Sal   333  G  0  J  0  Craque -
+      - ATA André Silva              OVR 74  Sal   211  G  0  J  1  Craque -
+      - ATA William Gomes            OVR 74  Sal   415  G  0  J  0  Craque -
+      - ATA Henrique Carmo           OVR 74  Sal   183  G  0  J  0  Craque -
+      - ATA Lucas Moura              OVR 74  Sal   332  G  0  J  0  Craque -
+  - Fluminense | Div final 1 | Pos 3 na Div 1 | Movimento = | Caixa R$ 997,930 mil | Folha R$ 16,000 mil | Torcida 11.3M | Prestigio 86 | Emprestimo R$ 0 mil | Media elenco 78.1
+    Elenco:
+      - GOL Fábio                    OVR 86  Sal  1936  G  0  J  9  Craque *
+      - GOL Vitor Eudes              OVR 86  Sal  2048  G  0  J  9  Craque -
+      - GOL Pedro Rangel             OVR 86  Sal  2872  G  0  J  0  Craque -
+      - ZAG Manoel                   OVR 77  Sal   550  G  1  J 17  Craque -
+      - ZAG Thiago Silva             OVR 76  Sal   712  G  2  J 18  Craque -
+      - ZAG Guga                     OVR 76  Sal   275  G  1  J  7  Craque -
+      - ZAG Thiago Santos            OVR 76  Sal   767  G  1  J 15  Craque -
+      - ZAG Renê                     OVR 75  Sal   508  G  1  J 15  Craque -
+      - ZAG Samuel Xavier            OVR 75  Sal   379  G  0  J  0  Craque *
+      - ZAG Fretes                   OVR 75  Sal   197  G  0  J  0  Craque -
+      - MEI Nonato                   OVR 75  Sal   485  G  8  J 18  Craque -
+      - MEI Martinelli               OVR 74  Sal   340  G  1  J 18  Craque -
+      - MEI Ganso                    OVR 74  Sal   162  G  2  J 16  Craque -
+      - MEI Lima                     OVR 74  Sal   220  G  1  J  7  Craque -
+      - MEI Jhon Arias               OVR 74  Sal   372  G  0  J 10  Craque -
+      - MEI Otávio                   OVR 74  Sal   228  G  0  J  1  Craque -
+      - MEI Kevin Serna              OVR 73  Sal   219  G  1  J  2  Craque -
+      - ATA Keno                     OVR 82  Sal   940  G  0  J  2  Craque -
+      - ATA Everaldo                 OVR 82  Sal   858  G  2  J  2  Craque -
+      - ATA Germán Cano              OVR 82  Sal  1030  G  1  J  3  Craque *
+      - ATA Marquinhos               OVR 82  Sal  1178  G  0  J  4  Craque -
+      - ATA Lelê                     OVR 82  Sal   561  G  0  J  2  Craque -
+      - ATA Agustín Canobbio         OVR 82  Sal  1760  G  4  J 14  Craque -
+      - ATA Isaac                    OVR 82  Sal  1980  G  3  J  9  Craque -
+      - ATA Riquelme                 OVR 76  Sal   345  G  0  J  0  Craque -
+  - Botafogo | Div final 1 | Pos 4 na Div 1 | Movimento = | Caixa R$ 1,542,543 mil | Folha R$ 20,000 mil | Torcida 14.0M | Prestigio 93 | Emprestimo R$ 0 mil | Media elenco 80.7
+    Elenco:
+      - GOL John                     OVR 87  Sal  2031  G  0  J  1  Craque *
+      - GOL Léo Linck                OVR 87  Sal  5692  G  0  J 11  Craque -
+      - GOL Raul                     OVR 87  Sal  2339  G  1  J  9  Craque -
+      - ZAG Vitinho                  OVR 78  Sal   676  G  0  J 20  Craque *
+      - ZAG Alexander Barboza        OVR 76  Sal   715  G  0  J 16  Craque -
+      - ZAG Mateo Ponte              OVR 76  Sal   982  G  2  J  6  Craque -
+      - ZAG Alex Telles              OVR 76  Sal   704  G  4  J 16  Craque -
+      - ZAG Cuiabano                 OVR 76  Sal  1153  G  0  J 12  Craque -
+      - ZAG Bastos                   OVR 76  Sal   901  G  0  J  6  Craque -
+      - ZAG David Ricardo            OVR 76  Sal   549  G  2  J  4  Craque -
+      - MEI Marlon Freitas           OVR 76  Sal  1193  G  3  J 10  Craque -
+      - MEI Patrick de Paula         OVR 76  Sal   546  G  2  J 15  Craque -
+      - MEI Gregore                  OVR 76  Sal  1104  G  2  J 14  Craque -
+      - MEI Santiago Rodríguez       OVR 76  Sal  1108  G  0  J  9  Craque -
+      - MEI Newton                   OVR 76  Sal  1182  G  1  J 15  Craque -
+      - MEI Allan                    OVR 76  Sal  1188  G  0  J  5  Craque -
+      - MEI Jefferson Savarino       OVR 76  Sal   624  G  1  J 12  Craque -
+      - ATA Elias Manoel             OVR 87  Sal  2094  G  3  J 11  Craque -
+      - ATA Artur                    OVR 87  Sal  2257  G  1  J  8  Craque -
+      - ATA Rwan Cruz                OVR 87  Sal  2369  G  2  J 12  Craque -
+      - ATA Santiago                 OVR 87  Sal  2212  G  2  J  8  Craque -
+      - ATA Jeffinho                 OVR 87  Sal  1257  G  0  J  1  Craque -
+      - ATA Matheus Martins          OVR 86  Sal  2053  G  0  J  0  Craque -
+      - ATA Igor Jesus               OVR 85  Sal  3041  G  0  J  0  Craque *
+      - ATA Kayque                   OVR 83  Sal  2556  G  0  J  0  Craque -
+  - Palmeiras | Div final 1 | Pos 5 na Div 1 | Movimento = | Caixa R$ 1,679,640 mil | Folha R$ 24,000 mil | Torcida 16.5M | Prestigio 98 | Emprestimo R$ 0 mil | Media elenco 84.5
+    Elenco:
+      - GOL Weverton                 OVR 89  Sal  6259  G  0  J  7  Craque *
+      - GOL Marcelo Lomba            OVR 88  Sal  4602  G  1  J 18  Craque -
+      - GOL Mateus Oliveira          OVR 88  Sal  1794  G  0  J  0  Craque -
+      - ZAG Agustín Giay             OVR 86  Sal  5666  G  3  J 24  Craque *
+      - ZAG Mayke                    OVR 81  Sal  2646  G  4  J 18  Craque -
+      - ZAG Marcos Rocha             OVR 81  Sal  2659  G  0  J 13  Craque -
+      - ZAG Murilo                   OVR 81  Sal   829  G  1  J  9  Craque -
+      - ZAG Naves                    OVR 81  Sal  3055  G  2  J 15  Craque -
+      - ZAG Gustavo Gómez            OVR 81  Sal  1637  G  0  J 17  Craque -
+      - ZAG Joaquín Piquerez         OVR 80  Sal   837  G  0  J  0  Craque -
+      - MEI Raphael Veiga            OVR 80  Sal  2998  G  5  J 24  Craque -
+      - MEI Fabinho                  OVR 80  Sal  1677  G  4  J 22  Craque -
+      - MEI Maurício                 OVR 80  Sal   912  G  2  J 16  Craque -
+      - MEI Felipe Anderson          OVR 80  Sal   566  G  1  J 14  Craque -
+      - MEI Emiliano Martínez        OVR 80  Sal   710  G  1  J  5  Craque -
+      - MEI Richard Ríos             OVR 80  Sal   917  G  1  J 10  Craque -
+      - MEI Aníbal Moreno            OVR 80  Sal   908  G  0  J  5  Craque -
+      - ATA Estêvão                  OVR 92  Sal  6133  G  9  J 19  Craque *
+      - ATA Paulinho                 OVR 91  Sal  5207  G  5  J 11  Craque -
+      - ATA Facundo Torres           OVR 91  Sal  4895  G  3  J 18  Craque -
+      - ATA Bruno Rodrigues          OVR 91  Sal  6590  G  0  J  0  Craque -
+      - ATA Luighi                   OVR 90  Sal  3724  G  0  J  0  Craque -
+      - ATA Flaco López              OVR 90  Sal  3871  G  0  J  0  Craque -
+      - ATA Vitor Roque              OVR 87  Sal  2908  G  0  J  0  Craque -
+      - ATA Rony                     OVR 86  Sal  2724  G  0  J  0  Craque -
+  - Fortaleza | Div final 1 | Pos 6 na Div 1 | Movimento = | Caixa R$ 751,722 mil | Folha R$ 11,000 mil | Torcida 4.6M | Prestigio 80 | Emprestimo R$ 0 mil | Media elenco 71.7
+    Elenco:
+      - GOL João Ricardo             OVR 78  Sal   896  G  0  J  9  Craque *
+      - GOL Magrão                   OVR 78  Sal  1124  G  0  J  8  Craque -
+      - GOL Santos                   OVR 78  Sal   688  G  0  J  1  Craque -
+      - ZAG Emanuel Brítez           OVR 68  Sal    96  G  0  J 18  Craque -
+      - ZAG Mancuso                  OVR 67  Sal   150  G  1  J 18  Craque -
+      - ZAG Kuscevic                 OVR 67  Sal   122  G  1  J  8  Craque -
+      - ZAG Bruno Pacheco            OVR 67  Sal   116  G  0  J  3  Craque -
+      - ZAG Tinga                    OVR 67  Sal   121  G  1  J 15  Craque *
+      - ZAG Titi                     OVR 67  Sal    91  G  0  J  0  Craque -
+      - ZAG Talocha                  OVR 67  Sal   109  G  1  J 10  Craque -
+      - MEI Lucas Sasha              OVR 70  Sal   186  G  4  J 18  Craque -
+      - MEI Calebe                   OVR 69  Sal   347  G  4  J 15  Craque -
+      - MEI Martínez                 OVR 69  Sal    96  G  0  J  6  Craque -
+      - MEI Pochettino               OVR 69  Sal   248  G  2  J 17  Craque -
+      - MEI Zé Welison               OVR 69  Sal   445  G  1  J 15  Craque -
+      - MEI Kervin Andrade           OVR 69  Sal    92  G  0  J  1  Craque -
+      - MEI Hércules                 OVR 68  Sal   126  G  0  J  0  Craque -
+      - ATA Lucero                   OVR 77  Sal  1157  G  1  J  5  Craque *
+      - ATA Renato Kayzer            OVR 77  Sal   674  G  0  J  0  Craque -
+      - ATA Marinho                  OVR 77  Sal   990  G  5  J 12  Craque -
+      - ATA Breno Lopes              OVR 77  Sal   903  G  0  J  5  Craque -
+      - ATA Moisés                   OVR 77  Sal   890  G  1  J  4  Craque -
+      - ATA Yago Pikachu             OVR 77  Sal   823  G  0  J 10  Craque -
+      - ATA Pedro Rocha              OVR 75  Sal   362  G  0  J  0  Craque -
+      - ATA Allanzinho               OVR 71  Sal   130  G  0  J  0  Craque -
+  - Atlético Mineiro | Div final 2 | Pos 7 na Div 1 | Movimento REBAIXADO | Caixa R$ 1,730,750 mil | Folha R$ 20,000 mil | Torcida 13.7M | Prestigio 92 | Emprestimo R$ 0 mil | Media elenco 79.6
+    Elenco:
+      - GOL Everson                  OVR 85  Sal  1476  G  0  J  3  Craque *
+      - GOL Matheus Mendes           OVR 85  Sal  1671  G  0  J 12  Craque -
+      - GOL Gabriel Delfim           OVR 85  Sal  1685  G  0  J  1  Craque -
+      - ZAG Igor Rabello             OVR 77  Sal  1044  G  1  J  5  Craque -
+      - ZAG Lyanco                   OVR 77  Sal  1108  G  1  J 16  Craque -
+      - ZAG Rubens                   OVR 77  Sal  1144  G  0  J 12  Craque -
+      - ZAG Guilherme Arana          OVR 77  Sal   880  G  1  J 11  Craque -
+      - ZAG Júnior Alonso            OVR 77  Sal   809  G  0  J  5  Craque -
+      - ZAG Saravia                  OVR 77  Sal   657  G  0  J  4  Craque *
+      - ZAG Bruno Fuchs              OVR 77  Sal  1158  G  1  J 11  Craque -
+      - MEI Fausto Vera              OVR 76  Sal   969  G  4  J 16  Craque -
+      - MEI Otávio                   OVR 74  Sal   443  G  0  J 10  Craque -
+      - MEI Gustavo Scarpa           OVR 74  Sal   199  G  4  J  8  Craque -
+      - MEI Alan Franco              OVR 74  Sal   296  G  0  J  5  Craque -
+      - MEI Igor Gomes               OVR 74  Sal   174  G  0  J  7  Craque -
+      - MEI Patrick                  OVR 74  Sal   419  G  0  J  7  Craque -
+      - MEI Bernard                  OVR 74  Sal   437  G  2  J 11  Craque -
+      - ATA Tomás Cuello             OVR 85  Sal  1382  G  4  J 12  Craque -
+      - ATA Cadu                     OVR 85  Sal  2375  G  1  J  5  Craque -
+      - ATA Cristian Pavón           OVR 85  Sal  2310  G  0  J  2  Craque -
+      - ATA Hulk                     OVR 85  Sal  1580  G  1  J 13  Craque *
+      - ATA Deyverson                OVR 84  Sal  2456  G  0  J  0  Craque -
+      - ATA Alisson                  OVR 84  Sal  1681  G  0  J  0  Craque -
+      - ATA Rony                     OVR 84  Sal  3463  G  0  J  0  Craque -
+      - ATA Eduardo Vargas           OVR 83  Sal  3147  G  0  J  0  Craque -
+  - Grêmio | Div final 2 | Pos 8 na Div 1 | Movimento REBAIXADO | Caixa R$ 1,189,008 mil | Folha R$ 13,000 mil | Torcida 9.2M | Prestigio 81 | Emprestimo R$ 0 mil | Media elenco 78.0
+    Elenco:
+      - GOL Gabriel Grando           OVR 85  Sal  2719  G  0  J  3  Craque -
+      - GOL Caíque                   OVR 85  Sal  1315  G  0  J  7  Craque -
+      - GOL Agustín Marchesín        OVR 85  Sal  1482  G  0  J 10  Craque *
+      - ZAG Kannemann                OVR 74  Sal   223  G  2  J 20  Craque -
+      - ZAG Rodrigo Ely              OVR 74  Sal   399  G  2  J  9  Craque -
+      - ZAG João Pedro               OVR 74  Sal   280  G  3  J 18  Craque *
+      - ZAG Mayk                     OVR 74  Sal   257  G  0  J  7  Craque -
+      - ZAG Jemerson                 OVR 74  Sal   189  G  1  J 11  Craque -
+      - ZAG Fábio                    OVR 74  Sal   199  G  0  J  2  Craque -
+      - ZAG Reinaldo                 OVR 74  Sal   361  G  0  J 13  Craque -
+      - MEI Franco Cristaldo         OVR 75  Sal   456  G  1  J 19  Craque -
+      - MEI Nathan                   OVR 75  Sal   445  G  0  J  2  Craque -
+      - MEI Mathías Villasanti       OVR 75  Sal   929  G  1  J 18  Craque -
+      - MEI Miguel Monsalve          OVR 75  Sal   941  G  0  J 15  Craque -
+      - MEI Dodi                     OVR 75  Sal   155  G  0  J  9  Craque -
+      - MEI Edenilson                OVR 75  Sal   184  G  0  J  4  Craque -
+      - MEI Pepê                     OVR 75  Sal   184  G  2  J 13  Craque -
+      - ATA André Henrique           OVR 84  Sal  2256  G  2  J 13  Craque -
+      - ATA Martin Braithwaite       OVR 84  Sal  1884  G  1  J 13  Craque *
+      - ATA Aravena                  OVR 83  Sal  1954  G  5  J 14  Craque -
+      - ATA Pavon                    OVR 83  Sal  1398  G  0  J  0  Craque -
+      - ATA Cristian Olivera         OVR 82  Sal  1047  G  0  J  0  Craque -
+      - ATA Alysson                  OVR 81  Sal   978  G  0  J  0  Craque -
+      - ATA Matias Arezo             OVR 80  Sal   671  G  0  J  0  Craque -
+      - ATA Soteldo                  OVR 79  Sal   619  G  0  J  0  Craque -
+
+#### Divisao 2
+  - Cruzeiro | Div final 1 | Pos 1 na Div 2 | Movimento PROMOVIDO | Caixa R$ 774,042 mil | Folha R$ 13,000 mil | Torcida 10.7M | Prestigio 89 | Emprestimo R$ 0 mil | Media elenco 69.9
+    Elenco:
+      - GOL Anderson                 OVR 76  Sal   896  G  1  J  7  Craque -
+      - GOL Léo Aragão               OVR 76  Sal   894  G  0  J 12  Craque -
+      - GOL Cássio                   OVR 76  Sal   365  G  0  J  0  Craque *
+      - ZAG William                  OVR 66  Sal   109  G  0  J  6  Craque *
+      - ZAG Fagner                   OVR 66  Sal   102  G  1  J 11  Craque -
+      - ZAG Marlon                   OVR 66  Sal   146  G  0  J  7  Craque -
+      - ZAG Fabrício Bruno           OVR 66  Sal   104  G  2  J 17  Craque -
+      - ZAG Lucas Villalba           OVR 66  Sal    96  G  1  J 13  Craque -
+      - ZAG Jonathan Jesus           OVR 66  Sal    99  G  2  J 15  Craque -
+      - ZAG Kaiki                    OVR 66  Sal   149  G  0  J  3  Craque -
+      - MEI Walace                   OVR 65  Sal   107  G  4  J 18  Craque -
+      - MEI Lucas Romero             OVR 65  Sal   119  G  0  J  1  Craque -
+      - MEI Japa                     OVR 65  Sal   133  G  0  J  3  Craque -
+      - MEI Matheus Pereira          OVR 65  Sal    74  G  2  J  8  Craque -
+      - MEI Eduardo                  OVR 65  Sal   115  G  3  J 15  Craque -
+      - MEI Christian                OVR 65  Sal    72  G  2  J 15  Craque -
+      - MEI Matheus Henrique         OVR 65  Sal   109  G  1  J 12  Craque -
+      - ATA Lautaro Díaz             OVR 78  Sal  1165  G  9  J 18  Craque -
+      - ATA Dudu                     OVR 77  Sal  1184  G  2  J 18  Craque -
+      - ATA Kaio Jorge               OVR 77  Sal   686  G  0  J  0  Craque *
+      - ATA Wanderson                OVR 76  Sal   334  G  0  J  0  Craque -
+      - ATA Marquinhos               OVR 76  Sal   407  G  0  J  0  Craque -
+      - ATA Gabriel Veron            OVR 73  Sal   406  G  0  J  0  Craque -
+      - ATA Yannick Bolasie          OVR 72  Sal   400  G  0  J  0  Craque -
+      - ATA Rafa Silva               OVR 71  Sal   414  G  0  J  0  Craque -
+  - Flamengo | Div final 1 | Pos 2 na Div 2 | Movimento PROMOVIDO | Caixa R$ 1,699,870 mil | Folha R$ 28,000 mil | Torcida 33.3M | Prestigio 100 | Emprestimo R$ 0 mil | Media elenco 85.1
+    Elenco:
+      - GOL Matheus Cunha            OVR 91  Sal  5748  G  0  J 15  Craque -
+      - GOL Dyogo Alves              OVR 91  Sal  4800  G  1  J  3  Craque -
+      - GOL Rossi                    OVR 91  Sal  5555  G  0  J  1  Craque *
+      - ZAG Alex Sandro              OVR 82  Sal  3299  G  3  J 18  Craque -
+      - ZAG Léo Ortiz                OVR 81  Sal  2144  G  3  J 17  Craque -
+      - ZAG Danilo                   OVR 81  Sal  1095  G  1  J 12  Craque -
+      - ZAG Wesley                   OVR 81  Sal   674  G  0  J  0  Craque *
+      - ZAG Ayrton Lucas             OVR 81  Sal   879  G  1  J  2  Craque -
+      - ZAG Guillermo Varela         OVR 81  Sal   894  G  3  J  7  Craque -
+      - ZAG Léo Pereira              OVR 81  Sal  2067  G  4  J 16  Craque -
+      - MEI Everton Araújo           OVR 83  Sal  2087  G  3  J 18  Craque -
+      - MEI Allan                    OVR 82  Sal  2472  G  1  J 17  Craque -
+      - MEI Giorgian De Arrascaeta   OVR 82  Sal  2488  G  4  J 17  Craque -
+      - MEI Carlos Alcaraz           OVR 82  Sal  2107  G  4  J 17  Craque -
+      - MEI Nicolás De La Cruz       OVR 82  Sal   697  G  0  J  3  Craque -
+      - MEI Erick Pulgar             OVR 81  Sal   738  G  0  J  0  Craque -
+      - MEI Gerson                   OVR 81  Sal   600  G  0  J  0  Craque -
+      - ATA Everton Cebolinha        OVR 90  Sal  5586  G  7  J 18  Craque -
+      - ATA Michael                  OVR 90  Sal  6560  G  0  J  2  Craque -
+      - ATA Juninho                  OVR 90  Sal  6278  G  0  J  0  Craque -
+      - ATA Luiz Araújo              OVR 90  Sal  5273  G  0  J  1  Craque -
+      - ATA Pedro                    OVR 90  Sal  3947  G  1  J  9  Craque *
+      - ATA Bruno Henrique           OVR 90  Sal  4015  G  4  J  6  Craque -
+      - ATA Matheus Gonçalves        OVR 88  Sal  2500  G  0  J  0  Craque -
+      - ATA Gonzalo Plata            OVR 87  Sal  3160  G  0  J  0  Craque -
+  - RB Bragantino | Div final 2 | Pos 3 na Div 2 | Movimento = | Caixa R$ 585,104 mil | Folha R$ 9,500 mil | Torcida 1.7M | Prestigio 76 | Emprestimo R$ 0 mil | Media elenco 68.0
+    Elenco:
+      - GOL Lucão                    OVR 76  Sal   484  G  0  J  9  Craque -
+      - GOL Matheus Nogueira         OVR 76  Sal   546  G  1  J  9  Craque -
+      - GOL Cleiton                  OVR 76  Sal   211  G  0  J  0  Craque *
+      - ZAG Pedro Henrique           OVR 64  Sal    78  G  1  J 18  Craque -
+      - ZAG Nathan Mendes            OVR 63  Sal   124  G  3  J 18  Craque -
+      - ZAG Natan                    OVR 63  Sal    56  G  0  J  1  Craque -
+      - ZAG Guzmán Rodríguez         OVR 63  Sal    31  G  1  J  2  Craque -
+      - ZAG Luan Cândido             OVR 63  Sal    65  G  0  J  1  Craque -
+      - ZAG Juninho Capixaba         OVR 63  Sal    80  G  1  J 17  Craque -
+      - ZAG Andrés Hurtado           OVR 63  Sal   149  G  1  J 15  Craque *
+      - MEI Matheus Fernandes        OVR 66  Sal   150  G  2  J 18  Craque -
+      - MEI Raul                     OVR 65  Sal    91  G  1  J 18  Craque -
+      - MEI Gustavinho               OVR 65  Sal   108  G  3  J 10  Craque -
+      - MEI Lucas Evangelista        OVR 65  Sal    88  G  1  J 10  Craque -
+      - MEI Eric Ramires             OVR 65  Sal   141  G  0  J 10  Craque -
+      - MEI Jadsom                   OVR 65  Sal   125  G  0  J  2  Craque -
+      - MEI Jhon Jhon                OVR 65  Sal   102  G  1  J  4  Craque -
+      - ATA Lincoln                  OVR 73  Sal   313  G  0  J  2  Craque -
+      - ATA Talisson                 OVR 73  Sal   429  G  4  J 11  Craque -
+      - ATA Ignacio Laquintana       OVR 73  Sal   241  G  6  J 10  Craque -
+      - ATA Thiago Borbas            OVR 73  Sal   195  G  0  J  6  Craque *
+      - ATA Vitinho                  OVR 73  Sal   435  G  1  J  7  Craque -
+      - ATA Henry Mosquera           OVR 71  Sal   160  G  0  J  0  Craque -
+      - ATA Helinho                  OVR 71  Sal   286  G  0  J  0  Craque -
+      - ATA Eduardo Sasha            OVR 71  Sal    75  G  0  J  0  Craque -
+  - Bahia | Div final 2 | Pos 4 na Div 2 | Movimento = | Caixa R$ 478,510 mil | Folha R$ 8,500 mil | Torcida 3.2M | Prestigio 76 | Emprestimo R$ 0 mil | Media elenco 67.5
+    Elenco:
+      - GOL Marcos Felipe            OVR 74  Sal   363  G  0  J  4  Craque *
+      - GOL Danilo Fernandes         OVR 74  Sal   156  G  1  J 20  Craque -
+      - GOL Adriel                   OVR 74  Sal   221  G  0  J  0  Craque -
+      - ZAG Kanu                     OVR 64  Sal   122  G  4  J 24  Craque -
+      - ZAG Gilberto                 OVR 63  Sal   147  G  3  J 24  Craque *
+      - ZAG Gabriel Xavier           OVR 63  Sal    80  G  2  J 17  Craque -
+      - ZAG Arias                    OVR 63  Sal    76  G  1  J 15  Craque -
+      - ZAG Luciano Juba             OVR 63  Sal    36  G  0  J  4  Craque -
+      - ZAG Iago Borduchi            OVR 63  Sal    48  G  0  J  6  Craque -
+      - ZAG David Duarte             OVR 63  Sal    60  G  0  J  6  Craque -
+      - MEI Jean Lucas               OVR 65  Sal   112  G  4  J 24  Craque -
+      - MEI Nicolás Acevedo          OVR 64  Sal   130  G  4  J 13  Craque -
+      - MEI Erick                    OVR 64  Sal   129  G  2  J 19  Craque -
+      - MEI Everton Ribeiro          OVR 64  Sal    84  G  3  J 14  Craque -
+      - MEI Cauly                    OVR 64  Sal    51  G  0  J  0  Craque -
+      - MEI Caio Alexandre           OVR 64  Sal   115  G  0  J  4  Craque -
+      - MEI Rezende                  OVR 64  Sal   145  G  0  J 22  Craque -
+      - ATA Kayky                    OVR 72  Sal   205  G  0  J  2  Craque -
+      - ATA Biel                     OVR 72  Sal   165  G  2  J  9  Craque -
+      - ATA Tiago                    OVR 72  Sal   341  G  3  J 18  Craque -
+      - ATA Everaldo                 OVR 72  Sal   434  G  6  J 19  Craque *
+      - ATA Lucho Rodríguez          OVR 72  Sal   370  G  0  J  0  Craque -
+      - ATA Ademir                   OVR 72  Sal   342  G  0  J  0  Craque -
+      - ATA Willian José             OVR 70  Sal    98  G  0  J  0  Craque -
+      - ATA Rafael Ratão             OVR 69  Sal    91  G  0  J  0  Craque -
+  - Santos | Div final 2 | Pos 5 na Div 2 | Movimento = | Caixa R$ 707,329 mil | Folha R$ 7,000 mil | Torcida 11.9M | Prestigio 74 | Emprestimo R$ 0 mil | Media elenco 61.0
+    Elenco:
+      - GOL João Paulo               OVR 67  Sal    97  G  0  J  3  Craque -
+      - GOL Gabriel Brazão           OVR 67  Sal    77  G  0  J  8  Craque *
+      - GOL Diógenes                 OVR 67  Sal   116  G  0  J  8  Craque -
+      - ZAG Joaquim                  OVR 60  Sal    62  G  0  J 18  Craque -
+      - ZAG Kevyson                  OVR 58  Sal    60  G  1  J 16  Craque -
+      - ZAG JP Chermont              OVR 58  Sal    45  G  1  J 16  Craque -
+      - ZAG Gil                      OVR 58  Sal    53  G  0  J 12  Craque -
+      - ZAG Aderlan                  OVR 58  Sal    67  G  1  J  7  Craque *
+      - ZAG Escobar                  OVR 58  Sal    61  G  2  J  3  Craque -
+      - ZAG Zé Ivaldo                OVR 58  Sal    35  G  0  J  0  Craque -
+      - MEI Otero                    OVR 58  Sal    55  G  4  J 18  Craque -
+      - MEI Diego Pituca             OVR 56  Sal    38  G  2  J 11  Craque -
+      - MEI Giuliano                 OVR 56  Sal    70  G  2  J  8  Craque -
+      - MEI Miguelito                OVR 56  Sal    52  G  0  J 10  Craque -
+      - MEI Tomás Rincón             OVR 56  Sal    55  G  1  J 18  Craque -
+      - MEI Cazares                  OVR 56  Sal    45  G  0  J  0  Craque -
+      - MEI João Schmidt             OVR 56  Sal    46  G  0  J  7  Craque -
+      - ATA Willian Bigode           OVR 66  Sal    98  G  0  J  4  Craque -
+      - ATA Julio Furch              OVR 66  Sal   146  G  0  J  1  Craque -
+      - ATA Lucas Braga              OVR 66  Sal    86  G  1  J 13  Craque -
+      - ATA Wendel Silva             OVR 66  Sal    73  G  2  J 17  Craque -
+      - ATA Morelos                  OVR 66  Sal   104  G  0  J  1  Craque -
+      - ATA Pedrinho                 OVR 66  Sal   103  G  0  J  0  Craque -
+      - ATA Guilherme                OVR 66  Sal   141  G  0  J  0  Craque *
+      - ATA Enzo Monteiro            OVR 58  Sal    43  G  0  J  0  Craque -
+  - Juventude | Div final 2 | Pos 6 na Div 2 | Movimento = | Caixa R$ 277,235 mil | Folha R$ 5,500 mil | Torcida 1.3M | Prestigio 70 | Emprestimo R$ 0 mil | Media elenco 53.7
+    Elenco:
+      - GOL César                    OVR 62  Sal    35  G  0  J  4  Craque -
+      - GOL Gabriel                  OVR 62  Sal    33  G  0  J 12  Craque *
+      - GOL Marcão                   OVR 58  Sal    57  G  0  J  0  Craque -
+      - ZAG João Lucas               OVR 56  Sal    41  G  0  J 15  Craque *
+      - ZAG Danilo Boza              OVR 48  Sal    40  G  1  J 16  Craque -
+      - ZAG Abner                    OVR 47  Sal    35  G  2  J  5  Craque -
+      - ZAG Rodrigo Sam              OVR 47  Sal    50  G  0  J  2  Craque -
+      - ZAG Ewerthon                 OVR 47  Sal    52  G  1  J  2  Craque -
+      - ZAG Alan Ruschel             OVR 47  Sal    44  G  1  J 14  Craque -
+      - ZAG Marcos Paulo             OVR 47  Sal    68  G  1  J 10  Craque -
+      - MEI Caique                   OVR 54  Sal    56  G  2  J 16  Craque -
+      - MEI Mandaca                  OVR 51  Sal    35  G  6  J 16  Craque -
+      - MEI Nenê                     OVR 51  Sal    69  G  1  J 11  Craque -
+      - MEI Luan Dias                OVR 51  Sal    47  G  1  J 13  Craque -
+      - MEI Jadson                   OVR 51  Sal    67  G  0  J  8  Craque -
+      - MEI Jean Irmer               OVR 50  Sal    41  G  0  J  0  Craque -
+      - MEI Luis Oyama               OVR 49  Sal    51  G  0  J  0  Craque -
+      - ATA Gilberto                 OVR 60  Sal    45  G  1  J 13  Craque -
+      - ATA Erick Farias             OVR 60  Sal    57  G  1  J  8  Craque *
+      - ATA Gabriel Taliari          OVR 60  Sal    69  G  2  J  5  Craque -
+      - ATA Lucas Barbosa            OVR 60  Sal    69  G  0  J  6  Craque -
+      - ATA Marcelinho               OVR 59  Sal    59  G  0  J  0  Craque -
+      - ATA Edinho                   OVR 58  Sal    43  G  0  J  0  Craque -
+      - ATA Taliari                  OVR 57  Sal    59  G  0  J  0  Craque -
+      - ATA Da Silva                 OVR 53  Sal    32  G  0  J  0  Craque -
+  - Internacional | Div final 3 | Pos 7 na Div 2 | Movimento REBAIXADO | Caixa R$ 1,008,364 mil | Folha R$ 14,000 mil | Torcida 7.4M | Prestigio 77 | Emprestimo R$ 0 mil | Media elenco 75.4
+    Elenco:
+      - GOL Anthoni                  OVR 83  Sal  3118  G  0  J  7  Craque -
+      - GOL Sergio Rochet            OVR 83  Sal  2041  G  0  J 13  Craque *
+      - GOL Ivan                     OVR 83  Sal  2432  G  0  J  0  Craque -
+      - ZAG Agustín Rogel            OVR 70  Sal   309  G  1  J 19  Craque -
+      - ZAG Juninho                  OVR 70  Sal   332  G  1  J 10  Craque -
+      - ZAG Gabriel Mercado          OVR 70  Sal   412  G  3  J 19  Craque -
+      - ZAG Braian Aguirre           OVR 70  Sal   212  G  2  J 11  Craque -
+      - ZAG Bustos                   OVR 70  Sal   263  G  2  J  8  Craque *
+      - ZAG Alexandro Bernabei       OVR 70  Sal    87  G  0  J  3  Craque -
+      - ZAG Vitão                    OVR 70  Sal   364  G  1  J 10  Craque -
+      - MEI Gabriel Tabata           OVR 73  Sal   223  G  2  J 20  Craque -
+      - MEI Rômulo                   OVR 72  Sal   289  G  4  J 20  Craque -
+      - MEI Bruno Gomes              OVR 71  Sal   310  G  0  J  7  Craque -
+      - MEI Bruno Henrique           OVR 71  Sal   268  G  5  J 18  Craque -
+      - MEI Thiago Maia              OVR 71  Sal   411  G  0  J  6  Craque -
+      - MEI Alan Patrick             OVR 71  Sal   271  G  1  J  6  Craque -
+      - MEI Fernando                 OVR 71  Sal   364  G  0  J  3  Craque -
+      - ATA Rafael Borré             OVR 82  Sal  1689  G  4  J 16  Craque *
+      - ATA Vitinho                  OVR 82  Sal   721  G  1  J  6  Craque -
+      - ATA Lucca                    OVR 82  Sal  1030  G  1  J  7  Craque -
+      - ATA Lucas Alario             OVR 81  Sal  2109  G  3  J 11  Craque -
+      - ATA Wesley                   OVR 81  Sal   567  G  0  J  0  Craque -
+      - ATA Ricardo Mathias          OVR 80  Sal   827  G  0  J  0  Craque -
+      - ATA Enner Valencia           OVR 80  Sal   917  G  0  J  0  Craque -
+      - ATA Gustavo Prado            OVR 75  Sal   222  G  0  J  0  Craque -
+  - Mirassol | Div final 3 | Pos 8 na Div 2 | Movimento REBAIXADO | Caixa R$ 213,995 mil | Folha R$ 3,500 mil | Torcida 494K | Prestigio 54 | Emprestimo R$ 0 mil | Media elenco 46.4
+    Elenco:
+      - GOL Vanderlei                OVR 55  Sal    41  G  0  J 11  Craque -
+      - GOL Walter                   OVR 55  Sal    46  G  0  J  5  Craque -
+      - GOL Alex Muralha             OVR 55  Sal    42  G  0  J  0  Craque *
+      - ZAG Lucas Ramon              OVR 43  Sal    63  G  1  J 16  Craque *
+      - ZAG Reinaldo                 OVR 42  Sal    61  G  0  J  6  Craque -
+      - ZAG João Victor              OVR 42  Sal    49  G  0  J  0  Craque -
+      - ZAG Zeca                     OVR 42  Sal    40  G  1  J  7  Craque -
+      - ZAG Daniel Borges            OVR 42  Sal    40  G  2  J 15  Craque -
+      - ZAG Luiz Otávio              OVR 42  Sal    32  G  1  J  8  Craque -
+      - ZAG Rodrigo Ferreira         OVR 42  Sal    68  G  1  J 12  Craque -
+      - MEI Danielzinho              OVR 46  Sal    67  G  1  J 15  Craque -
+      - MEI Neto Moura               OVR 43  Sal    54  G  1  J 16  Craque -
+      - MEI Gabriel                  OVR 43  Sal    58  G  3  J 16  Craque -
+      - MEI Iury                     OVR 42  Sal    39  G  0  J  0  Craque -
+      - MEI Yago Felipe              OVR 42  Sal    33  G  1  J  4  Craque -
+      - MEI Negueba                  OVR 42  Sal    43  G  1  J 13  Craque -
+      - MEI Chico Kim                OVR 42  Sal    65  G  0  J  0  Craque -
+      - ATA Quirino                  OVR 54  Sal    34  G  3  J 15  Craque -
+      - ATA Fabrício Daniel          OVR 54  Sal    43  G  1  J  2  Craque -
+      - ATA Fernandinho              OVR 54  Sal    46  G  0  J  3  Craque -
+      - ATA Zé Roberto               OVR 54  Sal    55  G  3  J 12  Craque -
+      - ATA Dellatorre               OVR 53  Sal    42  G  0  J  0  Craque *
+      - ATA Rafinha                  OVR 47  Sal    63  G  0  J  0  Craque -
+      - ATA Nicolas                  OVR 46  Sal    50  G  0  J  0  Craque -
+      - ATA Alex Silva               OVR 41  Sal    34  G  0  J  0  Craque -
+
+#### Divisao 3
+  - Vasco da Gama | Div final 2 | Pos 1 na Div 3 | Movimento PROMOVIDO | Caixa R$ 776,460 mil | Folha R$ 9,000 mil | Torcida 10.7M | Prestigio 79 | Emprestimo R$ 0 mil | Media elenco 66.7
+    Elenco:
+      - GOL Keiller                  OVR 73  Sal   312  G  0  J 14  Craque -
+      - GOL Pablo                    OVR 73  Sal   414  G  0  J  0  Craque -
+      - GOL Léo Jardim               OVR 72  Sal   263  G  0  J  8  Craque *
+      - ZAG Lucas Oliveira           OVR 63  Sal   150  G  1  J 14  Craque -
+      - ZAG Victor Luís              OVR 63  Sal    53  G  1  J 10  Craque -
+      - ZAG João Victor              OVR 63  Sal   121  G  2  J 14  Craque -
+      - ZAG Maicon                   OVR 63  Sal   134  G  1  J 17  Craque -
+      - ZAG Lucas Piton              OVR 63  Sal    72  G  6  J 19  Craque -
+      - ZAG Puma Rodríguez           OVR 63  Sal    50  G  0  J  1  Craque -
+      - ZAG Paulo Henrique           OVR 63  Sal   105  G  2  J 13  Craque *
+      - MEI Tchê Tchê                OVR 61  Sal    32  G  4  J 16  Craque -
+      - MEI Paulinho                 OVR 61  Sal    45  G  1  J  6  Craque -
+      - MEI Juan Sforza              OVR 61  Sal    46  G  3  J 20  Craque -
+      - MEI Hugo Moura               OVR 61  Sal    58  G  1  J 18  Craque -
+      - MEI Jair                     OVR 61  Sal    36  G  1  J  1  Craque -
+      - MEI Philippe Coutinho        OVR 61  Sal    60  G  2  J 15  Craque -
+      - MEI Dimitri Payet            OVR 61  Sal    63  G  1  J 12  Craque -
+      - ATA Adson                    OVR 74  Sal   407  G  3  J  7  Craque -
+      - ATA GB                       OVR 74  Sal   360  G  5  J 14  Craque -
+      - ATA Rayan                    OVR 74  Sal   419  G  0  J  2  Craque -
+      - ATA David                    OVR 74  Sal   216  G  0  J  0  Craque -
+      - ATA Rossi                    OVR 74  Sal   395  G  5  J 14  Craque -
+      - ATA Alex Teixeira            OVR 73  Sal   245  G  2  J  7  Craque -
+      - ATA Pablo Vegetti            OVR 71  Sal   177  G  0  J  0  Craque *
+      - ATA Jean David               OVR 65  Sal   123  G  0  J  0  Craque -
+  - Sport Recife | Div final 2 | Pos 2 na Div 3 | Movimento PROMOVIDO | Caixa R$ 249,470 mil | Folha R$ 4,000 mil | Torcida 3.0M | Prestigio 62 | Emprestimo R$ 0 mil | Media elenco 46.5
+    Elenco:
+      - GOL Denis                    OVR 56  Sal    67  G  0  J 15  Craque -
+      - GOL Adriel                   OVR 56  Sal    63  G  0  J  1  Craque -
+      - GOL Caíque França            OVR 56  Sal    57  G  0  J  4  Craque *
+      - ZAG Rafael Thyere            OVR 42  Sal    62  G  5  J 20  Craque -
+      - ZAG Luciano Castán           OVR 42  Sal    62  G  1  J 20  Craque -
+      - ZAG Hereda                   OVR 42  Sal    54  G  0  J  2  Craque -
+      - ZAG Rosales                  OVR 42  Sal    47  G  0  J 12  Craque *
+      - ZAG Felipinho                OVR 42  Sal    45  G  2  J 17  Craque -
+      - ZAG Igor Cariús              OVR 42  Sal    53  G  0  J  3  Craque -
+      - ZAG Chico                    OVR 42  Sal    63  G  1  J  6  Craque -
+      - MEI Fabinho                  OVR 44  Sal    52  G  4  J 20  Craque -
+      - MEI Lucas Lima               OVR 42  Sal    65  G  2  J 16  Craque -
+      - MEI Alan Ruiz                OVR 42  Sal    34  G  1  J 12  Craque -
+      - MEI Titi Ortíz               OVR 42  Sal    64  G  1  J  7  Craque -
+      - MEI Pedro Vilhena            OVR 42  Sal    49  G  1  J 10  Craque -
+      - MEI Felipe                   OVR 41  Sal    63  G  6  J 15  Craque -
+      - MEI Julián Fernández         OVR 41  Sal    36  G  0  J  0  Craque -
+      - ATA Pablo Dyego              OVR 53  Sal    55  G  2  J  5  Craque -
+      - ATA Gustavo Coutinho         OVR 53  Sal    38  G  3  J  6  Craque -
+      - ATA Chrystian                OVR 53  Sal    59  G  1  J  9  Craque -
+      - ATA Zé Roberto               OVR 53  Sal    42  G  0  J  6  Craque -
+      - ATA Barletta                 OVR 53  Sal    47  G  4  J 14  Craque *
+      - ATA Romarinho                OVR 52  Sal    46  G  0  J  0  Craque -
+      - ATA Diego Souza Jr           OVR 47  Sal    44  G  0  J  0  Craque -
+      - ATA Lenny Lobato             OVR 44  Sal    70  G  0  J  0  Craque -
+  - Vitória | Div final 3 | Pos 3 na Div 3 | Movimento = | Caixa R$ 340,366 mil | Folha R$ 5,000 mil | Torcida 3.6M | Prestigio 66 | Emprestimo R$ 0 mil | Media elenco 52.3
+    Elenco:
+      - GOL Lucas Arcanjo            OVR 59  Sal    46  G  0  J  2  Craque *
+      - GOL Muriel                   OVR 59  Sal    33  G  0  J 15  Craque -
+      - GOL Dalton                   OVR 55  Sal    67  G  0  J  0  Craque -
+      - ZAG Raul Cáceres             OVR 53  Sal    46  G  0  J 16  Craque *
+      - ZAG Neris                    OVR 48  Sal    34  G  1  J 16  Craque -
+      - ZAG Patric Calmon            OVR 48  Sal    65  G  1  J  5  Craque -
+      - ZAG Wagner Leonardo          OVR 47  Sal    64  G  0  J  9  Craque -
+      - ZAG Zeca                     OVR 47  Sal    63  G  2  J  9  Craque -
+      - ZAG Camutanga                OVR 47  Sal    53  G  1  J  3  Craque -
+      - ZAG PK                       OVR 47  Sal    36  G  0  J  6  Craque -
+      - MEI Léo Naldi                OVR 52  Sal    47  G  3  J 15  Craque -
+      - MEI Dudu                     OVR 49  Sal    57  G  2  J 16  Craque -
+      - MEI Willian Oliveira         OVR 49  Sal    69  G  2  J 10  Craque -
+      - MEI Rodrigo Andrade          OVR 49  Sal    34  G  0  J 14  Craque -
+      - MEI Matheuzinho              OVR 49  Sal    38  G  0  J  7  Craque -
+      - MEI Jean Mota                OVR 49  Sal    38  G  0  J  2  Craque -
+      - MEI Caio Vinícius            OVR 49  Sal    53  G  0  J  0  Craque -
+      - ATA Alerrandro               OVR 59  Sal    43  G  3  J  8  Craque *
+      - ATA Osvaldo                  OVR 59  Sal    43  G  0  J  5  Craque -
+      - ATA Everaldo                 OVR 59  Sal    45  G  1  J  7  Craque -
+      - ATA Janderson                OVR 59  Sal    36  G  2  J 12  Craque -
+      - ATA Iury Castilho            OVR 59  Sal    56  G  0  J  0  Craque -
+      - ATA Wellington Rato          OVR 54  Sal    59  G  0  J  0  Craque -
+      - ATA Carlos Eduardo           OVR 50  Sal    61  G  0  J  0  Craque -
+      - ATA Fábio Soares             OVR 48  Sal    64  G  0  J  0  Craque -
+  - Athletico Paranaense | Div final 3 | Pos 4 na Div 3 | Movimento = | Caixa R$ 468,867 mil | Folha R$ 9,000 mil | Torcida 5.5M | Prestigio 76 | Emprestimo R$ 0 mil | Media elenco 63.6
+    Elenco:
+      - GOL Mycael                   OVR 68  Sal    75  G  0  J 10  Craque *
+      - GOL Santos                   OVR 68  Sal    73  G  0  J  5  Craque -
+      - GOL Léo Linck                OVR 68  Sal   135  G  0  J  7  Craque -
+      - ZAG Belezi                   OVR 59  Sal    48  G  0  J  9  Craque -
+      - ZAG Fernando                 OVR 59  Sal    33  G  2  J 11  Craque -
+      - ZAG Léo Godoy                OVR 59  Sal    46  G  1  J  8  Craque *
+      - ZAG Lucas Esquivel           OVR 59  Sal    45  G  3  J 20  Craque -
+      - ZAG Madson                   OVR 59  Sal    40  G  0  J  5  Craque -
+      - ZAG Matheus Felipe           OVR 59  Sal    43  G  2  J 17  Craque -
+      - ZAG Kaique Rocha             OVR 59  Sal    51  G  2  J 18  Craque -
+      - MEI Erick                    OVR 66  Sal   116  G  4  J 22  Craque -
+      - MEI Canobbio                 OVR 60  Sal    32  G  2  J  9  Craque -
+      - MEI Giuliano                 OVR 60  Sal    46  G  0  J  4  Craque -
+      - MEI Felipinho                OVR 60  Sal    34  G  3  J 11  Craque -
+      - MEI Alex Santana             OVR 60  Sal    49  G  0  J  8  Craque -
+      - MEI Christian                OVR 60  Sal    39  G  0  J 21  Craque -
+      - MEI Bruno Zapelli            OVR 60  Sal    42  G  4  J 13  Craque -
+      - ATA Rômulo                   OVR 69  Sal   355  G  0  J 13  Craque -
+      - ATA Cuello                   OVR 69  Sal    73  G  0  J  5  Craque -
+      - ATA Mastriani                OVR 69  Sal    96  G  2  J 12  Craque -
+      - ATA Emersonn                 OVR 69  Sal   302  G  3  J 14  Craque -
+      - ATA Pablo                    OVR 68  Sal    99  G  0  J  0  Craque *
+      - ATA Isaac                    OVR 67  Sal    78  G  0  J  0  Craque -
+      - ATA Julimar                  OVR 67  Sal    82  G  0  J  0  Craque -
+      - ATA Di Yorio                 OVR 66  Sal   102  G  0  J  0  Craque -
+  - Atlético Goianiense | Div final 3 | Pos 5 na Div 3 | Movimento = | Caixa R$ 232,079 mil | Folha R$ 4,500 mil | Torcida 1.8M | Prestigio 62 | Emprestimo R$ 0 mil | Media elenco 50.1
+    Elenco:
+      - GOL Luan Polli               OVR 59  Sal    65  G  1  J 10  Craque -
+      - GOL Ronaldo                  OVR 59  Sal    70  G  0  J  7  Craque *
+      - GOL Pedro Paulo              OVR 59  Sal    49  G  0  J  0  Craque -
+      - ZAG Bruno Tubarão            OVR 54  Sal    45  G  1  J 16  Craque *
+      - ZAG Alix Vinicius            OVR 45  Sal    32  G  2  J 15  Craque -
+      - ZAG Rhaldney                 OVR 45  Sal    67  G  0  J  0  Craque -
+      - ZAG Lucas Gazal              OVR 45  Sal    56  G  0  J 13  Craque -
+      - ZAG Maguinho                 OVR 45  Sal    39  G  2  J 15  Craque -
+      - ZAG Guilherme Romão          OVR 45  Sal    60  G  0  J  5  Craque -
+      - ZAG Luiz Felipe              OVR 44  Sal    34  G  0  J  0  Craque -
+      - MEI Roni                     OVR 55  Sal    49  G  2  J 16  Craque -
+      - MEI Léo Pereira              OVR 45  Sal    44  G  0  J 16  Craque -
+      - MEI Jorginho                 OVR 44  Sal    44  G  1  J 10  Craque -
+      - MEI Campanharo               OVR 44  Sal    42  G  0  J  5  Craque -
+      - MEI Emiliano Rodríguez       OVR 44  Sal    35  G  0  J  1  Craque -
+      - MEI Shaylon                  OVR 44  Sal    59  G  2  J 16  Craque -
+      - MEI Baralhas                 OVR 44  Sal    46  G  0  J  0  Craque -
+      - ATA Luiz Fernando            OVR 57  Sal    32  G  3  J 16  Craque *
+      - ATA Janderson                OVR 57  Sal    37  G  0  J  2  Craque -
+      - ATA Hyuri                    OVR 57  Sal    41  G  6  J  9  Craque -
+      - ATA Danielzinho              OVR 56  Sal    55  G  0  J  5  Craque -
+      - ATA Alejo Cruz               OVR 56  Sal    31  G  0  J  0  Craque -
+      - ATA Derek                    OVR 55  Sal    43  G  0  J  0  Craque -
+      - ATA Gustavo Coutinho         OVR 49  Sal    49  G  0  J  0  Craque -
+      - ATA Yony González            OVR 45  Sal    47  G  0  J  0  Craque -
+  - Cuiabá | Div final 3 | Pos 6 na Div 3 | Movimento = | Caixa R$ 225,762 mil | Folha R$ 5,000 mil | Torcida 1.2M | Prestigio 61 | Emprestimo R$ 0 mil | Media elenco 53.4
+    Elenco:
+      - GOL Mateus Pasinato          OVR 61  Sal    38  G  0  J  4  Craque -
+      - GOL Walter                   OVR 61  Sal    70  G  0  J 14  Craque *
+      - GOL João Carlos              OVR 60  Sal    52  G  0  J  0  Craque -
+      - ZAG Matheus Alexandre        OVR 55  Sal    66  G  1  J 15  Craque *
+      - ZAG Marllon                  OVR 52  Sal    69  G  1  J 16  Craque -
+      - ZAG Sander                   OVR 48  Sal    54  G  2  J 16  Craque -
+      - ZAG Alan Empereur            OVR 48  Sal    48  G  0  J  2  Craque -
+      - ZAG Bruno Alves              OVR 48  Sal    32  G  0  J  0  Craque -
+      - ZAG Ramon                    OVR 48  Sal    58  G  0  J  8  Craque -
+      - ZAG Railan                   OVR 47  Sal    47  G  0  J  7  Craque -
+      - MEI Denilson                 OVR 54  Sal    44  G  3  J 16  Craque -
+      - MEI Filipe Augusto           OVR 49  Sal    40  G  2  J 16  Craque -
+      - MEI Fernando Sobral          OVR 49  Sal    47  G  0  J  2  Craque -
+      - MEI Ronald                   OVR 49  Sal    63  G  0  J  7  Craque -
+      - MEI Max                      OVR 49  Sal    41  G  3  J 16  Craque -
+      - MEI Lucas Mineiro            OVR 49  Sal    37  G  2  J  7  Craque -
+      - MEI Clayson                  OVR 48  Sal    35  G  0  J  0  Craque -
+      - ATA Isidro Pitta             OVR 59  Sal    38  G  2  J 16  Craque *
+      - ATA André Luís               OVR 59  Sal    64  G  1  J  3  Craque -
+      - ATA Derik Lacerda            OVR 59  Sal    64  G  5  J 13  Craque -
+      - ATA Jonathan Cafu            OVR 58  Sal    44  G  0  J  0  Craque -
+      - ATA Deyverson                OVR 58  Sal    66  G  0  J  0  Craque -
+      - ATA Eliel                    OVR 58  Sal    57  G  0  J  0  Craque -
+      - ATA Wellington Silva         OVR 58  Sal    66  G  0  J  0  Craque -
+      - ATA Alisson Safira           OVR 54  Sal    40  G  0  J  0  Craque -
+  - Criciúma | Div final 4 | Pos 7 na Div 3 | Movimento REBAIXADO | Caixa R$ 219,091 mil | Folha R$ 4,500 mil | Torcida 799K | Prestigio 55 | Emprestimo R$ 0 mil | Media elenco 46.1
+    Elenco:
+      - GOL Alisson                  OVR 53  Sal    56  G  0  J  1  Craque -
+      - GOL Gustavo                  OVR 53  Sal    49  G  0  J 15  Craque *
+      - GOL Kauã                     OVR 48  Sal    57  G  0  J  0  Craque -
+      - ZAG Claudinho                OVR 51  Sal    59  G  1  J 16  Craque *
+      - ZAG Tobias Figueiredo        OVR 42  Sal    52  G  1  J 16  Craque -
+      - ZAG Jonathan                 OVR 42  Sal    45  G  0  J 10  Craque -
+      - ZAG Rodrigo                  OVR 42  Sal    48  G  0  J  0  Craque -
+      - ZAG Victor Luís              OVR 42  Sal    56  G  1  J 12  Craque -
+      - ZAG Marcelo Hermes           OVR 42  Sal    48  G  0  J 10  Craque -
+      - ZAG Dudu                     OVR 37  Sal    42  G  0  J  0  Craque -
+      - MEI Barreto                  OVR 46  Sal    55  G  2  J 16  Craque -
+      - MEI Fellipe Mateus           OVR 43  Sal    52  G  1  J 16  Craque -
+      - MEI Rômulo                   OVR 42  Sal    56  G  0  J  4  Craque -
+      - MEI Newton                   OVR 42  Sal    70  G  3  J  6  Craque -
+      - MEI Marquinhos Gabriel       OVR 42  Sal    62  G  0  J  6  Craque -
+      - MEI Higor Meritão            OVR 42  Sal    68  G  3  J 16  Craque -
+      - MEI Miquéias                 OVR 39  Sal    39  G  0  J  0  Craque -
+      - ATA Matheusinho              OVR 52  Sal    66  G  1  J  3  Craque -
+      - ATA Arthur Caíke             OVR 52  Sal    63  G  2  J 11  Craque -
+      - ATA Allano                   OVR 52  Sal    66  G  2  J 12  Craque -
+      - ATA Ronald                   OVR 52  Sal    58  G  0  J  0  Craque -
+      - ATA Yannick Bolasie          OVR 52  Sal    49  G  0  J  6  Craque *
+      - ATA Éder                     OVR 50  Sal    48  G  0  J  0  Craque -
+      - ATA Jhonata Robert           OVR 50  Sal    70  G  0  J  0  Craque -
+      - ATA Felipinho                OVR 43  Sal    66  G  0  J  0  Craque -
+  - Ceará | Div final 4 | Pos 8 na Div 3 | Movimento REBAIXADO | Caixa R$ 276,682 mil | Folha R$ 4,000 mil | Torcida 2.2M | Prestigio 57 | Emprestimo R$ 0 mil | Media elenco 50.0
+    Elenco:
+      - GOL Bruno Ferreira           OVR 59  Sal    32  G  0  J  8  Craque -
+      - GOL Fernando Miguel          OVR 59  Sal    48  G  0  J 10  Craque -
+      - GOL Richard                  OVR 59  Sal    55  G  0  J  0  Craque *
+      - ZAG Rafael Ramos             OVR 47  Sal    37  G  0  J 18  Craque *
+      - ZAG Eric Melo                OVR 46  Sal    51  G  0  J 18  Craque -
+      - ZAG Luiz Otávio              OVR 46  Sal    66  G  0  J 17  Craque -
+      - ZAG David Ricardo            OVR 46  Sal    31  G  0  J  7  Craque -
+      - ZAG Raí Ramos                OVR 46  Sal    62  G  0  J  1  Craque -
+      - ZAG Matheus Felipe           OVR 46  Sal    66  G  1  J 11  Craque -
+      - ZAG Warley                   OVR 44  Sal    33  G  0  J  0  Craque -
+      - MEI Richardson               OVR 49  Sal    67  G  1  J 17  Craque -
+      - MEI De Lucca                 OVR 44  Sal    68  G  2  J 18  Craque -
+      - MEI Aylon                    OVR 44  Sal    61  G  2  J 13  Craque -
+      - MEI Lucas Mugni              OVR 44  Sal    64  G  1  J 10  Craque -
+      - MEI Lourenço                 OVR 44  Sal    42  G  2  J 14  Craque -
+      - MEI Fernando Sobral          OVR 44  Sal    60  G  0  J  0  Craque -
+      - MEI Rômulo                   OVR 43  Sal    45  G  0  J  0  Craque -
+      - ATA Saulo Mineiro            OVR 58  Sal    53  G  1  J  5  Craque *
+      - ATA Recalde                  OVR 58  Sal    31  G  0  J  2  Craque -
+      - ATA Facundo Castro           OVR 57  Sal    47  G  0  J  3  Craque -
+      - ATA Barceló                  OVR 57  Sal    60  G  1  J  9  Craque -
+      - ATA Cléber                   OVR 57  Sal    65  G  6  J 17  Craque -
+      - ATA Erick Pulga              OVR 55  Sal    63  G  0  J  0  Craque -
+      - ATA Janderson                OVR 52  Sal    32  G  0  J  0  Craque -
+      - ATA Guilherme Bissoli        OVR 49  Sal    39  G  0  J  0  Craque -
+
+#### Divisao 4
+  - Coritiba | Div final 3 | Pos 1 na Div 4 | Movimento PROMOVIDO | Caixa R$ 211,765 mil | Folha R$ 4,800 mil | Torcida 3.7M | Prestigio 69 | Emprestimo R$ 0 mil | Media elenco 36.4
+    Elenco:
+      - GOL Pedro Morisco            OVR 43  Sal    62  G  0  J  8  Craque *
+      - GOL Pedro Rangel             OVR 43  Sal    58  G  0  J  5  Craque -
+      - GOL Gabriel Leite            OVR 43  Sal    36  G  0  J  4  Craque -
+      - ZAG Tiago Coser              OVR 36  Sal    61  G  3  J 15  Craque *
+      - ZAG Jacy                     OVR 34  Sal    65  G  1  J 15  Craque -
+      - ZAG Bruno Melo               OVR 33  Sal    30  G  1  J  9  Craque -
+      - ZAG Felipe Guimarães         OVR 33  Sal    53  G  1  J  4  Craque -
+      - ZAG João Almeida             OVR 33  Sal    36  G  0  J  5  Craque -
+      - ZAG Guilherme Aquino         OVR 33  Sal    50  G  1  J  4  Craque -
+      - ZAG Maicon                   OVR 33  Sal    65  G  2  J 12  Craque -
+      - MEI Sebastián Gómez          OVR 38  Sal    70  G  5  J 16  Craque -
+      - MEI Geovane                  OVR 32  Sal    67  G  5  J 16  Craque -
+      - MEI Carlos de Pena           OVR 31  Sal    42  G  0  J  4  Craque -
+      - MEI Willian Oliveira         OVR 31  Sal    65  G  1  J 13  Craque -
+      - MEI Matheus Bianqui          OVR 31  Sal    33  G  0  J  5  Craque -
+      - MEI Jean Gabriel             OVR 31  Sal    31  G  1  J 10  Craque -
+      - MEI Josué                    OVR 31  Sal    46  G  0  J  0  Craque -
+      - ATA Gustavo Coutinho         OVR 43  Sal    55  G  1  J 12  Craque -
+      - ATA Lucas Ronier             OVR 43  Sal    62  G  1  J  9  Craque -
+      - ATA Clayson                  OVR 43  Sal    56  G  6  J 11  Craque *
+      - ATA Nicolas Careca           OVR 43  Sal    38  G  0  J  0  Craque -
+      - ATA Dellatorre               OVR 42  Sal    47  G  0  J  0  Craque -
+      - ATA Iury Castilho            OVR 42  Sal    44  G  0  J  0  Craque -
+      - ATA Joaquín Lavega           OVR 38  Sal    46  G  0  J  0  Craque -
+      - ATA Pedro Rocha              OVR 26  Sal    35  G  0  J  0  Craque -
+  - Paysandu | Div final 3 | Pos 2 na Div 4 | Movimento PROMOVIDO | Caixa R$ 153,928 mil | Folha R$ 3,600 mil | Torcida 1.7M | Prestigio 61 | Emprestimo R$ 0 mil | Media elenco 26.9
+    Elenco:
+      - GOL Matheus Nogueira         OVR 31  Sal    65  G  0  J  4  Craque -
+      - GOL Jean Drosny              OVR 31  Sal    68  G  0  J 12  Craque -
+      - GOL Gabriel Mesquita         OVR 31  Sal    49  G  0  J  0  Craque *
+      - ZAG Marcão                   OVR 25  Sal    60  G  2  J 16  Craque *
+      - ZAG PK                       OVR 24  Sal    37  G  5  J 16  Craque -
+      - ZAG Bruno Bispo              OVR 24  Sal    39  G  1  J  8  Craque -
+      - ZAG Luccão                   OVR 24  Sal    46  G  0  J  4  Craque -
+      - ZAG Reverson                 OVR 24  Sal    50  G  2  J  8  Craque -
+      - ZAG Yeferson Quintana        OVR 23  Sal    62  G  0  J 12  Craque -
+      - ZAG Edílson                  OVR 23  Sal    40  G  0  J  0  Craque -
+      - MEI Leandro Vilela           OVR 27  Sal    49  G  2  J 16  Craque -
+      - MEI Giovanni                 OVR 24  Sal    60  G  1  J  8  Craque -
+      - MEI Robinho                  OVR 24  Sal    70  G  2  J  9  Craque -
+      - MEI Marlon                   OVR 24  Sal    58  G  3  J 15  Craque -
+      - MEI Matheus Vargas           OVR 24  Sal    51  G  3  J  8  Craque -
+      - MEI Ramon Martinez           OVR 24  Sal    48  G  1  J  8  Craque -
+      - MEI Cavan                    OVR 23  Sal    61  G  0  J  0  Craque -
+      - ATA Benitez                  OVR 33  Sal    54  G  1  J 12  Craque -
+      - ATA Edinho                   OVR 33  Sal    46  G  4  J 12  Craque -
+      - ATA Nicolas                  OVR 33  Sal    68  G  0  J  0  Craque *
+      - ATA Marlon Douglas           OVR 33  Sal    40  G  0  J  8  Craque -
+      - ATA Kevin                    OVR 32  Sal    54  G  0  J  0  Craque -
+      - ATA Ciel                     OVR 30  Sal    67  G  0  J  0  Craque -
+      - ATA Eliel                    OVR 28  Sal    38  G  0  J  0  Craque -
+      - ATA Diogo Oliveira           OVR 23  Sal    57  G  0  J  0  Craque -
+  - Goiás | Div final 4 | Pos 3 na Div 4 | Movimento = | Caixa R$ 213,255 mil | Folha R$ 4,600 mil | Torcida 3.0M | Prestigio 63 | Emprestimo R$ 0 mil | Media elenco 34.0
+    Elenco:
+      - GOL Thiago Rodrigues         OVR 46  Sal    40  G  0  J  8  Craque -
+      - GOL Tadeu                    OVR 46  Sal    62  G  0  J  8  Craque *
+      - GOL Marcão                   OVR 41  Sal    32  G  0  J  0  Craque -
+      - ZAG Luiz Felipe              OVR 32  Sal    52  G  2  J 16  Craque -
+      - ZAG Ezequiel                 OVR 30  Sal    60  G  2  J 16  Craque *
+      - ZAG Lucas Ribeiro            OVR 29  Sal    41  G  1  J 11  Craque -
+      - ZAG Rodrigo Soares           OVR 29  Sal    39  G  1  J  8  Craque -
+      - ZAG Nicolas                  OVR 29  Sal    44  G  0  J  3  Craque -
+      - ZAG Titi                     OVR 29  Sal    53  G  1  J 10  Craque -
+      - ZAG Anthony                  OVR 27  Sal    68  G  0  J  0  Craque -
+      - MEI Gegê                     OVR 34  Sal    38  G  0  J 16  Craque -
+      - MEI Jean Carlos              OVR 31  Sal    51  G  3  J 14  Craque -
+      - MEI Juninho                  OVR 31  Sal    31  G  3  J 10  Craque -
+      - MEI Filipe Machado           OVR 31  Sal    68  G  1  J  9  Craque -
+      - MEI Lucas Lima               OVR 31  Sal    63  G  0  J  2  Craque -
+      - MEI Brayann                  OVR 31  Sal    51  G  1  J 13  Craque -
+      - MEI Lourenço                 OVR 29  Sal    57  G  0  J  0  Craque -
+      - ATA Esli García              OVR 40  Sal    42  G  1  J  5  Craque -
+      - ATA Pedrinho                 OVR 40  Sal    35  G  0  J  3  Craque -
+      - ATA Wellington Rato          OVR 40  Sal    31  G  0  J  8  Craque *
+      - ATA Bruno Sávio              OVR 40  Sal    35  G  3  J 16  Craque -
+      - ATA Anselmo Ramon            OVR 38  Sal    60  G  0  J  0  Craque -
+      - ATA Arthur Caíke             OVR 34  Sal    41  G  0  J  0  Craque -
+      - ATA Cadu                     OVR 31  Sal    51  G  0  J  0  Craque -
+      - ATA Jajá                     OVR 29  Sal    56  G  0  J  0  Craque -
+  - América Mineiro | Div final 4 | Pos 4 na Div 4 | Movimento = | Caixa R$ 218,349 mil | Folha R$ 4,500 mil | Torcida 2.6M | Prestigio 66 | Emprestimo R$ 0 mil | Media elenco 33.5
+    Elenco:
+      - GOL Jori                     OVR 40  Sal    60  G  0  J 15  Craque -
+      - GOL Dalberson                OVR 39  Sal    47  G  0  J  0  Craque -
+      - GOL Matheus Mendes           OVR 39  Sal    40  G  0  J  2  Craque *
+      - ZAG Ricardo Silva            OVR 32  Sal    63  G  2  J 16  Craque -
+      - ZAG Marlon                   OVR 30  Sal    49  G  2  J 16  Craque *
+      - ZAG Júlio                    OVR 28  Sal    59  G  2  J  7  Craque -
+      - ZAG Nicolas                  OVR 28  Sal    54  G  1  J  7  Craque -
+      - ZAG Maguinho                 OVR 28  Sal    39  G  0  J  8  Craque -
+      - ZAG Lucão                    OVR 28  Sal    57  G  1  J 10  Craque -
+      - ZAG Paulinho                 OVR 28  Sal    59  G  0  J  0  Craque -
+      - MEI Cauan Barros             OVR 31  Sal    35  G  3  J 15  Craque -
+      - MEI Alê                      OVR 31  Sal    49  G  5  J 15  Craque -
+      - MEI Benítez                  OVR 30  Sal    33  G  3  J 12  Craque -
+      - MEI Moisés                   OVR 30  Sal    60  G  0  J  0  Craque -
+      - MEI Fabinho Santos           OVR 30  Sal    70  G  0  J  7  Craque -
+      - MEI Miguelito                OVR 30  Sal    70  G  1  J 12  Craque -
+      - MEI Jhosefer                 OVR 30  Sal    36  G  1  J  3  Craque -
+      - ATA Willian Bigode           OVR 43  Sal    56  G  1  J  3  Craque -
+      - ATA Adyson                   OVR 43  Sal    59  G  5  J 13  Craque -
+      - ATA Fabinho                  OVR 43  Sal    30  G  1  J 14  Craque *
+      - ATA Guilherme Pato           OVR 43  Sal    57  G  1  J  2  Craque -
+      - ATA Renato Marques           OVR 36  Sal    53  G  0  J  0  Craque -
+      - ATA Stênio                   OVR 36  Sal    45  G  0  J  0  Craque -
+      - ATA Brenner                  OVR 35  Sal    40  G  0  J  0  Craque -
+      - ATA Aloísio                  OVR 30  Sal    38  G  0  J  0  Craque -
+  - Vila Nova | Div final 4 | Pos 5 na Div 4 | Movimento = | Caixa R$ 156,494 mil | Folha R$ 3,600 mil | Torcida 1.6M | Prestigio 58 | Emprestimo R$ 0 mil | Media elenco 30.8
+    Elenco:
+      - GOL Airton                   OVR 36  Sal    33  G  1  J  3  Craque -
+      - GOL Helton Leite             OVR 36  Sal    67  G  0  J  6  Craque *
+      - GOL Dalberson                OVR 36  Sal    44  G  0  J  7  Craque -
+      - ZAG Caio Marcelo             OVR 30  Sal    50  G  1  J 16  Craque *
+      - ZAG Anderson Jesus           OVR 29  Sal    40  G  0  J 16  Craque -
+      - ZAG Weverton                 OVR 27  Sal    42  G  1  J 13  Craque -
+      - ZAG Higor                    OVR 27  Sal    67  G  3  J 11  Craque -
+      - ZAG Hayner                   OVR 27  Sal    61  G  1  J  3  Craque -
+      - ZAG Elias                    OVR 27  Sal    58  G  0  J  5  Craque -
+      - ZAG Tiago Pagnussat          OVR 26  Sal    53  G  0  J  0  Craque -
+      - MEI Dudu                     OVR 35  Sal    33  G  4  J 16  Craque -
+      - MEI Nathan Camargo           OVR 30  Sal    38  G  1  J 16  Craque -
+      - MEI João Vieira              OVR 27  Sal    62  G  1  J 15  Craque -
+      - MEI Marco Antonio            OVR 26  Sal    69  G  0  J 14  Craque -
+      - MEI Dodô                     OVR 26  Sal    60  G  0  J  3  Craque -
+      - MEI Marquinhos Gabriel       OVR 26  Sal    32  G  0  J  0  Craque -
+      - MEI Willian Maranhão         OVR 25  Sal    47  G  0  J  0  Craque -
+      - ATA Rafa Silva               OVR 39  Sal    64  G  2  J 14  Craque -
+      - ATA Dellatorre               OVR 39  Sal    39  G  5  J 11  Craque -
+      - ATA Andre Luis               OVR 39  Sal    54  G  1  J  7  Craque -
+      - ATA Bruno Xavier             OVR 37  Sal    62  G  0  J  0  Craque -
+      - ATA Ruan Ribeiro             OVR 37  Sal    60  G  0  J  0  Craque *
+      - ATA Emerson Urso             OVR 30  Sal    47  G  0  J  0  Craque -
+      - ATA Janderson                OVR 28  Sal    44  G  0  J  0  Craque -
+      - ATA Alesson                  OVR 26  Sal    50  G  0  J  0  Craque -
+  - CRB | Div final 4 | Pos 6 na Div 4 | Movimento = | Caixa R$ 133,390 mil | Folha R$ 3,500 mil | Torcida 1.3M | Prestigio 63 | Emprestimo R$ 0 mil | Media elenco 26.5
+    Elenco:
+      - GOL Matheus Albino           OVR 36  Sal    70  G  0  J  6  Craque *
+      - GOL Vitor Caetano            OVR 36  Sal    65  G  0  J 10  Craque -
+      - GOL Pablo                    OVR 34  Sal    40  G  0  J  0  Craque -
+      - ZAG Segovia                  OVR 23  Sal    39  G  2  J 16  Craque -
+      - ZAG Fábio Alemão             OVR 22  Sal    33  G  1  J 16  Craque -
+      - ZAG Henri                    OVR 22  Sal    36  G  0  J  9  Craque -
+      - ZAG Weverton                 OVR 22  Sal    57  G  2  J  2  Craque -
+      - ZAG Hereda                   OVR 22  Sal    55  G  1  J 12  Craque *
+      - ZAG Lucas Lovat              OVR 22  Sal    40  G  0  J  9  Craque -
+      - ZAG Ryan                     OVR 22  Sal    36  G  0  J  0  Craque -
+      - MEI Higor Meritão            OVR 24  Sal    51  G  1  J 16  Craque -
+      - MEI Danielzinho              OVR 23  Sal    70  G  4  J 16  Craque -
+      - MEI Gegê                     OVR 22  Sal    66  G  0  J 10  Craque -
+      - MEI Lucas Kallyel            OVR 22  Sal    32  G  0  J  5  Craque -
+      - MEI Douglas Baggio           OVR 22  Sal    53  G  0  J  2  Craque -
+      - MEI Mikael                   OVR 22  Sal    53  G  1  J 15  Craque -
+      - MEI Geovane                  OVR 22  Sal    48  G  0  J  0  Craque -
+      - ATA Anselmo Ramon            OVR 35  Sal    58  G  5  J 16  Craque *
+      - ATA Léo Pereira              OVR 35  Sal    52  G  2  J  6  Craque -
+      - ATA Dadá Belmonte            OVR 34  Sal    33  G  4  J 10  Craque -
+      - ATA William Pottker          OVR 34  Sal    30  G  0  J  0  Craque -
+      - ATA João Neto                OVR 29  Sal    62  G  0  J  0  Craque -
+      - ATA Labandeira               OVR 25  Sal    34  G  0  J  0  Craque -
+      - ATA Thiaguinho               OVR 24  Sal    42  G  0  J  0  Craque -
+      - ATA Rafinha                  OVR 24  Sal    32  G  0  J  0  Craque -
+  - Avaí | Div final 4 | Pos 7 na Div 4 | Movimento = | Caixa R$ 172,007 mil | Folha R$ 3,800 mil | Torcida 1.6M | Prestigio 62 | Emprestimo R$ 0 mil | Media elenco 29.7
+    Elenco:
+      - GOL Léo Aragão               OVR 36  Sal    32  G  1  J 18  Craque -
+      - GOL Igor Bohn                OVR 36  Sal    63  G  0  J  0  Craque *
+      - GOL Otávio Passos            OVR 35  Sal    30  G  0  J  0  Craque -
+      - ZAG Douglas Teixeira         OVR 28  Sal    34  G  1  J 18  Craque *
+      - ZAG Guilherme Aquino         OVR 27  Sal    47  G  1  J 18  Craque -
+      - ZAG Quaresma                 OVR 26  Sal    66  G  0  J  7  Craque -
+      - ZAG Allyson                  OVR 26  Sal    64  G  0  J  2  Craque -
+      - ZAG Wesley Gasolina          OVR 26  Sal    42  G  0  J  6  Craque -
+      - ZAG Wallison                 OVR 26  Sal    40  G  0  J  6  Craque -
+      - ZAG Gabriel Simples          OVR 26  Sal    53  G  4  J 15  Craque -
+      - MEI Jean Lucas               OVR 29  Sal    34  G  3  J 18  Craque -
+      - MEI Zé Ricardo               OVR 24  Sal    59  G  0  J  9  Craque -
+      - MEI Luiz Henrique            OVR 24  Sal    60  G  1  J 16  Craque -
+      - MEI Wenderson                OVR 24  Sal    69  G  2  J 14  Craque -
+      - MEI Romildo Del Piage        OVR 24  Sal    38  G  0  J 15  Craque -
+      - MEI Hyan                     OVR 23  Sal    70  G  0  J  0  Craque -
+      - MEI Daniel Penha             OVR 23  Sal    41  G  0  J  0  Craque -
+      - ATA Felipe Avenatti          OVR 38  Sal    50  G  1  J  6  Craque -
+      - ATA Gaspar                   OVR 38  Sal    55  G  0  J  0  Craque -
+      - ATA Rafael Bilu              OVR 38  Sal    56  G  4  J 16  Craque *
+      - ATA Maurício Garcez          OVR 38  Sal    49  G  6  J 14  Craque -
+      - ATA Sorriso                  OVR 37  Sal    32  G  0  J  0  Craque -
+      - ATA Thayllon                 OVR 33  Sal    70  G  0  J  0  Craque -
+      - ATA Igor Rosa                OVR 29  Sal    36  G  0  J  0  Craque -
+      - ATA Mário Sérgio             OVR 26  Sal    44  G  0  J  0  Craque -
+  - Novorizontino | Div final 4 | Pos 8 na Div 4 | Movimento = | Caixa R$ 125,810 mil | Folha R$ 3,200 mil | Torcida 1.1M | Prestigio 59 | Emprestimo R$ 0 mil | Media elenco 27.0
+    Elenco:
+      - GOL César Augusto            OVR 32  Sal    34  G  0  J  4  Craque -
+      - GOL Airton                   OVR 32  Sal    53  G  0  J 10  Craque -
+      - GOL Jordi                    OVR 32  Sal    36  G  0  J  2  Craque *
+      - ZAG Patrick                  OVR 25  Sal    41  G  0  J 16  Craque *
+      - ZAG César Martins            OVR 23  Sal    31  G  0  J 16  Craque -
+      - ZAG Dantas                   OVR 23  Sal    56  G  4  J 16  Craque -
+      - ZAG Rômulo                   OVR 23  Sal    61  G  0  J  3  Craque -
+      - ZAG Mayk                     OVR 22  Sal    35  G  3  J 13  Craque -
+      - ZAG Rafael Donato            OVR 22  Sal    39  G  0  J  0  Craque -
+      - ZAG Raí Ramos                OVR 21  Sal    33  G  0  J  0  Craque -
+      - MEI Fábio Matheus            OVR 27  Sal    66  G  0  J 15  Craque -
+      - MEI Waguininho               OVR 24  Sal    66  G  2  J 15  Craque -
+      - MEI Marlon                   OVR 24  Sal    59  G  0  J  2  Craque -
+      - MEI Lucca                    OVR 24  Sal    31  G  2  J 14  Craque -
+      - MEI Robson                   OVR 24  Sal    58  G  1  J  4  Craque -
+      - MEI Matheus Frizzo           OVR 24  Sal    41  G  0  J 14  Craque -
+      - MEI Jean Irmer               OVR 24  Sal    41  G  0  J  0  Craque -
+      - ATA Léo Tocantins            OVR 35  Sal    41  G  4  J 16  Craque -
+      - ATA Nicolas Careca           OVR 34  Sal    70  G  1  J  4  Craque -
+      - ATA Neto Pessoa              OVR 34  Sal    42  G  0  J  2  Craque -
+      - ATA Bruno José               OVR 34  Sal    58  G  4  J 10  Craque -
+      - ATA Caio Dantas              OVR 34  Sal    59  G  0  J  0  Craque *
+      - ATA Everaldo                 OVR 30  Sal    30  G  0  J  0  Craque -
+      - ATA Jenison                  OVR 25  Sal    32  G  0  J  0  Craque -
+      - ATA Rodolfo                  OVR 21  Sal    50  G  0  J  0  Craque -
+
+## Temporada 2033
+
+### Campeoes
+- Divisao 1: Botafogo
+- Divisao 2: RB Bragantino
+- Divisao 3: Internacional
+- Divisao 4: Criciúma
+- Copa: RB Bragantino
+
+### Artilheiros
+- Artilheiro da temporada: Ángel Romero (Corinthians) - 8 gols
+- Top 1: Ángel Romero (Corinthians) - 8 gols
+- Top 2: Lucca (Internacional) - 8 gols
+- Top 3: Wesley (Flamengo) - 7 gols
+- Top 4: Franco Cristaldo (Grêmio) - 7 gols
+- Top 5: Wellington Rato (Goiás) - 7 gols
+- Top 6: Estêvão (Palmeiras) - 6 gols
+- Top 7: Gabriel Mercado (Internacional) - 6 gols
+- Top 8: Wanderson (Cruzeiro) - 6 gols
+- Top 9: Lucero (Fortaleza) - 6 gols
+- Top 10: Natan (RB Bragantino) - 6 gols
+
+### Promovidos
+- RB Bragantino: 2 -> 1
+- Santos: 2 -> 1
+- Atlético Goianiense: 3 -> 2
+- Internacional: 3 -> 2
+- Criciúma: 4 -> 3
+- Goiás: 4 -> 3
+
+### Rebaixados
+- Corinthians: 1 -> 2
+- Fluminense: 1 -> 2
+- Juventude: 2 -> 3
+- Sport Recife: 2 -> 3
+- Coritiba: 3 -> 4
+- Paysandu: 3 -> 4
+
+### Destaques Financeiros e Tecnicos
+- Melhor ataque: Internacional com 35 gols
+- Melhor defesa: Internacional com 8 gols sofridos
+- Maior publico: Palmeiras x Cruzeiro - 80,000
+- Maior renda: São Paulo FC x Cruzeiro - R$ 12,096 mil
+
+### Clubes, Financas e Elencos
+#### Divisao 1
+  - Botafogo | Div final 1 | Pos 1 na Div 1 | Movimento = | Caixa R$ 1,698,791 mil | Folha R$ 20,000 mil | Torcida 14.2M | Prestigio 93 | Emprestimo R$ 0 mil | Media elenco 80.0
+    Elenco:
+      - GOL John                     OVR 86  Sal  1218  G  0  J 10  Craque *
+      - GOL Raul                     OVR 86  Sal  2378  G  0  J  3  Craque -
+      - GOL Léo Linck                OVR 86  Sal  2971  G  0  J  3  Craque -
+      - ZAG Bastos                   OVR 76  Sal   526  G  2  J 16  Craque -
+      - ZAG Cuiabano                 OVR 75  Sal   293  G  0  J  1  Craque -
+      - ZAG Alexander Barboza        OVR 75  Sal  1070  G  1  J 13  Craque -
+      - ZAG David Ricardo            OVR 75  Sal  1010  G  1  J 13  Craque -
+      - ZAG Mateo Ponte              OVR 75  Sal   371  G  1  J  9  Craque -
+      - ZAG Vitinho                  OVR 75  Sal   647  G  1  J 11  Craque *
+      - ZAG Alex Telles              OVR 75  Sal   395  G  0  J  1  Craque -
+      - MEI Patrick de Paula         OVR 76  Sal  1064  G  3  J 16  Craque -
+      - MEI Newton                   OVR 76  Sal   918  G  3  J 16  Craque -
+      - MEI Allan                    OVR 76  Sal   341  G  1  J  2  Craque -
+      - MEI Santiago Rodríguez       OVR 76  Sal   849  G  4  J 15  Craque -
+      - MEI Jefferson Savarino       OVR 76  Sal   376  G  0  J  0  Craque -
+      - MEI Marlon Freitas           OVR 75  Sal   300  G  0  J  5  Craque -
+      - MEI Gregore                  OVR 75  Sal   993  G  1  J 10  Craque -
+      - ATA Matheus Martins          OVR 87  Sal  3173  G  1  J  8  Craque -
+      - ATA Santiago                 OVR 87  Sal  2300  G  0  J  3  Craque -
+      - ATA Jeffinho                 OVR 87  Sal  2091  G  0  J  6  Craque -
+      - ATA Rwan Cruz                OVR 87  Sal  1938  G  2  J 12  Craque -
+      - ATA Artur                    OVR 87  Sal  2300  G  1  J  3  Craque -
+      - ATA Igor Jesus               OVR 86  Sal  1692  G  0  J  0  Craque *
+      - ATA Elias Manoel             OVR 86  Sal  1565  G  0  J  0  Craque -
+      - ATA Kayque                   OVR 82  Sal   757  G  0  J  0  Craque -
+  - Fortaleza | Div final 1 | Pos 2 na Div 1 | Movimento = | Caixa R$ 859,027 mil | Folha R$ 11,000 mil | Torcida 4.7M | Prestigio 81 | Emprestimo R$ 0 mil | Media elenco 71.5
+    Elenco:
+      - GOL Santos                   OVR 79  Sal   836  G  0  J 15  Craque -
+      - GOL Magrão                   OVR 79  Sal   994  G  0  J  3  Craque -
+      - GOL João Ricardo             OVR 77  Sal   631  G  0  J  0  Craque *
+      - ZAG Mancuso                  OVR 67  Sal   113  G  1  J 18  Craque -
+      - ZAG Emanuel Brítez           OVR 67  Sal    97  G  0  J 17  Craque -
+      - ZAG Bruno Pacheco            OVR 66  Sal   120  G  1  J 18  Craque -
+      - ZAG Titi                     OVR 66  Sal   141  G  0  J  5  Craque -
+      - ZAG Kuscevic                 OVR 66  Sal   144  G  2  J  6  Craque -
+      - ZAG Talocha                  OVR 66  Sal   127  G  0  J  8  Craque -
+      - ZAG Tinga                    OVR 66  Sal    72  G  0  J  0  Craque *
+      - MEI Kervin Andrade           OVR 69  Sal   146  G  1  J 10  Craque -
+      - MEI Calebe                   OVR 69  Sal    82  G  3  J 12  Craque -
+      - MEI Martínez                 OVR 69  Sal    91  G  1  J  5  Craque -
+      - MEI Zé Welison               OVR 69  Sal   138  G  3  J  8  Craque -
+      - MEI Pochettino               OVR 69  Sal   105  G  2  J 11  Craque -
+      - MEI Hércules                 OVR 69  Sal    99  G  1  J 12  Craque -
+      - MEI Lucas Sasha              OVR 69  Sal   269  G  1  J 14  Craque -
+      - ATA Breno Lopes              OVR 77  Sal  1108  G  1  J  2  Craque -
+      - ATA Yago Pikachu             OVR 77  Sal   660  G  0  J  3  Craque -
+      - ATA Marinho                  OVR 77  Sal   716  G  0  J  1  Craque -
+      - ATA Lucero                   OVR 77  Sal   722  G  6  J 18  Craque *
+      - ATA Moisés                   OVR 77  Sal  1128  G  3  J 12  Craque -
+      - ATA Pedro Rocha              OVR 77  Sal   782  G  0  J  0  Craque -
+      - ATA Renato Kayzer            OVR 76  Sal   415  G  0  J  0  Craque -
+      - ATA Allanzinho               OVR 70  Sal    85  G  0  J  0  Craque -
+  - Flamengo | Div final 1 | Pos 3 na Div 1 | Movimento = | Caixa R$ 1,885,056 mil | Folha R$ 28,000 mil | Torcida 33.8M | Prestigio 100 | Emprestimo R$ 0 mil | Media elenco 84.6
+    Elenco:
+      - GOL Dyogo Alves              OVR 92  Sal  4597  G  1  J  9  Craque -
+      - GOL Rossi                    OVR 92  Sal  6708  G  0  J 11  Craque *
+      - GOL Matheus Cunha            OVR 90  Sal  3680  G  0  J  0  Craque -
+      - ZAG Wesley                   OVR 80  Sal  1917  G  7  J 20  Craque *
+      - ZAG Alex Sandro              OVR 80  Sal  1060  G  3  J 20  Craque -
+      - ZAG Danilo                   OVR 80  Sal   666  G  1  J  5  Craque -
+      - ZAG Léo Ortiz                OVR 80  Sal   909  G  0  J 13  Craque -
+      - ZAG Guillermo Varela         OVR 80  Sal  1118  G  0  J  8  Craque -
+      - ZAG Léo Pereira              OVR 80  Sal   883  G  3  J  9  Craque -
+      - ZAG Ayrton Lucas             OVR 80  Sal   471  G  0  J  5  Craque -
+      - MEI Allan                    OVR 82  Sal  2900  G  2  J 20  Craque -
+      - MEI Carlos Alcaraz           OVR 81  Sal  2956  G  3  J 15  Craque -
+      - MEI Everton Araújo           OVR 81  Sal   905  G  1  J 10  Craque -
+      - MEI Erick Pulgar             OVR 81  Sal  1607  G  5  J 18  Craque -
+      - MEI Nicolás De La Cruz       OVR 81  Sal   852  G  2  J  9  Craque -
+      - MEI Giorgian De Arrascaeta   OVR 81  Sal   776  G  2  J  8  Craque -
+      - MEI Gerson                   OVR 81  Sal  1048  G  0  J  0  Craque -
+      - ATA Luiz Araújo              OVR 90  Sal  4882  G  2  J 19  Craque -
+      - ATA Juninho                  OVR 90  Sal  5912  G  3  J  9  Craque -
+      - ATA Bruno Henrique           OVR 90  Sal  5216  G  0  J  1  Craque -
+      - ATA Matheus Gonçalves        OVR 90  Sal  5272  G  2  J  5  Craque -
+      - ATA Everton Cebolinha        OVR 89  Sal  4422  G  1  J  6  Craque -
+      - ATA Michael                  OVR 89  Sal  5225  G  0  J  0  Craque -
+      - ATA Pedro                    OVR 89  Sal  6358  G  0  J  0  Craque *
+      - ATA Gonzalo Plata            OVR 87  Sal  1562  G  0  J  0  Craque -
+  - Cruzeiro | Div final 1 | Pos 4 na Div 1 | Movimento = | Caixa R$ 917,784 mil | Folha R$ 13,000 mil | Torcida 11.0M | Prestigio 90 | Emprestimo R$ 0 mil | Media elenco 70.0
+    Elenco:
+      - GOL Anderson                 OVR 77  Sal   465  G  0  J  7  Craque -
+      - GOL Cássio                   OVR 77  Sal   538  G  0  J  4  Craque *
+      - GOL Léo Aragão               OVR 77  Sal   719  G  2  J  9  Craque -
+      - ZAG Fagner                   OVR 65  Sal   125  G  4  J 20  Craque -
+      - ZAG Jonathan Jesus           OVR 65  Sal    98  G  0  J 10  Craque -
+      - ZAG Marlon                   OVR 65  Sal    80  G  2  J 18  Craque -
+      - ZAG Fabrício Bruno           OVR 65  Sal    88  G  2  J  7  Craque -
+      - ZAG Lucas Villalba           OVR 65  Sal    97  G  2  J  8  Craque -
+      - ZAG William                  OVR 65  Sal    72  G  1  J 14  Craque *
+      - ZAG Kaiki                    OVR 65  Sal    81  G  0  J  3  Craque -
+      - MEI Lucas Romero             OVR 65  Sal   130  G  4  J 19  Craque -
+      - MEI Matheus Henrique         OVR 65  Sal   128  G  1  J  7  Craque -
+      - MEI Walace                   OVR 65  Sal    94  G  1  J 11  Craque -
+      - MEI Christian                OVR 65  Sal    72  G  1  J 17  Craque -
+      - MEI Matheus Pereira          OVR 65  Sal    76  G  3  J 11  Craque -
+      - MEI Eduardo                  OVR 65  Sal   129  G  0  J 15  Craque -
+      - MEI Japa                     OVR 65  Sal    52  G  0  J  0  Craque -
+      - ATA Wanderson                OVR 78  Sal  1141  G  6  J 12  Craque -
+      - ATA Kaio Jorge               OVR 78  Sal   702  G  3  J 11  Craque *
+      - ATA Lautaro Díaz             OVR 78  Sal  1017  G  4  J 17  Craque -
+      - ATA Marquinhos               OVR 77  Sal   616  G  0  J  0  Craque -
+      - ATA Dudu                     OVR 76  Sal   239  G  0  J  0  Craque -
+      - ATA Gabriel Veron            OVR 74  Sal   421  G  0  J  0  Craque -
+      - ATA Rafa Silva               OVR 74  Sal   278  G  0  J  0  Craque -
+      - ATA Yannick Bolasie          OVR 73  Sal   256  G  0  J  0  Craque -
+  - Palmeiras | Div final 1 | Pos 5 na Div 1 | Movimento = | Caixa R$ 1,858,349 mil | Folha R$ 24,000 mil | Torcida 16.6M | Prestigio 98 | Emprestimo R$ 0 mil | Media elenco 84.0
+    Elenco:
+      - GOL Weverton                 OVR 88  Sal  2313  G  0  J  1  Craque *
+      - GOL Marcelo Lomba            OVR 88  Sal  6740  G  0  J 19  Craque -
+      - GOL Mateus Oliveira          OVR 88  Sal  3401  G  0  J  0  Craque -
+      - ZAG Agustín Giay             OVR 85  Sal  3354  G  4  J 20  Craque *
+      - ZAG Marcos Rocha             OVR 80  Sal   890  G  3  J 12  Craque -
+      - ZAG Naves                    OVR 80  Sal   538  G  2  J  8  Craque -
+      - ZAG Mayke                    OVR 80  Sal  1003  G  0  J 11  Craque -
+      - ZAG Murilo                   OVR 80  Sal   655  G  3  J 10  Craque -
+      - ZAG Gustavo Gómez            OVR 80  Sal  1038  G  2  J 19  Craque -
+      - ZAG Joaquín Piquerez         OVR 80  Sal   871  G  0  J  0  Craque -
+      - MEI Felipe Anderson          OVR 79  Sal   721  G  2  J 20  Craque -
+      - MEI Fabinho                  OVR 78  Sal   516  G  5  J 16  Craque -
+      - MEI Maurício                 OVR 78  Sal   749  G  2  J  7  Craque -
+      - MEI Emiliano Martínez        OVR 78  Sal   823  G  1  J  8  Craque -
+      - MEI Aníbal Moreno            OVR 78  Sal   682  G  2  J 18  Craque -
+      - MEI Raphael Veiga            OVR 78  Sal   529  G  2  J  8  Craque -
+      - MEI Richard Ríos             OVR 78  Sal   979  G  0  J  3  Craque -
+      - ATA Estêvão                  OVR 92  Sal  3992  G  6  J 20  Craque *
+      - ATA Bruno Rodrigues          OVR 91  Sal  5675  G  2  J 10  Craque -
+      - ATA Facundo Torres           OVR 91  Sal  4265  G  3  J 10  Craque -
+      - ATA Flaco López              OVR 91  Sal  3983  G  0  J  0  Craque -
+      - ATA Paulinho                 OVR 91  Sal  6929  G  0  J  0  Craque -
+      - ATA Luighi                   OVR 90  Sal  6485  G  0  J  0  Craque -
+      - ATA Vitor Roque              OVR 88  Sal  3048  G  0  J  0  Craque -
+      - ATA Rony                     OVR 85  Sal  2220  G  0  J  0  Craque -
+  - São Paulo FC | Div final 1 | Pos 6 na Div 1 | Movimento = | Caixa R$ 1,319,332 mil | Folha R$ 14,000 mil | Torcida 19.6M | Prestigio 88 | Emprestimo R$ 0 mil | Media elenco 69.8
+    Elenco:
+      - GOL Young                    OVR 73  Sal   161  G  0  J  1  Craque -
+      - GOL Jandrei                  OVR 73  Sal   255  G  0  J  6  Craque -
+      - GOL Rafael                   OVR 73  Sal   273  G  0  J  9  Craque *
+      - ZAG Arboleda                 OVR 66  Sal    90  G  0  J 16  Craque -
+      - ZAG Alan Franco              OVR 65  Sal   134  G  1  J 15  Craque -
+      - ZAG Sabino                   OVR 65  Sal   128  G  2  J  7  Craque -
+      - ZAG Igor Vinícius            OVR 65  Sal   122  G  1  J 15  Craque *
+      - ZAG Welington                OVR 65  Sal   137  G  2  J  4  Craque -
+      - ZAG Ferraresi                OVR 65  Sal    85  G  0  J  3  Craque -
+      - ZAG Patryck                  OVR 65  Sal   130  G  2  J  4  Craque -
+      - MEI Pablo Maia               OVR 68  Sal    98  G  2  J 16  Craque -
+      - MEI Marcos Antônio           OVR 68  Sal    72  G  0  J  5  Craque -
+      - MEI Damián Bobadilla         OVR 67  Sal   113  G  0  J 14  Craque -
+      - MEI Alisson                  OVR 67  Sal    98  G  1  J  8  Craque -
+      - MEI Wellington Rato          OVR 67  Sal   125  G  1  J  8  Craque -
+      - MEI Matheus Alves            OVR 67  Sal   146  G  2  J 13  Craque -
+      - MEI Rodriguinho              OVR 67  Sal    74  G  0  J  0  Craque -
+      - ATA André Silva              OVR 75  Sal   536  G  0  J 13  Craque -
+      - ATA Calleri                  OVR 75  Sal   283  G  0  J  8  Craque *
+      - ATA Ferreira                 OVR 75  Sal   173  G  2  J 11  Craque -
+      - ATA Erick                    OVR 75  Sal   214  G  0  J  0  Craque -
+      - ATA Henrique Carmo           OVR 75  Sal   156  G  0  J  0  Craque -
+      - ATA Luciano                  OVR 74  Sal   402  G  0  J  0  Craque -
+      - ATA William Gomes            OVR 74  Sal   370  G  0  J  0  Craque -
+      - ATA Lucas Moura              OVR 73  Sal   427  G  0  J  0  Craque -
+  - Fluminense | Div final 2 | Pos 7 na Div 1 | Movimento REBAIXADO | Caixa R$ 1,135,571 mil | Folha R$ 16,000 mil | Torcida 9.8M | Prestigio 82 | Emprestimo R$ 0 mil | Media elenco 77.7
+    Elenco:
+      - GOL Pedro Rangel             OVR 85  Sal  2971  G  0  J  0  Craque -
+      - GOL Fábio                    OVR 85  Sal  2239  G  0  J  4  Craque *
+      - GOL Vitor Eudes              OVR 85  Sal  2921  G  0  J 14  Craque -
+      - ZAG Renê                     OVR 76  Sal   992  G  4  J 17  Craque -
+      - ZAG Guga                     OVR 75  Sal   768  G  1  J 18  Craque -
+      - ZAG Manoel                   OVR 75  Sal   894  G  2  J 13  Craque -
+      - ZAG Samuel Xavier            OVR 75  Sal   359  G  0  J  1  Craque *
+      - ZAG Thiago Santos            OVR 75  Sal   224  G  0  J  7  Craque -
+      - ZAG Thiago Silva             OVR 75  Sal   257  G  0  J  4  Craque -
+      - ZAG Fretes                   OVR 75  Sal  1070  G  2  J 12  Craque -
+      - MEI Ganso                    OVR 74  Sal   335  G  3  J 18  Craque -
+      - MEI Nonato                   OVR 73  Sal   242  G  1  J 18  Craque -
+      - MEI Lima                     OVR 73  Sal   198  G  3  J  9  Craque -
+      - MEI Kevin Serna              OVR 73  Sal   371  G  0  J  7  Craque -
+      - MEI Jhon Arias               OVR 73  Sal   150  G  0  J  1  Craque -
+      - MEI Martinelli               OVR 73  Sal   269  G  1  J  7  Craque -
+      - MEI Otávio                   OVR 73  Sal   163  G  2  J 12  Craque -
+      - ATA Keno                     OVR 82  Sal  1321  G  2  J  9  Craque -
+      - ATA Germán Cano              OVR 82  Sal  3224  G  2  J  7  Craque *
+      - ATA Marquinhos               OVR 82  Sal   811  G  0  J  0  Craque -
+      - ATA Everaldo                 OVR 82  Sal   558  G  1  J  1  Craque -
+      - ATA Agustín Canobbio         OVR 82  Sal  3089  G  2  J  5  Craque -
+      - ATA Isaac                    OVR 82  Sal  3210  G  1  J 14  Craque -
+      - ATA Lelê                     OVR 81  Sal   727  G  0  J  0  Craque -
+      - ATA Riquelme                 OVR 75  Sal   288  G  0  J  0  Craque -
+  - Corinthians | Div final 2 | Pos 8 na Div 1 | Movimento REBAIXADO | Caixa R$ 1,365,479 mil | Folha R$ 19,000 mil | Torcida 30.2M | Prestigio 92 | Emprestimo R$ 0 mil | Media elenco 76.9
+    Elenco:
+      - GOL Hugo Souza               OVR 85  Sal  2028  G  0  J  3  Craque *
+      - GOL Matheus Donelli          OVR 85  Sal  1765  G  0  J 19  Craque -
+      - GOL Felipe Longo             OVR 83  Sal  2210  G  0  J  0  Craque -
+      - ZAG Gustavo Henrique         OVR 73  Sal   360  G  3  J 22  Craque -
+      - ZAG Léo Maná                 OVR 73  Sal   190  G  4  J 21  Craque -
+      - ZAG Cacá                     OVR 72  Sal   288  G  2  J  6  Craque -
+      - ZAG Matheuzinho              OVR 72  Sal   388  G  0  J  3  Craque *
+      - ZAG Hugo                     OVR 72  Sal   261  G  3  J 17  Craque -
+      - ZAG Bidu                     OVR 72  Sal   407  G  0  J 17  Craque -
+      - ZAG Félix Torres             OVR 72  Sal   239  G  0  J  2  Craque -
+      - MEI Raniele                  OVR 73  Sal   274  G  3  J 22  Craque -
+      - MEI André Carrillo           OVR 73  Sal   178  G  1  J 22  Craque -
+      - MEI Breno Bidon              OVR 73  Sal   344  G  1  J 21  Craque -
+      - MEI Alex Santana             OVR 73  Sal   174  G  0  J  6  Craque -
+      - MEI Rodrigo Garro            OVR 73  Sal   275  G  0  J  2  Craque -
+      - MEI Maycon                   OVR 73  Sal   221  G  0  J 10  Craque -
+      - MEI Charles                  OVR 72  Sal   327  G  3  J  5  Craque -
+      - ATA Ángel Romero             OVR 83  Sal  2681  G  8  J 21  Craque -
+      - ATA Memphis Depay            OVR 82  Sal  1131  G  4  J  7  Craque -
+      - ATA Wesley                   OVR 82  Sal  1003  G  0  J  2  Craque -
+      - ATA Yuri Alberto             OVR 82  Sal   633  G  0  J  3  Craque *
+      - ATA Pedro Raul               OVR 82  Sal   478  G  1  J  6  Craque -
+      - ATA Giovane                  OVR 82  Sal   730  G  0  J  5  Craque -
+      - ATA Talles Magno             OVR 81  Sal   650  G  0  J  0  Craque -
+      - ATA Kayke                    OVR 80  Sal   681  G  0  J  0  Craque -
+
+#### Divisao 2
+  - RB Bragantino | Div final 1 | Pos 1 na Div 2 | Movimento PROMOVIDO | Caixa R$ 708,330 mil | Folha R$ 9,500 mil | Torcida 2.0M | Prestigio 81 | Emprestimo R$ 0 mil | Media elenco 67.4
+    Elenco:
+      - GOL Cleiton                  OVR 75  Sal  1082  G  3  J 20  Craque *
+      - GOL Matheus Nogueira         OVR 75  Sal   205  G  0  J  2  Craque -
+      - GOL Lucão                    OVR 75  Sal   396  G  0  J  6  Craque -
+      - ZAG Natan                    OVR 62  Sal    89  G  6  J 24  Craque -
+      - ZAG Luan Cândido             OVR 62  Sal    55  G  3  J 13  Craque -
+      - ZAG Guzmán Rodríguez         OVR 62  Sal    47  G  1  J  5  Craque -
+      - ZAG Andrés Hurtado           OVR 62  Sal   142  G  1  J 22  Craque *
+      - ZAG Nathan Mendes            OVR 62  Sal    36  G  3  J 19  Craque -
+      - ZAG Juninho Capixaba         OVR 62  Sal    44  G  0  J  2  Craque -
+      - ZAG Pedro Henrique           OVR 62  Sal    32  G  1  J 11  Craque -
+      - MEI Raul                     OVR 64  Sal   133  G  5  J 24  Craque -
+      - MEI Gustavinho               OVR 64  Sal    70  G  1  J  6  Craque -
+      - MEI Eric Ramires             OVR 64  Sal    91  G  3  J 21  Craque -
+      - MEI Jadsom                   OVR 64  Sal    92  G  4  J 10  Craque -
+      - MEI Lucas Evangelista        OVR 63  Sal    85  G  2  J 20  Craque -
+      - MEI Jhon Jhon                OVR 63  Sal    56  G  0  J  3  Craque -
+      - MEI Matheus Fernandes        OVR 63  Sal   130  G  4  J 12  Craque -
+      - ATA Vitinho                  OVR 73  Sal   152  G  3  J  7  Craque -
+      - ATA Lincoln                  OVR 73  Sal   400  G  0  J  5  Craque -
+      - ATA Talisson                 OVR 73  Sal   366  G  4  J 17  Craque -
+      - ATA Ignacio Laquintana       OVR 73  Sal   292  G  4  J 19  Craque -
+      - ATA Henry Mosquera           OVR 73  Sal   206  G  0  J  0  Craque -
+      - ATA Thiago Borbas            OVR 73  Sal   365  G  0  J  0  Craque *
+      - ATA Eduardo Sasha            OVR 72  Sal   241  G  0  J  0  Craque -
+      - ATA Helinho                  OVR 71  Sal   419  G  0  J  0  Craque -
+  - Santos | Div final 1 | Pos 2 na Div 2 | Movimento PROMOVIDO | Caixa R$ 808,768 mil | Folha R$ 7,000 mil | Torcida 14.0M | Prestigio 76 | Emprestimo R$ 0 mil | Media elenco 60.3
+    Elenco:
+      - GOL Gabriel Brazão           OVR 66  Sal    71  G  0  J  0  Craque *
+      - GOL João Paulo               OVR 66  Sal   149  G  0  J 14  Craque -
+      - GOL Diógenes                 OVR 66  Sal    82  G  0  J  2  Craque -
+      - ZAG Escobar                  OVR 58  Sal    58  G  1  J  8  Craque -
+      - ZAG Joaquim                  OVR 58  Sal    40  G  1  J  9  Craque -
+      - ZAG JP Chermont              OVR 58  Sal    53  G  0  J  6  Craque -
+      - ZAG Aderlan                  OVR 58  Sal    51  G  1  J 16  Craque *
+      - ZAG Kevyson                  OVR 58  Sal    56  G  2  J  9  Craque -
+      - ZAG Gil                      OVR 58  Sal    40  G  0  J 16  Craque -
+      - ZAG Zé Ivaldo                OVR 57  Sal    51  G  0  J  0  Craque -
+      - MEI Giuliano                 OVR 56  Sal    51  G  5  J 16  Craque -
+      - MEI Otero                    OVR 56  Sal    41  G  1  J 16  Craque -
+      - MEI Tomás Rincón             OVR 55  Sal    70  G  1  J 10  Craque -
+      - MEI Diego Pituca             OVR 55  Sal    36  G  0  J  3  Craque -
+      - MEI João Schmidt             OVR 55  Sal    64  G  2  J 13  Craque -
+      - MEI Cazares                  OVR 55  Sal    50  G  0  J  1  Craque -
+      - MEI Miguelito                OVR 55  Sal    44  G  1  J  5  Craque -
+      - ATA Julio Furch              OVR 66  Sal   120  G  4  J 16  Craque -
+      - ATA Guilherme                OVR 65  Sal   118  G  2  J  1  Craque *
+      - ATA Willian Bigode           OVR 65  Sal    91  G  0  J  3  Craque -
+      - ATA Lucas Braga              OVR 65  Sal    92  G  1  J  3  Craque -
+      - ATA Wendel Silva             OVR 65  Sal   102  G  0  J  7  Craque -
+      - ATA Pedrinho                 OVR 65  Sal   146  G  0  J  0  Craque -
+      - ATA Morelos                  OVR 65  Sal    81  G  0  J  2  Craque -
+      - ATA Enzo Monteiro            OVR 61  Sal    60  G  0  J  0  Craque -
+  - Atlético Mineiro | Div final 2 | Pos 3 na Div 2 | Movimento = | Caixa R$ 1,854,639 mil | Folha R$ 20,000 mil | Torcida 13.9M | Prestigio 93 | Emprestimo R$ 0 mil | Media elenco 79.8
+    Elenco:
+      - GOL Everson                  OVR 86  Sal  2322  G  0  J 11  Craque *
+      - GOL Gabriel Delfim           OVR 86  Sal  1343  G  0  J  7  Craque -
+      - GOL Matheus Mendes           OVR 85  Sal  2088  G  0  J  0  Craque -
+      - ZAG Júnior Alonso            OVR 77  Sal   470  G  1  J  4  Craque -
+      - ZAG Rubens                   OVR 77  Sal  1017  G  0  J  7  Craque -
+      - ZAG Igor Rabello             OVR 77  Sal  1122  G  2  J  8  Craque -
+      - ZAG Guilherme Arana          OVR 77  Sal   468  G  5  J 16  Craque -
+      - ZAG Saravia                  OVR 77  Sal   600  G  1  J 14  Craque *
+      - ZAG Bruno Fuchs              OVR 77  Sal   938  G  1  J  8  Craque -
+      - ZAG Lyanco                   OVR 77  Sal   861  G  2  J 15  Craque -
+      - MEI Igor Gomes               OVR 74  Sal   263  G  0  J 16  Craque -
+      - MEI Otávio                   OVR 74  Sal   155  G  2  J 12  Craque -
+      - MEI Alan Franco              OVR 74  Sal   224  G  2  J  9  Craque -
+      - MEI Gustavo Scarpa           OVR 74  Sal   207  G  5  J 18  Craque -
+      - MEI Fausto Vera              OVR 74  Sal   267  G  0  J  7  Craque -
+      - MEI Patrick                  OVR 74  Sal   347  G  2  J 10  Craque -
+      - MEI Bernard                  OVR 73  Sal   188  G  0  J  0  Craque -
+      - ATA Hulk                     OVR 86  Sal  2455  G  0  J  0  Craque *
+      - ATA Rony                     OVR 86  Sal  1670  G  0  J  3  Craque -
+      - ATA Tomás Cuello             OVR 86  Sal  1462  G  5  J 17  Craque -
+      - ATA Cadu                     OVR 86  Sal  1375  G  3  J 16  Craque -
+      - ATA Deyverson                OVR 85  Sal  3026  G  0  J  0  Craque -
+      - ATA Cristian Pavón           OVR 85  Sal  2444  G  0  J  0  Craque -
+      - ATA Alisson                  OVR 85  Sal  2232  G  0  J  0  Craque -
+      - ATA Eduardo Vargas           OVR 82  Sal   955  G  0  J  0  Craque -
+  - Vasco da Gama | Div final 2 | Pos 4 na Div 2 | Movimento = | Caixa R$ 881,397 mil | Folha R$ 9,000 mil | Torcida 10.9M | Prestigio 80 | Emprestimo R$ 0 mil | Media elenco 66.4
+    Elenco:
+      - GOL Léo Jardim               OVR 73  Sal   368  G  0  J 16  Craque *
+      - GOL Keiller                  OVR 73  Sal   256  G  0  J  4  Craque -
+      - GOL Pablo                    OVR 72  Sal   386  G  0  J  0  Craque -
+      - ZAG Lucas Oliveira           OVR 63  Sal   147  G  3  J 20  Craque -
+      - ZAG Puma Rodríguez           OVR 62  Sal    46  G  1  J 14  Craque -
+      - ZAG Victor Luís              OVR 62  Sal    31  G  1  J 17  Craque -
+      - ZAG Lucas Piton              OVR 62  Sal    70  G  0  J  4  Craque -
+      - ZAG Maicon                   OVR 62  Sal    43  G  1  J  3  Craque -
+      - ZAG Paulo Henrique           OVR 62  Sal    61  G  2  J 17  Craque *
+      - ZAG João Victor              OVR 62  Sal    53  G  1  J  5  Craque -
+      - MEI Philippe Coutinho        OVR 60  Sal    57  G  4  J 20  Craque -
+      - MEI Juan Sforza              OVR 60  Sal    51  G  6  J 15  Craque -
+      - MEI Paulinho                 OVR 60  Sal    41  G  2  J 20  Craque -
+      - MEI Dimitri Payet            OVR 60  Sal    48  G  1  J  6  Craque -
+      - MEI Hugo Moura               OVR 60  Sal    33  G  0  J  0  Craque -
+      - MEI Tchê Tchê                OVR 60  Sal    66  G  2  J  5  Craque -
+      - MEI Jair                     OVR 60  Sal    32  G  1  J 14  Craque -
+      - ATA Rossi                    OVR 74  Sal   201  G  0  J  3  Craque -
+      - ATA David                    OVR 74  Sal   370  G  1  J  9  Craque -
+      - ATA Alex Teixeira            OVR 74  Sal   310  G  0  J  5  Craque -
+      - ATA Rayan                    OVR 74  Sal   164  G  0  J  3  Craque -
+      - ATA Adson                    OVR 74  Sal   443  G  2  J  5  Craque -
+      - ATA GB                       OVR 74  Sal   284  G  3  J 15  Craque -
+      - ATA Pablo Vegetti            OVR 74  Sal   266  G  0  J  0  Craque *
+      - ATA Jean David               OVR 67  Sal   106  G  0  J  0  Craque -
+  - Grêmio | Div final 2 | Pos 5 na Div 2 | Movimento = | Caixa R$ 1,304,073 mil | Folha R$ 13,000 mil | Torcida 9.4M | Prestigio 81 | Emprestimo R$ 0 mil | Media elenco 77.7
+    Elenco:
+      - GOL Agustín Marchesín        OVR 85  Sal  3468  G  0  J  6  Craque *
+      - GOL Caíque                   OVR 85  Sal  1337  G  0  J  6  Craque -
+      - GOL Gabriel Grando           OVR 85  Sal  1305  G  2  J 10  Craque -
+      - ZAG Mayk                     OVR 73  Sal   350  G  2  J 22  Craque -
+      - ZAG Reinaldo                 OVR 72  Sal   373  G  0  J 10  Craque -
+      - ZAG Kannemann                OVR 72  Sal   185  G  2  J 11  Craque -
+      - ZAG Jemerson                 OVR 72  Sal   261  G  2  J  4  Craque -
+      - ZAG Rodrigo Ely              OVR 72  Sal   391  G  1  J 13  Craque -
+      - ZAG Fábio                    OVR 72  Sal   411  G  2  J 21  Craque -
+      - ZAG João Pedro               OVR 72  Sal   157  G  0  J  7  Craque *
+      - MEI Pepê                     OVR 75  Sal   793  G  5  J 21  Craque -
+      - MEI Franco Cristaldo         OVR 74  Sal   926  G  7  J 22  Craque -
+      - MEI Dodi                     OVR 74  Sal   313  G  1  J  9  Craque -
+      - MEI Nathan                   OVR 74  Sal   308  G  1  J  7  Craque -
+      - MEI Mathías Villasanti       OVR 74  Sal   315  G  0  J  4  Craque -
+      - MEI Edenilson                OVR 74  Sal   327  G  2  J  9  Craque -
+      - MEI Miguel Monsalve          OVR 74  Sal   331  G  2  J 16  Craque -
+      - ATA André Henrique           OVR 84  Sal  1649  G  0  J 11  Craque -
+      - ATA Cristian Olivera         OVR 84  Sal  2579  G  0  J  4  Craque -
+      - ATA Aravena                  OVR 84  Sal  3325  G  2  J 10  Craque -
+      - ATA Martin Braithwaite       OVR 84  Sal  1320  G  3  J 17  Craque *
+      - ATA Pavon                    OVR 84  Sal  3490  G  0  J  2  Craque -
+      - ATA Matias Arezo             OVR 83  Sal   575  G  0  J  0  Craque -
+      - ATA Alysson                  OVR 81  Sal  1094  G  0  J  0  Craque -
+      - ATA Soteldo                  OVR 79  Sal   749  G  0  J  0  Craque -
+  - Bahia | Div final 2 | Pos 6 na Div 2 | Movimento = | Caixa R$ 522,552 mil | Folha R$ 8,500 mil | Torcida 3.2M | Prestigio 77 | Emprestimo R$ 0 mil | Media elenco 66.8
+    Elenco:
+      - GOL Adriel                   OVR 73  Sal   368  G  0  J  1  Craque -
+      - GOL Danilo Fernandes         OVR 73  Sal   426  G  0  J  0  Craque -
+      - GOL Marcos Felipe            OVR 73  Sal   438  G  1  J 15  Craque *
+      - ZAG Arias                    OVR 62  Sal    66  G  1  J 16  Craque -
+      - ZAG David Duarte             OVR 62  Sal    46  G  1  J 12  Craque -
+      - ZAG Luciano Juba             OVR 62  Sal    48  G  2  J 14  Craque -
+      - ZAG Gabriel Xavier           OVR 62  Sal    46  G  1  J  8  Craque -
+      - ZAG Kanu                     OVR 62  Sal    65  G  2  J  5  Craque -
+      - ZAG Gilberto                 OVR 62  Sal    56  G  0  J  5  Craque *
+      - ZAG Iago Borduchi            OVR 62  Sal    58  G  2  J  4  Craque -
+      - MEI Nicolás Acevedo          OVR 65  Sal   135  G  0  J 15  Craque -
+      - MEI Jean Lucas               OVR 65  Sal    84  G  1  J 15  Craque -
+      - MEI Erick                    OVR 64  Sal    51  G  0  J  6  Craque -
+      - MEI Everton Ribeiro          OVR 64  Sal    80  G  4  J 12  Craque -
+      - MEI Caio Alexandre           OVR 64  Sal    88  G  1  J 13  Craque -
+      - MEI Cauly                    OVR 64  Sal    62  G  0  J  3  Craque -
+      - MEI Rezende                  OVR 63  Sal    55  G  0  J  0  Craque -
+      - ATA Tiago                    OVR 73  Sal   244  G  1  J 13  Craque -
+      - ATA Everaldo                 OVR 73  Sal   266  G  2  J  6  Craque *
+      - ATA Biel                     OVR 73  Sal   373  G  3  J 13  Craque -
+      - ATA Kayky                    OVR 72  Sal   197  G  0  J  0  Craque -
+      - ATA Lucho Rodríguez          OVR 72  Sal   204  G  0  J  0  Craque -
+      - ATA Ademir                   OVR 71  Sal    88  G  0  J  0  Craque -
+      - ATA Willian José             OVR 70  Sal    70  G  0  J  0  Craque -
+      - ATA Rafael Ratão             OVR 68  Sal   111  G  0  J  0  Craque -
+  - Sport Recife | Div final 3 | Pos 7 na Div 2 | Movimento REBAIXADO | Caixa R$ 287,805 mil | Folha R$ 4,000 mil | Torcida 2.7M | Prestigio 57 | Emprestimo R$ 0 mil | Media elenco 45.9
+    Elenco:
+      - GOL Denis                    OVR 56  Sal    33  G  0  J  6  Craque -
+      - GOL Adriel                   OVR 56  Sal    48  G  0  J 12  Craque -
+      - GOL Caíque França            OVR 56  Sal    32  G  0  J  0  Craque *
+      - ZAG Luciano Castán           OVR 42  Sal    39  G  1  J 18  Craque -
+      - ZAG Chico                    OVR 41  Sal    42  G  1  J 18  Craque -
+      - ZAG Igor Cariús              OVR 41  Sal    55  G  0  J  7  Craque -
+      - ZAG Hereda                   OVR 41  Sal    65  G  1  J  2  Craque -
+      - ZAG Felipinho                OVR 41  Sal    67  G  1  J 11  Craque -
+      - ZAG Rosales                  OVR 41  Sal    41  G  2  J  7  Craque *
+      - ZAG Rafael Thyere            OVR 40  Sal    52  G  1  J  9  Craque -
+      - MEI Fabinho                  OVR 42  Sal    42  G  3  J 18  Craque -
+      - MEI Pedro Vilhena            OVR 41  Sal    63  G  0  J 18  Craque -
+      - MEI Felipe                   OVR 41  Sal    40  G  2  J  2  Craque -
+      - MEI Julián Fernández         OVR 40  Sal    59  G  3  J 16  Craque -
+      - MEI Titi Ortíz               OVR 40  Sal    61  G  1  J  8  Craque -
+      - MEI Lucas Lima               OVR 40  Sal    56  G  0  J  9  Craque -
+      - MEI Alan Ruiz                OVR 40  Sal    38  G  0  J  1  Craque -
+      - ATA Zé Roberto               OVR 53  Sal    33  G  1  J  9  Craque -
+      - ATA Chrystian                OVR 53  Sal    50  G  0  J  5  Craque -
+      - ATA Barletta                 OVR 53  Sal    41  G  0  J  0  Craque *
+      - ATA Pablo Dyego              OVR 53  Sal    69  G  0  J 13  Craque -
+      - ATA Gustavo Coutinho         OVR 53  Sal    64  G  1  J  9  Craque -
+      - ATA Romarinho                OVR 52  Sal    32  G  0  J  0  Craque -
+      - ATA Lenny Lobato             OVR 46  Sal    60  G  0  J  0  Craque -
+      - ATA Diego Souza Jr           OVR 46  Sal    64  G  0  J  0  Craque -
+  - Juventude | Div final 3 | Pos 8 na Div 2 | Movimento REBAIXADO | Caixa R$ 306,130 mil | Folha R$ 5,500 mil | Torcida 1.2M | Prestigio 67 | Emprestimo R$ 0 mil | Media elenco 53.0
+    Elenco:
+      - GOL César                    OVR 61  Sal    44  G  0  J  6  Craque -
+      - GOL Gabriel                  OVR 60  Sal    53  G  0  J 10  Craque *
+      - GOL Marcão                   OVR 60  Sal    50  G  0  J  0  Craque -
+      - ZAG João Lucas               OVR 55  Sal    56  G  0  J 16  Craque *
+      - ZAG Ewerthon                 OVR 47  Sal    59  G  0  J 16  Craque -
+      - ZAG Rodrigo Sam              OVR 47  Sal    39  G  0  J 14  Craque -
+      - ZAG Abner                    OVR 47  Sal    44  G  0  J 11  Craque -
+      - ZAG Marcos Paulo             OVR 47  Sal    52  G  0  J  0  Craque -
+      - ZAG Danilo Boza              OVR 47  Sal    44  G  0  J  7  Craque -
+      - ZAG Alan Ruschel             OVR 46  Sal    55  G  0  J  0  Craque -
+      - MEI Caique                   OVR 52  Sal    54  G  0  J 16  Craque -
+      - MEI Jadson                   OVR 50  Sal    42  G  1  J 15  Craque -
+      - MEI Luan Dias                OVR 49  Sal    35  G  0  J 13  Craque -
+      - MEI Luis Oyama               OVR 49  Sal    57  G  0  J  0  Craque -
+      - MEI Nenê                     OVR 49  Sal    70  G  1  J 14  Craque -
+      - MEI Mandaca                  OVR 49  Sal    39  G  0  J  6  Craque -
+      - MEI Jean Irmer               OVR 49  Sal    62  G  0  J  0  Craque -
+      - ATA Gilberto                 OVR 60  Sal    65  G  3  J 16  Craque -
+      - ATA Gabriel Taliari          OVR 59  Sal    57  G  0  J  1  Craque -
+      - ATA Taliari                  OVR 59  Sal    61  G  2  J  3  Craque -
+      - ATA Erick Farias             OVR 59  Sal    64  G  0  J  1  Craque *
+      - ATA Lucas Barbosa            OVR 59  Sal    38  G  2  J 11  Craque -
+      - ATA Marcelinho               OVR 58  Sal    61  G  0  J  0  Craque -
+      - ATA Edinho                   OVR 58  Sal    68  G  0  J  0  Craque -
+      - ATA Da Silva                 OVR 53  Sal    45  G  0  J  0  Craque -
+
+#### Divisao 3
+  - Internacional | Div final 2 | Pos 1 na Div 3 | Movimento PROMOVIDO | Caixa R$ 1,112,712 mil | Folha R$ 14,000 mil | Torcida 8.2M | Prestigio 82 | Emprestimo R$ 0 mil | Media elenco 75.0
+    Elenco:
+      - GOL Anthoni                  OVR 84  Sal  1530  G  0  J  8  Craque -
+      - GOL Ivan                     OVR 84  Sal  1666  G  2  J  8  Craque -
+      - GOL Sergio Rochet            OVR 84  Sal  2431  G  0  J  8  Craque *
+      - ZAG Gabriel Mercado          OVR 69  Sal   404  G  6  J 24  Craque -
+      - ZAG Agustín Rogel            OVR 69  Sal    75  G  0  J  9  Craque -
+      - ZAG Juninho                  OVR 69  Sal    70  G  5  J 13  Craque -
+      - ZAG Braian Aguirre           OVR 69  Sal   234  G  4  J 22  Craque -
+      - ZAG Alexandro Bernabei       OVR 69  Sal    75  G  2  J  5  Craque -
+      - ZAG Bustos                   OVR 69  Sal    96  G  1  J  6  Craque *
+      - ZAG Vitão                    OVR 69  Sal   196  G  1  J 17  Craque -
+      - MEI Bruno Gomes              OVR 71  Sal   370  G  0  J  1  Craque -
+      - MEI Gabriel Tabata           OVR 71  Sal   259  G  5  J 20  Craque -
+      - MEI Alan Patrick             OVR 71  Sal   191  G  4  J 12  Craque -
+      - MEI Rômulo                   OVR 71  Sal   196  G  3  J 17  Craque -
+      - MEI Bruno Henrique           OVR 71  Sal   427  G  4  J 21  Craque -
+      - MEI Thiago Maia              OVR 71  Sal   163  G  2  J 11  Craque -
+      - MEI Fernando                 OVR 71  Sal   165  G  2  J 14  Craque -
+      - ATA Rafael Borré             OVR 82  Sal  2995  G  3  J 17  Craque *
+      - ATA Vitinho                  OVR 82  Sal  3256  G  5  J 15  Craque -
+      - ATA Lucca                    OVR 82  Sal  3258  G  8  J 16  Craque -
+      - ATA Wesley                   OVR 82  Sal   731  G  0  J  0  Craque -
+      - ATA Lucas Alario             OVR 81  Sal   549  G  0  J  0  Craque -
+      - ATA Enner Valencia           OVR 81  Sal  1065  G  0  J  0  Craque -
+      - ATA Ricardo Mathias          OVR 80  Sal  1096  G  0  J  0  Craque -
+      - ATA Gustavo Prado            OVR 75  Sal   204  G  0  J  0  Craque -
+  - Atlético Goianiense | Div final 2 | Pos 2 na Div 3 | Movimento PROMOVIDO | Caixa R$ 268,476 mil | Folha R$ 4,500 mil | Torcida 2.0M | Prestigio 64 | Emprestimo R$ 0 mil | Media elenco 49.8
+    Elenco:
+      - GOL Ronaldo                  OVR 58  Sal    33  G  1  J  7  Craque *
+      - GOL Luan Polli               OVR 58  Sal    68  G  0  J  9  Craque -
+      - GOL Pedro Paulo              OVR 57  Sal    54  G  0  J  0  Craque -
+      - ZAG Bruno Tubarão            OVR 52  Sal    47  G  3  J 16  Craque *
+      - ZAG Lucas Gazal              OVR 46  Sal    65  G  1  J  9  Craque -
+      - ZAG Guilherme Romão          OVR 46  Sal    57  G  0  J 14  Craque -
+      - ZAG Alix Vinicius            OVR 46  Sal    59  G  0  J 11  Craque -
+      - ZAG Rhaldney                 OVR 46  Sal    36  G  2  J 14  Craque -
+      - ZAG Maguinho                 OVR 45  Sal    46  G  0  J  0  Craque -
+      - ZAG Luiz Felipe              OVR 43  Sal    34  G  0  J  0  Craque -
+      - MEI Roni                     OVR 53  Sal    33  G  3  J 16  Craque -
+      - MEI Léo Pereira              OVR 45  Sal    68  G  2  J 16  Craque -
+      - MEI Campanharo               OVR 44  Sal    35  G  0  J  3  Craque -
+      - MEI Baralhas                 OVR 44  Sal    34  G  2  J 11  Craque -
+      - MEI Jorginho                 OVR 44  Sal    63  G  0  J  6  Craque -
+      - MEI Shaylon                  OVR 44  Sal    37  G  0  J 12  Craque -
+      - MEI Emiliano Rodríguez       OVR 43  Sal    35  G  0  J  0  Craque -
+      - ATA Danielzinho              OVR 57  Sal    65  G  3  J 16  Craque -
+      - ATA Hyuri                    OVR 56  Sal    47  G  0  J  5  Craque -
+      - ATA Luiz Fernando            OVR 56  Sal    57  G  1  J 10  Craque *
+      - ATA Janderson                OVR 56  Sal    45  G  0  J  1  Craque -
+      - ATA Alejo Cruz               OVR 56  Sal    32  G  0  J  0  Craque -
+      - ATA Derek                    OVR 55  Sal    59  G  0  J  0  Craque -
+      - ATA Gustavo Coutinho         OVR 50  Sal    56  G  0  J  0  Craque -
+      - ATA Yony González            OVR 47  Sal    33  G  0  J  0  Craque -
+  - Cuiabá | Div final 3 | Pos 3 na Div 3 | Movimento = | Caixa R$ 253,980 mil | Folha R$ 5,000 mil | Torcida 1.3M | Prestigio 61 | Emprestimo R$ 0 mil | Media elenco 53.1
+    Elenco:
+      - GOL Mateus Pasinato          OVR 61  Sal    39  G  0  J 11  Craque -
+      - GOL João Carlos              OVR 61  Sal    62  G  0  J  3  Craque -
+      - GOL Walter                   OVR 61  Sal    66  G  0  J  2  Craque *
+      - ZAG Matheus Alexandre        OVR 54  Sal    45  G  0  J 16  Craque *
+      - ZAG Marllon                  OVR 52  Sal    51  G  2  J 16  Craque -
+      - ZAG Railan                   OVR 48  Sal    46  G  0  J  6  Craque -
+      - ZAG Bruno Alves              OVR 48  Sal    50  G  3  J 14  Craque -
+      - ZAG Alan Empereur            OVR 48  Sal    55  G  1  J  7  Craque -
+      - ZAG Sander                   OVR 48  Sal    53  G  1  J  5  Craque -
+      - ZAG Ramon                    OVR 47  Sal    35  G  0  J  0  Craque -
+      - MEI Denilson                 OVR 54  Sal    30  G  3  J 15  Craque -
+      - MEI Lucas Mineiro            OVR 49  Sal    68  G  4  J 16  Craque -
+      - MEI Clayson                  OVR 48  Sal    42  G  1  J 13  Craque -
+      - MEI Fernando Sobral          OVR 47  Sal    37  G  2  J  3  Craque -
+      - MEI Filipe Augusto           OVR 47  Sal    58  G  1  J  3  Craque -
+      - MEI Max                      OVR 47  Sal    32  G  1  J  3  Craque -
+      - MEI Ronald                   OVR 47  Sal    66  G  1  J 11  Craque -
+      - ATA Isidro Pitta             OVR 58  Sal    37  G  4  J 16  Craque *
+      - ATA Deyverson                OVR 58  Sal    54  G  0  J  2  Craque -
+      - ATA Jonathan Cafu            OVR 58  Sal    52  G  0  J  0  Craque -
+      - ATA André Luís               OVR 58  Sal    32  G  1  J  6  Craque -
+      - ATA Eliel                    OVR 58  Sal    31  G  4  J  8  Craque -
+      - ATA Derik Lacerda            OVR 58  Sal    53  G  0  J  0  Craque -
+      - ATA Wellington Silva         OVR 57  Sal    47  G  0  J  0  Craque -
+      - ATA Alisson Safira           OVR 55  Sal    38  G  0  J  0  Craque -
+  - Mirassol | Div final 3 | Pos 4 na Div 3 | Movimento = | Caixa R$ 241,370 mil | Folha R$ 3,500 mil | Torcida 499K | Prestigio 55 | Emprestimo R$ 0 mil | Media elenco 45.8
+    Elenco:
+      - GOL Walter                   OVR 55  Sal    66  G  0  J  5  Craque -
+      - GOL Alex Muralha             OVR 55  Sal    69  G  0  J 13  Craque *
+      - GOL Vanderlei                OVR 54  Sal    49  G  0  J  0  Craque -
+      - ZAG João Victor              OVR 41  Sal    30  G  1  J 18  Craque -
+      - ZAG Lucas Ramon              OVR 41  Sal    50  G  0  J  9  Craque *
+      - ZAG Zeca                     OVR 41  Sal    42  G  1  J 13  Craque -
+      - ZAG Daniel Borges            OVR 41  Sal    62  G  3  J  7  Craque -
+      - ZAG Reinaldo                 OVR 41  Sal    35  G  0  J 11  Craque -
+      - ZAG Rodrigo Ferreira         OVR 41  Sal    68  G  0  J 12  Craque -
+      - ZAG Luiz Otávio              OVR 41  Sal    35  G  1  J  2  Craque -
+      - MEI Danielzinho              OVR 44  Sal    69  G  1  J 18  Craque -
+      - MEI Gabriel                  OVR 42  Sal    61  G  3  J 18  Craque -
+      - MEI Iury                     OVR 42  Sal    69  G  0  J 10  Craque -
+      - MEI Chico Kim                OVR 42  Sal    58  G  3  J 11  Craque -
+      - MEI Negueba                  OVR 42  Sal    69  G  0  J  1  Craque -
+      - MEI Neto Moura               OVR 41  Sal    30  G  1  J 14  Craque -
+      - MEI Yago Felipe              OVR 41  Sal    56  G  0  J  0  Craque -
+      - ATA Fabrício Daniel          OVR 54  Sal    35  G  6  J 18  Craque -
+      - ATA Quirino                  OVR 52  Sal    53  G  3  J 13  Craque -
+      - ATA Zé Roberto               OVR 52  Sal    50  G  1  J  3  Craque -
+      - ATA Fernandinho              OVR 52  Sal    55  G  0  J  2  Craque -
+      - ATA Dellatorre               OVR 52  Sal    55  G  0  J  0  Craque *
+      - ATA Rafinha                  OVR 50  Sal    45  G  0  J  0  Craque -
+      - ATA Nicolas                  OVR 47  Sal    44  G  0  J  0  Craque -
+      - ATA Alex Silva               OVR 40  Sal    31  G  0  J  0  Craque -
+  - Athletico Paranaense | Div final 3 | Pos 5 na Div 3 | Movimento = | Caixa R$ 515,399 mil | Folha R$ 9,000 mil | Torcida 5.6M | Prestigio 77 | Emprestimo R$ 0 mil | Media elenco 63.1
+    Elenco:
+      - GOL Mycael                   OVR 67  Sal    96  G  1  J 17  Craque *
+      - GOL Santos                   OVR 67  Sal   116  G  0  J  0  Craque -
+      - GOL Léo Linck                OVR 66  Sal   126  G  0  J  2  Craque -
+      - ZAG Fernando                 OVR 59  Sal    44  G  3  J 17  Craque -
+      - ZAG Léo Godoy                OVR 58  Sal    55  G  2  J 18  Craque *
+      - ZAG Kaique Rocha             OVR 58  Sal    34  G  2  J 14  Craque -
+      - ZAG Lucas Esquivel           OVR 58  Sal    35  G  1  J 10  Craque -
+      - ZAG Matheus Felipe           OVR 58  Sal    47  G  0  J  1  Craque -
+      - ZAG Belezi                   OVR 58  Sal    36  G  1  J 12  Craque -
+      - ZAG Madson                   OVR 58  Sal    33  G  0  J  0  Craque -
+      - MEI Erick                    OVR 64  Sal   110  G  2  J 18  Craque -
+      - MEI Alex Santana             OVR 60  Sal    70  G  1  J  5  Craque -
+      - MEI Christian                OVR 60  Sal    49  G  1  J 18  Craque -
+      - MEI Felipinho                OVR 60  Sal    68  G  3  J 14  Craque -
+      - MEI Giuliano                 OVR 60  Sal    66  G  1  J  5  Craque -
+      - MEI Canobbio                 OVR 60  Sal    47  G  3  J 12  Craque -
+      - MEI Bruno Zapelli            OVR 60  Sal    47  G  0  J  0  Craque -
+      - ATA Rômulo                   OVR 69  Sal   302  G  5  J 17  Craque -
+      - ATA Julimar                  OVR 69  Sal   121  G  0  J  1  Craque -
+      - ATA Emersonn                 OVR 69  Sal   106  G  1  J  3  Craque -
+      - ATA Mastriani                OVR 69  Sal   122  G  1  J  4  Craque -
+      - ATA Pablo                    OVR 69  Sal    72  G  0  J  2  Craque *
+      - ATA Cuello                   OVR 69  Sal   148  G  2  J  8  Craque -
+      - ATA Isaac                    OVR 69  Sal   150  G  0  J  1  Craque -
+      - ATA Di Yorio                 OVR 66  Sal   120  G  0  J  0  Craque -
+  - Vitória | Div final 3 | Pos 6 na Div 3 | Movimento = | Caixa R$ 377,678 mil | Folha R$ 5,000 mil | Torcida 3.6M | Prestigio 67 | Emprestimo R$ 0 mil | Media elenco 51.6
+    Elenco:
+      - GOL Muriel                   OVR 58  Sal    51  G  0  J  2  Craque -
+      - GOL Lucas Arcanjo            OVR 58  Sal    57  G  0  J 16  Craque *
+      - GOL Dalton                   OVR 57  Sal    62  G  0  J  0  Craque -
+      - ZAG Raul Cáceres             OVR 49  Sal    69  G  1  J 18  Craque *
+      - ZAG Patric Calmon            OVR 46  Sal    47  G  0  J  5  Craque -
+      - ZAG Neris                    OVR 46  Sal    36  G  1  J 11  Craque -
+      - ZAG PK                       OVR 46  Sal    47  G  0  J  7  Craque -
+      - ZAG Camutanga                OVR 46  Sal    38  G  0  J  7  Craque -
+      - ZAG Wagner Leonardo          OVR 46  Sal    30  G  0  J 10  Craque -
+      - ZAG Zeca                     OVR 46  Sal    53  G  3  J 14  Craque -
+      - MEI Léo Naldi                OVR 50  Sal    31  G  6  J 18  Craque -
+      - MEI Dudu                     OVR 50  Sal    52  G  5  J 18  Craque -
+      - MEI Caio Vinícius            OVR 49  Sal    30  G  4  J 18  Craque -
+      - MEI Rodrigo Andrade          OVR 48  Sal    54  G  1  J  3  Craque -
+      - MEI Willian Oliveira         OVR 48  Sal    70  G  0  J  5  Craque -
+      - MEI Matheuzinho              OVR 48  Sal    34  G  2  J  8  Craque -
+      - MEI Jean Mota                OVR 48  Sal    65  G  1  J  2  Craque -
+      - ATA Janderson                OVR 59  Sal    57  G  2  J 11  Craque -
+      - ATA Osvaldo                  OVR 59  Sal    30  G  1  J 11  Craque -
+      - ATA Iury Castilho            OVR 59  Sal    30  G  0  J  0  Craque -
+      - ATA Everaldo                 OVR 59  Sal    67  G  2  J 14  Craque -
+      - ATA Alerrandro               OVR 58  Sal    48  G  0  J  0  Craque *
+      - ATA Wellington Rato          OVR 54  Sal    47  G  0  J  0  Craque -
+      - ATA Carlos Eduardo           OVR 52  Sal    41  G  0  J  0  Craque -
+      - ATA Fábio Soares             OVR 50  Sal    48  G  0  J  0  Craque -
+  - Coritiba | Div final 4 | Pos 7 na Div 3 | Movimento REBAIXADO | Caixa R$ 240,718 mil | Folha R$ 4,800 mil | Torcida 3.3M | Prestigio 66 | Emprestimo R$ 0 mil | Media elenco 36.0
+    Elenco:
+      - GOL Gabriel Leite            OVR 42  Sal    42  G  1  J 14  Craque -
+      - GOL Pedro Morisco            OVR 42  Sal    39  G  0  J  2  Craque *
+      - GOL Pedro Rangel             OVR 42  Sal    34  G  0  J  0  Craque -
+      - ZAG Felipe Guimarães         OVR 33  Sal    35  G  2  J 16  Craque -
+      - ZAG João Almeida             OVR 33  Sal    51  G  0  J  4  Craque -
+      - ZAG Bruno Melo               OVR 33  Sal    47  G  2  J  7  Craque -
+      - ZAG Guilherme Aquino         OVR 33  Sal    58  G  2  J 11  Craque -
+      - ZAG Jacy                     OVR 33  Sal    51  G  0  J 10  Craque -
+      - ZAG Tiago Coser              OVR 33  Sal    51  G  1  J 16  Craque *
+      - ZAG Maicon                   OVR 32  Sal    54  G  0  J  0  Craque -
+      - MEI Sebastián Gómez          OVR 36  Sal    34  G  1  J 16  Craque -
+      - MEI Jean Gabriel             OVR 32  Sal    39  G  0  J  9  Craque -
+      - MEI Josué                    OVR 32  Sal    66  G  1  J 12  Craque -
+      - MEI Willian Oliveira         OVR 32  Sal    64  G  1  J  8  Craque -
+      - MEI Matheus Bianqui          OVR 32  Sal    67  G  2  J  8  Craque -
+      - MEI Carlos de Pena           OVR 32  Sal    44  G  1  J 11  Craque -
+      - MEI Geovane                  OVR 31  Sal    56  G  0  J  0  Craque -
+      - ATA Clayson                  OVR 43  Sal    44  G  0  J  0  Craque *
+      - ATA Gustavo Coutinho         OVR 43  Sal    54  G  0  J  2  Craque -
+      - ATA Lucas Ronier             OVR 43  Sal    69  G  4  J 14  Craque -
+      - ATA Iury Castilho            OVR 43  Sal    38  G  0  J  0  Craque -
+      - ATA Nicolas Careca           OVR 43  Sal    68  G  2  J 16  Craque -
+      - ATA Dellatorre               OVR 41  Sal    38  G  0  J  0  Craque -
+      - ATA Joaquín Lavega           OVR 39  Sal    35  G  0  J  0  Craque -
+      - ATA Pedro Rocha              OVR 26  Sal    31  G  0  J  0  Craque -
+  - Paysandu | Div final 4 | Pos 8 na Div 3 | Movimento REBAIXADO | Caixa R$ 174,679 mil | Folha R$ 3,600 mil | Torcida 1.5M | Prestigio 57 | Emprestimo R$ 0 mil | Media elenco 26.2
+    Elenco:
+      - GOL Matheus Nogueira         OVR 31  Sal    65  G  0  J 13  Craque -
+      - GOL Jean Drosny              OVR 31  Sal    69  G  0  J  3  Craque -
+      - GOL Gabriel Mesquita         OVR 31  Sal    66  G  0  J  0  Craque *
+      - ZAG PK                       OVR 24  Sal    56  G  3  J 16  Craque -
+      - ZAG Marcão                   OVR 24  Sal    65  G  1  J 16  Craque *
+      - ZAG Bruno Bispo              OVR 24  Sal    48  G  2  J 16  Craque -
+      - ZAG Yeferson Quintana        OVR 23  Sal    59  G  0  J  8  Craque -
+      - ZAG Luccão                   OVR 23  Sal    42  G  0  J  8  Craque -
+      - ZAG Reverson                 OVR 23  Sal    66  G  0  J  0  Craque -
+      - ZAG Edílson                  OVR 22  Sal    66  G  0  J  0  Craque -
+      - MEI Leandro Vilela           OVR 25  Sal    67  G  2  J 16  Craque -
+      - MEI Robinho                  OVR 23  Sal    51  G  1  J 16  Craque -
+      - MEI Matheus Vargas           OVR 22  Sal    62  G  0  J  5  Craque -
+      - MEI Giovanni                 OVR 22  Sal    68  G  0  J  4  Craque -
+      - MEI Ramon Martinez           OVR 22  Sal    36  G  0  J  5  Craque -
+      - MEI Marlon                   OVR 22  Sal    68  G  1  J  8  Craque -
+      - MEI Cavan                    OVR 22  Sal    32  G  2  J 10  Craque -
+      - ATA Nicolas                  OVR 32  Sal    46  G  0  J 15  Craque *
+      - ATA Benitez                  OVR 32  Sal    60  G  2  J 12  Craque -
+      - ATA Edinho                   OVR 32  Sal    70  G  0  J  0  Craque -
+      - ATA Kevin                    OVR 32  Sal    50  G  1  J  5  Craque -
+      - ATA Marlon Douglas           OVR 32  Sal    55  G  0  J  0  Craque -
+      - ATA Ciel                     OVR 30  Sal    43  G  0  J  0  Craque -
+      - ATA Eliel                    OVR 26  Sal    37  G  0  J  0  Craque -
+      - ATA Diogo Oliveira           OVR 24  Sal    64  G  0  J  0  Craque -
+
+#### Divisao 4
+  - Criciúma | Div final 3 | Pos 1 na Div 4 | Movimento PROMOVIDO | Caixa R$ 239,040 mil | Folha R$ 4,500 mil | Torcida 864K | Prestigio 59 | Emprestimo R$ 0 mil | Media elenco 45.8
+    Elenco:
+      - GOL Gustavo                  OVR 52  Sal    62  G  0  J  1  Craque *
+      - GOL Alisson                  OVR 52  Sal    53  G  2  J 15  Craque -
+      - GOL Kauã                     OVR 49  Sal    37  G  0  J  0  Craque -
+      - ZAG Claudinho                OVR 49  Sal    63  G  1  J 16  Craque *
+      - ZAG Tobias Figueiredo        OVR 41  Sal    46  G  3  J 16  Craque -
+      - ZAG Marcelo Hermes           OVR 41  Sal    43  G  1  J 14  Craque -
+      - ZAG Victor Luís              OVR 41  Sal    50  G  0  J  6  Craque -
+      - ZAG Jonathan                 OVR 41  Sal    57  G  1  J  3  Craque -
+      - ZAG Rodrigo                  OVR 41  Sal    56  G  1  J  9  Craque -
+      - ZAG Dudu                     OVR 39  Sal    54  G  0  J  0  Craque -
+      - MEI Barreto                  OVR 47  Sal    70  G  4  J 16  Craque -
+      - MEI Higor Meritão            OVR 42  Sal    66  G  1  J 16  Craque -
+      - MEI Newton                   OVR 41  Sal    37  G  1  J  2  Craque -
+      - MEI Marquinhos Gabriel       OVR 41  Sal    36  G  2  J 13  Craque -
+      - MEI Rômulo                   OVR 41  Sal    35  G  0  J  5  Craque -
+      - MEI Fellipe Mateus           OVR 41  Sal    51  G  3  J 12  Craque -
+      - MEI Miquéias                 OVR 39  Sal    53  G  0  J  0  Craque -
+      - ATA Allano                   OVR 52  Sal    37  G  1  J  9  Craque -
+      - ATA Yannick Bolasie          OVR 52  Sal    60  G  4  J  8  Craque *
+      - ATA Arthur Caíke             OVR 52  Sal    35  G  0  J  0  Craque -
+      - ATA Matheusinho              OVR 52  Sal    40  G  2  J  8  Craque -
+      - ATA Ronald                   OVR 52  Sal    54  G  3  J  7  Craque -
+      - ATA Éder                     OVR 52  Sal    62  G  0  J  0  Craque -
+      - ATA Jhonata Robert           OVR 50  Sal    37  G  0  J  0  Craque -
+      - ATA Felipinho                OVR 43  Sal    69  G  0  J  0  Craque -
+  - Goiás | Div final 3 | Pos 2 na Div 4 | Movimento PROMOVIDO | Caixa R$ 238,955 mil | Folha R$ 4,600 mil | Torcida 3.3M | Prestigio 68 | Emprestimo R$ 0 mil | Media elenco 33.7
+    Elenco:
+      - GOL Tadeu                    OVR 44  Sal    40  G  0  J  6  Craque *
+      - GOL Thiago Rodrigues         OVR 44  Sal    38  G  0  J 10  Craque -
+      - GOL Marcão                   OVR 41  Sal    42  G  0  J  0  Craque -
+      - ZAG Nicolas                  OVR 29  Sal    46  G  0  J 16  Craque -
+      - ZAG Titi                     OVR 29  Sal    31  G  3  J 15  Craque -
+      - ZAG Luiz Felipe              OVR 29  Sal    38  G  3  J 16  Craque -
+      - ZAG Lucas Ribeiro            OVR 28  Sal    70  G  0  J  5  Craque -
+      - ZAG Rodrigo Soares           OVR 28  Sal    42  G  0  J  8  Craque -
+      - ZAG Anthony                  OVR 28  Sal    69  G  0  J  0  Craque -
+      - ZAG Ezequiel                 OVR 28  Sal    45  G  0  J  4  Craque *
+      - MEI Lucas Lima               OVR 32  Sal    57  G  0  J 15  Craque -
+      - MEI Jean Carlos              OVR 32  Sal    47  G  3  J 16  Craque -
+      - MEI Filipe Machado           OVR 32  Sal    47  G  1  J 16  Craque -
+      - MEI Juninho                  OVR 31  Sal    40  G  0  J  4  Craque -
+      - MEI Gegê                     OVR 31  Sal    69  G  3  J 13  Craque -
+      - MEI Brayann                  OVR 30  Sal    30  G  0  J  0  Craque -
+      - MEI Lourenço                 OVR 29  Sal    46  G  0  J  0  Craque -
+      - ATA Wellington Rato          OVR 40  Sal    39  G  7  J 16  Craque *
+      - ATA Bruno Sávio              OVR 39  Sal    45  G  1  J  5  Craque -
+      - ATA Pedrinho                 OVR 39  Sal    68  G  5  J 11  Craque -
+      - ATA Esli García              OVR 39  Sal    35  G  0  J  0  Craque -
+      - ATA Anselmo Ramon            OVR 39  Sal    43  G  0  J  0  Craque -
+      - ATA Arthur Caíke             OVR 35  Sal    57  G  0  J  0  Craque -
+      - ATA Cadu                     OVR 33  Sal    50  G  0  J  0  Craque -
+      - ATA Jajá                     OVR 30  Sal    32  G  0  J  0  Craque -
+  - Ceará | Div final 4 | Pos 3 na Div 4 | Movimento = | Caixa R$ 297,924 mil | Folha R$ 4,000 mil | Torcida 2.3M | Prestigio 58 | Emprestimo R$ 0 mil | Media elenco 49.8
+    Elenco:
+      - GOL Richard                  OVR 60  Sal    57  G  0  J  2  Craque *
+      - GOL Fernando Miguel          OVR 60  Sal    36  G  0  J  5  Craque -
+      - GOL Bruno Ferreira           OVR 60  Sal    61  G  0  J 10  Craque -
+      - ZAG Rafael Ramos             OVR 46  Sal    50  G  2  J 16  Craque *
+      - ZAG Luiz Otávio              OVR 46  Sal    56  G  2  J 14  Craque -
+      - ZAG Eric Melo                OVR 46  Sal    37  G  2  J  9  Craque -
+      - ZAG Raí Ramos                OVR 45  Sal    54  G  1  J 16  Craque -
+      - ZAG David Ricardo            OVR 45  Sal    67  G  1  J  9  Craque -
+      - ZAG Matheus Felipe           OVR 44  Sal    69  G  0  J  0  Craque -
+      - ZAG Warley                   OVR 43  Sal    60  G  0  J  0  Craque -
+      - MEI Richardson               OVR 49  Sal    51  G  2  J 16  Craque -
+      - MEI De Lucca                 OVR 44  Sal    60  G  0  J  4  Craque -
+      - MEI Fernando Sobral          OVR 44  Sal    70  G  2  J 13  Craque -
+      - MEI Aylon                    OVR 44  Sal    35  G  2  J  5  Craque -
+      - MEI Lourenço                 OVR 44  Sal    49  G  3  J 13  Craque -
+      - MEI Rômulo                   OVR 44  Sal    49  G  1  J 13  Craque -
+      - MEI Lucas Mugni              OVR 43  Sal    50  G  0  J  0  Craque -
+      - ATA Facundo Castro           OVR 56  Sal    39  G  1  J  6  Craque -
+      - ATA Barceló                  OVR 56  Sal    45  G  0  J  1  Craque -
+      - ATA Saulo Mineiro            OVR 56  Sal    46  G  2  J 10  Craque *
+      - ATA Cléber                   OVR 56  Sal    62  G  1  J  2  Craque -
+      - ATA Recalde                  OVR 56  Sal    58  G  1  J  2  Craque -
+      - ATA Erick Pulga              OVR 56  Sal    30  G  5  J 11  Craque -
+      - ATA Janderson                OVR 51  Sal    38  G  0  J  0  Craque -
+      - ATA Guilherme Bissoli        OVR 51  Sal    30  G  0  J  0  Craque -
+  - Avaí | Div final 4 | Pos 4 na Div 4 | Movimento = | Caixa R$ 195,372 mil | Folha R$ 3,800 mil | Torcida 1.6M | Prestigio 63 | Emprestimo R$ 0 mil | Media elenco 28.8
+    Elenco:
+      - GOL Léo Aragão               OVR 35  Sal    62  G  0  J  9  Craque -
+      - GOL Igor Bohn                OVR 35  Sal    57  G  0  J  9  Craque *
+      - GOL Otávio Passos            OVR 34  Sal    33  G  0  J  0  Craque -
+      - ZAG Wesley Gasolina          OVR 26  Sal    65  G  2  J 18  Craque -
+      - ZAG Douglas Teixeira         OVR 26  Sal    49  G  1  J 17  Craque *
+      - ZAG Quaresma                 OVR 25  Sal    33  G  0  J  1  Craque -
+      - ZAG Wallison                 OVR 25  Sal    48  G  1  J  7  Craque -
+      - ZAG Allyson                  OVR 25  Sal    52  G  4  J 13  Craque -
+      - ZAG Gabriel Simples          OVR 25  Sal    49  G  0  J  8  Craque -
+      - ZAG Guilherme Aquino         OVR 25  Sal    49  G  0  J  8  Craque -
+      - MEI Jean Lucas               OVR 26  Sal    65  G  4  J 18  Craque -
+      - MEI Luiz Henrique            OVR 23  Sal    60  G  0  J 13  Craque -
+      - MEI Zé Ricardo               OVR 23  Sal    49  G  0  J  4  Craque -
+      - MEI Hyan                     OVR 23  Sal    53  G  1  J 16  Craque -
+      - MEI Romildo Del Piage        OVR 23  Sal    47  G  2  J 13  Craque -
+      - MEI Daniel Penha             OVR 23  Sal    68  G  0  J  8  Craque -
+      - MEI Wenderson                OVR 23  Sal    45  G  0  J  0  Craque -
+      - ATA Rafael Bilu              OVR 37  Sal    69  G  0  J  0  Craque *
+      - ATA Sorriso                  OVR 37  Sal    34  G  1  J  3  Craque -
+      - ATA Maurício Garcez          OVR 37  Sal    44  G  0  J  9  Craque -
+      - ATA Felipe Avenatti          OVR 37  Sal    39  G  3  J  7  Craque -
+      - ATA Gaspar                   OVR 37  Sal    44  G  4  J 17  Craque -
+      - ATA Thayllon                 OVR 32  Sal    30  G  0  J  0  Craque -
+      - ATA Igor Rosa                OVR 28  Sal    60  G  0  J  0  Craque -
+      - ATA Mário Sérgio             OVR 25  Sal    61  G  0  J  0  Craque -
+  - América Mineiro | Div final 4 | Pos 5 na Div 4 | Movimento = | Caixa R$ 240,207 mil | Folha R$ 4,500 mil | Torcida 2.7M | Prestigio 66 | Emprestimo R$ 0 mil | Media elenco 33.4
+    Elenco:
+      - GOL Matheus Mendes           OVR 40  Sal    55  G  0  J 12  Craque *
+      - GOL Dalberson                OVR 40  Sal    62  G  0  J  4  Craque -
+      - GOL Jori                     OVR 39  Sal    37  G  0  J  0  Craque -
+      - ZAG Marlon                   OVR 31  Sal    62  G  1  J 16  Craque *
+      - ZAG Ricardo Silva            OVR 31  Sal    57  G  2  J 16  Craque -
+      - ZAG Júlio                    OVR 28  Sal    53  G  1  J 16  Craque -
+      - ZAG Paulinho                 OVR 28  Sal    50  G  0  J  5  Craque -
+      - ZAG Maguinho                 OVR 28  Sal    55  G  0  J  0  Craque -
+      - ZAG Lucão                    OVR 28  Sal    68  G  1  J 11  Craque -
+      - ZAG Nicolas                  OVR 27  Sal    70  G  0  J  0  Craque -
+      - MEI Jhosefer                 OVR 31  Sal    33  G  1  J 14  Craque -
+      - MEI Benítez                  OVR 30  Sal    52  G  6  J 16  Craque -
+      - MEI Cauan Barros             OVR 29  Sal    51  G  5  J 12  Craque -
+      - MEI Miguelito                OVR 29  Sal    66  G  2  J  9  Craque -
+      - MEI Alê                      OVR 29  Sal    48  G  0  J  1  Craque -
+      - MEI Moisés                   OVR 29  Sal    30  G  0  J  1  Craque -
+      - MEI Fabinho Santos           OVR 29  Sal    38  G  2  J 11  Craque -
+      - ATA Fabinho                  OVR 42  Sal    48  G  3  J 16  Craque *
+      - ATA Adyson                   OVR 42  Sal    46  G  3  J  7  Craque -
+      - ATA Guilherme Pato           OVR 42  Sal    46  G  0  J  3  Craque -
+      - ATA Willian Bigode           OVR 42  Sal    50  G  0  J  6  Craque -
+      - ATA Stênio                   OVR 37  Sal    63  G  0  J  0  Craque -
+      - ATA Brenner                  OVR 36  Sal    57  G  0  J  0  Craque -
+      - ATA Renato Marques           OVR 36  Sal    33  G  0  J  0  Craque -
+      - ATA Aloísio                  OVR 32  Sal    42  G  0  J  0  Craque -
+  - Vila Nova | Div final 4 | Pos 6 na Div 4 | Movimento = | Caixa R$ 173,174 mil | Folha R$ 3,600 mil | Torcida 1.6M | Prestigio 59 | Emprestimo R$ 0 mil | Media elenco 30.4
+    Elenco:
+      - GOL Helton Leite             OVR 37  Sal    47  G  0  J  4  Craque *
+      - GOL Dalberson                OVR 37  Sal    68  G  0  J 12  Craque -
+      - GOL Airton                   OVR 36  Sal    69  G  0  J  0  Craque -
+      - ZAG Caio Marcelo             OVR 28  Sal    52  G  1  J 16  Craque *
+      - ZAG Higor                    OVR 27  Sal    59  G  0  J 16  Craque -
+      - ZAG Anderson Jesus           OVR 27  Sal    70  G  2  J 10  Craque -
+      - ZAG Weverton                 OVR 27  Sal    50  G  0  J  9  Craque -
+      - ZAG Elias                    OVR 27  Sal    57  G  0  J  7  Craque -
+      - ZAG Tiago Pagnussat          OVR 27  Sal    63  G  0  J  6  Craque -
+      - ZAG Hayner                   OVR 26  Sal    58  G  0  J  0  Craque -
+      - MEI Dudu                     OVR 34  Sal    52  G  3  J 16  Craque -
+      - MEI Nathan Camargo           OVR 28  Sal    57  G  1  J 16  Craque -
+      - MEI Dodô                     OVR 26  Sal    61  G  0  J  9  Craque -
+      - MEI Marco Antonio            OVR 26  Sal    34  G  1  J 10  Craque -
+      - MEI João Vieira              OVR 26  Sal    35  G  3  J 13  Craque -
+      - MEI Willian Maranhão         OVR 26  Sal    50  G  0  J  0  Craque -
+      - MEI Marquinhos Gabriel       OVR 25  Sal    53  G  0  J  0  Craque -
+      - ATA Dellatorre               OVR 38  Sal    50  G  1  J  7  Craque -
+      - ATA Rafa Silva               OVR 38  Sal    45  G  0  J  1  Craque -
+      - ATA Ruan Ribeiro             OVR 38  Sal    38  G  4  J  4  Craque *
+      - ATA Bruno Xavier             OVR 38  Sal    67  G  3  J 11  Craque -
+      - ATA Andre Luis               OVR 38  Sal    35  G  2  J  9  Craque -
+      - ATA Emerson Urso             OVR 31  Sal    36  G  0  J  0  Craque -
+      - ATA Janderson                OVR 27  Sal    31  G  0  J  0  Craque -
+      - ATA Alesson                  OVR 26  Sal    44  G  0  J  0  Craque -
+  - Novorizontino | Div final 4 | Pos 7 na Div 4 | Movimento = | Caixa R$ 141,406 mil | Folha R$ 3,200 mil | Torcida 1.1M | Prestigio 60 | Emprestimo R$ 0 mil | Media elenco 26.1
+    Elenco:
+      - GOL César Augusto            OVR 32  Sal    55  G  0  J 16  Craque -
+      - GOL Airton                   OVR 32  Sal    52  G  0  J  0  Craque -
+      - GOL Jordi                    OVR 32  Sal    59  G  0  J  0  Craque *
+      - ZAG Patrick                  OVR 22  Sal    65  G  0  J 16  Craque *
+      - ZAG César Martins            OVR 21  Sal    69  G  0  J 13  Craque -
+      - ZAG Rômulo                   OVR 21  Sal    37  G  3  J 11  Craque -
+      - ZAG Mayk                     OVR 21  Sal    34  G  0  J  8  Craque -
+      - ZAG Dantas                   OVR 21  Sal    67  G  2  J 13  Craque -
+      - ZAG Rafael Donato            OVR 21  Sal    69  G  0  J  2  Craque -
+      - ZAG Raí Ramos                OVR 21  Sal    55  G  0  J  1  Craque -
+      - MEI Fábio Matheus            OVR 24  Sal    33  G  1  J 15  Craque -
+      - MEI Robson                   OVR 23  Sal    37  G  2  J 15  Craque -
+      - MEI Marlon                   OVR 23  Sal    56  G  0  J  5  Craque -
+      - MEI Waguininho               OVR 23  Sal    65  G  0  J  9  Craque -
+      - MEI Jean Irmer               OVR 23  Sal    55  G  1  J  8  Craque -
+      - MEI Matheus Frizzo           OVR 23  Sal    37  G  2  J  8  Craque -
+      - MEI Lucca                    OVR 23  Sal    51  G  0  J  4  Craque -
+      - ATA Caio Dantas              OVR 34  Sal    66  G  0  J  3  Craque *
+      - ATA Léo Tocantins            OVR 34  Sal    66  G  1  J 15  Craque -
+      - ATA Neto Pessoa              OVR 34  Sal    33  G  1  J  1  Craque -
+      - ATA Bruno José               OVR 34  Sal    40  G  0  J 13  Craque -
+      - ATA Nicolas Careca           OVR 33  Sal    70  G  0  J  0  Craque -
+      - ATA Everaldo                 OVR 30  Sal    58  G  0  J  0  Craque -
+      - ATA Jenison                  OVR 25  Sal    56  G  0  J  0  Craque -
+      - ATA Rodolfo                  OVR 21  Sal    61  G  0  J  0  Craque -
+  - CRB | Div final 4 | Pos 8 na Div 4 | Movimento = | Caixa R$ 147,667 mil | Folha R$ 3,500 mil | Torcida 1.4M | Prestigio 64 | Emprestimo R$ 0 mil | Media elenco 26.2
+    Elenco:
+      - GOL Matheus Albino           OVR 36  Sal    42  G  0  J 12  Craque *
+      - GOL Vitor Caetano            OVR 36  Sal    57  G  0  J  0  Craque -
+      - GOL Pablo                    OVR 36  Sal    40  G  1  J  5  Craque -
+      - ZAG Hereda                   OVR 23  Sal    40  G  0  J 16  Craque *
+      - ZAG Segovia                  OVR 22  Sal    60  G  0  J 16  Craque -
+      - ZAG Lucas Lovat              OVR 21  Sal    69  G  0  J 16  Craque -
+      - ZAG Fábio Alemão             OVR 21  Sal    42  G  0  J  0  Craque -
+      - ZAG Henri                    OVR 21  Sal    70  G  2  J  5  Craque -
+      - ZAG Weverton                 OVR 21  Sal    43  G  2  J 11  Craque -
+      - ZAG Ryan                     OVR 21  Sal    30  G  0  J  0  Craque -
+      - MEI Higor Meritão            OVR 23  Sal    33  G  0  J 16  Craque -
+      - MEI Lucas Kallyel            OVR 22  Sal    67  G  0  J  5  Craque -
+      - MEI Danielzinho              OVR 22  Sal    63  G  0  J 14  Craque -
+      - MEI Mikael                   OVR 22  Sal    30  G  0  J  9  Craque -
+      - MEI Gegê                     OVR 22  Sal    49  G  2  J 12  Craque -
+      - MEI Geovane                  OVR 22  Sal    44  G  0  J  1  Craque -
+      - MEI Douglas Baggio           OVR 22  Sal    44  G  0  J  7  Craque -
+      - ATA William Pottker          OVR 35  Sal    61  G  0  J  7  Craque -
+      - ATA Dadá Belmonte            OVR 35  Sal    46  G  0  J 11  Craque -
+      - ATA Anselmo Ramon            OVR 35  Sal    55  G  3  J 14  Craque *
+      - ATA Léo Pereira              OVR 35  Sal    58  G  0  J  0  Craque -
+      - ATA João Neto                OVR 28  Sal    48  G  0  J  0  Craque -
+      - ATA Labandeira               OVR 26  Sal    53  G  0  J  0  Craque -
+      - ATA Rafinha                  OVR 24  Sal    68  G  0  J  0  Craque -
+      - ATA Thiaguinho               OVR 23  Sal    57  G  0  J  0  Craque -
+
+## Temporada 2034
+
+### Campeoes
+- Divisao 1: Botafogo
+- Divisao 2: Bahia
+- Divisao 3: Athletico Paranaense
+- Divisao 4: Coritiba
+- Copa: Corinthians
+
+### Artilheiros
+- Artilheiro da temporada: Gerson (Flamengo) - 7 gols
+- Top 1: Gerson (Flamengo) - 7 gols
+- Top 2: Alex Santana (Corinthians) - 7 gols
+- Top 3: Everaldo (Vitória) - 7 gols
+- Top 4: Matheusinho (Criciúma) - 7 gols
+- Top 5: Carlos Alcaraz (Flamengo) - 6 gols
+- Top 6: Gustavo Scarpa (Atlético Mineiro) - 6 gols
+- Top 7: Germán Cano (Fluminense) - 6 gols
+- Top 8: Deyverson (Cuiabá) - 6 gols
+- Top 9: Bruno Xavier (Vila Nova) - 6 gols
+- Top 10: Wesley (Flamengo) - 5 gols
+
+### Promovidos
+- Bahia: 2 -> 1
+- Fluminense: 2 -> 1
+- Athletico Paranaense: 3 -> 2
+- Cuiabá: 3 -> 2
+- Ceará: 4 -> 3
+- Coritiba: 4 -> 3
+
+### Rebaixados
+- RB Bragantino: 1 -> 2
+- Santos: 1 -> 2
+- Atlético Goianiense: 2 -> 3
+- Internacional: 2 -> 3
+- Goiás: 3 -> 4
+- Mirassol: 3 -> 4
+
+### Destaques Financeiros e Tecnicos
+- Melhor ataque: Ceará com 27 gols
+- Melhor defesa: Corinthians com 9 gols sofridos
+- Maior publico: Flamengo x Santos - 80,000
+- Maior renda: São Paulo FC x Corinthians - R$ 12,096 mil
+
+### Clubes, Financas e Elencos
+#### Divisao 1
+  - Botafogo | Div final 1 | Pos 1 na Div 1 | Movimento = | Caixa R$ 1,851,484 mil | Folha R$ 20,000 mil | Torcida 14.5M | Prestigio 94 | Emprestimo R$ 0 mil | Media elenco 79.7
+    Elenco:
+      - GOL Raul                     OVR 85  Sal  2500  G  0  J 15  Craque -
+      - GOL Léo Linck                OVR 85  Sal  1906  G  0  J  2  Craque -
+      - GOL John                     OVR 85  Sal  1982  G  0  J  0  Craque *
+      - ZAG Bastos                   OVR 75  Sal   761  G  1  J 16  Craque -
+      - ZAG David Ricardo            OVR 75  Sal   836  G  3  J 16  Craque -
+      - ZAG Vitinho                  OVR 75  Sal   365  G  0  J  6  Craque *
+      - ZAG Mateo Ponte              OVR 75  Sal   293  G  0  J 11  Craque -
+      - ZAG Alex Telles              OVR 75  Sal   200  G  0  J  0  Craque -
+      - ZAG Cuiabano                 OVR 75  Sal  1155  G  0  J 15  Craque -
+      - ZAG Alexander Barboza        OVR 74  Sal   343  G  0  J  0  Craque -
+      - MEI Patrick de Paula         OVR 75  Sal   734  G  3  J 16  Craque -
+      - MEI Marlon Freitas           OVR 75  Sal   715  G  2  J 16  Craque -
+      - MEI Gregore                  OVR 75  Sal   789  G  4  J 16  Craque -
+      - MEI Jefferson Savarino       OVR 75  Sal   376  G  1  J 13  Craque -
+      - MEI Newton                   OVR 74  Sal   405  G  1  J  2  Craque -
+      - MEI Santiago Rodríguez       OVR 74  Sal   388  G  1  J  1  Craque -
+      - MEI Allan                    OVR 74  Sal   384  G  0  J  0  Craque -
+      - ATA Santiago                 OVR 87  Sal  5561  G  2  J 10  Craque -
+      - ATA Rwan Cruz                OVR 87  Sal  5447  G  4  J 13  Craque -
+      - ATA Matheus Martins          OVR 87  Sal  1500  G  0  J  0  Craque -
+      - ATA Igor Jesus               OVR 87  Sal  1554  G  2  J  9  Craque *
+      - ATA Jeffinho                 OVR 87  Sal  2067  G  0  J  0  Craque -
+      - ATA Artur                    OVR 86  Sal  1846  G  0  J  0  Craque -
+      - ATA Elias Manoel             OVR 85  Sal  1607  G  0  J  0  Craque -
+      - ATA Kayque                   OVR 83  Sal  1567  G  0  J  0  Craque -
+  - São Paulo FC | Div final 1 | Pos 2 na Div 1 | Movimento = | Caixa R$ 1,464,554 mil | Folha R$ 14,000 mil | Torcida 20.1M | Prestigio 89 | Emprestimo R$ 0 mil | Media elenco 69.6
+    Elenco:
+      - GOL Jandrei                  OVR 74  Sal   432  G  0  J  2  Craque -
+      - GOL Young                    OVR 74  Sal   215  G  1  J 14  Craque -
+      - GOL Rafael                   OVR 73  Sal   314  G  0  J  0  Craque *
+      - ZAG Patryck                  OVR 65  Sal   109  G  0  J 16  Craque -
+      - ZAG Alan Franco              OVR 65  Sal   135  G  2  J 14  Craque -
+      - ZAG Igor Vinícius            OVR 65  Sal    89  G  2  J 16  Craque *
+      - ZAG Ferraresi                OVR 65  Sal   104  G  2  J 12  Craque -
+      - ZAG Arboleda                 OVR 65  Sal   144  G  0  J  6  Craque -
+      - ZAG Welington                OVR 65  Sal   118  G  0  J  0  Craque -
+      - ZAG Sabino                   OVR 64  Sal    61  G  0  J  0  Craque -
+      - MEI Wellington Rato          OVR 68  Sal   141  G  3  J 16  Craque -
+      - MEI Matheus Alves            OVR 67  Sal   128  G  2  J 16  Craque -
+      - MEI Rodriguinho              OVR 67  Sal    74  G  2  J 11  Craque -
+      - MEI Damián Bobadilla         OVR 67  Sal   120  G  2  J  7  Craque -
+      - MEI Marcos Antônio           OVR 67  Sal    76  G  1  J 13  Craque -
+      - MEI Alisson                  OVR 67  Sal    93  G  0  J  1  Craque -
+      - MEI Pablo Maia               OVR 66  Sal   113  G  0  J  0  Craque -
+      - ATA Ferreira                 OVR 75  Sal   231  G  1  J 11  Craque -
+      - ATA André Silva              OVR 75  Sal   202  G  1  J 12  Craque -
+      - ATA Calleri                  OVR 75  Sal   260  G  1  J  2  Craque *
+      - ATA William Gomes            OVR 75  Sal   405  G  2  J  7  Craque -
+      - ATA Henrique Carmo           OVR 74  Sal   158  G  0  J  0  Craque -
+      - ATA Erick                    OVR 74  Sal   404  G  0  J  0  Craque -
+      - ATA Lucas Moura              OVR 74  Sal   292  G  0  J  0  Craque -
+      - ATA Luciano                  OVR 73  Sal   258  G  0  J  0  Craque -
+  - Flamengo | Div final 1 | Pos 3 na Div 1 | Movimento = | Caixa R$ 2,091,776 mil | Folha R$ 28,000 mil | Torcida 34.0M | Prestigio 100 | Emprestimo R$ 0 mil | Media elenco 83.9
+    Elenco:
+      - GOL Dyogo Alves              OVR 91  Sal  4238  G  0  J  7  Craque -
+      - GOL Rossi                    OVR 91  Sal  5344  G  1  J 17  Craque *
+      - GOL Matheus Cunha            OVR 89  Sal  4056  G  0  J  0  Craque -
+      - ZAG Wesley                   OVR 80  Sal   694  G  5  J 22  Craque *
+      - ZAG Alex Sandro              OVR 79  Sal  1179  G  2  J 17  Craque -
+      - ZAG Ayrton Lucas             OVR 79  Sal   738  G  2  J  8  Craque -
+      - ZAG Léo Pereira              OVR 79  Sal   825  G  0  J  3  Craque -
+      - ZAG Guillermo Varela         OVR 79  Sal   613  G  3  J 21  Craque -
+      - ZAG Léo Ortiz                OVR 79  Sal   963  G  0  J  6  Craque -
+      - ZAG Danilo                   OVR 79  Sal   552  G  3  J 19  Craque -
+      - MEI Gerson                   OVR 81  Sal  1685  G  7  J 22  Craque -
+      - MEI Carlos Alcaraz           OVR 80  Sal  2433  G  6  J 24  Craque -
+      - MEI Nicolás De La Cruz       OVR 80  Sal  1136  G  3  J  6  Craque -
+      - MEI Everton Araújo           OVR 80  Sal   603  G  0  J  4  Craque -
+      - MEI Erick Pulgar             OVR 80  Sal   740  G  3  J 15  Craque -
+      - MEI Giorgian De Arrascaeta   OVR 80  Sal   710  G  1  J  5  Craque -
+      - MEI Allan                    OVR 80  Sal  1141  G  2  J 20  Craque -
+      - ATA Juninho                  OVR 89  Sal  1903  G  0  J  1  Craque -
+      - ATA Luiz Araújo              OVR 89  Sal  6193  G  0  J  7  Craque -
+      - ATA Pedro                    OVR 89  Sal  6238  G  0  J  3  Craque *
+      - ATA Bruno Henrique           OVR 89  Sal  4152  G  2  J 10  Craque -
+      - ATA Everton Cebolinha        OVR 89  Sal  3785  G  1  J  4  Craque -
+      - ATA Michael                  OVR 89  Sal  4511  G  4  J 23  Craque -
+      - ATA Matheus Gonçalves        OVR 88  Sal  2485  G  0  J  0  Craque -
+      - ATA Gonzalo Plata            OVR 87  Sal  1938  G  0  J  0  Craque -
+  - Fortaleza | Div final 1 | Pos 4 na Div 1 | Movimento = | Caixa R$ 945,797 mil | Folha R$ 11,000 mil | Torcida 4.8M | Prestigio 82 | Emprestimo R$ 0 mil | Media elenco 71.0
+    Elenco:
+      - GOL Santos                   OVR 77  Sal  1014  G  0  J  7  Craque -
+      - GOL Magrão                   OVR 77  Sal  1027  G  0  J  9  Craque -
+      - GOL João Ricardo             OVR 76  Sal   322  G  0  J  0  Craque *
+      - ZAG Titi                     OVR 66  Sal    92  G  3  J 16  Craque -
+      - ZAG Talocha                  OVR 65  Sal   126  G  2  J 15  Craque -
+      - ZAG Mancuso                  OVR 65  Sal    73  G  1  J  9  Craque -
+      - ZAG Tinga                    OVR 65  Sal   102  G  3  J 10  Craque *
+      - ZAG Bruno Pacheco            OVR 65  Sal   150  G  0  J  4  Craque -
+      - ZAG Emanuel Brítez           OVR 65  Sal    86  G  1  J  3  Craque -
+      - ZAG Kuscevic                 OVR 65  Sal    97  G  0  J  7  Craque -
+      - MEI Pochettino               OVR 69  Sal   336  G  2  J 16  Craque -
+      - MEI Martínez                 OVR 69  Sal   216  G  1  J 16  Craque -
+      - MEI Calebe                   OVR 69  Sal   207  G  1  J 16  Craque -
+      - MEI Lucas Sasha              OVR 68  Sal   136  G  0  J  3  Craque -
+      - MEI Hércules                 OVR 68  Sal   108  G  1  J  2  Craque -
+      - MEI Kervin Andrade           OVR 67  Sal   143  G  0  J  8  Craque -
+      - MEI Zé Welison               OVR 67  Sal   135  G  0  J  3  Craque -
+      - ATA Lucero                   OVR 78  Sal   841  G  2  J 12  Craque *
+      - ATA Yago Pikachu             OVR 78  Sal   754  G  4  J 12  Craque -
+      - ATA Renato Kayzer            OVR 78  Sal   634  G  0  J  0  Craque -
+      - ATA Breno Lopes              OVR 78  Sal  1016  G  0  J  6  Craque -
+      - ATA Pedro Rocha              OVR 78  Sal   995  G  0  J  2  Craque -
+      - ATA Moisés                   OVR 77  Sal   469  G  0  J  0  Craque -
+      - ATA Marinho                  OVR 76  Sal   424  G  0  J  0  Craque -
+      - ATA Allanzinho               OVR 69  Sal    93  G  0  J  0  Craque -
+  - Cruzeiro | Div final 1 | Pos 5 na Div 1 | Movimento = | Caixa R$ 1,026,830 mil | Folha R$ 13,000 mil | Torcida 11.2M | Prestigio 90 | Emprestimo R$ 0 mil | Media elenco 69.7
+    Elenco:
+      - GOL Léo Aragão               OVR 78  Sal   480  G  0  J  4  Craque -
+      - GOL Anderson                 OVR 78  Sal   621  G  0  J  5  Craque -
+      - GOL Cássio                   OVR 78  Sal   886  G  0  J  7  Craque *
+      - ZAG William                  OVR 65  Sal   105  G  3  J 15  Craque *
+      - ZAG Lucas Villalba           OVR 65  Sal    86  G  2  J 16  Craque -
+      - ZAG Jonathan Jesus           OVR 64  Sal   112  G  0  J 11  Craque -
+      - ZAG Fagner                   OVR 64  Sal    98  G  0  J 10  Craque -
+      - ZAG Kaiki                    OVR 64  Sal    81  G  1  J  3  Craque -
+      - ZAG Fabrício Bruno           OVR 64  Sal   149  G  2  J  9  Craque -
+      - ZAG Marlon                   OVR 64  Sal    38  G  0  J  0  Craque -
+      - MEI Matheus Pereira          OVR 65  Sal    75  G  1  J 16  Craque -
+      - MEI Eduardo                  OVR 65  Sal   104  G  0  J  9  Craque -
+      - MEI Matheus Henrique         OVR 65  Sal   124  G  1  J 11  Craque -
+      - MEI Japa                     OVR 65  Sal   150  G  1  J 13  Craque -
+      - MEI Christian                OVR 65  Sal    94  G  1  J 11  Craque -
+      - MEI Lucas Romero             OVR 65  Sal    76  G  1  J  4  Craque -
+      - MEI Walace                   OVR 64  Sal    66  G  0  J  0  Craque -
+      - ATA Marquinhos               OVR 76  Sal  1025  G  2  J 14  Craque -
+      - ATA Lautaro Díaz             OVR 76  Sal   782  G  2  J  9  Craque -
+      - ATA Wanderson                OVR 76  Sal   616  G  2  J  5  Craque -
+      - ATA Kaio Jorge               OVR 76  Sal   238  G  1  J  4  Craque *
+      - ATA Dudu                     OVR 75  Sal   410  G  0  J  0  Craque -
+      - ATA Gabriel Veron            OVR 75  Sal   154  G  0  J  0  Craque -
+      - ATA Yannick Bolasie          OVR 75  Sal   184  G  0  J  0  Craque -
+      - ATA Rafa Silva               OVR 74  Sal   434  G  0  J  0  Craque -
+  - Palmeiras | Div final 1 | Pos 6 na Div 1 | Movimento = | Caixa R$ 2,000,831 mil | Folha R$ 24,000 mil | Torcida 17.1M | Prestigio 98 | Emprestimo R$ 0 mil | Media elenco 83.4
+    Elenco:
+      - GOL Marcelo Lomba            OVR 89  Sal  6972  G  0  J  9  Craque -
+      - GOL Weverton                 OVR 89  Sal  5658  G  0  J  9  Craque *
+      - GOL Mateus Oliveira          OVR 88  Sal  2892  G  0  J  0  Craque -
+      - ZAG Agustín Giay             OVR 85  Sal  3371  G  2  J 18  Craque *
+      - ZAG Joaquín Piquerez         OVR 79  Sal  1136  G  2  J 16  Craque -
+      - ZAG Naves                    OVR 79  Sal   634  G  2  J  5  Craque -
+      - ZAG Murilo                   OVR 79  Sal  1005  G  1  J 13  Craque -
+      - ZAG Gustavo Gómez            OVR 79  Sal   881  G  0  J  6  Craque -
+      - ZAG Marcos Rocha             OVR 79  Sal   559  G  1  J  3  Craque -
+      - ZAG Mayke                    OVR 79  Sal   834  G  0  J 11  Craque -
+      - MEI Aníbal Moreno            OVR 77  Sal  1186  G  0  J  3  Craque -
+      - MEI Maurício                 OVR 77  Sal   849  G  1  J  4  Craque -
+      - MEI Raphael Veiga            OVR 77  Sal   611  G  1  J  5  Craque -
+      - MEI Felipe Anderson          OVR 77  Sal   705  G  1  J 17  Craque -
+      - MEI Fabinho                  OVR 77  Sal   628  G  2  J 17  Craque -
+      - MEI Emiliano Martínez        OVR 77  Sal   948  G  2  J 13  Craque -
+      - MEI Richard Ríos             OVR 77  Sal   709  G  1  J 13  Craque -
+      - ATA Luighi                   OVR 92  Sal  6276  G  0  J  1  Craque -
+      - ATA Bruno Rodrigues          OVR 92  Sal  6693  G  0  J  5  Craque -
+      - ATA Facundo Torres           OVR 92  Sal  6307  G  2  J 11  Craque -
+      - ATA Paulinho                 OVR 92  Sal  6999  G  1  J  8  Craque -
+      - ATA Estêvão                  OVR 92  Sal  6127  G  4  J 11  Craque *
+      - ATA Flaco López              OVR 91  Sal  4501  G  0  J  0  Craque -
+      - ATA Vitor Roque              OVR 88  Sal  2179  G  0  J  0  Craque -
+      - ATA Rony                     OVR 86  Sal  3391  G  0  J  0  Craque -
+  - RB Bragantino | Div final 2 | Pos 7 na Div 1 | Movimento REBAIXADO | Caixa R$ 776,139 mil | Folha R$ 9,500 mil | Torcida 1.7M | Prestigio 77 | Emprestimo R$ 0 mil | Media elenco 66.9
+    Elenco:
+      - GOL Lucão                    OVR 76  Sal   928  G  1  J 15  Craque -
+      - GOL Matheus Nogueira         OVR 76  Sal   435  G  0  J  5  Craque -
+      - GOL Cleiton                  OVR 75  Sal   179  G  0  J  0  Craque *
+      - ZAG Juninho Capixaba         OVR 61  Sal    39  G  5  J 20  Craque -
+      - ZAG Luan Cândido             OVR 60  Sal    66  G  1  J  8  Craque -
+      - ZAG Nathan Mendes            OVR 60  Sal    66  G  0  J  8  Craque -
+      - ZAG Andrés Hurtado           OVR 60  Sal    59  G  1  J 10  Craque *
+      - ZAG Pedro Henrique           OVR 60  Sal    33  G  1  J 10  Craque -
+      - ZAG Guzmán Rodríguez         OVR 60  Sal    39  G  0  J  6  Craque -
+      - ZAG Natan                    OVR 60  Sal    37  G  3  J 18  Craque -
+      - MEI Eric Ramires             OVR 63  Sal    84  G  3  J 19  Craque -
+      - MEI Jadsom                   OVR 63  Sal    75  G  2  J 20  Craque -
+      - MEI Jhon Jhon                OVR 63  Sal   135  G  1  J 20  Craque -
+      - MEI Gustavinho               OVR 63  Sal    43  G  0  J  2  Craque -
+      - MEI Raul                     OVR 63  Sal    50  G  0  J 12  Craque -
+      - MEI Lucas Evangelista        OVR 62  Sal    32  G  0  J  2  Craque -
+      - MEI Matheus Fernandes        OVR 62  Sal    44  G  1  J  5  Craque -
+      - ATA Henry Mosquera           OVR 73  Sal   268  G  2  J  7  Craque -
+      - ATA Thiago Borbas            OVR 73  Sal   238  G  0  J 13  Craque *
+      - ATA Ignacio Laquintana       OVR 73  Sal   352  G  0  J  0  Craque -
+      - ATA Talisson                 OVR 73  Sal   286  G  3  J 13  Craque -
+      - ATA Eduardo Sasha            OVR 73  Sal   441  G  0  J  7  Craque -
+      - ATA Vitinho                  OVR 73  Sal   359  G  0  J  0  Craque -
+      - ATA Helinho                  OVR 73  Sal   226  G  0  J  0  Craque -
+      - ATA Lincoln                  OVR 72  Sal   341  G  0  J  0  Craque -
+  - Santos | Div final 2 | Pos 8 na Div 1 | Movimento REBAIXADO | Caixa R$ 963,535 mil | Folha R$ 7,000 mil | Torcida 12.9M | Prestigio 72 | Emprestimo R$ 0 mil | Media elenco 59.9
+    Elenco:
+      - GOL Gabriel Brazão           OVR 67  Sal    97  G  0  J 17  Craque *
+      - GOL João Paulo               OVR 67  Sal    73  G  0  J  5  Craque -
+      - GOL Diógenes                 OVR 66  Sal    94  G  0  J  0  Craque -
+      - ZAG Kevyson                  OVR 58  Sal    55  G  4  J 22  Craque -
+      - ZAG Escobar                  OVR 57  Sal    65  G  1  J 14  Craque -
+      - ZAG Aderlan                  OVR 57  Sal    30  G  2  J 22  Craque *
+      - ZAG Gil                      OVR 57  Sal    40  G  0  J 16  Craque -
+      - ZAG Joaquim                  OVR 57  Sal    38  G  0  J  2  Craque -
+      - ZAG JP Chermont              OVR 57  Sal    68  G  2  J 12  Craque -
+      - ZAG Zé Ivaldo                OVR 56  Sal    49  G  0  J  0  Craque -
+      - MEI João Schmidt             OVR 55  Sal    30  G  4  J 22  Craque -
+      - MEI Giuliano                 OVR 55  Sal    68  G  2  J 21  Craque -
+      - MEI Cazares                  OVR 55  Sal    60  G  2  J  7  Craque -
+      - MEI Tomás Rincón             OVR 55  Sal    42  G  0  J  9  Craque -
+      - MEI Otero                    OVR 54  Sal    49  G  2  J  6  Craque -
+      - MEI Miguelito                OVR 54  Sal    32  G  3  J 17  Craque -
+      - MEI Diego Pituca             OVR 54  Sal    48  G  0  J  6  Craque -
+      - ATA Morelos                  OVR 65  Sal    87  G  1  J  3  Craque -
+      - ATA Pedrinho                 OVR 65  Sal    89  G  2  J  7  Craque -
+      - ATA Wendel Silva             OVR 65  Sal   148  G  0  J  6  Craque -
+      - ATA Julio Furch              OVR 65  Sal   124  G  2  J 19  Craque -
+      - ATA Guilherme                OVR 65  Sal   140  G  2  J  9  Craque *
+      - ATA Lucas Braga              OVR 65  Sal    98  G  0  J  0  Craque -
+      - ATA Willian Bigode           OVR 64  Sal    58  G  0  J  0  Craque -
+      - ATA Enzo Monteiro            OVR 63  Sal    60  G  0  J  0  Craque -
+
+#### Divisao 2
+  - Bahia | Div final 1 | Pos 1 na Div 2 | Movimento PROMOVIDO | Caixa R$ 593,168 mil | Folha R$ 8,500 mil | Torcida 3.6M | Prestigio 82 | Emprestimo R$ 0 mil | Media elenco 66.5
+    Elenco:
+      - GOL Marcos Felipe            OVR 72  Sal   434  G  0  J 12  Craque *
+      - GOL Danilo Fernandes         OVR 72  Sal   307  G  0  J  4  Craque -
+      - GOL Adriel                   OVR 71  Sal   230  G  0  J  0  Craque -
+      - ZAG Kanu                     OVR 62  Sal    34  G  0  J 16  Craque -
+      - ZAG David Duarte             OVR 62  Sal    34  G  2  J 16  Craque -
+      - ZAG Gabriel Xavier           OVR 62  Sal    32  G  2  J 16  Craque -
+      - ZAG Luciano Juba             OVR 62  Sal    64  G  2  J  9  Craque -
+      - ZAG Gilberto                 OVR 61  Sal    48  G  0  J  3  Craque *
+      - ZAG Arias                    OVR 61  Sal    61  G  0  J  1  Craque -
+      - ZAG Iago Borduchi            OVR 61  Sal    40  G  0  J  3  Craque -
+      - MEI Erick                    OVR 64  Sal   149  G  0  J 16  Craque -
+      - MEI Cauly                    OVR 64  Sal    96  G  4  J 16  Craque -
+      - MEI Nicolás Acevedo          OVR 63  Sal    82  G  3  J 15  Craque -
+      - MEI Jean Lucas               OVR 63  Sal   105  G  2  J 15  Craque -
+      - MEI Everton Ribeiro          OVR 63  Sal    41  G  0  J  2  Craque -
+      - MEI Caio Alexandre           OVR 62  Sal    42  G  0  J  0  Craque -
+      - MEI Rezende                  OVR 62  Sal    50  G  0  J  0  Craque -
+      - ATA Ademir                   OVR 72  Sal   363  G  0  J  0  Craque -
+      - ATA Everaldo                 OVR 72  Sal   362  G  3  J 11  Craque *
+      - ATA Willian José             OVR 72  Sal   178  G  1  J  2  Craque -
+      - ATA Biel                     OVR 72  Sal   223  G  2  J  8  Craque -
+      - ATA Lucho Rodríguez          OVR 72  Sal   368  G  3  J  7  Craque -
+      - ATA Kayky                    OVR 72  Sal   235  G  0  J  4  Craque -
+      - ATA Tiago                    OVR 72  Sal   397  G  0  J  0  Craque -
+      - ATA Rafael Ratão             OVR 70  Sal   125  G  0  J  0  Craque -
+  - Fluminense | Div final 1 | Pos 2 na Div 2 | Movimento PROMOVIDO | Caixa R$ 1,230,836 mil | Folha R$ 16,000 mil | Torcida 11.0M | Prestigio 85 | Emprestimo R$ 0 mil | Media elenco 77.1
+    Elenco:
+      - GOL Fábio                    OVR 84  Sal  3379  G  0  J  4  Craque *
+      - GOL Vitor Eudes              OVR 84  Sal  2379  G  0  J  6  Craque -
+      - GOL Pedro Rangel             OVR 84  Sal  2222  G  0  J  6  Craque -
+      - ZAG Thiago Silva             OVR 75  Sal   908  G  3  J 16  Craque -
+      - ZAG Guga                     OVR 74  Sal   356  G  1  J 11  Craque -
+      - ZAG Renê                     OVR 74  Sal   430  G  0  J  6  Craque -
+      - ZAG Samuel Xavier            OVR 74  Sal   214  G  2  J  8  Craque *
+      - ZAG Fretes                   OVR 74  Sal   260  G  1  J 14  Craque -
+      - ZAG Manoel                   OVR 74  Sal   371  G  0  J  9  Craque -
+      - ZAG Thiago Santos            OVR 74  Sal   247  G  0  J  0  Craque -
+      - MEI Lima                     OVR 73  Sal   180  G  2  J 16  Craque -
+      - MEI Jhon Arias               OVR 72  Sal   394  G  0  J  4  Craque -
+      - MEI Martinelli               OVR 72  Sal   363  G  0  J  3  Craque -
+      - MEI Ganso                    OVR 72  Sal   209  G  0  J  3  Craque -
+      - MEI Kevin Serna              OVR 72  Sal   410  G  0  J 16  Craque -
+      - MEI Nonato                   OVR 72  Sal   259  G  2  J 10  Craque -
+      - MEI Otávio                   OVR 72  Sal   272  G  4  J 12  Craque -
+      - ATA Germán Cano              OVR 82  Sal  2407  G  6  J 16  Craque *
+      - ATA Keno                     OVR 81  Sal   567  G  2  J  3  Craque -
+      - ATA Marquinhos               OVR 81  Sal   912  G  0  J  0  Craque -
+      - ATA Everaldo                 OVR 81  Sal   845  G  2  J  7  Craque -
+      - ATA Lelê                     OVR 81  Sal  1067  G  3  J  6  Craque -
+      - ATA Agustín Canobbio         OVR 81  Sal  1079  G  0  J  0  Craque -
+      - ATA Isaac                    OVR 81  Sal   468  G  0  J  0  Craque -
+      - ATA Riquelme                 OVR 77  Sal   683  G  0  J  0  Craque -
+  - Corinthians | Div final 2 | Pos 3 na Div 2 | Movimento = | Caixa R$ 1,579,550 mil | Folha R$ 19,000 mil | Torcida 30.5M | Prestigio 93 | Emprestimo R$ 0 mil | Media elenco 76.6
+    Elenco:
+      - GOL Matheus Donelli          OVR 84  Sal  2677  G  0  J  5  Craque -
+      - GOL Hugo Souza               OVR 84  Sal  1402  G  0  J 18  Craque *
+      - GOL Felipe Longo             OVR 83  Sal  1992  G  0  J  1  Craque -
+      - ZAG Gustavo Henrique         OVR 72  Sal   382  G  1  J 24  Craque -
+      - ZAG Bidu                     OVR 72  Sal   358  G  1  J  7  Craque -
+      - ZAG Hugo                     OVR 72  Sal   404  G  0  J  2  Craque -
+      - ZAG Léo Maná                 OVR 72  Sal   209  G  2  J 13  Craque -
+      - ZAG Matheuzinho              OVR 72  Sal   381  G  1  J 21  Craque *
+      - ZAG Cacá                     OVR 72  Sal   229  G  2  J 14  Craque -
+      - ZAG Félix Torres             OVR 72  Sal   214  G  2  J 15  Craque -
+      - MEI André Carrillo           OVR 72  Sal   209  G  3  J 19  Craque -
+      - MEI Maycon                   OVR 72  Sal   323  G  1  J  6  Craque -
+      - MEI Charles                  OVR 72  Sal   166  G  0  J  5  Craque -
+      - MEI Breno Bidon              OVR 72  Sal   436  G  2  J 10  Craque -
+      - MEI Rodrigo Garro            OVR 72  Sal   245  G  4  J 22  Craque -
+      - MEI Alex Santana             OVR 72  Sal   151  G  7  J 22  Craque -
+      - MEI Raniele                  OVR 72  Sal   185  G  3  J 12  Craque -
+      - ATA Wesley                   OVR 82  Sal  1296  G  0  J  7  Craque -
+      - ATA Memphis Depay            OVR 82  Sal  2153  G  2  J 14  Craque -
+      - ATA Kayke                    OVR 82  Sal   834  G  0  J  0  Craque -
+      - ATA Talles Magno             OVR 82  Sal  1183  G  1  J  5  Craque -
+      - ATA Giovane                  OVR 82  Sal  2815  G  5  J 15  Craque -
+      - ATA Pedro Raul               OVR 82  Sal   864  G  2  J  5  Craque -
+      - ATA Ángel Romero             OVR 82  Sal   855  G  0  J  2  Craque -
+      - ATA Yuri Alberto             OVR 82  Sal   499  G  0  J  0  Craque *
+  - Grêmio | Div final 2 | Pos 4 na Div 2 | Movimento = | Caixa R$ 1,400,826 mil | Folha R$ 13,000 mil | Torcida 9.6M | Prestigio 82 | Emprestimo R$ 0 mil | Media elenco 77.1
+    Elenco:
+      - GOL Caíque                   OVR 85  Sal  2482  G  0  J  6  Craque -
+      - GOL Gabriel Grando           OVR 85  Sal  2884  G  0  J  0  Craque -
+      - GOL Agustín Marchesín        OVR 85  Sal  3196  G  0  J 12  Craque *
+      - ZAG Mayk                     OVR 73  Sal   326  G  2  J 18  Craque -
+      - ZAG Reinaldo                 OVR 72  Sal   329  G  1  J 18  Craque -
+      - ZAG Fábio                    OVR 72  Sal   310  G  1  J  6  Craque -
+      - ZAG Rodrigo Ely              OVR 72  Sal   401  G  0  J  5  Craque -
+      - ZAG Jemerson                 OVR 72  Sal   386  G  1  J 10  Craque -
+      - ZAG João Pedro               OVR 72  Sal   263  G  5  J 15  Craque *
+      - ZAG Kannemann                OVR 71  Sal   388  G  0  J  0  Craque -
+      - MEI Nathan                   OVR 73  Sal   319  G  0  J  0  Craque -
+      - MEI Mathías Villasanti       OVR 73  Sal   360  G  1  J  8  Craque -
+      - MEI Dodi                     OVR 73  Sal   407  G  3  J 10  Craque -
+      - MEI Pepê                     OVR 73  Sal   291  G  1  J 13  Craque -
+      - MEI Franco Cristaldo         OVR 72  Sal   225  G  1  J 10  Craque -
+      - MEI Miguel Monsalve          OVR 72  Sal   178  G  3  J 18  Craque -
+      - MEI Edenilson                OVR 72  Sal   172  G  1  J 13  Craque -
+      - ATA Cristian Olivera         OVR 83  Sal  1347  G  1  J 14  Craque -
+      - ATA André Henrique           OVR 83  Sal  1809  G  1  J 10  Craque -
+      - ATA Alysson                  OVR 83  Sal  2105  G  1  J  6  Craque -
+      - ATA Aravena                  OVR 83  Sal  2704  G  0  J  0  Craque -
+      - ATA Matias Arezo             OVR 83  Sal  2455  G  3  J  6  Craque -
+      - ATA Martin Braithwaite       OVR 83  Sal  1563  G  0  J  0  Craque *
+      - ATA Pavon                    OVR 83  Sal  1673  G  0  J  0  Craque -
+      - ATA Soteldo                  OVR 80  Sal   743  G  0  J  0  Craque -
+  - Vasco da Gama | Div final 2 | Pos 5 na Div 2 | Movimento = | Caixa R$ 985,796 mil | Folha R$ 9,000 mil | Torcida 11.0M | Prestigio 81 | Emprestimo R$ 0 mil | Media elenco 66.2
+    Elenco:
+      - GOL Keiller                  OVR 73  Sal   327  G  1  J 15  Craque -
+      - GOL Léo Jardim               OVR 73  Sal   385  G  0  J  3  Craque *
+      - GOL Pablo                    OVR 72  Sal   151  G  0  J  0  Craque -
+      - ZAG Puma Rodríguez           OVR 62  Sal   106  G  1  J 18  Craque -
+      - ZAG Lucas Piton              OVR 62  Sal    67  G  1  J 18  Craque -
+      - ZAG Victor Luís              OVR 61  Sal    64  G  1  J 15  Craque -
+      - ZAG Maicon                   OVR 61  Sal    65  G  0  J  2  Craque -
+      - ZAG Paulo Henrique           OVR 61  Sal    60  G  1  J  6  Craque *
+      - ZAG João Victor              OVR 61  Sal    41  G  1  J  9  Craque -
+      - ZAG Lucas Oliveira           OVR 61  Sal    69  G  1  J  4  Craque -
+      - MEI Dimitri Payet            OVR 60  Sal    41  G  4  J 18  Craque -
+      - MEI Paulinho                 OVR 60  Sal    44  G  2  J 17  Craque -
+      - MEI Philippe Coutinho        OVR 59  Sal    35  G  0  J  1  Craque -
+      - MEI Tchê Tchê                OVR 59  Sal    64  G  2  J 10  Craque -
+      - MEI Jair                     OVR 59  Sal    49  G  1  J 14  Craque -
+      - MEI Juan Sforza              OVR 59  Sal    57  G  1  J 12  Craque -
+      - MEI Hugo Moura               OVR 59  Sal    42  G  0  J  0  Craque -
+      - ATA David                    OVR 75  Sal   303  G  1  J  4  Craque -
+      - ATA Rayan                    OVR 75  Sal   321  G  4  J 10  Craque -
+      - ATA Rossi                    OVR 75  Sal   325  G  1  J  6  Craque -
+      - ATA Alex Teixeira            OVR 75  Sal   401  G  1  J  6  Craque -
+      - ATA Pablo Vegetti            OVR 75  Sal   189  G  3  J 10  Craque *
+      - ATA GB                       OVR 74  Sal   253  G  0  J  0  Craque -
+      - ATA Adson                    OVR 73  Sal   322  G  0  J  0  Craque -
+      - ATA Jean David               OVR 68  Sal   115  G  0  J  0  Craque -
+  - Atlético Mineiro | Div final 2 | Pos 6 na Div 2 | Movimento = | Caixa R$ 1,962,262 mil | Folha R$ 20,000 mil | Torcida 14.1M | Prestigio 94 | Emprestimo R$ 0 mil | Media elenco 79.3
+    Elenco:
+      - GOL Gabriel Delfim           OVR 86  Sal  1494  G  1  J 18  Craque -
+      - GOL Everson                  OVR 85  Sal  2462  G  0  J  0  Craque *
+      - GOL Matheus Mendes           OVR 85  Sal  2689  G  0  J  0  Craque -
+      - ZAG Igor Rabello             OVR 77  Sal  1155  G  2  J 18  Craque -
+      - ZAG Guilherme Arana          OVR 77  Sal   642  G  3  J 18  Craque -
+      - ZAG Rubens                   OVR 76  Sal   315  G  0  J  1  Craque -
+      - ZAG Saravia                  OVR 76  Sal   266  G  0  J  3  Craque *
+      - ZAG Bruno Fuchs              OVR 76  Sal  1086  G  0  J 14  Craque -
+      - ZAG Júnior Alonso            OVR 76  Sal   876  G  1  J 16  Craque -
+      - ZAG Lyanco                   OVR 76  Sal   409  G  1  J  2  Craque -
+      - MEI Bernard                  OVR 73  Sal   425  G  0  J  7  Craque -
+      - MEI Igor Gomes               OVR 73  Sal   421  G  0  J 17  Craque -
+      - MEI Gustavo Scarpa           OVR 73  Sal   216  G  6  J 13  Craque -
+      - MEI Alan Franco              OVR 73  Sal   448  G  1  J  3  Craque -
+      - MEI Fausto Vera              OVR 73  Sal   381  G  2  J 10  Craque -
+      - MEI Otávio                   OVR 73  Sal   408  G  1  J 17  Craque -
+      - MEI Patrick                  OVR 73  Sal   281  G  0  J  5  Craque -
+      - ATA Deyverson                OVR 86  Sal  2737  G  3  J 12  Craque -
+      - ATA Alisson                  OVR 86  Sal  1647  G  0  J 11  Craque -
+      - ATA Hulk                     OVR 86  Sal  2468  G  3  J 13  Craque *
+      - ATA Cadu                     OVR 86  Sal  3500  G  0  J  0  Craque -
+      - ATA Rony                     OVR 86  Sal  3205  G  0  J  0  Craque -
+      - ATA Cristian Pavón           OVR 85  Sal  2103  G  0  J  0  Craque -
+      - ATA Tomás Cuello             OVR 85  Sal  1991  G  0  J  0  Craque -
+      - ATA Eduardo Vargas           OVR 82  Sal   651  G  0  J  0  Craque -
+  - Internacional | Div final 3 | Pos 7 na Div 2 | Movimento REBAIXADO | Caixa R$ 1,178,118 mil | Folha R$ 14,000 mil | Torcida 7.2M | Prestigio 79 | Emprestimo R$ 0 mil | Media elenco 74.2
+    Elenco:
+      - GOL Ivan                     OVR 83  Sal  3417  G  0  J  3  Craque -
+      - GOL Anthoni                  OVR 83  Sal  1484  G  0  J 13  Craque -
+      - GOL Sergio Rochet            OVR 83  Sal  2354  G  0  J  0  Craque *
+      - ZAG Braian Aguirre           OVR 70  Sal   197  G  2  J 15  Craque -
+      - ZAG Gabriel Mercado          OVR 68  Sal   150  G  0  J 16  Craque -
+      - ZAG Juninho                  OVR 68  Sal   125  G  0  J  7  Craque -
+      - ZAG Bustos                   OVR 68  Sal    83  G  2  J 10  Craque *
+      - ZAG Agustín Rogel            OVR 68  Sal    93  G  0  J  1  Craque -
+      - ZAG Alexandro Bernabei       OVR 68  Sal   136  G  1  J  7  Craque -
+      - ZAG Vitão                    OVR 68  Sal    85  G  3  J  8  Craque -
+      - MEI Rômulo                   OVR 71  Sal   237  G  4  J 16  Craque -
+      - MEI Fernando                 OVR 70  Sal   390  G  0  J 16  Craque -
+      - MEI Gabriel Tabata           OVR 69  Sal   251  G  2  J 11  Craque -
+      - MEI Thiago Maia              OVR 69  Sal    78  G  1  J  8  Craque -
+      - MEI Bruno Gomes              OVR 69  Sal   138  G  1  J  5  Craque -
+      - MEI Alan Patrick             OVR 69  Sal   143  G  0  J  4  Craque -
+      - MEI Bruno Henrique           OVR 69  Sal   139  G  1  J  4  Craque -
+      - ATA Lucca                    OVR 81  Sal  1038  G  3  J  7  Craque -
+      - ATA Vitinho                  OVR 81  Sal  3298  G  1  J 16  Craque -
+      - ATA Lucas Alario             OVR 81  Sal   668  G  0  J  5  Craque -
+      - ATA Rafael Borré             OVR 81  Sal   461  G  0  J  4  Craque *
+      - ATA Wesley                   OVR 81  Sal   715  G  0  J  0  Craque -
+      - ATA Ricardo Mathias          OVR 80  Sal   924  G  0  J  0  Craque -
+      - ATA Enner Valencia           OVR 80  Sal   483  G  0  J  0  Craque -
+      - ATA Gustavo Prado            OVR 77  Sal   339  G  0  J  0  Craque -
+  - Atlético Goianiense | Div final 3 | Pos 8 na Div 2 | Movimento REBAIXADO | Caixa R$ 301,670 mil | Folha R$ 4,500 mil | Torcida 1.8M | Prestigio 62 | Emprestimo R$ 0 mil | Media elenco 49.6
+    Elenco:
+      - GOL Pedro Paulo              OVR 58  Sal    51  G  0  J  1  Craque -
+      - GOL Ronaldo                  OVR 58  Sal    45  G  0  J  4  Craque *
+      - GOL Luan Polli               OVR 58  Sal    32  G  0  J 13  Craque -
+      - ZAG Bruno Tubarão            OVR 49  Sal    62  G  2  J 18  Craque *
+      - ZAG Guilherme Romão          OVR 46  Sal    60  G  1  J 17  Craque -
+      - ZAG Alix Vinicius            OVR 45  Sal    44  G  1  J 18  Craque -
+      - ZAG Lucas Gazal              OVR 44  Sal    50  G  0  J  6  Craque -
+      - ZAG Maguinho                 OVR 44  Sal    59  G  0  J  0  Craque -
+      - ZAG Rhaldney                 OVR 44  Sal    37  G  1  J 13  Craque -
+      - ZAG Luiz Felipe              OVR 43  Sal    43  G  0  J  0  Craque -
+      - MEI Roni                     OVR 51  Sal    51  G  3  J 18  Craque -
+      - MEI Campanharo               OVR 44  Sal    52  G  2  J 12  Craque -
+      - MEI Léo Pereira              OVR 44  Sal    56  G  2  J 16  Craque -
+      - MEI Shaylon                  OVR 44  Sal    64  G  0  J 16  Craque -
+      - MEI Jorginho                 OVR 44  Sal    53  G  1  J  9  Craque -
+      - MEI Baralhas                 OVR 44  Sal    54  G  0  J  1  Craque -
+      - MEI Emiliano Rodríguez       OVR 44  Sal    41  G  0  J  0  Craque -
+      - ATA Luiz Fernando            OVR 56  Sal    69  G  2  J 16  Craque *
+      - ATA Danielzinho              OVR 56  Sal    30  G  0  J  3  Craque -
+      - ATA Alejo Cruz               OVR 56  Sal    45  G  1  J  5  Craque -
+      - ATA Hyuri                    OVR 56  Sal    58  G  0  J 12  Craque -
+      - ATA Janderson                OVR 56  Sal    56  G  0  J  0  Craque -
+      - ATA Derek                    OVR 54  Sal    54  G  0  J  0  Craque -
+      - ATA Gustavo Coutinho         OVR 51  Sal    40  G  0  J  0  Craque -
+      - ATA Yony González            OVR 48  Sal    58  G  0  J  0  Craque -
+
+#### Divisao 3
+  - Athletico Paranaense | Div final 2 | Pos 1 na Div 3 | Movimento PROMOVIDO | Caixa R$ 578,046 mil | Folha R$ 9,000 mil | Torcida 6.1M | Prestigio 81 | Emprestimo R$ 0 mil | Media elenco 62.5
+    Elenco:
+      - GOL Léo Linck                OVR 66  Sal   146  G  0  J  6  Craque -
+      - GOL Santos                   OVR 66  Sal   136  G  0  J 11  Craque -
+      - GOL Mycael                   OVR 66  Sal   100  G  0  J  3  Craque *
+      - ZAG Kaique Rocha             OVR 58  Sal    66  G  2  J 20  Craque -
+      - ZAG Lucas Esquivel           OVR 58  Sal    39  G  1  J 20  Craque -
+      - ZAG Madson                   OVR 58  Sal    65  G  0  J  1  Craque -
+      - ZAG Belezi                   OVR 58  Sal    67  G  0  J  6  Craque -
+      - ZAG Fernando                 OVR 57  Sal    47  G  1  J 18  Craque -
+      - ZAG Matheus Felipe           OVR 57  Sal    39  G  0  J  0  Craque -
+      - ZAG Léo Godoy                OVR 57  Sal    65  G  1  J 15  Craque *
+      - MEI Erick                    OVR 60  Sal    36  G  2  J 20  Craque -
+      - MEI Bruno Zapelli            OVR 59  Sal    52  G  4  J 16  Craque -
+      - MEI Felipinho                OVR 59  Sal    56  G  1  J  3  Craque -
+      - MEI Alex Santana             OVR 59  Sal    60  G  3  J  9  Craque -
+      - MEI Canobbio                 OVR 59  Sal    35  G  3  J  8  Craque -
+      - MEI Christian                OVR 59  Sal    54  G  2  J  8  Craque -
+      - MEI Giuliano                 OVR 59  Sal    53  G  3  J 16  Craque -
+      - ATA Mastriani                OVR 69  Sal    80  G  0  J  4  Craque -
+      - ATA Julimar                  OVR 69  Sal   148  G  0  J  1  Craque -
+      - ATA Pablo                    OVR 69  Sal   123  G  2  J 14  Craque *
+      - ATA Rômulo                   OVR 69  Sal   142  G  0  J  7  Craque -
+      - ATA Emersonn                 OVR 69  Sal   111  G  2  J  6  Craque -
+      - ATA Isaac                    OVR 69  Sal   130  G  0  J  3  Craque -
+      - ATA Cuello                   OVR 69  Sal   148  G  0  J  5  Craque -
+      - ATA Di Yorio                 OVR 67  Sal   134  G  0  J  0  Craque -
+  - Cuiabá | Div final 2 | Pos 2 na Div 3 | Movimento PROMOVIDO | Caixa R$ 287,130 mil | Folha R$ 5,000 mil | Torcida 1.4M | Prestigio 64 | Emprestimo R$ 0 mil | Media elenco 52.7
+    Elenco:
+      - GOL Mateus Pasinato          OVR 61  Sal    54  G  0  J 11  Craque -
+      - GOL Walter                   OVR 61  Sal    33  G  0  J  0  Craque *
+      - GOL João Carlos              OVR 61  Sal    40  G  0  J  7  Craque -
+      - ZAG Matheus Alexandre        OVR 54  Sal    64  G  2  J 17  Craque *
+      - ZAG Marllon                  OVR 50  Sal    44  G  3  J 18  Craque -
+      - ZAG Sander                   OVR 48  Sal    70  G  4  J 18  Craque -
+      - ZAG Bruno Alves              OVR 47  Sal    31  G  0  J 13  Craque -
+      - ZAG Railan                   OVR 47  Sal    37  G  0  J  4  Craque -
+      - ZAG Ramon                    OVR 47  Sal    42  G  0  J  2  Craque -
+      - ZAG Alan Empereur            OVR 47  Sal    36  G  0  J  0  Craque -
+      - MEI Denilson                 OVR 53  Sal    41  G  3  J 18  Craque -
+      - MEI Lucas Mineiro            OVR 49  Sal    44  G  2  J 18  Craque -
+      - MEI Max                      OVR 47  Sal    54  G  0  J  6  Craque -
+      - MEI Clayson                  OVR 47  Sal    61  G  0  J  0  Craque -
+      - MEI Fernando Sobral          OVR 47  Sal    52  G  4  J 10  Craque -
+      - MEI Ronald                   OVR 47  Sal    54  G  3  J  4  Craque -
+      - MEI Filipe Augusto           OVR 47  Sal    41  G  2  J 16  Craque -
+      - ATA Eliel                    OVR 58  Sal    51  G  0  J  8  Craque -
+      - ATA Deyverson                OVR 58  Sal    49  G  6  J 16  Craque -
+      - ATA André Luís               OVR 58  Sal    56  G  1  J 10  Craque -
+      - ATA Jonathan Cafu            OVR 58  Sal    66  G  0  J  2  Craque -
+      - ATA Wellington Silva         OVR 58  Sal    46  G  0  J  0  Craque -
+      - ATA Isidro Pitta             OVR 58  Sal    42  G  0  J  0  Craque *
+      - ATA Derik Lacerda            OVR 58  Sal    51  G  0  J  0  Craque -
+      - ATA Alisson Safira           OVR 54  Sal    35  G  0  J  0  Craque -
+  - Vitória | Div final 3 | Pos 3 na Div 3 | Movimento = | Caixa R$ 431,676 mil | Folha R$ 5,000 mil | Torcida 3.7M | Prestigio 67 | Emprestimo R$ 0 mil | Media elenco 51.0
+    Elenco:
+      - GOL Lucas Arcanjo            OVR 57  Sal    47  G  0  J  4  Craque *
+      - GOL Muriel                   OVR 57  Sal    69  G  1  J 18  Craque -
+      - GOL Dalton                   OVR 57  Sal    57  G  0  J  0  Craque -
+      - ZAG Raul Cáceres             OVR 46  Sal    53  G  2  J 22  Craque *
+      - ZAG Zeca                     OVR 46  Sal    69  G  1  J 14  Craque -
+      - ZAG Patric Calmon            OVR 46  Sal    32  G  1  J 16  Craque -
+      - ZAG Wagner Leonardo          OVR 46  Sal    44  G  0  J  7  Craque -
+      - ZAG PK                       OVR 46  Sal    40  G  3  J 22  Craque -
+      - ZAG Neris                    OVR 45  Sal    34  G  1  J  7  Craque -
+      - ZAG Camutanga                OVR 45  Sal    69  G  0  J  0  Craque -
+      - MEI Léo Naldi                OVR 49  Sal    37  G  2  J 21  Craque -
+      - MEI Jean Mota                OVR 48  Sal    65  G  5  J 21  Craque -
+      - MEI Caio Vinícius            OVR 47  Sal    31  G  2  J  8  Craque -
+      - MEI Willian Oliveira         OVR 47  Sal    30  G  1  J 11  Craque -
+      - MEI Dudu                     OVR 47  Sal    30  G  2  J 14  Craque -
+      - MEI Matheuzinho              OVR 47  Sal    34  G  1  J 12  Craque -
+      - MEI Rodrigo Andrade          OVR 47  Sal    48  G  0  J  1  Craque -
+      - ATA Janderson                OVR 59  Sal    35  G  0  J 15  Craque -
+      - ATA Iury Castilho            OVR 58  Sal    32  G  2  J 11  Craque -
+      - ATA Everaldo                 OVR 58  Sal    50  G  7  J 15  Craque -
+      - ATA Osvaldo                  OVR 58  Sal    33  G  1  J  3  Craque -
+      - ATA Alerrandro               OVR 57  Sal    32  G  0  J  0  Craque *
+      - ATA Carlos Eduardo           OVR 54  Sal    52  G  0  J  0  Craque -
+      - ATA Wellington Rato          OVR 54  Sal    34  G  0  J  0  Craque -
+      - ATA Fábio Soares             OVR 52  Sal    32  G  0  J  0  Craque -
+  - Criciúma | Div final 3 | Pos 4 na Div 3 | Movimento = | Caixa R$ 272,705 mil | Folha R$ 4,500 mil | Torcida 878K | Prestigio 59 | Emprestimo R$ 0 mil | Media elenco 45.5
+    Elenco:
+      - GOL Gustavo                  OVR 53  Sal    59  G  1  J 12  Craque *
+      - GOL Alisson                  OVR 53  Sal    66  G  0  J  8  Craque -
+      - GOL Kauã                     OVR 50  Sal    65  G  0  J  0  Craque -
+      - ZAG Claudinho                OVR 46  Sal    65  G  2  J 20  Craque *
+      - ZAG Jonathan                 OVR 40  Sal    56  G  5  J 20  Craque -
+      - ZAG Marcelo Hermes           OVR 40  Sal    42  G  2  J 19  Craque -
+      - ZAG Tobias Figueiredo        OVR 40  Sal    58  G  0  J  0  Craque -
+      - ZAG Dudu                     OVR 40  Sal    52  G  0  J  4  Craque -
+      - ZAG Rodrigo                  OVR 40  Sal    39  G  1  J  3  Craque -
+      - ZAG Victor Luís              OVR 40  Sal    67  G  0  J 14  Craque -
+      - MEI Barreto                  OVR 45  Sal    32  G  2  J 20  Craque -
+      - MEI Rômulo                   OVR 41  Sal    33  G  3  J 20  Craque -
+      - MEI Fellipe Mateus           OVR 41  Sal    35  G  4  J 16  Craque -
+      - MEI Higor Meritão            OVR 41  Sal    68  G  0  J  1  Craque -
+      - MEI Marquinhos Gabriel       OVR 40  Sal    31  G  2  J 18  Craque -
+      - MEI Newton                   OVR 40  Sal    54  G  0  J  5  Craque -
+      - MEI Miquéias                 OVR 39  Sal    30  G  0  J  0  Craque -
+      - ATA Allano                   OVR 53  Sal    49  G  1  J 11  Craque -
+      - ATA Ronald                   OVR 53  Sal    55  G  0  J  3  Craque -
+      - ATA Matheusinho              OVR 53  Sal    47  G  7  J 13  Craque -
+      - ATA Éder                     OVR 53  Sal    37  G  2  J  7  Craque -
+      - ATA Yannick Bolasie          OVR 53  Sal    65  G  0  J  6  Craque *
+      - ATA Arthur Caíke             OVR 52  Sal    57  G  0  J  0  Craque -
+      - ATA Jhonata Robert           OVR 50  Sal    50  G  0  J  0  Craque -
+      - ATA Felipinho                OVR 44  Sal    30  G  0  J  0  Craque -
+  - Sport Recife | Div final 3 | Pos 5 na Div 3 | Movimento = | Caixa R$ 314,316 mil | Folha R$ 4,000 mil | Torcida 2.8M | Prestigio 57 | Emprestimo R$ 0 mil | Media elenco 45.8
+    Elenco:
+      - GOL Adriel                   OVR 57  Sal    31  G  0  J  4  Craque -
+      - GOL Denis                    OVR 57  Sal    42  G  0  J 12  Craque -
+      - GOL Caíque França            OVR 57  Sal    43  G  0  J  0  Craque *
+      - ZAG Luciano Castán           OVR 42  Sal    66  G  0  J 16  Craque -
+      - ZAG Igor Cariús              OVR 41  Sal    69  G  0  J 10  Craque -
+      - ZAG Felipinho                OVR 41  Sal    63  G  1  J  5  Craque -
+      - ZAG Rafael Thyere            OVR 41  Sal    54  G  0  J 12  Craque -
+      - ZAG Chico                    OVR 40  Sal    63  G  0  J  2  Craque -
+      - ZAG Rosales                  OVR 40  Sal    55  G  1  J  7  Craque *
+      - ZAG Hereda                   OVR 40  Sal    49  G  0  J 12  Craque -
+      - MEI Felipe                   OVR 40  Sal    62  G  0  J  0  Craque -
+      - MEI Fabinho                  OVR 40  Sal    63  G  0  J 14  Craque -
+      - MEI Lucas Lima               OVR 40  Sal    63  G  1  J 10  Craque -
+      - MEI Pedro Vilhena            OVR 40  Sal    63  G  2  J 11  Craque -
+      - MEI Titi Ortíz               OVR 40  Sal    63  G  1  J  4  Craque -
+      - MEI Julián Fernández         OVR 40  Sal    45  G  2  J 14  Craque -
+      - MEI Alan Ruiz                OVR 40  Sal    42  G  1  J 11  Craque -
+      - ATA Gustavo Coutinho         OVR 53  Sal    40  G  3  J  8  Craque -
+      - ATA Barletta                 OVR 53  Sal    45  G  2  J  6  Craque *
+      - ATA Pablo Dyego              OVR 53  Sal    57  G  5  J  7  Craque -
+      - ATA Zé Roberto               OVR 53  Sal    64  G  1  J 11  Craque -
+      - ATA Chrystian                OVR 52  Sal    59  G  0  J  0  Craque -
+      - ATA Romarinho                OVR 52  Sal    42  G  0  J  0  Craque -
+      - ATA Diego Souza Jr           OVR 47  Sal    44  G  0  J  0  Craque -
+      - ATA Lenny Lobato             OVR 45  Sal    66  G  0  J  0  Craque -
+  - Juventude | Div final 3 | Pos 6 na Div 3 | Movimento = | Caixa R$ 331,989 mil | Folha R$ 5,500 mil | Torcida 1.2M | Prestigio 68 | Emprestimo R$ 0 mil | Media elenco 52.6
+    Elenco:
+      - GOL César                    OVR 60  Sal    48  G  1  J 13  Craque -
+      - GOL Gabriel                  OVR 60  Sal    48  G  0  J  3  Craque *
+      - GOL Marcão                   OVR 59  Sal    48  G  0  J  0  Craque -
+      - ZAG João Lucas               OVR 54  Sal    38  G  1  J 16  Craque *
+      - ZAG Marcos Paulo             OVR 46  Sal    64  G  0  J 16  Craque -
+      - ZAG Ewerthon                 OVR 46  Sal    45  G  0  J 10  Craque -
+      - ZAG Rodrigo Sam              OVR 46  Sal    67  G  0  J 11  Craque -
+      - ZAG Danilo Boza              OVR 46  Sal    44  G  0  J  1  Craque -
+      - ZAG Alan Ruschel             OVR 46  Sal    69  G  0  J 10  Craque -
+      - ZAG Abner                    OVR 46  Sal    57  G  0  J  0  Craque -
+      - MEI Caique                   OVR 53  Sal    50  G  2  J 16  Craque -
+      - MEI Jadson                   OVR 50  Sal    37  G  0  J 16  Craque -
+      - MEI Nenê                     OVR 49  Sal    31  G  1  J  4  Craque -
+      - MEI Luis Oyama               OVR 49  Sal    37  G  0  J  5  Craque -
+      - MEI Jean Irmer               OVR 49  Sal    30  G  1  J  9  Craque -
+      - MEI Luan Dias                OVR 49  Sal    55  G  1  J 14  Craque -
+      - MEI Mandaca                  OVR 47  Sal    35  G  0  J  0  Craque -
+      - ATA Taliari                  OVR 59  Sal    59  G  4  J 12  Craque -
+      - ATA Erick Farias             OVR 59  Sal    54  G  1  J  9  Craque *
+      - ATA Gabriel Taliari          OVR 59  Sal    38  G  5  J 11  Craque -
+      - ATA Marcelinho               OVR 59  Sal    30  G  0  J  0  Craque -
+      - ATA Gilberto                 OVR 59  Sal    61  G  0  J  0  Craque -
+      - ATA Lucas Barbosa            OVR 58  Sal    67  G  0  J  0  Craque -
+      - ATA Edinho                   OVR 57  Sal    57  G  0  J  0  Craque -
+      - ATA Da Silva                 OVR 53  Sal    52  G  0  J  0  Craque -
+  - Mirassol | Div final 4 | Pos 7 na Div 3 | Movimento REBAIXADO | Caixa R$ 270,257 mil | Folha R$ 3,500 mil | Torcida 446K | Prestigio 52 | Emprestimo R$ 0 mil | Media elenco 45.4
+    Elenco:
+      - GOL Walter                   OVR 55  Sal    30  G  0  J 18  Craque -
+      - GOL Vanderlei                OVR 55  Sal    46  G  0  J  2  Craque -
+      - GOL Alex Muralha             OVR 54  Sal    52  G  0  J  0  Craque *
+      - ZAG Lucas Ramon              OVR 41  Sal    61  G  1  J 19  Craque *
+      - ZAG Rodrigo Ferreira         OVR 40  Sal    42  G  1  J  5  Craque -
+      - ZAG Daniel Borges            OVR 40  Sal    50  G  1  J 11  Craque -
+      - ZAG Luiz Otávio              OVR 40  Sal    35  G  2  J 13  Craque -
+      - ZAG Reinaldo                 OVR 40  Sal    56  G  1  J 13  Craque -
+      - ZAG Zeca                     OVR 40  Sal    52  G  2  J  5  Craque -
+      - ZAG João Victor              OVR 40  Sal    30  G  1  J 14  Craque -
+      - MEI Danielzinho              OVR 42  Sal    37  G  0  J 20  Craque -
+      - MEI Yago Felipe              OVR 41  Sal    63  G  0  J  5  Craque -
+      - MEI Negueba                  OVR 41  Sal    60  G  1  J  7  Craque -
+      - MEI Chico Kim                OVR 41  Sal    33  G  1  J 10  Craque -
+      - MEI Gabriel                  OVR 41  Sal    30  G  2  J 19  Craque -
+      - MEI Neto Moura               OVR 41  Sal    30  G  5  J 19  Craque -
+      - MEI Iury                     OVR 41  Sal    33  G  0  J  0  Craque -
+      - ATA Fabrício Daniel          OVR 53  Sal    58  G  1  J 19  Craque -
+      - ATA Fernandinho              OVR 52  Sal    68  G  0  J  3  Craque -
+      - ATA Zé Roberto               OVR 52  Sal    56  G  5  J 18  Craque -
+      - ATA Dellatorre               OVR 52  Sal    39  G  0  J  0  Craque *
+      - ATA Quirino                  OVR 51  Sal    52  G  0  J  0  Craque -
+      - ATA Rafinha                  OVR 51  Sal    51  G  0  J  0  Craque -
+      - ATA Nicolas                  OVR 49  Sal    52  G  0  J  0  Craque -
+      - ATA Alex Silva               OVR 40  Sal    57  G  0  J  0  Craque -
+  - Goiás | Div final 4 | Pos 8 na Div 3 | Movimento REBAIXADO | Caixa R$ 268,819 mil | Folha R$ 4,600 mil | Torcida 3.0M | Prestigio 64 | Emprestimo R$ 0 mil | Media elenco 33.7
+    Elenco:
+      - GOL Tadeu                    OVR 45  Sal    61  G  0  J  5  Craque *
+      - GOL Thiago Rodrigues         OVR 45  Sal    65  G  0  J 11  Craque -
+      - GOL Marcão                   OVR 43  Sal    43  G  0  J  0  Craque -
+      - ZAG Anthony                  OVR 28  Sal    32  G  3  J 16  Craque -
+      - ZAG Rodrigo Soares           OVR 28  Sal    37  G  2  J 14  Craque -
+      - ZAG Ezequiel                 OVR 28  Sal    45  G  0  J  2  Craque *
+      - ZAG Luiz Felipe              OVR 28  Sal    53  G  0  J 15  Craque -
+      - ZAG Titi                     OVR 28  Sal    49  G  1  J  7  Craque -
+      - ZAG Lucas Ribeiro            OVR 28  Sal    69  G  0  J 10  Craque -
+      - ZAG Nicolas                  OVR 28  Sal    32  G  0  J  0  Craque -
+      - MEI Lucas Lima               OVR 32  Sal    66  G  1  J 16  Craque -
+      - MEI Juninho                  OVR 32  Sal    37  G  2  J 16  Craque -
+      - MEI Jean Carlos              OVR 31  Sal    42  G  1  J 16  Craque -
+      - MEI Lourenço                 OVR 31  Sal    51  G  0  J  5  Craque -
+      - MEI Gegê                     OVR 31  Sal    47  G  1  J  3  Craque -
+      - MEI Filipe Machado           OVR 31  Sal    55  G  1  J  8  Craque -
+      - MEI Brayann                  OVR 30  Sal    52  G  0  J  0  Craque -
+      - ATA Wellington Rato          OVR 40  Sal    49  G  1  J 16  Craque *
+      - ATA Esli García              OVR 40  Sal    65  G  1  J  5  Craque -
+      - ATA Pedrinho                 OVR 40  Sal    68  G  1  J 10  Craque -
+      - ATA Bruno Sávio              OVR 40  Sal    31  G  0  J  1  Craque -
+      - ATA Anselmo Ramon            OVR 39  Sal    42  G  0  J  0  Craque -
+      - ATA Arthur Caíke             OVR 35  Sal    55  G  0  J  0  Craque -
+      - ATA Cadu                     OVR 34  Sal    57  G  0  J  0  Craque -
+      - ATA Jajá                     OVR 29  Sal    49  G  0  J  0  Craque -
+
+#### Divisao 4
+  - Coritiba | Div final 3 | Pos 1 na Div 4 | Movimento PROMOVIDO | Caixa R$ 273,420 mil | Folha R$ 4,800 mil | Torcida 3.9M | Prestigio 69 | Emprestimo R$ 0 mil | Media elenco 35.6
+    Elenco:
+      - GOL Gabriel Leite            OVR 42  Sal    32  G  0  J  5  Craque -
+      - GOL Pedro Morisco            OVR 42  Sal    56  G  0  J 13  Craque *
+      - GOL Pedro Rangel             OVR 41  Sal    51  G  0  J  0  Craque -
+      - ZAG Bruno Melo               OVR 32  Sal    63  G  0  J  4  Craque -
+      - ZAG Felipe Guimarães         OVR 32  Sal    66  G  0  J 12  Craque -
+      - ZAG João Almeida             OVR 32  Sal    47  G  1  J 11  Craque -
+      - ZAG Guilherme Aquino         OVR 32  Sal    53  G  3  J 17  Craque -
+      - ZAG Maicon                   OVR 32  Sal    44  G  1  J 11  Craque -
+      - ZAG Jacy                     OVR 32  Sal    39  G  2  J 17  Craque -
+      - ZAG Tiago Coser              OVR 32  Sal    48  G  0  J  0  Craque *
+      - MEI Sebastián Gómez          OVR 35  Sal    59  G  2  J 18  Craque -
+      - MEI Geovane                  OVR 32  Sal    50  G  0  J  6  Craque -
+      - MEI Jean Gabriel             OVR 32  Sal    34  G  1  J  6  Craque -
+      - MEI Carlos de Pena           OVR 32  Sal    69  G  5  J 17  Craque -
+      - MEI Willian Oliveira         OVR 32  Sal    39  G  1  J 18  Craque -
+      - MEI Josué                    OVR 32  Sal    53  G  1  J  7  Craque -
+      - MEI Matheus Bianqui          OVR 31  Sal    39  G  0  J  0  Craque -
+      - ATA Lucas Ronier             OVR 42  Sal    53  G  5  J 18  Craque -
+      - ATA Clayson                  OVR 42  Sal    69  G  0  J  5  Craque *
+      - ATA Nicolas Careca           OVR 42  Sal    44  G  3  J  7  Craque -
+      - ATA Gustavo Coutinho         OVR 42  Sal    46  G  1  J  6  Craque -
+      - ATA Iury Castilho            OVR 41  Sal    70  G  0  J  0  Craque -
+      - ATA Dellatorre               OVR 41  Sal    37  G  0  J  0  Craque -
+      - ATA Joaquín Lavega           OVR 40  Sal    37  G  0  J  0  Craque -
+      - ATA Pedro Rocha              OVR 26  Sal    51  G  0  J  0  Craque -
+  - Ceará | Div final 3 | Pos 2 na Div 4 | Movimento PROMOVIDO | Caixa R$ 326,563 mil | Folha R$ 4,000 mil | Torcida 2.7M | Prestigio 60 | Emprestimo R$ 0 mil | Media elenco 49.5
+    Elenco:
+      - GOL Fernando Miguel          OVR 59  Sal    62  G  0  J  9  Craque -
+      - GOL Richard                  OVR 59  Sal    55  G  0  J  2  Craque *
+      - GOL Bruno Ferreira           OVR 59  Sal    49  G  0  J  6  Craque -
+      - ZAG Raí Ramos                OVR 45  Sal    50  G  3  J 16  Craque -
+      - ZAG David Ricardo            OVR 45  Sal    51  G  2  J 16  Craque -
+      - ZAG Rafael Ramos             OVR 45  Sal    68  G  3  J 16  Craque *
+      - ZAG Warley                   OVR 45  Sal    70  G  0  J  5  Craque -
+      - ZAG Matheus Felipe           OVR 45  Sal    43  G  0  J  2  Craque -
+      - ZAG Eric Melo                OVR 45  Sal    42  G  1  J  9  Craque -
+      - ZAG Luiz Otávio              OVR 45  Sal    49  G  0  J  0  Craque -
+      - MEI Richardson               OVR 45  Sal    54  G  3  J 16  Craque -
+      - MEI Lourenço                 OVR 44  Sal    51  G  0  J 16  Craque -
+      - MEI Rômulo                   OVR 44  Sal    47  G  0  J  1  Craque -
+      - MEI Lucas Mugni              OVR 44  Sal    54  G  0  J  5  Craque -
+      - MEI Aylon                    OVR 44  Sal    48  G  2  J 13  Craque -
+      - MEI De Lucca                 OVR 43  Sal    44  G  1  J 13  Craque -
+      - MEI Fernando Sobral          OVR 43  Sal    58  G  0  J  0  Craque -
+      - ATA Facundo Castro           OVR 57  Sal    30  G  0  J  1  Craque -
+      - ATA Saulo Mineiro            OVR 57  Sal    39  G  5  J 10  Craque *
+      - ATA Cléber                   OVR 57  Sal    40  G  3  J  8  Craque -
+      - ATA Recalde                  OVR 56  Sal    30  G  5  J 13  Craque -
+      - ATA Erick Pulga              OVR 56  Sal    59  G  0  J  0  Craque -
+      - ATA Barceló                  OVR 55  Sal    70  G  0  J  0  Craque -
+      - ATA Janderson                OVR 53  Sal    47  G  0  J  0  Craque -
+      - ATA Guilherme Bissoli        OVR 51  Sal    53  G  0  J  0  Craque -
+  - América Mineiro | Div final 4 | Pos 3 na Div 4 | Movimento = | Caixa R$ 263,421 mil | Folha R$ 4,500 mil | Torcida 2.7M | Prestigio 66 | Emprestimo R$ 0 mil | Media elenco 33.0
+    Elenco:
+      - GOL Dalberson                OVR 39  Sal    46  G  0  J  3  Craque -
+      - GOL Jori                     OVR 39  Sal    45  G  0  J 13  Craque -
+      - GOL Matheus Mendes           OVR 39  Sal    57  G  0  J  0  Craque *
+      - ZAG Marlon                   OVR 31  Sal    64  G  3  J 16  Craque *
+      - ZAG Ricardo Silva            OVR 28  Sal    69  G  2  J 16  Craque -
+      - ZAG Maguinho                 OVR 27  Sal    66  G  3  J 16  Craque -
+      - ZAG Júlio                    OVR 27  Sal    38  G  0  J  0  Craque -
+      - ZAG Nicolas                  OVR 27  Sal    39  G  0  J  5  Craque -
+      - ZAG Paulinho                 OVR 27  Sal    51  G  0  J 11  Craque -
+      - ZAG Lucão                    OVR 27  Sal    61  G  0  J  0  Craque -
+      - MEI Moisés                   OVR 29  Sal    60  G  3  J 16  Craque -
+      - MEI Miguelito                OVR 29  Sal    50  G  0  J 16  Craque -
+      - MEI Jhosefer                 OVR 29  Sal    39  G  2  J 13  Craque -
+      - MEI Alê                      OVR 28  Sal    33  G  1  J 12  Craque -
+      - MEI Benítez                  OVR 28  Sal    40  G  2  J  7  Craque -
+      - MEI Fabinho Santos           OVR 28  Sal    39  G  0  J  0  Craque -
+      - MEI Cauan Barros             OVR 28  Sal    63  G  0  J  0  Craque -
+      - ATA Guilherme Pato           OVR 42  Sal    35  G  1  J 16  Craque -
+      - ATA Adyson                   OVR 42  Sal    50  G  1  J  4  Craque -
+      - ATA Willian Bigode           OVR 42  Sal    34  G  1  J 12  Craque -
+      - ATA Fabinho                  OVR 42  Sal    35  G  0  J  0  Craque *
+      - ATA Brenner                  OVR 39  Sal    63  G  0  J  0  Craque -
+      - ATA Stênio                   OVR 37  Sal    65  G  0  J  0  Craque -
+      - ATA Renato Marques           OVR 35  Sal    44  G  0  J  0  Craque -
+      - ATA Aloísio                  OVR 34  Sal    39  G  0  J  0  Craque -
+  - Vila Nova | Div final 4 | Pos 4 na Div 4 | Movimento = | Caixa R$ 195,111 mil | Folha R$ 3,600 mil | Torcida 1.6M | Prestigio 60 | Emprestimo R$ 0 mil | Media elenco 30.0
+    Elenco:
+      - GOL Helton Leite             OVR 37  Sal    59  G  0  J 17  Craque *
+      - GOL Dalberson                OVR 37  Sal    67  G  0  J  2  Craque -
+      - GOL Airton                   OVR 36  Sal    52  G  0  J  0  Craque -
+      - ZAG Caio Marcelo             OVR 27  Sal    64  G  2  J 18  Craque *
+      - ZAG Elias                    OVR 27  Sal    40  G  4  J 18  Craque -
+      - ZAG Higor                    OVR 26  Sal    36  G  0  J 18  Craque -
+      - ZAG Weverton                 OVR 26  Sal    63  G  0  J  3  Craque -
+      - ZAG Anderson Jesus           OVR 26  Sal    62  G  0  J  1  Craque -
+      - ZAG Hayner                   OVR 26  Sal    58  G  1  J 14  Craque -
+      - ZAG Tiago Pagnussat          OVR 26  Sal    67  G  0  J  0  Craque -
+      - MEI Dudu                     OVR 33  Sal    47  G  2  J 18  Craque -
+      - MEI João Vieira              OVR 26  Sal    51  G  0  J  6  Craque -
+      - MEI Dodô                     OVR 26  Sal    53  G  0  J 12  Craque -
+      - MEI Willian Maranhão         OVR 26  Sal    30  G  4  J 15  Craque -
+      - MEI Nathan Camargo           OVR 26  Sal    58  G  2  J 10  Craque -
+      - MEI Marco Antonio            OVR 26  Sal    61  G  2  J 11  Craque -
+      - MEI Marquinhos Gabriel       OVR 24  Sal    63  G  0  J  0  Craque -
+      - ATA Dellatorre               OVR 37  Sal    55  G  0  J  0  Craque -
+      - ATA Andre Luis               OVR 37  Sal    31  G  0  J  3  Craque -
+      - ATA Ruan Ribeiro             OVR 37  Sal    31  G  0  J  5  Craque *
+      - ATA Bruno Xavier             OVR 37  Sal    45  G  6  J 18  Craque -
+      - ATA Rafa Silva               OVR 37  Sal    64  G  2  J 10  Craque -
+      - ATA Emerson Urso             OVR 33  Sal    59  G  0  J  0  Craque -
+      - ATA Janderson                OVR 26  Sal    53  G  0  J  0  Craque -
+      - ATA Alesson                  OVR 25  Sal    56  G  0  J  0  Craque -
+  - Paysandu | Div final 4 | Pos 5 na Div 4 | Movimento = | Caixa R$ 194,195 mil | Folha R$ 3,600 mil | Torcida 1.5M | Prestigio 58 | Emprestimo R$ 0 mil | Media elenco 25.6
+    Elenco:
+      - GOL Gabriel Mesquita         OVR 31  Sal    53  G  2  J 11  Craque *
+      - GOL Jean Drosny              OVR 31  Sal    47  G  0  J  5  Craque -
+      - GOL Matheus Nogueira         OVR 30  Sal    58  G  0  J  0  Craque -
+      - ZAG Marcão                   OVR 24  Sal    69  G  1  J 15  Craque *
+      - ZAG Bruno Bispo              OVR 24  Sal    33  G  1  J 16  Craque -
+      - ZAG PK                       OVR 22  Sal    56  G  2  J  8  Craque -
+      - ZAG Reverson                 OVR 22  Sal    48  G  2  J 11  Craque -
+      - ZAG Luccão                   OVR 22  Sal    59  G  0  J  1  Craque -
+      - ZAG Yeferson Quintana        OVR 22  Sal    54  G  1  J 10  Craque -
+      - ZAG Edílson                  OVR 22  Sal    48  G  0  J  3  Craque -
+      - MEI Leandro Vilela           OVR 24  Sal    30  G  0  J 15  Craque -
+      - MEI Cavan                    OVR 21  Sal    33  G  1  J  6  Craque -
+      - MEI Giovanni                 OVR 21  Sal    60  G  0  J  3  Craque -
+      - MEI Matheus Vargas           OVR 21  Sal    61  G  1  J 15  Craque -
+      - MEI Marlon                   OVR 21  Sal    66  G  0  J  6  Craque -
+      - MEI Ramon Martinez           OVR 21  Sal    37  G  1  J  5  Craque -
+      - MEI Robinho                  OVR 21  Sal    64  G  0  J 14  Craque -
+      - ATA Nicolas                  OVR 32  Sal    37  G  0  J  0  Craque *
+      - ATA Edinho                   OVR 32  Sal    51  G  0  J  7  Craque -
+      - ATA Kevin                    OVR 32  Sal    45  G  3  J 12  Craque -
+      - ATA Benitez                  OVR 32  Sal    48  G  3  J 13  Craque -
+      - ATA Marlon Douglas           OVR 32  Sal    66  G  0  J  0  Craque -
+      - ATA Ciel                     OVR 30  Sal    60  G  0  J  0  Craque -
+      - ATA Eliel                    OVR 28  Sal    51  G  0  J  0  Craque -
+      - ATA Diogo Oliveira           OVR 23  Sal    35  G  0  J  0  Craque -
+  - Avaí | Div final 4 | Pos 6 na Div 4 | Movimento = | Caixa R$ 212,845 mil | Folha R$ 3,800 mil | Torcida 1.7M | Prestigio 63 | Emprestimo R$ 0 mil | Media elenco 28.5
+    Elenco:
+      - GOL Igor Bohn                OVR 35  Sal    42  G  0  J 16  Craque *
+      - GOL Léo Aragão               OVR 34  Sal    47  G  0  J  0  Craque -
+      - GOL Otávio Passos            OVR 33  Sal    54  G  0  J  0  Craque -
+      - ZAG Wesley Gasolina          OVR 26  Sal    65  G  0  J 15  Craque -
+      - ZAG Gabriel Simples          OVR 26  Sal    47  G  2  J 16  Craque -
+      - ZAG Wallison                 OVR 25  Sal    54  G  2  J 15  Craque -
+      - ZAG Allyson                  OVR 25  Sal    64  G  2  J  9  Craque -
+      - ZAG Quaresma                 OVR 25  Sal    58  G  1  J  4  Craque -
+      - ZAG Douglas Teixeira         OVR 25  Sal    38  G  0  J  4  Craque *
+      - ZAG Guilherme Aquino         OVR 25  Sal    60  G  0  J  1  Craque -
+      - MEI Jean Lucas               OVR 23  Sal    62  G  1  J 16  Craque -
+      - MEI Hyan                     OVR 23  Sal    37  G  1  J 16  Craque -
+      - MEI Luiz Henrique            OVR 22  Sal    50  G  0  J  7  Craque -
+      - MEI Zé Ricardo               OVR 22  Sal    32  G  0  J  5  Craque -
+      - MEI Wenderson                OVR 22  Sal    60  G  0  J  6  Craque -
+      - MEI Romildo Del Piage        OVR 22  Sal    57  G  1  J 10  Craque -
+      - MEI Daniel Penha             OVR 22  Sal    44  G  1  J  4  Craque -
+      - ATA Rafael Bilu              OVR 38  Sal    61  G  2  J 16  Craque *
+      - ATA Gaspar                   OVR 37  Sal    59  G  3  J  8  Craque -
+      - ATA Maurício Garcez          OVR 37  Sal    60  G  0  J  3  Craque -
+      - ATA Felipe Avenatti          OVR 37  Sal    58  G  0  J  5  Craque -
+      - ATA Sorriso                  OVR 37  Sal    67  G  0  J  0  Craque -
+      - ATA Thayllon                 OVR 35  Sal    49  G  0  J  0  Craque -
+      - ATA Igor Rosa                OVR 27  Sal    40  G  0  J  0  Craque -
+      - ATA Mário Sérgio             OVR 26  Sal    66  G  0  J  0  Craque -
+  - Novorizontino | Div final 4 | Pos 7 na Div 4 | Movimento = | Caixa R$ 156,540 mil | Folha R$ 3,200 mil | Torcida 1.1M | Prestigio 61 | Emprestimo R$ 0 mil | Media elenco 25.5
+    Elenco:
+      - GOL Airton                   OVR 31  Sal    52  G  0  J  6  Craque -
+      - GOL Jordi                    OVR 31  Sal    68  G  0  J  3  Craque *
+      - GOL César Augusto            OVR 31  Sal    49  G  3  J  7  Craque -
+      - ZAG Rafael Donato            OVR 21  Sal    41  G  0  J 16  Craque -
+      - ZAG Patrick                  OVR 21  Sal    32  G  0  J  7  Craque *
+      - ZAG Dantas                   OVR 21  Sal    54  G  0  J  3  Craque -
+      - ZAG César Martins            OVR 21  Sal    64  G  0  J  9  Craque -
+      - ZAG Mayk                     OVR 21  Sal    49  G  0  J  9  Craque -
+      - ZAG Raí Ramos                OVR 21  Sal    44  G  1  J  8  Craque -
+      - ZAG Rômulo                   OVR 21  Sal    53  G  2  J 12  Craque -
+      - MEI Robson                   OVR 23  Sal    35  G  2  J 16  Craque -
+      - MEI Matheus Frizzo           OVR 22  Sal    42  G  0  J 16  Craque -
+      - MEI Lucca                    OVR 22  Sal    57  G  1  J  3  Craque -
+      - MEI Jean Irmer               OVR 22  Sal    64  G  2  J  9  Craque -
+      - MEI Fábio Matheus            OVR 22  Sal    63  G  0  J  9  Craque -
+      - MEI Marlon                   OVR 21  Sal    61  G  2  J 10  Craque -
+      - MEI Waguininho               OVR 21  Sal    50  G  0  J  1  Craque -
+      - ATA Nicolas Careca           OVR 34  Sal    58  G  0  J  1  Craque -
+      - ATA Léo Tocantins            OVR 34  Sal    49  G  1  J  8  Craque -
+      - ATA Caio Dantas              OVR 34  Sal    35  G  2  J 12  Craque *
+      - ATA Bruno José               OVR 34  Sal    64  G  1  J 11  Craque -
+      - ATA Neto Pessoa              OVR 33  Sal    54  G  0  J  0  Craque -
+      - ATA Everaldo                 OVR 30  Sal    60  G  0  J  0  Craque -
+      - ATA Jenison                  OVR 24  Sal    60  G  0  J  0  Craque -
+      - ATA Rodolfo                  OVR 23  Sal    59  G  0  J  0  Craque -
+  - CRB | Div final 4 | Pos 8 na Div 4 | Movimento = | Caixa R$ 163,001 mil | Folha R$ 3,500 mil | Torcida 1.4M | Prestigio 65 | Emprestimo R$ 0 mil | Media elenco 25.4
+    Elenco:
+      - GOL Matheus Albino           OVR 35  Sal    45  G  0  J  0  Craque *
+      - GOL Vitor Caetano            OVR 35  Sal    39  G  0  J  5  Craque -
+      - GOL Pablo                    OVR 35  Sal    48  G  0  J 11  Craque -
+      - ZAG Segovia                  OVR 22  Sal    40  G  0  J 16  Craque -
+      - ZAG Fábio Alemão             OVR 21  Sal    50  G  0  J 16  Craque -
+      - ZAG Henri                    OVR 21  Sal    50  G  1  J  7  Craque -
+      - ZAG Lucas Lovat              OVR 21  Sal    50  G  0  J  1  Craque -
+      - ZAG Hereda                   OVR 21  Sal    68  G  2  J 16  Craque *
+      - ZAG Weverton                 OVR 21  Sal    55  G  2  J  8  Craque -
+      - ZAG Ryan                     OVR 21  Sal    64  G  0  J  0  Craque -
+      - MEI Douglas Baggio           OVR 22  Sal    51  G  0  J 16  Craque -
+      - MEI Mikael                   OVR 22  Sal    36  G  0  J 10  Craque -
+      - MEI Geovane                  OVR 22  Sal    39  G  0  J  6  Craque -
+      - MEI Lucas Kallyel            OVR 22  Sal    31  G  2  J 16  Craque -
+      - MEI Danielzinho              OVR 22  Sal    62  G  0  J  2  Craque -
+      - MEI Higor Meritão            OVR 22  Sal    42  G  0  J  4  Craque -
+      - MEI Gegê                     OVR 22  Sal    58  G  0  J 10  Craque -
+      - ATA William Pottker          OVR 33  Sal    52  G  2  J  8  Craque -
+      - ATA Léo Pereira              OVR 33  Sal    53  G  2  J  8  Craque -
+      - ATA Dadá Belmonte            OVR 33  Sal    47  G  0  J  6  Craque -
+      - ATA Anselmo Ramon            OVR 33  Sal    69  G  0  J 10  Craque *
+      - ATA João Neto                OVR 28  Sal    48  G  0  J  0  Craque -
+      - ATA Rafinha                  OVR 26  Sal    63  G  0  J  0  Craque -
+      - ATA Labandeira               OVR 25  Sal    41  G  0  J  0  Craque -
+      - ATA Thiaguinho               OVR 22  Sal    57  G  0  J  0  Craque -
