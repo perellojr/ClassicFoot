@@ -8,6 +8,10 @@ import math
 import random
 
 
+# ── Constantes de jogo ────────────────────────────────────────
+RENDA_TORCIDA_FACTOR = 0.00015  # fator de renda da bilheteria por torcedor
+
+
 class Position(Enum):
     GK  = "GOL"
     DEF = "ZAG"
@@ -87,16 +91,8 @@ class Player:
     position: Position
     age: int
     nationality: str
-    # Atributos 0-99
-    overall: int
-    pace: int        # VEL
-    technique: int   # TEC
-    shooting: int    # FIN
-    passing: int     # PAS
-    physical: int    # FIS
-    defending: int   # DEF
-    heading: int     # CAB
-    goalkeeping: int # GOL (só para goleiros)
+    # OVR único usado pelo motor de simulação (0–99)
+    overall: float
 
 
     # Finanças
@@ -221,10 +217,13 @@ class Team:
 
     @property
     def stadium_capacity(self) -> int:
-        """Estimativa realista de capacidade do estádio, limitada a 60 mil."""
-        estimated = max(8_000, int((self.torcida / 250) + (self.prestige * 220)))
-        rounded = int(round(estimated / 1000) * 1000)
-        return min(60_000, rounded)
+        """Estimativa realista de capacidade do estádio.
+        Considera torcida, prestígio e nível de upgrade (cada nível +5k lugares).
+        """
+        base = max(8_000, int((self.torcida / 250) + (self.prestige * 220)))
+        level_bonus = (self.stadium_level - 1) * 5_000
+        rounded = int(round((base + level_bonus) / 1000) * 1000)
+        return min(80_000, rounded)
 
     def squad_overall(self) -> float:
         """Média geral do elenco (top 11)"""
@@ -376,3 +375,6 @@ class CareerState:
     back_to_main_menu: bool = False
     season_history: List[dict] = field(default_factory=list)
     world_history: dict = field(default_factory=dict)
+    coach_market_last_round: int = -1
+    coach_market_cooldown: dict = field(default_factory=dict)
+    rounds_unemployed: int = 0   # rodadas consecutivas sem clube

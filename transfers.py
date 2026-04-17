@@ -15,6 +15,12 @@ from typing import List, Optional, Tuple
 from models import Player, Team, Position
 
 
+def sale_price(player: Player) -> int:
+    """Preço de venda direta do jogador (acima do valor de mercado)."""
+    bonus_factor = 1.30 if getattr(player, "is_star", False) else 1.18
+    return int(round(player.valor_mercado * bonus_factor))
+
+
 @dataclass
 class AuctionItem:
     player: Player
@@ -23,8 +29,11 @@ class AuctionItem:
     current_bid: int      # lance mais alto atual
     current_bidder: Optional[Team] = None
     resolved: bool = False
+    manual_listing: bool = False
 
     def accept_bid(self, team: Team, amount: int) -> bool:
+        if team.caixa < 0:
+            return False
         if amount > self.current_bid and team.caixa >= amount:
             self.current_bid = amount
             self.current_bidder = team
@@ -46,6 +55,12 @@ class AuctionItem:
                 0,
             )
         if self.current_bidder is None:
+            if self.manual_listing:
+                return (
+                    f"Nenhum clube se interessou por {self.player.name}. "
+                    f"O jogador permanece no {self.origin_team.name}.",
+                    0,
+                )
             # Ninguém fez oferta → renova com origem
             self.player.salario = int(self.player.salario * 1.20)
             self.player.contrato_rodadas = 12
@@ -74,6 +89,29 @@ class AuctionItem:
 class TransferMarket:
     auctions: List[AuctionItem] = field(default_factory=list)
     history: List[str]          = field(default_factory=list)   # log de transações
+
+    def has_player_in_auction(self, player: Player) -> bool:
+        return any((not auction.resolved) and auction.player.id == player.id for auction in self.auctions)
+
+    def list_player_for_auction(self, origin_team: Team, player: Player, min_bid: int | None = None) -> tuple[bool, str]:
+        if self.has_player_in_auction(player):
+            return False, f"{player.name} já está listado em leilão."
+        if len(origin_team.players) <= 16:
+            return False, f"Não é possível listar {player.name}: elenco mínimo de 16 jogadores."
+        if player not in origin_team.players:
+            return False, "Jogador inválido para este clube."
+
+        minimum = max(1, int(min_bid if min_bid is not None else sale_price(player)))
+        self.auctions.append(
+            AuctionItem(
+                player=player,
+                origin_team=origin_team,
+                base_bid=minimum,
+                current_bid=minimum,
+                manual_listing=True,
+            )
+        )
+        return True, f"{player.name} foi listado em leilão com lance mínimo de R${minimum:,} mil."
 
     def generate_auctions(self, all_teams: List[Team]) -> List[AuctionItem]:
         """
@@ -124,11 +162,22 @@ class TransferMarket:
             )
             new_auctions.append(auction)
 
-        self.auctions = new_auctions
+        # Mantém leilões manuais já existentes e adiciona novos lotes automáticos sem duplicar jogador.
+        existing_active = [auction for auction in self.auctions if not auction.resolved]
+        existing_player_ids = {auction.player.id for auction in existing_active}
+        merged = list(existing_active)
+        for auction in new_auctions:
+            if auction.player.id in existing_player_ids:
+                continue
+            merged.append(auction)
+            existing_player_ids.add(auction.player.id)
+
+        self.auctions = merged
         return new_auctions
 
-    def ai_bidding(self, all_teams: List[Team]):
+    def ai_bidding(self, all_teams: List[Team], blocked_team_ids: set[int] | None = None):
         """Simula as propostas automáticas dos clubes da IA."""
+        blocked_team_ids = blocked_team_ids or set()
         for auction in self.auctions:
             if auction.resolved:
                 continue
@@ -137,6 +186,8 @@ class TransferMarket:
             candidates = [
                 t for t in all_teams
                 if t.id != auction.origin_team.id
+                and t.id not in blocked_team_ids
+                and t.caixa >= 0
                 and t.caixa > auction.current_bid * 1.2
                 and len(t.players) < 45
             ]
@@ -187,6 +238,8 @@ def player_bid(
         return False, "Este leilão já foi encerrado."
     if bid_amount <= auction.current_bid:
         return False, f"Lance deve ser maior que R$ {auction.current_bid:,} mil."
+    if player_team.caixa < 0:
+        return False, "Clube com caixa negativo não pode participar de leilões."
     if player_team.caixa < bid_amount:
         return False, f"Caixa insuficiente (R$ {player_team.caixa:,} mil disponíveis)."
     auction.accept_bid(player_team, bid_amount)
@@ -230,10 +283,11 @@ def run_immediate_contract_auction(player: Player, origin_team: Team, all_teams:
 def sell_player_to_club(player: Player, origin_team: Team, all_teams: List[Team]) -> Tuple[bool, str, Optional[Team]]:
     if len(origin_team.players) <= 16:
         return False, f"Não é possível vender {player.name}: elenco mínimo de 16 jogadores.", None
+    asking_price = sale_price(player)
     candidates = [
         team for team in all_teams
         if team.id != origin_team.id
-        and team.caixa >= player.valor_mercado
+        and team.caixa >= asking_price
         and len(team.players) < 45
     ]
     random.shuffle(candidates)
@@ -250,9 +304,9 @@ def sell_player_to_club(player: Player, origin_team: Team, all_teams: List[Team]
 
     origin_team.players.remove(player)
     buyer.players.append(player)
-    buyer.caixa -= player.valor_mercado
-    origin_team.caixa += player.valor_mercado
+    buyer.caixa -= asking_price
+    origin_team.caixa += asking_price
     player.contrato_rodadas = 16
     player.salario = int(player.salario * 1.10)
-    message = f"{player.name} foi vendido para o {buyer.name} por R${player.valor_mercado:,} mil."
+    message = f"{player.name} foi vendido para o {buyer.name} por R${asking_price:,} mil."
     return True, message, buyer

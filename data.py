@@ -6,14 +6,11 @@ Divididos em 4 divisões de 8 times
 from models import Player, Team, Coach, Position as P
 
 _pid = 0
-def _p(name, pos, age, nat, ovr, pac, tec, fin, pas, fis, def_, hea, gol):
+def _p(name, pos, age, nat, ovr, *_ignored):
+    """Cria um Player. Args extras (atributos individuais legados) são ignorados."""
     global _pid
     _pid += 1
-    return Player(
-        id=_pid, name=name, position=pos, age=age, nationality=nat,
-        overall=ovr, pace=pac, technique=tec, shooting=fin,
-        passing=pas, physical=fis, defending=def_, heading=hea, goalkeeping=gol
-    )
+    return Player(id=_pid, name=name, position=pos, age=age, nationality=nat, overall=float(ovr))
 
 GK, DEF, MID, ATK = P.GK, P.DEF, P.MID, P.ATK
 BR = "Brasileiro"
@@ -138,7 +135,7 @@ def create_all_teams():
         id=1, name="Flamengo", short_name="FLA",
         city="Rio de Janeiro", state="RJ",
         stadium="Maracanã", division=1, prestige=97,
-        coach=Coach("Filipe Luís", BR, tactical=82, motivation=85, experience=72),
+        coach=Coach("Leonardo Jardim", "Português", tactical=84, motivation=85, experience=84),
         primary_color="red", secondary_color="black"
     )
     flamengo.players = [
@@ -203,7 +200,7 @@ def create_all_teams():
         id=3, name="Atlético Mineiro", short_name="CAM",
         city="Belo Horizonte", state="MG",
         stadium="Arena MRV", division=1, prestige=90,
-        coach=Coach("Gabriel Milito", "Argentino", tactical=84, motivation=80, experience=75),
+        coach=Coach("Eduardo Domínguez", "Argentino", tactical=84, motivation=82, experience=82),
         primary_color="black", secondary_color="white"
     )
     atletico_mg.players = [
@@ -235,7 +232,7 @@ def create_all_teams():
         id=4, name="Corinthians", short_name="COR",
         city="São Paulo", state="SP",
         stadium="Neo Química Arena", division=1, prestige=91,
-        coach=Coach("Ramón Díaz", "Argentino", tactical=80, motivation=78, experience=82),
+        coach=Coach("Fernando Diniz", BR, tactical=82, motivation=79, experience=84),
         primary_color="white", secondary_color="black"
     )
     corinthians.players = [
@@ -266,7 +263,7 @@ def create_all_teams():
         id=5, name="Fluminense", short_name="FLU",
         city="Rio de Janeiro", state="RJ",
         stadium="Maracanã", division=1, prestige=84,
-        coach=Coach("Mano Menezes", BR, tactical=78, motivation=76, experience=88),
+        coach=Coach("Renato Gaúcho", BR, tactical=80, motivation=82, experience=88),
         primary_color="green", secondary_color="white"
     )
     fluminense.players = [
@@ -296,7 +293,7 @@ def create_all_teams():
         id=6, name="Botafogo", short_name="BOT",
         city="Rio de Janeiro", state="RJ",
         stadium="Estádio Nilton Santos", division=1, prestige=87,
-        coach=Coach("Arthur Jorge", "Português", tactical=84, motivation=80, experience=74),
+        coach=Coach("Franclim Carvalho", BR, tactical=78, motivation=78, experience=68),
         primary_color="black", secondary_color="white"
     )
     botafogo.players = [
@@ -360,7 +357,7 @@ def create_all_teams():
         id=8, name="Grêmio", short_name="GRE",
         city="Porto Alegre", state="RS",
         stadium="Arena do Grêmio", division=2, prestige=83,
-        coach=Coach("Renato Gaúcho", BR, tactical=77, motivation=84, experience=85),
+        coach=Coach("Luís Castro", "Português", tactical=82, motivation=80, experience=84),
         primary_color="blue", secondary_color="black"
     )
     gremio.players = [
@@ -421,7 +418,7 @@ def create_all_teams():
         id=10, name="Cruzeiro", short_name="CRU",
         city="Belo Horizonte", state="MG",
         stadium="Mineirão", division=2, prestige=80,
-        coach=Coach("Fernando Seabra", BR, tactical=77, motivation=76, experience=72),
+        coach=Coach("Artur Jorge", "Português", tactical=81, motivation=79, experience=78),
         primary_color="blue", secondary_color="white"
     )
     cruzeiro.players = [
@@ -480,7 +477,7 @@ def create_all_teams():
         id=12, name="RB Bragantino", short_name="RBB",
         city="Bragança Paulista", state="SP",
         stadium="Nabi Abi Chedid", division=2, prestige=75,
-        coach=Coach("Pedro Caixinha", "Português", tactical=78, motivation=76, experience=74),
+        coach=Coach("Fernando Seabra", BR, tactical=77, motivation=76, experience=74),
         primary_color="red", secondary_color="white"
     )
     bragantino.players = [
@@ -514,7 +511,7 @@ def create_all_teams():
         id=13, name="Athletico Paranaense", short_name="CAP",
         city="Curitiba", state="PR",
         stadium="Ligga Arena", division=3, prestige=75,
-        coach=Coach("Cuca", BR, tactical=82, motivation=80, experience=90),
+        coach=Coach("Odair Hellmann", BR, tactical=78, motivation=76, experience=82),
         primary_color="red", secondary_color="black"
     )
     athletico_pr.players = [
@@ -573,7 +570,7 @@ def create_all_teams():
         id=15, name="Vasco da Gama", short_name="VAS",
         city="Rio de Janeiro", state="RJ",
         stadium="São Januário", division=3, prestige=75,
-        coach=Coach("Álvaro Pacheco", "Português", tactical=76, motivation=76, experience=70),
+        coach=Coach("Fábio Carille", BR, tactical=76, motivation=75, experience=80),
         primary_color="white", secondary_color="black"
     )
     vasco.players = [
@@ -603,7 +600,7 @@ def create_all_teams():
         id=16, name="Juventude", short_name="JUV",
         city="Caxias do Sul", state="RS",
         stadium="Alfredo Jaconi", division=3, prestige=62,
-        coach=Coach("Jair Ventura", BR, tactical=70, motivation=72, experience=70),
+        coach=Coach("Maurício Barbieri", BR, tactical=72, motivation=73, experience=74),
         primary_color="green", secondary_color="white"
     )
     juventude.players = [
@@ -632,7 +629,7 @@ def create_all_teams():
         id=17, name="Cuiabá", short_name="CUI",
         city="Cuiabá", state="MT",
         stadium="Arena Pantanal", division=3, prestige=60,
-        coach=Coach("Petit", "Português", tactical=72, motivation=70, experience=70),
+        coach=Coach("Eduardo Barros", BR, tactical=72, motivation=71, experience=68),
         primary_color="yellow", secondary_color="green"
     )
     cuiaba.players = [
@@ -661,7 +658,7 @@ def create_all_teams():
         id=18, name="Atlético Goianiense", short_name="ACG",
         city="Goiânia", state="GO",
         stadium="Antônio Accioly", division=3, prestige=60,
-        coach=Coach("Vagner Mancini", BR, tactical=70, motivation=72, experience=78),
+        coach=Coach("Eduardo Souza", BR, tactical=70, motivation=72, experience=70),
         primary_color="red", secondary_color="black"
     )
     atletico_go.players = [
@@ -723,7 +720,7 @@ def create_all_teams():
         id=20, name="Criciúma", short_name="CRI",
         city="Criciúma", state="SC",
         stadium="Heriberto Hülse", division=4, prestige=58,
-        coach=Coach("Claudio Tencati", BR, tactical=70, motivation=72, experience=74),
+        coach=Coach("Eduardo Baptista", BR, tactical=72, motivation=73, experience=80),
         primary_color="yellow", secondary_color="black"
     )
     criciuma.players = [
@@ -752,7 +749,7 @@ def create_all_teams():
         id=21, name="Santos", short_name="SAN",
         city="Santos", state="SP",
         stadium="Vila Belmiro", division=4, prestige=72,
-        coach=Coach("Fábio Carille", BR, tactical=75, motivation=74, experience=78),
+        coach=Coach("Cléber Xavier", BR, tactical=74, motivation=74, experience=72),
         primary_color="white", secondary_color="black"
     )
     santos.players = [
@@ -781,7 +778,7 @@ def create_all_teams():
         id=22, name="Sport Recife", short_name="SPR",
         city="Recife", state="PE",
         stadium="Ilha do Retiro", division=4, prestige=60,
-        coach=Coach("Mariano Soso", "Argentino", tactical=70, motivation=70, experience=68),
+        coach=Coach("Márcio Goiano", BR, tactical=68, motivation=72, experience=76),
         primary_color="red", secondary_color="black"
     )
     sport.players = [
@@ -809,7 +806,7 @@ def create_all_teams():
         id=23, name="Ceará", short_name="CEA",
         city="Fortaleza", state="CE",
         stadium="Arena Castelão", division=4, prestige=62,
-        coach=Coach("Léo Condé", BR, tactical=72, motivation=72, experience=70),
+        coach=Coach("Mozart", BR, tactical=72, motivation=72, experience=72),
         primary_color="black", secondary_color="white"
     )
     ceara.players = [
@@ -862,7 +859,7 @@ def create_all_teams():
 
     coritiba = _named_team(
         25, "Coritiba", "CFC", "Curitiba", "PR", "Couto Pereira", 4, 61,
-        "Mozart", "green", "white", 71,
+        "Fernando Seabra", "green", "white", 71,
         ["Pedro Morisco", "Pedro Rangel", "Gabriel Leite"],
         ["Tiago Coser", "Maicon", "Jacy", "João Almeida", "Felipe Guimarães", "Guilherme Aquino", "Bruno Melo", "Rodrigo Moledo"],
         [("Sebastián Gómez", "Colombiano"), "Willian Oliveira", "Jean Gabriel", "Geovane", "Josué", ("Carlos de Pena", "Uruguaio")],
@@ -870,7 +867,7 @@ def create_all_teams():
     )
     goias = _named_team(
         26, "Goiás", "GOI", "Goiânia", "GO", "Serrinha", 4, 60,
-        "Vagner Mancini", "green", "white", 70,
+        "Daniel Paulista", "green", "white", 70,
         ["Tadeu", "Thiago Rodrigues", "Marcão"],
         ["Ezequiel", "Lucas Ribeiro", "Luiz Felipe", "Titi", "Anthony", "Nicolas", "Rodrigo Soares", "Djalma Silva"],
         ["Gegê", "Juninho", ("Brayann", "Colombiano"), "Filipe Machado", "Lourenço", "Lucas Lima", "Jean Carlos"],
@@ -878,7 +875,7 @@ def create_all_teams():
     )
     america_mg = _named_team(
         27, "América Mineiro", "AMG", "Belo Horizonte", "MG", "Independência", 4, 60,
-        "William Batista", "green", "black", 70,
+        "Roger Silva", "green", "black", 70,
         ["Matheus Mendes", "Jori", "Dalberson"],
         ["Marlon", "Ricardo Silva", "Júlio", "Maguinho", "Nicolas", "Lucão", "Paulinho", "Miqueias"],
         ["Alê", "Moisés", "Fabinho Santos", "Miguelito", "Benítez", "Cauan Barros", "Jhosefer"],
@@ -894,7 +891,7 @@ def create_all_teams():
     )
     vila_nova = _named_team(
         29, "Vila Nova", "VIL", "Goiânia", "GO", "OBA", 4, 57,
-        "Rafael Lacerda", "red", "white", 69,
+        "Guto Ferreira", "red", "white", 69,
         ["Helton Leite", "Dalberson", "Airton"],
         ["Caio Marcelo", "Anderson Jesus", "Elias", "Weverton", "Tiago Pagnussat", "Higor", "Hayner", "Willian Formiga"],
         ["Dudu", "Nathan Camargo", "Dodô", "João Vieira", "Marco Antonio", "Willian Maranhão", "Marquinhos Gabriel"],
@@ -918,7 +915,7 @@ def create_all_teams():
     )
     novorizontino = _named_team(
         32, "Novorizontino", "NOV", "Novo Horizonte", "SP", "Jorge Ismael de Biasi", 4, 55,
-        "Umberto Louzer", "yellow", "black", 68,
+        "Enderson Moreira", "yellow", "black", 68,
         ["Jordi", "Airton", "César Augusto"],
         ["Patrick", "Dantas", "Rômulo", "César Martins", "Mayk", "Rafael Donato", "Raí Ramos", ("Luis Oyama", BR)],
         ["Fábio Matheus", "Jean Irmer", "Marlon", "Matheus Frizzo", "Lucca", "Robson", "Waguininho"],
@@ -956,6 +953,225 @@ def create_all_teams():
         coritiba, goias, america_mg, avai, vila_nova, paysandu, crb, novorizontino,
     ]
     return teams
+
+
+def _estimate_base_ovr(team: Team) -> int:
+    top = sorted((float(p.overall) for p in team.players), reverse=True)[:11]
+    if not top:
+        return 70
+    est = int(round(sum(top) / len(top))) - 2
+    return max(62, min(88, est))
+
+
+def apply_snapshot_2026(teams):
+    """Atualiza treinadores e elencos (snapshot 2026) jogador a jogador."""
+    roster_2026 = {
+        1: {
+            "gk": ["Rossi", "Matheus Cunha", "Dyogo Alves"],
+            "def": ["Wesley", "Guillermo Varela", "Léo Pereira", "Léo Ortiz", "Danilo", "Alex Sandro", "Ayrton Lucas"],
+            "mid": ["Erick Pulgar", "Allan", ("Nicolás De La Cruz", "Uruguaio"), ("Giorgian De Arrascaeta", "Uruguaio"), "Gerson", "Everton Araújo", ("Carlos Alcaraz", "Argentino")],
+            "atk": ["Pedro", "Bruno Henrique", "Michael", "Luiz Araújo", "Everton Cebolinha", ("Gonzalo Plata", "Equatoriano"), "Juninho", "Matheus Gonçalves"],
+        },
+        2: {
+            "gk": ["Weverton", "Marcelo Lomba", "Mateus Oliveira"],
+            "def": [("Agustín Giay", "Argentino"), "Mayke", "Marcos Rocha", ("Gustavo Gómez", "Paraguaio"), "Murilo", "Naves", ("Joaquín Piquerez", "Uruguaio")],
+            "mid": [("Aníbal Moreno", "Argentino"), ("Richard Ríos", "Colombiano"), ("Emiliano Martínez", "Uruguaio"), "Raphael Veiga", "Maurício", "Felipe Anderson", "Fabinho"],
+            "atk": ["Estêvão", ("Facundo Torres", "Uruguaio"), "Paulinho", ("Flaco López", "Argentino"), "Vitor Roque", "Bruno Rodrigues", "Luighi", "Rony"],
+        },
+        3: {
+            "gk": ["Everson", "Gabriel Delfim", "Matheus Mendes"],
+            "def": ["Saravia", "Lyanco", "Bruno Fuchs", "Igor Rabello", ("Júnior Alonso", "Paraguaio"), "Guilherme Arana", "Rubens"],
+            "mid": [("Fausto Vera", "Argentino"), ("Alan Franco", "Equatoriano"), "Otávio", "Igor Gomes", "Gustavo Scarpa", "Bernard", "Patrick"],
+            "atk": ["Hulk", "Deyverson", ("Tomás Cuello", "Argentino"), "Cadu", ("Eduardo Vargas", "Chileno"), ("Cristian Pavón", "Argentino"), "Rony", "Alisson"],
+        },
+        4: {
+            "gk": ["Hugo Souza", "Matheus Donelli", "Felipe Longo"],
+            "def": ["Matheuzinho", "Léo Maná", "Félix Torres", "Cacá", "Gustavo Henrique", "Hugo", "Bidu"],
+            "mid": ["Raniele", "Breno Bidon", "Maycon", "Alex Santana", "Charles", ("Rodrigo Garro", "Argentino"), ("André Carrillo", "Peruano")],
+            "atk": ["Yuri Alberto", ("Memphis Depay", "Holandês"), "Ángel Romero", "Talles Magno", "Pedro Raul", "Giovane", "Wesley", "Kayke"],
+        },
+        5: {
+            "gk": ["Fábio", "Vitor Eudes", "Pedro Rangel"],
+            "def": ["Samuel Xavier", "Guga", ("Thiago Silva", BR), "Thiago Santos", "Manoel", "Renê", ("Fretes", "Argentino")],
+            "mid": ["Martinelli", "Otávio", "Nonato", "Ganso", "Lima", ("Jhon Arias", "Colombiano"), ("Kevin Serna", "Colombiano")],
+            "atk": [("Germán Cano", "Argentino"), "Keno", "Everaldo", ("Agustín Canobbio", "Uruguaio"), "Lelê", "Isaac", "Marquinhos", "Riquelme"],
+        },
+        6: {
+            "gk": ["John", "Raul", "Léo Linck"],
+            "def": ["Vitinho", ("Mateo Ponte", "Uruguaio"), ("Alexander Barboza", "Argentino"), "Bastos", "David Ricardo", "Alex Telles", "Cuiabano"],
+            "mid": ["Gregore", "Marlon Freitas", "Patrick de Paula", ("Santiago Rodríguez", "Uruguaio"), ("Jefferson Savarino", "Venezuelano"), "Allan", "Newton"],
+            "atk": ["Igor Jesus", "Artur", "Jeffinho", "Matheus Martins", ("Rwan Cruz", BR), ("Elias Manoel", BR), "Santiago", "Kayque"],
+        },
+        7: {
+            "gk": [("Sergio Rochet", "Uruguaio"), "Anthoni", "Ivan"],
+            "def": ["Bustos", "Braian Aguirre", "Vitão", ("Gabriel Mercado", "Argentino"), ("Agustín Rogel", "Uruguaio"), ("Alexandro Bernabei", "Argentino"), "Juninho"],
+            "mid": ["Fernando", "Thiago Maia", "Bruno Henrique", "Bruno Gomes", ("Alan Patrick", BR), ("Gabriel Tabata", BR), "Rômulo"],
+            "atk": [("Rafael Borré", "Colombiano"), ("Enner Valencia", "Equatoriano"), "Wesley", ("Lucas Alario", "Argentino"), "Vitinho", "Lucca", "Ricardo Mathias", "Gustavo Prado"],
+        },
+        8: {
+            "gk": [("Agustín Marchesín", "Argentino"), "Gabriel Grando", "Caíque"],
+            "def": ["João Pedro", "Fábio", "Kannemann", "Jemerson", "Rodrigo Ely", "Reinaldo", "Mayk"],
+            "mid": [("Mathías Villasanti", "Paraguaio"), "Dodi", "Edenilson", ("Franco Cristaldo", "Argentino"), "Pepê", ("Miguel Monsalve", "Colombiano"), "Nathan"],
+            "atk": [("Martin Braithwaite", "Dinamarquês"), ("Cristian Olivera", "Uruguaio"), "Pavon", "Aravena", "André Henrique", ("Matias Arezo", "Uruguaio"), "Alysson", "Soteldo"],
+        },
+        9: {
+            "gk": ["Rafael", "Jandrei", "Young"],
+            "def": ["Igor Vinícius", "Ferraresi", "Arboleda", "Alan Franco", "Sabino", "Patryck", "Welington"],
+            "mid": ["Alisson", "Pablo Maia", ("Damián Bobadilla", "Paraguaio"), "Marcos Antônio", "Rodriguinho", "Wellington Rato", "Matheus Alves"],
+            "atk": ["Calleri", "Lucas Moura", "Luciano", "Ferreira", "André Silva", "William Gomes", "Erick", "Henrique Carmo"],
+        },
+        10: {
+            "gk": ["Cássio", "Anderson", "Léo Aragão"],
+            "def": ["William", "Fagner", "Fabrício Bruno", "Jonathan Jesus", ("Lucas Villalba", "Argentino"), "Kaiki", "Marlon"],
+            "mid": ["Lucas Romero", "Walace", "Matheus Henrique", "Christian", "Japa", "Eduardo", "Matheus Pereira"],
+            "atk": ["Kaio Jorge", ("Lautaro Díaz", "Argentino"), "Dudu", ("Yannick Bolasie", "Congolês"), "Marquinhos", "Wanderson", "Gabriel Veron", "Rafa Silva"],
+        },
+        11: {
+            "gk": ["João Ricardo", "Santos", "Magrão"],
+            "def": ["Tinga", ("Emanuel Brítez", "Argentino"), "Titi", ("Kuscevic", "Chileno"), "Bruno Pacheco", ("Mancuso", "Argentino"), "Talocha"],
+            "mid": ["Lucas Sasha", ("Pochettino", "Argentino"), ("Martínez", "Argentino"), "Hércules", "Zé Welison", ("Kervin Andrade", "Venezuelano"), "Calebe"],
+            "atk": [("Lucero", "Argentino"), "Moisés", "Marinho", "Breno Lopes", "Yago Pikachu", "Renato Kayzer", "Allanzinho", "Pedro Rocha"],
+        },
+        12: {
+            "gk": ["Cleiton", "Lucão", "Matheus Nogueira"],
+            "def": [("Andrés Hurtado", "Equatoriano"), "Nathan Mendes", "Pedro Henrique", "Natan", ("Guzmán Rodríguez", "Uruguaio"), "Juninho Capixaba", "Luan Cândido"],
+            "mid": ["Jadsom", "Matheus Fernandes", "Eric Ramires", "Lucas Evangelista", "Raul", "Jhon Jhon", "Gustavinho"],
+            "atk": [("Thiago Borbas", "Uruguaio"), "Eduardo Sasha", "Vitinho", "Helinho", ("Henry Mosquera", "Colombiano"), ("Ignacio Laquintana", "Uruguaio"), "Lincoln", "Talisson"],
+        },
+        13: {
+            "gk": ["Mycael", "Léo Linck", "Santos"],
+            "def": ["Léo Godoy", "Madson", "Kaique Rocha", "Belezi", "Matheus Felipe", "Lucas Esquivel", "Fernando"],
+            "mid": ["Erick", "Felipinho", ("Bruno Zapelli", "Argentino"), "Christian", ("Canobbio", "Uruguaio"), "Giuliano", "Alex Santana"],
+            "atk": ["Pablo", ("Mastriani", "Uruguaio"), ("Cuello", "Argentino"), "Rômulo", ("Di Yorio", "Argentino"), "Julimar", "Emersonn", "Isaac"],
+        },
+        14: {
+            "gk": ["Marcos Felipe", "Danilo Fernandes", "Adriel"],
+            "def": ["Gilberto", "Arias", "Kanu", "David Duarte", "Gabriel Xavier", "Iago Borduchi", "Luciano Juba"],
+            "mid": ["Caio Alexandre", "Jean Lucas", "Everton Ribeiro", "Cauly", "Rezende", ("Nicolás Acevedo", "Uruguaio"), "Erick"],
+            "atk": ["Everaldo", "Ademir", "Biel", ("Lucho Rodríguez", "Uruguaio"), "Kayky", "Tiago", "Rafael Ratão", "Willian José"],
+        },
+        15: {
+            "gk": ["Léo Jardim", "Keiller", "Pablo"],
+            "def": ["Paulo Henrique", ("Puma Rodríguez", "Uruguaio"), "João Victor", "Maicon", "Lucas Oliveira", "Lucas Piton", "Victor Luís"],
+            "mid": ["Hugo Moura", "Jair", ("Juan Sforza", "Argentino"), ("Dimitri Payet", "Francês"), "Philippe Coutinho", "Paulinho", "Tchê Tchê"],
+            "atk": [("Pablo Vegetti", "Argentino"), "Rayan", "Adson", "Alex Teixeira", "Rossi", "David", "GB", "Jean David"],
+        },
+        16: {
+            "gk": ["Gabriel", "César", "Marcão"],
+            "def": ["João Lucas", "Ewerthon", "Rodrigo Sam", "Danilo Boza", "Abner", "Alan Ruschel", "Marcos Paulo"],
+            "mid": ["Jean Irmer", "Caique", "Mandaca", "Jadson", "Nenê", "Luis Oyama", "Luan Dias"],
+            "atk": ["Erick Farias", "Gilberto", "Lucas Barbosa", "Marcelinho", "Edinho", "Taliari", "Gabriel Taliari", "Da Silva"],
+        },
+        17: {
+            "gk": ["Walter", "João Carlos", "Mateus Pasinato"],
+            "def": ["Matheus Alexandre", "Railan", "Marllon", "Alan Empereur", "Bruno Alves", "Ramon", "Sander"],
+            "mid": ["Denilson", "Lucas Mineiro", "Fernando Sobral", "Max", "Clayson", "Filipe Augusto", "Ronald"],
+            "atk": [("Isidro Pitta", "Paraguaio"), "Deyverson", "Jonathan Cafu", "Eliel", "Derik Lacerda", "André Luís", "Wellington Silva", "Alisson Safira"],
+        },
+        18: {
+            "gk": ["Ronaldo", "Luan Polli", "Pedro Paulo"],
+            "def": ["Bruno Tubarão", "Maguinho", "Alix Vinicius", "Lucas Gazal", "Luiz Felipe", "Guilherme Romão", "Rhaldney"],
+            "mid": ["Roni", "Baralhas", "Shaylon", "Jorginho", "Emiliano Rodríguez", "Léo Pereira", "Campanharo"],
+            "atk": ["Luiz Fernando", "Derek", "Janderson", "Hyuri", "Alejo Cruz", "Danielzinho", "Yony González", "Gustavo Coutinho"],
+        },
+        19: {
+            "gk": ["Lucas Arcanjo", "Muriel", "Dalton"],
+            "def": ["Raul Cáceres", "Zeca", "Wagner Leonardo", "Camutanga", "Neris", "PK", "Patric Calmon"],
+            "mid": ["Léo Naldi", "Rodrigo Andrade", "Willian Oliveira", "Jean Mota", "Matheuzinho", "Caio Vinícius", "Dudu"],
+            "atk": ["Alerrandro", "Osvaldo", "Janderson", "Everaldo", "Iury Castilho", "Wellington Rato", "Fábio Soares", "Carlos Eduardo"],
+        },
+        20: {
+            "gk": ["Gustavo", "Alisson", "Kauã"],
+            "def": ["Claudinho", "Jonathan", "Rodrigo", ("Tobias Figueiredo", "Português"), "Victor Luís", "Marcelo Hermes", "Dudu"],
+            "mid": ["Barreto", "Higor Meritão", "Fellipe Mateus", "Marquinhos Gabriel", "Newton", "Rômulo", "Miquéias"],
+            "atk": [("Yannick Bolasie", "Congolês"), "Arthur Caíke", "Allano", "Ronald", "Matheusinho", "Jhonata Robert", "Éder", "Felipinho"],
+        },
+        21: {
+            "gk": ["Gabriel Brazão", "João Paulo", "Diógenes"],
+            "def": ["Aderlan", "JP Chermont", "Gil", "Joaquim", "Zé Ivaldo", "Escobar", "Kevyson"],
+            "mid": ["Diego Pituca", "Tomás Rincón", "João Schmidt", "Giuliano", "Otero", "Cazares", "Miguelito"],
+            "atk": ["Guilherme", "Pedrinho", "Julio Furch", "Willian Bigode", "Wendel Silva", "Lucas Braga", "Morelos", "Enzo Monteiro"],
+        },
+        22: {
+            "gk": ["Caíque França", "Denis", "Adriel"],
+            "def": ["Rosales", "Hereda", "Rafael Thyere", "Chico", "Luciano Castán", "Felipinho", "Igor Cariús"],
+            "mid": ["Fabinho", "Felipe", "Lucas Lima", "Titi Ortíz", "Julián Fernández", "Pedro Vilhena", "Alan Ruiz"],
+            "atk": ["Barletta", "Gustavo Coutinho", "Zé Roberto", "Romarinho", "Pablo Dyego", "Chrystian", "Lenny Lobato", "Diego Souza Jr"],
+        },
+        23: {
+            "gk": ["Richard", "Bruno Ferreira", "Fernando Miguel"],
+            "def": ["Rafael Ramos", "Raí Ramos", "David Ricardo", "Luiz Otávio", "Matheus Felipe", "Eric Melo", "Warley"],
+            "mid": ["Richardson", "Lourenço", "Lucas Mugni", "Rômulo", "Aylon", "De Lucca", "Fernando Sobral"],
+            "atk": ["Saulo Mineiro", "Facundo Castro", "Barceló", "Cléber", "Recalde", "Janderson", "Erick Pulga", "Guilherme Bissoli"],
+        },
+        24: {
+            "gk": ["Alex Muralha", "Walter", "Vanderlei"],
+            "def": ["Lucas Ramon", "Daniel Borges", "Luiz Otávio", "Rodrigo Ferreira", "João Victor", "Reinaldo", "Zeca"],
+            "mid": ["Neto Moura", "Danielzinho", "Chico Kim", "Negueba", "Gabriel", "Yago Felipe", "Iury"],
+            "atk": ["Dellatorre", "Quirino", "Zé Roberto", "Fernandinho", "Fabrício Daniel", "Rafinha", "Nicolas", "Alex Silva"],
+        },
+        25: {
+            "gk": ["Pedro Morisco", "Pedro Rangel", "Gabriel Leite"],
+            "def": ["Tiago Coser", "Maicon", "Jacy", "João Almeida", "Felipe Guimarães", "Guilherme Aquino", "Bruno Melo"],
+            "mid": [("Sebastián Gómez", "Colombiano"), "Willian Oliveira", "Jean Gabriel", "Geovane", "Josué", ("Carlos de Pena", "Uruguaio"), "Matheus Bianqui"],
+            "atk": ["Clayson", "Lucas Ronier", "Dellatorre", "Nicolas Careca", "Gustavo Coutinho", "Iury Castilho", ("Joaquín Lavega", "Uruguaio"), "Pedro Rocha"],
+        },
+        26: {
+            "gk": ["Tadeu", "Thiago Rodrigues", "Marcão"],
+            "def": ["Ezequiel", "Lucas Ribeiro", "Luiz Felipe", "Titi", "Anthony", "Nicolas", "Rodrigo Soares"],
+            "mid": ["Gegê", "Juninho", ("Brayann", "Colombiano"), "Filipe Machado", "Lourenço", "Lucas Lima", "Jean Carlos"],
+            "atk": ["Wellington Rato", "Bruno Sávio", ("Esli García", "Venezuelano"), "Pedrinho", "Anselmo Ramon", "Jajá", "Cadu", "Arthur Caíke"],
+        },
+        27: {
+            "gk": ["Matheus Mendes", "Jori", "Dalberson"],
+            "def": ["Marlon", "Ricardo Silva", "Júlio", "Maguinho", "Nicolas", "Lucão", "Paulinho"],
+            "mid": ["Alê", "Moisés", "Fabinho Santos", "Miguelito", "Benítez", "Cauan Barros", "Jhosefer"],
+            "atk": ["Fabinho", "Adyson", "Willian Bigode", "Guilherme Pato", "Renato Marques", "Brenner", "Stênio", "Aloísio"],
+        },
+        28: {
+            "gk": ["Igor Bohn", "Otávio Passos", "Léo Aragão"],
+            "def": ["Douglas Teixeira", "Quaresma", "Allyson", "Wallison", "Wesley Gasolina", "Guilherme Aquino", "Gabriel Simples"],
+            "mid": ["Jean Lucas", "Daniel Penha", "Zé Ricardo", "Romildo Del Piage", "Wenderson", "Hyan", "Luiz Henrique"],
+            "atk": ["Rafael Bilu", "Felipe Avenatti", "Sorriso", "Gaspar", "Maurício Garcez", "Thayllon", "Igor Rosa", "Mário Sérgio"],
+        },
+        29: {
+            "gk": ["Helton Leite", "Dalberson", "Airton"],
+            "def": ["Caio Marcelo", "Anderson Jesus", "Elias", "Weverton", "Tiago Pagnussat", "Higor", "Hayner"],
+            "mid": ["Dudu", "Nathan Camargo", "Dodô", "João Vieira", "Marco Antonio", "Willian Maranhão", "Marquinhos Gabriel"],
+            "atk": ["Ruan Ribeiro", "Dellatorre", "Andre Luis", "Bruno Xavier", "Rafa Silva", "Emerson Urso", "Janderson", "Alesson"],
+        },
+        30: {
+            "gk": ["Gabriel Mesquita", "Jean Drosny", "Matheus Nogueira"],
+            "def": ["Marcão", ("Yeferson Quintana", "Colombiano"), "Edílson", "Luccão", "Bruno Bispo", "PK", "Reverson"],
+            "mid": ["Leandro Vilela", "Marlon", "Matheus Vargas", "Cavan", "Ramon Martinez", "Giovanni", "Robinho"],
+            "atk": ["Nicolas", "Marlon Douglas", "Benitez", "Edinho", "Ciel", "Kevin", "Eliel", "Diogo Oliveira"],
+        },
+        31: {
+            "gk": ["Matheus Albino", "Vitor Caetano", "Pablo"],
+            "def": ["Hereda", "Henri", "Segovia", "Fábio Alemão", "Lucas Lovat", "Weverton", "Ryan"],
+            "mid": ["Danielzinho", "Higor Meritão", "Geovane", "Lucas Kallyel", "Gegê", "Mikael", "Douglas Baggio"],
+            "atk": ["Anselmo Ramon", "Léo Pereira", "William Pottker", "Dadá Belmonte", "João Neto", "Thiaguinho", "Rafinha", "Labandeira"],
+        },
+        32: {
+            "gk": ["Jordi", "Airton", "César Augusto"],
+            "def": ["Patrick", "Dantas", "Rômulo", "César Martins", "Mayk", "Rafael Donato", "Raí Ramos"],
+            "mid": ["Fábio Matheus", "Jean Irmer", "Marlon", "Matheus Frizzo", "Lucca", "Robson", "Waguininho"],
+            "atk": ["Caio Dantas", "Nicolas Careca", "Léo Tocantins", "Bruno José", "Everaldo", "Neto Pessoa", "Jenison", "Rodolfo"],
+        },
+    }
+
+    for team in teams:
+        snap = roster_2026.get(team.id)
+        if not snap:
+            continue
+        base_ovr = _estimate_base_ovr(team)
+        team.players = _build_named_roster(
+            base_ovr,
+            snap["gk"],
+            snap["def"],
+            snap["mid"],
+            snap["atk"],
+        )
 
 
 def apply_finances(teams):
@@ -1003,6 +1219,7 @@ def apply_finances(teams):
 
 def create_teams():
     teams = create_all_teams()
+    apply_snapshot_2026(teams)
     apply_finances(teams)
     _ensure_minimum_rosters(teams, 25)
     _assign_team_stars(teams, stars_per_team=3)

@@ -31,9 +31,8 @@ def select_starting_lineup(team: Team) -> List[Player]:
     used_ids = set()
 
     def score(player: Player) -> float:
-        # Contrato impacta motivação: 0 rodadas = muito motivado (+5%), 1-15 = normal, >15 = menos motivado (-3%)
-        contrato_bonus = 1.05 if player.contrato_rodadas == 0 else (1.00 if 1 <= player.contrato_rodadas <= 15 else 0.97)
-        return player.overall * contrato_bonus
+        # Escalação sempre prioriza o melhor OVR por posição.
+        return float(player.overall)
 
     if team.formation == Formation.BEST11:
         gks = [p for p in available if p.position == Position.GK]
@@ -220,23 +219,24 @@ def _generate_cards(players: List[Player], is_aggressor: bool = False):
 
 
 # ── Atualiza OVR após partida (desgaste/recuperação) ────────────
-def _update_ovr_after_match(players: List[Player], players_used: List[Player], won: bool, drew: bool):
+def _update_ovr_after_match(players: List[Player], players_used: List[Player]):
     """
-    Titulares que jogaram: OVR desgastado (~-0.1 a -0.4, clamped a 97%)
-    Reservas que não jogaram: OVR melhora levemente com treinamento (+0.05 a +0.15, clamped a 101%)
+    Titulares que jogaram: desgaste linear pequeno (-0.05 a -0.15 por partida).
+    Reservas que não jogaram: recuperação leve (+0.02 a +0.06 por partida).
+
+    Com ~25 partidas por temporada, o decay máximo acumulado é ~3.75 pontos,
+    o que preserva a competitividade sem colapsar elencos em temporadas longas.
     """
     used_ids = {p.id for p in players_used}
 
     for p in players:
         if p.id in used_ids:
-            # Titular que jogou: desgaste
-            p.overall = max(p.overall - random.uniform(0.1, 0.4), p.overall * 0.97)
+            p.overall -= random.uniform(0.05, 0.15)
         else:
-            # Reserve que não jogou: melhora com treinamento
-            p.overall = min(p.overall + random.uniform(0.05, 0.15), p.overall * 1.01)
+            p.overall += random.uniform(0.02, 0.06)
 
-        # Clamp técnico somente para limites globais.
-        p.overall = round(max(10, min(99, p.overall)), 1)
+        # Clamp global: nenhum jogador sai dos limites absolutos.
+        p.overall = round(max(10.0, min(99.0, p.overall)), 2)
 
 
 def _serve_suspensions(players: List[Player], players_used: List[Player]):
@@ -450,14 +450,11 @@ def finalize_match_result(
         p.partidas_temp += 1
         p.partidas_total += 1
 
-    won_home = home_goals > away_goals
-    won_away = away_goals > home_goals
-    drew = home_goals == away_goals
-    _update_ovr_after_match(home.players, home_used, won=won_home, drew=drew)
-    _update_ovr_after_match(away.players, away_used, won=won_away, drew=drew)
+    _update_ovr_after_match(home.players, home_used)
+    _update_ovr_after_match(away.players, away_used)
     _serve_suspensions(home.players, home_used)
     _serve_suspensions(away.players, away_used)
-    match_income = _apply_match_income(home)
+    match_income = _apply_match_income(home, attendance, competition)
     if competition == "Liga":
         if home_goals > away_goals:
             home.caixa += int(match_income * 0.50)
@@ -502,6 +499,7 @@ def simulate_match(
     second_half = simulate_half(home, away, home_lineup, away_lineup, 46, 90, competition)
     all_events = first_half["events"] + second_half["events"]
 
+    attendance = _estimate_match_attendance(home, away, competition)
     return finalize_match_result(
         home=home,
         away=away,
@@ -511,19 +509,38 @@ def simulate_match(
         away_goals=first_half["away_goals"] + second_half["away_goals"],
         home_scorers=first_half["home_scorers"] + second_half["home_scorers"],
         away_scorers=first_half["away_scorers"] + second_half["away_scorers"],
+        attendance=attendance,
         events=all_events,
         home_used=home_used,
         away_used=away_used,
     )
 
 
-def _apply_match_income(home: Team):
-    """Renda do jogo baseada na torcida e prestígio."""
-    base = home.torcida * 0.0001   # 0.01% da torcida vão ao estádio em R$ mil
-    income = int(max(50, base * (home.prestige / 80)))
+def _estimate_match_attendance(home: Team, away: Team, competition: str) -> int:
+    capacity = home.stadium_capacity
+    occupation = min(0.97, max(0.35, 0.44 + (home.prestige / 220)))
+    if competition == "Liga":
+        occupation *= 1.20
+    else:
+        occupation *= 1.28
+    if home.id == away.id:
+        occupation *= 0.95
+    return max(8_000, min(capacity, int(capacity * min(0.99, occupation))))
+
+
+def _apply_match_income(home: Team, attendance: int, competition: str):
+    """Renda do jogo baseada em público e preço médio do ingresso."""
+    ticket_price_by_div = {
+        1: 0.135,  # R$ 135 por torcedor (em mil => 0.135)
+        2: 0.105,
+        3: 0.080,
+        4: 0.060,
+    }
+    ticket = ticket_price_by_div.get(home.division, 0.070)
+    comp_factor = 1.00 if competition == "Liga" else 1.12
+    raw_income = attendance * ticket * comp_factor
+    income = int(max(250, round(raw_income)))
     home.caixa += income
-    # Paga salários no dia de jogo (simplificado: 1/4 do mensal)
-    home.caixa -= max(0, home.salario_mensal // 4)
     return income
 
 
@@ -536,17 +553,31 @@ def simulate_penalty_series(team_a: Team, team_b: Team) -> Tuple[Team, Tuple[int
     b_score = 0
     log: List[dict] = []
     round_num = 1
+    taker_idx = {"a": 0, "b": 0}
+
+    def next_taker(team: Team, side: str) -> str:
+        candidates = [player for player in team.players if player.position != Position.GK]
+        if not candidates:
+            candidates = list(team.players)
+        if not candidates:
+            return "Desconhecido"
+        candidates.sort(key=lambda player: player.overall, reverse=True)
+        idx = taker_idx[side] % len(candidates)
+        taker_idx[side] += 1
+        return candidates[idx].name
 
     def kick(team: Team, side: str, sudden: bool = False) -> bool:
         skill = a_skill if side == "a" else b_skill
         chance = max(0.55, min(0.92, 0.72 + ((skill - 60) / 220)))
         scored = random.random() < chance
+        taker_name = next_taker(team, side)
         log.append({
             "round": round_num,
             "team": team.name,
             "side": side,
             "scored": scored,
             "sudden": sudden,
+            "player": taker_name,
         })
         return scored
 

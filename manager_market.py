@@ -87,10 +87,20 @@ def _poachable_coaches(hiring_team: Team, all_teams: List[Team], excluded_ids: s
     return candidates
 
 
-def _hire_replacement(team: Team, all_teams: List[Team], free_coaches: List[Coach], notifications: List[str], excluded_ids: set[int] | None = None):
+def _hire_replacement(
+    team: Team,
+    all_teams: List[Team],
+    free_coaches: List[Coach],
+    notifications: List[str],
+    excluded_ids: set[int] | None = None,
+    blocked_coach_names: set[str] | None = None,
+):
     excluded_ids = excluded_ids or set()
-    if free_coaches:
-        best = max(free_coaches, key=_coach_value)
+    blocked_coach_names = blocked_coach_names or set()
+
+    available_free = [coach for coach in free_coaches if coach.name not in blocked_coach_names]
+    if available_free:
+        best = max(available_free, key=_coach_value)
         free_coaches.remove(best)
         team.coach = best
         notifications.append(f"{team.name} contratou {best.name} (mercado de técnicos).")
@@ -109,22 +119,55 @@ def _hire_replacement(team: Team, all_teams: List[Team], free_coaches: List[Coac
     notifications.append(f"{team.name} ficou com {team.coach.name} como treinador interino.")
 
 
-def process_coach_market(all_teams: List[Team], career: CareerState) -> List[str]:
+def process_coach_market(all_teams: List[Team], career: CareerState, round_marker: int | None = None) -> List[str]:
     notifications: List[str] = []
     fired_teams: List[Team] = []
+    just_fired_name_by_team: dict[int, str] = {}
+
+    if not hasattr(career, "coach_market_last_round"):
+        career.coach_market_last_round = -1
+    if not hasattr(career, "coach_market_cooldown"):
+        career.coach_market_cooldown = {}
+
+    if round_marker is not None:
+        if career.coach_market_last_round == round_marker:
+            return notifications
+        career.coach_market_last_round = round_marker
+
+    cooldown_map = dict(career.coach_market_cooldown or {})
+    for team_id in list(cooldown_map.keys()):
+        remaining = int(cooldown_map.get(team_id, 0)) - 1
+        if remaining <= 0:
+            cooldown_map.pop(team_id, None)
+        else:
+            cooldown_map[team_id] = remaining
 
     for team in all_teams:
         if career.current_team_id == team.id:
+            continue
+        if int(cooldown_map.get(team.id, 0)) > 0:
             continue
         pressure = _team_pressure(team, all_teams)
         if pressure >= 5 and random.random() < min(0.9, 0.25 + pressure * 0.1):
             old_coach = team.coach
             career.free_coaches.append(old_coach)
             fired_teams.append(team)
+            just_fired_name_by_team[team.id] = old_coach.name
             notifications.append(f"{team.name} demitiu {old_coach.name} após maus resultados.")
 
     for team in fired_teams:
-        _hire_replacement(team, all_teams, career.free_coaches, notifications, excluded_ids={club.id for club in fired_teams})
+        _hire_replacement(
+            team,
+            all_teams,
+            career.free_coaches,
+            notifications,
+            excluded_ids={club.id for club in fired_teams},
+            blocked_coach_names={just_fired_name_by_team.get(team.id, "")},
+        )
+        # Protege o novo técnico por algumas rodadas do mercado.
+        cooldown_map[team.id] = 2
+
+    career.coach_market_cooldown = cooldown_map
 
     return notifications
 
@@ -202,6 +245,19 @@ def generate_player_offers(all_teams: List[Team], career: CareerState) -> List[T
                 offers.append(team)
             if len(offers) >= 3:
                 break
+
+        # Garantia: após 3 rodadas sem clube, força pelo menos uma oferta da
+        # Divisão 4 para evitar que a carreira fique em limbo indefinido.
+        rounds_unemp = getattr(career, "rounds_unemployed", 0)
+        if not offers and rounds_unemp >= 3:
+            fallback = next(
+                (t for t in sorted(all_teams, key=lambda t: (t.division, -t.prestige), reverse=True)
+                 if t.division == 4 and t.id != career.last_fired_team_id),
+                None,
+            )
+            if fallback:
+                offers.append(fallback)
+
         return offers
 
     if player_team is None or player_team.div_played < 4:
@@ -247,6 +303,7 @@ def accept_player_offer(target_team: Team, all_teams: List[Team], career: Career
     career.fired = False
     career.last_fired_team_id = None
     career.games_in_charge = 0
+    career.rounds_unemployed = 0
 
     notifications.append(f"{career.player_coach.name} aceitou proposta do {target_team.name}.")
     notifications.append(f"{old_target_coach.name} deixou o comando do {target_team.name}.")
@@ -255,3 +312,35 @@ def accept_player_offer(target_team: Team, all_teams: List[Team], career: Career
         _hire_replacement(previous_team, all_teams, career.free_coaches, notifications, excluded_ids={target_team.id})
 
     return target_team, notifications
+
+
+def reject_player_offer(target_team: Team, all_teams: List[Team], career: CareerState) -> List[str]:
+    """
+    Quando o jogador recusa a proposta, o clube segue o mercado e define
+    um novo treinador imediatamente.
+    """
+    notifications: List[str] = []
+    old_target_coach = target_team.coach
+    career.free_coaches.append(old_target_coach)
+    notifications.append(
+        f"{career.player_coach.name} recusou a proposta do {target_team.name}."
+    )
+
+    # Evita reposição com o mesmo nome para não parecer que nada aconteceu.
+    backup_pool = [coach for coach in career.free_coaches if coach.name != old_target_coach.name]
+    if backup_pool:
+        best = max(
+            backup_pool,
+            key=lambda coach: coach.tactical * 0.4 + coach.motivation * 0.2 + coach.experience * 0.25 + coach.reputation * 0.15,
+        )
+        career.free_coaches.remove(best)
+        target_team.coach = best
+        notifications.append(f"{target_team.name} contratou {best.name} após a recusa.")
+        return notifications
+
+    # Evita recolocar o mesmo treinador quando não há ninguém livre no pool.
+    if old_target_coach in career.free_coaches:
+        career.free_coaches.remove(old_target_coach)
+    _hire_replacement(target_team, all_teams, career.free_coaches, notifications, excluded_ids={target_team.id})
+    career.free_coaches.append(old_target_coach)
+    return notifications

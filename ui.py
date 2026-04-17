@@ -2,25 +2,39 @@
 ClassicFoot - Interface visual estilo Elifoot 2
 Terminal colorido com colorama + box-drawing characters
 """
+import time
 from typing import List, Optional
 from colorama import Back, Fore, Style
-from models import Team, Player, Position, Formation, Postura, MatchResult, CupTie
-from season import Season, sort_standings, take_loan, settle_loan
+from models import Team, Player, Position, Formation, Postura, MatchResult, CupTie, RENDA_TORCIDA_FACTOR
+from season import (
+    Season, sort_standings, take_loan, settle_loan, monthly_sponsorship,
+    CUSTO_MANUTENCAO, stadium_maintenance_cost, PRIZE_LIGA, PRIZE_COPA,
+)
+from transfers import sale_price
 from term import (
     clear, pause, rule, box, Table, fmt_fans, fmt_money,
     ovr_color, form_color, cond_color, colored_score,
     GG, YY, Y, C, BB, RR, R, WW, W, M, DIM, RST, G,
-    term_width, pad, _visible_len, hline,
+    term_width, pad, _visible_len, _clip_visible, hline,
     is_msdos_mode,
     TL, TR, BL, BR, H, V, ML, MR, TM, BM, X,
     tl, tr, bl, br, h, v, ml, mr,
+    paint_team,
 )
-
-RENDA_TORCIDA_FACTOR = 0.00015
 
 
 def _ovr_text(value: float) -> str:
     return str(int(round(value)))
+
+
+def _ellipsize_visible(text: str, max_visible: int) -> str:
+    if max_visible <= 0:
+        return ""
+    if _visible_len(text) <= max_visible:
+        return text
+    if max_visible <= 3:
+        return "." * max_visible
+    return _clip_visible(text, max_visible - 3) + "..."
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -51,7 +65,7 @@ def banner():
         vis = _visible_len(line)
         pad_l = (w - 2 - vis) // 2
         print(GG + V + RST + " " * pad_l + GG + line + RST + " " * max(0, w - 2 - vis - pad_l) + GG + V + RST)
-    sub = "Brasileirao Edition  -  v1.0" if is_msdos_mode() else "Brasileirão Edition  •  v1.0"
+    sub = "Brasileirao Edition  -  v0.9" if is_msdos_mode() else "Brasileirão Edition  •  v0.9"
     vis = _visible_len(sub)
     pad_l = (w - 2 - vis) // 2
     print(GG + V + RST + " " * pad_l + DIM + sub + RST + " " * max(0, w - 2 - vis - pad_l) + GG + V + RST)
@@ -167,9 +181,9 @@ def season_dashboard(season: Season, player_team: Team | None):
         f"Hist. Advers. Copa: {next_cup_form or DIM + '—' + RST}",
         f"Histórico: {recent_form}",
         GG + h * 26 + RST,
-        Y  + f"💰 {fmt_money(t.caixa)}" + RST,
-        R  + f"💸 {fmt_money(t.salario_mensal)}/mês" + RST,
-        G  + f"👥 {fmt_fans(t.torcida)}" + RST,
+        Y  + f"Saldo: {fmt_money(t.caixa)}" + RST,
+        R  + f"Despesas: {fmt_money(t.salario_mensal)}/mês" + RST,
+        G  + f"Torcida: {fmt_fans(t.torcida)}" + RST,
         GG + h * 26 + RST,
         WW + "MENU:" + RST,
         YY + "[1]" + RST + " Próxima rodada",
@@ -199,6 +213,7 @@ def season_dashboard(season: Season, player_team: Team | None):
     squad_header = (
         DIM + f"{'#':>3} " + RST +
         WW + f"{'Nome':<20}" + RST +
+        M  + f"{'★':^3}" + RST +
         C  + f"{'Pos':^5}" + RST +
         YY + f"{'OVR':^5}" + RST +
         DIM + f"{'Cont':^6}" + RST +
@@ -213,6 +228,7 @@ def season_dashboard(season: Season, player_team: Team | None):
         squad_lines.append(
             DIM + f"{i:>3} " + RST +
             WW + pad(p.name, 20) + RST +
+            (M + f"{'*' if getattr(p, 'is_star', False) else '-':^3}" + RST) +
             C  + f"{p.pos_label():^5}" + RST +
             ovr_color(int(round(p.overall))) + f"{_ovr_text(p.overall):^5}" + RST +
             DIM + f"{p.contrato_rodadas:^4}r" + RST +
@@ -221,7 +237,12 @@ def season_dashboard(season: Season, player_team: Team | None):
             sus_str
         )
 
-    menu_width = max(32, max(_visible_len(line) for line in menu_lines) + 4)
+    # Mantém largura estável da coluna lateral e evita quebra com valores gigantes.
+    max_menu_width = 44
+    min_menu_width = 32
+    menu_content_width = max_menu_width - 4
+    menu_lines = [_ellipsize_visible(line, menu_content_width) for line in menu_lines]
+    menu_width = max(min_menu_width, min(max_menu_width, max(_visible_len(line) for line in menu_lines) + 4))
     menu_box_str = box(menu_lines, border_color=GG, title_color=GG, width=menu_width)
     squad_box = box(
         squad_lines,
@@ -362,60 +383,74 @@ def show_training(team: Team):
     return team
 
 
-def prompt_sell_player(team: Team):
-    """Permite vender um jogador com contrato expirado."""
+def manage_player_sales(team: Team, market):
+    """Tela contínua para listar jogadores em leilão até o usuário sair."""
     clear()
-    print(rule(f"VENDER JOGADOR — {team.name}"))
-    print()
+    while True:
+        clear()
+        print(rule(f"VENDER JOGADOR — {team.name}"))
+        print()
 
-    if len(team.players) <= 16:
-        print(DIM + "\n  Elenco mínimo atingido (16 jogadores). Venda bloqueada.\n" + RST)
+        if len(team.players) <= 16:
+            print(DIM + "\n  Elenco mínimo atingido (16 jogadores). Venda bloqueada.\n" + RST)
+            pause()
+            return
+
+        available = [p for p in team.players if p.contrato_rodadas == 0 and not market.has_player_in_auction(p)]
+        available.sort(key=lambda player: (player.overall, player.name))
+
+        if not available:
+            print(DIM + "\n  Nenhum jogador elegível para novo leilão neste momento.\n" + RST)
+            print(DIM + "  Dica: jogadores já listados não aparecem novamente até o leilão encerrar." + RST)
+            print()
+            cmd = input("  [0] sair: ").strip()
+            if cmd == "0" or cmd == "":
+                return
+            continue
+
+        tbl = Table(title="JOGADORES DISPONÍVEIS", border_color=C, header_color=YY, title_color=C)
+        tbl.add_column("N", width=4, align="r", color=DIM)
+        tbl.add_column("Nome", width=22, align="l", color=WW)
+        tbl.add_column("★", width=3, align="c", color=M)
+        tbl.add_column("Pos", width=5, align="c", color=C)
+        tbl.add_column("OVR", width=5, align="c", color=YY)
+        tbl.add_column("J", width=4, align="c", color=DIM)
+        tbl.add_column("G", width=4, align="c", color=G)
+        tbl.add_column("Lance Min", width=14, align="r", color=Y)
+
+        for idx, player in enumerate(available, start=1):
+            asking_price = sale_price(player)
+            tbl.add_row(
+                str(idx),
+                player.name[:22],
+                "*" if getattr(player, "is_star", False) else "-",
+                player.pos_label(),
+                _ovr_text(player.overall),
+                str(player.partidas_total),
+                str(player.gols_total),
+                f"R${asking_price:,}k",
+            )
+        tbl.print()
+
+        choice = input("\n  Jogador para listar no leilão ([0] sair): ").strip()
+        if choice == "0" or choice == "":
+            return
+        if not choice.isdigit() or int(choice) not in range(1, len(available) + 1):
+            print(RR + "\n  Jogador inválido." + RST)
+            pause()
+            continue
+
+        player = available[int(choice) - 1]
+        minimum_bid = sale_price(player)
+        confirm = input(f"\n  Listar {player.name} no leilão com mínimo de R${minimum_bid:,}k? [S/N]: ").strip().upper()
+        if confirm != "S":
+            print(YY + "\n  Ação cancelada." + RST)
+            pause()
+            continue
+
+        ok, message = market.list_player_for_auction(team, player, min_bid=minimum_bid)
+        print((GG if ok else RR) + f"\n  {message}" + RST)
         pause()
-        return None
-
-    # Filtra apenas jogadores com contrato = 0
-    available = [p for p in team.players if p.contrato_rodadas == 0]
-
-    if not available:
-        print(DIM + "\n  Nenhum jogador com contrato expirado disponível para venda.\n" + RST)
-        pause()
-        return None
-
-    tbl = Table(title="JOGADORES DISPONÍVEIS", border_color=C, header_color=YY, title_color=C)
-    tbl.add_column("N", width=4, align="r", color=DIM)
-    tbl.add_column("Nome", width=24, align="l", color=WW)
-    tbl.add_column("Pos", width=5, align="c", color=C)
-    tbl.add_column("OVR", width=5, align="c", color=YY)
-    tbl.add_column("Valor Mercado", width=15, align="r", color=Y)
-
-    for idx, player in enumerate(available, start=1):
-        tbl.add_row(
-            str(idx),
-            player.name,
-            player.pos_label(),
-            _ovr_text(player.overall),
-            f"R${player.valor_mercado:,}k",
-        )
-    tbl.print()
-
-    choice = input("\n  Jogador para vender (ENTER cancela): ").strip()
-    if not choice:
-        return None
-    if not choice.isdigit() or int(choice) not in range(1, len(available) + 1):
-        print(RR + "\n  Jogador inválido." + RST)
-        pause()
-        return None
-
-    player = available[int(choice) - 1]
-
-    # Confirmação
-    confirm = input(f"\n  Vender {player.name} por R${player.valor_mercado:,}k? [S/N]: ").strip().upper()
-    if confirm != "S":
-        print(YY + "\n  Venda cancelada." + RST)
-        pause()
-        return None
-
-    return player
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -431,9 +466,8 @@ def _pick_probable_lineup(team: Team) -> List[Player]:
     used_ids = set()
 
     def player_score(player: Player) -> float:
-        # Contrato impacta motivação
-        contrato_bonus = 1.05 if player.contrato_rodadas == 0 else (1.00 if 1 <= player.contrato_rodadas <= 15 else 0.97)
-        return player.overall * contrato_bonus
+        # Escalação provável segue os melhores por posição por OVR.
+        return float(player.overall)
 
     if team.formation == Formation.BEST11:
         gks = [p for p in available if p.position == Position.GK]
@@ -612,7 +646,7 @@ def _mini_form(history: List[MatchResult], team: Team) -> str:
 def show_standings(season: Season, player_team: Team | None, division: int = 0):
     clear()
     print(rule("CLASSIFICAÇÃO"))
-    division_tables = []
+    division_tables = {}
     for current_division in [1, 2, 3, 4]:
         div_teams = [t for t in season.all_teams if t.division == current_division]
         ranked = sort_standings(div_teams)
@@ -662,14 +696,13 @@ def show_standings(season: Season, player_team: Team | None, division: int = 0):
             )
             lines.append(line)
 
-        division_tables.append(
-            box(lines, title=f"{current_division}ª DIVISÃO", border_color=C, title_color=GG, width=50)
-        )
+        division_tables[current_division] = box(lines, title=f"{current_division}ª DIVISÃO", border_color=C, title_color=GG, width=50)
 
     gap = 2
-    for i in range(0, len(division_tables), 2):
-        left = division_tables[i]
-        right = division_tables[i + 1] if i + 1 < len(division_tables) else ""
+    layout_pairs = [(1, 2), (3, 4)]
+    for left_div, right_div in layout_pairs:
+        left = division_tables.get(left_div, "")
+        right = division_tables.get(right_div, "")
         if right and _box_width(left) + gap + _box_width(right) <= term_width():
             _print_side_by_side(left, right, gap=gap)
         else:
@@ -731,26 +764,26 @@ def show_calendar(season: Season, player_team: Team | None):
         pause()
         return
 
-    page_size = 8
-    total_pages = (len(blocks) + page_size - 1) // page_size
-    page = 0
-    while True:
-        clear()
-        print(rule("CALENDÁRIO DA TEMPORADA"))
-        print(DIM + f"  Página {page + 1}/{total_pages}" + RST)
-        print()
-        start = page * page_size
-        end = start + page_size
-        for block in blocks[start:end]:
-            print(block)
-            print()
-        cmd = input("  ENTER próxima  |  [V] voltar  |  [0] sair: ").strip().upper()
-        if cmd == "0":
-            break
-        if cmd == "V":
-            page = max(0, page - 1)
-        else:
-            page = (page + 1) % total_pages
+    # Exibe todo o calendário em uma única tela, em duas colunas.
+    left_col = blocks[::2]
+    right_col = blocks[1::2]
+    left_lines = []
+    right_lines = []
+    for item in left_col:
+        left_lines.extend(item.split("\n"))
+        left_lines.append("")
+    for item in right_col:
+        right_lines.extend(item.split("\n"))
+        right_lines.append("")
+
+    left_width = min(58, max(44, (term_width() - 6) // 2))
+    max_lines = max(len(left_lines), len(right_lines))
+    for i in range(max_lines):
+        left = left_lines[i] if i < len(left_lines) else ""
+        right = right_lines[i] if i < len(right_lines) else ""
+        print(pad(left, left_width) + "  " + right)
+    print()
+    pause()
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -864,7 +897,6 @@ def show_tactics(team: Team) -> Team:
         team.postura = mapping[p]
         print(GG + f"\n  Postura alterada para {team.postura.value}" + RST)
 
-    pause()
     return team
 
 
@@ -879,38 +911,118 @@ def show_copa(season: Season, player_team: Team):
     pause()
 
 
+def show_copa_draw(phase_title: str, ties: List[CupTie], all_teams: List[Team]):
+    """Exibe o sorteio da fase da Copa de forma progressiva."""
+    if not ties:
+        return
+
+    participants = []
+    seen_ids = set()
+    for tie in ties:
+        for team in (tie.team_a, tie.team_b):
+            if team.id in seen_ids:
+                continue
+            seen_ids.add(team.id)
+            participants.append(team)
+
+    remaining = list(participants)
+    # slots[i] = [team_a|None, team_b|None]
+    slots: list[list[Team | None]] = [[None, None] for _ in ties]
+
+    def _remove_remaining(team: Team):
+        for idx, item in enumerate(remaining):
+            if item.id == team.id:
+                remaining.pop(idx)
+                return
+
+    def _division_pool_lines() -> List[str]:
+        lines: List[str] = []
+        grouped = {1: [], 2: [], 3: [], 4: []}
+        for team in remaining:
+            grouped.setdefault(team.division, []).append(team)
+        for division in [1, 2, 3, 4]:
+            teams = sorted(grouped.get(division, []), key=lambda club: club.name)
+            lines.append(YY + f"  DIVISÃO {division}" + RST)
+            if not teams:
+                lines.append(DIM + "  —" + RST)
+                lines.append("")
+                continue
+            row = "  "
+            count = 0
+            for team in teams:
+                token = _paint_team_box(team, pad(_fit_bracket_team_name(team.name, 16), 16))
+                if count > 0 and count % 4 == 0:
+                    lines.append(_ellipsize_visible(row, 110))
+                    row = "  "
+                row += token + " "
+                count += 1
+            lines.append(_ellipsize_visible(row.rstrip(), 110))
+            lines.append("")
+        return lines
+
+    def _top_draw_lines() -> List[str]:
+        lines = [f"  Fase: {C}{phase_title}{RST}", ""]
+        for idx, pair in enumerate(slots, start=1):
+            left = pair[0]
+            right = pair[1]
+            if left and right:
+                fixture = _format_bracket_fixture(left, right, "vs")
+            elif left and not right:
+                left_box = _paint_team_box(left, pad(_fit_bracket_team_name(left.name, 20), 20))
+                right_box = DIM + pad("A sortear...", 20) + RST
+                fixture = f"{left_box} {'vs':^7} {right_box}"
+            else:
+                fixture = DIM + "A sortear..." + RST
+            lines.append(f"  Jogo {idx:>2}: {fixture}")
+        pending_teams = len(remaining)
+        pending = pending_teams // 2
+        if pending > 0:
+            lines.append("")
+            lines.append(DIM + f"  Sorteando próximos confrontos... faltam {pending} jogo(s)" + RST)
+        return lines
+
+    for idx, tie in enumerate(ties):
+        # Sorteia um time por vez no confronto para ficar visualmente progressivo.
+        slots[idx][0] = tie.team_a
+        _remove_remaining(tie.team_a)
+        clear()
+        print(rule("🎲 SORTEIO DA COPA"))
+        print()
+        top_box = box(_top_draw_lines(), title=f"SORTEIO — {phase_title}", border_color=YY, title_color=YY, width=112)
+        pool_box = box(_division_pool_lines(), title="TIMES RESTANTES (POR DIVISÃO)", border_color=C, title_color=C, width=112)
+        print(top_box)
+        print()
+        print(pool_box)
+        time.sleep(0.35)
+
+        slots[idx][1] = tie.team_b
+        _remove_remaining(tie.team_b)
+        clear()
+        print(rule("🎲 SORTEIO DA COPA"))
+        print()
+        top_box = box(_top_draw_lines(), title=f"SORTEIO — {phase_title}", border_color=YY, title_color=YY, width=112)
+        pool_box = box(_division_pool_lines(), title="TIMES RESTANTES (POR DIVISÃO)", border_color=C, title_color=C, width=112)
+        print(top_box)
+        print()
+        print(pool_box)
+        time.sleep(0.45)
+
+    clear()
+    print(rule("🎲 SORTEIO DA COPA"))
+    print()
+    print(GG + f"  ✓ Sorteio da fase {phase_title} concluído." + RST)
+    time.sleep(0.55)
+
+
 def _fit_bracket_team_name(name: str, limit: int = 20) -> str:
     if len(name) <= limit:
         return name
     return name[: limit - 1].rstrip() + "…"
 
 
-def _team_bg_color(team: Team) -> str:
-    return {
-        "red": Back.RED,
-        "dark_red": Back.RED,
-        "green": Back.GREEN,
-        "blue": Back.BLUE,
-        "yellow": Back.YELLOW,
-        "black": Back.BLACK,
-        "white": Back.WHITE,
-    }.get(getattr(team, "primary_color", "white"), Back.WHITE)
-
-
-def _team_fg_color(team: Team) -> str:
-    return {
-        "red": Fore.RED,
-        "dark_red": Fore.RED,
-        "green": Fore.GREEN,
-        "blue": Fore.BLUE,
-        "yellow": Fore.YELLOW,
-        "black": Fore.BLACK,
-        "white": Fore.WHITE,
-    }.get(getattr(team, "secondary_color", "white"), Fore.WHITE)
-
-
 def _paint_team_box(team: Team, text: str) -> str:
-    return _team_bg_color(team) + _team_fg_color(team) + Style.BRIGHT + text + RST
+    """Alias para paint_team centralizado em term.py."""
+    return paint_team(team, text)
 
 
 def _format_bracket_fixture(team_a: Team, team_b: Team, score: str = "vs") -> str:
@@ -995,37 +1107,57 @@ def _print_knockout(season: Season, player_team: Team | None):
         ], border_color=YY, title_color=YY, width=50))
 
 
-def _print_side_by_side(left: str, right: str, gap: int = 1):
-    left_lines  = left.split("\n")
-    right_lines = right.split("\n")
-    max_lines   = max(len(left_lines), len(right_lines))
-    lw = max((_visible_len(l) for l in left_lines), default=0)
-    for i in range(max_lines):
-        l = left_lines[i]  if i < len(left_lines)  else ""
-        r = right_lines[i] if i < len(right_lines) else ""
-        l_pad = lw - _visible_len(l)
-        print(l + " " * (l_pad + gap) + r)
-
-
 # ═══════════════════════════════════════════════════════════════
 # FINANÇAS
 # ═══════════════════════════════════════════════════════════════
-def show_finances(team: Team):
+def _annual_budget_forecast(team: Team, season: Season | None):
+    """Previsão simples de caixa até o fim da temporada."""
+    if season is None:
+        return None
+
+    remaining_rounds = max(0, len(season.calendar) - season.current_matchday)
+    months_left = max(0, (remaining_rounds + 3) // 4)
+
+    sponsor_monthly = monthly_sponsorship(team)
+    monthly_expenses = sum(player.salario for player in team.players) + CUSTO_MANUTENCAO + team.loan_monthly_payment
+    projected_expenses = monthly_expenses * months_left
+
+    # Receita esperada: estimativa conservadora de bilheteria por jogos em casa restantes.
+    # Aproxima por metade dos jogos da liga restantes para o clube.
+    home_games_left = 0
+    for matchday in season.calendar[season.current_matchday:]:
+        for fixture in matchday.get("fixtures", []):
+            if fixture.home_team.id == team.id:
+                home_games_left += 1
+    avg_home_income = int((team.torcida * RENDA_TORCIDA_FACTOR) + (team.prestige * 20))
+    projected_income = (home_games_left * avg_home_income) + (sponsor_monthly * months_left)
+
+    projected_final_cash = team.caixa + projected_income - projected_expenses
+    return {
+        "remaining_rounds": remaining_rounds,
+        "months_left": months_left,
+        "projected_income": projected_income,
+        "projected_expenses": projected_expenses,
+        "projected_final_cash": projected_final_cash,
+    }
+
+
+def show_finances(team: Team, season: Season | None = None):
     while True:
         clear()
         print(rule(f"EXTRATO BANCÁRIO — {team.name}"))
         folha = sum(p.salario for p in team.players)
         team.salario_mensal = folha
-        saldo_total = team.caixa + team.loan_balance
+        forecast = _annual_budget_forecast(team, season)
 
         lines = [
             "",
-            WW + f"  {'CAIXA ATUAL':.<28}" + RST + YY + f"  R${team.caixa:>10,} mil" + RST,
-            WW + f"  {'SALDO TOTAL (CAIXA+EMPR.)':.<28}" + RST + YY + f"  R${saldo_total:>10,} mil" + RST,
-            WW + f"  {'FOLHA SALARIAL':.<28}" + RST + RR + f"  R${folha:>10,} mil/mês" + RST,
-            WW + f"  {'MANUTENÇÃO ESTÁDIO':.<28}" + RST + RR + f"  R${200:>10,} mil/mês" + RST,
-            WW + f"  {'SALDO DE EMPRÉSTIMOS':.<28}" + RST + Y + f"  R${team.loan_balance:>10,} mil" + RST,
-            WW + f"  {'PARCELA MENSAL':.<28}" + RST + Y + f"  R${team.loan_monthly_payment:>10,} mil" + RST,
+            WW + f"  {'CAIXA ATUAL':.<28}" + RST + YY + f"  R${team.caixa:>10,}" + RST,
+            WW + f"  {'FOLHA SALARIAL':.<28}" + RST + RR + f"  R${folha:>10,}/mês" + RST,
+            WW + f"  {'MANUTENÇÃO ESTÁDIO':.<28}" + RST + RR + f"  R${CUSTO_MANUTENCAO:>10,}/mês" + RST,
+            WW + f"  {'PATROCÍNIO MENSAL':.<28}" + RST + GG + f"  R${monthly_sponsorship(team):>10,}/mês" + RST,
+            WW + f"  {'SALDO DE EMPRÉSTIMOS':.<28}" + RST + Y + f"  R${team.loan_balance:>10,}" + RST,
+            WW + f"  {'PARCELA MENSAL':.<28}" + RST + Y + f"  R${team.loan_monthly_payment:>10,}" + RST,
             DIM + h * 46 + RST,
             WW + f"  {'TORCIDA':.<28}" + RST + G  + f"  {fmt_fans(team.torcida):>12}" + RST,
             WW + f"  {'PRESTÍGIO':.<28}" + RST + C  + f"  {team.prestige:>11}/100" + RST,
@@ -1035,7 +1167,17 @@ def show_finances(team: Team):
         top5 = sorted(team.players, key=lambda p: -p.salario)[:5]
         for p in top5:
             bar = GG + "█" * min(int(p.salario / 400), 18) + RST + DIM + "░" * (18 - min(int(p.salario / 400), 18)) + RST
-            lines.append(f"  {WW}{pad(p.name, 22)}{RST}  {Y}R${p.salario:,}k{RST}  {bar}")
+            lines.append(f"  {WW}{pad(p.name, 22)}{RST}  {Y}R${p.salario:,}{RST}  {bar}")
+        if forecast:
+            lines.extend([
+                "",
+                C + "  PREVISÃO ORÇAMENTÁRIA (FIM DA TEMPORADA):" + RST,
+                WW + f"  {'Rodadas restantes':.<28}" + RST + C + f"  {forecast['remaining_rounds']:>10}" + RST,
+                WW + f"  {'Meses restantes':.<28}" + RST + C + f"  {forecast['months_left']:>10}" + RST,
+                WW + f"  {'Receitas previstas':.<28}" + RST + G + f"  R${forecast['projected_income']:>10,}" + RST,
+                WW + f"  {'Despesas previstas':.<28}" + RST + RR + f"  R${forecast['projected_expenses']:>10,}" + RST,
+                WW + f"  {'Caixa projetado':.<28}" + RST + (GG if forecast["projected_final_cash"] >= 0 else RR) + f"  R${forecast['projected_final_cash']:>10,}" + RST,
+            ])
         lines.append("")
         lines.append(f"  {YY}[E]{RST} Pegar empréstimo")
         if team.loan_balance > 0:
@@ -1047,7 +1189,7 @@ def show_finances(team: Team):
         if choice == "":
             return
         if choice == "E":
-            amount = input("  Valor do empréstimo em R$ mil: ").strip().replace(".", "").replace(",", "")
+            amount = input("  Valor do empréstimo em R$: ").strip().replace(".", "").replace(",", "")
             if amount.isdigit():
                 ok, message = take_loan(team, int(amount))
                 print((GG if ok else RR) + f"\n  {message}" + RST)
@@ -1105,34 +1247,34 @@ def show_stadium(team: Team):
         print(rule(f"🏟  ESTÁDIO — {team.stadium}"))
         renda = int(team.torcida * RENDA_TORCIDA_FACTOR * team.prestige / 80)
 
-        base_capacity = 30_000
-        upgraded_capacity = base_capacity + (team.stadium_level - 1) * 10_000
-        maintenance = 200 + (team.stadium_level - 1) * 50
+        current_capacity = team.stadium_capacity
+        maintenance = stadium_maintenance_cost(team)
 
         lines = [
             "",
             WW + f"  Nome:          {WW}{team.stadium}{RST}",
             WW + f"  Cidade:        {C}{team.city}/{team.state}{RST}",
             WW + f"  Nível:         {YY}{team.stadium_level}/5{RST}",
-            WW + f"  Capacidade:    {G}{fmt_fans(upgraded_capacity)}{RST}",
-            WW + f"  Manutenção:    {RR}R${maintenance} mil/mês{RST}",
+            WW + f"  Capacidade:    {G}{fmt_fans(current_capacity)}{RST}",
+            WW + f"  Manutenção:    {RR}R${maintenance} mil/ciclo{RST}",
             "",
             C + "  RECEITAS ESTIMADAS:" + RST,
             WW + f"  Bilheteria/jogo: {Y}R${renda:,} mil{RST}",
-            DIM + f"  (Baseado em ~{int(upgraded_capacity*0.65):,} ingressos a R${int(renda*1000/max(upgraded_capacity*0.65,1))}/un.)" + RST,
+            DIM + f"  (Baseado em ~{int(current_capacity*0.65):,} ingressos a R${int(renda*1000/max(current_capacity*0.65,1))}/un.)" + RST,
             "",
-            WW + f"  Custo anual:     {RR}R${maintenance * 12:,} mil{RST}",
+            WW + f"  Custo/temporada: {RR}R${maintenance * 3:,} mil{RST}",
             "",
         ]
 
         if team.stadium_level < 5:
             next_level = team.stadium_level + 1
             upgrade_cost = team.stadium_level * 5_000
+            next_capacity = min(80_000, current_capacity + 5_000)
             lines.append(C + "  UPGRADE DISPONÍVEL:" + RST)
             lines.append(WW + f"  Próx. nível:    {YY}{next_level}/5{RST}")
-            lines.append(WW + f"  Nova capacidade: {G}{fmt_fans(upgraded_capacity + 10_000)}{RST}")
+            lines.append(WW + f"  Nova capacidade: {G}{fmt_fans(next_capacity)}{RST}")
             lines.append(WW + f"  Custo upgrade:  {Y}R${upgrade_cost} mil{RST}")
-            lines.append(WW + f"  Nova manutenção: {RR}R${maintenance + 50} mil/mês{RST}")
+            lines.append(WW + f"  Nova manutenção: {RR}R${maintenance + 20} mil/ciclo{RST}")
             lines.append("")
             lines.append(f"  {YY}[U]{RST} Fazer upgrade")
         else:
@@ -1197,20 +1339,31 @@ def _show_transfer_history(market):
             page = (page + 1) % total_pages
 
 
+def show_auction_results(messages: List[str]):
+    if not messages:
+        return
+    clear()
+    print(rule("RESULTADO DOS LEILÕES"))
+    print()
+    for idx, message in enumerate(messages, start=1):
+        print(box(["", f"  {message}", ""], title=f"LEILÃO {idx}", border_color=YY, title_color=YY, width=96))
+        print()
+    pause()
+
+
 def show_transfer_market(market, player_team: Team):
     clear()
     if not market.auctions:
-        print(rule("🔄 MERCADO DE TRANSFERÊNCIAS"))
+        print(rule("MERCADO DE TRANSFERÊNCIAS"))
         print(DIM + "\n  Nenhum jogador no mercado nesta rodada.\n" + RST)
-        _show_transfer_history(market)
-        pause()
+        input("  ENTER para voltar: ")
         return
 
     visible_auctions = list(market.auctions)
 
     while visible_auctions:
         clear()
-        print(rule("🔄 MERCADO DE TRANSFERÊNCIAS"))
+        print(rule("MERCADO DE TRANSFERÊNCIAS"))
         print()
 
         total = len(visible_auctions)
@@ -1219,6 +1372,26 @@ def show_transfer_market(market, player_team: Team):
         bidder = auction.current_bidder.name if auction.current_bidder else "—"
         market_index = market.auctions.index(auction)
         own_player_auction = auction.origin_team.id == player_team.id
+
+        if player_team.caixa < 0:
+            lines = [
+                "",
+                f"  {WW}{p.name}{RST}  [{C}{p.pos_label()}{RST}]  "
+                f"{DIM}{p.nationality}{RST}",
+                f"  Lance atual: {GG}R${auction.current_bid:,}k{RST}  │  Líder: {M}{bidder}{RST}",
+                "",
+                RR + "  Clube com caixa negativo não pode participar de leilões." + RST,
+                "",
+            ]
+            print(box(lines, title=f"LOTE 1 DE {total}", border_color=YY, title_color=YY, width=78))
+            c = input(f"\n  ENTER próximo  |  {YY}[H]{RST} histórico  |  {YY}[0]{RST} sair: ").strip().upper()
+            if c == "0":
+                break
+            if c == "H":
+                _show_transfer_history(market)
+                continue
+            visible_auctions.pop(0)
+            continue
 
         if own_player_auction:
             lines = [
@@ -1330,27 +1503,87 @@ def show_transfer_market(market, player_team: Team):
 # ═══════════════════════════════════════════════════════════════
 def show_top_scorers(season: Season):
     clear()
-    print(rule("⚽ ARTILHEIROS DA TEMPORADA"))
+    print(rule("ARTILHEIROS DA TEMPORADA"))
     print()
     all_players = [(t, p) for t in season.all_teams for p in t.players]
-    top = sorted(all_players, key=lambda x: -x[1].gols_temp)[:20]
+    top_global = sorted(all_players, key=lambda x: (-x[1].gols_temp, x[1].name))[:20]
 
-    tbl = Table(title="ARTILHEIROS", border_color=C, header_color=YY, title_color=C)
-    tbl.add_column("Pos",  width=4,  align="r", color=DIM)
-    tbl.add_column("Nome", width=22, align="l", color=WW)
-    tbl.add_column("Time", width=24, align="l", color=C)
-    tbl.add_column("Pos.", width=5,  align="c", color=DIM)
-    tbl.add_column("G",    width=4,  align="c", color=GG)
-    tbl.add_column("J",    width=4,  align="c", color=DIM)
-
-    for i, (team, p) in enumerate(top, 1):
-        tbl.add_row(
-            str(i), WW + p.name + RST, C + team.name + RST,
-            p.pos_label(),
-            GG + str(p.gols_temp) + RST,
-            str(p.partidas_temp),
+    # Painel da esquerda: ranking global (mantido).
+    left_lines = [
+        DIM + "  #  " + WW + pad("Nome", 21) + C + pad("Time", 20) + YY + " G  J" + RST,
+        C + "  " + h * 51 + RST,
+    ]
+    for i, (team, player) in enumerate(top_global, 1):
+        left_lines.append(
+            DIM + f"  {i:>2} " + RST +
+            WW + pad(player.name, 21) + RST +
+            C + pad(team.name, 20) + RST +
+            GG + f"{int(player.gols_temp):>2}" + RST +
+            DIM + f"{int(player.partidas_temp):>3}" + RST
         )
-    tbl.print()
+    left_box = box(left_lines, title="GLOBAL (TEMPORADA)", border_color=C, title_color=C, width=58)
+
+    # Painel da direita: mesmo layout de tabela do global (liga + copa).
+    right_lines = [
+        DIM + "  #  " + WW + pad("Nome", 21) + C + pad("Time", 20) + YY + " G  J" + RST,
+        C + "  " + h * 51 + RST,
+    ]
+
+    player_lookup = {(player.name, team.name): player for team, player in all_players}
+
+    def _append_right_section(title: str, rows: list[tuple[str, str, int, int]]):
+        right_lines.append(YY + f"  {title}" + RST)
+        if not rows:
+            right_lines.append(DIM + "  -- sem dados --" + RST)
+            right_lines.append("")
+            return
+        for idx, (player_name, team_name, goals, games) in enumerate(rows, start=1):
+            right_lines.append(
+                DIM + f"  {idx:>2} " + RST +
+                WW + pad(player_name, 21) + RST +
+                C + pad(team_name, 20) + RST +
+                GG + f"{int(goals):>2}" + RST +
+                DIM + f"{int(games):>3}" + RST
+            )
+        right_lines.append("")
+
+    for div in [1, 2, 3, 4]:
+        div_players = [(team, player) for team, player in all_players if team.division == div]
+        div_top = sorted(div_players, key=lambda x: (-x[1].gols_temp, x[1].name))[:5]
+        rows = [
+            (player.name, team.name, int(player.gols_temp), int(player.partidas_temp))
+            for team, player in div_top
+        ]
+        _append_right_section(f"DIVISÃO {div}", rows)
+
+    cup_goals = {}
+    for result in season.results_history:
+        competition = str(getattr(result, "competition", "") or "").lower()
+        if not competition.startswith("copa"):
+            continue
+        for scorer in getattr(result, "home_scorers", []) or []:
+            key = (scorer, result.home_team.name)
+            cup_goals[key] = int(cup_goals.get(key, 0)) + 1
+        for scorer in getattr(result, "away_scorers", []) or []:
+            key = (scorer, result.away_team.name)
+            cup_goals[key] = int(cup_goals.get(key, 0)) + 1
+    cup_top = sorted(cup_goals.items(), key=lambda item: (-item[1], item[0][0]))[:5]
+    cup_rows = []
+    for (player_name, team_name), goals in cup_top:
+        player = player_lookup.get((player_name, team_name))
+        games = int(player.partidas_temp) if player is not None else 0
+        cup_rows.append((player_name, team_name, int(goals), games))
+    _append_right_section("COPA (TOP 5)", cup_rows)
+
+    right_box = box(right_lines, title="LIGAS E COPA", border_color=C, title_color=C, width=58)
+
+    if _box_width(left_box) + 2 + _box_width(right_box) <= term_width():
+        _print_side_by_side(left_box, right_box, gap=2)
+    else:
+        # Fallback para terminais estreitos.
+        print(left_box)
+        print()
+        print(right_box)
     pause()
 
 
@@ -1407,6 +1640,11 @@ def prompt_job_offer(coach_name: str, team: Team, all_teams: List[Team] | None =
 # ═══════════════════════════════════════════════════════════════
 # FIM DE TEMPORADA
 # ═══════════════════════════════════════════════════════════════
+def _e(emoji: str, ascii_alt: str) -> str:
+    """Retorna emoji em terminais coloridos, fallback ASCII em modo MSDOS."""
+    return ascii_alt if is_msdos_mode() else emoji
+
+
 def show_season_end(season: Season, player_team: Team):
     clear()
     w = term_width()
@@ -1416,27 +1654,90 @@ def show_season_end(season: Season, player_team: Team):
     print(GG + BL + H * (w - 2) + BR + RST)
     print()
 
-    div = player_team.division
-    div_teams = [t for t in season.all_teams if t.division == div]
-    ranked = sort_standings(div_teams)
-    pos = next((i + 1 for i, t in enumerate(ranked) if t.id == player_team.id), 0)
+    # ── Posição final na Liga ────────────────────────────────────
+    final_data = season.final_positions.get(player_team.id, {}) if hasattr(season, "final_positions") else {}
+    original_div = int(final_data.get("division", player_team.division))
+    pos = int(final_data.get("position", 0) or 0)
+    if pos <= 0:
+        # Fallback: usa divisão atual (pode estar atualizada após promoção/rebaixamento)
+        div_teams = [t for t in season.all_teams if t.division == original_div]
+        ranked = sort_standings(div_teams)
+        pos = next((i + 1 for i, t in enumerate(ranked) if t.id == player_team.id), 1)
 
-    if pos <= 2 and div > 1:
-        print(GG + f"  🎉 PROMOVIDO! {player_team.name} subiu para a Divisão {div-1}!" + RST)
-    elif pos >= len(ranked) - 1 and div < 4:
-        print(RR + f"  😢 REBAIXADO. {player_team.name} foi para a Divisão {div+1}." + RST)
+    liga_lines = []
+    if pos <= 2 and original_div > 1:
+        liga_lines.append(GG + f"  {_e('🎉','>>>')} PROMOVIDO! {player_team.name} subiu para a Divisão {original_div - 1}!" + RST)
+    elif pos >= 7 and original_div < 4:
+        liga_lines.append(RR + f"  {_e('😢','...')} REBAIXADO. {player_team.name} foi para a Divisão {original_div + 1}." + RST)
     else:
-        print(WW + f"  {player_team.name} terminou em {pos}º lugar na Divisão {div}." + RST)
+        liga_lines.append(WW + f"  {player_team.name} terminou em {YY}{pos}º lugar{RST} na Divisão {original_div}." + RST)
 
-    if season.copa_champion:
-        if season.copa_champion.id == player_team.id:
-            print(YY + "  🏆 CAMPEÃO DA COPA DO BRASILEIRÃO! 🏆" + RST)
-        else:
-            print(WW + f"  Copa: Campeão — {YY}{season.copa_champion.name}{RST}")
+    # ── Prêmio estimado da Liga ──────────────────────────────────
+    from season import _season_prize_multiplier
+    multiplier = _season_prize_multiplier(season.year)
+    liga_prize = int(PRIZE_LIGA.get(original_div, {}).get(pos, 0) * multiplier)
 
+    # ── Copa ─────────────────────────────────────────────────────
+    copa_phase = getattr(player_team, "copa_phase", "grupos")
+    _copa_phase_labels = {
+        "campeão":      (_e("🏆", "[CAMPEAO]") + " CAMPEÃO DA COPA!", YY),
+        "final":        ("Vice-campeão da Copa",                       C),
+        "semi":         ("Semifinalista da Copa",                      C),
+        "quartas":      ("Quartas de final da Copa",                   W),
+        "oitavas":      ("Oitavas de final da Copa",                   DIM),
+        "primeira_fase":("Eliminado na 1ª Fase da Copa",               DIM),
+        "eliminado":    ("Eliminado na Copa",                          DIM),
+    }
+    copa_label, copa_color = _copa_phase_labels.get(copa_phase, ("—", DIM))
+    copa_prize_key = {
+        "campeão": "campeão", "final": "vice",
+        "semi": "semi", "quartas": "quartas",
+        "oitavas": "oitavas", "primeira_fase": "primeira_fase",
+    }.get(copa_phase)
+    copa_prize = int(PRIZE_COPA.get(copa_prize_key, 0) * multiplier) if copa_prize_key else 0
+    if season.copa_champion and season.copa_champion.id != player_team.id:
+        copa_champ_line = WW + f"  {_e('🏆','>>>')} Copa: Campeão — {YY}{season.copa_champion.name}{RST}"
+    else:
+        copa_champ_line = None
+
+    # ── Evolução do elenco ───────────────────────────────────────
+    players_with_base = [p for p in player_team.players if p.season_base_ovr is not None]
+    if players_with_base:
+        top_start = sorted(players_with_base, key=lambda p: p.season_base_ovr, reverse=True)[:11]
+        top_end   = sorted(player_team.players, key=lambda p: p.overall, reverse=True)[:11]
+        avg_start = sum(p.season_base_ovr for p in top_start) / len(top_start)
+        avg_end   = sum(p.overall for p in top_end) / len(top_end)
+        ovr_diff  = avg_end - avg_start
+        ovr_arrow = (GG + f"+{ovr_diff:+.1f}") if ovr_diff >= 0 else (RR + f"{ovr_diff:+.1f}")
+        ovr_line = (WW + f"  OVR médio (top-11): {YY}{avg_start:.1f}{RST} → {YY}{avg_end:.1f} {ovr_arrow}{RST}")
+    else:
+        ovr_line = None
+
+    # ── Artilheiro ───────────────────────────────────────────────
+    scorer_line = None
     if season.top_scorers:
-        name, club, goals = season.top_scorers[0]
-        print(GG + f"  ⚽ Artilheiro: {name} ({club}) — {goals} gols" + RST)
+        sc_name, sc_club, sc_goals = season.top_scorers[0]
+        scorer_line = GG + f"  {_e('⚽','->')} Artilheiro: {sc_name} ({sc_club}) — {sc_goals} gols" + RST
+
+    # ── Render ───────────────────────────────────────────────────
+    for line in liga_lines:
+        print(line)
+
+    if copa_champ_line:
+        print(copa_champ_line)
+    print(copa_color + f"  Copa: {copa_label}" + RST)
+
+    print()
+    if ovr_line:
+        print(ovr_line)
+    if scorer_line:
+        print(scorer_line)
+
+    total_prize = liga_prize + copa_prize
+    if total_prize > 0:
+        print(YY + f"  {_e('💰','$')} Premiação estimada: R${total_prize:,} mil" + RST)
+
+    print(WW + f"  Caixa atual: {GG if player_team.caixa >= 0 else RR}R${player_team.caixa:,} mil{RST}")
     print()
     pause()
 
@@ -1444,16 +1745,23 @@ def show_season_end(season: Season, player_team: Team):
 # ═══════════════════════════════════════════════════════════════
 # CONFIRM PLAY
 # ═══════════════════════════════════════════════════════════════
-def confirm_play(formation: Formation, postura: Postura) -> bool:
+def confirm_play(formation: Formation, postura: Postura) -> str:
+    print()
     print(box([
         "",
         f"  Formação: {YY}{formation.value}{RST}   Postura: {M}{postura.value}{RST}",
         "",
-        f"  {WW}Confirma para jogar?{RST}  {YY}[1]{RST} Sim   {YY}[2]{RST} Ajustar",
+        f"  {WW}Confirma para jogar?{RST}",
+        f"  {YY}[1]{RST} Sim   {YY}[2]{RST} Ajustar",
+        f"  {YY}[0]{RST} Voltar",
         "",
     ], title="CONFIRMAÇÃO", border_color=YY, title_color=YY, width=50))
     c = input("  Escolha: ").strip()
-    return c != "2"
+    if c == "2":
+        return "adjust"
+    if c == "0":
+        return "back"
+    return "play"
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -1463,32 +1771,36 @@ def show_history(career):
     """Exibe o histórico de temporadas da carreira."""
     clear()
     print(rule("📜 HISTÓRICO DA CARREIRA"))
+    total_seasons = len(career.season_history)
+    current_team = "Sem clube" if career.unemployed else "Empregado"
+    summary_lines = [
+        f"  Técnico: {WW}{career.player_coach.name}{RST}",
+        f"  Temporadas concluídas: {YY}{total_seasons}{RST}",
+        f"  Situação atual: {C}{current_team}{RST}",
+    ]
+    print(box(summary_lines, title="RESUMO DA CARREIRA", border_color=C, title_color=YY, width=70))
 
-    if not career.season_history:
-        print(DIM + "\n  Nenhuma temporada completada ainda.\n" + RST)
-        pause()
-        return
-
-    tbl = Table(title="TEMPORADAS", border_color=C, header_color=YY, title_color=C)
-    tbl.add_column("Ano", width=5, align="c", color=DIM)
-    tbl.add_column("Time", width=20, align="l", color=WW)
-    tbl.add_column("Div", width=4, align="c", color=C)
-    tbl.add_column("Pos", width=4, align="c", color=YY)
-    tbl.add_column("Copa", width=15, align="l", color=G)
-    tbl.add_column("Artilheiro", width=20, align="l", color=GG)
-
-    for entry in career.season_history:
-        year = str(entry.get("year", "—"))
-        team = entry.get("team", "—")[:20]
-        div = str(entry.get("division", "—"))
-        pos = str(entry.get("position", "—"))
-        copa_phase = entry.get("copa_phase", "—").capitalize()
-        top_scorer = entry.get("top_scorer", ("—", 0))
-        scorer_str = f"{top_scorer[0]} ({top_scorer[1]})" if isinstance(top_scorer, tuple) and len(top_scorer) > 0 else "—"
-
-        tbl.add_row(year, team, div, pos, copa_phase, scorer_str)
-
-    tbl.print()
+    if career.season_history:
+        print()
+        recent = sorted(career.season_history, key=lambda entry: int(entry.get("year", 0) or 0))[-8:]
+        tbl = Table(title="ÚLTIMAS TEMPORADAS", border_color=C, header_color=YY, title_color=C)
+        tbl.add_column("Ano", width=5, align="c", color=DIM)
+        tbl.add_column("Time", width=20, align="l", color=WW)
+        tbl.add_column("Div", width=4, align="c", color=C)
+        tbl.add_column("Pos", width=4, align="c", color=YY)
+        tbl.add_column("Copa", width=14, align="l", color=G)
+        for entry in recent:
+            tbl.add_row(
+                str(entry.get("year", "—")),
+                str(entry.get("team", "—"))[:20],
+                str(entry.get("division", "—")),
+                str(entry.get("position", "—")) if int(entry.get("position", 0) or 0) > 0 else "—",
+                str(entry.get("copa_phase", "—")).capitalize()[:14],
+            )
+        if recent:
+            tbl.print()
+        else:
+            print(DIM + "  Sem temporadas válidas para exibir no formato atual." + RST)
 
     world = getattr(career, "world_history", {}) or {}
     if world:
@@ -1498,12 +1810,16 @@ def show_history(career):
 
         team_goals = world.get("team_goals_record", {})
         player_goals = world.get("player_goals_record", {})
+        points_record = world.get("league_points_record", {})
         max_att = world.get("max_attendance", {})
         max_income = world.get("max_income", {})
+        biggest_win = world.get("biggest_win", {})
 
         lines = [
-            f"  Melhor ataque histórico: {WW}{team_goals.get('team', '-')} ({team_goals.get('goals', 0)} gols, {team_goals.get('year', '-')}){RST}",
-            f"  Artilheiro histórico: {WW}{player_goals.get('player', '-')} - {player_goals.get('team', '-')} ({player_goals.get('goals', 0)} gols, {player_goals.get('year', '-')}){RST}",
+            f"  Mais pontos na história da liga: {WW}{points_record.get('team', '-')} ({points_record.get('points', 0)} pts){RST}",
+            f"  Melhor ataque (acumulado): {WW}{team_goals.get('team', '-')} ({team_goals.get('goals', 0)} gols){RST}",
+            f"  Artilheiro (acumulado): {WW}{player_goals.get('player', '-')} - {player_goals.get('team', '-')} ({player_goals.get('goals', 0)} gols){RST}",
+            f"  Maior goleada: {WW}{biggest_win.get('winner', '-')} {biggest_win.get('score', '-')} {biggest_win.get('loser', '-')} ({biggest_win.get('year', '-')}){RST}",
             f"  Maior público: {WW}{max_att.get('attendance', 0):,}{RST} em {max_att.get('home', '-')} x {max_att.get('away', '-')} ({max_att.get('year', '-')})",
             f"  Maior renda: {WW}R${int(max_income.get('income', 0)):,}k{RST} em {max_income.get('home', '-')} x {max_income.get('away', '-')} ({max_income.get('year', '-')})",
         ]
@@ -1532,7 +1848,60 @@ def show_history(career):
             top_coaches = sorted(coaches.items(), key=lambda entry: (-entry[1], entry[0]))[:10]
             coach_lines = [f"  {WW}{name:<28}{RST} {YY}{titles} título(s){RST}" for name, titles in top_coaches]
             print(box(coach_lines, title="TÉCNICOS CAMPEÕES", border_color=YY, title_color=YY, width=50))
+
+        div1_titles = world.get("div1_titles_by_club", {})
+        if div1_titles:
+            print()
+            top_div1 = sorted(div1_titles.items(), key=lambda entry: (-entry[1], entry[0]))[:12]
+            lines_div1 = [f"  {WW}{club:<28}{RST} {GG}{titles} título(s){RST}" for club, titles in top_div1]
+            print(box(lines_div1, title="CAMPEÕES DA 1ª DIVISÃO (CLUBES)", border_color=GG, title_color=GG, width=56))
+
+        copa_titles = world.get("copa_titles_by_club", {})
+        if copa_titles:
+            print()
+            top_copa = sorted(copa_titles.items(), key=lambda entry: (-entry[1], entry[0]))[:12]
+            lines_copa = [f"  {WW}{club:<28}{RST} {YY}{titles} título(s){RST}" for club, titles in top_copa]
+            print(box(lines_copa, title="CAMPEÕES DA COPA (CLUBES)", border_color=C, title_color=C, width=56))
     pause()
+
+
+def show_onboarding():
+    """Tela de boas-vindas exibida ao iniciar uma nova carreira."""
+    clear()
+    trophy = _e("🏆", "[CAMPEAO]")
+    bolt   = _e("⚡", ">>")
+    medal  = _e("🏅", ">>")
+    money  = _e("💰", "$$")
+    lines = [
+        "",
+        C  + "  Bem-vindo ao ClassicFoot!" + RST,
+        "",
+        WW + "  Você é um técnico recém-contratado por um" + RST,
+        WW + "  clube da Divisão 4. Seu objetivo:" + RST,
+        "",
+        YY + f"  {trophy} Chegar à Divisão 1 e conquistar o título!" + RST,
+        "",
+        GG + "  ─────────────────────────────────────────" + RST,
+        "",
+        C  + f"  {bolt} LIGA" + RST,
+        WW + "  32 times em 4 divisões de 8 equipes." + RST,
+        WW + "  Os 2 primeiros de cada divisão sobem," + RST,
+        WW + "  os 2 últimos descem." + RST,
+        "",
+        C  + f"  {medal} COPA" + RST,
+        WW + "  Torneio mata-mata com todos os 32 times," + RST,
+        WW + "  disputado em paralelo à liga." + RST,
+        "",
+        C  + f"  {money} FINANÇAS" + RST,
+        WW + "  Gerencie folha salarial, leilões de" + RST,
+        WW + "  transferências e upgrades de estádio." + RST,
+        "",
+        DIM + "  Use o menu principal para acessar todas" + RST,
+        DIM + "  as opções antes de jogar cada rodada." + RST,
+        "",
+    ]
+    print(box(lines, title="COMO JOGAR", border_color=C, title_color=YY, width=48))
+    pause("Pressione ENTER para começar sua carreira...")
 
 
 def show_credits():
@@ -1545,8 +1914,8 @@ def show_credits():
         "",
         DIM + "  Desenvolvido com Python + Colorama" + RST,
         "",
-        WW + "  Times e jogadores da Série A e B" + RST,
-        WW + "  Temporada 2024/2025" + RST,
+        WW + "  32 times em 4 divisões" + RST,
+        WW + "  Temporada 2025" + RST,
         "",
     ]
     print(box(lines, title="CRÉDITOS", border_color=GG, title_color=GG, width=44))

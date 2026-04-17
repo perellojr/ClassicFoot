@@ -8,12 +8,21 @@ import sys
 import shutil
 from colorama import Fore, Back, Style, init
 
-init(autoreset=True)
+# Mantém ANSI mesmo quando stdout não é TTY (ex.: launcher GUI embutido).
+init(autoreset=True, strip=False, convert=False)
 THEME = os.getenv("CLASSICFOOT_THEME", "").strip().lower()
 MSDOS_MODE = THEME in {"msdos", "dos", "retro"}
 
 # ── Tamanho do terminal ────────────────────────────────────────
 def term_width() -> int:
+    forced = os.getenv("CLASSICFOOT_COLS") or os.getenv("COLUMNS")
+    if forced:
+        try:
+            n = int(forced)
+            if n >= 80:
+                return n
+        except ValueError:
+            pass
     return shutil.get_terminal_size((100, 30)).columns
 
 # ── Constantes de cor ──────────────────────────────────────────
@@ -53,6 +62,11 @@ else:
     ml="├"; mr="┤"; tm="┬"; bm="┴"; x="┼"
 
 def clear():
+    if os.getenv("CLASSICFOOT_EMBEDDED") == "1":
+        # Limpeza via ANSI para launcher desktop.
+        sys.stdout.write("\x1b[2J\x1b[H")
+        sys.stdout.flush()
+        return
     os.system("cls" if os.name == "nt" else "clear")
 
 def pause(msg: str = "Pressione ENTER para continuar..."):
@@ -66,7 +80,11 @@ def pad(s: str, w: int, align: str = "l") -> str:
     """Pad string to width w. align: l/r/c. Strips ANSI for length calc."""
     vis = _visible_len(s)
     diff = w - vis
-    if diff <= 0:
+    if diff < 0:
+        s = _clip_visible(s, w)
+        vis = _visible_len(s)
+        diff = w - vis
+    if diff == 0:
         return s
     if align == "r":
         return " " * diff + s
@@ -81,6 +99,33 @@ def _visible_len(s: str) -> int:
     import re
     ansi_escape = re.compile(r'\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])')
     return len(ansi_escape.sub('', s))
+
+
+def _clip_visible(s: str, w: int) -> str:
+    """Recorta para largura visível w preservando sequências ANSI."""
+    if w <= 0:
+        return ""
+    out = []
+    visible = 0
+    i = 0
+    n = len(s)
+    while i < n and visible < w:
+        ch = s[i]
+        if ch == "\x1b":
+            j = i + 1
+            if j < n and s[j] == "[":
+                j += 1
+                while j < n and not ("@" <= s[j] <= "~"):
+                    j += 1
+                if j < n:
+                    j += 1
+                    out.append(s[i:j])
+                    i = j
+                    continue
+        out.append(ch)
+        visible += 1
+        i += 1
+    return "".join(out)
 
 def color_len(s: str) -> int:
     return _visible_len(s)
@@ -217,7 +262,7 @@ def fmt_fans(n: int) -> str:
     return f"{n//1_000}K"
 
 def fmt_money(v: int) -> str:
-    return f"R${v:,}k"
+    return f"R${v:,}"
 
 def colored_score(hg: int, ag: int, is_home: bool) -> str:
     """Placar colorido do ponto de vista do time."""
@@ -226,3 +271,38 @@ def colored_score(hg: int, ag: int, is_home: bool) -> str:
     if hg == ag:
         return YY + f"{hg} x {ag}" + RST
     return RR + f"{hg} x {ag}" + RST
+
+
+# ── Pintura de times (usa duck typing: qualquer obj com primary/secondary_color) ─
+_COLOR_BG_MAP = {
+    "red":      Back.RED,
+    "dark_red": Back.RED,
+    "green":    Back.GREEN,
+    "blue":     Back.BLUE,
+    "yellow":   Back.YELLOW,
+    "black":    Back.BLACK,
+    "white":    Back.WHITE,
+}
+_COLOR_FG_MAP = {
+    "red":      Fore.RED,
+    "dark_red": Fore.RED,
+    "green":    Fore.GREEN,
+    "blue":     Fore.BLUE,
+    "yellow":   Fore.YELLOW,
+    "black":    Fore.BLACK,
+    "white":    Fore.WHITE,
+}
+
+
+def _team_bg_color(team) -> str:
+    return _COLOR_BG_MAP.get(getattr(team, "primary_color", "white"), Back.WHITE)
+
+
+def _team_fg_color(team) -> str:
+    return _COLOR_FG_MAP.get(getattr(team, "secondary_color", "white"), Fore.WHITE)
+
+
+def paint_team(team, text=None) -> str:
+    """Renderiza o nome (ou `text`) do time com as cores do clube."""
+    label = text if text is not None else getattr(team, "name", "")
+    return _team_bg_color(team) + _team_fg_color(team) + Style.BRIGHT + label + RST

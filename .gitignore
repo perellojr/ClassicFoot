@@ -4,3 +4,7 @@ __pycache__/
 .claude/
 .openclaude/
 classicfoot_save.pkl
+.idea/
+.venv_gui_build/
+build/
+dist/

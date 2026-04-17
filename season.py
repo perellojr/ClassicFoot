@@ -30,30 +30,74 @@ def _build_gradual_liga_prizes(top_prize: int = 250, bottom_prize: int = 30) -> 
     return prizes
 
 
-PRIZE_LIGA = _build_gradual_liga_prizes(top_prize=250, bottom_prize=30)
+PRIZE_LIGA = _build_gradual_liga_prizes(top_prize=12_000, bottom_prize=2_500)
 PRIZE_COPA = {
-    "primeira_fase":  300,
-    "oitavas":        800,
-    "quartas":      2_000,
-    "semi":         4_000,
-    "final":        8_000,
-    "campeão":     20_000,
-    "vice":         8_000,
+    "primeira_fase":    600,
+    "oitavas":        1_600,
+    "quartas":        4_000,
+    "semi":           8_000,
+    "final":         15_000,
+    "campeão":       35_000,
+    "vice":          15_000,
 }
-PRIZE_BEST_ATTACK = 1_000
-PRIZE_BEST_DEFENSE = 1_000
-CUSTO_MANUTENCAO = 200   # R$ mil/mês por estádio
-RENDA_TORCIDA_FACTOR = 0.00015  # fator de renda da bilheteria por torcedor
+PRIZE_BEST_ATTACK = 3_000
+PRIZE_BEST_DEFENSE = 3_000
+CUSTO_MANUTENCAO = 80   # R$ mil/mês por estádio
 BASE_PRIZE_YEAR = 2025
+
+SPONSOR_BASE_BY_DIV = {
+    1: 3_000,  # R$ mil/mês
+    2: 1_800,
+    3: 1_000,
+    4: 600,
+}
 
 
 def _season_prize_multiplier(year: int) -> float:
     """
-    Premiação cresce 20% a cada temporada.
-    2025 = base 1.00, 2026 = 1.20, 2027 = 1.44, ...
+    Premiação cresce 5% a cada temporada (correção monetária realista).
+    2025 = 1.00, 2030 = 1.28, 2035 = 1.63
     """
     seasons_passed = max(0, year - BASE_PRIZE_YEAR)
-    return 1.2 ** seasons_passed
+    return 1.05 ** seasons_passed
+
+
+def stadium_maintenance_cost(team: "Team") -> int:
+    """Custo de manutenção do estádio por ciclo de faturamento (≈ 1 mês).
+    Escala com o nível do estádio: nível 1 = R$80k, cada nível adicional +R$20k.
+    """
+    return CUSTO_MANUTENCAO + (team.stadium_level - 1) * 20
+
+
+def monthly_sponsorship(team: Team) -> int:
+    """
+    Aporte mensal de patrocínio baseado em:
+    - Divisão (base)
+    - Prestígio
+    - Torcida
+    Valor em R$ mil/mês.
+    """
+    base = SPONSOR_BASE_BY_DIV.get(team.division, 500)
+    prestige_factor = 0.65 + (team.prestige / 100.0)  # 0.85..1.65 tipicamente
+    fan_factor = max(0.70, min(2.40, team.torcida / 3_000_000))
+    sponsor_market = int(round(base * prestige_factor * fan_factor))
+
+    # Piso próximo da folha salarial para evitar patrocínio irrealmente baixo.
+    # Em divisões menores fica levemente abaixo da folha; nas maiores pode aproximar/superar.
+    folha = int(team.salario_mensal or 0)
+    if folha <= 0:
+        folha = int(sum(max(0, int(getattr(player, "salario", 0))) for player in team.players))
+    coverage_by_div = {
+        1: 1.00,
+        2: 0.95,
+        3: 0.90,
+        4: 0.85,
+    }
+    coverage = coverage_by_div.get(team.division, 0.85)
+    floor_near_payroll = int(round(folha * coverage))
+
+    sponsor = max(sponsor_market, floor_near_payroll)
+    return max(250, sponsor)
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -135,6 +179,8 @@ class Season:
     best_player_goals: Dict[str, int | str] = field(default_factory=dict)
     max_attendance: Dict[str, int | str] = field(default_factory=dict)
     max_income: Dict[str, int | str] = field(default_factory=dict)
+    final_positions: Dict[int, Dict[str, int]] = field(default_factory=dict)
+    shown_cup_draws: List[str] = field(default_factory=list)
 
 
 def create_season(year: int, all_teams: List[Team], player_team_id: int) -> Season:
@@ -308,140 +354,10 @@ def _apply_offseason_ovr_adjustment(teams: List[Team]):
             player.overall = round(max(10, min(99, player.overall + delta)), 1)
 
 
-# ═══════════════════════════════════════════════════════════════
-# AVANÇA A TEMPORADA: SIMULA UMA RODADA
-# ═══════════════════════════════════════════════════════════════
-def play_matchday(
-    season: Season,
-    player_team: Team,
-    player_postura,  # Postura enum
-    skip: bool = False,
-) -> dict:
-    """
-    Simula a rodada atual.
-    Se skip=True, simula até a partida do jogador inclusive.
-    Retorna dict com: player_result, other_results, label, type.
-    """
-    if season.current_matchday >= len(season.calendar):
-        season.season_over = True
-        _end_of_season(season)
-        return {"done": True}
-
-    matchday_info = season.calendar[season.current_matchday]
-    mtype   = matchday_info["type"]
-    fixtures = matchday_info["fixtures"]
-    ties    = matchday_info["ties"]
-    label   = matchday_info["label"]
-
-    player_result  = None
-    other_results  = []
-
-    if mtype == "liga":
-        # Simula todas as partidas exceto a do jogador
-        player_fixture = None
-        other_fixtures = []
-        for f in fixtures:
-            if (f.home_team.id == player_team.id or
-                    f.away_team.id == player_team.id):
-                player_fixture = f
-            else:
-                other_fixtures.append(f)
-
-        # Outros times primeiro
-        other_results = simulate_all_fixtures_in_round(other_fixtures)
-        season.results_history.extend(other_results)
-
-        # Partida do jogador
-        if player_fixture and not player_fixture.played:
-            player_fixture.home_team.postura = player_postura
-            player_fixture.result = simulate_match(
-                player_fixture.home_team,
-                player_fixture.away_team,
-                competition=mtype.replace("copa_grupos", "Copa"),
-                matchday=season.current_matchday,
-            )
-            player_result = player_fixture.result
-            season.results_history.append(player_result)
-
-    elif mtype in ("copa_primeira_fase", "copa_oitavas", "copa_quartas", "copa_semi"):
-        leg = matchday_info.get("cup_leg", 1)
-        for tie in ties:
-            should_play = tie.leg1 is None if leg == 1 else tie.leg1 is not None and tie.leg2 is None
-            if should_play:
-                is_player = (
-                    tie.team_a.id == player_team.id or
-                    tie.team_b.id == player_team.id
-                )
-                home_team = tie.team_a if leg == 1 else tie.team_b
-                away_team = tie.team_b if leg == 1 else tie.team_a
-                home_team.postura = player_postura if is_player and home_team.id == player_team.id else home_team.postura
-                away_team.postura = player_postura if is_player and away_team.id == player_team.id else away_team.postura
-                result = simulate_match(
-                    home_team, away_team,
-                    competition="Copa",
-                    matchday=season.current_matchday,
-                )
-                if leg == 1:
-                    tie.leg1 = result
-                else:
-                    tie.leg2 = result
-                if is_player:
-                    player_result = result
-                else:
-                    other_results.append(result)
-                season.results_history.append(result)
-
-    elif mtype == "copa_final":
-        leg = matchday_info.get("cup_leg", 1)
-        for tie in ties:
-            should_play = tie.leg1 is None if leg == 1 else tie.leg1 is not None and tie.leg2 is None
-            if should_play:
-                is_player = (
-                    tie.team_a.id == player_team.id or
-                    tie.team_b.id == player_team.id
-                )
-                home_team = tie.team_a if leg == 1 else tie.team_b
-                away_team = tie.team_b if leg == 1 else tie.team_a
-                home_team.postura = player_postura if is_player and home_team.id == player_team.id else home_team.postura
-                away_team.postura = player_postura if is_player and away_team.id == player_team.id else away_team.postura
-                result = simulate_match(
-                    home_team, away_team,
-                    competition="Copa",
-                    matchday=season.current_matchday,
-                )
-                if leg == 1:
-                    tie.leg1 = result
-                else:
-                    tie.leg2 = result
-                    winner = tie.winner()
-                    if winner is None:
-                        winner = simulate_penalty_shootout(tie.team_a, tie.team_b)
-                        tie.set_penalty_winner(winner)
-                    season.copa_champion = winner
-                    winner.copa_phase = "campeão"
-                if is_player:
-                    player_result = result
-                else:
-                    other_results.append(result)
-                season.results_history.append(result)
-
-    advance_season_after_matchday(season)
-
-    return {
-        "done": False,
-        "label": label,
-        "type": mtype,
-        "player_result": player_result,
-        "other_results": other_results,
-        "matchday_num": season.current_matchday,
-    }
-
-
 def advance_season_after_matchday(season: Season):
     """Avança ponteiros e efeitos de fim de rodada após resultados já aplicados."""
     season.current_matchday += 1
 
-    _check_advance_copa(season)
     _check_advance_copa_knockout(season)
 
     if season.current_matchday >= len(season.calendar):
@@ -450,11 +366,7 @@ def advance_season_after_matchday(season: Season):
 
     if season.current_matchday % 4 == 0:
         for t in season.all_teams:
-            t.caixa -= CUSTO_MANUTENCAO
-
-
-def _check_advance_copa(season: Season):
-    return
+            t.caixa -= stadium_maintenance_cost(t)
 
 
 def _check_advance_copa_knockout(season: Season):
@@ -552,6 +464,8 @@ def _end_of_season(season: Season):
         if ranked:
             season.division_champions[div] = ranked[0].name
             season.division_champion_coaches[div] = ranked[0].coach.name
+        for pos, ranked_team in enumerate(ranked, start=1):
+            season.final_positions[ranked_team.id] = {"division": div, "position": pos}
         for pos, t in enumerate(ranked, start=1):
             prize = PRIZE_LIGA.get(div, {}).get(pos, 0)
             t.caixa += int(round(prize * prize_multiplier))
@@ -604,7 +518,9 @@ def _end_of_season(season: Season):
         }
 
     # Promoção / Rebaixamento (2 sobem, 2 descem por divisão)
+    previous_divisions = {team.id: team.division for team in season.all_teams}
     _apply_promotions(divs)
+    _update_support_after_division_change(season.all_teams, previous_divisions)
 
     # Top artilheiros
     all_players = []
@@ -612,6 +528,29 @@ def _end_of_season(season: Season):
         for p in t.players:
             all_players.append((p.name, t.name, p.gols_temp))
     season.top_scorers = sorted(all_players, key=lambda x: -x[2])[:10]
+
+
+def _update_support_after_division_change(all_teams: List[Team], previous_divisions: Dict[int, int]):
+    """Ajusta torcida/prestígio com base na variação de divisão."""
+    for team in all_teams:
+        old_div = previous_divisions.get(team.id, team.division)
+        new_div = team.division
+
+        if new_div < old_div:
+            # Subiu de divisão: torcida cresce e clube ganha visibilidade.
+            growth = random.uniform(0.08, 0.18)
+            team.torcida = int(team.torcida * (1.0 + growth))
+            team.prestige = min(100, team.prestige + random.randint(2, 5))
+        elif new_div > old_div:
+            # Caiu de divisão: público desanima.
+            drop = random.uniform(0.06, 0.14)
+            team.torcida = max(80_000, int(team.torcida * (1.0 - drop)))
+            team.prestige = max(20, team.prestige - random.randint(2, 5))
+        else:
+            # Permaneceu: pequeno crescimento orgânico.
+            growth = random.uniform(0.005, 0.03)
+            team.torcida = int(team.torcida * (1.0 + growth))
+            team.prestige = min(100, max(20, team.prestige + random.choice([0, 1])))
 
 
 def _award_copa_prizes(season: Season):
@@ -648,6 +587,7 @@ def _apply_promotions(divs: Dict[int, List[Team]]):
 def pay_monthly_salaries(teams: List[Team]):
     """Paga a folha salarial de todos os times."""
     for t in teams:
+        t.caixa += monthly_sponsorship(t)
         total_sal = sum(p.salario for p in t.players)
         t.caixa -= total_sal
         t.salario_mensal = total_sal

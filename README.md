@@ -38,6 +38,12 @@ pip install -r requirements.txt
 python3 main.py
 ```
 
+Rodar em janela própria (sem terminal externo):
+
+```bash
+python3 launcher_gui.py
+```
+
 Rodar com tema retrô MSDOS:
 
 ```bash
@@ -55,6 +61,33 @@ CLASSICFOOT_HALF_DURATION_SECONDS=20 python3 main.py
 ```bash
 python3 -m py_compile data.py main.py season.py engine.py ui.py term.py manager_market.py models.py transfers.py save.py
 ```
+
+## Gerar app para Mac/Windows
+
+Instale o empacotador:
+
+```bash
+pip install pyinstaller
+```
+
+Build (recomendado, sem console externo):
+
+```bash
+pyinstaller --noconfirm --windowed --name ClassicFoot launcher_gui.py
+```
+
+Build com scripts prontos:
+
+- macOS: `./build_mac.sh`
+- Windows: `build_windows.bat`
+
+No macOS, abra o jogo diretamente por `dist/ClassicFoot.app` (não via Installer `.pkg`).
+Se o Gatekeeper bloquear, use clique direito em `ClassicFoot.app` > `Abrir`.
+
+Saídas:
+
+- macOS: `dist/ClassicFoot.app`
+- Windows: `dist/ClassicFoot/ClassicFoot.exe` (ou `.exe` único, dependendo da versão/configuração)
 
 ## Estrutura do projeto
 
