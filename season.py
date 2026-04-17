@@ -8,59 +8,15 @@ from dataclasses import dataclass, field
 from typing import List, Optional, Dict, Tuple
 from models import Team, Fixture, CupTie, MatchResult
 from engine import simulate_match, simulate_penalty_shootout, simulate_all_fixtures_in_round
-
-# ═══════════════════════════════════════════════════════════════
-# PRÊMIOS FINANCEIROS (R$ mil)
-# ═══════════════════════════════════════════════════════════════
-def _build_gradual_liga_prizes(top_prize: int = 250, bottom_prize: int = 30) -> Dict[int, Dict[int, int]]:
-    """
-    Gera uma tabela gradual de premiação para 4 divisões x 8 posições.
-    Valores em R$ mil.
-    """
-    total_slots = 32
-    step = (top_prize - bottom_prize) / max(1, total_slots - 1)
-    values = [int(round(top_prize - (idx * step))) for idx in range(total_slots)]
-
-    prizes: Dict[int, Dict[int, int]] = {1: {}, 2: {}, 3: {}, 4: {}}
-    cursor = 0
-    for division in [1, 2, 3, 4]:
-        for position in range(1, 9):
-            prizes[division][position] = values[cursor]
-            cursor += 1
-    return prizes
-
-
-PRIZE_LIGA = _build_gradual_liga_prizes(top_prize=12_000, bottom_prize=2_500)
-PRIZE_COPA = {
-    "primeira_fase":    600,
-    "oitavas":        1_600,
-    "quartas":        4_000,
-    "semi":           8_000,
-    "final":         15_000,
-    "campeão":       35_000,
-    "vice":          15_000,
-}
-PRIZE_BEST_ATTACK = 3_000
-PRIZE_BEST_DEFENSE = 3_000
-CUSTO_MANUTENCAO = 80   # R$ mil/mês por estádio
-BASE_PRIZE_YEAR = 2025
-
-SPONSOR_BASE_BY_DIV = {
-    1: 3_000,  # R$ mil/mês
-    2: 1_800,
-    3: 1_000,
-    4: 600,
-}
-
-
-def _season_prize_multiplier(year: int) -> float:
-    """
-    Premiação cresce 5% a cada temporada (correção monetária realista).
-    2025 = 1.00, 2030 = 1.28, 2035 = 1.63
-    """
-    seasons_passed = max(0, year - BASE_PRIZE_YEAR)
-    return 1.05 ** seasons_passed
-
+from config.economy import (
+    CUSTO_MANUTENCAO,
+    PRIZE_BEST_ATTACK,
+    PRIZE_BEST_DEFENSE,
+    PRIZE_COPA,
+    PRIZE_LIGA,
+    SPONSOR_BASE_BY_DIV,
+    season_prize_multiplier,
+)
 
 def stadium_maintenance_cost(team: "Team") -> int:
     """Custo de manutenção do estádio por ciclo de faturamento (≈ 1 mês).
@@ -453,7 +409,7 @@ def _check_advance_copa_knockout(season: Season):
 # ═══════════════════════════════════════════════════════════════
 def _end_of_season(season: Season):
     """Distribui prêmios, promoção/rebaixamento, artilheiros."""
-    prize_multiplier = _season_prize_multiplier(season.year)
+    prize_multiplier = season_prize_multiplier(season.year)
     divs = {1: [], 2: [], 3: [], 4: []}
     for t in season.all_teams:
         divs[t.division].append(t)
@@ -554,7 +510,7 @@ def _update_support_after_division_change(all_teams: List[Team], previous_divisi
 
 
 def _award_copa_prizes(season: Season):
-    prize_multiplier = _season_prize_multiplier(season.year)
+    prize_multiplier = season_prize_multiplier(season.year)
     for t in season.all_teams:
         phase = t.copa_phase
         prize = PRIZE_COPA.get(phase, 0)

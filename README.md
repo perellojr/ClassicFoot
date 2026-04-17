@@ -61,6 +61,12 @@ Velocidade de cada tempo (segundos):
 CLASSICFOOT_HALF_DURATION_SECONDS=20 python3 main.py
 ```
 
+Simulação reproduzível (seed fixa):
+
+```bash
+CLASSICFOOT_SEED=12345 python3 main.py
+```
+
 ## Build app (macOS / Windows)
 
 Instale o empacotador:
@@ -118,6 +124,18 @@ Rodar somente o teste de estresse (40 temporadas):
 python3 -m unittest tests.test_long_simulation -v
 ```
 
+## CI (GitHub Actions)
+
+O projeto possui validação automática em:
+
+- `push` para `main`, `feature/**` e `codex/**`
+- `pull_request`
+
+Etapas atuais:
+
+- `py_compile` dos módulos principais
+- suíte completa `unittest`
+
 ## Estrutura do projeto
 
 - `main.py`: loop principal da carreira
@@ -130,6 +148,13 @@ python3 -m unittest tests.test_long_simulation -v
 - `data.py`: times, jogadores e dados iniciais
 - `models.py`: dataclasses e entidades
 - `save.py`: persistência
+- `application/`: camada de aplicação
+  - `events.py`: registro central de eventos/notificações da carreira
+  - `orchestrator.py`: orquestração do ciclo de carreira/temporada
+- `config/`: parâmetros de runtime e economia
+  - `economy.py`: premiações, patrocínio e constantes financeiras
+  - `runtime.py`: seed opcional e flags de execução
+- `.github/workflows/ci.yml`: pipeline de validação contínua
 
 ## Regras oficiais da simulação
 

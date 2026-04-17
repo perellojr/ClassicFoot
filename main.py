@@ -33,6 +33,9 @@ from ui import (
     show_onboarding,
 )
 from save import save_game, load_game, save_exists
+from application.events import append_career_notifications
+from application.orchestrator import CareerOrchestrator
+from config.runtime import apply_random_seed_from_env
 from term import BB, C, G, GG, RR, R, RST, W, WW, Y, YY, DIM, Table, pause, clear, rule, pad, box, term_width, _visible_len, paint_team
 
 YEAR_START = 2025
@@ -84,15 +87,6 @@ def _assign_random_last_division_team(teams, coach: Coach):
     player_team = random.choice(candidates)
     player_team.coach = coach
     return player_team
-
-
-def _append_notifications(career: CareerState, messages):
-    if not hasattr(career, "seen_notifications"):
-        career.seen_notifications = set()
-    for message in messages:
-        if message and message not in career.seen_notifications:
-            career.notifications.append(message)
-            career.seen_notifications.add(message)
 
 
 def _apply_training_if_due(round_marker: int, team):
@@ -554,16 +548,31 @@ def _post_round_updates(
     if getattr(career, "unemployed", False):
         career.rounds_unemployed = getattr(career, "rounds_unemployed", 0) + 1
 
-    _append_notifications(career, transfer_messages)
+    append_career_notifications(
+        career,
+        transfer_messages,
+        kind="transfer",
+        round_num=round_marker,
+        season_year=season.year,
+    )
     if round_type == "liga":
-        _append_notifications(
+        append_career_notifications(
             career,
             process_coach_market(season.all_teams, career, round_marker=round_marker),
+            kind="coach_market",
+            round_num=round_marker,
+            season_year=season.year,
         )
 
     firing_msg = check_player_firing(season.all_teams, career)
     if firing_msg:
-        _append_notifications(career, [firing_msg])
+        append_career_notifications(
+            career,
+            [firing_msg],
+            kind="firing",
+            round_num=round_marker,
+            season_year=season.year,
+        )
         show_notifications(career.notifications, title="CENTRAL DE NOTÍCIAS")
         career.notifications.clear()
         offers = generate_player_offers(season.all_teams, career)
@@ -585,7 +594,13 @@ def _post_round_updates(
             accepted = prompt_job_offer(career.player_coach.name, offer, season.all_teams)
             if accepted:
                 player_team, messages = accept_player_offer(offer, season.all_teams, career)
-                _append_notifications(career, messages)
+                append_career_notifications(
+                    career,
+                    messages,
+                    kind="job_change",
+                    round_num=round_marker,
+                    season_year=season.year,
+                )
                 break
             reject_messages = reject_player_offer(offer, season.all_teams, career)
             show_notifications(reject_messages, title="MERCADO DE TREINADORES")
@@ -1610,48 +1625,21 @@ def _play_next_match(season: Season, player_team, market: TransferMarket):
 
 
 def _run_career_loop(season: Season, player_team, market: TransferMarket, career: CareerState):
-    """Loop unificado de progressão de carreira.
-
-    Recebe a temporada já criada e itera: joga a temporada, registra histórico,
-    verifica demissões/ofertas e cria a próxima temporada — até o jogador voltar
-    ao menu principal.
-    """
-    while True:
-        current_pt = current_player_team(career, season.all_teams)
-        if current_pt is not None:
-            player_team = current_pt
-
-        display_pt = None if career.unemployed else player_team
-        if not _maybe_show_pending_cup_draws(season, display_pt):
-            show_copa(season, display_pt)
-
-        player_team = run_game(season, player_team, market, career)
-
-        if getattr(career, "back_to_main_menu", False):
-            career.back_to_main_menu = False
-            return
-
-        _record_season_history(season, player_team, career)
-
-        end_firing = check_last_division_relegation_firing(season, career)
-        if end_firing:
-            show_notifications([end_firing], title="CENTRAL DE NOTÍCIAS")
-            offers = generate_player_offers(season.all_teams, career)
-            if offers:
-                for offer in offers:
-                    if prompt_job_offer(career.player_coach.name, offer, season.all_teams):
-                        player_team, messages = accept_player_offer(offer, season.all_teams, career)
-                        show_notifications(messages, title="MERCADO DE TREINADORES")
-                        break
-                    show_notifications(reject_player_offer(offer, season.all_teams, career), title="MERCADO DE TREINADORES")
-
-        # Avança para a próxima temporada
-        teams = season.all_teams
-        next_year = season.year + 1
-        pt_id = player_team.id if (player_team is not None and not career.unemployed) else -1
-        season = create_season(next_year, teams, pt_id)
-        if player_team is not None:
-            player_team = next((t for t in teams if t.id == player_team.id), player_team)
+    orchestrator = CareerOrchestrator(
+        maybe_show_pending_cup_draws=_maybe_show_pending_cup_draws,
+        show_copa=show_copa,
+        run_game=run_game,
+        record_season_history=_record_season_history,
+        check_last_division_relegation_firing=check_last_division_relegation_firing,
+        show_notifications=show_notifications,
+        generate_player_offers=generate_player_offers,
+        prompt_job_offer=prompt_job_offer,
+        accept_player_offer=accept_player_offer,
+        reject_player_offer=reject_player_offer,
+        create_season=create_season,
+        current_player_team=current_player_team,
+    )
+    orchestrator.run_career_loop(season, player_team, market, career)
 
 
 def new_game():
@@ -1677,6 +1665,7 @@ def new_game():
 
 
 def main():
+    apply_random_seed_from_env()
     while True:
         banner()
         choice = main_menu()

@@ -25,6 +25,8 @@ class SaveSystemTests(unittest.TestCase):
 
                 loaded = save.load_game()
                 self.assertEqual(2, loaded["value"])
+                self.assertIn("__save_meta__", loaded)
+                self.assertGreaterEqual(int(loaded["__save_meta__"].get("version", 0)), save.SAVE_VERSION)
             finally:
                 save.SAVE_DIR = original_dir
                 save.SAVE_FILE = original_file
@@ -33,4 +35,3 @@ class SaveSystemTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

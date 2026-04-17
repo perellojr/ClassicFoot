@@ -8,6 +8,7 @@ independente do diretório de trabalho. Um backup automático (save.bak.pkl)
 """
 import pickle
 import shutil
+import time
 from pathlib import Path
 from typing import Optional
 
@@ -15,6 +16,7 @@ from typing import Optional
 SAVE_DIR = Path.home() / ".classicfoot"
 SAVE_FILE = SAVE_DIR / "save.pkl"
 BACKUP_FILE = SAVE_DIR / "save.bak.pkl"
+SAVE_VERSION = 2
 
 
 def _ensure_dir():
@@ -29,6 +31,11 @@ def save_game(game_state: dict) -> bool:
     """
     try:
         _ensure_dir()
+        if isinstance(game_state, dict):
+            meta = dict(game_state.get("__save_meta__", {}) or {})
+            meta["version"] = SAVE_VERSION
+            meta["saved_at"] = time.time()
+            game_state["__save_meta__"] = meta
         if SAVE_FILE.exists():
             shutil.copy2(SAVE_FILE, BACKUP_FILE)
         with open(SAVE_FILE, "wb") as f:
@@ -43,6 +50,11 @@ def _migrate_loaded_state(state: dict) -> dict:
     """Normaliza campos novos em saves legados sem exigir novo jogo."""
     if not isinstance(state, dict):
         return state
+
+    meta = dict(state.get("__save_meta__", {}) or {})
+    if "version" not in meta:
+        meta["version"] = 1
+    state["__save_meta__"] = meta
 
     season = state.get("season")
     if season is not None:
@@ -65,6 +77,8 @@ def _migrate_loaded_state(state: dict) -> dict:
             career.notifications = []
         if not hasattr(career, "seen_notifications") or not isinstance(getattr(career, "seen_notifications"), set):
             career.seen_notifications = set()
+        if not hasattr(career, "event_log") or not isinstance(getattr(career, "event_log"), list):
+            career.event_log = []
 
     market = state.get("market")
     if market is not None:

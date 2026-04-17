@@ -379,6 +379,7 @@ class CareerState:
     back_to_main_menu: bool = False
     season_history: List[dict] = field(default_factory=list)
     world_history: dict = field(default_factory=dict)
+    event_log: List[dict] = field(default_factory=list)
     coach_market_last_round: int = -1
     coach_market_cooldown: dict = field(default_factory=dict)
     rounds_unemployed: int = 0   # rodadas consecutivas sem clube

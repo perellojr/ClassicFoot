@@ -1,0 +1,2 @@
+"""Configurações centrais do ClassicFoot."""
+
