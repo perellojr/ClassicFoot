@@ -19,7 +19,11 @@ from manager_market import (
     reject_player_offer,
 )
 from models import CareerState, Coach, Postura
-from engine import finalize_match_result, select_bench, select_starting_lineup, simulate_half, simulate_penalty_series
+from engine import (
+    finalize_match_result, select_bench, select_starting_lineup, simulate_half,
+    simulate_penalty_series, estimate_attendance,
+    apply_red_card_effects, apply_auto_injury_substitutions, pick_injury_replacement,
+)
 from season import Season, advance_season_after_matchday, create_season, pay_monthly_salaries, sort_standings
 from transfers import TransferMarket
 from transfers import negotiate_contract, run_immediate_contract_auction
@@ -32,9 +36,9 @@ from ui import (
     manage_player_sales, show_history, show_training, show_auction_results, show_copa_draw,
     show_onboarding,
 )
-from save import save_game, load_game, save_exists
+from save import save_game, load_game, save_exists, ensure_world_history, normalize_world_history
 from application.events import append_career_notifications
-from application.orchestrator import CareerOrchestrator
+from application.orchestrator import CareerOrchestrator, UIAdapter, GameAdapter
 from config.runtime import apply_random_seed_from_env
 from term import BB, C, G, GG, RR, R, RST, W, WW, Y, YY, DIM, Table, pause, clear, rule, pad, box, term_width, _visible_len, paint_team
 
@@ -125,188 +129,6 @@ def _apply_training_if_due(round_marker: int, team):
     return lines
 
 
-def _ensure_world_history(career: CareerState):
-    if not isinstance(getattr(career, "world_history", None), dict):
-        career.world_history = {}
-    history = career.world_history
-    history.setdefault("division_champions", [])
-    history.setdefault("team_goals_record", {"goals": 0, "team": "-", "year": 0})
-    history.setdefault("player_goals_record", {"goals": 0, "player": "-", "team": "-", "year": 0})
-    history.setdefault("team_goals_cumulative", {})
-    history.setdefault("player_goals_cumulative", {})
-    history.setdefault("league_points_cumulative", {})
-    history.setdefault("league_points_record", {"points": 0, "team": "-", "year": 0})
-    history.setdefault("div1_titles_by_club", {})
-    history.setdefault("copa_titles_by_club", {})
-    history.setdefault("div1_champion_coaches_history", [])
-    history.setdefault("copa_champion_coaches_history", [])
-    history.setdefault("recorded_years", [])
-    history.setdefault("recorded_champion_years", [])
-    history.setdefault("recorded_aggregate_years", [])
-    history.setdefault("biggest_win", {"diff": 0, "score": "-", "winner": "-", "loser": "-", "year": 0})
-    history.setdefault("max_attendance", {"attendance": 0, "home": "-", "away": "-", "year": 0})
-    history.setdefault("max_income", {"income": 0, "home": "-", "away": "-", "year": 0})
-    history.setdefault("coach_titles", {})
-    return history
-
-
-def _normalize_world_history(career: CareerState):
-    """
-    Migra/normaliza estrutura de histórico para saves antigos, sem exigir novo jogo.
-    """
-    world = _ensure_world_history(career)
-    if not isinstance(career.season_history, list):
-        career.season_history = []
-
-    # Backfill de campeões da Divisão 1 por clube e técnicos a partir do histórico existente.
-    if (not world.get("div1_titles_by_club")) and world.get("division_champions"):
-        rebuilt_titles = {}
-        rebuilt_coaches = []
-        for item in world.get("division_champions", []):
-            if int(item.get("division", 0) or 0) != 1:
-                continue
-            team_name = item.get("team")
-            coach_name = item.get("coach")
-            if team_name:
-                rebuilt_titles[team_name] = int(rebuilt_titles.get(team_name, 0)) + 1
-            if coach_name:
-                rebuilt_coaches.append(coach_name)
-        world["div1_titles_by_club"] = rebuilt_titles
-        if not world.get("div1_champion_coaches_history"):
-            world["div1_champion_coaches_history"] = rebuilt_coaches
-
-    # Backfill de campeões da Copa por clube via season_history (quando disponível).
-    if (not world.get("copa_titles_by_club")) and career.season_history:
-        rebuilt_copa_titles = {}
-        for entry in career.season_history:
-            champion = entry.get("copa_champion")
-            if champion:
-                rebuilt_copa_titles[champion] = int(rebuilt_copa_titles.get(champion, 0)) + 1
-        world["copa_titles_by_club"] = rebuilt_copa_titles
-
-    # Recalcula ranking de técnicos campeões somente com critério válido:
-    # campeão Divisão 1 + campeão da Copa.
-    coach_counter = {}
-    for coach_name in world.get("div1_champion_coaches_history", []):
-        if coach_name:
-            coach_counter[coach_name] = int(coach_counter.get(coach_name, 0)) + 1
-    for coach_name in world.get("copa_champion_coaches_history", []):
-        if coach_name:
-            coach_counter[coach_name] = int(coach_counter.get(coach_name, 0)) + 1
-    world["coach_titles"] = coach_counter
-
-    # Reconstrói anos gravados de forma robusta para evitar bloqueio indevido dos recordes.
-    years_from_history = {
-        int(entry.get("year"))
-        for entry in career.season_history
-        if isinstance(entry, dict) and entry.get("year") is not None
-    }
-    years_from_champions = {
-        int(item.get("year"))
-        for item in world.get("division_champions", [])
-        if isinstance(item, dict) and item.get("year") is not None
-    }
-    world["recorded_champion_years"] = sorted(
-        set(world.get("recorded_champion_years", [])) | years_from_champions
-    )
-    world["recorded_aggregate_years"] = sorted(
-        set(world.get("recorded_aggregate_years", []))
-    )
-    world["recorded_years"] = sorted(
-        set(world.get("recorded_years", []))
-        | years_from_history
-        | set(world.get("recorded_champion_years", []))
-        | set(world.get("recorded_aggregate_years", []))
-    )
-
-    # Migração de saves antigos: se acumulados estiverem vazios, tenta semear via season_history.
-    if not world.get("league_points_cumulative") and career.season_history:
-        points_seed = {}
-        for entry in career.season_history:
-            if not isinstance(entry, dict):
-                continue
-            team = entry.get("league_points_best_team")
-            points = int(entry.get("league_points_best_points", 0) or 0)
-            if team and points > 0:
-                points_seed[team] = int(points_seed.get(team, 0)) + points
-        world["league_points_cumulative"] = points_seed
-
-    if not world.get("team_goals_cumulative") and career.season_history:
-        goals_seed = {}
-        for entry in career.season_history:
-            if not isinstance(entry, dict):
-                continue
-            team = entry.get("league_best_attack_team")
-            goals = int(entry.get("league_best_attack_goals", 0) or 0)
-            if team and goals > 0:
-                goals_seed[team] = int(goals_seed.get(team, 0)) + goals
-        world["team_goals_cumulative"] = goals_seed
-
-    if not world.get("player_goals_cumulative") and career.season_history:
-        player_seed = {}
-        for entry in career.season_history:
-            if not isinstance(entry, dict):
-                continue
-            top = entry.get("top_scorer")
-            if not isinstance(top, (tuple, list)) or len(top) < 3:
-                continue
-            player_name, team_name, goals = top[0], top[1], int(top[2] or 0)
-            if player_name and team_name and goals > 0:
-                key = f"{player_name}::{team_name}"
-                player_seed[key] = int(player_seed.get(key, 0)) + goals
-        world["player_goals_cumulative"] = player_seed
-
-    # Fallback final para manter recordes legíveis mesmo em saves sem base acumulada.
-    if not world.get("league_points_cumulative"):
-        rec = world.get("league_points_record", {}) or {}
-        team = rec.get("team")
-        pts = int(rec.get("points", 0) or 0)
-        if team and team != "-" and pts > 0:
-            world["league_points_cumulative"] = {team: pts}
-
-    if not world.get("team_goals_cumulative"):
-        rec = world.get("team_goals_record", {}) or {}
-        team = rec.get("team")
-        goals = int(rec.get("goals", 0) or 0)
-        if team and team != "-" and goals > 0:
-            world["team_goals_cumulative"] = {team: goals}
-
-    if not world.get("player_goals_cumulative"):
-        rec = world.get("player_goals_record", {}) or {}
-        player = rec.get("player")
-        team = rec.get("team")
-        goals = int(rec.get("goals", 0) or 0)
-        if player and team and player != "-" and team != "-" and goals > 0:
-            world["player_goals_cumulative"] = {f"{player}::{team}": goals}
-
-    if world.get("league_points_cumulative"):
-        club_name, total_points = max(world["league_points_cumulative"].items(), key=lambda item: item[1])
-        world["league_points_record"] = {
-            "points": int(total_points),
-            "team": club_name,
-            "year": world.get("league_points_record", {}).get("year", 0),
-        }
-
-    if world.get("team_goals_cumulative"):
-        team_name, total_goals = max(world["team_goals_cumulative"].items(), key=lambda item: item[1])
-        world["team_goals_record"] = {
-            "goals": int(total_goals),
-            "team": team_name,
-            "year": world.get("team_goals_record", {}).get("year", 0),
-        }
-
-    if world.get("player_goals_cumulative"):
-        player_key, total_goals = max(world["player_goals_cumulative"].items(), key=lambda item: item[1])
-        player_name, team_name = player_key.split("::", 1)
-        world["player_goals_record"] = {
-            "goals": int(total_goals),
-            "player": player_name,
-            "team": team_name,
-            "year": world.get("player_goals_record", {}).get("year", 0),
-        }
-    career.world_history = world
-
-
 def _ensure_stars_in_all_teams(all_teams):
     for team in all_teams:
         stars = [player for player in team.players if getattr(player, "is_star", False)]
@@ -389,8 +211,8 @@ def _maybe_show_pending_cup_draws(season: Season, player_team=None) -> bool:
 
 
 def _record_season_history(season: Season, player_team, career: CareerState):
-    _normalize_world_history(career)
-    world_history = _ensure_world_history(career)
+    normalize_world_history(career)
+    world_history = ensure_world_history(career)
     season_year = int(season.year)
 
     # Histórico do técnico (uma linha por temporada/ano).
@@ -671,21 +493,23 @@ def _prepare_live_games(season: Season, player_team):
             "away_goals": 0,
             "home_scorers": [],
             "away_scorers": [],
-            "attendance": _estimate_attendance(
+            "attendance": estimate_attendance(
                 home,
                 away,
                 game["competition"],
+                is_classic=_is_classic(home, away),
+                is_state_rivalry=_is_state_rivalry(home, away),
                 phase=game["ref"].phase if game["kind"] == "tie" else None,
             ),
             "events_first": simulate_half(home, away, home_lineup, away_lineup, 0, 45, game["competition"]),
             "events_second": None,
         }
-        _apply_red_card_effects(live_game, "events_first")
+        apply_red_card_effects(live_game, "events_first")
         if not game["is_player"]:
             live_game["events_second"] = simulate_half(
                 home, away, live_game["home_lineup"], live_game["away_lineup"], 46, 90, game["competition"]
             )
-            _apply_red_card_effects(live_game, "events_second")
+            apply_red_card_effects(live_game, "events_second")
         live_games.append(live_game)
     return matchday, live_games
 
@@ -708,32 +532,6 @@ def _is_state_rivalry(home_team, away_team) -> bool:
     )
 
 
-def _estimate_attendance(home_team, away_team, competition: str = "Liga", phase: str | None = None) -> int:
-    capacity_estimate = home_team.stadium_capacity
-    occupation = min(0.96, max(0.28, 0.42 + (home_team.prestige / 200)))
-    if _is_classic(home_team, away_team):
-        return capacity_estimate
-    if _is_state_rivalry(home_team, away_team):
-        # Clássico estadual "médio": aumenta bem o interesse, sem lotação garantida.
-        occupation = max(occupation, 0.62 if competition == "Liga" else 0.56)
-        occupation *= 1.18
-
-    if competition == "Liga":
-        occupation *= 1.25
-    else:
-        cup_weights = {
-            "primeira_fase": 1.10,
-            "oitavas": 1.20,
-            "quartas": 1.30,
-            "semi": 1.45,
-            "final": 1.65,
-        }
-        phase_key = (phase or "").strip().lower()
-        occupation *= cup_weights.get(phase_key, 1.08)
-        if phase_key == "final":
-            return capacity_estimate
-
-    return min(capacity_estimate, int(capacity_estimate * min(0.99, occupation)))
 
 
 def _team_color(team) -> str:
@@ -808,113 +606,6 @@ def _latest_event_text(events):
     return WW + prefix + _fit_text(player_name, 46) + RST
 
 
-def _apply_red_card_effects(live_game, events_key: str):
-    package = live_game.get(events_key)
-    if not package:
-        return
-
-    for event in package["events"]:
-        if event.get("type") != "red":
-            continue
-
-        side = event.get("side")
-        if side not in ("home", "away"):
-            continue
-
-        lineup_key = f"{side}_lineup"
-        lineup = list(live_game[lineup_key])
-        player_name = event.get("player_name")
-        player = next((athlete for athlete in lineup if athlete.name == player_name), None)
-        if player is None:
-            continue
-        lineup.remove(player)
-        live_game[lineup_key] = lineup
-
-        # Em caso de expulsão do goleiro, faz troca automática se houver reservas.
-        if getattr(player, "position", None) is not None and player.position.name == "GK":
-            bench_key = f"{side}_bench"
-            used_key = f"{side}_used"
-            subs_key = f"{side}_subs_used"
-            if live_game[subs_key] < 5 and live_game[bench_key]:
-                replacement = _pick_injury_replacement(live_game[bench_key], player)
-                if replacement is not None:
-                    bench = list(live_game[bench_key])
-                    bench.remove(replacement)
-                    live_game[lineup_key].append(replacement)
-                    live_game[bench_key] = bench
-                    live_game[used_key].append(replacement)
-                    live_game[subs_key] += 1
-                    package["events"].append({
-                        "minute": event["minute"],
-                        "side": side,
-                        "type": "substitution",
-                        "player_name": f"{replacement.name} no lugar de {player.name}",
-                        "team_name": event.get("team_name"),
-                        "short_name": event.get("short_name"),
-                    })
-    package["events"].sort(key=lambda e: (e.get("minute", 0), 0 if e.get("type") != "substitution" else 1))
-
-
-def _pick_injury_replacement(bench, injured_player):
-    if not bench:
-        return None
-    same_position = [player for player in bench if player.position == injured_player.position]
-    pool = same_position or list(bench)
-    pool.sort(key=lambda player: player.overall, reverse=True)
-    return pool[0]
-
-
-def _apply_auto_injury_substitutions(live_game, events_key: str):
-    package = live_game.get(events_key)
-    if not package:
-        return
-
-    updated_events = []
-    for event in package["events"]:
-        updated_events.append(event)
-        if event.get("type") != "injury":
-            continue
-
-        side = event.get("side")
-        if side not in ("home", "away"):
-            continue
-
-        lineup_key = f"{side}_lineup"
-        bench_key = f"{side}_bench"
-        used_key = f"{side}_used"
-        subs_key = f"{side}_subs_used"
-
-        if live_game[subs_key] >= 5 or not live_game[bench_key]:
-            continue
-
-        injured_name = event.get("player_name")
-        lineup = list(live_game[lineup_key])
-        injured_player = next((player for player in lineup if player.name == injured_name), None)
-        if injured_player is None:
-            continue
-
-        replacement = _pick_injury_replacement(live_game[bench_key], injured_player)
-        if replacement is None:
-            continue
-
-        bench = list(live_game[bench_key])
-        bench.remove(replacement)
-        lineup[lineup.index(injured_player)] = replacement
-        live_game[lineup_key] = lineup
-        live_game[bench_key] = bench
-        live_game[used_key].append(replacement)
-        live_game[subs_key] += 1
-        updated_events.append({
-            "minute": event["minute"],
-            "side": side,
-            "type": "substitution",
-            "player_name": f"{replacement.name} no lugar de {injured_player.name}",
-            "team_name": event.get("team_name"),
-            "short_name": event.get("short_name"),
-        })
-
-    updated_events.sort(key=lambda event: (event["minute"], 0 if event.get("type") != "substitution" else 1))
-    package["events"] = updated_events
 
 
 def _division_label(division: int) -> str:
@@ -1301,7 +992,7 @@ def _play_live_matchday(season: Season, player_team):
             90,
             focus_game["competition"],
         )
-        _apply_red_card_effects(focus_game, "events_second")
+        apply_red_card_effects(focus_game, "events_second")
 
     _play_live_half(matchday["label"], "2º TEMPO", 46, 90, live_games, focus_game)
 
@@ -1626,18 +1317,22 @@ def _play_next_match(season: Season, player_team, market: TransferMarket):
 
 def _run_career_loop(season: Season, player_team, market: TransferMarket, career: CareerState):
     orchestrator = CareerOrchestrator(
-        maybe_show_pending_cup_draws=_maybe_show_pending_cup_draws,
-        show_copa=show_copa,
-        run_game=run_game,
-        record_season_history=_record_season_history,
-        check_last_division_relegation_firing=check_last_division_relegation_firing,
-        show_notifications=show_notifications,
-        generate_player_offers=generate_player_offers,
-        prompt_job_offer=prompt_job_offer,
-        accept_player_offer=accept_player_offer,
-        reject_player_offer=reject_player_offer,
-        create_season=create_season,
-        current_player_team=current_player_team,
+        ui=UIAdapter(
+            maybe_show_pending_cup_draws=_maybe_show_pending_cup_draws,
+            show_copa=show_copa,
+            show_notifications=show_notifications,
+            prompt_job_offer=prompt_job_offer,
+        ),
+        game=GameAdapter(
+            run_game=run_game,
+            record_season_history=_record_season_history,
+            check_last_division_relegation_firing=check_last_division_relegation_firing,
+            generate_player_offers=generate_player_offers,
+            accept_player_offer=accept_player_offer,
+            reject_player_offer=reject_player_offer,
+            create_season=create_season,
+            current_player_team=current_player_team,
+        ),
     )
     orchestrator.run_career_loop(season, player_team, market, career)
 
@@ -1688,8 +1383,6 @@ def main():
                             unemployed=False,
                             free_coaches=create_free_coaches(),
                         )
-                    # Migra saves antigos uma única vez ao carregar
-                    _normalize_world_history(career)
                     _run_career_loop(season, pt, market, career)
                 else:
                     print(RR + "  Erro ao carregar o save." + RST)

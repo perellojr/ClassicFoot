@@ -135,17 +135,22 @@ def process_coach_market(all_teams: List[Team], career: CareerState, round_marke
         career.coach_market_last_round = round_marker
 
     cooldown_map = dict(career.coach_market_cooldown or {})
+    # Decrementa APÓS a avaliação para garantir N rodadas completas de proteção.
     for team_id in list(cooldown_map.keys()):
-        remaining = int(cooldown_map.get(team_id, 0)) - 1
-        if remaining <= 0:
+        remaining = int(cooldown_map.get(team_id, 0))
+        if remaining <= 1:
             cooldown_map.pop(team_id, None)
         else:
-            cooldown_map[team_id] = remaining
+            cooldown_map[team_id] = remaining - 1
 
     for team in all_teams:
         if career.current_team_id == team.id:
             continue
         if int(cooldown_map.get(team.id, 0)) > 0:
+            continue
+        # Interinos nunca são demitidos pela pressão de mercado — eles já
+        # são uma medida emergencial; trocar interino por interino é absurdo.
+        if team.coach.name.startswith("Interino"):
             continue
         pressure = _team_pressure(team, all_teams)
         if pressure >= 5 and random.random() < min(0.9, 0.25 + pressure * 0.1):
@@ -164,8 +169,11 @@ def process_coach_market(all_teams: List[Team], career: CareerState, round_marke
             excluded_ids={club.id for club in fired_teams},
             blocked_coach_names={just_fired_name_by_team.get(team.id, "")},
         )
-        # Protege o novo técnico por algumas rodadas do mercado.
-        cooldown_map[team.id] = 2
+        # Zera o histórico de forma: o novo técnico começa com a lousa limpa.
+        team.last_results.clear()
+        # Protege o novo técnico por 4 rodadas de Liga (equivale a ~2 ciclos
+        # de rodada+copa), evitando o loop de demissão dupla.
+        cooldown_map[team.id] = 4
 
     career.coach_market_cooldown = cooldown_map
 

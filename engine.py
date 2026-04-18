@@ -267,7 +267,13 @@ def _update_team_stats(home, away, hg, ag, competition):
             home.div_draws += 1; away.div_draws  += 1
 
 
-def _push_recent_result(team: Team, gf: int, ga: int):
+def _push_recent_result(team: Team, gf: int, ga: int, is_liga: bool = False):
+    """Registra o resultado recente APENAS para jogos de Liga.
+    Copa não deve contaminar a pressão do técnico — time pode perder Copa
+    para um adversário de divisão superior sem que isso reflita mal na gestão.
+    """
+    if not is_liga:
+        return
     if gf > ga:
         team.last_results.append("W")
     elif gf < ga:
@@ -461,8 +467,9 @@ def finalize_match_result(
         elif away_goals > home_goals:
             away.caixa += int(match_income * 1.00)
     _update_team_stats(home, away, home_goals, away_goals, competition)
-    _push_recent_result(home, home_goals, away_goals)
-    _push_recent_result(away, away_goals, home_goals)
+    is_liga = (competition == "Liga")
+    _push_recent_result(home, home_goals, away_goals, is_liga=is_liga)
+    _push_recent_result(away, away_goals, home_goals, is_liga=is_liga)
 
     return MatchResult(
         home_team=home,
@@ -617,3 +624,167 @@ def simulate_all_fixtures_in_round(fixtures) -> List[MatchResult]:
             )
             results.append(f.result)
     return results
+
+
+# ── Presença com contexto de rivalidade ───────────────────────
+
+def estimate_attendance(
+    home: Team,
+    away: Team,
+    competition: str = "Liga",
+    is_classic: bool = False,
+    is_state_rivalry: bool = False,
+    phase: str | None = None,
+) -> int:
+    """
+    Calcula presença para partidas ao vivo, considerando rivalidade e fase da copa.
+
+    Para partidas simuladas pela IA (sem contexto de rivalidade) use
+    _estimate_match_attendance, que já é chamada internamente por simulate_match.
+    """
+    capacity = home.stadium_capacity
+    occupation = min(0.96, max(0.28, 0.42 + (home.prestige / 200)))
+
+    if is_classic:
+        return capacity
+
+    if is_state_rivalry:
+        occupation = max(occupation, 0.62 if competition == "Liga" else 0.56)
+        occupation *= 1.18
+
+    if competition == "Liga":
+        occupation *= 1.25
+    else:
+        cup_weights = {
+            "primeira_fase": 1.10,
+            "oitavas": 1.20,
+            "quartas": 1.30,
+            "semi": 1.45,
+            "final": 1.65,
+        }
+        phase_key = (phase or "").strip().lower()
+        occupation *= cup_weights.get(phase_key, 1.08)
+        if phase_key == "final":
+            return capacity
+
+    return min(capacity, int(capacity * min(0.99, occupation)))
+
+
+# ── Funções de estado de partida ao vivo ──────────────────────
+
+def pick_injury_replacement(bench: List[Player], injured_player: Player) -> "Player | None":
+    """Escolhe o melhor reserva para substituir um jogador lesionado/expulso."""
+    if not bench:
+        return None
+    same_position = [p for p in bench if p.position == injured_player.position]
+    pool = same_position or list(bench)
+    pool.sort(key=lambda p: p.overall, reverse=True)
+    return pool[0]
+
+
+def apply_red_card_effects(live_game: dict, events_key: str) -> None:
+    """
+    Remove jogadores expulsos da escalação de um live_game e aplica
+    substituição automática de goleiro se houver reserva disponível.
+    live_game é um dict com home_lineup, away_lineup, home_bench, etc.
+    """
+    package = live_game.get(events_key)
+    if not package:
+        return
+
+    for event in package["events"]:
+        if event.get("type") != "red":
+            continue
+        side = event.get("side")
+        if side not in ("home", "away"):
+            continue
+
+        lineup_key = f"{side}_lineup"
+        lineup = list(live_game[lineup_key])
+        player_name = event.get("player_name")
+        player = next((p for p in lineup if p.name == player_name), None)
+        if player is None:
+            continue
+        lineup.remove(player)
+        live_game[lineup_key] = lineup
+
+        # Substituição automática se goleiro for expulso.
+        if getattr(player, "position", None) is not None and player.position.name == "GK":
+            bench_key = f"{side}_bench"
+            used_key = f"{side}_used"
+            subs_key = f"{side}_subs_used"
+            if live_game[subs_key] < 5 and live_game[bench_key]:
+                replacement = pick_injury_replacement(live_game[bench_key], player)
+                if replacement is not None:
+                    bench = list(live_game[bench_key])
+                    bench.remove(replacement)
+                    live_game[lineup_key].append(replacement)
+                    live_game[bench_key] = bench
+                    live_game[used_key].append(replacement)
+                    live_game[subs_key] += 1
+                    package["events"].append({
+                        "minute": event["minute"],
+                        "side": side,
+                        "type": "substitution",
+                        "player_name": f"{replacement.name} no lugar de {player.name}",
+                        "team_name": event.get("team_name"),
+                        "short_name": event.get("short_name"),
+                    })
+
+    package["events"].sort(key=lambda e: (e.get("minute", 0), 0 if e.get("type") != "substitution" else 1))
+
+
+def apply_auto_injury_substitutions(live_game: dict, events_key: str) -> None:
+    """
+    Aplica substituições automáticas para jogadores lesionados (evento 'injury').
+    live_game é o mesmo dict mutável usado por apply_red_card_effects.
+    """
+    package = live_game.get(events_key)
+    if not package:
+        return
+
+    updated_events = []
+    for event in package["events"]:
+        updated_events.append(event)
+        if event.get("type") != "injury":
+            continue
+        side = event.get("side")
+        if side not in ("home", "away"):
+            continue
+
+        lineup_key = f"{side}_lineup"
+        bench_key = f"{side}_bench"
+        used_key = f"{side}_used"
+        subs_key = f"{side}_subs_used"
+
+        if live_game[subs_key] >= 5 or not live_game[bench_key]:
+            continue
+
+        injured_name = event.get("player_name")
+        lineup = list(live_game[lineup_key])
+        injured_player = next((p for p in lineup if p.name == injured_name), None)
+        if injured_player is None:
+            continue
+
+        replacement = pick_injury_replacement(live_game[bench_key], injured_player)
+        if replacement is None:
+            continue
+
+        bench = list(live_game[bench_key])
+        bench.remove(replacement)
+        lineup[lineup.index(injured_player)] = replacement
+        live_game[lineup_key] = lineup
+        live_game[bench_key] = bench
+        live_game[used_key].append(replacement)
+        live_game[subs_key] += 1
+        updated_events.append({
+            "minute": event["minute"],
+            "side": side,
+            "type": "substitution",
+            "player_name": f"{replacement.name} no lugar de {injured_player.name}",
+            "team_name": event.get("team_name"),
+            "short_name": event.get("short_name"),
+        })
+
+    updated_events.sort(key=lambda e: (e["minute"], 0 if e.get("type") != "substitution" else 1))
+    package["events"] = updated_events

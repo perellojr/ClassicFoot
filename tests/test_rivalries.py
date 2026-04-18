@@ -1,6 +1,7 @@
 import unittest
 
 import main
+from engine import estimate_attendance
 from tests.helpers import make_team
 
 
@@ -30,8 +31,17 @@ class RivalryTests(unittest.TestCase):
         away_same_state.dynamic_rivals = []
         away_other_state.dynamic_rivals = []
 
-        attendance_state = main._estimate_attendance(home, away_same_state, competition="Liga")
-        attendance_other = main._estimate_attendance(home, away_other_state, competition="Liga")
+        # estimate_attendance agora está em engine — passa contexto de rivalidade explicitamente.
+        attendance_state = estimate_attendance(
+            home, away_same_state, competition="Liga",
+            is_classic=main._is_classic(home, away_same_state),
+            is_state_rivalry=main._is_state_rivalry(home, away_same_state),
+        )
+        attendance_other = estimate_attendance(
+            home, away_other_state, competition="Liga",
+            is_classic=main._is_classic(home, away_other_state),
+            is_state_rivalry=main._is_state_rivalry(home, away_other_state),
+        )
 
         self.assertTrue(main._is_state_rivalry(home, away_same_state))
         self.assertFalse(main._is_state_rivalry(home, away_other_state))
