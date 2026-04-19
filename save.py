@@ -9,6 +9,7 @@ independente do diretório de trabalho. Um backup automático (save.bak.pkl)
 Migração de schema: _migrate_loaded_state aplica todas as normalizações
 necessárias para saves antigos, incluindo backfill de histórico mundial.
 """
+import json
 import pickle
 import shutil
 import time
@@ -22,6 +23,7 @@ if TYPE_CHECKING:
 SAVE_DIR = Path.home() / ".classicfoot"
 SAVE_FILE = SAVE_DIR / "save.pkl"
 BACKUP_FILE = SAVE_DIR / "save.bak.pkl"
+JSON_BACKUP_FILE = SAVE_DIR / "save_backup.json"
 SAVE_VERSION = 3
 
 
@@ -68,7 +70,7 @@ def normalize_world_history(career: "CareerState") -> None:
 
     # Backfill de campeões da Divisão 1 por clube e técnicos a partir do histórico existente.
     if (not world.get("div1_titles_by_club")) and world.get("division_champions"):
-        rebuilt_titles = {}
+        rebuilt_titles: dict = {}
         rebuilt_coaches = []
         for item in world.get("division_champions", []):
             if int(item.get("division", 0) or 0) != 1:
@@ -85,7 +87,7 @@ def normalize_world_history(career: "CareerState") -> None:
 
     # Backfill de campeões da Copa por clube via season_history (quando disponível).
     if (not world.get("copa_titles_by_club")) and career.season_history:
-        rebuilt_copa_titles = {}
+        rebuilt_copa_titles: dict = {}
         for entry in career.season_history:
             champion = entry.get("copa_champion")
             if champion:
@@ -104,12 +106,12 @@ def normalize_world_history(career: "CareerState") -> None:
 
     # Reconstrói anos gravados de forma robusta.
     years_from_history = {
-        int(entry.get("year"))
+        int(entry.get("year") or 0)
         for entry in career.season_history
         if isinstance(entry, dict) and entry.get("year") is not None
     }
     years_from_champions = {
-        int(item.get("year"))
+        int(item.get("year") or 0)
         for item in world.get("division_champions", [])
         if isinstance(item, dict) and item.get("year") is not None
     }
@@ -233,6 +235,11 @@ def save_game(game_state: dict) -> bool:
             shutil.copy2(SAVE_FILE, BACKUP_FILE)
         with open(SAVE_FILE, "wb") as f:
             pickle.dump(game_state, f)
+        # Backup JSON legível — falha silenciosa para não bloquear o save principal
+        try:
+            export_save_json(game_state)
+        except Exception:
+            pass
         return True
     except Exception as e:
         print(f"Erro ao salvar: {e}")
@@ -343,3 +350,184 @@ def load_game() -> Optional[dict]:
 
 def save_exists() -> bool:
     return SAVE_FILE.exists()
+
+
+# ── Serialização JSON (backup legível / portabilidade) ─────────
+
+def _player_to_dict(p) -> dict:
+    return {
+        "id": p.id,
+        "name": p.name,
+        "position": p.position.value,
+        "age": p.age,
+        "nationality": p.nationality,
+        "overall": round(float(p.overall), 2),
+        "salario": p.salario,
+        "valor_mercado": p.valor_mercado,
+        "suspenso": p.suspenso,
+        "contrato_rodadas": p.contrato_rodadas,
+        "gols_total": p.gols_total,
+        "partidas_total": p.partidas_total,
+        "is_star": getattr(p, "is_star", False),
+    }
+
+
+def _coach_to_dict(c) -> dict:
+    return {
+        "name": c.name,
+        "nationality": c.nationality,
+        "tactical": c.tactical,
+        "motivation": c.motivation,
+        "experience": c.experience,
+        "reputation": c.reputation,
+    }
+
+
+def _team_to_dict(t) -> dict:
+    return {
+        "id": t.id,
+        "name": t.name,
+        "short_name": t.short_name,
+        "city": t.city,
+        "state": t.state,
+        "stadium": t.stadium,
+        "division": t.division,
+        "prestige": t.prestige,
+        "torcida": t.torcida,
+        "caixa": t.caixa,
+        "stadium_level": t.stadium_level,
+        "formation": t.formation.value,
+        "postura": t.postura.value,
+        "coach": _coach_to_dict(t.coach),
+        "players": [_player_to_dict(p) for p in t.players],
+    }
+
+
+def _career_to_dict(career) -> dict:
+    return {
+        "player_coach": _coach_to_dict(career.player_coach),
+        "current_team_id": career.current_team_id,
+        "unemployed": career.unemployed,
+        "games_in_charge": career.games_in_charge,
+        "season_history": list(career.season_history or []),
+        "world_history": dict(career.world_history or {}),
+        "free_coaches": [_coach_to_dict(c) for c in (career.free_coaches or [])],
+    }
+
+
+def export_save_json(game_state: dict, path: Optional[Path] = None) -> Optional[Path]:
+    """Exporta o estado persistente do jogo para JSON legível.
+
+    Serializa teams e career (dados permanentes). O estado da temporada em
+    andamento não é incluído — é transiente e recriado ao recarregar.
+
+    Retorna o caminho do arquivo gerado ou None em caso de erro.
+    """
+    dest = Path(path) if path else JSON_BACKUP_FILE
+    try:
+        _ensure_dir()
+        season = game_state.get("season")
+        all_teams = list(getattr(season, "all_teams", []) or []) if season else []
+
+        payload: dict = {
+            "__save_meta__": {
+                "version": SAVE_VERSION,
+                "exported_at": time.time(),
+                "format": "classicfoot-json-v1",
+            },
+            "teams": [_team_to_dict(t) for t in all_teams],
+            "career": _career_to_dict(game_state["career"]) if game_state.get("career") else None,
+        }
+        with open(dest, "w", encoding="utf-8") as f:
+            json.dump(payload, f, ensure_ascii=False, indent=2, default=str)
+        return dest
+    except Exception as e:
+        print(f"Erro ao exportar JSON: {e}")
+        return None
+
+
+def import_save_json(path: Optional[Path] = None):
+    """Importa um backup JSON e reconstrói teams e career.
+
+    Retorna um dict parcial com 'teams' e 'career' reconstituídos, ou None.
+    O chamador é responsável por integrar com o estado completo (season, market).
+    """
+    src = Path(path) if path else JSON_BACKUP_FILE
+    if not src.exists():
+        return None
+    try:
+        from models import Player, Team, Coach, Formation, Postura, Position, CareerState
+
+        with open(src, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        def _dict_to_coach(d: dict) -> Coach:
+            return Coach(
+                name=d.get("name", "Técnico"),
+                nationality=d.get("nationality", "Brasileiro"),
+                tactical=int(d.get("tactical", 75)),
+                motivation=int(d.get("motivation", 75)),
+                experience=int(d.get("experience", 75)),
+                reputation=int(d.get("reputation", 70)),
+            )
+
+        def _dict_to_player(d: dict) -> Player:
+            return Player(
+                id=int(d["id"]),
+                name=d["name"],
+                position=Position(d["position"]),
+                age=int(d["age"]),
+                nationality=d.get("nationality", "Brasileiro"),
+                overall=float(d["overall"]),
+                salario=int(d.get("salario", 100)),
+                valor_mercado=int(d.get("valor_mercado", 500)),
+                suspenso=int(d.get("suspenso", 0)),
+                contrato_rodadas=int(d.get("contrato_rodadas", 20)),
+                gols_total=int(d.get("gols_total", 0)),
+                partidas_total=int(d.get("partidas_total", 0)),
+                is_star=bool(d.get("is_star", False)),
+            )
+
+        def _dict_to_team(d: dict) -> Team:
+            formation_map = {f.value: f for f in Formation}
+            postura_map = {p.value: p for p in Postura}
+            return Team(
+                id=int(d["id"]),
+                name=d["name"],
+                short_name=d.get("short_name", d["name"][:3].upper()),
+                city=d.get("city", ""),
+                state=d.get("state", ""),
+                stadium=d.get("stadium", ""),
+                division=int(d["division"]),
+                prestige=int(d.get("prestige", 70)),
+                torcida=int(d.get("torcida", 1_000_000)),
+                caixa=int(d.get("caixa", 50_000)),
+                stadium_level=int(d.get("stadium_level", 1)),
+                formation=formation_map.get(d.get("formation", "4-4-2"), Formation.F442),
+                postura=postura_map.get(d.get("postura", "Equilibrado"), Postura.EQUILIBRADO),
+                coach=_dict_to_coach(d["coach"]),
+                players=[_dict_to_player(p) for p in d.get("players", [])],
+            )
+
+        teams_data = data.get("teams") or []
+        teams = [_dict_to_team(t) for t in teams_data]
+
+        career = None
+        career_data = data.get("career")
+        if career_data:
+            coach = _dict_to_coach(career_data["player_coach"])
+            career = CareerState(
+                player_coach=coach,
+                current_team_id=career_data.get("current_team_id"),
+                unemployed=bool(career_data.get("unemployed", False)),
+                games_in_charge=int(career_data.get("games_in_charge", 0)),
+                season_history=list(career_data.get("season_history") or []),
+                world_history=dict(career_data.get("world_history") or {}),
+                free_coaches=[_dict_to_coach(c) for c in (career_data.get("free_coaches") or [])],
+            )
+            normalize_world_history(career)
+
+        return {"teams": teams, "career": career}
+    except Exception as e:
+        print(f"Erro ao importar JSON: {e}")
+        return None

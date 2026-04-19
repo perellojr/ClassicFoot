@@ -41,5 +41,15 @@ jobs:
             transfers.py \
             ui.py
 
+      - name: Type check (mypy)
+        run: |
+          python -m mypy \
+            models.py \
+            engine.py \
+            season.py \
+            save.py \
+            transfers.py \
+            manager_market.py
+
       - name: Run tests
         run: python -m unittest discover -s tests -p "test_*.py" -v

@@ -387,7 +387,7 @@ def simulate_half(
             "team_name": away.name,
             "short_name": away.short_name,
         })
-    events.sort(key=lambda event: event["minute"])
+    events.sort(key=lambda event: event.get("minute") or 0)  # type: ignore[arg-type, return-value]
 
     return {
         "home_goals": home_goals,
@@ -438,9 +438,9 @@ def finalize_match_result(
     red_events = [event for event in (events or []) if event.get("type") == "red"]
     for event in red_events:
         if event.get("side") == "home":
-            player = by_name_home.get(event.get("player_name"))
+            player = by_name_home.get(event.get("player_name") or "")
         else:
-            player = by_name_away.get(event.get("player_name"))
+            player = by_name_away.get(event.get("player_name") or "")
         if player:
             player.vermelhos_temp += 1
             player.vermelhos_total += 1

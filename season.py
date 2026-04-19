@@ -78,7 +78,7 @@ def _round_robin(teams: List[Team]) -> List[List[Tuple[Team, Team]]]:
     """
     n = len(teams)
     if n % 2 != 0:
-        teams = teams + [None]   # BYE
+        teams = teams + [None]  # type: ignore[list-item]  # BYE placeholder
         n += 1
 
     rounds = []
@@ -162,7 +162,7 @@ def create_season(year: int, all_teams: List[Team], player_team_id: int) -> Seas
         _clamp_division_ovr(all_teams)
 
     # Divisões
-    divs = {1: [], 2: [], 3: [], 4: []}
+    divs: Dict[int, List[Team]] = {1: [], 2: [], 3: [], 4: []}
     for t in all_teams:
         divs[t.division].append(t)
 
@@ -410,7 +410,7 @@ def _check_advance_copa_knockout(season: Season):
 def _end_of_season(season: Season):
     """Distribui prêmios, promoção/rebaixamento, artilheiros."""
     prize_multiplier = season_prize_multiplier(season.year)
-    divs = {1: [], 2: [], 3: [], 4: []}
+    divs: Dict[int, List[Team]] = {1: [], 2: [], 3: [], 4: []}
     for t in season.all_teams:
         divs[t.division].append(t)
 

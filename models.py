@@ -69,6 +69,27 @@ class Formation(Enum):
             Formation.BEST11: 0.96,
         }[self]
 
+    def can_use(self, team: "Team") -> bool:
+        """Verifica se o time tem jogadores suficientes para a formação."""
+        if len(team.players) < 11:
+            return False
+        if self == Formation.BEST11:
+            return sum(1 for p in team.players if p.position == Position.GK) >= 1
+        slots = self.slots()
+        for position in [Position.GK, Position.DEF, Position.MID, Position.ATK]:
+            required = slots.get(position, 0)
+            have = sum(1 for p in team.players if p.position == position)
+            if have < required:
+                return False
+        return True
+
+    def fit_ovr(self, lineup: "List[Player]") -> float:
+        """OVR médio ponderado pelos vieses da formação para um dado lineup."""
+        if not lineup:
+            return 0.0
+        avg = sum(p.overall for p in lineup) / len(lineup)
+        return round(avg * (self.atk_bias() + self.def_bias()) / 2, 1)
+
 
 class Postura(Enum):
     DEFENSIVO   = "Defensivo"
@@ -82,6 +103,11 @@ class Postura(Enum):
             Postura.EQUILIBRADO: (1.00, 1.00),
             Postura.OFENSIVO:    (1.14, 0.88),
         }[self]
+
+    def fit_ovr(self, base_ovr: float) -> float:
+        """OVR simulado com os modificadores desta postura."""
+        atk_mod, def_mod = self.modifiers()
+        return round(base_ovr * ((atk_mod + def_mod) / 2), 1)
 
 
 @dataclass
