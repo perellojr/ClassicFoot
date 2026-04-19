@@ -6,7 +6,7 @@ Inclui: formações, postura tática, forma e moral dos jogadores
 import math
 import random
 from typing import List, Tuple
-from models import Team, Player, Position, MatchResult, Formation, Postura
+from models import Team, Player, Position, MatchResult, Formation, Postura, TICKET_PRICE_BY_DIV
 
 
 # ── Poisson sem numpy ──────────────────────────────────────────
@@ -539,13 +539,7 @@ def _estimate_match_attendance(home: Team, away: Team, competition: str) -> int:
 
 def _apply_match_income(home: Team, attendance: int, competition: str):
     """Renda do jogo baseada em público e preço médio do ingresso."""
-    ticket_price_by_div = {
-        1: 0.135,  # R$ 135 por torcedor (em mil => 0.135)
-        2: 0.105,
-        3: 0.080,
-        4: 0.060,
-    }
-    ticket = ticket_price_by_div.get(home.division, 0.070)
+    ticket = TICKET_PRICE_BY_DIV.get(home.division, 0.095)
     comp_factor = 1.00 if competition == "Liga" else 1.12
     raw_income = attendance * ticket * comp_factor
     income = int(max(250, round(raw_income)))

@@ -5,7 +5,7 @@ Terminal colorido com colorama + box-drawing characters
 import time
 from typing import List, Optional
 from colorama import Back, Fore, Style
-from models import Team, Player, Position, Formation, Postura, MatchResult, CupTie, RENDA_TORCIDA_FACTOR
+from models import Team, Player, Position, Formation, Postura, MatchResult, CupTie, TICKET_PRICE_BY_DIV
 from season import (
     Season, sort_standings, take_loan, settle_loan, monthly_sponsorship,
     CUSTO_MANUTENCAO, stadium_maintenance_cost, PRIZE_LIGA, PRIZE_COPA,
@@ -1102,7 +1102,9 @@ def _annual_budget_forecast(team: Team, season: Season | None):
         for fixture in matchday.get("fixtures", []):
             if fixture.home_team.id == team.id:
                 home_games_left += 1
-    avg_home_income = int((team.torcida * RENDA_TORCIDA_FACTOR) + (team.prestige * 20))
+    ticket = TICKET_PRICE_BY_DIV.get(team.division, 0.095)
+    occupation = min(0.99, max(0.35, 0.44 + team.prestige / 220) * 1.20)
+    avg_home_income = int(team.stadium_capacity * occupation * ticket)
     projected_income = (home_games_left * avg_home_income) + (sponsor_monthly * months_left)
 
     projected_final_cash = team.caixa + projected_income - projected_expenses
@@ -1192,7 +1194,10 @@ def show_torcida(team: Team):
     rank = ("Top 3 do Brasil" if torcida > 15_000_000 else
             "Top 10 do Brasil" if torcida > 5_000_000 else "Regional")
 
-    renda = int(torcida * RENDA_TORCIDA_FACTOR * team.prestige / 80)
+    ticket = TICKET_PRICE_BY_DIV.get(team.division, 0.095)
+    occupation = min(0.99, max(0.35, 0.44 + team.prestige / 220) * 1.20)
+    renda = int(team.stadium_capacity * occupation * ticket)
+    ticket_price_brl = int(ticket * 1000)
     lines = [
         "",
         WW + f"  Clube:       {GG}{team.name}{RST}",
@@ -1201,9 +1206,10 @@ def show_torcida(team: Team):
         "",
         WW + f"  Ranking:     {C}{rank}{RST}",
         WW + f"  Cap. Estádio:{DIM} aprox. {fmt_fans(team.stadium_capacity)}{RST}",
-        WW + f"  Suporte/jogo:{DIM} ~{fmt_fans(int(torcida * 0.0003))}{RST}",
+        WW + f"  Público med.:{DIM} ~{fmt_fans(int(team.stadium_capacity * occupation))}{RST}",
         "",
         WW + f"  Prestígio:   {C}{team.prestige}/100{RST}",
+        WW + f"  Ingresso:    {DIM}R${ticket_price_brl}/pessoa (Div{team.division}){RST}",
         WW + f"  Renda/jogo:  {Y}R${renda:,} mil{RST}",
         "",
     ]
@@ -1218,7 +1224,11 @@ def show_stadium(team: Team):
     while True:
         clear()
         print(rule(f"🏟  ESTÁDIO — {team.stadium}"))
-        renda = int(team.torcida * RENDA_TORCIDA_FACTOR * team.prestige / 80)
+        ticket = TICKET_PRICE_BY_DIV.get(team.division, 0.095)
+        ticket_price_brl = int(ticket * 1000)
+        occupation = min(0.99, max(0.35, 0.44 + team.prestige / 220) * 1.20)
+        estimated_crowd = int(team.stadium_capacity * occupation)
+        renda = int(estimated_crowd * ticket)
 
         current_capacity = team.stadium_capacity
         maintenance = stadium_maintenance_cost(team)
@@ -1233,7 +1243,7 @@ def show_stadium(team: Team):
             "",
             C + "  RECEITAS ESTIMADAS:" + RST,
             WW + f"  Bilheteria/jogo: {Y}R${renda:,} mil{RST}",
-            DIM + f"  (Baseado em ~{int(current_capacity*0.65):,} ingressos a R${int(renda*1000/max(current_capacity*0.65,1))}/un.)" + RST,
+            DIM + f"  (Baseado em ~{fmt_fans(estimated_crowd)} ingressos a R${ticket_price_brl}/un.)" + RST,
             "",
             WW + f"  Custo/temporada: {RR}R${maintenance * 3:,} mil{RST}",
             "",

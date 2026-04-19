@@ -9,7 +9,13 @@ import random
 
 
 # ── Constantes de jogo ────────────────────────────────────────
-RENDA_TORCIDA_FACTOR = 0.00015  # fator de renda da bilheteria por torcedor
+# Preço médio de ingresso por divisão (em milhares de R$)
+TICKET_PRICE_BY_DIV: Dict[int, float] = {
+    1: 0.175,  # R$ 175/pessoa
+    2: 0.140,  # R$ 140/pessoa
+    3: 0.110,  # R$ 110/pessoa
+    4: 0.085,  # R$ 85/pessoa
+}
 
 
 class Position(Enum):
