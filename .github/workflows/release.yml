@@ -1,0 +1,122 @@
+name: Build & Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  # ── Build macOS ──────────────────────────────────────────────────
+  build-mac:
+    runs-on: macos-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: |
+          pip install -r requirements.txt
+          pip install pyinstaller
+
+      - name: Build .app
+        run: |
+          pyinstaller \
+            --noconfirm \
+            --windowed \
+            --name ClassicFoot \
+            --add-data "data/teams.json:data" \
+            launcher_gui.py
+          xattr -cr dist/ClassicFoot.app || true
+          codesign --force --deep --sign - dist/ClassicFoot.app
+
+      - name: Empacotar .app
+        run: cd dist && zip -r ../ClassicFoot-mac.zip ClassicFoot.app
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ClassicFoot-mac
+          path: ClassicFoot-mac.zip
+
+  # ── Build Windows ────────────────────────────────────────────────
+  build-windows:
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: |
+          pip install -r requirements.txt
+          pip install pyinstaller
+
+      - name: Build .exe
+        run: >
+          pyinstaller
+          --noconfirm
+          --windowed
+          --name ClassicFoot
+          --add-data "data/teams.json;data"
+          launcher_gui.py
+
+      - name: Empacotar .exe
+        run: Compress-Archive -Path dist\ClassicFoot -DestinationPath ClassicFoot-windows.zip
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ClassicFoot-windows
+          path: ClassicFoot-windows.zip
+
+  # ── Publicar Release ─────────────────────────────────────────────
+  release:
+    needs: [build-mac, build-windows]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
+      ITCH_USERNAME: ${{ secrets.ITCH_USERNAME }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
+
+      - name: Criar GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            ClassicFoot-mac.zip
+            ClassicFoot-windows.zip
+          generate_release_notes: true
+
+      - name: Instalar butler (itch.io)
+        if: ${{ env.BUTLER_CREDENTIALS != '' }}
+        run: |
+          curl -L -o butler.zip \
+            https://broth.itch.ovh/butler/linux-amd64/LATEST/archive/default
+          unzip -q butler.zip
+          chmod +x butler
+
+      - name: Publicar no itch.io — Mac
+        if: ${{ env.BUTLER_CREDENTIALS != '' }}
+        run: |
+          ./butler push ClassicFoot-mac.zip \
+            "$ITCH_USERNAME/classicfoot:mac" \
+            --userversion ${{ github.ref_name }}
+
+      - name: Publicar no itch.io — Windows
+        if: ${{ env.BUTLER_CREDENTIALS != '' }}
+        run: |
+          ./butler push ClassicFoot-windows.zip \
+            "$ITCH_USERNAME/classicfoot:windows" \
+            --userversion ${{ github.ref_name }}
