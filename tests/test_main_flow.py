@@ -32,7 +32,7 @@ class MainFlowTests(unittest.TestCase):
         market.resolve_all.return_value = []
 
         with patch("main._matchday_has_player_game", return_value=False), \
-             patch("main._play_live_matchday", return_value={"done": True, "matchday_num": season.current_matchday, "type": "liga"}), \
+             patch("main.play_live_matchday", return_value={"done": True, "matchday_num": season.current_matchday, "type": "liga"}), \
              patch("main.show_transfer_market"), \
              patch("main.show_auction_results"):
             main._play_next_match(season, player_team, market)

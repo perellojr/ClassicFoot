@@ -6,7 +6,7 @@ Para regenerar data/teams.json após alterar dados:
 
     python scripts/build_teams_json.py
 """
-from models import Player, Team, Coach, Formation, Postura, Position as P
+from models import Player, Team, Coach, Position as P
 
 _pid = 0
 def _p(name, pos, age, nat, ovr, *_ignored):

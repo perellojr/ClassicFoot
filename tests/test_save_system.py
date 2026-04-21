@@ -41,30 +41,33 @@ def _make_legacy_career_v1() -> CareerState:
 
 class SaveSystemTests(unittest.TestCase):
     def test_save_and_load_with_backup(self):
+        from models import Coach, CareerState
+
+        def _make_state(team_id: int) -> dict:
+            coach = Coach(name=f"Técnico {team_id}")
+            career = CareerState(player_coach=coach, current_team_id=team_id)
+            return {"career": career}
+
         with tempfile.TemporaryDirectory() as tmp:
             tmp_path = Path(tmp)
             original_dir = save.SAVE_DIR
-            original_file = save.SAVE_FILE
-            original_backup = save.BACKUP_FILE
             try:
                 save.SAVE_DIR = tmp_path
-                save.SAVE_FILE = tmp_path / "save.pkl"
-                save.BACKUP_FILE = tmp_path / "save.bak.pkl"
+                json_save = tmp_path / "save.json"
+                json_bak  = tmp_path / "save.bak.json"
 
-                self.assertTrue(save.save_game({"value": 1}))
-                self.assertTrue(save.SAVE_FILE.exists())
+                self.assertTrue(save.save_game(_make_state(1)))
+                self.assertTrue(json_save.exists())
 
-                self.assertTrue(save.save_game({"value": 2}))
-                self.assertTrue(save.BACKUP_FILE.exists())
+                self.assertTrue(save.save_game(_make_state(2)))
+                self.assertTrue(json_bak.exists())
 
                 loaded = save.load_game()
-                self.assertEqual(2, loaded["value"])
+                self.assertEqual(2, loaded["career"].current_team_id)
                 self.assertIn("__save_meta__", loaded)
                 self.assertGreaterEqual(int(loaded["__save_meta__"].get("version", 0)), save.SAVE_VERSION)
             finally:
                 save.SAVE_DIR = original_dir
-                save.SAVE_FILE = original_file
-                save.BACKUP_FILE = original_backup
 
 
 class SaveMigrationTests(unittest.TestCase):
@@ -89,6 +92,9 @@ class SaveMigrationTests(unittest.TestCase):
                 save.BACKUP_FILE = tmp_path / "save.bak.pkl"
 
                 self._save_legacy(tmp_path, state)
+                # O pickle legado não tem season/market, _dict_to_game_state
+                # não é chamado; normalize_world_history é invocado via
+                # _migrate_loaded_state no path pickle de load_game.
                 loaded = save.load_game()
 
                 migrated_career = loaded["career"]

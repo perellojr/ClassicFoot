@@ -12,8 +12,6 @@ from unittest.mock import patch
 
 from data import create_teams
 from season import create_season, pay_monthly_salaries, monthly_sponsorship
-from tests.helpers import make_player, make_team
-from models import Coach, Position
 
 
 class SponsorshipTests(unittest.TestCase):
@@ -76,13 +74,13 @@ class OVRBoundsTests(unittest.TestCase):
         teams = create_teams()
         year = 2025
 
-        with patch("main._play_live_half", new=lambda *args, **kwargs: None):
-            import main
+        with patch("gameplay.play_live_half", new=lambda *args, **kwargs: None):
+            import gameplay
             for _ in range(3):
                 season = create_season(year, teams, -1)
                 safety = 0
                 while not season.season_over and safety < 40:
-                    main._play_live_matchday(season, None)
+                    gameplay.play_live_matchday(season, None)
                     safety += 1
                 year += 1
 
@@ -105,13 +103,13 @@ class DivisionStructureTests(unittest.TestCase):
         teams = create_teams()
         year = 2025
 
-        with patch("main._play_live_half", new=lambda *args, **kwargs: None):
-            import main
+        with patch("gameplay.play_live_half", new=lambda *args, **kwargs: None):
+            import gameplay
             for _ in range(2):
                 season = create_season(year, teams, -1)
                 safety = 0
                 while not season.season_over and safety < 40:
-                    main._play_live_matchday(season, None)
+                    gameplay.play_live_matchday(season, None)
                     safety += 1
                 year += 1
 

@@ -1,0 +1,10 @@
+line-length = 120
+target-version = "py311"
+exclude = [".venv", ".git", "__pycache__", "scripts"]
+
+[lint]
+select = ["E", "F", "W"]
+# E501: linhas longas — tolerado
+# E7xx: múltiplos statements por linha — estilo intencional em term.py/engine.py
+# E741: nome ambíguo 'l' — usado intencionalmente como 'line' em closures
+ignore = ["E501", "E701", "E702", "E741", "E402"]

@@ -62,6 +62,7 @@ pyinstaller \
   --noconfirm \
   --windowed \
   --name ClassicFoot \
+  --add-data "data/teams.json:data" \
   launcher_gui.py
 
 # Limpa metadados e re-assina ad-hoc (evita erro de assinatura no macOS)

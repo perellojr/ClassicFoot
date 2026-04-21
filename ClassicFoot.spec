@@ -5,7 +5,7 @@ a = Analysis(
     ['launcher_gui.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    datas=[('data/teams.json', 'data')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

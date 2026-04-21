@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch
 
-import main
+import gameplay
 from data import create_teams
 from season import create_season
 
@@ -12,13 +12,13 @@ class LongSimulationTests(unittest.TestCase):
         year = 2025
 
         # Desliga render ao vivo para teste de estresse ficar rápido.
-        with patch("main._play_live_half", new=lambda *args, **kwargs: None):
+        with patch("gameplay.play_live_half", new=lambda *args, **kwargs: None):
             for season_index in range(40):
                 season = create_season(year, teams, -1)
 
                 safety = 0
                 while not season.season_over and safety < 40:
-                    main._play_live_matchday(season, None)
+                    gameplay.play_live_matchday(season, None)
                     safety += 1
 
                 self.assertTrue(season.season_over, f"Temporada {year} não encerrou")

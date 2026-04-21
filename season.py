@@ -7,7 +7,7 @@ import random
 from dataclasses import dataclass, field
 from typing import List, Optional, Dict, Tuple
 from models import Team, Fixture, CupTie, MatchResult
-from engine import simulate_match, simulate_penalty_shootout, simulate_all_fixtures_in_round
+from engine import simulate_penalty_shootout
 from config.economy import (
     CUSTO_MANUTENCAO,
     PRIZE_BEST_ATTACK,
@@ -521,7 +521,6 @@ def _apply_promotions(divs: Dict[int, List[Team]]):
     """Top 2 de cada divisão sobe; últimos 2 descem."""
     for div in [1, 2, 3]:
         ranked_this = sort_standings(divs[div])
-        ranked_above = sort_standings(divs[div - 1]) if div > 1 else None
         below_div = div + 1
 
         # Rebaixados desta divisão

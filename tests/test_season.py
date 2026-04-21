@@ -9,10 +9,9 @@ Cobre:
 """
 import unittest
 
-from season import sort_standings, _apply_promotions, monthly_sponsorship
+from season import sort_standings, _apply_promotions
 from config.economy import season_prize_multiplier, PRIZE_LIGA
-from tests.helpers import make_player, make_team
-from models import Position
+from tests.helpers import make_team
 
 
 def _team_with_stats(team_id, name, division=1, pts_wins=0, draws=0, losses=0, gf=0, ga=0):

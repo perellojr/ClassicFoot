@@ -184,8 +184,8 @@ class Table:
         self.border_color = border_color
         self.header_color = header_color
         self.title_color  = title_color
-        self.columns = []   # list of dict: name, width, align, color
-        self.rows    = []   # list of list of str
+        self.columns: list = []  # list of dict: name, width, align, color
+        self.rows:    list = []  # list of list of str
 
     def add_column(self, name: str, width: int = 12,
                    align: str = "l", color: str = W):

@@ -8,3 +8,5 @@ classicfoot_save.pkl
 .venv_gui_build/
 build/
 dist/
+.coverage
+coverage.xml

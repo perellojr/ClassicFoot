@@ -59,17 +59,17 @@ class CareerOrchestrator:
 
             end_firing = self.game.check_last_division_relegation_firing(season, career)
             if end_firing:
-                self.ui.show_notifications([end_firing], title="CENTRAL DE NOTÍCIAS")
+                self.ui.show_notifications([end_firing], "CENTRAL DE NOTÍCIAS")
                 offers = self.game.generate_player_offers(season.all_teams, career)
                 if offers:
                     for offer in offers:
                         if self.ui.prompt_job_offer(career.player_coach.name, offer, season.all_teams):
                             player_team, messages = self.game.accept_player_offer(offer, season.all_teams, career)
-                            self.ui.show_notifications(messages, title="MERCADO DE TREINADORES")
+                            self.ui.show_notifications(messages, "MERCADO DE TREINADORES")
                             break
                         self.ui.show_notifications(
                             self.game.reject_player_offer(offer, season.all_teams, career),
-                            title="MERCADO DE TREINADORES",
+                            "MERCADO DE TREINADORES",
                         )
 
             teams = season.all_teams

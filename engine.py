@@ -6,7 +6,7 @@ Inclui: formações, postura tática, forma e moral dos jogadores
 import math
 import random
 from typing import List, Tuple
-from models import Team, Player, Position, MatchResult, Formation, Postura, TICKET_PRICE_BY_DIV
+from models import Team, Player, Position, MatchResult, Formation, TICKET_PRICE_BY_DIV
 
 
 # ── Poisson sem numpy ──────────────────────────────────────────
@@ -550,7 +550,6 @@ def _apply_match_income(home: Team, attendance: int, competition: str):
 def simulate_penalty_series(team_a: Team, team_b: Team) -> Tuple[Team, Tuple[int, int], List[dict]]:
     a_skill = team_a.squad_overall()
     b_skill = team_b.squad_overall()
-    prob_a  = a_skill / max(a_skill + b_skill, 1)
 
     a_score = 0
     b_score = 0

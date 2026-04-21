@@ -1,7 +1,7 @@
 import unittest
 
-import main
 from engine import estimate_attendance
+from rivalries import is_classic, is_state_rivalry, register_dynamic_rivalry
 from tests.helpers import make_team
 
 
@@ -11,11 +11,11 @@ class RivalryTests(unittest.TestCase):
         team_b = make_team(2, "Beta")
 
         for _ in range(4):
-            main._register_dynamic_rivalry(team_a, team_b, 2.2)
+            register_dynamic_rivalry(team_a, team_b, 2.2)
 
         self.assertIn(team_b.id, team_a.dynamic_rivals)
         self.assertIn(team_a.id, team_b.dynamic_rivals)
-        self.assertTrue(main._is_classic(team_a, team_b))
+        self.assertTrue(is_classic(team_a, team_b))
 
     def test_state_rivalry_boosts_attendance_without_full_classic_cap(self):
         home = make_team(10, "Casa")
@@ -34,17 +34,17 @@ class RivalryTests(unittest.TestCase):
         # estimate_attendance agora está em engine — passa contexto de rivalidade explicitamente.
         attendance_state = estimate_attendance(
             home, away_same_state, competition="Liga",
-            is_classic=main._is_classic(home, away_same_state),
-            is_state_rivalry=main._is_state_rivalry(home, away_same_state),
+            is_classic=is_classic(home, away_same_state),
+            is_state_rivalry=is_state_rivalry(home, away_same_state),
         )
         attendance_other = estimate_attendance(
             home, away_other_state, competition="Liga",
-            is_classic=main._is_classic(home, away_other_state),
-            is_state_rivalry=main._is_state_rivalry(home, away_other_state),
+            is_classic=is_classic(home, away_other_state),
+            is_state_rivalry=is_state_rivalry(home, away_other_state),
         )
 
-        self.assertTrue(main._is_state_rivalry(home, away_same_state))
-        self.assertFalse(main._is_state_rivalry(home, away_other_state))
+        self.assertTrue(is_state_rivalry(home, away_same_state))
+        self.assertFalse(is_state_rivalry(home, away_other_state))
         self.assertGreater(attendance_state, attendance_other)
         self.assertLessEqual(attendance_state, home.stadium_capacity)
 
