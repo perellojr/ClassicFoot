@@ -69,22 +69,15 @@ CLASSICFOOT_SEED=12345 python3 main.py
 
 ## Build app (macOS / Windows)
 
-Instale o empacotador:
+Build por script (recomendado):
 
 ```bash
-pip install pyinstaller
+# macOS
+./build_mac.sh
+
+# Windows
+build_windows.bat
 ```
-
-Build manual:
-
-```bash
-pyinstaller --noconfirm --windowed --name ClassicFoot launcher_gui.py
-```
-
-Build por script:
-
-- macOS: `./build_mac.sh`
-- Windows: `build_windows.bat`
 
 Saídas:
 
@@ -94,11 +87,20 @@ Saídas:
 No macOS, abra o `.app` diretamente (não via `.pkg`).  
 Se bloquear no Gatekeeper: clique direito no app > `Abrir`.
 
-## Verificação rápida
+## Publicar uma release
+
+Crie e envie uma tag semântica — o CI cuida do build e publica automaticamente:
 
 ```bash
-python3 -m py_compile data.py main.py season.py engine.py ui.py term.py manager_market.py models.py transfers.py save.py launcher_gui.py
+git tag v1.0.0
+git push origin v1.0.0
 ```
+
+Isso dispara o workflow `.github/workflows/release.yml`, que:
+
+1. Builda `ClassicFoot-mac.zip` e `ClassicFoot-windows.zip` em paralelo
+2. Cria um GitHub Release com changelog automático
+3. Publica no itch.io (se os secrets `BUTLER_CREDENTIALS` e `ITCH_USERNAME` estiverem configurados em `Settings → Secrets → Actions`)
 
 ## Testes automatizados
 
@@ -115,7 +117,8 @@ Escopo atual dos testes:
 - mercado de transferências (lances, bloqueio de IA, elenco mínimo)
 - mercado de treinadores (anti-reprocesso na rodada e anti-recontratação imediata)
 - fluxo principal (sorteio da copa e bloqueio do time do jogador no leilão IA)
-- save/load com backup automático
+- save/load round-trip completo (JSON)
+- rivalidades dinâmicas
 - estresse de simulação com 40 temporadas completas
 
 Rodar somente o teste de estresse (40 temporadas):
@@ -126,20 +129,27 @@ python3 -m unittest tests.test_long_simulation -v
 
 ## CI (GitHub Actions)
 
-O projeto possui validação automática em:
+O projeto possui dois workflows:
 
-- `push` para `main`, `feature/**` e `codex/**`
-- `pull_request`
+**`ci.yml`** — validação contínua em `push`/`pull_request`:
 
-Etapas atuais:
+- lint com `ruff`
+- `py_compile` de todos os módulos
+- `mypy` (type checking)
+- suíte `unittest` com coverage (Ubuntu + macOS)
 
-- `py_compile` dos módulos principais
-- suíte completa `unittest`
+**`release.yml`** — build e publicação ao criar uma tag `v*.*.*`:
+
+- build macOS + Windows em paralelo via PyInstaller
+- GitHub Release com changelog automático
+- upload para itch.io (opcional, via secrets)
 
 ## Estrutura do projeto
 
 - `main.py`: loop principal da carreira
-- `ui.py`: telas e navegação
+- `gameplay.py`: execução ao vivo de rodadas (lineups, tempos, substituições, pênaltis)
+- `rivalries.py`: rivalidades clássicas e dinâmicas
+- `ui/`: telas e navegação (pacote, substitui o antigo `ui.py`)
 - `term.py`: renderização e estilos ANSI/box
 - `engine.py`: simulação de partidas
 - `season.py`: calendário, copa e regras de temporada
@@ -147,14 +157,16 @@ Etapas atuais:
 - `manager_market.py`: mercado de treinadores
 - `data.py`: times, jogadores e dados iniciais
 - `models.py`: dataclasses e entidades
-- `save.py`: persistência
+- `save.py`: persistência (JSON, com fallback automático para saves antigos em pickle)
 - `application/`: camada de aplicação
   - `events.py`: registro central de eventos/notificações da carreira
+  - `history.py`: histórico de temporada e estatísticas mundiais
   - `orchestrator.py`: orquestração do ciclo de carreira/temporada
 - `config/`: parâmetros de runtime e economia
   - `economy.py`: premiações, patrocínio e constantes financeiras
   - `runtime.py`: seed opcional e flags de execução
 - `.github/workflows/ci.yml`: pipeline de validação contínua
+- `.github/workflows/release.yml`: build e publicação de releases
 
 ## Regras oficiais da simulação
 
@@ -162,5 +174,5 @@ Etapas atuais:
 
 ## Observações
 
-- Save padrão: `classicfoot_save.pkl`
+- Save padrão: `~/.classicfoot/save.json` (saves antigos em `.pkl` são migrados automaticamente)
 - Pastas de build locais (`build/`, `dist/`) não são versionadas
