@@ -103,7 +103,7 @@ jobs:
         if: ${{ env.BUTLER_CREDENTIALS != '' }}
         run: |
           curl -L -o butler.zip \
-            https://broth.itch.ovh/butler/linux-amd64/LATEST/archive/default
+            https://github.com/itchio/butler/releases/latest/download/butler-linux-amd64.zip
           unzip -q butler.zip
           chmod +x butler
 
